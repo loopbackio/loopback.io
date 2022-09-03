@@ -32,6 +32,6 @@ export declare class ResolutionError extends Error
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [resolutionCtx](./context.resolutionerror.resolutionctx.md) |  | Partial&lt;[ResolutionContext](./context.resolutioncontext.md)<!-- -->&gt; |  |
+|  [resolutionCtx](./context.resolutionerror.resolutionctx.md) | <code>readonly</code> | Partial&lt;[ResolutionContext](./context.resolutioncontext.md)<!-- -->&gt; |  |
 
 

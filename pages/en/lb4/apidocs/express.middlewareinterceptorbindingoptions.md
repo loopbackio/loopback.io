@@ -20,12 +20,12 @@ Options to bind a middleware as an interceptor to the context
 ```typescript
 export interface MiddlewareInterceptorBindingOptions extends BaseMiddlewareBindingOptions<InvocationContext> 
 ```
-<b>Extends:</b> [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)
+<b>Extends:</b> [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [global?](./express.middlewareinterceptorbindingoptions.global.md) | boolean | <i>(Optional)</i> A flag to control if the interceptor should be global. Default to <code>true</code>. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [global?](./express.middlewareinterceptorbindingoptions.global.md) |  | boolean | <i>(Optional)</i> A flag to control if the interceptor should be global. Default to <code>true</code>. |
 
 

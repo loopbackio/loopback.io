@@ -25,6 +25,6 @@ export declare namespace injectable
 
 |  Function | Description |
 |  --- | --- |
-|  [provider(specs)](./context.injectable.provider.md) | <code>@injectable.provider</code> to denote a provider class<!-- -->A list of binding scope/tags or template functions to configure the binding |
+|  [provider(specs)](./context.injectable.provider.md) | <p><code>@injectable.provider</code> to denote a provider class</p><p>A list of binding scope/tags or template functions to configure the binding</p> |
 
 

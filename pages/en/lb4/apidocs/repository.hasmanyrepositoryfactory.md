@@ -21,8 +21,8 @@ export interface HasManyRepositoryFactory<Target extends Entity, ForeignKeyType>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [inclusionResolver](./repository.hasmanyrepositoryfactory.inclusionresolver.md) | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt; | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [inclusionResolver](./repository.hasmanyrepositoryfactory.inclusionresolver.md) |  | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt; | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
 
 

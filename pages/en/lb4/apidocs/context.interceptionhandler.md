@@ -22,7 +22,7 @@ See https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objec
 ```typescript
 export declare class InterceptionHandler<T extends object> implements ProxyHandler<T> 
 ```
-<b>Implements:</b> ProxyHandler
+<b>Implements:</b> ProxyHandler&lt;T&gt;
 
 ## Constructors
 

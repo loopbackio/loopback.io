@@ -20,7 +20,7 @@ Provides the authentication action for a sequence
 ```typescript
 export declare class AuthenticateActionProvider implements Provider<AuthenticateFn> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticateFn](./authentication.authenticatefn.md)
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticateFn](./authentication.authenticatefn.md)<!-- -->&gt;
 
 ## Example
 
@@ -39,10 +39,10 @@ context.bind('authentication.actions.authenticate').toProvider(AuthenticateActio
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [getStrategies](./authentication.authenticateactionprovider.getstrategies.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
-|  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) |  | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
-|  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) |  | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
-|  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) |  | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
+|  [getStrategies](./authentication.authenticateactionprovider.getstrategies.md) | <code>readonly</code> | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
+|  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) | <code>readonly</code> | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
+|  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) | <code>readonly</code> | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
+|  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) | <code>readonly</code> | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 
 ## Methods
 

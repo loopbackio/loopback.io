@@ -29,7 +29,7 @@ export declare class RequestBodyParser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [parsers](./rest.requestbodyparser.parsers.md) |  | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] |  |
+|  [parsers](./rest.requestbodyparser.parsers.md) | <code>readonly</code> | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] |  |
 
 ## Methods
 

@@ -23,10 +23,10 @@ export interface DataSource
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [connector?](./repository.datasource.connector.md) | [Connector](./repository.connector.md) | <i>(Optional)</i> |
-|  [name](./repository.datasource.name.md) | string |  |
-|  [settings](./repository.datasource.settings.md) | [AnyObject](./repository.anyobject.md) |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [connector?](./repository.datasource.connector.md) |  | [Connector](./repository.connector.md) | <i>(Optional)</i> |
+|  [name](./repository.datasource.name.md) |  | string |  |
+|  [settings](./repository.datasource.settings.md) |  | [AnyObject](./repository.anyobject.md) |  |
 
 

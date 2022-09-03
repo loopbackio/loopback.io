@@ -20,7 +20,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.html
 |  Class | Description |
 |  --- | --- |
 |  [TypeOrmComponent](./typeorm.typeormcomponent.md) |  |
-|  [TypeOrmConnectionBooter](./typeorm.typeormconnectionbooter.md) | A class that extends BaseArtifactBooter to boot the TypeORM connection artifact type.<!-- -->Supported phases: configure, discover, load |
+|  [TypeOrmConnectionBooter](./typeorm.typeormconnectionbooter.md) | <p>A class that extends BaseArtifactBooter to boot the TypeORM connection artifact type.</p><p>Supported phases: configure, discover, load</p> |
 |  [TypeOrmLifeCycleManager](./typeorm.typeormlifecyclemanager.md) |  |
 
 ## Functions

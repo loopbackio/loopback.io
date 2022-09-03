@@ -24,8 +24,8 @@ export interface ServiceOptions extends BindingFromClassOptions
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [interface?](./core.serviceoptions.interface.md) | [ServiceInterface](./core.serviceinterface.md) | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [interface?](./core.serviceoptions.interface.md) |  | [ServiceInterface](./core.serviceinterface.md) | <i>(Optional)</i> |
 
 

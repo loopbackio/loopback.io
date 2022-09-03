@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.cli.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.1.1...@loopback/cli@4.1.2) (2022-08-11)
+
+
+### Bug Fixes
+
+* **cli:** does not generate an application or extension with node > v16 ([72cc49b](https://github.com/loopbackio/loopback-next/commit/72cc49bf7d1bf6ce8018d9fce5f173af4af7f0ac))
+
+
+
+
+
+## [4.1.1](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.1.0...@loopback/cli@4.1.1) (2022-07-14)
+
+
+### Bug Fixes
+
+* **docs:** documentation update for typo availble ([f9782fd](https://github.com/loopbackio/loopback-next/commit/f9782fdd0ccd208bdfa01f9f4c62e0b58d1060b3))
+* **docs:** documentation update from seuqence to sequence ([62898a2](https://github.com/loopbackio/loopback-next/commit/62898a292e48f61d39e193224358c8cb46b743e8))
+* **docs:** documentation updates for datasoure to datasource ([c05a7e6](https://github.com/loopbackio/loopback-next/commit/c05a7e6f8b50c2db51a157f94c2b77fbcc8b7406))
+
+
+
+
+
 # [4.1.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.0.0...@loopback/cli@4.1.0) (2022-06-13)
 
 

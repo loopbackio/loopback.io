@@ -20,7 +20,7 @@ Interface LoopBack 4 middleware to be executed within sequence of actions. A mid
 ```typescript
 export interface Middleware extends GenericInterceptor<MiddlewareContext> 
 ```
-<b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)
+<b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
 
 ## Remarks
 

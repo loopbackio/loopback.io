@@ -24,8 +24,8 @@ export interface HttpOptions extends BaseHttpOptions
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [protocol?](./http-server.httpoptions.protocol.md) | 'http' | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [protocol?](./http-server.httpoptions.protocol.md) |  | 'http' | <i>(Optional)</i> |
 
 

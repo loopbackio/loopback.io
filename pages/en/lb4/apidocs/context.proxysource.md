@@ -20,7 +20,7 @@ Invocation source for injected proxies. It wraps a snapshot of the `ResolutionSe
 ```typescript
 export declare class ProxySource implements InvocationSource<ResolutionSession> 
 ```
-<b>Implements:</b> [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[ResolutionSession](./context.resolutionsession.md)
+<b>Implements:</b> [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[ResolutionSession](./context.resolutionsession.md)<!-- -->&gt;
 
 ## Constructors
 
@@ -33,7 +33,7 @@ export declare class ProxySource implements InvocationSource<ResolutionSession>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [type](./context.proxysource.type.md) |  | string |  |
-|  [value](./context.proxysource.value.md) |  | [ResolutionSession](./context.resolutionsession.md) |  |
+|  [value](./context.proxysource.value.md) | <code>readonly</code> | [ResolutionSession](./context.resolutionsession.md) |  |
 
 ## Methods
 

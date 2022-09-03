@@ -42,7 +42,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/openapi-spec-builder](./openapi-spec-builder.md) | A package to simplify creating OpenAPI specification documents in your tests using the builder pattern. |
 |  [@loopback/openapi-v3](./openapi-v3.md) | Decorators that describe LoopBack artifacts as OpenAPI 3.0.0 metadata and utilities that transfer LoopBack metadata to OpenAPI 3.0.0 specifications. |
 |  [@loopback/pooling](./pooling.md) |  |
-|  [@loopback/repository](./repository.md) | A common set of interfaces for interacting with databases.<!-- -->This module provides data access facilities to various databases and services as well as the constructs for modeling and accessing those data. |
+|  [@loopback/repository](./repository.md) | <p>A common set of interfaces for interacting with databases.</p><p>This module provides data access facilities to various databases and services as well as the constructs for modeling and accessing those data.</p> |
 |  [@loopback/repository-json-schema](./repository-json-schema.md) | Convert a TypeScript class/model to a JSON Schema for users, leveraging LoopBack4's decorators, metadata, and reflection system. |
 |  [@loopback/repository-tests](./repository-tests.md) | A test suite verifying functionality of <code>@loopback/repository</code> in a connector -independent way. |
 |  [@loopback/rest](./rest.md) | The REST API package for loopback-next. |

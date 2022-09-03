@@ -20,7 +20,7 @@ Factory for method decorators
 ```typescript
 export declare class MethodDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T>, MethodDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, MethodDecorator
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, MethodDecorator&gt;
 
 ## Methods
 
@@ -28,7 +28,7 @@ export declare class MethodDecoratorFactory<T> extends DecoratorFactory<T, Metad
 |  --- | --- | --- |
 |  [create()](./metadata.methoddecoratorfactory.create.md) |  |  |
 |  [createDecorator(key, spec, options)](./metadata.methoddecoratorfactory.createdecorator.md) | <code>static</code> | Create a method decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithinherited.md) |  |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
+|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

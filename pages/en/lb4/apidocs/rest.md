@@ -100,7 +100,7 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [Node](./rest.node.md) | A Node in the trie |
 |  [OpenApiSpecForm](./rest.openapispecform.md) | The form of OpenAPI specs to be served |
 |  [OpenApiSpecOptions](./rest.openapispecoptions.md) | Options to customize how OpenAPI specs are served |
-|  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | Options for request body parsing See https://github.com/expressjs/body-parser/\#options<!-- -->Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones. |
+|  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | <p>Options for request body parsing See https://github.com/expressjs/body-parser/\#options</p><p>Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones.</p> |
 |  [RequestWithSession](./rest.requestwithsession.md) | extending express request type with a session field |
 |  [ResolvedNode](./rest.resolvednode.md) |  |
 |  [ResolvedRoute](./rest.resolvedroute.md) | A route with path parameters resolved |

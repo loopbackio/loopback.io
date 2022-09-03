@@ -21,9 +21,9 @@ export interface RestServerLike
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [rootUrl?](./testlab.restserverlike.rooturl.md) | string | <i>(Optional)</i> |
-|  [url?](./testlab.restserverlike.url.md) | string | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [rootUrl?](./testlab.restserverlike.rooturl.md) |  | string | <i>(Optional)</i> |
+|  [url?](./testlab.restserverlike.url.md) |  | string | <i>(Optional)</i> |
 
 

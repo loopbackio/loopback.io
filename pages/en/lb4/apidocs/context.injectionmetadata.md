@@ -20,13 +20,13 @@ An object to provide metadata for `@inject`
 ```typescript
 export interface InjectionMetadata extends Omit<ResolutionOptions, 'session'> 
 ```
-<b>Extends:</b> Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)
+<b>Extends:</b> Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [bindingComparator?](./context.injectionmetadata.bindingcomparator.md) | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> Optional comparator for matched bindings |
-|  [decorator?](./context.injectionmetadata.decorator.md) | string | <i>(Optional)</i> Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [bindingComparator?](./context.injectionmetadata.bindingcomparator.md) |  | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> Optional comparator for matched bindings |
+|  [decorator?](./context.injectionmetadata.decorator.md) |  | string | <i>(Optional)</i> Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
 
 

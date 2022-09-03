@@ -32,8 +32,8 @@ export declare class RegExpRouter extends BaseRouter
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addRouteWithPathVars(route)](./rest.regexprouter.addroutewithpathvars.md) |  |  |
-|  [findRouteWithPathVars(verb, path)](./rest.regexprouter.findroutewithpathvars.md) |  |  |
-|  [listRoutesWithPathVars()](./rest.regexprouter.listrouteswithpathvars.md) |  |  |
+|  [addRouteWithPathVars(route)](./rest.regexprouter.addroutewithpathvars.md) | <code>protected</code> |  |
+|  [findRouteWithPathVars(verb, path)](./rest.regexprouter.findroutewithpathvars.md) | <code>protected</code> |  |
+|  [listRoutesWithPathVars()](./rest.regexprouter.listrouteswithpathvars.md) | <code>protected</code> |  |
 
 

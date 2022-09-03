@@ -27,10 +27,10 @@ export interface Inclusion
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [relation](./filter.inclusion.relation.md) | string |  |
-|  [scope?](./filter.inclusion.scope.md) | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; } | <i>(Optional)</i> |
-|  [targetType?](./filter.inclusion.targettype.md) | string | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [relation](./filter.inclusion.relation.md) |  | string |  |
+|  [scope?](./filter.inclusion.scope.md) |  | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; } | <i>(Optional)</i> |
+|  [targetType?](./filter.inclusion.targettype.md) |  | string | <i>(Optional)</i> |
 
 

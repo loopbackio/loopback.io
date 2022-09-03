@@ -20,7 +20,7 @@ Factory for parameter decorators
 ```typescript
 export declare class ParameterDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T[]>, ParameterDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, ParameterDecorator
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, ParameterDecorator&gt;
 
 ## Methods
 
@@ -28,7 +28,7 @@ export declare class ParameterDecoratorFactory<T> extends DecoratorFactory<T, Me
 |  --- | --- | --- |
 |  [create()](./metadata.parameterdecoratorfactory.create.md) |  |  |
 |  [createDecorator(key, spec, options)](./metadata.parameterdecoratorfactory.createdecorator.md) | <code>static</code> | Create a parameter decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, methodName, parameterIndex)](./metadata.parameterdecoratorfactory.mergewithinherited.md) |  |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, parameterIndex)](./metadata.parameterdecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithInherited(inheritedMetadata, target, methodName, parameterIndex)](./metadata.parameterdecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
+|  [mergeWithOwn(ownMetadata, target, methodName, parameterIndex)](./metadata.parameterdecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

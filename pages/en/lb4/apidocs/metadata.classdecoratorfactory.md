@@ -20,7 +20,7 @@ Factory for class decorators
 ```typescript
 export declare class ClassDecoratorFactory<T> extends DecoratorFactory<T, T, ClassDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, T, ClassDecorator
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, T, ClassDecorator&gt;
 
 ## Methods
 
@@ -28,7 +28,7 @@ export declare class ClassDecoratorFactory<T> extends DecoratorFactory<T, T, Cla
 |  --- | --- | --- |
 |  [create()](./metadata.classdecoratorfactory.create.md) |  |  |
 |  [createDecorator(key, spec, options)](./metadata.classdecoratorfactory.createdecorator.md) | <code>static</code> | Create a class decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithinherited.md) |  |  |
-|  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
+|  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

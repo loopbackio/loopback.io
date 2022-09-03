@@ -23,13 +23,13 @@ export interface CrudFeatures
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [emptyValue](./repository-tests.crudfeatures.emptyvalue.md) | undefined \| null | The value used by the database to store properties set to <code>undefined</code>. Typically, SQL databases store both <code>undefined</code> and <code>null</code> as <code>null</code>.<!-- -->Default: <code>undefined</code> |
-|  [freeFormProperties](./repository-tests.crudfeatures.freeformproperties.md) | boolean | Does the database (or the connector) require a fixed schema, or can it support additional (free-form) properties? SQL databases typically don't support free-form properties.<!-- -->Default: <code>true</code> |
-|  [hasRevisionToken](./repository-tests.crudfeatures.hasrevisiontoken.md) | boolean | Does the connector have the revision token for replacement operations? (Cloudant)<!-- -->Default: <code>false</code> |
-|  [idType](./repository-tests.crudfeatures.idtype.md) | 'string' \| 'number' | What type is used for auto-generated primary keys? - SQL databases typically use auto-incremented numbers, - NoSQL databases tend to use GUID/UUID strings.<!-- -->Default: <code>'string'</code>. |
-|  [supportsInclusionResolvers](./repository-tests.crudfeatures.supportsinclusionresolvers.md) | boolean | Does the repository provide <code>inclusionResolvers</code> object where resolvers can be registered?<!-- -->Default: <code>true</code> |
-|  [supportsTransactions](./repository-tests.crudfeatures.supportstransactions.md) | boolean | Does the connector support using transactions for performing CRUD operations atomically and being able to commit or rollback the changes? SQL databases usually support transactions<!-- -->Default: <code>false</code> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [emptyValue](./repository-tests.crudfeatures.emptyvalue.md) |  | undefined \| null | <p>The value used by the database to store properties set to <code>undefined</code>. Typically, SQL databases store both <code>undefined</code> and <code>null</code> as <code>null</code>.</p><p>Default: <code>undefined</code></p> |
+|  [freeFormProperties](./repository-tests.crudfeatures.freeformproperties.md) |  | boolean | <p>Does the database (or the connector) require a fixed schema, or can it support additional (free-form) properties? SQL databases typically don't support free-form properties.</p><p>Default: <code>true</code></p> |
+|  [hasRevisionToken](./repository-tests.crudfeatures.hasrevisiontoken.md) |  | boolean | <p>Does the connector have the revision token for replacement operations? (Cloudant)</p><p>Default: <code>false</code></p> |
+|  [idType](./repository-tests.crudfeatures.idtype.md) |  | 'string' \| 'number' | <p>What type is used for auto-generated primary keys? - SQL databases typically use auto-incremented numbers, - NoSQL databases tend to use GUID/UUID strings.</p><p>Default: <code>'string'</code>.</p> |
+|  [supportsInclusionResolvers](./repository-tests.crudfeatures.supportsinclusionresolvers.md) |  | boolean | <p>Does the repository provide <code>inclusionResolvers</code> object where resolvers can be registered?</p><p>Default: <code>true</code></p> |
+|  [supportsTransactions](./repository-tests.crudfeatures.supportstransactions.md) |  | boolean | <p>Does the connector support using transactions for performing CRUD operations atomically and being able to commit or rollback the changes? SQL databases usually support transactions</p><p>Default: <code>false</code></p> |
 
 

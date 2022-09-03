@@ -22,8 +22,8 @@ export interface Role extends Principal
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [name](./security.role.name.md) | string |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [name](./security.role.name.md) |  | string |  |
 
 

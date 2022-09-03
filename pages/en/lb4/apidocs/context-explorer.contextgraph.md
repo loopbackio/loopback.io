@@ -33,7 +33,7 @@ export declare class ContextGraph
 |  --- | --- | --- |
 |  [build()](./context-explorer.contextgraph.build.md) |  | Build a direct graph |
 |  [render()](./context-explorer.contextgraph.render.md) |  | Render the context graph in graphviz dot format |
-|  [renderBinding(parent, { binding, id })](./context-explorer.contextgraph.renderbinding.md) |  | Render a binding object |
-|  [renderConfig(parent, { binding, level, id })](./context-explorer.contextgraph.renderconfig.md) |  | Create an edge for a binding to its configuration |
+|  [renderBinding(parent, { binding, id })](./context-explorer.contextgraph.renderbinding.md) | <code>protected</code> | Render a binding object |
+|  [renderConfig(parent, { binding, level, id })](./context-explorer.contextgraph.renderconfig.md) | <code>protected</code> | Create an edge for a binding to its configuration |
 
 

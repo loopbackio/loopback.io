@@ -22,8 +22,8 @@ export interface HttpOptions extends ListenOptions
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [protocol?](./testlab.httpoptions.protocol.md) | 'http' | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [protocol?](./testlab.httpoptions.protocol.md) |  | 'http' | <i>(Optional)</i> |
 
 

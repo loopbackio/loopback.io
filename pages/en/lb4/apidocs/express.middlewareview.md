@@ -32,7 +32,7 @@ export declare class MiddlewareView extends ContextView
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [middlewareBindingKeys](./express.middlewareview.middlewarebindingkeys.md) |  | string\[\] | A list of binding keys sorted by group for registered middleware |
+|  [middlewareBindingKeys](./express.middlewareview.middlewarebindingkeys.md) | <code>readonly</code> | string\[\] | A list of binding keys sorted by group for registered middleware |
 
 ## Methods
 

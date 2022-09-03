@@ -23,10 +23,10 @@ export interface AuthenticationMetadata
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [options?](./authentication.authenticationmetadata.options.md) | { \[name: string\]: any; } | <i>(Optional)</i> Options for the authentication strategy |
-|  [skip?](./authentication.authenticationmetadata.skip.md) | boolean | <i>(Optional)</i> A flag to skip authentication |
-|  [strategy](./authentication.authenticationmetadata.strategy.md) | string | Name of the authentication strategy |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [options?](./authentication.authenticationmetadata.options.md) |  | { \[name: string\]: any; } | <i>(Optional)</i> Options for the authentication strategy |
+|  [skip?](./authentication.authenticationmetadata.skip.md) |  | boolean | <i>(Optional)</i> A flag to skip authentication |
+|  [strategy](./authentication.authenticationmetadata.strategy.md) |  | string | Name of the authentication strategy |
 
 

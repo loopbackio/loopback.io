@@ -20,7 +20,7 @@ A provider class that creates WinstonLogger instances
 ```typescript
 export declare class WinstonLoggerProvider implements Provider<Logger> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;Logger
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;Logger&gt;
 
 ## Constructors
 

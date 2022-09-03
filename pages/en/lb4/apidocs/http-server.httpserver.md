@@ -31,14 +31,14 @@ export declare class HttpServer
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [address](./http-server.httpserver.address.md) |  | string \| AddressInfo \| undefined | Address of the HTTP / HTTPS server |
-|  [host](./http-server.httpserver.host.md) |  | string \| undefined | Host of the HTTP / HTTPS server |
-|  [listening](./http-server.httpserver.listening.md) |  | boolean | State of the HTTP / HTTPS server |
-|  [port](./http-server.httpserver.port.md) |  | number | Port number of the HTTP / HTTPS server |
-|  [protocol](./http-server.httpserver.protocol.md) |  | [HttpProtocol](./http-server.httpprotocol.md) | Protocol of the HTTP / HTTPS server |
-|  [server](./http-server.httpserver.server.md) |  | http.Server \| https.Server |  |
-|  [serverOptions](./http-server.httpserver.serveroptions.md) |  | [HttpServerOptions](./http-server.httpserveroptions.md) |  |
-|  [url](./http-server.httpserver.url.md) |  | string | URL of the HTTP / HTTPS server |
+|  [address](./http-server.httpserver.address.md) | <code>readonly</code> | string \| AddressInfo \| undefined | Address of the HTTP / HTTPS server |
+|  [host](./http-server.httpserver.host.md) | <code>readonly</code> | string \| undefined | Host of the HTTP / HTTPS server |
+|  [listening](./http-server.httpserver.listening.md) | <code>readonly</code> | boolean | State of the HTTP / HTTPS server |
+|  [port](./http-server.httpserver.port.md) | <code>readonly</code> | number | Port number of the HTTP / HTTPS server |
+|  [protocol](./http-server.httpserver.protocol.md) | <code>readonly</code> | [HttpProtocol](./http-server.httpprotocol.md) | Protocol of the HTTP / HTTPS server |
+|  [server](./http-server.httpserver.server.md) | <code>readonly</code> | http.Server \| https.Server |  |
+|  [serverOptions](./http-server.httpserver.serveroptions.md) | <code>readonly</code> | [HttpServerOptions](./http-server.httpserveroptions.md) |  |
+|  [url](./http-server.httpserver.url.md) | <code>readonly</code> | string | URL of the HTTP / HTTPS server |
 
 ## Methods
 

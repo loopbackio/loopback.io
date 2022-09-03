@@ -22,11 +22,11 @@ export interface ExpressContextStub extends HandlerContextStub
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [app](./testlab.expresscontextstub.app.md) | express.Application |  |
-|  [request](./testlab.expresscontextstub.request.md) | express.Request |  |
-|  [response](./testlab.expresscontextstub.response.md) | express.Response |  |
-|  [result](./testlab.expresscontextstub.result.md) | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [app](./testlab.expresscontextstub.app.md) |  | express.Application |  |
+|  [request](./testlab.expresscontextstub.request.md) |  | express.Request |  |
+|  [response](./testlab.expresscontextstub.response.md) |  | express.Response |  |
+|  [result](./testlab.expresscontextstub.result.md) |  | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
 
 

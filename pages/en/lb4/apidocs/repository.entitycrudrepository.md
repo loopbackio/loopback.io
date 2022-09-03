@@ -20,14 +20,14 @@ CRUD operations for a repository of entities
 ```typescript
 export interface EntityCrudRepository<T extends Entity, ID, Relations extends object = {}> extends EntityRepository<T, ID>, CrudRepository<T, Relations> 
 ```
-<b>Extends:</b> [EntityRepository](./repository.entityrepository.md)<!-- -->&lt;T, ID&gt;, [CrudRepository](./repository.crudrepository.md)
+<b>Extends:</b> [EntityRepository](./repository.entityrepository.md)<!-- -->&lt;T, ID&gt;, [CrudRepository](./repository.crudrepository.md)<!-- -->&lt;T, Relations&gt;
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [entityClass](./repository.entitycrudrepository.entityclass.md) | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
-|  [inclusionResolvers](./repository.entitycrudrepository.inclusionresolvers.md) | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [entityClass](./repository.entitycrudrepository.entityclass.md) |  | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
+|  [inclusionResolvers](./repository.entitycrudrepository.inclusionresolvers.md) |  | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
 
 ## Methods
 

@@ -21,10 +21,10 @@ export interface HandlerContextStub
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [request](./testlab.handlercontextstub.request.md) | IncomingMessage |  |
-|  [response](./testlab.handlercontextstub.response.md) | ServerResponse |  |
-|  [result](./testlab.handlercontextstub.result.md) | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [request](./testlab.handlercontextstub.request.md) |  | IncomingMessage |  |
+|  [response](./testlab.handlercontextstub.response.md) |  | ServerResponse |  |
+|  [result](./testlab.handlercontextstub.result.md) |  | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
 
 

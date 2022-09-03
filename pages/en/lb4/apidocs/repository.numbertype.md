@@ -20,13 +20,13 @@ Number type
 ```typescript
 export declare class NumberType implements Type<number> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;number&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.numbertype.name.md) |  | (not declared) |  |
+|  [name](./repository.numbertype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

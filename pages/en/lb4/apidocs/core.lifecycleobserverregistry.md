@@ -32,22 +32,22 @@ export declare class LifeCycleObserverRegistry implements LifeCycleObserver
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./core.lifecycleobserverregistry.context.md) |  | [Context](./context.context.md) |  |
-|  [observersView](./core.lifecycleobserverregistry.observersview.md) |  | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
-|  [options](./core.lifecycleobserverregistry.options.md) |  | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
+|  [context](./core.lifecycleobserverregistry.context.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [Context](./context.context.md) |  |
+|  [observersView](./core.lifecycleobserverregistry.observersview.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
+|  [options](./core.lifecycleobserverregistry.options.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [getObserverGroup(binding)](./core.lifecycleobserverregistry.getobservergroup.md) |  | Get the group for a given life cycle observer binding |
+|  [getObserverGroup(binding)](./core.lifecycleobserverregistry.getobservergroup.md) | <code>protected</code> | Get the group for a given life cycle observer binding |
 |  [getObserverGroupsByOrder()](./core.lifecycleobserverregistry.getobservergroupsbyorder.md) |  | Get observer groups ordered by the group |
 |  [init()](./core.lifecycleobserverregistry.init.md) |  | Notify all life cycle observers by group of <code>init</code> |
-|  [invokeObserver(observer, event)](./core.lifecycleobserverregistry.invokeobserver.md) |  | Invoke an observer for the given event |
-|  [notifyGroups(events, groups, reverse)](./core.lifecycleobserverregistry.notifygroups.md) |  | Emit events to the observer groups |
-|  [notifyObservers(observers, bindings, event)](./core.lifecycleobserverregistry.notifyobservers.md) |  | Notify an observer group of the given event |
+|  [invokeObserver(observer, event)](./core.lifecycleobserverregistry.invokeobserver.md) | <code>protected</code> | Invoke an observer for the given event |
+|  [notifyGroups(events, groups, reverse)](./core.lifecycleobserverregistry.notifygroups.md) | <code>protected</code> | Emit events to the observer groups |
+|  [notifyObservers(observers, bindings, event)](./core.lifecycleobserverregistry.notifyobservers.md) | <code>protected</code> | Notify an observer group of the given event |
 |  [setOrderedGroups(groups)](./core.lifecycleobserverregistry.setorderedgroups.md) |  |  |
-|  [sortObserverBindingsByGroup(bindings)](./core.lifecycleobserverregistry.sortobserverbindingsbygroup.md) |  | Sort the life cycle observer bindings so that we can start/stop them in the right order. By default, we can start other observers before servers and stop them in the reverse order |
+|  [sortObserverBindingsByGroup(bindings)](./core.lifecycleobserverregistry.sortobserverbindingsbygroup.md) | <code>protected</code> | Sort the life cycle observer bindings so that we can start/stop them in the right order. By default, we can start other observers before servers and stop them in the reverse order |
 |  [start()](./core.lifecycleobserverregistry.start.md) |  | Notify all life cycle observers by group of <code>start</code> |
 |  [stop()](./core.lifecycleobserverregistry.stop.md) |  | Notify all life cycle observers by group of <code>stop</code> |
 

@@ -32,7 +32,7 @@ export declare class DefaultConfigurationResolver implements ConfigurationResolv
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./context.defaultconfigurationresolver.context.md) |  | [Context](./context.context.md) |  |
+|  [context](./context.defaultconfigurationresolver.context.md) | <code>readonly</code> | [Context](./context.context.md) |  |
 
 ## Methods
 

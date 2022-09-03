@@ -20,13 +20,13 @@ Date type
 ```typescript
 export declare class DateType implements Type<Date> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Date
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Date&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.datetype.name.md) |  | (not declared) |  |
+|  [name](./repository.datetype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

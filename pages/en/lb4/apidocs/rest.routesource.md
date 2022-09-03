@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.routesource.html
 ```typescript
 export declare class RouteSource implements InvocationSource<RouteEntry> 
 ```
-<b>Implements:</b> [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[RouteEntry](./rest.routeentry.md)
+<b>Implements:</b> [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[RouteEntry](./rest.routeentry.md)<!-- -->&gt;
 
 ## Constructors
 
@@ -31,7 +31,7 @@ export declare class RouteSource implements InvocationSource<RouteEntry>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [type](./rest.routesource.type.md) |  | string |  |
-|  [value](./rest.routesource.value.md) |  | [RouteEntry](./rest.routeentry.md) |  |
+|  [value](./rest.routesource.value.md) | <code>readonly</code> | [RouteEntry](./rest.routeentry.md) |  |
 
 ## Methods
 

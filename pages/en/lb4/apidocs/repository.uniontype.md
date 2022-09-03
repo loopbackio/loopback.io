@@ -20,7 +20,7 @@ Union type, such as string \| number
 ```typescript
 export declare class UnionType implements Type<any> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;any&gt;
 
 ## Constructors
 
@@ -33,7 +33,7 @@ export declare class UnionType implements Type<any>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [itemTypes](./repository.uniontype.itemtypes.md) |  | [Type](./repository.type.md)<!-- -->&lt;any&gt;\[\] |  |
-|  [name](./repository.uniontype.name.md) |  | (not declared) |  |
+|  [name](./repository.uniontype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

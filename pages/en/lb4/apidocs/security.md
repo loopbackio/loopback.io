@@ -24,7 +24,7 @@ Common types/interfaces for LoopBack 4 security including authentication and aut
 |  Class | Description |
 |  --- | --- |
 |  [DefaultSubject](./security.defaultsubject.md) | Default implementation of <code>Subject</code> |
-|  [Permission](./security.permission.md) | <code>Permission</code> defines an action/access against a protected resource. It's the <code>what</code> for security.<!-- -->There are three levels of permissions<!-- -->- Resource level (Order, User) - Instance level (Order-0001, User-1001) - Property level (User-0001.email) |
+|  [Permission](./security.permission.md) | <p><code>Permission</code> defines an action/access against a protected resource. It's the <code>what</code> for security.</p><p>There are three levels of permissions</p><p>- Resource level (Order, User) - Instance level (Order-0001, User-1001) - Property level (User-0001.email)</p> |
 |  [TypedPrincipal](./security.typedprincipal.md) |  |
 
 ## Interfaces
@@ -37,7 +37,7 @@ Common types/interfaces for LoopBack 4 security including authentication and aut
 |  [Principal](./security.principal.md) | Represent a user, an application, or a device |
 |  [Role](./security.role.md) |  |
 |  [Scope](./security.scope.md) | oAuth 2.0 scope |
-|  [Subject](./security.subject.md) | <code>Subject</code> represents both security state and operations for a single request. It's the <code>who</code> for security.<!-- -->Such operations include: - authentication (login) - authorization (access control) - session access - logout |
+|  [Subject](./security.subject.md) | <p><code>Subject</code> represents both security state and operations for a single request. It's the <code>who</code> for security.</p><p>Such operations include: - authentication (login) - authorization (access control) - session access - logout</p> |
 |  [Team](./security.team.md) |  |
 |  [UserProfile](./security.userprofile.md) | The minimum set of attributes that describe a user. |
 

@@ -29,17 +29,17 @@ export declare class HttpHandler
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_openApiComponents](./rest.httphandler._openapicomponents.md) |  | ComponentsObject | Shared OpenAPI spec objects as <code>components</code> |
-|  [\_rootContext](./rest.httphandler._rootcontext.md) |  | [Context](./context.context.md) |  |
-|  [\_routes](./rest.httphandler._routes.md) |  | [RoutingTable](./rest.routingtable.md) |  |
-|  [\_serverConfig](./rest.httphandler._serverconfig.md) |  | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
+|  [\_openApiComponents](./rest.httphandler._openapicomponents.md) | <code>protected</code> | ComponentsObject | Shared OpenAPI spec objects as <code>components</code> |
+|  [\_rootContext](./rest.httphandler._rootcontext.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [Context](./context.context.md) |  |
+|  [\_routes](./rest.httphandler._routes.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [RoutingTable](./rest.routingtable.md) |  |
+|  [\_serverConfig](./rest.httphandler._serverconfig.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
 |  [handleRequest](./rest.httphandler.handlerequest.md) |  | (request: Request, response: Response) =&gt; Promise&lt;void&gt; |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [\_handleRequest(request, response)](./rest.httphandler._handlerequest.md) |  |  |
+|  [\_handleRequest(request, response)](./rest.httphandler._handlerequest.md) | <code>protected</code> |  |
 |  [describeApiPaths()](./rest.httphandler.describeapipaths.md) |  |  |
 |  [findRoute(request)](./rest.httphandler.findroute.md) |  |  |
 |  [getApiComponents()](./rest.httphandler.getapicomponents.md) |  |  |

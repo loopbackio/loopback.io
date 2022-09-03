@@ -23,9 +23,9 @@ export interface ModelApiBuilder
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [pattern](./model-api-builder.modelapibuilder.pattern.md) | string |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [pattern](./model-api-builder.modelapibuilder.pattern.md) | <code>readonly</code> | string |  |
 
 ## Methods
 

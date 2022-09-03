@@ -31,7 +31,7 @@ export declare class SocketIoControllerFactory
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [connCtx](./socketio.socketiocontrollerfactory.connctx.md) |  | [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md) |  |
+|  [connCtx](./socketio.socketiocontrollerfactory.connctx.md) | <code>readonly</code> | [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md) |  |
 
 ## Methods
 
@@ -39,12 +39,12 @@ export declare class SocketIoControllerFactory
 |  --- | --- | --- |
 |  [connect()](./socketio.socketiocontrollerfactory.connect.md) |  |  |
 |  [create()](./socketio.socketiocontrollerfactory.create.md) |  |  |
-|  [getAllMethodMetadataForKey(metadataAccessor)](./socketio.socketiocontrollerfactory.getallmethodmetadataforkey.md) |  |  |
+|  [getAllMethodMetadataForKey(metadataAccessor)](./socketio.socketiocontrollerfactory.getallmethodmetadataforkey.md) | <code>protected</code> |  |
 |  [getCallback(methodName)](./socketio.socketiocontrollerfactory.getcallback.md) |  |  |
 |  [getDecoratedMethodsForConnect()](./socketio.socketiocontrollerfactory.getdecoratedmethodsforconnect.md) |  |  |
-|  [getDecorateSubscribeMethods()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethods.md) |  |  |
+|  [getDecorateSubscribeMethods()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethods.md) | <code>protected</code> |  |
 |  [getDecorateSubscribeMethodsByEventName()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethodsbyeventname.md) |  |  |
-|  [registerSubscribeMethods()](./socketio.socketiocontrollerfactory.registersubscribemethods.md) |  |  |
+|  [registerSubscribeMethods()](./socketio.socketiocontrollerfactory.registersubscribemethods.md) | <code>protected</code> |  |
 |  [setup()](./socketio.socketiocontrollerfactory.setup.md) |  | Set up the controller for the given socket |
 
 

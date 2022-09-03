@@ -39,7 +39,7 @@ This lightweight module provides strongly-typed typings and filter builders to i
 |  --- | --- |
 |  [AndClause](./filter.andclause.md) | And clause |
 |  [Filter](./filter.filter.md) | Query filter object |
-|  [Inclusion](./filter.inclusion.md) | Inclusion of related items<!-- -->Note: scope means filter on related items<!-- -->Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code> |
+|  [Inclusion](./filter.inclusion.md) | <p>Inclusion of related items</p><p>Note: scope means filter on related items</p><p>Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code></p> |
 |  [OrClause](./filter.orclause.md) | Or clause |
 
 ## Type Aliases
@@ -48,12 +48,12 @@ This lightweight module provides strongly-typed typings and filter builders to i
 |  --- | --- |
 |  [Condition](./filter.condition.md) | Condition clause |
 |  [Direction](./filter.direction.md) | Order by direction |
-|  [Fields](./filter.fields.md) | Selection of fields<!-- -->Example: <code>{afieldname: true}</code> |
+|  [Fields](./filter.fields.md) | <p>Selection of fields</p><p>Example: <code>{afieldname: true}</code></p> |
 |  [FilterExcludingWhere](./filter.filterexcludingwhere.md) | Filter without <code>where</code> property |
 |  [InclusionFilter](./filter.inclusionfilter.md) | Inclusion filter type e.g. 'property', {<!-- -->relation: 'property'<!-- -->} |
 |  [KeyOf](./filter.keyof.md) | Key types of a given model, excluding operators |
 |  [Operators](./filter.operators.md) | Operators for where clauses |
-|  [Order](./filter.order.md) | Order by<!-- -->Example: <code>{afieldname: 'ASC'}</code> |
+|  [Order](./filter.order.md) | <p>Order by</p><p>Example: <code>{afieldname: 'ASC'}</code></p> |
 |  [PredicateComparison](./filter.predicatecomparison.md) | Matching predicate comparison |
 |  [ShortHandEqualType](./filter.shorthandequaltype.md) | Value types for <code>{propertyName: value}</code> |
 |  [Where](./filter.where.md) | Where clause |

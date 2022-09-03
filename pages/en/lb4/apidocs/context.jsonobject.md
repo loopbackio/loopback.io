@@ -20,6 +20,6 @@ JSON object
 ```typescript
 export interface JSONObject extends Record<string, JSONValue> 
 ```
-<b>Extends:</b> Record&lt;string, [JSONValue](./context.jsonvalue.md)
+<b>Extends:</b> Record&lt;string, [JSONValue](./context.jsonvalue.md)<!-- -->&gt;
 
 

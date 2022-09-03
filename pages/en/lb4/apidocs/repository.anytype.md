@@ -20,13 +20,13 @@ Any type
 ```typescript
 export declare class AnyType implements Type<any> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;any&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.anytype.name.md) |  | (not declared) |  |
+|  [name](./repository.anytype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

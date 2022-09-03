@@ -30,8 +30,8 @@ export declare class Route extends BaseRoute
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_handler](./rest.route._handler.md) |  | Function |  |
-|  [spec](./rest.route.spec.md) |  | OperationObject |  |
+|  [\_handler](./rest.route._handler.md) | <p><code>protected</code></p><p><code>readonly</code></p> | Function |  |
+|  [spec](./rest.route.spec.md) | <code>readonly</code> | OperationObject |  |
 
 ## Methods
 

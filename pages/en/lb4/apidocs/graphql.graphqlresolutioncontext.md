@@ -32,7 +32,7 @@ export declare class GraphQLResolutionContext extends Context
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [resolverClass](./graphql.graphqlresolutioncontext.resolverclass.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
-|  [resolverData](./graphql.graphqlresolutioncontext.resolverdata.md) |  | ResolverData&lt;unknown&gt; |  |
+|  [resolverClass](./graphql.graphqlresolutioncontext.resolverclass.md) | <code>readonly</code> | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
+|  [resolverData](./graphql.graphqlresolutioncontext.resolverdata.md) | <code>readonly</code> | ResolverData&lt;unknown&gt; |  |
 
 

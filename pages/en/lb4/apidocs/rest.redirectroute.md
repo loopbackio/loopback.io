@@ -30,14 +30,14 @@ export declare class RedirectRoute implements RouteEntry, ResolvedRoute
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [path](./rest.redirectroute.path.md) |  | string |  |
-|  [pathParams](./rest.redirectroute.pathparams.md) |  | [PathParameterValues](./rest.pathparametervalues.md) |  |
-|  [schemas](./rest.redirectroute.schemas.md) |  | SchemasObject |  |
-|  [sourcePath](./rest.redirectroute.sourcepath.md) |  | string |  |
-|  [spec](./rest.redirectroute.spec.md) |  | OperationObject |  |
-|  [statusCode](./rest.redirectroute.statuscode.md) |  | number |  |
-|  [targetLocation](./rest.redirectroute.targetlocation.md) |  | string |  |
-|  [verb](./rest.redirectroute.verb.md) |  | string |  |
+|  [path](./rest.redirectroute.path.md) | <code>readonly</code> | string |  |
+|  [pathParams](./rest.redirectroute.pathparams.md) | <code>readonly</code> | [PathParameterValues](./rest.pathparametervalues.md) |  |
+|  [schemas](./rest.redirectroute.schemas.md) | <code>readonly</code> | SchemasObject |  |
+|  [sourcePath](./rest.redirectroute.sourcepath.md) | <code>readonly</code> | string |  |
+|  [spec](./rest.redirectroute.spec.md) | <code>readonly</code> | OperationObject |  |
+|  [statusCode](./rest.redirectroute.statuscode.md) | <code>readonly</code> | number |  |
+|  [targetLocation](./rest.redirectroute.targetlocation.md) | <code>readonly</code> | string |  |
+|  [verb](./rest.redirectroute.verb.md) | <code>readonly</code> | string |  |
 
 ## Methods
 

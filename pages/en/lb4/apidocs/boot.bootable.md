@@ -23,10 +23,10 @@ export interface Bootable
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [bootOptions?](./boot.bootable.bootoptions.md) | [BootOptions](./boot.bootoptions.md) | <i>(Optional)</i> Options for boot |
-|  [projectRoot](./boot.bootable.projectroot.md) | string | Root directory for the project to be booted |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [bootOptions?](./boot.bootable.bootoptions.md) |  | [BootOptions](./boot.bootoptions.md) | <i>(Optional)</i> Options for boot |
+|  [projectRoot](./boot.bootable.projectroot.md) |  | string | Root directory for the project to be booted |
 
 ## Methods
 

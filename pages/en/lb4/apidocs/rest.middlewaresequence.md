@@ -33,13 +33,13 @@ export declare class MiddlewareSequence implements SequenceHandler
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [defaultOptions](./rest.middlewaresequence.defaultoptions.md) | <code>static</code> | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
-|  [invokeMiddleware](./rest.middlewaresequence.invokemiddleware.md) |  | [InvokeMiddleware](./express.invokemiddleware.md) |  |
-|  [options](./rest.middlewaresequence.options.md) |  | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
+|  [invokeMiddleware](./rest.middlewaresequence.invokemiddleware.md) | <code>readonly</code> | [InvokeMiddleware](./express.invokemiddleware.md) |  |
+|  [options](./rest.middlewaresequence.options.md) | <code>readonly</code> | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [handle(context)](./rest.middlewaresequence.handle.md) |  | Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.<!-- -->Default sequence executes these groups of middleware:<!-- -->- <code>cors</code>: Enforces <code>CORS</code> - <code>openApiSpec</code>: Serves OpenAPI specs - <code>findRoute</code>: Finds the appropriate controller method, swagger spec and args for invocation - <code>parseParams</code>: Parses HTTP request to get API argument list - <code>invokeMethod</code>: Invokes the API which is defined in the Application controller method<!-- -->In front of the groups above, we have a special middleware called <code>sendResponse</code>, which first invokes downstream middleware to get a result and handles the result or error respectively.<!-- -->- Writes the result from API into the HTTP response (if the HTTP response has not been produced yet by the middleware chain. - Catches error logs it using 'logError' if any of the above steps in the sequence fails with an error. |
+|  [handle(context)](./rest.middlewaresequence.handle.md) |  | <p>Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.</p><p>Default sequence executes these groups of middleware:</p><p>- <code>cors</code>: Enforces <code>CORS</code> - <code>openApiSpec</code>: Serves OpenAPI specs - <code>findRoute</code>: Finds the appropriate controller method, swagger spec and args for invocation - <code>parseParams</code>: Parses HTTP request to get API argument list - <code>invokeMethod</code>: Invokes the API which is defined in the Application controller method</p><p>In front of the groups above, we have a special middleware called <code>sendResponse</code>, which first invokes downstream middleware to get a result and handles the result or error respectively.</p><p>- Writes the result from API into the HTTP response (if the HTTP response has not been produced yet by the middleware chain. - Catches error logs it using 'logError' if any of the above steps in the sequence fails with an error.</p> |
 
 

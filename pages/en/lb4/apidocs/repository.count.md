@@ -23,8 +23,8 @@ export interface Count
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [count](./repository.count.count.md) | number |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [count](./repository.count.count.md) |  | number |  |
 
 

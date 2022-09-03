@@ -21,11 +21,11 @@ export interface ResponseDecoratorMetadataItem
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md) | string |  |
-|  [description](./openapi-v3.responsedecoratormetadataitem.description.md) | string |  |
-|  [responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md) | number |  |
-|  [responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md) | [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md) |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md) |  | string |  |
+|  [description](./openapi-v3.responsedecoratormetadataitem.description.md) |  | string |  |
+|  [responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md) |  | number |  |
+|  [responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md) |  | [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md) |  |
 
 

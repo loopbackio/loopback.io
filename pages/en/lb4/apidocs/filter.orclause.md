@@ -32,8 +32,8 @@ export interface OrClause<MT extends object>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [or](./filter.orclause.or.md) | [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\] |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [or](./filter.orclause.or.md) |  | [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\] |  |
 
 

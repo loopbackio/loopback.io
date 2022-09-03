@@ -25,7 +25,7 @@ Functions for more artifacts will be added when needed.
 
 |  Class | Description |
 |  --- | --- |
-|  [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | An extension point for OpenAPI Spec enhancement This service is used for enhancing an OpenAPI spec by loading and applying one or more registered enhancers.<!-- -->A typical use of it would be generating the OpenAPI spec for the endpoints on a server in the <code>@loopback/rest</code> module. |
+|  [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | <p>An extension point for OpenAPI Spec enhancement This service is used for enhancing an OpenAPI spec by loading and applying one or more registered enhancers.</p><p>A typical use of it would be generating the OpenAPI spec for the endpoints on a server in the <code>@loopback/rest</code> module.</p> |
 
 ## Enumerations
 
@@ -37,28 +37,28 @@ Functions for more artifacts will be added when needed.
 
 |  Function | Description |
 |  --- | --- |
-|  [api(spec)](./openapi-v3.api.md) | Decorate the given Controller constructor with metadata describing the HTTP/REST API the Controller implements/provides.<code>@api</code> can be applied to controller classes. |
+|  [api(spec)](./openapi-v3.api.md) | <p>Decorate the given Controller constructor with metadata describing the HTTP/REST API the Controller implements/provides.</p><p><code>@api</code> can be applied to controller classes.</p> |
 |  [createEmptyApiSpec()](./openapi-v3.createemptyapispec.md) | Create an empty OpenApiSpec object that's still a valid openapi document. |
 |  [del(path, spec)](./openapi-v3.del.md) | Expose a Controller method as a REST API operation mapped to <code>DELETE</code> request method. |
-|  [deprecated(isDeprecated)](./openapi-v3.deprecated.md) | Marks an api path as deprecated. When applied to a class, this decorator marks all paths as deprecated.<!-- -->You can optionally mark all controllers in a class as deprecated, but use <code>@deprecated(false)</code> on a specific method to ensure it is not marked as deprecated in the specification. |
+|  [deprecated(isDeprecated)](./openapi-v3.deprecated.md) | <p>Marks an api path as deprecated. When applied to a class, this decorator marks all paths as deprecated.</p><p>You can optionally mark all controllers in a class as deprecated, but use <code>@deprecated(false)</code> on a specific method to ensure it is not marked as deprecated in the specification.</p> |
 |  [get(path, spec)](./openapi-v3.get.md) | Expose a Controller method as a REST API operation mapped to <code>GET</code> request method. |
 |  [getControllerSpec(constructor)](./openapi-v3.getcontrollerspec.md) | Get the controller spec for the given class |
-|  [getFilterSchemaFor(modelCtor, options)](./openapi-v3.getfilterschemafor.md) | Build an OpenAPI schema describing the format of the "filter" object used to query model instances.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getFilterSchemaFor(modelCtor, options)](./openapi-v3.getfilterschemafor.md) | <p>Build an OpenAPI schema describing the format of the "filter" object used to query model instances.</p><p>Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.</p> |
 |  [getModelSchemaRef(modelCtor, options)](./openapi-v3.getmodelschemaref.md) | Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema. |
-|  [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md) | Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.<!-- -->Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition. |
+|  [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md) | <p>Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.</p><p>Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.</p> |
 |  [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md) | Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html |
 |  [jsonToSchemaObject(json, visited)](./openapi-v3.jsontoschemaobject.md) | Converts JSON Schemas into a SchemaObject |
-|  [mergeOpenAPISpec(currentSpec, patchSpec)](./openapi-v3.mergeopenapispec.md) | The default merge function to patch the current OpenAPI spec. It leverages module <code>json-merge-patch</code>'s merge API to merge two json objects. It returns a new merged object without modifying the original one.<!-- -->A list of merging rules can be found in test file: https://github.com/pierreinglebert/json-merge-patch/blob/master/test/lib/merge.js |
+|  [mergeOpenAPISpec(currentSpec, patchSpec)](./openapi-v3.mergeopenapispec.md) | <p>The default merge function to patch the current OpenAPI spec. It leverages module <code>json-merge-patch</code>'s merge API to merge two json objects. It returns a new merged object without modifying the original one.</p><p>A list of merging rules can be found in test file: https://github.com/pierreinglebert/json-merge-patch/blob/master/test/lib/merge.js</p> |
 |  [mergeSecuritySchemeToSpec(spec, schemeName, schemeSpec)](./openapi-v3.mergesecurityschemetospec.md) | Security scheme merge helper function to patch the current OpenAPI spec. It provides a direct route to add a security schema to the specs components. It returns a new merged object without modifying the original one. |
 |  [operation(verb, path, spec)](./openapi-v3.operation.md) | Expose a Controller method as a REST API operation. |
-|  [param(paramSpec)](./openapi-v3.param.md) | Describe an input parameter of a Controller method.<code>@param</code> must be applied to parameters. |
+|  [param(paramSpec)](./openapi-v3.param.md) | <p>Describe an input parameter of a Controller method.</p><p><code>@param</code> must be applied to parameters.</p> |
 |  [patch(path, spec)](./openapi-v3.patch.md) | Expose a Controller method as a REST API operation mapped to <code>PATCH</code> request method. |
 |  [post(path, spec)](./openapi-v3.post.md) | Expose a Controller method as a REST API operation mapped to <code>POST</code> request method. |
 |  [put(path, spec)](./openapi-v3.put.md) | Expose a Controller method as a REST API operation mapped to <code>PUT</code> request method. |
-|  [requestBody(requestBodySpec)](./openapi-v3.requestbody.md) | Describe the request body of a Controller method parameter.<!-- -->A typical OpenAPI requestBody spec contains property: - <code>description</code> - <code>required</code> - <code>content</code>. |
+|  [requestBody(requestBodySpec)](./openapi-v3.requestbody.md) | <p>Describe the request body of a Controller method parameter.</p><p>A typical OpenAPI requestBody spec contains property: - <code>description</code> - <code>required</code> - <code>content</code>.</p> |
 |  [response(responseCode, responseModelOrSpec)](./openapi-v3.response.md) | Add response object to a path spec. |
 |  [tags(tagNames)](./openapi-v3.tags.md) | Add tags for an endpoint. When applied to a class, this decorator adds the tags to all endpoints. |
-|  [visibility(visibilityType)](./openapi-v3.visibility.md) | Marks an api path with the specfied visibility. When applied to a class, this decorator marks all paths with the specified visibility.<!-- -->You can optionally mark all controllers in a class with <code>@visibility('undocumented')</code>, but use <code>@visibility('documented')</code> on a specific method to ensure it is not marked as <code>undocumented</code>. |
+|  [visibility(visibilityType)](./openapi-v3.visibility.md) | <p>Marks an api path with the specfied visibility. When applied to a class, this decorator marks all paths with the specified visibility.</p><p>You can optionally mark all controllers in a class with <code>@visibility('undocumented')</code>, but use <code>@visibility('documented')</code> on a specific method to ensure it is not marked as <code>undocumented</code>.</p> |
 
 ## Interfaces
 

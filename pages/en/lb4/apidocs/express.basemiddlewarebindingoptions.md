@@ -24,9 +24,9 @@ export interface BaseMiddlewareBindingOptions<CTX extends Context> extends Middl
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [group?](./express.basemiddlewarebindingoptions.group.md) | string | <i>(Optional)</i> An optional <code>group</code> name to be used for order of executions |
-|  [key?](./express.basemiddlewarebindingoptions.key.md) | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt; | <i>(Optional)</i> Binding key for the middleware. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [group?](./express.basemiddlewarebindingoptions.group.md) |  | string | <i>(Optional)</i> An optional <code>group</code> name to be used for order of executions |
+|  [key?](./express.basemiddlewarebindingoptions.key.md) |  | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt; | <i>(Optional)</i> Binding key for the middleware. |
 
 

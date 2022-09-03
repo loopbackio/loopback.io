@@ -33,7 +33,7 @@ export declare class Permission
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\[securityId\]](./security.permission._securityid_.md) |  | string |  |
+|  [\[securityId\]](./security.permission._securityid_.md) | <code>readonly</code> | string |  |
 |  [action](./security.permission.action.md) |  | string | Action or access of a protected resources, such as <code>read</code>, <code>create</code>, <code>update</code>, or <code>delete</code> |
 |  [resourceId?](./security.permission.resourceid.md) |  | string | <i>(Optional)</i> Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
 |  [resourceProperty?](./security.permission.resourceproperty.md) |  | string | <i>(Optional)</i> Property of a protected resource type/instance, such as <code>email</code> |

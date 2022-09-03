@@ -31,7 +31,7 @@ export declare class ModelDefinition
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.modeldefinition.name.md) |  | string |  |
+|  [name](./repository.modeldefinition.name.md) | <code>readonly</code> | string |  |
 |  [properties](./repository.modeldefinition.properties.md) |  | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md)<!-- -->; } |  |
 |  [relations](./repository.modeldefinition.relations.md) |  | [RelationDefinitionMap](./repository.relationdefinitionmap.md) |  |
 |  [settings](./repository.modeldefinition.settings.md) |  | [ModelSettings](./repository.modelsettings.md) |  |

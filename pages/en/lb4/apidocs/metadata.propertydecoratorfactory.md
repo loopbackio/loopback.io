@@ -20,7 +20,7 @@ Factory for property decorators
 ```typescript
 export declare class PropertyDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T>, PropertyDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, PropertyDecorator
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, PropertyDecorator&gt;
 
 ## Methods
 
@@ -28,7 +28,7 @@ export declare class PropertyDecoratorFactory<T> extends DecoratorFactory<T, Met
 |  --- | --- | --- |
 |  [create()](./metadata.propertydecoratorfactory.create.md) |  |  |
 |  [createDecorator(key, spec, options)](./metadata.propertydecoratorfactory.createdecorator.md) | <code>static</code> | Create a property decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, propertyName, descriptorOrIndex)](./metadata.propertydecoratorfactory.mergewithinherited.md) |  |  |
-|  [mergeWithOwn(ownMetadata, target, propertyName, descriptorOrParameterIndex)](./metadata.propertydecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithInherited(inheritedMetadata, target, propertyName, descriptorOrIndex)](./metadata.propertydecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
+|  [mergeWithOwn(ownMetadata, target, propertyName, descriptorOrParameterIndex)](./metadata.propertydecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

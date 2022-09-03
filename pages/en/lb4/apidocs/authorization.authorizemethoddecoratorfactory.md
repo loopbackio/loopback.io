@@ -18,12 +18,12 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizemethoddecoratorfactory.htm
 ```typescript
 export declare class AuthorizeMethodDecoratorFactory extends MethodDecoratorFactory<AuthorizationMetadata> 
 ```
-<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)
+<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt;
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./authorization.authorizemethoddecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./authorization.authorizemethoddecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

@@ -32,7 +32,7 @@ export declare class LoopBackContainer implements ContainerType
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [ctx](./graphql.loopbackcontainer.ctx.md) |  | [Context](./context.context.md) |  |
+|  [ctx](./graphql.loopbackcontainer.ctx.md) | <code>readonly</code> | [Context](./context.context.md) |  |
 
 ## Methods
 

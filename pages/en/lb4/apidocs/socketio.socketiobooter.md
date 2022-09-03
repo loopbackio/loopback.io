@@ -40,7 +40,7 @@ Supported phases: `configure`<!-- -->, `discover`<!-- -->, `load`
 |  --- | --- | --- | --- |
 |  [app](./socketio.socketiobooter.app.md) |  | [Application](./core.application.md) |  |
 |  [socketioControllerConfig](./socketio.socketiobooter.socketiocontrollerconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
-|  [socketioServer](./socketio.socketiobooter.socketioserver.md) |  | [SocketIoServer](./socketio.socketioserver.md) |  |
+|  [socketioServer](./socketio.socketiobooter.socketioserver.md) | <code>protected</code> | [SocketIoServer](./socketio.socketioserver.md) |  |
 
 ## Methods
 

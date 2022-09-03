@@ -32,7 +32,7 @@ export declare class ExpressApplication extends Application
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [config?](./express.expressapplication.config.md) |  | [ApplicationConfig](./core.applicationconfig.md) \| undefined | <i>(Optional)</i> |
-|  [expressServer](./express.expressapplication.expressserver.md) |  | [ExpressServer](./express.expressserver.md) | Embedded Express Server |
+|  [config?](./express.expressapplication.config.md) | <code>readonly</code> | [ApplicationConfig](./core.applicationconfig.md) \| undefined | <i>(Optional)</i> |
+|  [expressServer](./express.expressapplication.expressserver.md) | <code>readonly</code> | [ExpressServer](./express.expressserver.md) | Embedded Express Server |
 
 

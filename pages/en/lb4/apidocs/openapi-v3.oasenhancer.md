@@ -23,9 +23,9 @@ export interface OASEnhancer
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [name](./openapi-v3.oasenhancer.name.md) | string |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [name](./openapi-v3.oasenhancer.name.md) |  | string |  |
 
 ## Methods
 

@@ -38,12 +38,12 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_cachedBindings](./context.contextview._cachedbindings.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] \| undefined | An array of cached bindings that matches the binding filter |
-|  [\_cachedValues](./context.contextview._cachedvalues.md) |  | Map&lt;Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;, T&gt; \| undefined | A map of cached values by binding |
-|  [bindings](./context.contextview.bindings.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | Get the list of matched bindings. If they are not cached, it tries to find them from the context. |
-|  [comparator?](./context.contextview.comparator.md) |  | [BindingComparator](./context.bindingcomparator.md) \| undefined | <i>(Optional)</i> |
-|  [context](./context.contextview.context.md) |  | [Context](./context.context.md) |  |
-|  [filter](./context.contextview.filter.md) |  | [BindingFilter](./context.bindingfilter.md) |  |
+|  [\_cachedBindings](./context.contextview._cachedbindings.md) | <code>protected</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] \| undefined | An array of cached bindings that matches the binding filter |
+|  [\_cachedValues](./context.contextview._cachedvalues.md) | <code>protected</code> | Map&lt;Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;, T&gt; \| undefined | A map of cached values by binding |
+|  [bindings](./context.contextview.bindings.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | Get the list of matched bindings. If they are not cached, it tries to find them from the context. |
+|  [comparator?](./context.contextview.comparator.md) | <code>readonly</code> | [BindingComparator](./context.bindingcomparator.md) \| undefined | <i>(Optional)</i> |
+|  [context](./context.contextview.context.md) | <code>readonly</code> | [Context](./context.context.md) |  |
+|  [filter](./context.contextview.filter.md) | <code>readonly</code> | [BindingFilter](./context.bindingfilter.md) |  |
 
 ## Methods
 
@@ -51,7 +51,7 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 |  --- | --- | --- |
 |  [asGetter(session)](./context.contextview.asgetter.md) |  | As a <code>Getter</code> function |
 |  [close()](./context.contextview.close.md) |  | Stop listening events from the context |
-|  [findBindings()](./context.contextview.findbindings.md) |  | Find matching bindings and refresh the cache |
+|  [findBindings()](./context.contextview.findbindings.md) | <code>protected</code> | Find matching bindings and refresh the cache |
 |  [observe(event, binding, context)](./context.contextview.observe.md) |  | Listen on <code>bind</code> or <code>unbind</code> and invalidate the cache |
 |  [on(eventName, listener)](./context.contextview.on.md) |  | The "bind" event is emitted when a new binding is added to the view. |
 |  [on(eventName, listener)](./context.contextview.on_1.md) |  | The "unbind" event is emitted a new binding is removed from the view. |

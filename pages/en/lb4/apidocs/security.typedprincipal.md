@@ -30,8 +30,8 @@ export declare class TypedPrincipal implements Principal
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\[securityId\]](./security.typedprincipal._securityid_.md) |  | string |  |
-|  [principal](./security.typedprincipal.principal.md) |  | [Principal](./security.principal.md) |  |
-|  [type](./security.typedprincipal.type.md) |  | string |  |
+|  [\[securityId\]](./security.typedprincipal._securityid_.md) | <code>readonly</code> | string |  |
+|  [principal](./security.typedprincipal.principal.md) | <code>readonly</code> | [Principal](./security.principal.md) |  |
+|  [type](./security.typedprincipal.type.md) | <code>readonly</code> | string |  |
 
 

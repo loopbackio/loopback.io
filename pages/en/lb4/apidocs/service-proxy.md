@@ -19,7 +19,7 @@ A common set of interfaces for interacting with service oriented backends such a
 
 |  Class | Description |
 |  --- | --- |
-|  [ServiceMixinDoc](./service-proxy.servicemixindoc.md) | A dummy class created to generate the tsdoc for the members in service mixin. Please don't use it.<!-- -->The members are implemented in function <a href="#ServiceMixin">ServiceMixin</a> |
+|  [ServiceMixinDoc](./service-proxy.servicemixindoc.md) | <p>A dummy class created to generate the tsdoc for the members in service mixin. Please don't use it.</p><p>The members are implemented in function <a href="#ServiceMixin">ServiceMixin</a></p> |
 |  [ServiceProxyMetadata](./service-proxy.serviceproxymetadata.md) | Metadata for a service proxy |
 
 ## Functions

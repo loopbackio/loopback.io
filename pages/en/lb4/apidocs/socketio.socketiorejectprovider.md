@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiorejectprovider.html
 ```typescript
 export declare class SocketIoRejectProvider implements Provider<SocketIoRejectMethod> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoRejectMethod](./socketio.socketiorejectmethod.md)
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoRejectMethod](./socketio.socketiorejectmethod.md)<!-- -->&gt;
 
 ## Methods
 

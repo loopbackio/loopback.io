@@ -22,9 +22,9 @@ export interface SchemaMigrationOptions extends Options
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [existingSchema?](./repository.schemamigrationoptions.existingschema.md) | 'drop' \| 'alter' | <i>(Optional)</i> When set to 'drop', schema migration will drop existing tables and recreate them from scratch, removing any existing data along the way.<!-- -->When set to 'alter', schema migration will try to preserve current schema and data, and perform a non-destructive incremental update. |
-|  [models?](./repository.schemamigrationoptions.models.md) | string\[\] | <i>(Optional)</i> List of model names to migrate.<!-- -->By default, all models are migrated. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [existingSchema?](./repository.schemamigrationoptions.existingschema.md) |  | 'drop' \| 'alter' | <p><i>(Optional)</i> When set to 'drop', schema migration will drop existing tables and recreate them from scratch, removing any existing data along the way.</p><p>When set to 'alter', schema migration will try to preserve current schema and data, and perform a non-destructive incremental update.</p> |
+|  [models?](./repository.schemamigrationoptions.models.md) |  | string\[\] | <p><i>(Optional)</i> List of model names to migrate.</p><p>By default, all models are migrated.</p> |
 
 

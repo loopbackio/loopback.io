@@ -23,9 +23,9 @@ export interface HostPort
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [host](./testlab.hostport.host.md) | string |  |
-|  [port](./testlab.hostport.port.md) | number |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [host](./testlab.hostport.host.md) |  | string |  |
+|  [port](./testlab.hostport.port.md) |  | number |  |
 
 

@@ -35,32 +35,32 @@ export declare class Application extends Context implements LifeCycleObserver
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [options](./core.application.options.md) |  | [ApplicationConfig](./core.applicationconfig.md) |  |
-|  [state](./core.application.state.md) |  | string | Get the state of the application. The initial state is <code>created</code> and it can transition as follows by <code>start</code> and <code>stop</code>:<!-- -->1. start - !started -<!-- -->&gt; starting -<!-- -->&gt; started - started -<!-- -->&gt; started (no-op) 2. stop - (started \| initialized) -<!-- -->&gt; stopping -<!-- -->&gt; stopped - ! (started \|\| initialized) -<!-- -->&gt; stopped (no-op)<!-- -->Two types of states are expected: - stable, such as <code>started</code> and <code>stopped</code> - in process, such as <code>booting</code> and <code>starting</code>Operations such as <code>start</code> and <code>stop</code> can only be called at a stable state. The logic should immediately set the state to a new one indicating work in process, such as <code>starting</code> and <code>stopping</code>. |
+|  [options](./core.application.options.md) | <code>readonly</code> | [ApplicationConfig](./core.applicationconfig.md) |  |
+|  [state](./core.application.state.md) | <code>readonly</code> | string | <p>Get the state of the application. The initial state is <code>created</code> and it can transition as follows by <code>start</code> and <code>stop</code>:</p><p>1. start - !started -<!-- -->&gt; starting -<!-- -->&gt; started - started -<!-- -->&gt; started (no-op) 2. stop - (started \| initialized) -<!-- -->&gt; stopping -<!-- -->&gt; stopped - ! (started \|\| initialized) -<!-- -->&gt; stopped (no-op)</p><p>Two types of states are expected: - stable, such as <code>started</code> and <code>stopped</code> - in process, such as <code>booting</code> and <code>starting</code></p><p>Operations such as <code>start</code> and <code>stop</code> can only be called at a stable state. The logic should immediately set the state to a new one indicating work in process, such as <code>starting</code> and <code>stopping</code>.</p> |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [assertInStates(op, states)](./core.application.assertinstates.md) |  | Assert current state of the application to be one of the expected values |
-|  [assertNotInProcess(op)](./core.application.assertnotinprocess.md) |  | Assert there is no other operation is in progress, i.e., the state is not <code>*ing</code>, such as <code>starting</code> or <code>stopping</code>. |
-|  [awaitState(state)](./core.application.awaitstate.md) |  |  |
+|  [assertInStates(op, states)](./core.application.assertinstates.md) | <code>protected</code> | Assert current state of the application to be one of the expected values |
+|  [assertNotInProcess(op)](./core.application.assertnotinprocess.md) | <code>protected</code> | Assert there is no other operation is in progress, i.e., the state is not <code>*ing</code>, such as <code>starting</code> or <code>stopping</code>. |
+|  [awaitState(state)](./core.application.awaitstate.md) | <code>protected</code> |  |
 |  [component(componentCtor, nameOrOptions)](./core.application.component.md) |  | Add a component to this application and register extensions such as controllers, providers, and servers from the component. |
 |  [controller(controllerCtor, nameOrOptions)](./core.application.controller.md) |  | Register a controller class with this application. |
 |  [getServer(target)](./core.application.getserver.md) |  | Retrieve the singleton instance for a bound server. |
-|  [init()](./core.application.init.md) |  | Initialize the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>initialize</code>.<!-- -->If the application is already initialized, no operation is performed.<!-- -->This method is automatically invoked by <code>start()</code> if the application is not initialized. |
+|  [init()](./core.application.init.md) |  | <p>Initialize the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>initialize</code>.</p><p>If the application is already initialized, no operation is performed.</p><p>This method is automatically invoked by <code>start()</code> if the application is not initialized.</p> |
 |  [interceptor(interceptor, nameOrOptions)](./core.application.interceptor.md) |  | Register an interceptor |
 |  [lifeCycleObserver(ctor, nameOrOptions)](./core.application.lifecycleobserver.md) |  | Register a life cycle observer class |
-|  [onInit(fn)](./core.application.oninit.md) |  | Register a function to be called when the application initializes.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>init()</code> method. |
-|  [onStart(fn)](./core.application.onstart.md) |  | Register a function to be called when the application starts.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method. |
-|  [onStop(fn)](./core.application.onstop.md) |  | Register a function to be called when the application starts.<!-- -->This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method. |
+|  [onInit(fn)](./core.application.oninit.md) |  | <p>Register a function to be called when the application initializes.</p><p>This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>init()</code> method.</p> |
+|  [onStart(fn)](./core.application.onstart.md) |  | <p>Register a function to be called when the application starts.</p><p>This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method.</p> |
+|  [onStop(fn)](./core.application.onstop.md) |  | <p>Register a function to be called when the application starts.</p><p>This is a shortcut for adding a binding for a LifeCycleObserver implementing a <code>start()</code> method.</p> |
 |  [server(ctor, nameOrOptions)](./core.application.server.md) |  | Bind a Server constructor to the Application's master context. Each server constructor added in this way must provide a unique prefix to prevent binding overlap. |
 |  [servers(ctors)](./core.application.servers.md) |  | Bind an array of Server constructors to the Application's master context. Each server added in this way will automatically be named based on the class constructor name with the "servers." prefix. |
 |  [service(cls, nameOrOptions)](./core.application.service.md) |  | Add a service to this application. |
 |  [setMetadata(metadata)](./core.application.setmetadata.md) |  | Set application metadata. <code>@loopback/boot</code> calls this method to populate the metadata from <code>package.json</code>. |
-|  [setState(state)](./core.application.setstate.md) |  | Transition the application to a new state and emit an event |
-|  [setupShutdown()](./core.application.setupshutdown.md) |  | Set up signals that are captured to shutdown the application |
-|  [start()](./core.application.start.md) |  | Start the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>start</code>.<!-- -->If the application is not initialized, it calls first <code>init()</code> to initialize the application. This only happens if <code>start()</code> is called for the first time.<!-- -->If the application is already started, no operation is performed. |
-|  [stop()](./core.application.stop.md) |  | Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of <code>stop</code>.<!-- -->If the application is already stopped or not started, no operation is performed. |
+|  [setState(state)](./core.application.setstate.md) | <code>protected</code> | Transition the application to a new state and emit an event |
+|  [setupShutdown()](./core.application.setupshutdown.md) | <code>protected</code> | Set up signals that are captured to shutdown the application |
+|  [start()](./core.application.start.md) |  | <p>Start the application, and all of its registered observers. The application state is checked to ensure the integrity of <code>start</code>.</p><p>If the application is not initialized, it calls first <code>init()</code> to initialize the application. This only happens if <code>start()</code> is called for the first time.</p><p>If the application is already started, no operation is performed.</p> |
+|  [stop()](./core.application.stop.md) |  | <p>Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of <code>stop</code>.</p><p>If the application is already stopped or not started, no operation is performed.</p> |
 
 

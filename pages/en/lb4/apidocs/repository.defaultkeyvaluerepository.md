@@ -20,7 +20,7 @@ An implementation of KeyValueRepository based on loopback-datasource-juggler
 ```typescript
 export declare class DefaultKeyValueRepository<T extends Model> implements KeyValueRepository<T> 
 ```
-<b>Implements:</b> [KeyValueRepository](./repository.keyvaluerepository.md)
+<b>Implements:</b> [KeyValueRepository](./repository.keyvaluerepository.md)<!-- -->&lt;T&gt;
 
 ## Constructors
 
@@ -44,7 +44,7 @@ export declare class DefaultKeyValueRepository<T extends Model> implements KeyVa
 |  [get(key, options)](./repository.defaultkeyvaluerepository.get.md) |  |  |
 |  [keys(filter, options)](./repository.defaultkeyvaluerepository.keys.md) |  |  |
 |  [set(key, value, options)](./repository.defaultkeyvaluerepository.set.md) |  |  |
-|  [toEntity(modelData)](./repository.defaultkeyvaluerepository.toentity.md) |  |  |
+|  [toEntity(modelData)](./repository.defaultkeyvaluerepository.toentity.md) | <code>protected</code> |  |
 |  [ttl(key, options)](./repository.defaultkeyvaluerepository.ttl.md) |  |  |
 
 

@@ -20,7 +20,7 @@ Factory for an append-array of method-level decorators The `@response` metadata 
 ```typescript
 export declare class MethodMultiDecoratorFactory<T> extends MethodDecoratorFactory<T[]> 
 ```
-<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)
+<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;T\[\]&gt;
 
 ## Example
 
@@ -43,7 +43,7 @@ The factory creates and updates an array of items T\[\], and the getter provides
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [mergeWithInherited(inheritedMetadata, target, methodName)](./metadata.methodmultidecoratorfactory.mergewithinherited.md) |  |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodmultidecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithInherited(inheritedMetadata, target, methodName)](./metadata.methodmultidecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
+|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodmultidecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

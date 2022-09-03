@@ -23,9 +23,9 @@ export interface ContextObserver
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [filter?](./context.contextobserver.filter.md) | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> An optional filter function to match bindings. If not present, the listener will be notified of all binding events. |
-|  [observe](./context.contextobserver.observe.md) | [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [filter?](./context.contextobserver.filter.md) |  | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> An optional filter function to match bindings. If not present, the listener will be notified of all binding events. |
+|  [observe](./context.contextobserver.observe.md) |  | [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
 
 

@@ -23,12 +23,12 @@ export interface ModelDefinitionSyntax
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [jsonSchema?](./repository.modeldefinitionsyntax.jsonschema.md) | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | <i>(Optional)</i> |
-|  [name](./repository.modeldefinitionsyntax.name.md) | string |  |
-|  [properties?](./repository.modeldefinitionsyntax.properties.md) | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md)<!-- -->; } | <i>(Optional)</i> |
-|  [relations?](./repository.modeldefinitionsyntax.relations.md) | [RelationDefinitionMap](./repository.relationdefinitionmap.md) | <i>(Optional)</i> |
-|  [settings?](./repository.modeldefinitionsyntax.settings.md) | [ModelSettings](./repository.modelsettings.md) | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [jsonSchema?](./repository.modeldefinitionsyntax.jsonschema.md) |  | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | <i>(Optional)</i> |
+|  [name](./repository.modeldefinitionsyntax.name.md) |  | string |  |
+|  [properties?](./repository.modeldefinitionsyntax.properties.md) |  | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md)<!-- -->; } | <i>(Optional)</i> |
+|  [relations?](./repository.modeldefinitionsyntax.relations.md) |  | [RelationDefinitionMap](./repository.relationdefinitionmap.md) | <i>(Optional)</i> |
+|  [settings?](./repository.modeldefinitionsyntax.settings.md) |  | [ModelSettings](./repository.modelsettings.md) | <i>(Optional)</i> |
 
 

@@ -25,9 +25,9 @@ export interface ModelRepositoryClass<M extends Model, R extends Repository<M>>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [prototype](./repository.modelrepositoryclass.prototype.md) | R |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [prototype](./repository.modelrepositoryclass.prototype.md) |  | R |  |
 
 ## Methods
 

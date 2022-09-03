@@ -21,10 +21,10 @@ export interface ControllerSpec
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [basePath?](./openapi-v3.controllerspec.basepath.md) | string | <i>(Optional)</i> The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/). |
-|  [components?](./openapi-v3.controllerspec.components.md) | ComponentsObject | <i>(Optional)</i> OpenAPI components.schemas generated from model metadata |
-|  [paths](./openapi-v3.controllerspec.paths.md) | PathObject | The available paths and operations for the API. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [basePath?](./openapi-v3.controllerspec.basepath.md) |  | string | <i>(Optional)</i> The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/). |
+|  [components?](./openapi-v3.controllerspec.components.md) |  | ComponentsObject | <i>(Optional)</i> OpenAPI components.schemas generated from model metadata |
+|  [paths](./openapi-v3.controllerspec.paths.md) |  | PathObject | The available paths and operations for the API. |
 
 

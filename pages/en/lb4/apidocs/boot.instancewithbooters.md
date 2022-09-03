@@ -23,8 +23,8 @@ export interface InstanceWithBooters
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [booters?](./boot.instancewithbooters.booters.md) | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\] | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [booters?](./boot.instancewithbooters.booters.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\] | <i>(Optional)</i> |
 
 

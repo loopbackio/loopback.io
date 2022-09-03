@@ -32,8 +32,8 @@ export declare class TrieRouter extends BaseRouter
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [addRouteWithPathVars(route)](./rest.trierouter.addroutewithpathvars.md) |  |  |
-|  [findRouteWithPathVars(verb, path)](./rest.trierouter.findroutewithpathvars.md) |  |  |
-|  [listRoutesWithPathVars()](./rest.trierouter.listrouteswithpathvars.md) |  |  |
+|  [addRouteWithPathVars(route)](./rest.trierouter.addroutewithpathvars.md) | <code>protected</code> |  |
+|  [findRouteWithPathVars(verb, path)](./rest.trierouter.findroutewithpathvars.md) | <code>protected</code> |  |
+|  [listRoutesWithPathVars()](./rest.trierouter.listrouteswithpathvars.md) | <code>protected</code> |  |
 
 

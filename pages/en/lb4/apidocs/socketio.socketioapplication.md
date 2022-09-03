@@ -30,7 +30,7 @@ export declare class SocketIoApplication extends Application
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [socketServer](./socketio.socketioapplication.socketserver.md) |  | [SocketIoServer](./socketio.socketioserver.md) | The main Socket server instance providing Socket connections for this application. |
+|  [socketServer](./socketio.socketioapplication.socketserver.md) | <code>readonly</code> | [SocketIoServer](./socketio.socketioserver.md) | The main Socket server instance providing Socket connections for this application. |
 
 ## Methods
 

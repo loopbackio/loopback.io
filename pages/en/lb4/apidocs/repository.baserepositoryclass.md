@@ -25,9 +25,9 @@ export interface BaseRepositoryClass<M extends typeof Model, R extends Repositor
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [prototype](./repository.baserepositoryclass.prototype.md) | R |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [prototype](./repository.baserepositoryclass.prototype.md) |  | R |  |
 
 ## Methods
 

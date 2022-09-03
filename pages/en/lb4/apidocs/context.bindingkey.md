@@ -24,9 +24,9 @@ export declare class BindingKey<ValueType>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md) | <code>static</code> | string | Name space for configuration binding keys |
-|  [key](./context.bindingkey.key.md) |  | string |  |
-|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <code>static</code> | (not declared) |  |
-|  [propertyPath?](./context.bindingkey.propertypath.md) |  | string \| undefined | <i>(Optional)</i> |
+|  [key](./context.bindingkey.key.md) | <code>readonly</code> | string |  |
+|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <p><code>readonly</code></p><p><code>static</code></p> | (not declared) |  |
+|  [propertyPath?](./context.bindingkey.propertypath.md) | <code>readonly</code> | string \| undefined | <i>(Optional)</i> |
 
 ## Methods
 
@@ -35,7 +35,7 @@ export declare class BindingKey<ValueType>
 |  [buildKeyForConfig(key)](./context.bindingkey.buildkeyforconfig.md) | <code>static</code> | Build a binding key for the configuration of the given binding. The format is <code>&lt;key&gt;:$config</code> |
 |  [create(key, propertyPath)](./context.bindingkey.create.md) | <code>static</code> | Create a new key for a binding bound to a value of type <code>ValueType</code>. |
 |  [deepProperty(propertyPath)](./context.bindingkey.deepproperty.md) |  | Get a binding address for retrieving a deep property of the object bound to the current binding key. |
-|  [generate(namespace)](./context.bindingkey.generate.md) | <code>static</code> | Generate a universally unique binding key.<!-- -->Please note the format of they generated key is not specified, you must not rely on any specific formatting (e.g. UUID style). |
+|  [generate(namespace)](./context.bindingkey.generate.md) | <code>static</code> | <p>Generate a universally unique binding key.</p><p>Please note the format of they generated key is not specified, you must not rely on any specific formatting (e.g. UUID style).</p> |
 |  [parseKeyWithPath(keyWithPath)](./context.bindingkey.parsekeywithpath.md) | <code>static</code> | Parse a string containing both the binding key and the path to the deeply nested property to retrieve. |
 |  [toString()](./context.bindingkey.tostring.md) |  |  |
 |  [validate(key)](./context.bindingkey.validate.md) | <code>static</code> | Validate the binding key format. Please note that <code>#</code> is reserved. Returns a string representation of the binding key. |

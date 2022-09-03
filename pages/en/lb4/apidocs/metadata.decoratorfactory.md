@@ -56,28 +56,28 @@ class MyController {}
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [decoratorName](./metadata.decoratorfactory.decoratorname.md) |  | string |  |
-|  [key](./metadata.decoratorfactory.key.md) |  | string |  |
-|  [options](./metadata.decoratorfactory.options.md) |  | [DecoratorOptions](./metadata.decoratoroptions.md) |  |
-|  [spec](./metadata.decoratorfactory.spec.md) |  | T |  |
+|  [decoratorName](./metadata.decoratorfactory.decoratorname.md) | <code>protected</code> | string |  |
+|  [key](./metadata.decoratorfactory.key.md) | <code>protected</code> | string |  |
+|  [options](./metadata.decoratorfactory.options.md) | <code>protected</code> | [DecoratorOptions](./metadata.decoratoroptions.md) |  |
+|  [spec](./metadata.decoratorfactory.spec.md) | <code>protected</code> | T |  |
 |  [TARGET](./metadata.decoratorfactory.target.md) | <code>static</code> | string | A constant to reference the target of a decoration |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [\_createDecorator(key, spec, options)](./metadata.decoratorfactory._createdecorator.md) | <code>static</code> | Create a decorator function |
-|  [allowInheritance()](./metadata.decoratorfactory.allowinheritance.md) |  |  |
+|  [\_createDecorator(key, spec, options)](./metadata.decoratorfactory._createdecorator.md) | <p><code>protected</code></p><p><code>static</code></p> | Create a decorator function |
+|  [allowInheritance()](./metadata.decoratorfactory.allowinheritance.md) | <code>protected</code> |  |
 |  [cloneDeep(val)](./metadata.decoratorfactory.clonedeep.md) | <code>static</code> |  |
 |  [create()](./metadata.decoratorfactory.create.md) |  | Create a decorator function of the given type. Each sub class MUST implement this method. |
-|  [decorate(target, member, descriptorOrIndex)](./metadata.decoratorfactory.decorate.md) |  | Base implementation of the decorator function |
-|  [duplicateDecorationError(target, member, descriptorOrIndex)](./metadata.decoratorfactory.duplicatedecorationerror.md) |  | Create an error to report if the decorator is applied to the target more than once |
+|  [decorate(target, member, descriptorOrIndex)](./metadata.decoratorfactory.decorate.md) | <code>protected</code> | Base implementation of the decorator function |
+|  [duplicateDecorationError(target, member, descriptorOrIndex)](./metadata.decoratorfactory.duplicatedecorationerror.md) | <code>protected</code> | Create an error to report if the decorator is applied to the target more than once |
 |  [getNumberOfParameters(target, member)](./metadata.decoratorfactory.getnumberofparameters.md) | <code>static</code> | Get the number of parameters for a given constructor or method |
 |  [getTarget(spec)](./metadata.decoratorfactory.gettarget.md) |  | Get the optional decoration target of a given spec |
 |  [getTargetName(target, member, descriptorOrIndex)](./metadata.decoratorfactory.gettargetname.md) | <code>static</code> | Get the qualified name of a decoration target. |
-|  [inherit(inheritedMetadata)](./metadata.decoratorfactory.inherit.md) |  | Inherit metadata from base classes. By default, this method merges base metadata into the spec if <code>allowInheritance</code> is set to <code>true</code>. To customize the behavior, this method can be overridden by sub classes. |
-|  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithinherited.md) |  | This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the inherited metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.<!-- -->It MUST be overridden by subclasses to process inherited metadata. |
-|  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithown.md) |  | This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the own metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.<!-- -->It MUST be overridden by subclasses to process own metadata. |
+|  [inherit(inheritedMetadata)](./metadata.decoratorfactory.inherit.md) | <code>protected</code> | Inherit metadata from base classes. By default, this method merges base metadata into the spec if <code>allowInheritance</code> is set to <code>true</code>. To customize the behavior, this method can be overridden by sub classes. |
+|  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithinherited.md) | <code>protected</code> | <p>This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the inherited metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.</p><p>It MUST be overridden by subclasses to process inherited metadata.</p> |
+|  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithown.md) | <code>protected</code> | <p>This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the own metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.</p><p>It MUST be overridden by subclasses to process own metadata.</p> |
 |  [withTarget(spec, target)](./metadata.decoratorfactory.withtarget.md) |  | Set a reference to the target class or prototype for a given spec if it's an object |
 
 

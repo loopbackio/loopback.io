@@ -25,11 +25,11 @@ export declare class ResolutionSession
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindingStack](./context.resolutionsession.bindingstack.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;\[\] | Getter for bindings on the stack |
-|  [currentBinding](./context.resolutionsession.currentbinding.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; \| undefined | Getter for the current binding |
-|  [currentInjection](./context.resolutionsession.currentinjection.md) |  | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; \| undefined | Getter for the current injection |
-|  [injectionStack](./context.resolutionsession.injectionstack.md) |  | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;\[\] | Getter for injections on the stack |
-|  [stack](./context.resolutionsession.stack.md) |  | [ResolutionElement](./context.resolutionelement.md)<!-- -->\[\] | A stack of bindings for the current resolution session. It's used to track the path of dependency resolution and detect circular dependencies. |
+|  [bindingStack](./context.resolutionsession.bindingstack.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;\[\] | Getter for bindings on the stack |
+|  [currentBinding](./context.resolutionsession.currentbinding.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; \| undefined | Getter for the current binding |
+|  [currentInjection](./context.resolutionsession.currentinjection.md) | <code>readonly</code> | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; \| undefined | Getter for the current injection |
+|  [injectionStack](./context.resolutionsession.injectionstack.md) | <code>readonly</code> | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;\[\] | Getter for injections on the stack |
+|  [stack](./context.resolutionsession.stack.md) | <code>readonly</code> | [ResolutionElement](./context.resolutionelement.md)<!-- -->\[\] | A stack of bindings for the current resolution session. It's used to track the path of dependency resolution and detect circular dependencies. |
 
 ## Methods
 

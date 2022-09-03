@@ -32,7 +32,7 @@ export declare class GenericInterceptorChain<C extends Context = Context>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [getInterceptors](./context.genericinterceptorchain.getinterceptors.md) |  | () =&gt; [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | A getter for an array of interceptor functions or binding keys |
+|  [getInterceptors](./context.genericinterceptorchain.getinterceptors.md) | <code>protected</code> | () =&gt; [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | A getter for an array of interceptor functions or binding keys |
 
 ## Methods
 

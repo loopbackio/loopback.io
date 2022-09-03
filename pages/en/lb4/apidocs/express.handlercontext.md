@@ -23,9 +23,9 @@ export interface HandlerContext
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [request](./express.handlercontext.request.md) | Request |  |
-|  [response](./express.handlercontext.response.md) | Response |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [request](./express.handlercontext.request.md) | <code>readonly</code> | Request |  |
+|  [response](./express.handlercontext.response.md) | <code>readonly</code> | Response |  |
 
 

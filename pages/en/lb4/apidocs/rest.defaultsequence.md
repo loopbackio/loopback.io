@@ -46,10 +46,10 @@ app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [findRoute](./rest.defaultsequence.findroute.md) |  | [FindRoute](./rest.findroute.md) |  |
-|  [invoke](./rest.defaultsequence.invoke.md) |  | [InvokeMethod](./rest.invokemethod.md) |  |
-|  [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md) |  | [InvokeMiddleware](./express.invokemiddleware.md) | Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE. |
-|  [parseParams](./rest.defaultsequence.parseparams.md) |  | [ParseParams](./rest.parseparams.md) |  |
+|  [findRoute](./rest.defaultsequence.findroute.md) | <code>protected</code> | [FindRoute](./rest.findroute.md) |  |
+|  [invoke](./rest.defaultsequence.invoke.md) | <code>protected</code> | [InvokeMethod](./rest.invokemethod.md) |  |
+|  [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md) | <code>protected</code> | [InvokeMiddleware](./express.invokemiddleware.md) | Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE. |
+|  [parseParams](./rest.defaultsequence.parseparams.md) | <code>protected</code> | [ParseParams](./rest.parseparams.md) |  |
 |  [reject](./rest.defaultsequence.reject.md) |  | [Reject](./rest.reject.md) |  |
 |  [send](./rest.defaultsequence.send.md) |  | [Send](./rest.send.md) |  |
 
@@ -57,6 +57,6 @@ app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [handle(context)](./rest.defaultsequence.handle.md) |  | Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.<!-- -->Default sequence executes these steps - Executes middleware for CORS, OpenAPI spec endpoints - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error. |
+|  [handle(context)](./rest.defaultsequence.handle.md) |  | <p>Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.</p><p>Default sequence executes these steps - Executes middleware for CORS, OpenAPI spec endpoints - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error.</p> |
 
 

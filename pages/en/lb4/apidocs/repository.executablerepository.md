@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.executablerepository.html
 ```typescript
 export interface ExecutableRepository<T extends Model> extends Repository<T> 
 ```
-<b>Extends:</b> [Repository](./repository.repository.md)
+<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

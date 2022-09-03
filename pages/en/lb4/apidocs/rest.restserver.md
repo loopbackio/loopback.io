@@ -54,38 +54,38 @@ const server = await app.get('servers.foo');
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_expressApp?](./rest.restserver._expressapp.md) |  | express.Application | <i>(Optional)</i> |
-|  [\_httpHandler](./rest.restserver._httphandler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
-|  [\_httpServer](./rest.restserver._httpserver.md) |  | [HttpServer](./http-server.httpserver.md) \| undefined |  |
-|  [\_requestHandler](./rest.restserver._requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |
-|  [config](./rest.restserver.config.md) |  | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  [httpHandler](./rest.restserver.httphandler.md) |  | [HttpHandler](./rest.httphandler.md) |  |
-|  [httpServer](./rest.restserver.httpserver.md) |  | [HttpServer](./http-server.httpserver.md) \| undefined |  |
-|  [listening](./rest.restserver.listening.md) |  | boolean |  |
-|  [OASEnhancer](./rest.restserver.oasenhancer.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) |  |
-|  [oasEnhancerService](./rest.restserver.oasenhancerservice.md) |  | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
-|  [requestHandler](./rest.restserver.requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |
-|  [rootUrl](./rest.restserver.rooturl.md) |  | string \| undefined | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
-|  [url](./rest.restserver.url.md) |  | string \| undefined | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
+|  [\_expressApp?](./rest.restserver._expressapp.md) | <code>protected</code> | express.Application | <i>(Optional)</i> |
+|  [\_httpHandler](./rest.restserver._httphandler.md) | <code>protected</code> | [HttpHandler](./rest.httphandler.md) |  |
+|  [\_httpServer](./rest.restserver._httpserver.md) | <code>protected</code> | [HttpServer](./http-server.httpserver.md) \| undefined |  |
+|  [\_requestHandler](./rest.restserver._requesthandler.md) | <code>protected</code> | [HttpRequestListener](./rest.httprequestlistener.md) |  |
+|  [config](./rest.restserver.config.md) | <code>readonly</code> | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
+|  [httpHandler](./rest.restserver.httphandler.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [HttpHandler](./rest.httphandler.md) |  |
+|  [httpServer](./rest.restserver.httpserver.md) | <code>readonly</code> | [HttpServer](./http-server.httpserver.md) \| undefined |  |
+|  [listening](./rest.restserver.listening.md) | <code>readonly</code> | boolean |  |
+|  [OASEnhancer](./rest.restserver.oasenhancer.md) | <code>readonly</code> | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) |  |
+|  [oasEnhancerService](./rest.restserver.oasenhancerservice.md) | <code>protected</code> | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
+|  [requestHandler](./rest.restserver.requesthandler.md) | <code>readonly</code> | [HttpRequestListener](./rest.httprequestlistener.md) |  |
+|  [rootUrl](./rest.restserver.rooturl.md) | <code>readonly</code> | string \| undefined | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
+|  [url](./rest.restserver.url.md) | <code>readonly</code> | string \| undefined | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [\_applyExpressSettings()](./rest.restserver._applyexpresssettings.md) |  | Apply express settings. |
-|  [\_handleHttpRequest(request, response)](./rest.restserver._handlehttprequest.md) |  |  |
-|  [\_setupHandlerIfNeeded()](./rest.restserver._setuphandlerifneeded.md) |  |  |
-|  [\_setupOASEnhancerIfNeeded()](./rest.restserver._setupoasenhancerifneeded.md) |  |  |
-|  [\_setupOpenApiSpecEndpoints()](./rest.restserver._setupopenapispecendpoints.md) |  | Mount /openapi.json, /openapi.yaml for specs and /swagger-ui, /explorer to redirect to externally hosted API explorer |
-|  [\_setupRequestHandlerIfNeeded()](./rest.restserver._setuprequesthandlerifneeded.md) |  |  |
-|  [\_unexpectedErrorHandler()](./rest.restserver._unexpectederrorhandler.md) |  | Get an Express handler for unexpected errors |
+|  [\_applyExpressSettings()](./rest.restserver._applyexpresssettings.md) | <code>protected</code> | Apply express settings. |
+|  [\_handleHttpRequest(request, response)](./rest.restserver._handlehttprequest.md) | <code>protected</code> |  |
+|  [\_setupHandlerIfNeeded()](./rest.restserver._setuphandlerifneeded.md) | <code>protected</code> |  |
+|  [\_setupOASEnhancerIfNeeded()](./rest.restserver._setupoasenhancerifneeded.md) | <code>protected</code> |  |
+|  [\_setupOpenApiSpecEndpoints()](./rest.restserver._setupopenapispecendpoints.md) | <code>protected</code> | Mount /openapi.json, /openapi.yaml for specs and /swagger-ui, /explorer to redirect to externally hosted API explorer |
+|  [\_setupRequestHandlerIfNeeded()](./rest.restserver._setuprequesthandlerifneeded.md) | <code>protected</code> |  |
+|  [\_unexpectedErrorHandler()](./rest.restserver._unexpectederrorhandler.md) | <code>protected</code> | Get an Express handler for unexpected errors |
 |  [addOpenApiSpecEndpoint(path, form, router)](./rest.restserver.addopenapispecendpoint.md) |  | Add a new non-controller endpoint hosting a form of the OpenAPI spec. |
-|  [api(spec)](./rest.restserver.api.md) |  | Set the OpenAPI specification that defines the REST API schema for this server. All routes, parameter definitions and return types will be defined in this way.<!-- -->Note that this will override any routes defined via decorators at the controller level (this function takes precedent). |
+|  [api(spec)](./rest.restserver.api.md) |  | <p>Set the OpenAPI specification that defines the REST API schema for this server. All routes, parameter definitions and return types will be defined in this way.</p><p>Note that this will override any routes defined via decorators at the controller level (this function takes precedent).</p> |
 |  [basePath(path)](./rest.restserver.basepath.md) |  | Configure the <code>basePath</code> for the rest server |
 |  [bodyParser(bodyParserClass, address)](./rest.restserver.bodyparser.md) |  | Bind a body parser to the server context |
 |  [controller(controllerCtor)](./rest.restserver.controller.md) |  | Register a controller class with this server. |
 |  [exportOpenApiSpec(outFile, log)](./rest.restserver.exportopenapispec.md) |  | Export the OpenAPI spec to the given json or yaml file |
-|  [getApiSpec(requestContext)](./rest.restserver.getapispec.md) |  | Get the OpenAPI specification describing the REST API provided by this application.<!-- -->This method merges operations (HTTP endpoints) from the following sources: - <code>app.api(spec)</code> - <code>app.controller(MyController)</code> - <code>app.route(route)</code> - <code>app.route('get', '/greet', operationSpec, MyController, 'greet')</code>If the optional <code>requestContext</code> is provided, then the <code>servers</code> list in the returned spec will be updated to work in that context. Specifically: 1. if <code>config.openApi.setServersFromRequest</code> is enabled, the servers list will be replaced with the context base url 2. Any <code>servers</code> entries with a path of <code>/</code> will have that path replaced with <code>requestContext.basePath</code> |
+|  [getApiSpec(requestContext)](./rest.restserver.getapispec.md) |  | <p>Get the OpenAPI specification describing the REST API provided by this application.</p><p>This method merges operations (HTTP endpoints) from the following sources: - <code>app.api(spec)</code> - <code>app.controller(MyController)</code> - <code>app.route(route)</code> - <code>app.route('get', '/greet', operationSpec, MyController, 'greet')</code></p><p>If the optional <code>requestContext</code> is provided, then the <code>servers</code> list in the returned spec will be updated to work in that context. Specifically: 1. if <code>config.openApi.setServersFromRequest</code> is enabled, the servers list will be replaced with the context base url 2. Any <code>servers</code> entries with a path of <code>/</code> will have that path replaced with <code>requestContext.basePath</code></p> |
 |  [handler(handlerFn)](./rest.restserver.handler.md) |  | Configure a custom sequence function for handling incoming requests. |
 |  [mountExpressRouter(basePath, router, spec)](./rest.restserver.mountexpressrouter.md) |  | Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack. |
 |  [redirect(fromPath, toPathOrUrl, statusCode)](./rest.restserver.redirect.md) |  | Register a route redirecting callers to a different URL. |

@@ -23,13 +23,13 @@ export interface AuthorizationMetadata
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [allowedRoles?](./authorization.authorizationmetadata.allowedroles.md) | string\[\] | <i>(Optional)</i> Roles that are allowed access |
-|  [deniedRoles?](./authorization.authorizationmetadata.deniedroles.md) | string\[\] | <i>(Optional)</i> Roles that are denied access |
-|  [resource?](./authorization.authorizationmetadata.resource.md) | string | <i>(Optional)</i> Name of the resource, default to the method name |
-|  [scopes?](./authorization.authorizationmetadata.scopes.md) | string\[\] | <i>(Optional)</i> Define the access scopes |
-|  [skip?](./authorization.authorizationmetadata.skip.md) | boolean | <i>(Optional)</i> A flag to skip authorization |
-|  [voters?](./authorization.authorizationmetadata.voters.md) | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] | <i>(Optional)</i> Voters that help make the authorization decision |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [allowedRoles?](./authorization.authorizationmetadata.allowedroles.md) |  | string\[\] | <i>(Optional)</i> Roles that are allowed access |
+|  [deniedRoles?](./authorization.authorizationmetadata.deniedroles.md) |  | string\[\] | <i>(Optional)</i> Roles that are denied access |
+|  [resource?](./authorization.authorizationmetadata.resource.md) |  | string | <i>(Optional)</i> Name of the resource, default to the method name |
+|  [scopes?](./authorization.authorizationmetadata.scopes.md) |  | string\[\] | <i>(Optional)</i> Define the access scopes |
+|  [skip?](./authorization.authorizationmetadata.skip.md) |  | boolean | <i>(Optional)</i> A flag to skip authorization |
+|  [voters?](./authorization.authorizationmetadata.voters.md) |  | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] | <i>(Optional)</i> Voters that help make the authorization decision |
 
 

@@ -35,14 +35,14 @@ export declare class RestApplication extends Application implements HttpServerLi
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [requestHandler](./rest.restapplication.requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
-|  [restServer](./rest.restapplication.restserver.md) |  | [RestServer](./rest.restserver.md) | The main REST server instance providing REST API for this application. |
+|  [requestHandler](./rest.restapplication.requesthandler.md) | <code>readonly</code> | [HttpRequestListener](./rest.httprequestlistener.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
+|  [restServer](./rest.restapplication.restserver.md) | <code>readonly</code> | [RestServer](./rest.restserver.md) | The main REST server instance providing REST API for this application. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [api(spec)](./rest.restapplication.api.md) |  | Set the OpenAPI specification that defines the REST API schema for this application. All routes, parameter definitions and return types will be defined in this way.<!-- -->Note that this will override any routes defined via decorators at the controller level (this function takes precedent). |
+|  [api(spec)](./rest.restapplication.api.md) |  | <p>Set the OpenAPI specification that defines the REST API schema for this application. All routes, parameter definitions and return types will be defined in this way.</p><p>Note that this will override any routes defined via decorators at the controller level (this function takes precedent).</p> |
 |  [basePath(path)](./rest.restapplication.basepath.md) |  | Configure the <code>basePath</code> for the rest server |
 |  [bodyParser(bodyParserClass, address)](./rest.restapplication.bodyparser.md) |  | Bind a body parser to the server context |
 |  [exportOpenApiSpec(outFile, log)](./rest.restapplication.exportopenapispec.md) |  | Export the OpenAPI spec to the given json or yaml file |

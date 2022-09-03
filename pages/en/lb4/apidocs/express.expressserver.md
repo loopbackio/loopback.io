@@ -34,13 +34,13 @@ export declare class ExpressServer extends BaseMiddlewareRegistry implements Ser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [basePath](./express.expressserver.basepath.md) |  | string | Base path to mount middleware |
-|  [config?](./express.expressserver.config.md) |  | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | <i>(Optional)</i> |
-|  [expressApp](./express.expressserver.expressapp.md) |  | express.Application | Embedded Express application |
-|  [httpServer](./express.expressserver.httpserver.md) |  | [HttpServer](./http-server.httpserver.md) | HTTP/HTTPS server |
-|  [listening](./express.expressserver.listening.md) |  | boolean | Some of the methods below are copied from RestServer TODO(rfeng): We might want to refactor some methods from RestServer into the base ExpressServer. |
-|  [rootUrl](./express.expressserver.rooturl.md) |  | string \| undefined | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
-|  [url](./express.expressserver.url.md) |  | string \| undefined | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
+|  [basePath](./express.expressserver.basepath.md) | <code>readonly</code> | string | Base path to mount middleware |
+|  [config?](./express.expressserver.config.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | <i>(Optional)</i> |
+|  [expressApp](./express.expressserver.expressapp.md) | <code>readonly</code> | express.Application | Embedded Express application |
+|  [httpServer](./express.expressserver.httpserver.md) | <code>protected</code> | [HttpServer](./http-server.httpserver.md) | HTTP/HTTPS server |
+|  [listening](./express.expressserver.listening.md) | <code>readonly</code> | boolean | Some of the methods below are copied from RestServer TODO(rfeng): We might want to refactor some methods from RestServer into the base ExpressServer. |
+|  [rootUrl](./express.expressserver.rooturl.md) | <code>readonly</code> | string \| undefined | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
+|  [url](./express.expressserver.url.md) | <code>readonly</code> | string \| undefined | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
 
 ## Methods
 

@@ -30,7 +30,7 @@ This module provides data access facilities to various databases and services as
 |  [DefaultBelongsToRepository](./repository.defaultbelongstorepository.md) |  |
 |  [DefaultCrudRepository](./repository.defaultcrudrepository.md) | Default implementation of CRUD repository using legacy juggler model and data source |
 |  [DefaultHasManyRepository](./repository.defaulthasmanyrepository.md) |  |
-|  [DefaultHasManyThroughRepository](./repository.defaulthasmanythroughrepository.md) | a class for CRUD operations for hasManyThrough relation.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
+|  [DefaultHasManyThroughRepository](./repository.defaulthasmanythroughrepository.md) | <p>a class for CRUD operations for hasManyThrough relation.</p><p>Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.</p> |
 |  [DefaultHasOneRepository](./repository.defaulthasonerepository.md) |  |
 |  [DefaultKeyValueRepository](./repository.defaultkeyvaluerepository.md) | An implementation of KeyValueRepository based on loopback-datasource-juggler |
 |  [DefaultReferencesManyRepository](./repository.defaultreferencesmanyrepository.md) |  |
@@ -48,7 +48,7 @@ This module provides data access facilities to various databases and services as
 |  [NumberType](./repository.numbertype.md) | Number type |
 |  [ObjectType](./repository.objecttype.md) | Object type |
 |  [RepositoryMetadata](./repository.repositorymetadata.md) | Metadata for a repository |
-|  [RepositoryMixinDoc](./repository.repositorymixindoc.md) | A dummy class created to generate the tsdoc for the members in repository mixin. Please don't use it.<!-- -->The members are implemented in function <a href="#RepositoryMixin">RepositoryMixin</a> |
+|  [RepositoryMixinDoc](./repository.repositorymixindoc.md) | <p>A dummy class created to generate the tsdoc for the members in repository mixin. Please don't use it.</p><p>The members are implemented in function <a href="#RepositoryMixin">RepositoryMixin</a></p> |
 |  [StringType](./repository.stringtype.md) | String type |
 |  [UnionType](./repository.uniontype.md) | Union type, such as string \| number |
 |  [ValueObject](./repository.valueobject.md) | Base class for value objects - An object that contains attributes but has no conceptual identity. They should be treated as immutable. |
@@ -74,19 +74,19 @@ This module provides data access facilities to various databases and services as
 |  [constrainWhere(originalWhere, constraint)](./repository.constrainwhere.md) | A utility function which takes a where filter and enforces constraint(s) on it |
 |  [constrainWhereOr(originalWhere, constraint)](./repository.constrainwhereor.md) | A utility function which takes a where filter and enforces constraint(s) on it with OR clause |
 |  [createBelongsToAccessor(belongsToMetadata, targetRepositoryGetter, sourceRepository)](./repository.createbelongstoaccessor.md) | Enforces a BelongsTo constraint on a repository If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->} |
-|  [createBelongsToInclusionResolver(meta, getTargetRepoDict)](./repository.createbelongstoinclusionresolver.md) | Creates InclusionResolver for BelongsTo relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
-|  [createHasManyInclusionResolver(meta, getTargetRepo)](./repository.createhasmanyinclusionresolver.md) | Creates InclusionResolver for HasMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet. |
+|  [createBelongsToInclusionResolver(meta, getTargetRepoDict)](./repository.createbelongstoinclusionresolver.md) | <p>Creates InclusionResolver for BelongsTo relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.</p><p>Notice: scope field for inclusion is not supported yet</p> |
+|  [createHasManyInclusionResolver(meta, getTargetRepo)](./repository.createhasmanyinclusionresolver.md) | <p>Creates InclusionResolver for HasMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.</p><p>Notice: scope field for inclusion is not supported yet.</p> |
 |  [createHasManyRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasmanyrepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s). |
 |  [createHasManyThroughRepositoryFactory(relationMetadata, targetRepositoryGetter, throughRepositoryGetter)](./repository.createhasmanythroughrepositoryfactory.md) |  |
-|  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s).<!-- -->If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->} |
+|  [createHasOneRepositoryFactory(relationMetadata, targetRepositoryGetter)](./repository.createhasonerepositoryfactory.md) | <p>Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Address model via a HasOne relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s).</p><p>If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->}</p> |
 |  [createModelClassBinding(modelClass)](./repository.createmodelclassbinding.md) | Create a binding for the given model class |
 |  [createReferencesManyAccessor(referencesManyMetadata, targetRepoGetter, sourceRepository)](./repository.createreferencesmanyaccessor.md) | Enforces a ReferencesMany constraint on a repository |
-|  [createReferencesManyInclusionResolver(meta, getTargetRepo)](./repository.createreferencesmanyinclusionresolver.md) | Creates InclusionResolver for ReferencesMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.<!-- -->Notice: scope field for inclusion is not supported yet |
+|  [createReferencesManyInclusionResolver(meta, getTargetRepo)](./repository.createreferencesmanyinclusionresolver.md) | <p>Creates InclusionResolver for ReferencesMany relation. Notice that this function only generates the inclusionResolver. It doesn't register it for the source repository.</p><p>Notice: scope field for inclusion is not supported yet</p> |
 |  [deduplicate(input)](./repository.deduplicate.md) | Dedupe an array |
 |  [defineCrudRepositoryClass(entityClass)](./repository.definecrudrepositoryclass.md) | Create (define) an entity CRUD repository class for the given model. This function always uses <code>DefaultCrudRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
 |  [defineKeyValueRepositoryClass(modelClass)](./repository.definekeyvaluerepositoryclass.md) | Create (define) a KeyValue repository class for the given entity. This function always uses <code>DefaultKeyValueRepository</code> as the base class, use <code>defineRepositoryClass</code> if you want to use your own base repository. |
 |  [defineModelClass(base, definition)](./repository.definemodelclass.md) | Create (define) a new model class with the given name and definition. |
-|  [defineRepositoryClass(modelClass, baseRepositoryClass)](./repository.definerepositoryclass.md) | Create (define) a repository class for the given model.<!-- -->See also <code>defineCrudRepositoryClass</code> and <code>defineKeyValueRepositoryClass</code> for convenience wrappers providing repository class factory for the default CRUD and KeyValue implementations.<!-- -->\*\*❗️IMPORTANT: The compiler (TypeScript 3.8) is not able to correctly infer generic arguments <code>M</code> and <code>R</code> from the class constructors provided in function arguments. You must always provide both M and R types explicitly.\*\* |
+|  [defineRepositoryClass(modelClass, baseRepositoryClass)](./repository.definerepositoryclass.md) | <p>Create (define) a repository class for the given model.</p><p>See also <code>defineCrudRepositoryClass</code> and <code>defineKeyValueRepositoryClass</code> for convenience wrappers providing repository class factory for the default CRUD and KeyValue implementations.</p><p>\*\*❗️IMPORTANT: The compiler (TypeScript 3.8) is not able to correctly infer generic arguments <code>M</code> and <code>R</code> from the class constructors provided in function arguments. You must always provide both M and R types explicitly.\*\*</p> |
 |  [embedsMany(definition)](./repository.embedsmany.md) | Decorator for embedsMany |
 |  [embedsOne(definition)](./repository.embedsone.md) | Decorator for embedsOne |
 |  [ensurePromise(p)](./repository.ensurepromise.md) | Ensure the value is a promise |
@@ -128,7 +128,7 @@ This module provides data access facilities to various databases and services as
 |  --- | --- |
 |  [AnyObject](./repository.anyobject.md) | Objects with open properties |
 |  [ApplicationWithRepositories](./repository.applicationwithrepositories.md) | Interface for an Application mixed in with RepositoryMixin |
-|  [BaseRepositoryClass](./repository.baserepositoryclass.md) | Signature for repository classes that can be used as the base class for <code>define*</code> functions. The constructor of a base repository class accepts the target model constructor and the datasource to use.<code>define*</code> functions require a class implementing this interface on input. |
+|  [BaseRepositoryClass](./repository.baserepositoryclass.md) | <p>Signature for repository classes that can be used as the base class for <code>define*</code> functions. The constructor of a base repository class accepts the target model constructor and the datasource to use.</p><p><code>define*</code> functions require a class implementing this interface on input.</p> |
 |  [BelongsToAccessor](./repository.belongstoaccessor.md) |  |
 |  [BelongsToDefinition](./repository.belongstodefinition.md) |  |
 |  [BelongsToRepository](./repository.belongstorepository.md) | CRUD operations for a target repository of a BelongsTo relation |
@@ -145,7 +145,7 @@ This module provides data access facilities to various databases and services as
 |  [HasManyDefinition](./repository.hasmanydefinition.md) | HasManyDefinition defines one-to-many relations and also possible defines many-to-many relations with through models. |
 |  [HasManyRepository](./repository.hasmanyrepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md) |  |
-|  [HasManyThroughRepository](./repository.hasmanythroughrepository.md) | CRUD operations for a target repository of a HasManyThrough relation<!-- -->EXPERIMENTAL: This interface is not stable and may change in the near future. Backwards-incompatible changes may be introduced in semver-minor versions. |
+|  [HasManyThroughRepository](./repository.hasmanythroughrepository.md) | <p>CRUD operations for a target repository of a HasManyThrough relation</p><p>EXPERIMENTAL: This interface is not stable and may change in the near future. Backwards-incompatible changes may be introduced in semver-minor versions.</p> |
 |  [HasOneDefinition](./repository.hasonedefinition.md) |  |
 |  [HasOneRepository](./repository.hasonerepository.md) | CRUD operations for a target repository of a HasMany relation |
 |  [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md) |  |
@@ -153,7 +153,7 @@ This module provides data access facilities to various databases and services as
 |  [KeyValueRepository](./repository.keyvaluerepository.md) | Key/Value operations for connector implementations |
 |  [KVConnector](./repository.kvconnector.md) | Key/Value operations for connector implementations |
 |  [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | DSL for building a model definition. |
-|  [ModelRepositoryClass](./repository.modelrepositoryclass.md) | Signature for a Repository class bound to a given model. The constructor accepts only the dataSource to use for persistence.<code>define*</code> functions return a class implementing this interface. |
+|  [ModelRepositoryClass](./repository.modelrepositoryclass.md) | <p>Signature for a Repository class bound to a given model. The constructor accepts only the dataSource to use for persistence.</p><p><code>define*</code> functions return a class implementing this interface.</p> |
 |  [ModelSettings](./repository.modelsettings.md) | Defining the settings for a model See https://loopback.io/doc/en/lb4/Model.html\#supported-entries-of-model-definition |
 |  [Persistable](./repository.persistable.md) |  |
 |  [PropertyDefinition](./repository.propertydefinition.md) | Property definition for a model |
@@ -206,10 +206,10 @@ This module provides data access facilities to various databases and services as
 |  [Constructor](./repository.constructor.md) | Constructor type - class or function |
 |  [DataObject](./repository.dataobject.md) | Type alias for strongly or weakly typed objects of T |
 |  [DeepPartial](./repository.deeppartial.md) | An extension of the built-in Partial<T> type which allows partial values in deeply nested properties too. |
-|  [DynamicModelCtor](./repository.dynamicmodelctor.md) | A type describing a model class created via <code>defineModelClass</code>.<!-- -->Assuming template arguments <code>BaseCtor</code> and <code>Props</code>, this type describes a class constructor with the following properties: - a constructor function accepting <code>DataObject&lt;Props&gt;</code> as the only argument, this argument is optional - all static fields (properties, methods) from <code>BaseCtor</code> are inherited and available as static fields on the dynamic class - all prototype fields from <code>BaseCtor</code> prototype are inherited and available as prototype fields on the dynamic class |
+|  [DynamicModelCtor](./repository.dynamicmodelctor.md) | <p>A type describing a model class created via <code>defineModelClass</code>.</p><p>Assuming template arguments <code>BaseCtor</code> and <code>Props</code>, this type describes a class constructor with the following properties: - a constructor function accepting <code>DataObject&lt;Props&gt;</code> as the only argument, this argument is optional - all static fields (properties, methods) from <code>BaseCtor</code> are inherited and available as static fields on the dynamic class - all prototype fields from <code>BaseCtor</code> prototype are inherited and available as prototype fields on the dynamic class</p> |
 |  [EntityData](./repository.entitydata.md) |  |
 |  [EntityResolver](./repository.entityresolver.md) |  |
-|  [HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md) | a factory to generate hasManyThrough repository class.<!-- -->Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released. |
+|  [HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md) | <p>a factory to generate hasManyThrough repository class.</p><p>Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.</p> |
 |  [InclusionResolver](./repository.inclusionresolver.md) |  |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
 |  [NamedParameters](./repository.namedparameters.md) | Named parameters, such as <code>{x: 1, y: 'a'}</code> |
@@ -217,12 +217,12 @@ This module provides data access facilities to various databases and services as
 |  [PositionalParameters](./repository.positionalparameters.md) | Positional parameters, such as \[1, 'a'\] |
 |  [PropertyMap](./repository.propertymap.md) |  |
 |  [PropertyType](./repository.propertytype.md) |  |
-|  [PrototypeOf](./repository.prototypeof.md) | Type helper to infer prototype from a constructor function.<!-- -->Example: <code>PrototypeOf&lt;typeof Entity&gt;</code> is resolved to <code>Entity</code>. |
+|  [PrototypeOf](./repository.prototypeof.md) | <p>Type helper to infer prototype from a constructor function.</p><p>Example: <code>PrototypeOf&lt;typeof Entity&gt;</code> is resolved to <code>Entity</code>.</p> |
 |  [RelationDefinitionMap](./repository.relationdefinitionmap.md) | A key-value map describing model relations. A relation name is used as the key, a relation definition is the value. |
 |  [RelationMetadata](./repository.relationmetadata.md) | A union type describing all possible Relation metadata objects. |
 |  [RepositoryDecorator](./repository.repositorydecorator.md) | Type definition for decorators returned by <code>@repository</code> decorator factory |
 |  [StringKeyOf](./repository.stringkeyof.md) |  |
 |  [TransactionalEntityRepository](./repository.transactionalentityrepository.md) | A type for CRUD repositories that are backed by IDs and support Transactions |
-|  [TypeResolver](./repository.typeresolver.md) | A type resolver is a function that returns a class representing the type, typically a Model or Entity (e.g. Product).<!-- -->We use type resolvers to break require() loops when defining relations. The target model (class) is provided via a provider, thus deferring the actual reference to the class itself until later, when both sides of the relation are created as JavaScript classes. |
+|  [TypeResolver](./repository.typeresolver.md) | <p>A type resolver is a function that returns a class representing the type, typically a Model or Entity (e.g. Product).</p><p>We use type resolvers to break require() loops when defining relations. The target model (class) is provided via a provider, thus deferring the actual reference to the class itself until later, when both sides of the relation are created as JavaScript classes.</p> |
 
 

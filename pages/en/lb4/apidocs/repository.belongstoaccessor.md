@@ -21,8 +21,8 @@ export interface BelongsToAccessor<Target extends Entity, SourceId>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [inclusionResolver](./repository.belongstoaccessor.inclusionresolver.md) | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt; | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [inclusionResolver](./repository.belongstoaccessor.inclusionresolver.md) |  | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt; | Use <code>resolver</code> property to obtain an InclusionResolver for this relation. |
 
 

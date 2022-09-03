@@ -33,14 +33,14 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [isLocked](./context.binding.islocked.md) |  | boolean |  |
-|  [key](./context.binding.key.md) |  | string | Key of the binding |
-|  [providerConstructor](./context.binding.providerconstructor.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| undefined | For bindings bound via <code>toProvider()</code>, this property contains the constructor function of the provider class |
-|  [scope](./context.binding.scope.md) |  | [BindingScope](./context.bindingscope.md) | Scope of the binding to control how the value is cached/shared |
-|  [source](./context.binding.source.md) |  | [BindingSource](./context.bindingsource.md)<!-- -->&lt;T&gt; \| undefined |  |
-|  [tagMap](./context.binding.tagmap.md) |  | [TagMap](./context.tagmap.md) | Map for tag name/value pairs |
-|  [tagNames](./context.binding.tagnames.md) |  | string\[\] | Get an array of tag names |
-|  [type](./context.binding.type.md) |  | [BindingType](./context.bindingtype.md) \| undefined | Type of the binding value getter |
-|  [valueConstructor](./context.binding.valueconstructor.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| undefined | For bindings bound via <code>toClass()</code>, this property contains the constructor function of the class |
+|  [key](./context.binding.key.md) | <code>readonly</code> | string | Key of the binding |
+|  [providerConstructor](./context.binding.providerconstructor.md) | <code>readonly</code> | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| undefined | For bindings bound via <code>toProvider()</code>, this property contains the constructor function of the provider class |
+|  [scope](./context.binding.scope.md) | <code>readonly</code> | [BindingScope](./context.bindingscope.md) | Scope of the binding to control how the value is cached/shared |
+|  [source](./context.binding.source.md) | <code>readonly</code> | [BindingSource](./context.bindingsource.md)<!-- -->&lt;T&gt; \| undefined |  |
+|  [tagMap](./context.binding.tagmap.md) | <code>readonly</code> | [TagMap](./context.tagmap.md) | Map for tag name/value pairs |
+|  [tagNames](./context.binding.tagnames.md) | <code>readonly</code> | string\[\] | Get an array of tag names |
+|  [type](./context.binding.type.md) | <code>readonly</code> | [BindingType](./context.bindingtype.md) \| undefined | Type of the binding value getter |
+|  [valueConstructor](./context.binding.valueconstructor.md) | <code>readonly</code> | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| undefined | For bindings bound via <code>toClass()</code>, this property contains the constructor function of the class |
 
 ## Methods
 
@@ -50,7 +50,7 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [applyDefaultScope(scope)](./context.binding.applydefaultscope.md) |  | Apply default scope to the binding. It only changes the scope if it's not set yet |
 |  [bind(key)](./context.binding.bind.md) | <code>static</code> | A static method to create a binding so that we can do <code>Binding.bind('foo').to('bar');</code> as <code>new Binding('foo').to('bar')</code> is not easy to read. |
 |  [configure(key)](./context.binding.configure.md) | <code>static</code> | Create a configuration binding for the given key |
-|  [getValue(ctx, session)](./context.binding.getvalue.md) |  | This is an internal function optimized for performance. Users should use <code>@inject(key)</code> or <code>ctx.get(key)</code> instead.<!-- -->Get the value bound to this key. Depending on <code>isSync</code>, this function returns either: - the bound value - a promise of the bound value<!-- -->Consumers wishing to consume sync values directly should use <code>isPromiseLike</code> to check the type of the returned value to decide how to handle it. |
+|  [getValue(ctx, session)](./context.binding.getvalue.md) |  | <p>This is an internal function optimized for performance. Users should use <code>@inject(key)</code> or <code>ctx.get(key)</code> instead.</p><p>Get the value bound to this key. Depending on <code>isSync</code>, this function returns either: - the bound value - a promise of the bound value</p><p>Consumers wishing to consume sync values directly should use <code>isPromiseLike</code> to check the type of the returned value to decide how to handle it.</p> |
 |  [getValue(ctx, options)](./context.binding.getvalue_1.md) |  | Returns a value or promise for this binding in the given context. The resolved value can be <code>undefined</code> if <code>optional</code> is set to <code>true</code> in <code>options</code>. |
 |  [inScope(scope)](./context.binding.inscope.md) |  | Set the binding scope |
 |  [inspect(options)](./context.binding.inspect.md) |  | Inspect the binding to return a json representation of the binding information |
@@ -65,9 +65,9 @@ export declare class Binding<T = BoundValue> extends EventEmitter
 |  [toAlias(keyWithPath)](./context.binding.toalias.md) |  | Bind the key to an alias of another binding |
 |  [toClass(ctor)](./context.binding.toclass.md) |  | Bind the key to an instance of the given class. |
 |  [toDynamicValue(factory)](./context.binding.todynamicvalue.md) |  | Bind the key to a computed (dynamic) value. |
-|  [toInjectable(ctor)](./context.binding.toinjectable.md) |  | Bind to a class optionally decorated with <code>@injectable</code>. Based on the introspection of the class, it calls <code>toClass/toProvider/toDynamicValue</code> internally. The current binding key will be preserved (not being overridden by the key inferred from the class or options).<!-- -->This is similar to [createBindingFromClass()](./context.createbindingfromclass.md) but applies to an existing binding. |
+|  [toInjectable(ctor)](./context.binding.toinjectable.md) |  | <p>Bind to a class optionally decorated with <code>@injectable</code>. Based on the introspection of the class, it calls <code>toClass/toProvider/toDynamicValue</code> internally. The current binding key will be preserved (not being overridden by the key inferred from the class or options).</p><p>This is similar to [createBindingFromClass()](./context.createbindingfromclass.md) but applies to an existing binding.</p> |
 |  [toJSON()](./context.binding.tojson.md) |  | Convert to a plain JSON object |
-|  [toProvider(providerClass)](./context.binding.toprovider.md) |  | Bind the key to a value computed by a Provider.<!-- -->\* |
+|  [toProvider(providerClass)](./context.binding.toprovider.md) |  | <p>Bind the key to a value computed by a Provider.</p><p>\*</p> |
 |  [unlock()](./context.binding.unlock.md) |  | Unlock the binding |
 
 

@@ -20,7 +20,7 @@ Repository Interface for Repositories that support Transactions
 ```typescript
 export interface TransactionalRepository<T extends Entity> extends Repository<T> 
 ```
-<b>Extends:</b> [Repository](./repository.repository.md)
+<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

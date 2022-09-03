@@ -23,14 +23,14 @@ export interface Filter<MT extends object = AnyObject>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [fields?](./filter.filter.fields.md) | [Fields](./filter.fields.md)<!-- -->&lt;MT&gt; | <i>(Optional)</i> To include/exclude fields |
-|  [include?](./filter.filter.include.md) | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | <i>(Optional)</i> To include related objects |
-|  [limit?](./filter.filter.limit.md) | number | <i>(Optional)</i> Maximum number of entities |
-|  [offset?](./filter.filter.offset.md) | number | <i>(Optional)</i> Offset N number of entities. An alias for <code>skip</code> |
-|  [order?](./filter.filter.order.md) | string\[\] | <i>(Optional)</i> Sorting order for matched entities. Each item should be formatted as <code>fieldName ASC</code> or <code>fieldName DESC</code>. For example: <code>['f1 ASC', 'f2 DESC', 'f3 ASC']</code>.<!-- -->We might want to use <code>Order</code> in the future. Keep it as <code>string[]</code> for now for compatibility with LoopBack 3.x. |
-|  [skip?](./filter.filter.skip.md) | number | <i>(Optional)</i> Skip N number of entities |
-|  [where?](./filter.filter.where.md) | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | <i>(Optional)</i> The matching criteria |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [fields?](./filter.filter.fields.md) |  | [Fields](./filter.fields.md)<!-- -->&lt;MT&gt; | <i>(Optional)</i> To include/exclude fields |
+|  [include?](./filter.filter.include.md) |  | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | <i>(Optional)</i> To include related objects |
+|  [limit?](./filter.filter.limit.md) |  | number | <i>(Optional)</i> Maximum number of entities |
+|  [offset?](./filter.filter.offset.md) |  | number | <i>(Optional)</i> Offset N number of entities. An alias for <code>skip</code> |
+|  [order?](./filter.filter.order.md) |  | string\[\] | <p><i>(Optional)</i> Sorting order for matched entities. Each item should be formatted as <code>fieldName ASC</code> or <code>fieldName DESC</code>. For example: <code>['f1 ASC', 'f2 DESC', 'f3 ASC']</code>.</p><p>We might want to use <code>Order</code> in the future. Keep it as <code>string[]</code> for now for compatibility with LoopBack 3.x.</p> |
+|  [skip?](./filter.filter.skip.md) |  | number | <i>(Optional)</i> Skip N number of entities |
+|  [where?](./filter.filter.where.md) |  | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | <i>(Optional)</i> The matching criteria |
 
 

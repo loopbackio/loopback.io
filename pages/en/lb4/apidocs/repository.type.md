@@ -21,9 +21,9 @@ export interface Type<T>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [name](./repository.type.name.md) | string | Name of the type |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [name](./repository.type.name.md) |  | string | Name of the type |
 
 ## Methods
 

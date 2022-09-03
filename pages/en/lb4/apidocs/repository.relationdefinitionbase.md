@@ -21,12 +21,12 @@ export interface RelationDefinitionBase
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [name](./repository.relationdefinitionbase.name.md) | string | The relation name, typically matching the name of the accessor property defined on the source model. For example "orders" or "customer". |
-|  [source](./repository.relationdefinitionbase.source.md) | typeof [Entity](./repository.entity.md) | The source model of this relation.<!-- -->E.g. when a Customer has many Order instances, then Customer is the source. |
-|  [target](./repository.relationdefinitionbase.target.md) | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; | The target model of this relation.<!-- -->E.g. when a Customer has many Order instances, then Order is the target. |
-|  [targetsMany](./repository.relationdefinitionbase.targetsmany.md) | boolean | True for relations targeting multiple instances (e.g. HasMany), false for relations with a single target (e.g. BelongsTo, HasOne). This property is needed by OpenAPI/JSON Schema generator. |
-|  [type](./repository.relationdefinitionbase.type.md) | [RelationType](./repository.relationtype.md) | The type of the relation, must be one of RelationType values. |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [name](./repository.relationdefinitionbase.name.md) |  | string | The relation name, typically matching the name of the accessor property defined on the source model. For example "orders" or "customer". |
+|  [source](./repository.relationdefinitionbase.source.md) |  | typeof [Entity](./repository.entity.md) | <p>The source model of this relation.</p><p>E.g. when a Customer has many Order instances, then Customer is the source.</p> |
+|  [target](./repository.relationdefinitionbase.target.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; | <p>The target model of this relation.</p><p>E.g. when a Customer has many Order instances, then Order is the target.</p> |
+|  [targetsMany](./repository.relationdefinitionbase.targetsmany.md) |  | boolean | True for relations targeting multiple instances (e.g. HasMany), false for relations with a single target (e.g. BelongsTo, HasOne). This property is needed by OpenAPI/JSON Schema generator. |
+|  [type](./repository.relationdefinitionbase.type.md) |  | [RelationType](./repository.relationtype.md) | The type of the relation, must be one of RelationType values. |
 
 

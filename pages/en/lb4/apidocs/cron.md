@@ -46,6 +46,6 @@ permalink: /doc/en/lb4/apidocs.cron.html
 |  Type Alias | Description |
 |  --- | --- |
 |  [CronJobConfig](./cron.cronjobconfig.md) | Configuration for a cron job. |
-|  [CronJobOptions](./cron.cronjoboptions.md) | Options for a cron job. It adds an optional <code>name</code> to cron parameters.[cron configuration](https://github.com/kelektiv/node-cron#api) |
+|  [CronJobOptions](./cron.cronjoboptions.md) | <p>Options for a cron job. It adds an optional <code>name</code> to cron parameters.</p><p>[cron configuration](https://github.com/kelektiv/node-cron#api)</p> |
 
 

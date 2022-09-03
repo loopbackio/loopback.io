@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosendprovider.html
 ```typescript
 export declare class SocketIoSendProvider implements Provider<SocketIoSendMethod> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoSendMethod](./socketio.socketiosendmethod.md)
+<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoSendMethod](./socketio.socketiosendmethod.md)<!-- -->&gt;
 
 ## Methods
 

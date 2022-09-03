@@ -21,8 +21,8 @@ export interface RestApplicationLike
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [restServer](./testlab.restapplicationlike.restserver.md) | [RestServerLike](./testlab.restserverlike.md) |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [restServer](./testlab.restapplicationlike.restserver.md) |  | [RestServerLike](./testlab.restserverlike.md) |  |
 
 

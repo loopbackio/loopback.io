@@ -30,11 +30,11 @@ export declare class DefaultSocketIoSequence implements SocketIoSequence
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./socketio.defaultsocketiosequence.context.md) |  | [Context](./context.context.md) |  |
-|  [controller](./socketio.defaultsocketiosequence.controller.md) |  | [ControllerClass](./core.controllerclass.md) |  |
-|  [invoke](./socketio.defaultsocketiosequence.invoke.md) |  | [SocketIoInvokeMethod](./socketio.socketioinvokemethod.md) |  |
-|  [reject](./socketio.defaultsocketiosequence.reject.md) |  | [SocketIoRejectMethod](./socketio.socketiorejectmethod.md) |  |
-|  [send](./socketio.defaultsocketiosequence.send.md) |  | [SocketIoSendMethod](./socketio.socketiosendmethod.md) |  |
+|  [context](./socketio.defaultsocketiosequence.context.md) | <code>protected</code> | [Context](./context.context.md) |  |
+|  [controller](./socketio.defaultsocketiosequence.controller.md) | <code>protected</code> | [ControllerClass](./core.controllerclass.md) |  |
+|  [invoke](./socketio.defaultsocketiosequence.invoke.md) | <code>protected</code> | [SocketIoInvokeMethod](./socketio.socketioinvokemethod.md) |  |
+|  [reject](./socketio.defaultsocketiosequence.reject.md) | <code>protected</code> | [SocketIoRejectMethod](./socketio.socketiorejectmethod.md) |  |
+|  [send](./socketio.defaultsocketiosequence.send.md) | <code>protected</code> | [SocketIoSendMethod](./socketio.socketiosendmethod.md) |  |
 
 ## Methods
 

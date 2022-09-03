@@ -20,7 +20,7 @@ Array type, such as string\[\]
 ```typescript
 export declare class ArrayType<T> implements Type<T[]> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;T\[\]&gt;
 
 ## Constructors
 
@@ -33,7 +33,7 @@ export declare class ArrayType<T> implements Type<T[]>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [itemType](./repository.arraytype.itemtype.md) |  | [Type](./repository.type.md)<!-- -->&lt;T&gt; |  |
-|  [name](./repository.arraytype.name.md) |  | (not declared) |  |
+|  [name](./repository.arraytype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

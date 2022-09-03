@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.model-api-builder.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/model-api-builder@4.0.1...@loopback/model-api-builder@4.0.2) (2022-07-14)
+
+**Note:** Version bump only for package @loopback/model-api-builder
+
+
+
+
+
 ## [4.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/model-api-builder@4.0.0...@loopback/model-api-builder@4.0.1) (2022-06-13)
 
 **Note:** Version bump only for package @loopback/model-api-builder

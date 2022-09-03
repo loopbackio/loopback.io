@@ -26,10 +26,10 @@ export declare class DefaultSubject implements Subject
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [authorities](./security.defaultsubject.authorities.md) |  | Set&lt;[Permission](./security.permission.md)<!-- -->&gt; |  |
-|  [credentials](./security.defaultsubject.credentials.md) |  | Set&lt;[Credential](./security.credential.md)<!-- -->&gt; |  |
-|  [principals](./security.defaultsubject.principals.md) |  | Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt; |  |
-|  [user](./security.defaultsubject.user.md) |  | [UserProfile](./security.userprofile.md) \| undefined |  |
+|  [authorities](./security.defaultsubject.authorities.md) | <code>readonly</code> | Set&lt;[Permission](./security.permission.md)<!-- -->&gt; |  |
+|  [credentials](./security.defaultsubject.credentials.md) | <code>readonly</code> | Set&lt;[Credential](./security.credential.md)<!-- -->&gt; |  |
+|  [principals](./security.defaultsubject.principals.md) | <code>readonly</code> | Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt; |  |
+|  [user](./security.defaultsubject.user.md) | <code>readonly</code> | [UserProfile](./security.userprofile.md) \| undefined |  |
 
 ## Methods
 

@@ -32,6 +32,6 @@ export declare class SocketIoConnectionContext extends Context
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [socket](./socketio.socketioconnectioncontext.socket.md) |  | Socket |  |
+|  [socket](./socketio.socketioconnectioncontext.socket.md) | <code>readonly</code> | Socket |  |
 
 

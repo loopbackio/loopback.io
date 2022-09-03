@@ -23,10 +23,10 @@ export interface ResolutionContext<T = unknown>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [binding](./context.resolutioncontext.binding.md) | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt; | The binding to be resolved |
-|  [context](./context.resolutioncontext.context.md) | [Context](./context.context.md) | The context for resolution |
-|  [options](./context.resolutioncontext.options.md) | [ResolutionOptions](./context.resolutionoptions.md) | The options used for resolution |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [binding](./context.resolutioncontext.binding.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt; | The binding to be resolved |
+|  [context](./context.resolutioncontext.context.md) | <code>readonly</code> | [Context](./context.context.md) | The context for resolution |
+|  [options](./context.resolutioncontext.options.md) | <code>readonly</code> | [ResolutionOptions](./context.resolutionoptions.md) | The options used for resolution |
 
 

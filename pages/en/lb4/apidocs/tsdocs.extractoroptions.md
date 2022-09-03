@@ -24,13 +24,13 @@ export interface ExtractorOptions extends ApiDocsOptions
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md) | boolean | <i>(Optional)</i> A flag to control if <code>apiReport</code> should be enabled |
-|  [config?](./tsdocs.extractoroptions.config.md) | IConfigFile | <i>(Optional)</i> Configuration for api-extractor |
-|  [ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md) | boolean | <i>(Optional)</i> A flag to control if errors should be ignored |
-|  [mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md) | string | <i>(Optional)</i> mainEntryPointFilePath |
-|  [tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md) | string | <i>(Optional)</i> Path for tsconfig |
-|  [typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md) | string | <i>(Optional)</i> Custom TypeScript compiler dir |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md) |  | boolean | <i>(Optional)</i> A flag to control if <code>apiReport</code> should be enabled |
+|  [config?](./tsdocs.extractoroptions.config.md) |  | IConfigFile | <i>(Optional)</i> Configuration for api-extractor |
+|  [ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md) |  | boolean | <i>(Optional)</i> A flag to control if errors should be ignored |
+|  [mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md) |  | string | <i>(Optional)</i> mainEntryPointFilePath |
+|  [tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md) |  | string | <i>(Optional)</i> Path for tsconfig |
+|  [typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md) |  | string | <i>(Optional)</i> Custom TypeScript compiler dir |
 
 

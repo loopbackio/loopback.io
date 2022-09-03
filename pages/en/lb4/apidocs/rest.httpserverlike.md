@@ -21,8 +21,8 @@ export interface HttpServerLike
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [requestHandler](./rest.httpserverlike.requesthandler.md) | [HttpRequestListener](./rest.httprequestlistener.md) |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [requestHandler](./rest.httpserverlike.requesthandler.md) |  | [HttpRequestListener](./rest.httprequestlistener.md) |  |
 
 

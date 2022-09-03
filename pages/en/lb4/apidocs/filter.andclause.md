@@ -32,8 +32,8 @@ export interface AndClause<MT extends object>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [and](./filter.andclause.and.md) | [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\] |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [and](./filter.andclause.and.md) |  | [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\] |  |
 
 

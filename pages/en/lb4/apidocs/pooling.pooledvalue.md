@@ -23,10 +23,10 @@ export interface PooledValue<T>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [pool](./pooling.pooledvalue.pool.md) | Pool&lt;T&gt; | The resource pool |
-|  [value](./pooling.pooledvalue.value.md) | T | Acquired value from the pool |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [pool](./pooling.pooledvalue.pool.md) |  | Pool&lt;T&gt; | The resource pool |
+|  [value](./pooling.pooledvalue.value.md) |  | T | Acquired value from the pool |
 
 ## Methods
 

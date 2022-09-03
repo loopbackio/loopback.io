@@ -33,10 +33,10 @@ export declare class SocketIoServer extends Context
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [app](./socketio.socketioserver.app.md) |  | [Application](./core.application.md) |  |
-|  [config](./socketio.socketioserver.config.md) |  | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) |  |
-|  [listening](./socketio.socketioserver.listening.md) |  | boolean |  |
-|  [options](./socketio.socketioserver.options.md) |  | [SocketIoServerOptions](./socketio.socketioserveroptions.md) |  |
-|  [url](./socketio.socketioserver.url.md) |  | string |  |
+|  [config](./socketio.socketioserver.config.md) | <code>readonly</code> | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) |  |
+|  [listening](./socketio.socketioserver.listening.md) | <code>readonly</code> | boolean |  |
+|  [options](./socketio.socketioserver.options.md) | <code>protected</code> | [SocketIoServerOptions](./socketio.socketioserveroptions.md) |  |
+|  [url](./socketio.socketioserver.url.md) | <code>readonly</code> | string |  |
 
 ## Methods
 

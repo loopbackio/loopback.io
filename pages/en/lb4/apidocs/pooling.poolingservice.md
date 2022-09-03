@@ -38,8 +38,8 @@ The pool service observes life cycle events to start and stop.
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [context](./pooling.poolingservice.context.md) |  | [Context](./context.context.md) |  |
-|  [pool](./pooling.poolingservice.pool.md) |  | Pool&lt;T&gt; | The resource pool |
+|  [context](./pooling.poolingservice.context.md) | <code>readonly</code> | [Context](./context.context.md) |  |
+|  [pool](./pooling.poolingservice.pool.md) | <code>readonly</code> | Pool&lt;T&gt; | The resource pool |
 
 ## Methods
 

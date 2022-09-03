@@ -34,17 +34,17 @@ export declare class RequestContext extends MiddlewareContext implements Handler
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [basePath](./rest.requestcontext.basepath.md) |  | string | Get the effective base path of the incoming request. This base path combines <code>baseUrl</code> provided by Express when LB4 handler is mounted on a non-root path, with the <code>basePath</code> value configured at LB4 side. |
-|  [request](./rest.requestcontext.request.md) |  | Request |  |
-|  [requestedBaseUrl](./rest.requestcontext.requestedbaseurl.md) |  | string | Get the base URL used by the client to make the request. This URL contains the protocol, hostname, port and base path. The path of the invoked route and query string is not included.<!-- -->Please note these values may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx are rewriting them. |
-|  [requestedProtocol](./rest.requestcontext.requestedprotocol.md) |  | string | Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols. |
-|  [response](./rest.requestcontext.response.md) |  | Response |  |
-|  [serverConfig](./rest.requestcontext.serverconfig.md) |  | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
+|  [basePath](./rest.requestcontext.basepath.md) | <code>readonly</code> | string | Get the effective base path of the incoming request. This base path combines <code>baseUrl</code> provided by Express when LB4 handler is mounted on a non-root path, with the <code>basePath</code> value configured at LB4 side. |
+|  [request](./rest.requestcontext.request.md) | <code>readonly</code> | Request |  |
+|  [requestedBaseUrl](./rest.requestcontext.requestedbaseurl.md) | <code>readonly</code> | string | <p>Get the base URL used by the client to make the request. This URL contains the protocol, hostname, port and base path. The path of the invoked route and query string is not included.</p><p>Please note these values may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx are rewriting them.</p> |
+|  [requestedProtocol](./rest.requestcontext.requestedprotocol.md) | <code>readonly</code> | string | Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols. |
+|  [response](./rest.requestcontext.response.md) | <code>readonly</code> | Response |  |
+|  [serverConfig](./rest.requestcontext.serverconfig.md) | <code>readonly</code> | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [setupBindings()](./rest.requestcontext.setupbindings.md) |  |  |
+|  [setupBindings()](./rest.requestcontext.setupbindings.md) | <code>protected</code> |  |
 
 

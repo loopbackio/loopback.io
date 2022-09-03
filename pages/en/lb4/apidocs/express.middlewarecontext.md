@@ -34,14 +34,14 @@ export declare class MiddlewareContext extends Context implements HandlerContext
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [request](./express.middlewarecontext.request.md) |  | Request |  |
-|  [response](./express.middlewarecontext.response.md) |  | Response |  |
+|  [request](./express.middlewarecontext.request.md) | <code>readonly</code> | Request |  |
+|  [response](./express.middlewarecontext.response.md) | <code>readonly</code> | Response |  |
 |  [responseFinished](./express.middlewarecontext.responsefinished.md) |  | boolean | A flag to tell if the response is finished. |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [setupBindings()](./express.middlewarecontext.setupbindings.md) |  |  |
+|  [setupBindings()](./express.middlewarecontext.setupbindings.md) | <code>protected</code> |  |
 
 

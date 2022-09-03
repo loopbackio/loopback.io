@@ -23,9 +23,9 @@ export interface Transaction
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [id](./repository.transaction.id.md) | string | The transaction Identifier |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [id](./repository.transaction.id.md) |  | string | The transaction Identifier |
 
 ## Methods
 

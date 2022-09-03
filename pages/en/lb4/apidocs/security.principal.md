@@ -23,8 +23,8 @@ export interface Principal
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [\[securityId\]](./security.principal._securityid_.md) | string | Name/id |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [\[securityId\]](./security.principal._securityid_.md) |  | string | Name/id |
 
 

@@ -20,7 +20,7 @@ Repository implementation
 ```typescript
 export declare class CrudRepositoryImpl<T extends Entity, ID> implements EntityCrudRepository<T, ID> 
 ```
-<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)
+<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID&gt;
 
 ## Example
 
@@ -53,7 +53,7 @@ export class TestRepository extends CrudRepositoryImpl<Test> {
 |  --- | --- | --- | --- |
 |  [dataSource](./repository.crudrepositoryimpl.datasource.md) |  | [DataSource](./repository.datasource.md) |  |
 |  [entityClass](./repository.crudrepositoryimpl.entityclass.md) |  | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
-|  [inclusionResolvers](./repository.crudrepositoryimpl.inclusionresolvers.md) |  | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
+|  [inclusionResolvers](./repository.crudrepositoryimpl.inclusionresolvers.md) | <code>readonly</code> | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
 
 ## Methods
 

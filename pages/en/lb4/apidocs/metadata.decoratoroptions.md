@@ -23,10 +23,10 @@ export interface DecoratorOptions
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [allowInheritance?](./metadata.decoratoroptions.allowinheritance.md) | boolean | <i>(Optional)</i> Controls if inherited metadata will be honored. Default to <code>true</code>. |
-|  [cloneInputSpec?](./metadata.decoratoroptions.cloneinputspec.md) | boolean | <i>(Optional)</i> Controls if the value of <code>spec</code> argument will be cloned. Sometimes we use shared spec for the decoration, but the decorator function might need to mutate the object. Cloning the input spec makes it safe to use the same spec (<code>template</code>) to decorate different members.<!-- -->Default to <code>true</code>. |
-|  [decoratorName?](./metadata.decoratoroptions.decoratorname.md) | string | <i>(Optional)</i> Name of the decorator for debugging purpose, such as <code>@inject</code> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [allowInheritance?](./metadata.decoratoroptions.allowinheritance.md) |  | boolean | <i>(Optional)</i> Controls if inherited metadata will be honored. Default to <code>true</code>. |
+|  [cloneInputSpec?](./metadata.decoratoroptions.cloneinputspec.md) |  | boolean | <p><i>(Optional)</i> Controls if the value of <code>spec</code> argument will be cloned. Sometimes we use shared spec for the decoration, but the decorator function might need to mutate the object. Cloning the input spec makes it safe to use the same spec (<code>template</code>) to decorate different members.</p><p>Default to <code>true</code>.</p> |
+|  [decoratorName?](./metadata.decoratoroptions.decoratorname.md) |  | string | <i>(Optional)</i> Name of the decorator for debugging purpose, such as <code>@inject</code> |
 
 

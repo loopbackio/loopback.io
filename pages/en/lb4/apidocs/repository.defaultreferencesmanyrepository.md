@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultreferencesmanyrepository.html
 ```typescript
 export declare class DefaultReferencesManyRepository<TargetEntity extends Entity, TargetIds, TargetRepository extends EntityCrudRepository<TargetEntity, TargetIds>> implements ReferencesManyRepository<TargetEntity> 
 ```
-<b>Implements:</b> [ReferencesManyRepository](./repository.referencesmanyrepository.md)
+<b>Implements:</b> [ReferencesManyRepository](./repository.referencesmanyrepository.md)<!-- -->&lt;TargetEntity&gt;
 
 ## Constructors
 

@@ -20,13 +20,13 @@ Buffer (binary) type
 ```typescript
 export declare class BufferType implements Type<Buffer> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Buffer
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Buffer&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.buffertype.name.md) |  | (not declared) |  |
+|  [name](./repository.buffertype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

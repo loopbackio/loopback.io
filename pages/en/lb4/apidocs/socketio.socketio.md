@@ -28,7 +28,7 @@ export declare namespace socketio
 |  [io()](./socketio.socketio.io.md) |  |
 |  [namespace(name)](./socketio.socketio.namespace.md) |  |
 |  [socket()](./socketio.socketio.socket.md) |  |
-|  [subscribe(messageTypes)](./socketio.socketio.subscribe.md) | Decorate a method to subscribe to socketio events. For example,
+|  [subscribe(messageTypes)](./socketio.socketio.subscribe.md) | <p>Decorate a method to subscribe to socketio events. For example,</p>
 ```ts
 @socketio.subscribe('chat message')
 async function onChat(msg: string) {

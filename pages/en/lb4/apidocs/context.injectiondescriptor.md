@@ -21,10 +21,10 @@ export interface InjectionDescriptor
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [bindingSelector](./context.injectiondescriptor.bindingselector.md) | [BindingSelector](./context.bindingselector.md) |  |
-|  [metadata](./context.injectiondescriptor.metadata.md) | [InjectionMetadata](./context.injectionmetadata.md) |  |
-|  [targetName](./context.injectiondescriptor.targetname.md) | string |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [bindingSelector](./context.injectiondescriptor.bindingselector.md) |  | [BindingSelector](./context.bindingselector.md) |  |
+|  [metadata](./context.injectiondescriptor.metadata.md) |  | [InjectionMetadata](./context.injectionmetadata.md) |  |
+|  [targetName](./context.injectiondescriptor.targetname.md) |  | string |  |
 
 

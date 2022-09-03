@@ -23,10 +23,10 @@ export interface SessionUserProfile
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [email](./rest.sessionuserprofile.email.md) | string |  |
-|  [provider](./rest.sessionuserprofile.provider.md) | string |  |
-|  [token](./rest.sessionuserprofile.token.md) | string |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [email](./rest.sessionuserprofile.email.md) |  | string |  |
+|  [provider](./rest.sessionuserprofile.provider.md) |  | string |  |
+|  [token](./rest.sessionuserprofile.token.md) |  | string |  |
 
 

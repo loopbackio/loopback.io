@@ -20,7 +20,7 @@ Default implementation of CRUD repository using legacy juggler model and data so
 ```typescript
 export declare class DefaultCrudRepository<T extends Entity, ID, Relations extends object = {}> implements EntityCrudRepository<T, ID, Relations> 
 ```
-<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)
+<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
 
 ## Constructors
 
@@ -34,45 +34,45 @@ export declare class DefaultCrudRepository<T extends Entity, ID, Relations exten
 |  --- | --- | --- | --- |
 |  [dataSource](./repository.defaultcrudrepository.datasource.md) |  | juggler.DataSource |  |
 |  [entityClass](./repository.defaultcrudrepository.entityclass.md) |  | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
-|  [inclusionResolvers](./repository.defaultcrudrepository.inclusionresolvers.md) |  | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
+|  [inclusionResolvers](./repository.defaultcrudrepository.inclusionresolvers.md) | <code>readonly</code> | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
 |  [modelClass](./repository.defaultcrudrepository.modelclass.md) |  | juggler.PersistedModelClass |  |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [\_createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createbelongstoaccessorfor.md) |  |  |
-|  [\_createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createhasmanyrepositoryfactoryfor.md) |  |  |
-|  [\_createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createhasonerepositoryfactoryfor.md) |  |  |
-|  [\_createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository._createreferencesmanyaccessorfor.md) |  |  |
+|  [\_createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createbelongstoaccessorfor.md) | <code>protected</code> |  |
+|  [\_createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createhasmanyrepositoryfactoryfor.md) | <code>protected</code> |  |
+|  [\_createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository._createhasonerepositoryfactoryfor.md) | <code>protected</code> |  |
+|  [\_createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository._createreferencesmanyaccessorfor.md) | <code>protected</code> |  |
 |  [count(where, options)](./repository.defaultcrudrepository.count.md) |  |  |
 |  [create(entity, options)](./repository.defaultcrudrepository.create.md) |  |  |
 |  [createAll(entities, options)](./repository.defaultcrudrepository.createall.md) |  |  |
-|  [createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createbelongstoaccessorfor.md) |  | Function to create a belongs to accessor |
-|  [createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasmanyrepositoryfactoryfor.md) |  | Function to create a constrained relation repository factory |
-|  [createHasManyThroughRepositoryFactoryFor(relationName, targetRepositoryGetter, throughRepositoryGetter)](./repository.defaultcrudrepository.createhasmanythroughrepositoryfactoryfor.md) |  | Function to create a constrained hasManyThrough relation repository factory |
-|  [createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasonerepositoryfactoryfor.md) |  | Function to create a constrained hasOne relation repository factory |
-|  [createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createreferencesmanyaccessorfor.md) |  | Function to create a references many accessor |
-|  [definePersistedModel(entityClass)](./repository.defaultcrudrepository.definepersistedmodel.md) |  | Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overridden in sub-classes to acess methods and properties in the generated model class. |
+|  [createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createbelongstoaccessorfor.md) | <code>protected</code> | Function to create a belongs to accessor |
+|  [createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasmanyrepositoryfactoryfor.md) | <code>protected</code> | Function to create a constrained relation repository factory |
+|  [createHasManyThroughRepositoryFactoryFor(relationName, targetRepositoryGetter, throughRepositoryGetter)](./repository.defaultcrudrepository.createhasmanythroughrepositoryfactoryfor.md) | <code>protected</code> | Function to create a constrained hasManyThrough relation repository factory |
+|  [createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./repository.defaultcrudrepository.createhasonerepositoryfactoryfor.md) | <code>protected</code> | Function to create a constrained hasOne relation repository factory |
+|  [createReferencesManyAccessorFor(relationName, targetRepoGetter)](./repository.defaultcrudrepository.createreferencesmanyaccessorfor.md) | <code>protected</code> | Function to create a references many accessor |
+|  [definePersistedModel(entityClass)](./repository.defaultcrudrepository.definepersistedmodel.md) | <code>protected</code> | Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overridden in sub-classes to acess methods and properties in the generated model class. |
 |  [delete(entity, options)](./repository.defaultcrudrepository.delete.md) |  |  |
 |  [deleteAll(where, options)](./repository.defaultcrudrepository.deleteall.md) |  |  |
 |  [deleteById(id, options)](./repository.defaultcrudrepository.deletebyid.md) |  |  |
-|  [ensurePersistable(entity, options)](./repository.defaultcrudrepository.ensurepersistable.md) |  | Converts an entity object to a JSON object to check if it contains navigational property. Throws an error if <code>entity</code> contains navigational property. |
-|  [entityToData(entity, options)](./repository.defaultcrudrepository.entitytodata.md) |  | This function works as a persist hook. It converts an entity from the CRUD operations' caller to a persistable data that can will be stored in the back-end database.<!-- -->User can extend <code>DefaultCrudRepository</code> then override this function to execute custom persist hook. |
-|  [execute(command, parameters, options)](./repository.defaultcrudrepository.execute.md) |  | Execute a SQL command.<!-- -->\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues. |
-|  [execute(collectionName, command, parameters)](./repository.defaultcrudrepository.execute_1.md) |  | Execute a MongoDB command.<!-- -->\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing MongoDB commands may lead to unexpected results and other issues. |
-|  [execute(args)](./repository.defaultcrudrepository.execute_2.md) |  | Execute a raw database command using a connector that's not described by LoopBack's <code>execute</code> API yet.<!-- -->\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing database commands may lead to unexpected results and other issues. |
+|  [ensurePersistable(entity, options)](./repository.defaultcrudrepository.ensurepersistable.md) | <code>protected</code> | Converts an entity object to a JSON object to check if it contains navigational property. Throws an error if <code>entity</code> contains navigational property. |
+|  [entityToData(entity, options)](./repository.defaultcrudrepository.entitytodata.md) | <code>protected</code> | <p>This function works as a persist hook. It converts an entity from the CRUD operations' caller to a persistable data that can will be stored in the back-end database.</p><p>User can extend <code>DefaultCrudRepository</code> then override this function to execute custom persist hook.</p> |
+|  [execute(command, parameters, options)](./repository.defaultcrudrepository.execute.md) |  | <p>Execute a SQL command.</p><p>\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.</p> |
+|  [execute(collectionName, command, parameters)](./repository.defaultcrudrepository.execute_1.md) |  | <p>Execute a MongoDB command.</p><p>\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing MongoDB commands may lead to unexpected results and other issues.</p> |
+|  [execute(args)](./repository.defaultcrudrepository.execute_2.md) |  | <p>Execute a raw database command using a connector that's not described by LoopBack's <code>execute</code> API yet.</p><p>\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing database commands may lead to unexpected results and other issues.</p> |
 |  [exists(id, options)](./repository.defaultcrudrepository.exists.md) |  |  |
 |  [find(filter, options)](./repository.defaultcrudrepository.find.md) |  |  |
 |  [findById(id, filter, options)](./repository.defaultcrudrepository.findbyid.md) |  |  |
 |  [findOne(filter, options)](./repository.defaultcrudrepository.findone.md) |  |  |
-|  [includeRelatedModels(entities, include, options)](./repository.defaultcrudrepository.includerelatedmodels.md) |  | Returns model instances that include related models of this repository that have a registered resolver. |
-|  [normalizeFilter(filter)](./repository.defaultcrudrepository.normalizefilter.md) |  | Removes juggler's "include" filter as it does not apply to LoopBack 4 relations. |
+|  [includeRelatedModels(entities, include, options)](./repository.defaultcrudrepository.includerelatedmodels.md) | <code>protected</code> | Returns model instances that include related models of this repository that have a registered resolver. |
+|  [normalizeFilter(filter)](./repository.defaultcrudrepository.normalizefilter.md) | <code>protected</code> | Removes juggler's "include" filter as it does not apply to LoopBack 4 relations. |
 |  [registerInclusionResolver(relationName, resolver)](./repository.defaultcrudrepository.registerinclusionresolver.md) |  | Register an inclusion resolver for the related model name. |
 |  [replaceById(id, data, options)](./repository.defaultcrudrepository.replacebyid.md) |  |  |
 |  [save(entity, options)](./repository.defaultcrudrepository.save.md) |  |  |
-|  [toEntities(models)](./repository.defaultcrudrepository.toentities.md) |  |  |
-|  [toEntity(model)](./repository.defaultcrudrepository.toentity.md) |  |  |
+|  [toEntities(models)](./repository.defaultcrudrepository.toentities.md) | <code>protected</code> |  |
+|  [toEntity(model)](./repository.defaultcrudrepository.toentity.md) | <code>protected</code> |  |
 |  [update(entity, options)](./repository.defaultcrudrepository.update.md) |  |  |
 |  [updateAll(data, where, options)](./repository.defaultcrudrepository.updateall.md) |  |  |
 |  [updateById(id, data, options)](./repository.defaultcrudrepository.updatebyid.md) |  |  |

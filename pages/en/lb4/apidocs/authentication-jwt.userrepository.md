@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userrepository.html
 ```typescript
 export declare class UserRepository extends DefaultCrudRepository<User, typeof User.prototype.id, UserRelations> 
 ```
-<b>Extends:</b> [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;[User](./authentication-jwt.user.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->, [UserRelations](./authentication-jwt.userrelations.md)
+<b>Extends:</b> [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;[User](./authentication-jwt.user.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->, [UserRelations](./authentication-jwt.userrelations.md)<!-- -->&gt;
 
 ## Constructors
 
@@ -30,8 +30,8 @@ export declare class UserRepository extends DefaultCrudRepository<User, typeof U
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [userCredentials](./authentication-jwt.userrepository.usercredentials.md) |  | [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->&gt; |  |
-|  [userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md) |  | [Getter](./context.getter.md)<!-- -->&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt; |  |
+|  [userCredentials](./authentication-jwt.userrepository.usercredentials.md) | <code>readonly</code> | [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->&gt; |  |
+|  [userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md) | <code>protected</code> | [Getter](./context.getter.md)<!-- -->&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt; |  |
 
 ## Methods
 

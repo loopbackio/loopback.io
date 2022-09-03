@@ -38,21 +38,21 @@ export declare class BaseArtifactBooter implements Booter
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [artifactName](./boot.baseartifactbooter.artifactname.md) |  | string | Get the name of the artifact loaded by this booter, e.g. "Controller". Subclasses can override the default logic based on the class name. |
+|  [artifactName](./boot.baseartifactbooter.artifactname.md) | <code>readonly</code> | string | Get the name of the artifact loaded by this booter, e.g. "Controller". Subclasses can override the default logic based on the class name. |
 |  [classes](./boot.baseartifactbooter.classes.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;\[\] | List of exported classes discovered in the files |
 |  [dirs](./boot.baseartifactbooter.dirs.md) |  | string\[\] | Relative paths of directories to be searched |
 |  [discovered](./boot.baseartifactbooter.discovered.md) |  | string\[\] | List of files discovered by the Booter that matched artifact requirements |
 |  [extensions](./boot.baseartifactbooter.extensions.md) |  | string\[\] | File extensions to be searched |
 |  [glob](./boot.baseartifactbooter.glob.md) |  | string | <code>glob</code> pattern to match artifact paths |
-|  [options](./boot.baseartifactbooter.options.md) |  | [ArtifactOptions](./boot.artifactoptions.md) | Options being used by the Booter. |
-|  [projectRoot](./boot.baseartifactbooter.projectroot.md) |  | string | Project root relative to which all other paths are resolved |
+|  [options](./boot.baseartifactbooter.options.md) | <code>readonly</code> | [ArtifactOptions](./boot.artifactoptions.md) | Options being used by the Booter. |
+|  [projectRoot](./boot.baseartifactbooter.projectroot.md) | <code>readonly</code> | string | Project root relative to which all other paths are resolved |
 
 ## Methods
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
-|  [configure()](./boot.baseartifactbooter.configure.md) |  | Configure the Booter by initializing the 'dirs', 'extensions' and 'glob' properties.<!-- -->NOTE: All properties are configured even if all aren't used. |
+|  [configure()](./boot.baseartifactbooter.configure.md) |  | <p>Configure the Booter by initializing the 'dirs', 'extensions' and 'glob' properties.</p><p>NOTE: All properties are configured even if all aren't used.</p> |
 |  [discover()](./boot.baseartifactbooter.discover.md) |  | Discover files based on the 'glob' property relative to the 'projectRoot'. Discovered artifact files matching the pattern are saved to the 'discovered' property. |
-|  [load()](./boot.baseartifactbooter.load.md) |  | Filters the exports of 'discovered' files to only be Classes (in case function / types are exported) as an artifact is a Class. The filtered artifact Classes are saved in the 'classes' property.<!-- -->NOTE: Booters extending this class should call this method (await super.load()) and then process the artifact classes as appropriate. |
+|  [load()](./boot.baseartifactbooter.load.md) |  | <p>Filters the exports of 'discovered' files to only be Classes (in case function / types are exported) as an artifact is a Class. The filtered artifact Classes are saved in the 'classes' property.</p><p>NOTE: Booters extending this class should call this method (await super.load()) and then process the artifact classes as appropriate.</p> |
 
 

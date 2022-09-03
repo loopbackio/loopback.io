@@ -20,7 +20,7 @@ Factory for method level parameter decorator.
 ```typescript
 export declare class MethodParameterDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T[]>, MethodDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, MethodDecorator
+<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, MethodDecorator&gt;
 
 ## Example
 
@@ -40,7 +40,7 @@ class MyController {
 |  --- | --- | --- |
 |  [create()](./metadata.methodparameterdecoratorfactory.create.md) |  |  |
 |  [createDecorator(key, spec, options)](./metadata.methodparameterdecoratorfactory.createdecorator.md) | <code>static</code> | Create a method decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithinherited.md) |  |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithown.md) |  |  |
+|  [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
+|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithown.md) | <code>protected</code> |  |
 
 

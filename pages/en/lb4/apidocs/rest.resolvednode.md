@@ -21,9 +21,9 @@ export interface ResolvedNode<T>
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [node](./rest.resolvednode.node.md) | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
-|  [params?](./rest.resolvednode.params.md) | [PathParameterValues](./rest.pathparametervalues.md) | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [node](./rest.resolvednode.node.md) |  | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
+|  [params?](./rest.resolvednode.params.md) |  | [PathParameterValues](./rest.pathparametervalues.md) | <i>(Optional)</i> |
 
 

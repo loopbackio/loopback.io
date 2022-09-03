@@ -23,9 +23,9 @@ export interface BodyParser
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [name](./rest.bodyparser.name.md) | string \| symbol | Name of the parser |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [name](./rest.bodyparser.name.md) |  | string \| symbol | Name of the parser |
 
 ## Methods
 

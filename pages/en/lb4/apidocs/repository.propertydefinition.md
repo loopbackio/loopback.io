@@ -23,14 +23,14 @@ export interface PropertyDefinition
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [hidden?](./repository.propertydefinition.hidden.md) | boolean | <i>(Optional)</i> Used to hide this property from the response body, adding this property to the hiddenProperties array |
-|  [id?](./repository.propertydefinition.id.md) | boolean \| number | <i>(Optional)</i> |
-|  [itemType?](./repository.propertydefinition.itemtype.md) | [PropertyType](./repository.propertytype.md) | <i>(Optional)</i> |
-|  [json?](./repository.propertydefinition.json.md) | [PropertyForm](./repository.propertyform.md) | <i>(Optional)</i> |
-|  [jsonSchema?](./repository.propertydefinition.jsonschema.md) | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | <i>(Optional)</i> |
-|  [store?](./repository.propertydefinition.store.md) | [PropertyForm](./repository.propertyform.md) | <i>(Optional)</i> |
-|  [type](./repository.propertydefinition.type.md) | [PropertyType](./repository.propertytype.md) |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [hidden?](./repository.propertydefinition.hidden.md) |  | boolean | <i>(Optional)</i> Used to hide this property from the response body, adding this property to the hiddenProperties array |
+|  [id?](./repository.propertydefinition.id.md) |  | boolean \| number | <i>(Optional)</i> |
+|  [itemType?](./repository.propertydefinition.itemtype.md) |  | [PropertyType](./repository.propertytype.md) | <i>(Optional)</i> |
+|  [json?](./repository.propertydefinition.json.md) |  | [PropertyForm](./repository.propertyform.md) | <i>(Optional)</i> |
+|  [jsonSchema?](./repository.propertydefinition.jsonschema.md) |  | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | <i>(Optional)</i> |
+|  [store?](./repository.propertydefinition.store.md) |  | [PropertyForm](./repository.propertyform.md) | <i>(Optional)</i> |
+|  [type](./repository.propertydefinition.type.md) |  | [PropertyType](./repository.propertytype.md) |  |
 
 

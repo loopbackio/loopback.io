@@ -23,15 +23,15 @@ export interface MyUser
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [email?](./mock-oauth2-provider.myuser.email.md) | string | <i>(Optional)</i> |
-|  [firstName?](./mock-oauth2-provider.myuser.firstname.md) | string | <i>(Optional)</i> |
-|  [id](./mock-oauth2-provider.myuser.id.md) | string |  |
-|  [lastName?](./mock-oauth2-provider.myuser.lastname.md) | string | <i>(Optional)</i> |
-|  [password?](./mock-oauth2-provider.myuser.password.md) | string | <i>(Optional)</i> |
-|  [signingKey](./mock-oauth2-provider.myuser.signingkey.md) | string |  |
-|  [token?](./mock-oauth2-provider.myuser.token.md) | string | <i>(Optional)</i> |
-|  [username?](./mock-oauth2-provider.myuser.username.md) | string | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [email?](./mock-oauth2-provider.myuser.email.md) |  | string | <i>(Optional)</i> |
+|  [firstName?](./mock-oauth2-provider.myuser.firstname.md) |  | string | <i>(Optional)</i> |
+|  [id](./mock-oauth2-provider.myuser.id.md) |  | string |  |
+|  [lastName?](./mock-oauth2-provider.myuser.lastname.md) |  | string | <i>(Optional)</i> |
+|  [password?](./mock-oauth2-provider.myuser.password.md) |  | string | <i>(Optional)</i> |
+|  [signingKey](./mock-oauth2-provider.myuser.signingkey.md) |  | string |  |
+|  [token?](./mock-oauth2-provider.myuser.token.md) |  | string | <i>(Optional)</i> |
+|  [username?](./mock-oauth2-provider.myuser.username.md) |  | string | <i>(Optional)</i> |
 
 

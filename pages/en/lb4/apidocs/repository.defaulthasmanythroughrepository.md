@@ -22,7 +22,7 @@ Warning: The hasManyThrough interface is experimental and is subject to change. 
 ```typescript
 export declare class DefaultHasManyThroughRepository<TargetEntity extends Entity, TargetID, TargetRepository extends EntityCrudRepository<TargetEntity, TargetID>, ThroughEntity extends Entity, ThroughID, ThroughRepository extends EntityCrudRepository<ThroughEntity, ThroughID>> implements HasManyThroughRepository<TargetEntity, TargetID, ThroughEntity> 
 ```
-<b>Implements:</b> [HasManyThroughRepository](./repository.hasmanythroughrepository.md)
+<b>Implements:</b> [HasManyThroughRepository](./repository.hasmanythroughrepository.md)<!-- -->&lt;TargetEntity, TargetID, ThroughEntity&gt;
 
 ## Constructors
 

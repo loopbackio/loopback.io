@@ -20,13 +20,13 @@ Null type
 ```typescript
 export declare class NullType implements Type<null> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;null&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.nulltype.name.md) |  | (not declared) |  |
+|  [name](./repository.nulltype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

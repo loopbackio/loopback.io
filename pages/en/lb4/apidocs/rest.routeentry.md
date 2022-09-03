@@ -23,11 +23,11 @@ export interface RouteEntry
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [path](./rest.routeentry.path.md) | string | http path |
-|  [spec](./rest.routeentry.spec.md) | OperationObject | OpenAPI operation spec |
-|  [verb](./rest.routeentry.verb.md) | string | http verb |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [path](./rest.routeentry.path.md) | <code>readonly</code> | string | http path |
+|  [spec](./rest.routeentry.spec.md) | <code>readonly</code> | OperationObject | OpenAPI operation spec |
+|  [verb](./rest.routeentry.verb.md) | <code>readonly</code> | string | http verb |
 
 ## Methods
 

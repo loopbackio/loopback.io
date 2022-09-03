@@ -20,6 +20,6 @@ An interceptor chain of middleware. This represents a list of cascading middlewa
 ```typescript
 export declare class MiddlewareChain extends GenericInterceptorChain<MiddlewareContext> 
 ```
-<b>Extends:</b> [GenericInterceptorChain](./context.genericinterceptorchain.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)
+<b>Extends:</b> [GenericInterceptorChain](./context.genericinterceptorchain.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
 
 

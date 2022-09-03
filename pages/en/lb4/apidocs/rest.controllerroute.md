@@ -32,10 +32,10 @@ export declare class ControllerRoute<T> extends BaseRoute
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_controllerCtor](./rest.controllerroute._controllerctor.md) |  | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
-|  [\_controllerFactory](./rest.controllerroute._controllerfactory.md) |  | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; |  |
-|  [\_controllerName](./rest.controllerroute._controllername.md) |  | string |  |
-|  [\_methodName](./rest.controllerroute._methodname.md) |  | string |  |
+|  [\_controllerCtor](./rest.controllerroute._controllerctor.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
+|  [\_controllerFactory](./rest.controllerroute._controllerfactory.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; |  |
+|  [\_controllerName](./rest.controllerroute._controllername.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string |  |
+|  [\_methodName](./rest.controllerroute._methodname.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string |  |
 
 ## Methods
 

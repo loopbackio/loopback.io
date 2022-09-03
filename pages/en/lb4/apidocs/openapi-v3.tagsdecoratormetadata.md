@@ -21,8 +21,8 @@ export interface TagsDecoratorMetadata
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [tags](./openapi-v3.tagsdecoratormetadata.tags.md) | string\[\] |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [tags](./openapi-v3.tagsdecoratormetadata.tags.md) |  | string\[\] |  |
 
 

@@ -20,13 +20,13 @@ String type
 ```typescript
 export declare class StringType implements Type<string> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)
+<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;string&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name](./repository.stringtype.name.md) |  | (not declared) |  |
+|  [name](./repository.stringtype.name.md) | <code>readonly</code> | (not declared) |  |
 
 ## Methods
 

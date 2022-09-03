@@ -34,9 +34,9 @@ export declare class GraphQLServer extends Context implements Server
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [expressApp](./graphql.graphqlserver.expressapp.md) |  | express.Application |  |
-|  [httpServer?](./graphql.graphqlserver.httpserver.md) |  | [HttpServer](./http-server.httpserver.md) | <i>(Optional)</i> |
-|  [listening](./graphql.graphqlserver.listening.md) |  | boolean | Is the GraphQL listening |
+|  [expressApp](./graphql.graphqlserver.expressapp.md) | <code>readonly</code> | express.Application |  |
+|  [httpServer?](./graphql.graphqlserver.httpserver.md) | <code>readonly</code> | [HttpServer](./http-server.httpserver.md) | <i>(Optional)</i> |
+|  [listening](./graphql.graphqlserver.listening.md) | <code>readonly</code> | boolean | Is the GraphQL listening |
 
 ## Methods
 

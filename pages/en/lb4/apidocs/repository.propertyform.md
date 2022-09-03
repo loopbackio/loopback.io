@@ -23,10 +23,10 @@ export interface PropertyForm
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [in?](./repository.propertyform.in.md) | boolean | <i>(Optional)</i> |
-|  [name?](./repository.propertyform.name.md) | string | <i>(Optional)</i> |
-|  [out?](./repository.propertyform.out.md) | boolean | <i>(Optional)</i> |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [in?](./repository.propertyform.in.md) |  | boolean | <i>(Optional)</i> |
+|  [name?](./repository.propertyform.name.md) |  | string | <i>(Optional)</i> |
+|  [out?](./repository.propertyform.out.md) |  | boolean | <i>(Optional)</i> |
 
 

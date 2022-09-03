@@ -32,13 +32,13 @@ export declare class InvocationContext extends Context
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [args](./context.invocationcontext.args.md) |  | [InvocationArgs](./context.invocationargs.md) |  |
-|  [description](./context.invocationcontext.description.md) |  | string | Description of the invocation |
-|  [methodName](./context.invocationcontext.methodname.md) |  | string |  |
-|  [source?](./context.invocationcontext.source.md) |  | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | <i>(Optional)</i> |
-|  [target](./context.invocationcontext.target.md) |  | object |  |
-|  [targetClass](./context.invocationcontext.targetclass.md) |  | Function | The target class, such as <code>OrderController</code> |
-|  [targetName](./context.invocationcontext.targetname.md) |  | string | The target name, such as <code>OrderController.prototype.cancelOrder</code> |
+|  [args](./context.invocationcontext.args.md) | <code>readonly</code> | [InvocationArgs](./context.invocationargs.md) |  |
+|  [description](./context.invocationcontext.description.md) | <code>readonly</code> | string | Description of the invocation |
+|  [methodName](./context.invocationcontext.methodname.md) | <code>readonly</code> | string |  |
+|  [source?](./context.invocationcontext.source.md) | <code>readonly</code> | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | <i>(Optional)</i> |
+|  [target](./context.invocationcontext.target.md) | <code>readonly</code> | object |  |
+|  [targetClass](./context.invocationcontext.targetclass.md) | <code>readonly</code> | Function | The target class, such as <code>OrderController</code> |
+|  [targetName](./context.invocationcontext.targetname.md) | <code>readonly</code> | string | The target name, such as <code>OrderController.prototype.cancelOrder</code> |
 
 ## Methods
 

@@ -37,8 +37,8 @@ export class DynamicGreetingProvider {
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [value](./context.dynamicvalueproviderclass.value.md) | (...args: [BoundValue](./context.boundvalue.md)<!-- -->\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; |  |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [value](./context.dynamicvalueproviderclass.value.md) |  | (...args: [BoundValue](./context.boundvalue.md)<!-- -->\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; |  |
 
 

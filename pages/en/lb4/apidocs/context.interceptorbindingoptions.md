@@ -24,10 +24,10 @@ export interface InterceptorBindingOptions extends BindingFromClassOptions
 
 ## Properties
 
-|  Property | Type | Description |
-|  --- | --- | --- |
-|  [global?](./context.interceptorbindingoptions.global.md) | boolean | <i>(Optional)</i> Global or local interceptor |
-|  [group?](./context.interceptorbindingoptions.group.md) | string | <i>(Optional)</i> Group name for a global interceptor |
-|  [source?](./context.interceptorbindingoptions.source.md) | string \| string\[\] | <i>(Optional)</i> Source filter for a global interceptor |
+|  Property | Modifiers | Type | Description |
+|  --- | --- | --- | --- |
+|  [global?](./context.interceptorbindingoptions.global.md) |  | boolean | <i>(Optional)</i> Global or local interceptor |
+|  [group?](./context.interceptorbindingoptions.group.md) |  | string | <i>(Optional)</i> Group name for a global interceptor |
+|  [source?](./context.interceptorbindingoptions.source.md) |  | string \| string\[\] | <i>(Optional)</i> Source filter for a global interceptor |
 
 

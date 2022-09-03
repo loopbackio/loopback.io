@@ -36,7 +36,7 @@ export declare class RepositoryMixinDoc
 |  [component(component)](./repository.repositorymixindoc.component.md) |  | Add a component to this application. Also mounts all the components repositories. |
 |  [dataSource(dataSource, name)](./repository.repositorymixindoc.datasource.md) |  | Add the dataSource to this application. |
 |  [getRepository(repo)](./repository.repositorymixindoc.getrepository.md) |  | Retrieve the repository instance from the given Repository class |
-|  [migrateSchema(options)](./repository.repositorymixindoc.migrateschema.md) |  | Update or recreate the database schema for all repositories.<!-- -->\*\*WARNING\*\*: By default, <code>migrateSchema()</code> will attempt to preserve data while updating the schema in your target database, but this is not guaranteed to be safe.<!-- -->Please check the documentation for your specific connector(s) for a detailed breakdown of behaviors for automigrate! |
+|  [migrateSchema(options)](./repository.repositorymixindoc.migrateschema.md) |  | <p>Update or recreate the database schema for all repositories.</p><p>\*\*WARNING\*\*: By default, <code>migrateSchema()</code> will attempt to preserve data while updating the schema in your target database, but this is not guaranteed to be safe.</p><p>Please check the documentation for your specific connector(s) for a detailed breakdown of behaviors for automigrate!</p> |
 |  [mountComponentRepository(component)](./repository.repositorymixindoc.mountcomponentrepository.md) |  | Get an instance of a component and mount all it's repositories. This function is intended to be used internally by component() |
 |  [repository(repo)](./repository.repositorymixindoc.repository.md) |  | Add a repository to this application. |
 
