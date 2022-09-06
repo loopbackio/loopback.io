@@ -19,9 +19,7 @@ LoopBack 是高扩展性、开源的 Node.js 框架，基于 Express，使得开
 
 下图展示了 LoopBack 如何充当传入请求和传出集成之间的桥梁。它还显示了对各种由 LoopBack 提供的功能感兴趣的不同角色。
 
-```
 ![LoopBack 4总览](./imgs/lb4-high-level.png)
-```
 
 ## 为 API 开发者创建
 
