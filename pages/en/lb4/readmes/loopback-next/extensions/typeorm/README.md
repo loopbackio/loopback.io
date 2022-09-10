@@ -58,12 +58,25 @@ export const SqliteConnection: ConnectionOptions = {
   synchronize: true,
 };
 ```
-
 Make sure to install the underlying database driver. For example, if you are
 using SQlite, you'll need to install `sqlite3`.
 
 ```sh
 npm install sqlite3
+```
+
+
+Then, register `SqliteConnection` connection in `application.ts` file as shown below:
+
+```ts
+import {BootMixin} from '@loopback/boot';
+import {RestApplication} from '@loopback/rest';
+import {TypeOrmMixin} from '@loopback/typeorm';
+export class MyApplication extends BootMixin(TypeOrmMixin(RestApplication)) {
+    super(options);
+    this.connection(SqliteConnection);
+    ...
+}
 ```
 
 Refer to the
