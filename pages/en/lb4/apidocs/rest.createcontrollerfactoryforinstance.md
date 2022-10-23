@@ -18,7 +18,7 @@ Create a controller factory function for a given instance
 <b>Signature:</b>
 
 ```typescript
-export declare function createControllerFactoryForInstance<T>(controllerInst: T): ControllerFactory<T>;
+export declare function createControllerFactoryForInstance<T extends object>(controllerInst: T): ControllerFactory<T>;
 ```
 
 ## Parameters

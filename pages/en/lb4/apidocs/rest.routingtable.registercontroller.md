@@ -18,7 +18,7 @@ Register a controller as the route
 <b>Signature:</b>
 
 ```typescript
-registerController<T>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): void;
+registerController<T extends object>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): void;
 ```
 
 ## Parameters

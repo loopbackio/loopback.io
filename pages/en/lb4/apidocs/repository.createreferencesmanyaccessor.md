@@ -26,7 +26,7 @@ export declare function createReferencesManyAccessor<Target extends Entity, Targ
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  referencesManyMetadata | [ReferencesManyDefinition](./repository.referencesmanydefinition.md) |  |
-|  targetRepoGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetIds&gt;&gt; |  |
+|  targetRepoGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetIds&gt;&gt; |  |
 |  sourceRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Source, SourceId&gt; |  |
 
 <b>Returns:</b>

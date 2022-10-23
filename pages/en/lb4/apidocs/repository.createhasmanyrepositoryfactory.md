@@ -26,7 +26,7 @@ export declare function createHasManyRepositoryFactory<Target extends Entity, Ta
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationMetadata | [HasManyDefinition](./repository.hasmanydefinition.md) | The relation metadata used to describe the relationship and determine how to apply the constraint. |
-|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; | The repository which represents the target model of a relation attached to a datasource. |
+|  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; | The repository which represents the target model of a relation attached to a datasource. |
 
 <b>Returns:</b>
 

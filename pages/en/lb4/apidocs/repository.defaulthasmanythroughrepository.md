@@ -37,11 +37,11 @@ export declare class DefaultHasManyThroughRepository<TargetEntity extends Entity
 |  [getTargetConstraintFromThroughModels](./repository.defaulthasmanythroughrepository.gettargetconstraintfromthroughmodels.md) |  | (throughInstances: ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  [getTargetIds](./repository.defaulthasmanythroughrepository.gettargetids.md) |  | (targetInstances: TargetEntity\[\]) =&gt; TargetID\[\] |  |
 |  [getTargetKeys](./repository.defaulthasmanythroughrepository.gettargetkeys.md) |  | (throughInstances: ThroughEntity\[\]) =&gt; TargetID\[\] |  |
-|  [getTargetRepository](./repository.defaulthasmanythroughrepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
-|  [getTargetRepositoryDict](./repository.defaulthasmanythroughrepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepository](./repository.defaulthasmanythroughrepository.gettargetrepository.md) |  | Getter&lt;TargetRepository&gt; \| { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepositoryDict](./repository.defaulthasmanythroughrepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
 |  [getThroughConstraintFromSource](./repository.defaulthasmanythroughrepository.getthroughconstraintfromsource.md) |  | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
 |  [getThroughConstraintFromTarget](./repository.defaulthasmanythroughrepository.getthroughconstraintfromtarget.md) |  | (targetID: TargetID\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
-|  [getThroughRepository](./repository.defaulthasmanythroughrepository.getthroughrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;ThroughRepository&gt; |  |
+|  [getThroughRepository](./repository.defaulthasmanythroughrepository.getthroughrepository.md) |  | Getter&lt;ThroughRepository&gt; |  |
 |  [targetResolver](./repository.defaulthasmanythroughrepository.targetresolver.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 |  [throughResolver](./repository.defaulthasmanythroughrepository.throughresolver.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 

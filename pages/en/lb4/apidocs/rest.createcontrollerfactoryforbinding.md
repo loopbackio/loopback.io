@@ -18,7 +18,7 @@ Create a controller factory function for a given binding key
 <b>Signature:</b>
 
 ```typescript
-export declare function createControllerFactoryForBinding<T>(key: string): ControllerFactory<T>;
+export declare function createControllerFactoryForBinding<T extends object>(key: string): ControllerFactory<T>;
 ```
 
 ## Parameters

@@ -18,7 +18,7 @@ Returns a map which maps key values(ids) to instances. The instances can be grou
 <b>Signature:</b>
 
 ```typescript
-export declare function buildLookupMap<Key, InType, OutType = InType>(list: InType[], keyName: StringKeyOf<InType>, reducer: (accumulator: OutType | undefined, current: InType) => OutType): Map<Key, OutType>;
+export declare function buildLookupMap<Key, InType extends object, OutType = InType>(list: InType[], keyName: StringKeyOf<InType>, reducer: (accumulator: OutType | undefined, current: InType) => OutType): Map<Key, OutType>;
 ```
 
 ## Parameters

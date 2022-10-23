@@ -29,6 +29,6 @@ asGetter(session?: ResolutionOptionsOrSession): Getter<T[]>;
 
 <b>Returns:</b>
 
-[Getter](./context.getter.md)<!-- -->&lt;T\[\]&gt;
+Getter&lt;T\[\]&gt;
 
 

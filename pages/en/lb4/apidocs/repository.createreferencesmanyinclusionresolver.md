@@ -28,7 +28,7 @@ export declare function createReferencesManyInclusionResolver<Target extends Ent
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  meta | [ReferencesManyDefinition](./repository.referencesmanydefinition.md) | resolved ReferencesManyMetadata |
-|  getTargetRepo | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetIds, TargetRelations&gt;&gt; | target repository i.e where related instances are |
+|  getTargetRepo | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetIds, TargetRelations&gt;&gt; | target repository i.e where related instances are |
 
 <b>Returns:</b>
 

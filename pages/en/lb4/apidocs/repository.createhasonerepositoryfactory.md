@@ -30,7 +30,7 @@ export declare function createHasOneRepositoryFactory<Target extends Entity, Tar
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationMetadata | [HasOneDefinition](./repository.hasonedefinition.md) | The relation metadata used to describe the relationship and determine how to apply the constraint. |
-|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } | The repository or a dictionary of classname - repository, which represents the target model of a relation attached to a datasource. For the dictionary, the key is the class name of the concrete class the the polymorphic model. |
+|  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } | The repository or a dictionary of classname - repository, which represents the target model of a relation attached to a datasource. For the dictionary, the key is the class name of the concrete class the the polymorphic model. |
 
 <b>Returns:</b>
 

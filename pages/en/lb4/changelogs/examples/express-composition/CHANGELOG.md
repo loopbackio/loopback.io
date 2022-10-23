@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-express-composition.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-express-composition@5.0.2...@loopback/example-express-composition@5.0.3) (2022-08-25)
+
+**Note:** Version bump only for package @loopback/example-express-composition
+
+
+
+
+
 ## [5.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-express-composition@5.0.1...@loopback/example-express-composition@5.0.2) (2022-07-14)
 
 **Note:** Version bump only for package @loopback/example-express-composition

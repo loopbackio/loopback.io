@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.registercontroller.html
 <b>Signature:</b>
 
 ```typescript
-registerController<T>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): void;
+registerController<T extends object>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): void;
 ```
 
 ## Parameters

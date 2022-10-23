@@ -18,7 +18,7 @@ Register a new Controller-based route.
 <b>Signature:</b>
 
 ```typescript
-route<I>(verb: string, path: string, spec: OperationObject, controllerCtor: ControllerClass<I>, controllerFactory: ControllerFactory<I>, methodName: string): Binding;
+route<I extends object>(verb: string, path: string, spec: OperationObject, controllerCtor: ControllerClass<I>, controllerFactory: ControllerFactory<I>, methodName: string): Binding;
 ```
 
 ## Parameters

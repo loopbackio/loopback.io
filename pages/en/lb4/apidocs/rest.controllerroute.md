@@ -18,7 +18,7 @@ A route backed by a controller
 <b>Signature:</b>
 
 ```typescript
-export declare class ControllerRoute<T> extends BaseRoute 
+export declare class ControllerRoute<T extends object> extends BaseRoute 
 ```
 <b>Extends:</b> [BaseRoute](./rest.baseroute.md)
 

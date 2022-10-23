@@ -32,7 +32,7 @@ export declare class CronComponent implements Component, LifeCycleObserver
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [getJobs](./cron.croncomponent.getjobs.md) | <code>readonly</code> | [Getter](./context.getter.md)<!-- -->&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt; |  |
+|  [getJobs](./cron.croncomponent.getjobs.md) | <code>readonly</code> | Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt; |  |
 
 ## Methods
 

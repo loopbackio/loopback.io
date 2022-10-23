@@ -22,7 +22,7 @@ This is a helper method replacing `sinon.createStubInstance` and working around 
 <b>Signature:</b>
 
 ```typescript
-export declare function createStubInstance<TType>(constructor: sinon.StubbableType<TType>): StubbedInstanceWithSinonAccessor<TType>;
+export declare function createStubInstance<TType extends object>(constructor: sinon.StubbableType<TType>): StubbedInstanceWithSinonAccessor<TType>;
 ```
 
 ## Parameters

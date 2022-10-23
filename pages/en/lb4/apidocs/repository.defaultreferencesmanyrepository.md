@@ -31,7 +31,7 @@ export declare class DefaultReferencesManyRepository<TargetEntity extends Entity
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [constraint](./repository.defaultreferencesmanyrepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  [getTargetRepository](./repository.defaultreferencesmanyrepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; |  |
+|  [getTargetRepository](./repository.defaultreferencesmanyrepository.gettargetrepository.md) |  | Getter&lt;TargetRepository&gt; |  |
 
 ## Methods
 

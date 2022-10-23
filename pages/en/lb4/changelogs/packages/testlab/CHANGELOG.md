@@ -13,6 +13,17 @@ permalink: /doc/en/lb4/changelog.testlab.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/testlab@5.0.3...@loopback/testlab@5.0.4) (2022-10-13)
+
+
+### Bug Fixes
+
+* fix compilation errors for TypeScript 4.8.x ([4ee90ac](https://github.com/loopbackio/loopback-next/commit/4ee90ac8ef50ce024102dc31375f17b204a45cfb))
+
+
+
+
+
 ## [5.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/testlab@5.0.2...@loopback/testlab@5.0.3) (2022-08-25)
 
 **Note:** Version bump only for package @loopback/testlab

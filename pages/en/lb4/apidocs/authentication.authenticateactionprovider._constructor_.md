@@ -25,7 +25,7 @@ constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrateg
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getStrategies | [Getter](./context.getter.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
+|  getStrategies | Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
 |  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
 |  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 |  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |

@@ -18,14 +18,14 @@ Bind the key to an instance of the given class.
 <b>Signature:</b>
 
 ```typescript
-toClass(ctor: Constructor<T>): this;
+toClass<C extends T & object>(ctor: Constructor<C>): this;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The class constructor to call. Any constructor arguments must be annotated with <code>@inject</code> so that we can resolve them from the context. |
+|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;C&gt; | The class constructor to call. Any constructor arguments must be annotated with <code>@inject</code> so that we can resolve them from the context. |
 
 <b>Returns:</b>
 

@@ -31,7 +31,7 @@ export declare class UserRepository extends DefaultCrudRepository<User, typeof U
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [userCredentials](./authentication-jwt.userrepository.usercredentials.md) | <code>readonly</code> | [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->&gt; |  |
-|  [userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md) | <code>protected</code> | [Getter](./context.getter.md)<!-- -->&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt; |  |
+|  [userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md) | <code>protected</code> | Getter&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt; |  |
 
 ## Methods
 

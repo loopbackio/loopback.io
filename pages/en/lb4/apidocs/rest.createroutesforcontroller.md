@@ -18,7 +18,7 @@ Create routes for a controller with the given spec
 <b>Signature:</b>
 
 ```typescript
-export declare function createRoutesForController<T>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): ControllerRoute<T>[];
+export declare function createRoutesForController<T extends object>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): ControllerRoute<T>[];
 ```
 
 ## Parameters

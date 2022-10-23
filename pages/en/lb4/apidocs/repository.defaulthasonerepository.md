@@ -31,8 +31,8 @@ export declare class DefaultHasOneRepository<TargetEntity extends Entity, Target
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [constraint](./repository.defaulthasonerepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  [getTargetRepository](./repository.defaulthasonerepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
-|  [getTargetRepositoryDict](./repository.defaulthasonerepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepository](./repository.defaulthasonerepository.gettargetrepository.md) |  | Getter&lt;TargetRepository&gt; \| { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepositoryDict](./repository.defaulthasonerepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
 |  [targetResolver](./repository.defaulthasonerepository.targetresolver.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 
 ## Methods

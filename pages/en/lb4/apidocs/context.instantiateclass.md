@@ -20,7 +20,7 @@ The function returns a class when all dependencies were resolved synchronously, 
 <b>Signature:</b>
 
 ```typescript
-export declare function instantiateClass<T>(ctor: Constructor<T>, ctx: Context, session?: ResolutionSession, nonInjectedArgs?: any[]): ValueOrPromise<T>;
+export declare function instantiateClass<T extends object>(ctor: Constructor<T>, ctx: Context, session?: ResolutionSession, nonInjectedArgs?: any[]): ValueOrPromise<T>;
 ```
 
 ## Parameters

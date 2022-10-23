@@ -18,6 +18,6 @@ Binding key for HTTPS options
 <b>Signature:</b>
 
 ```typescript
-HTTPS_OPTIONS: BindingKey<https.ServerOptions>
+HTTPS_OPTIONS: BindingKey<https.ServerOptions<typeof import("http").IncomingMessage, typeof import("http").ServerResponse>>
 ```
 

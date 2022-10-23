@@ -31,8 +31,8 @@ export declare class DefaultBelongsToRepository<TargetEntity extends Entity, Tar
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [constraint](./repository.defaultbelongstorepository.constraint.md) |  | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  [getTargetRepository](./repository.defaultbelongstorepository.gettargetrepository.md) |  | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
-|  [getTargetRepositoryDict](./repository.defaultbelongstorepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepository](./repository.defaultbelongstorepository.gettargetrepository.md) |  | Getter&lt;TargetRepository&gt; \| { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
+|  [getTargetRepositoryDict](./repository.defaultbelongstorepository.gettargetrepositorydict.md) |  | { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
 |  [targetResolver](./repository.defaultbelongstorepository.targetresolver.md) |  | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt; |  |
 
 ## Methods

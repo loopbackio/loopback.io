@@ -28,7 +28,7 @@ export declare function createBelongsToAccessor<Target extends Entity, TargetId,
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  belongsToMetadata | [BelongsToDefinition](./repository.belongstodefinition.md) |  |
-|  targetRepositoryGetter | [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
+|  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 |  sourceRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Source, SourceId&gt; |  |
 
 <b>Returns:</b>

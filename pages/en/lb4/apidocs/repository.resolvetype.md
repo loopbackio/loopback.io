@@ -18,7 +18,7 @@ Resolve a type value that may have been provided via TypeResolver.
 <b>Signature:</b>
 
 ```typescript
-export declare function resolveType<T extends Object>(fn: TypeResolver<T> | Class<T>): Class<T>;
+export declare function resolveType<T extends object>(fn: TypeResolver<T> | Class<T>): Class<T>;
 ```
 
 ## Parameters

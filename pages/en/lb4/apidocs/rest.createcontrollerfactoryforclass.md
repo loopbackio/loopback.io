@@ -18,7 +18,7 @@ Create a controller factory function for a given class
 <b>Signature:</b>
 
 ```typescript
-export declare function createControllerFactoryForClass<T>(controllerCtor: ControllerClass<T>): ControllerFactory<T>;
+export declare function createControllerFactoryForClass<T extends object>(controllerCtor: ControllerClass<T>): ControllerFactory<T>;
 ```
 
 ## Parameters

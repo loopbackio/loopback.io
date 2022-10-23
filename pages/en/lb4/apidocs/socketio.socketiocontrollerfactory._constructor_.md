@@ -18,7 +18,7 @@ Constructs a new instance of the `SocketIoControllerFactory` class
 <b>Signature:</b>
 
 ```typescript
-constructor(parentCtx: Context, controllerClass: Constructor<unknown>, socket: Socket);
+constructor(parentCtx: Context, controllerClass: Constructor<object>, socket: Socket);
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ constructor(parentCtx: Context, controllerClass: Constructor<unknown>, socket: S
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  parentCtx | [Context](./context.context.md) |  |
-|  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
+|  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; |  |
 |  socket | Socket |  |
 
 

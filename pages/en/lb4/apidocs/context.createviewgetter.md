@@ -31,6 +31,6 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 
 <b>Returns:</b>
 
-[Getter](./context.getter.md)<!-- -->&lt;T\[\]&gt;
+Getter&lt;T\[\]&gt;
 
 

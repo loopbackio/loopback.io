@@ -28,8 +28,8 @@ constructor(
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  transports | [Getter](./context.getter.md)<!-- -->&lt;Transport\[\]&gt; |  |
-|  formats | [Getter](./context.getter.md)<!-- -->&lt;Format\[\]&gt; |  |
+|  transports | Getter&lt;Transport\[\]&gt; |  |
+|  formats | Getter&lt;Format\[\]&gt; |  |
 |  options | LoggerOptions | <i>(Optional)</i> |
 
 

@@ -27,8 +27,8 @@ constructor(getTargetRepository: Getter<TargetRepository> | {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  getTargetRepository | [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt; \| { \[repoType: string\]: [Getter](./context.getter.md)<!-- -->&lt;TargetRepository&gt;; } |  |
-|  getThroughRepository | [Getter](./context.getter.md)<!-- -->&lt;ThroughRepository&gt; |  |
+|  getTargetRepository | Getter&lt;TargetRepository&gt; \| { \[repoType: string\]: Getter&lt;TargetRepository&gt;; } |  |
+|  getThroughRepository | Getter&lt;ThroughRepository&gt; |  |
 |  getTargetConstraintFromThroughModels | (throughInstances: ThroughEntity\[\]) =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
 |  getTargetKeys | (throughInstances: ThroughEntity\[\]) =&gt; TargetID\[\] |  |
 |  getThroughConstraintFromSource | () =&gt; [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt; |  |
