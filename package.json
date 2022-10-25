@@ -26,7 +26,7 @@
     "@loopback/docs": "latest",
     "chalk": "^5.1.2",
     "fs-extra": "^10.1.0",
-    "ibm-watson": "^7.1.1",
+    "ibm-watson": "^7.1.2",
     "markdownlint-cli": "^0.32.2",
     "retry": "^0.13.1",
     "swagger-ui-dist": "^4.15.0",
