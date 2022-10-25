@@ -24,7 +24,7 @@ jobs:
           node-version: 16
 
       - name: Set up Ruby 2.7
-        uses: ruby/setup-ruby@eae47962baca661befdfd24e4d6c34ade04858f7 # tag=v1.118.0
+        uses: ruby/setup-ruby@bc92d02ed9085306c8513b29336aed77e680d999 # tag=v1.119.0
         with:
           ruby-version: 2.7
 
