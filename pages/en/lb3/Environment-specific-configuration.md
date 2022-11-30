@@ -208,6 +208,7 @@ module.exports = {
     password: process.env.DB_PASSWORD,
     database: 'myapp',
   }
+}
 ```
 
 In the above example, running `export PRODUCTION=true` (or `set PRODUCTION=true` for Windows) will load
