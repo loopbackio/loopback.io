@@ -20,7 +20,7 @@ User can extend `DefaultCrudRepository` then override this function to execute c
 <b>Signature:</b>
 
 ```typescript
-protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): Promise<legacy.ModelData<legacy.PersistedModel>>;
+protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): legacy.ModelData<legacy.PersistedModel>;
 ```
 
 ## Parameters
@@ -32,6 +32,6 @@ protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): Pr
 
 <b>Returns:</b>
 
-Promise&lt;legacy.ModelData&lt;legacy.PersistedModel&gt;&gt;
+legacy.ModelData&lt;legacy.PersistedModel&gt;
 
 
