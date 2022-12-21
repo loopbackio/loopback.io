@@ -18,7 +18,7 @@ An object to configure binding scope and tags
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingScopeAndTags = {
+export type BindingScopeAndTags = {
     scope?: BindingScope;
     tags?: BindingTag | BindingTag[];
 };

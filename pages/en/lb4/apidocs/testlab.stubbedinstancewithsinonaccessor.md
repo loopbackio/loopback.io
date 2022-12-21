@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.testlab.stubbedinstancewithsinonaccessor.html
 <b>Signature:</b>
 
 ```typescript
-export declare type StubbedInstanceWithSinonAccessor<T> = T & {
+export type StubbedInstanceWithSinonAccessor<T> = T & {
     stubs: sinon.SinonStubbedInstance<T>;
 };
 ```

@@ -18,7 +18,7 @@ Key for metadata access via reflection
 <b>Signature:</b>
 
 ```typescript
-export declare type MetadataKey<T, D extends DecoratorType> = MetadataAccessor<T, D> | string;
+export type MetadataKey<T, D extends DecoratorType> = MetadataAccessor<T, D> | string;
 ```
 <b>References:</b> [DecoratorType](./metadata.decoratortype.md)<!-- -->, [MetadataAccessor](./metadata.metadataaccessor.md)
 

@@ -18,7 +18,7 @@ Invokes a method defined in the Application Controller
 <b>Signature:</b>
 
 ```typescript
-export declare type InvokeMethod = (route: RouteEntry, args: OperationArgs) => Promise<OperationRetval>;
+export type InvokeMethod = (route: RouteEntry, args: OperationArgs) => Promise<OperationRetval>;
 ```
 <b>References:</b> [RouteEntry](./rest.routeentry.md)<!-- -->, [OperationArgs](./rest.operationargs.md)<!-- -->, [OperationRetval](./rest.operationretval.md)
 

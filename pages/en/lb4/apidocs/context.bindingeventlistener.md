@@ -18,7 +18,7 @@ Event listeners for binding events
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingEventListener = (
+export type BindingEventListener = (
 event: BindingEvent) => void;
 ```
 <b>References:</b> [BindingEvent](./context.bindingevent.md)

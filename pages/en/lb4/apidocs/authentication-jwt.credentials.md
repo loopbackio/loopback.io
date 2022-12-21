@@ -18,7 +18,7 @@ A pre-defined type for user credentials. It assumes a user logs in using the ema
 <b>Signature:</b>
 
 ```typescript
-export declare type Credentials = {
+export type Credentials = {
     email: string;
     password: string;
 };

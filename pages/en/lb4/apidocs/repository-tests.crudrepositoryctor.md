@@ -18,7 +18,7 @@ A constructor of a class implementing CrudRepository interface, accepting the En
 <b>Signature:</b>
 
 ```typescript
-export declare type CrudRepositoryCtor = new <T extends Entity, ID, Relations extends object>(entityClass: typeof Entity & {
+export type CrudRepositoryCtor = new <T extends Entity, ID, Relations extends object>(entityClass: typeof Entity & {
     prototype: T;
 }, dataSource: juggler.DataSource) => EntityCrudRepository<T, ID, Relations>;
 ```

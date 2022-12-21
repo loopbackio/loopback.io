@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.stringifiedtypeoptions.html
 <b>Signature:</b>
 
 ```typescript
-export declare type StringifiedTypeOptions = {
+export type StringifiedTypeOptions = {
     func: ColumnType;
     entity: string;
     property: string;

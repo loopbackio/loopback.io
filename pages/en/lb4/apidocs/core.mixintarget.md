@@ -18,7 +18,7 @@ A replacement for `typeof Target` to be used in mixin class definitions. This is
 <b>Signature:</b>
 
 ```typescript
-export declare type MixinTarget<T extends object> = Constructor<{
+export type MixinTarget<T extends object> = Constructor<{
     [P in keyof T]: T[P];
 }>;
 ```

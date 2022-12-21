@@ -18,6 +18,6 @@ JSON primitive types: - string - number - boolean - null
 <b>Signature:</b>
 
 ```typescript
-export declare type JSONPrimitive = string | number | boolean | null;
+export type JSONPrimitive = string | number | boolean | null;
 ```
 

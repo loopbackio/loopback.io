@@ -18,7 +18,7 @@ Where clause
 <b>Signature:</b>
 
 ```typescript
-export declare type Where<MT extends object = AnyObject> = Condition<MT> | AndClause<MT> | OrClause<MT>;
+export type Where<MT extends object = AnyObject> = Condition<MT> | AndClause<MT> | OrClause<MT>;
 ```
 <b>References:</b> [Condition](./filter.condition.md)<!-- -->, [AndClause](./filter.andclause.md)<!-- -->, [OrClause](./filter.orclause.md)
 

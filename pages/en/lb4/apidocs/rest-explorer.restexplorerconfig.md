@@ -18,7 +18,7 @@ Options to configure API Explorer UI
 <b>Signature:</b>
 
 ```typescript
-export declare type RestExplorerConfig = {
+export type RestExplorerConfig = {
     path?: string;
     useSelfHostedSpec?: false;
     swaggerThemeFile?: string;

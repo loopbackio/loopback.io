@@ -18,7 +18,7 @@ Options for boot() execution
 <b>Signature:</b>
 
 ```typescript
-export declare type BootExecutionOptions = {
+export type BootExecutionOptions = {
     booters?: Constructor<Booter>[];
     filter?: {
         booters?: string[];

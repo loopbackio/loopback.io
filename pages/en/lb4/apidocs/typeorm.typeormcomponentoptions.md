@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormcomponentoptions.html
 <b>Signature:</b>
 
 ```typescript
-export declare type TypeOrmComponentOptions = {
+export type TypeOrmComponentOptions = {
     [prop: string]: string;
 };
 ```

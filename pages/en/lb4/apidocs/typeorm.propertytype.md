@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.propertytype.html
 <b>Signature:</b>
 
 ```typescript
-export declare type PropertyType = {
+export type PropertyType = {
     [propertyName: string]: SchemaObject | ReferenceObject;
 };
 ```

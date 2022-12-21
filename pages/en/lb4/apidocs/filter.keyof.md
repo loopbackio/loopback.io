@@ -18,7 +18,7 @@ Key types of a given model, excluding operators
 <b>Signature:</b>
 
 ```typescript
-export declare type KeyOf<MT extends object> = Exclude<Extract<keyof MT, string>, Operators>;
+export type KeyOf<MT extends object> = Exclude<Extract<keyof MT, string>, Operators>;
 ```
 <b>References:</b> [Operators](./filter.operators.md)
 

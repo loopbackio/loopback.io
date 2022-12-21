@@ -18,6 +18,6 @@ Request listener function for http/https requests
 <b>Signature:</b>
 
 ```typescript
-export declare type RequestListener = (req: IncomingMessage, res: ServerResponse) => void;
+export type RequestListener = (req: IncomingMessage, res: ServerResponse) => void;
 ```
 

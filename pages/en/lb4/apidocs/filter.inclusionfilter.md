@@ -18,7 +18,7 @@ Inclusion filter type e.g. 'property', {<!-- -->relation: 'property'<!-- -->}
 <b>Signature:</b>
 
 ```typescript
-export declare type InclusionFilter = string | Inclusion;
+export type InclusionFilter = string | Inclusion;
 ```
 <b>References:</b> [Inclusion](./filter.inclusion.md)
 

@@ -18,7 +18,7 @@ Configuration for LoggingComponent
 <b>Signature:</b>
 
 ```typescript
-export declare type LoggingComponentConfig = {
+export type LoggingComponentConfig = {
     enableFluent?: boolean;
     enableHttpAccessLog?: boolean;
 };

@@ -20,7 +20,7 @@ Options for a cron job. It adds an optional `name` to cron parameters.
 <b>Signature:</b>
 
 ```typescript
-export declare type CronJobOptions = CronJobParameters & {
+export type CronJobOptions = CronJobParameters & {
     name?: string;
 };
 ```

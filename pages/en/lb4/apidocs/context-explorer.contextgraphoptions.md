@@ -18,7 +18,7 @@ Options for ContextGraph
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextGraphOptions = {
+export type ContextGraphOptions = {
     bindingFilter?: BindingNodeFilter;
 };
 ```

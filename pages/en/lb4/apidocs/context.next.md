@@ -18,7 +18,7 @@ The `next` function that can be used to invoke next generic interceptor in the c
 <b>Signature:</b>
 
 ```typescript
-export declare type Next = () => ValueOrPromise<NonVoid>;
+export type Next = () => ValueOrPromise<NonVoid>;
 ```
 <b>References:</b> [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
 

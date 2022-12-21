@@ -18,6 +18,6 @@ Options for AJV errors
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvErrorOptions = ErrorMessageOptions;
+export type AjvErrorOptions = ErrorMessageOptions;
 ```
 

@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiodonefunction.html
 <b>Signature:</b>
 
 ```typescript
-export declare type SocketIoDoneFunction = (response: unknown) => Promise<void>;
+export type SocketIoDoneFunction = (response: unknown) => Promise<void>;
 ```
 

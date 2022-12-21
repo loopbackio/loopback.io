@@ -18,7 +18,7 @@ A constructor of a class implementing TransactionalRepository interface, accepti
 <b>Signature:</b>
 
 ```typescript
-export declare type TransactionalRepositoryCtor = new <T extends Entity, ID, Relations extends object>(entityClass: typeof Entity & {
+export type TransactionalRepositoryCtor = new <T extends Entity, ID, Relations extends object>(entityClass: typeof Entity & {
     prototype: T;
 }, dataSource: juggler.DataSource) => TransactionalEntityRepository<T, ID, Relations>;
 ```

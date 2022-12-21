@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.repository.inclusionresolver.html
 <b>Signature:</b>
 
 ```typescript
-export declare type InclusionResolver<S extends Entity, T extends Entity> = (
+export type InclusionResolver<S extends Entity, T extends Entity> = (
 sourceEntities: S[], 
 inclusion: InclusionFilter, 
 options?: Options) => Promise<(T | undefined)[] | (T[] | undefined)[]>;

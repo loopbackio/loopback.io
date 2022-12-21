@@ -18,6 +18,6 @@ Return value for a method invocation
 <b>Signature:</b>
 
 ```typescript
-export declare type InvocationResult = any;
+export type InvocationResult = any;
 ```
 

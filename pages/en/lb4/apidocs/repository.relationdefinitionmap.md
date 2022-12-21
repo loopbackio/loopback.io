@@ -18,7 +18,7 @@ A key-value map describing model relations. A relation name is used as the key, 
 <b>Signature:</b>
 
 ```typescript
-export declare type RelationDefinitionMap = {
+export type RelationDefinitionMap = {
     [relationName: string]: RelationMetadata;
 };
 ```

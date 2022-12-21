@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiorejectmethod.html
 <b>Signature:</b>
 
 ```typescript
-export declare type SocketIoRejectMethod = (done: Function, error: Error) => unknown;
+export type SocketIoRejectMethod = (done: Function, error: Error) => unknown;
 ```
 

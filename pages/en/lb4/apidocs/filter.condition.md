@@ -18,7 +18,7 @@ Condition clause
 <b>Signature:</b>
 
 ```typescript
-export declare type Condition<MT extends object> = {
+export type Condition<MT extends object> = {
     [P in KeyOf<MT>]?: PredicateComparison<MT[P]> | (MT[P] & ShortHandEqualType);
 };
 ```

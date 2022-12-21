@@ -18,7 +18,7 @@ Information for a binding event
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingEvent = {
+export type BindingEvent = {
     type: 'changed' | string;
     binding: Readonly<Binding<unknown>>;
     operation: 'tag' | 'scope' | 'value' | string;

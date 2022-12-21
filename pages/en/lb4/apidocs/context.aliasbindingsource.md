@@ -18,7 +18,7 @@ Binding source for `toAlias`
 <b>Signature:</b>
 
 ```typescript
-export declare type AliasBindingSource<T> = {
+export type AliasBindingSource<T> = {
     type: BindingType.ALIAS;
     value: BindingAddress<T>;
 };

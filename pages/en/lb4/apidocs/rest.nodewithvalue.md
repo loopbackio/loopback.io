@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.nodewithvalue.html
 <b>Signature:</b>
 
 ```typescript
-export declare type NodeWithValue<T> = Node<T> & {
+export type NodeWithValue<T> = Node<T> & {
     value: T;
 };
 ```

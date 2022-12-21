@@ -18,7 +18,7 @@ Binding metadata from `@injectable`
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingMetadata<T = unknown> = {
+export type BindingMetadata<T = unknown> = {
     templates: BindingTemplate<T>[];
     target: Constructor<T>;
 };

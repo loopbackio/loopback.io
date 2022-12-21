@@ -18,6 +18,6 @@ Order by direction
 <b>Signature:</b>
 
 ```typescript
-export declare type Direction = 'ASC' | 'DESC';
+export type Direction = 'ASC' | 'DESC';
 ```
 

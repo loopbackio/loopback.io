@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.rest.httprequestlistener.html
 <b>Signature:</b>
 
 ```typescript
-export declare type HttpRequestListener = (req: IncomingMessage, res: ServerResponse) => void;
+export type HttpRequestListener = (req: IncomingMessage, res: ServerResponse) => void;
 ```
 

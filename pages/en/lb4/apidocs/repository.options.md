@@ -18,7 +18,7 @@ Type alias for Node.js options object
 <b>Signature:</b>
 
 ```typescript
-export declare type Options = AnyObject;
+export type Options = AnyObject;
 ```
 <b>References:</b> [AnyObject](./repository.anyobject.md)
 

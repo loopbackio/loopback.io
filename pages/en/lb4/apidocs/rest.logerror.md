@@ -18,6 +18,6 @@ Log information about a failed request.
 <b>Signature:</b>
 
 ```typescript
-export declare type LogError = (err: Error, statusCode: number, request: Request) => void;
+export type LogError = (err: Error, statusCode: number, request: Request) => void;
 ```
 

@@ -18,6 +18,6 @@ Value types for `{propertyName: value}`
 <b>Signature:</b>
 
 ```typescript
-export declare type ShortHandEqualType = string | number | boolean | Date;
+export type ShortHandEqualType = string | number | boolean | Date;
 ```
 

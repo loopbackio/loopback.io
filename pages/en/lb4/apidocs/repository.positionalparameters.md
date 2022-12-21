@@ -18,6 +18,6 @@ Positional parameters, such as \[1, 'a'\]
 <b>Signature:</b>
 
 ```typescript
-export declare type PositionalParameters = any[];
+export type PositionalParameters = any[];
 ```
 

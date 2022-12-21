@@ -18,7 +18,7 @@ Binding source for `toClass`
 <b>Signature:</b>
 
 ```typescript
-export declare type ClassBindingSource<T> = {
+export type ClassBindingSource<T> = {
     type: BindingType.CLASS;
     value: Constructor<T>;
 };

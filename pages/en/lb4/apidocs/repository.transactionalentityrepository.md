@@ -18,7 +18,7 @@ A type for CRUD repositories that are backed by IDs and support Transactions
 <b>Signature:</b>
 
 ```typescript
-export declare type TransactionalEntityRepository<T extends Entity, ID, Relations extends object = {}> = TransactionalRepository<T> & EntityCrudRepository<T, ID>;
+export type TransactionalEntityRepository<T extends Entity, ID, Relations extends object = {}> = TransactionalRepository<T> & EntityCrudRepository<T, ID>;
 ```
 <b>References:</b> [Entity](./repository.entity.md)<!-- -->, [TransactionalRepository](./repository.transactionalrepository.md)<!-- -->, [EntityCrudRepository](./repository.entitycrudrepository.md)
 

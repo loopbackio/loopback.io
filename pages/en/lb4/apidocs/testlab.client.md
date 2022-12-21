@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.testlab.client.html
 <b>Signature:</b>
 
 ```typescript
-export declare type Client = supertest.SuperTest<supertest.Test>;
+export type Client = supertest.SuperTest<supertest.Test>;
 ```
 

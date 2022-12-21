@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.restrouteroptions.html
 <b>Signature:</b>
 
 ```typescript
-export declare type RestRouterOptions = {
+export type RestRouterOptions = {
     strict?: boolean;
 };
 ```

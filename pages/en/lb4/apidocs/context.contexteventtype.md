@@ -18,6 +18,6 @@ Context event types. We support `bind` and `unbind` for now but keep it open for
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextEventType = 'bind' | 'unbind' | string;
+export type ContextEventType = 'bind' | 'unbind' | string;
 ```
 

@@ -18,7 +18,7 @@ Possible server options
 <b>Signature:</b>
 
 ```typescript
-export declare type HttpServerOptions = HttpOptions | HttpsOptions;
+export type HttpServerOptions = HttpOptions | HttpsOptions;
 ```
 <b>References:</b> [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
 

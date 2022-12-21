@@ -18,7 +18,7 @@ RestServer options
 <b>Signature:</b>
 
 ```typescript
-export declare type RestServerOptions = Partial<RestServerResolvedOptions>;
+export type RestServerOptions = Partial<RestServerResolvedOptions>;
 ```
 <b>References:</b> [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)
 

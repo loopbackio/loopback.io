@@ -20,7 +20,7 @@ Example: `{afieldname: true}`
 <b>Signature:</b>
 
 ```typescript
-export declare type Fields<MT = AnyObject> = {
+export type Fields<MT = AnyObject> = {
     [P in keyof MT]?: boolean;
 } | Extract<keyof MT, string>[];
 ```

@@ -18,7 +18,7 @@ Options to customize the binding created from a class
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingFromClassOptions = {
+export type BindingFromClassOptions = {
     key?: BindingAddress;
     type?: string;
     name?: string;

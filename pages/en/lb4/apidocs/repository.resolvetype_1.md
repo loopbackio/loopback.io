@@ -16,14 +16,14 @@ permalink: /doc/en/lb4/apidocs.repository.resolvetype_1.html
 <b>Signature:</b>
 
 ```typescript
-export declare function resolveType<T>(fn: T): T;
+export declare function resolveType<T>(fn: NonFunction<T>): T;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | T |  |
+|  fn | [NonFunction](./repository.nonfunction.md)<!-- -->&lt;T&gt; |  |
 
 <b>Returns:</b>
 

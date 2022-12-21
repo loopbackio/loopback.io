@@ -18,6 +18,6 @@ Functions for readiness check
 <b>Signature:</b>
 
 ```typescript
-export declare type ReadyCheck = () => Promise<void>;
+export type ReadyCheck = () => Promise<void>;
 ```
 

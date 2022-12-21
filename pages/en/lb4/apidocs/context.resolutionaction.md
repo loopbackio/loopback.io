@@ -18,7 +18,7 @@ A function to be executed with the resolution session
 <b>Signature:</b>
 
 ```typescript
-export declare type ResolutionAction = (session: ResolutionSession) => ValueOrPromise<BoundValue>;
+export type ResolutionAction = (session: ResolutionSession) => ValueOrPromise<BoundValue>;
 ```
 <b>References:</b> [ResolutionSession](./context.resolutionsession.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [BoundValue](./context.boundvalue.md)
 

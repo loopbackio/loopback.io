@@ -18,7 +18,7 @@ Source for the binding, including the type and value
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingSource<T> = ConstantBindingSource<T> | DynamicValueBindingSource<T> | ClassBindingSource<T> | ProviderBindingSource<T> | AliasBindingSource<T>;
+export type BindingSource<T> = ConstantBindingSource<T> | DynamicValueBindingSource<T> | ClassBindingSource<T> | ProviderBindingSource<T> | AliasBindingSource<T>;
 ```
 <b>References:</b> [ConstantBindingSource](./context.constantbindingsource.md)<!-- -->, [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md)<!-- -->, [ClassBindingSource](./context.classbindingsource.md)<!-- -->, [ProviderBindingSource](./context.providerbindingsource.md)<!-- -->, [AliasBindingSource](./context.aliasbindingsource.md)
 

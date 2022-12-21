@@ -18,7 +18,7 @@ Valid configuration for the RestServer constructor.
 <b>Signature:</b>
 
 ```typescript
-export declare type RestServerConfig = RestServerOptions & HttpServerOptions;
+export type RestServerConfig = RestServerOptions & HttpServerOptions;
 ```
 <b>References:</b> [RestServerOptions](./rest.restserveroptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
 

@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.context.boundvalue.html
 <b>Signature:</b>
 
 ```typescript
-export declare type BoundValue = any;
+export type BoundValue = any;
 ```
 

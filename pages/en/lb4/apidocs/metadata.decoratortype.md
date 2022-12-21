@@ -18,6 +18,6 @@ Decorator function types
 <b>Signature:</b>
 
 ```typescript
-export declare type DecoratorType = ClassDecorator | PropertyDecorator | MethodDecorator | ParameterDecorator;
+export type DecoratorType = ClassDecorator | PropertyDecorator | MethodDecorator | ParameterDecorator;
 ```
 

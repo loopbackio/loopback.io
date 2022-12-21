@@ -18,7 +18,7 @@ Binding source for `toDynamicValue`
 <b>Signature:</b>
 
 ```typescript
-export declare type DynamicValueBindingSource<T> = {
+export type DynamicValueBindingSource<T> = {
     type: BindingType.DYNAMIC_VALUE;
     value: ValueFactory<T> | DynamicValueProviderClass<T>;
 };

@@ -20,7 +20,7 @@ Warning: The hasManyThrough interface is experimental and is subject to change. 
 <b>Signature:</b>
 
 ```typescript
-export declare type HasManyThroughRepositoryFactory<TargetEntity extends Entity, TargetID, ThroughEntity extends Entity, SourceID> = {
+export type HasManyThroughRepositoryFactory<TargetEntity extends Entity, TargetID, ThroughEntity extends Entity, SourceID> = {
     (fkValue: SourceID): HasManyThroughRepository<TargetEntity, TargetID, ThroughEntity>;
     inclusionResolver: InclusionResolver<Entity, TargetEntity>;
 };

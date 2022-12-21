@@ -18,7 +18,7 @@ JSON values - primitive - object - array
 <b>Signature:</b>
 
 ```typescript
-export declare type JSONValue = JSONPrimitive | JSONObject | JSONArray;
+export type JSONValue = JSONPrimitive | JSONObject | JSONArray;
 ```
 <b>References:</b> [JSONPrimitive](./context.jsonprimitive.md)<!-- -->, [JSONObject](./context.jsonobject.md)<!-- -->, [JSONArray](./context.jsonarray.md)
 

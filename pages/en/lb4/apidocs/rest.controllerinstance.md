@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.controllerinstance.html
 <b>Signature:</b>
 
 ```typescript
-export declare type ControllerInstance = {
+export type ControllerInstance = {
     [name: string]: any;
 } & object;
 ```

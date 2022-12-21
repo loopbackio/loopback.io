@@ -18,7 +18,7 @@ Type definition for ArtifactOptions. These are the options supported by this Boo
 <b>Signature:</b>
 
 ```typescript
-export declare type ArtifactOptions = {
+export type ArtifactOptions = {
     dirs?: string | string[];
     extensions?: string | string[];
     nested?: boolean;

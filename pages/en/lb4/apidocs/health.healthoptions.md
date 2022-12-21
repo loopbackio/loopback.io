@@ -18,7 +18,7 @@ Options for health component
 <b>Signature:</b>
 
 ```typescript
-export declare type HealthOptions = {
+export type HealthOptions = {
     disabled?: boolean;
     healthPath: string;
     readyPath: string;

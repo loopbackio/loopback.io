@@ -18,6 +18,6 @@ Type definition for decorators returned by `@serviceProxy` decorator factory
 <b>Signature:</b>
 
 ```typescript
-export declare type ServiceProxyDecorator = PropertyDecorator | ParameterDecorator;
+export type ServiceProxyDecorator = PropertyDecorator | ParameterDecorator;
 ```
 

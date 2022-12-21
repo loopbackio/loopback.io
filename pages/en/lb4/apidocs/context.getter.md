@@ -18,6 +18,6 @@ The function injected by `@inject.getter(bindingSelector)`<!-- -->. It can be us
 <b>Signature:</b>
 
 ```typescript
-export declare type Getter<T> = () => Promise<T>;
+export type Getter<T> = () => Promise<T>;
 ```
 

@@ -18,7 +18,7 @@ Matching predicate comparison
 <b>Signature:</b>
 
 ```typescript
-export declare type PredicateComparison<PT> = {
+export type PredicateComparison<PT> = {
     eq?: PT;
     neq?: PT;
     gt?: PT;

@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.testlab.shotcallback.html
 <b>Signature:</b>
 
 ```typescript
-export declare type ShotCallback = (response: ResponseObject) => void;
+export type ShotCallback = (response: ResponseObject) => void;
 ```
 

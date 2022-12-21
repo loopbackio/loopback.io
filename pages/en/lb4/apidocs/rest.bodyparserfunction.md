@@ -18,7 +18,7 @@ Plain function for body parsing
 <b>Signature:</b>
 
 ```typescript
-export declare type BodyParserFunction = (request: Request) => Promise<RequestBody>;
+export type BodyParserFunction = (request: Request) => Promise<RequestBody>;
 ```
 <b>References:</b> [RequestBody](./rest.requestbody.md)
 

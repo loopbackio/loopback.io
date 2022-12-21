@@ -18,7 +18,7 @@ Options to set up application shutdown
 <b>Signature:</b>
 
 ```typescript
-export declare type ShutdownOptions = {
+export type ShutdownOptions = {
     signals?: NodeJS.Signals[];
     gracePeriod?: number;
 };

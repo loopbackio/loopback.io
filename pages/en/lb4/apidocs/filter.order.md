@@ -20,7 +20,7 @@ Example: `{afieldname: 'ASC'}`
 <b>Signature:</b>
 
 ```typescript
-export declare type Order<MT = AnyObject> = {
+export type Order<MT = AnyObject> = {
     [P in keyof MT]: Direction;
 };
 ```

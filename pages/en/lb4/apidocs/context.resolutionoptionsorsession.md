@@ -18,7 +18,7 @@ Resolution options or session
 <b>Signature:</b>
 
 ```typescript
-export declare type ResolutionOptionsOrSession = ResolutionOptions | ResolutionSession;
+export type ResolutionOptionsOrSession = ResolutionOptions | ResolutionSession;
 ```
 <b>References:</b> [ResolutionOptions](./context.resolutionoptions.md)<!-- -->, [ResolutionSession](./context.resolutionsession.md)
 

@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.testlab.observedresponse.html
 <b>Signature:</b>
 
 ```typescript
-export declare type ObservedResponse = ResponseObject;
+export type ObservedResponse = ResponseObject;
 ```
 

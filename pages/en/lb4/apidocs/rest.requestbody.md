@@ -18,7 +18,7 @@ Request body with metadata
 <b>Signature:</b>
 
 ```typescript
-export declare type RequestBody = {
+export type RequestBody = {
     value: any | undefined;
     coercionRequired?: boolean;
     mediaType?: string;

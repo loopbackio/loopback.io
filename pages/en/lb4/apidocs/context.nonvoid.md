@@ -18,6 +18,6 @@ Any type except `void`<!-- -->. We use this type to enforce that interceptor fun
 <b>Signature:</b>
 
 ```typescript
-export declare type NonVoid = string | number | boolean | null | undefined | object;
+export type NonVoid = string | number | boolean | null | undefined | object;
 ```
 

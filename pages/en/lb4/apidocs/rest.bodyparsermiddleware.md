@@ -18,6 +18,6 @@ Express body parser function type
 <b>Signature:</b>
 
 ```typescript
-export declare type BodyParserMiddleware = (request: Request, response: Response, next: (err: HttpError) => void) => void;
+export type BodyParserMiddleware = (request: Request, response: Response, next: (err: HttpError) => void) => void;
 ```
 

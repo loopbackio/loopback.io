@@ -20,6 +20,6 @@ Note that we are using PromiseLike instead of native Promise to describe the asy
 <b>Signature:</b>
 
 ```typescript
-export declare type ValueOrPromise<T> = T | PromiseLike<T>;
+export type ValueOrPromise<T> = T | PromiseLike<T>;
 ```
 

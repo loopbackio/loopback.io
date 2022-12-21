@@ -18,7 +18,7 @@ Configuration for IBM API Connect extensions to the OpenAPI spec
 <b>Signature:</b>
 
 ```typescript
-export declare type ApiConnectSpecOptions = {
+export type ApiConnectSpecOptions = {
     targetUrl: string;
 };
 ```

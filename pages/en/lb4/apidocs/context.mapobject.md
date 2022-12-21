@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.context.mapobject.html
 <b>Signature:</b>
 
 ```typescript
-export declare type MapObject<T> = Record<string, T>;
+export type MapObject<T> = Record<string, T>;
 ```
 

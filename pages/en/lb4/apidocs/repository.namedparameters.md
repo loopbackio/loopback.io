@@ -18,7 +18,7 @@ Named parameters, such as `{x: 1, y: 'a'}`
 <b>Signature:</b>
 
 ```typescript
-export declare type NamedParameters = AnyObject;
+export type NamedParameters = AnyObject;
 ```
 <b>References:</b> [AnyObject](./repository.anyobject.md)
 

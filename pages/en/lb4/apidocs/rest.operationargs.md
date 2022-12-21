@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.rest.operationargs.html
 <b>Signature:</b>
 
 ```typescript
-export declare type OperationArgs = any[];
+export type OperationArgs = any[];
 ```
 

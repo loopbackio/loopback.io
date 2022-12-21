@@ -20,7 +20,7 @@ Example: `PrototypeOf<typeof Entity>` is resolved to `Entity`<!-- -->.
 <b>Signature:</b>
 
 ```typescript
-export declare type PrototypeOf<Ctor extends Function> = Ctor extends {
+export type PrototypeOf<Ctor extends Function> = Ctor extends {
     prototype: infer Proto;
 } ? Proto : never;
 ```

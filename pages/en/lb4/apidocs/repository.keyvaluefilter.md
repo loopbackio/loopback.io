@@ -18,7 +18,7 @@ Filter for keys
 <b>Signature:</b>
 
 ```typescript
-export declare type KeyValueFilter = {
+export type KeyValueFilter = {
     match: string;
 };
 ```

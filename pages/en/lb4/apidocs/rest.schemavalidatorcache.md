@@ -18,7 +18,7 @@ Cache for AJV schema validators
 <b>Signature:</b>
 
 ```typescript
-export declare type SchemaValidatorCache = WeakMap<SchemaObject | ReferenceObject, // First keyed by schema object
+export type SchemaValidatorCache = WeakMap<SchemaObject | ReferenceObject, // First keyed by schema object
 Map<string, ValidateFunction>>;
 ```
 

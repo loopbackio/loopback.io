@@ -18,7 +18,7 @@ The function injected by `@inject.setter(bindingKey)`<!-- -->. It sets the under
 <b>Signature:</b>
 
 ```typescript
-export declare type Setter<T> = (value: T) => void;
+export type Setter<T> = (value: T) => void;
 ```
 
 ## Example

@@ -18,7 +18,7 @@ Type for a command
 <b>Signature:</b>
 
 ```typescript
-export declare type Command = string | AnyObject;
+export type Command = string | AnyObject;
 ```
 <b>References:</b> [AnyObject](./repository.anyobject.md)
 

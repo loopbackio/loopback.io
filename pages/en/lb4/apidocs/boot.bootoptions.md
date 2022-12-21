@@ -18,7 +18,7 @@ Options to configure `Bootstrapper`
 <b>Signature:</b>
 
 ```typescript
-export declare type BootOptions = {
+export type BootOptions = {
     controllers?: ArtifactOptions;
     repositories?: ArtifactOptions;
     [prop: string]: any;

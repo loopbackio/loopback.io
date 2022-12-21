@@ -18,7 +18,7 @@ Custom LoopBack extension: a reference to Schema object that's bundled inside `d
 <b>Signature:</b>
 
 ```typescript
-export declare type SchemaRef = ReferenceObject & {
+export type SchemaRef = ReferenceObject & {
     definitions: SchemasObject;
 };
 ```

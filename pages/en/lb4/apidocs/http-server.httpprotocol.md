@@ -18,6 +18,6 @@ Supported protocols
 <b>Signature:</b>
 
 ```typescript
-export declare type HttpProtocol = 'http' | 'https';
+export type HttpProtocol = 'http' | 'https';
 ```
 

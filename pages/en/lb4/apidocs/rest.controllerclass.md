@@ -18,7 +18,7 @@ Controller class
 <b>Signature:</b>
 
 ```typescript
-export declare type ControllerClass<T extends ControllerInstance> = Constructor<T>;
+export type ControllerClass<T extends ControllerInstance> = Constructor<T>;
 ```
 <b>References:</b> [ControllerInstance](./rest.controllerinstance.md)<!-- -->, [Constructor](./context.constructor.md)
 

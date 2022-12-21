@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userwithrelations.html
 <b>Signature:</b>
 
 ```typescript
-export declare type UserWithRelations = User & UserRelations;
+export type UserWithRelations = User & UserRelations;
 ```
 <b>References:</b> [User](./authentication-jwt.user.md)<!-- -->, [UserRelations](./authentication-jwt.userrelations.md)
 

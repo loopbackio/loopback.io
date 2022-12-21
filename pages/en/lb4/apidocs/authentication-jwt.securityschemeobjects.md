@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.securityschemeobjects.html
 <b>Signature:</b>
 
 ```typescript
-export declare type SecuritySchemeObjects = {
+export type SecuritySchemeObjects = {
     [securityScheme: string]: SecuritySchemeObject | ReferenceObject;
 };
 ```

@@ -18,6 +18,6 @@ Type alias for Node.js callback functions
 <b>Signature:</b>
 
 ```typescript
-export declare type Callback<T> = (err: Error | string | null | undefined, result?: T) => void;
+export type Callback<T> = (err: Error | string | null | undefined, result?: T) => void;
 ```
 

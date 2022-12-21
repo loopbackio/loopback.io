@@ -18,7 +18,7 @@ Ajv format definition with a name
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvFormat<T extends string | number = string> = FormatDefinition<T> & {
+export type AjvFormat<T extends string | number = string> = FormatDefinition<T> & {
     name: string;
 };
 ```

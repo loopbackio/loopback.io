@@ -18,7 +18,7 @@ Configuration settings for individual model files. This type describes content o
 <b>Signature:</b>
 
 ```typescript
-export declare type ModelApiConfig = {
+export type ModelApiConfig = {
     model: typeof Model & {
         prototype: Model;
     };

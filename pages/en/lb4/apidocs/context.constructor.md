@@ -18,6 +18,6 @@ A class constructor accepting arbitrary arguments.
 <b>Signature:</b>
 
 ```typescript
-export declare type Constructor<T> = new (...args: any[]) => T;
+export type Constructor<T> = new (...args: any[]) => T;
 ```
 

@@ -18,6 +18,6 @@ Representing an interface for services. In TypeScript, the `interface` does not 
 <b>Signature:</b>
 
 ```typescript
-export declare type ServiceInterface = string | symbol | Function;
+export type ServiceInterface = string | symbol | Function;
 ```
 

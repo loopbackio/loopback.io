@@ -18,7 +18,7 @@ Events emitted by a context
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextEvent = {
+export type ContextEvent = {
     context: Context;
     binding: Readonly<Binding<unknown>>;
     type: string;

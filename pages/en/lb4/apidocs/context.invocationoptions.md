@@ -18,7 +18,7 @@ Options to control invocations
 <b>Signature:</b>
 
 ```typescript
-export declare type InvocationOptions = {
+export type InvocationOptions = {
     skipParameterInjection?: boolean;
     skipInterceptors?: boolean;
     source?: InvocationSource;

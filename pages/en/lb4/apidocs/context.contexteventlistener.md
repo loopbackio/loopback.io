@@ -18,7 +18,7 @@ Synchronous listener for context events
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextEventListener = (event: ContextEvent) => void;
+export type ContextEventListener = (event: ContextEvent) => void;
 ```
 <b>References:</b> [ContextEvent](./context.contextevent.md)
 

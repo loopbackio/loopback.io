@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingaddress.html
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingAddress<T = unknown> = string | BindingKey<T>;
+export type BindingAddress<T = unknown> = string | BindingKey<T>;
 ```
 <b>References:</b> [BindingKey](./context.bindingkey.md)
 

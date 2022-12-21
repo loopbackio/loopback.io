@@ -18,7 +18,7 @@ Mapping artifact types to binding key namespaces (prefixes).
 <b>Signature:</b>
 
 ```typescript
-export declare type TypeNamespaceMapping = {
+export type TypeNamespaceMapping = {
     [name: string]: string;
 };
 ```

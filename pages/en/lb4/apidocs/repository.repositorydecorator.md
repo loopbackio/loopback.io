@@ -18,6 +18,6 @@ Type definition for decorators returned by `@repository` decorator factory
 <b>Signature:</b>
 
 ```typescript
-export declare type RepositoryDecorator = (target: Object, key?: string, descriptorOrIndex?: TypedPropertyDescriptor<any> | number) => void;
+export type RepositoryDecorator = (target: Object, key?: string, descriptorOrIndex?: TypedPropertyDescriptor<any> | number) => void;
 ```
 

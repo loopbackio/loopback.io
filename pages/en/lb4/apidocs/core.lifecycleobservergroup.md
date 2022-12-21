@@ -18,7 +18,7 @@ A group of life cycle observers
 <b>Signature:</b>
 
 ```typescript
-export declare type LifeCycleObserverGroup = {
+export type LifeCycleObserverGroup = {
     group: string;
     bindings: Readonly<Binding<LifeCycleObserver>>[];
 };

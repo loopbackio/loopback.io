@@ -18,7 +18,7 @@ Context event observer type - An instance of `ContextObserver` or a function
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextEventObserver = ContextObserver | ContextObserverFn;
+export type ContextEventObserver = ContextObserver | ContextObserverFn;
 ```
 <b>References:</b> [ContextObserver](./context.contextobserver.md)<!-- -->, [ContextObserverFn](./context.contextobserverfn.md)
 

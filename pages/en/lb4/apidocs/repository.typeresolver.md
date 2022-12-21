@@ -20,7 +20,7 @@ We use type resolvers to break require() loops when defining relations. The targ
 <b>Signature:</b>
 
 ```typescript
-export declare type TypeResolver<Type extends Object, StaticMembers = Function> = () => Class<Type> & StaticMembers;
+export type TypeResolver<Type extends Object, StaticMembers = Function> = () => Class<Type> & StaticMembers;
 ```
 <b>References:</b> [Class](./repository.class.md)
 

@@ -18,7 +18,7 @@ Describes the token object that returned by the refresh token service functions.
 <b>Signature:</b>
 
 ```typescript
-export declare type TokenObject = {
+export type TokenObject = {
     accessToken: string;
     expiresIn?: string | undefined;
     refreshToken?: string | undefined;

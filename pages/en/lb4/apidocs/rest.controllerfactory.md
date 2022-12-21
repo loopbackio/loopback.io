@@ -18,7 +18,7 @@ A factory function to create controller instances synchronously or asynchronousl
 <b>Signature:</b>
 
 ```typescript
-export declare type ControllerFactory<T extends ControllerInstance> = (ctx: Context) => ValueOrPromise<T>;
+export type ControllerFactory<T extends ControllerInstance> = (ctx: Context) => ValueOrPromise<T>;
 ```
 <b>References:</b> [ControllerInstance](./rest.controllerinstance.md)<!-- -->, [Context](./context.context.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 

@@ -18,6 +18,6 @@ A function defining a new test case or a test suite, e.g. `it` or `describe`<!--
 <b>Signature:</b>
 
 ```typescript
-export declare type TestDefinition<ARGS extends unknown[], RETVAL> = (name: string, ...args: ARGS) => RETVAL;
+export type TestDefinition<ARGS extends unknown[], RETVAL> = (name: string, ...args: ARGS) => RETVAL;
 ```
 

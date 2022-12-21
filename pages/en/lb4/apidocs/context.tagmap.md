@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.context.tagmap.html
 <b>Signature:</b>
 
 ```typescript
-export declare type TagMap = MapObject<any>;
+export type TagMap = MapObject<any>;
 ```
 <b>References:</b> [MapObject](./context.mapobject.md)
 

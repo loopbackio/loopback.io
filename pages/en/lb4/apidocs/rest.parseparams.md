@@ -18,7 +18,7 @@ A function to parse OpenAPI operation parameters for a given route
 <b>Signature:</b>
 
 ```typescript
-export declare type ParseParams = (request: Request, route: ResolvedRoute) => Promise<OperationArgs>;
+export type ParseParams = (request: Request, route: ResolvedRoute) => Promise<OperationArgs>;
 ```
 <b>References:</b> [ResolvedRoute](./rest.resolvedroute.md)<!-- -->, [OperationArgs](./rest.operationargs.md)
 

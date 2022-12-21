@@ -18,7 +18,7 @@ Reject the request with an error.
 <b>Signature:</b>
 
 ```typescript
-export declare type Reject = (handlerContext: HandlerContext, err: Error) => void;
+export type Reject = (handlerContext: HandlerContext, err: Error) => void;
 ```
 <b>References:</b> [HandlerContext](./express.handlercontext.md)
 

@@ -18,7 +18,7 @@ An interceptor function to be invoked in a chain for the given context. It serve
 <b>Signature:</b>
 
 ```typescript
-export declare type GenericInterceptor<C extends Context = Context> = (context: C, next: Next) => ValueOrPromise<NonVoid>;
+export type GenericInterceptor<C extends Context = Context> = (context: C, next: Next) => ValueOrPromise<NonVoid>;
 ```
 <b>References:</b> [Context](./context.context.md)<!-- -->, [Next](./context.next.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
 

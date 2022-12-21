@@ -18,7 +18,7 @@ Binding source for `toProvider`
 <b>Signature:</b>
 
 ```typescript
-export declare type ProviderBindingSource<T> = {
+export type ProviderBindingSource<T> = {
     type: BindingType.PROVIDER;
     value: Constructor<Provider<T>>;
 };

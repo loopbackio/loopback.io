@@ -18,7 +18,7 @@ A function as the template to configure bindings
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingTemplate<T = unknown> = (binding: Binding<T>) => void;
+export type BindingTemplate<T = unknown> = (binding: Binding<T>) => void;
 ```
 <b>References:</b> [Binding](./context.binding.md)
 

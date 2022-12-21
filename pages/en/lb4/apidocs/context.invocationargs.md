@@ -18,6 +18,6 @@ Array of arguments for a method invocation
 <b>Signature:</b>
 
 ```typescript
-export declare type InvocationArgs = any[];
+export type InvocationArgs = any[];
 ```
 

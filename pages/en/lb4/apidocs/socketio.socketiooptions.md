@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiooptions.html
 <b>Signature:</b>
 
 ```typescript
-export declare type SocketIoOptions = HttpServerOptions;
+export type SocketIoOptions = HttpServerOptions;
 ```
 <b>References:</b> [HttpServerOptions](./http-server.httpserveroptions.md)
 

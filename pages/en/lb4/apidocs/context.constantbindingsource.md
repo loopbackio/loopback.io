@@ -18,7 +18,7 @@ Binding source for `to`
 <b>Signature:</b>
 
 ```typescript
-export declare type ConstantBindingSource<T> = {
+export type ConstantBindingSource<T> = {
     type: BindingType.CONSTANT;
     value: T;
 };

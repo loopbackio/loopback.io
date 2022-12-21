@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertymap.html
 <b>Signature:</b>
 
 ```typescript
-export declare type PropertyMap = MetadataMap<Partial<PropertyDefinition>>;
+export type PropertyMap = MetadataMap<Partial<PropertyDefinition>>;
 ```
 <b>References:</b> [MetadataMap](./metadata.metadatamap.md)<!-- -->, [PropertyDefinition](./repository.propertydefinition.md)
 

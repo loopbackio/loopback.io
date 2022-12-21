@@ -18,6 +18,6 @@ Operators for where clauses
 <b>Signature:</b>
 
 ```typescript
-export declare type Operators = 'eq' | 'neq' | 'gt' | 'gte' | 'lt' | 'lte' | 'inq' | 'nin' | 'between' | 'exists' | 'and' | 'or' | 'like' | 'nlike' | 'ilike' | 'nilike' | 'regexp';
+export type Operators = 'eq' | 'neq' | 'gt' | 'gte' | 'lt' | 'lte' | 'inq' | 'nin' | 'between' | 'exists' | 'and' | 'or' | 'like' | 'nlike' | 'ilike' | 'nilike' | 'regexp';
 ```
 

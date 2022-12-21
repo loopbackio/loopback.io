@@ -20,7 +20,7 @@ Assuming template arguments `BaseCtor` and `Props`<!-- -->, this type describes 
 <b>Signature:</b>
 
 ```typescript
-export declare type DynamicModelCtor<BaseCtor extends typeof Model, Props extends object> = {
+export type DynamicModelCtor<BaseCtor extends typeof Model, Props extends object> = {
     new (data?: DataObject<PrototypeOf<BaseCtor> & Props>): PrototypeOf<BaseCtor> & Props;
 } & BaseCtor;
 ```

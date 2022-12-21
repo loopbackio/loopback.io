@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertytype.html
 <b>Signature:</b>
 
 ```typescript
-export declare type PropertyType = string | Function | object | Type<any> | TypeResolver<Model>;
+export type PropertyType = string | Function | object | Type<any> | TypeResolver<Model>;
 ```
 <b>References:</b> [Type](./repository.type.md)<!-- -->, [TypeResolver](./repository.typeresolver.md)<!-- -->, [Model](./repository.model.md)
 

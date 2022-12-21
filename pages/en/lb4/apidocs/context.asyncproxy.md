@@ -18,7 +18,7 @@ The proxy type for `T`<!-- -->. The return type for any method of `T` with origi
 <b>Signature:</b>
 
 ```typescript
-export declare type AsyncProxy<T> = {
+export type AsyncProxy<T> = {
     [P in keyof T]: AsInterceptedFunction<T[P]>;
 };
 ```

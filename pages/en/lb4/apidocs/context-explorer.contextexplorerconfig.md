@@ -18,7 +18,7 @@ Options to configure Context Explorer
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextExplorerConfig = {
+export type ContextExplorerConfig = {
     path?: string;
     enableInspection?: boolean;
     enableSVG?: boolean;

@@ -18,7 +18,7 @@ The intercepted variant of a function to return `ValueOrPromise<T>`<!-- -->. If 
 <b>Signature:</b>
 
 ```typescript
-export declare type AsInterceptedFunction<T> = T extends (...args: InvocationArgs) => infer R ? (...args: Parameters<T>) => AsValueOrPromise<R> : T;
+export type AsInterceptedFunction<T> = T extends (...args: InvocationArgs) => infer R ? (...args: Parameters<T>) => AsValueOrPromise<R> : T;
 ```
 <b>References:</b> [InvocationArgs](./context.invocationargs.md)<!-- -->, [AsValueOrPromise](./context.asvalueorpromise.md)
 

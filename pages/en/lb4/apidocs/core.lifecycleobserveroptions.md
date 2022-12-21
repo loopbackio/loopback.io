@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserveroptions.html
 <b>Signature:</b>
 
 ```typescript
-export declare type LifeCycleObserverOptions = {
+export type LifeCycleObserverOptions = {
     orderedGroups: string[];
     disabledGroups?: string[];
     parallel?: boolean;

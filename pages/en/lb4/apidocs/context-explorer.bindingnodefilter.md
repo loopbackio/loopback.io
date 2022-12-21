@@ -18,7 +18,7 @@ A filter function to control if a binding is to be rendered
 <b>Signature:</b>
 
 ```typescript
-export declare type BindingNodeFilter = (binding: ContextBinding) => boolean;
+export type BindingNodeFilter = (binding: ContextBinding) => boolean;
 ```
 <b>References:</b> [ContextBinding](./context-explorer.contextbinding.md)
 

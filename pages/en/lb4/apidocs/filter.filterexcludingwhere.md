@@ -18,7 +18,7 @@ Filter without `where` property
 <b>Signature:</b>
 
 ```typescript
-export declare type FilterExcludingWhere<MT extends object = AnyObject> = Omit<Filter<MT>, 'where'>;
+export type FilterExcludingWhere<MT extends object = AnyObject> = Omit<Filter<MT>, 'where'>;
 ```
 <b>References:</b> [Filter](./filter.filter.md)
 

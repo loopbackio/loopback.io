@@ -18,6 +18,6 @@ Type alias for Express RequestHandler
 <b>Signature:</b>
 
 ```typescript
-export declare type ExpressRequestHandler = RequestHandler;
+export type ExpressRequestHandler = RequestHandler;
 ```
 

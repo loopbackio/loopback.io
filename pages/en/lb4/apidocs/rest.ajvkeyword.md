@@ -18,6 +18,6 @@ Ajv keyword definition with a name
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvKeyword = KeywordDefinition;
+export type AjvKeyword = KeywordDefinition;
 ```
 

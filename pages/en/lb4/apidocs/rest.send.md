@@ -18,7 +18,7 @@ Send the operation response back to the client.
 <b>Signature:</b>
 
 ```typescript
-export declare type Send = (response: Response, result: OperationRetval) => void;
+export type Send = (response: Response, result: OperationRetval) => void;
 ```
 <b>References:</b> [OperationRetval](./rest.operationretval.md)
 

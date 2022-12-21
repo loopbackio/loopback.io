@@ -18,7 +18,7 @@ Constructor type - class or function
 <b>Signature:</b>
 
 ```typescript
-export declare type Constructor<T> = Class<T> | ConstructorFunction<T>;
+export type Constructor<T> = Class<T> | ConstructorFunction<T>;
 ```
 <b>References:</b> [Class](./repository.class.md)<!-- -->, [ConstructorFunction](./repository.constructorfunction.md)
 

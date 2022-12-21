@@ -18,7 +18,7 @@ Configuration for a LoopBack based Express server
 <b>Signature:</b>
 
 ```typescript
-export declare type ExpressServerConfig = (HttpOptions | HttpsOptions) & {
+export type ExpressServerConfig = (HttpOptions | HttpsOptions) & {
     basePath?: string;
     settings?: Record<string, unknown>;
 };

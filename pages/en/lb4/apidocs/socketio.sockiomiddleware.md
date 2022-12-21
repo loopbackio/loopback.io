@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.socketio.sockiomiddleware.html
 <b>Signature:</b>
 
 ```typescript
-export declare type SockIOMiddleware = (socket: Socket, fn: (err?: any) => void) => void;
+export type SockIOMiddleware = (socket: Socket, fn: (err?: any) => void) => void;
 ```
 

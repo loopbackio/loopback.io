@@ -213,6 +213,7 @@ This module provides data access facilities to various databases and services as
 |  [InclusionResolver](./repository.inclusionresolver.md) |  |
 |  [KeyValueFilter](./repository.keyvaluefilter.md) | Filter for keys |
 |  [NamedParameters](./repository.namedparameters.md) | Named parameters, such as <code>{x: 1, y: 'a'}</code> |
+|  [NonFunction](./repository.nonfunction.md) |  |
 |  [Options](./repository.options.md) | Type alias for Node.js options object |
 |  [PositionalParameters](./repository.positionalparameters.md) | Positional parameters, such as \[1, 'a'\] |
 |  [PropertyMap](./repository.propertymap.md) |  |

@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.testlab.shotresponsector.html
 <b>Signature:</b>
 
 ```typescript
-export declare type ShotResponseCtor = new (request: IncomingMessage, onEnd: ShotCallback) => ServerResponse;
+export type ShotResponseCtor = new (request: IncomingMessage, onEnd: ShotCallback) => ServerResponse;
 ```
 <b>References:</b> [ShotCallback](./testlab.shotcallback.md)
 

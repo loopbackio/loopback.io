@@ -18,6 +18,6 @@ Functions for liveness check
 <b>Signature:</b>
 
 ```typescript
-export declare type LiveCheck = () => Promise<void>;
+export type LiveCheck = () => Promise<void>;
 ```
 

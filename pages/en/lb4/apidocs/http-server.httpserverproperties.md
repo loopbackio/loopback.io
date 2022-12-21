@@ -18,6 +18,6 @@ The following are for configuring properties which are directly set on https://n
 <b>Signature:</b>
 
 ```typescript
-export declare type HttpServerProperties = Pick<Server, 'keepAliveTimeout' | 'headersTimeout' | 'maxConnections' | 'maxHeadersCount' | 'timeout'>;
+export type HttpServerProperties = Pick<Server, 'keepAliveTimeout' | 'headersTimeout' | 'maxConnections' | 'maxHeadersCount' | 'timeout'>;
 ```
 

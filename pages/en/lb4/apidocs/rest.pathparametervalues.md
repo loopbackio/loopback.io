@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.rest.pathparametervalues.html
 <b>Signature:</b>
 
 ```typescript
-export declare type PathParameterValues = {
+export type PathParameterValues = {
     [key: string]: any;
 };
 ```

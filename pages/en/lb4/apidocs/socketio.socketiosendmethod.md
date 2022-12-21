@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosendmethod.html
 <b>Signature:</b>
 
 ```typescript
-export declare type SocketIoSendMethod = (done: Function, result: unknown) => unknown;
+export type SocketIoSendMethod = (done: Function, result: unknown) => unknown;
 ```
 

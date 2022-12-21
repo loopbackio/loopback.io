@@ -18,6 +18,6 @@ Return value of a controller method (a function implementing an operation). This
 <b>Signature:</b>
 
 ```typescript
-export declare type OperationRetval = any;
+export type OperationRetval = any;
 ```
 

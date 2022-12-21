@@ -18,7 +18,7 @@ Listen on `bind`<!-- -->, `unbind`<!-- -->, or other events
 <b>Signature:</b>
 
 ```typescript
-export declare type ContextObserverFn = (eventType: ContextEventType, binding: Readonly<Binding<unknown>>, context: Context) => ValueOrPromise<void>;
+export type ContextObserverFn = (eventType: ContextEventType, binding: Readonly<Binding<unknown>>, context: Context) => ValueOrPromise<void>;
 ```
 <b>References:</b> [ContextEventType](./context.contexteventtype.md)<!-- -->, [Binding](./context.binding.md)<!-- -->, [Context](./context.context.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 

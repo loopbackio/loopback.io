@@ -18,7 +18,7 @@ A factory function for `toDynamicValue`
 <b>Signature:</b>
 
 ```typescript
-export declare type ValueFactory<T = unknown> = (resolutionCtx: ResolutionContext) => ValueOrPromise<T | undefined>;
+export type ValueFactory<T = unknown> = (resolutionCtx: ResolutionContext) => ValueOrPromise<T | undefined>;
 ```
 <b>References:</b> [ResolutionContext](./context.resolutioncontext.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 

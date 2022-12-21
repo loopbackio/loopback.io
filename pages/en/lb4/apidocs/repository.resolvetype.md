@@ -18,14 +18,14 @@ Resolve a type value that may have been provided via TypeResolver.
 <b>Signature:</b>
 
 ```typescript
-export declare function resolveType<T extends object>(fn: TypeResolver<T> | Class<T>): Class<T>;
+export declare function resolveType<T extends object>(fn: TypeResolver<T, {}> | Class<T> | Function): Class<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  fn | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;T&gt; \| [Class](./repository.class.md)<!-- -->&lt;T&gt; | A type class or a type provider. |
+|  fn | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;T, {}&gt; \| [Class](./repository.class.md)<!-- -->&lt;T&gt; \| Function | A type class or a type provider. |
 
 <b>Returns:</b>
 

@@ -18,6 +18,6 @@ Factory function for Ajv instances
 <b>Signature:</b>
 
 ```typescript
-export declare type AjvFactory = (options?: AjvOptions) => Ajv;
+export type AjvFactory = (options?: AjvOptions) => Ajv;
 ```
 

@@ -18,7 +18,7 @@ Find a route matching the incoming request. Throw an error when no route was fou
 <b>Signature:</b>
 
 ```typescript
-export declare type FindRoute = (request: Request) => ResolvedRoute;
+export type FindRoute = (request: Request) => ResolvedRoute;
 ```
 <b>References:</b> [ResolvedRoute](./rest.resolvedroute.md)
 
