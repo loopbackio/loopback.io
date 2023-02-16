@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadataaccessor.key.html
 
 ## MetadataAccessor.key property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly key: string;

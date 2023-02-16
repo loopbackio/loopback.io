@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory._constructor_.
 
 Constructs a new instance of the `SocketIoControllerFactory` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(parentCtx: Context, controllerClass: Constructor<object>, socket: Socket);

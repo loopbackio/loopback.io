@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.definepersistedm
 
 Creates a legacy persisted model class, attaches it to the datasource and returns it. This method can be overridden in sub-classes to acess methods and properties in the generated model class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected definePersistedModel(entityClass: typeof Model): typeof juggler.PersistedModel;
@@ -27,7 +27,7 @@ protected definePersistedModel(entityClass: typeof Model): typeof juggler.Persis
 |  --- | --- | --- |
 |  entityClass | typeof [Model](./repository.model.md) | LB4 Entity constructor |
 
-<b>Returns:</b>
+**Returns:**
 
 typeof juggler.PersistedModel
 

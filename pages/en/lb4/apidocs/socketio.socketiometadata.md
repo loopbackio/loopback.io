@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiometadata.html
 
 Metadata for SocketIo
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface SocketIoMetadata 
@@ -25,7 +25,7 @@ export interface SocketIoMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name?](./socketio.socketiometadata.name.md) |  | string | <i>(Optional)</i> |
-|  [namespace?](./socketio.socketiometadata.namespace.md) |  | string \| RegExp | <i>(Optional)</i> |
+|  [name?](./socketio.socketiometadata.name.md) |  | string | _(Optional)_ |
+|  [namespace?](./socketio.socketiometadata.namespace.md) |  | string \| RegExp | _(Optional)_ |
 
 

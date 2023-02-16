@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testdefinition.html
 
 A function defining a new test case or a test suite, e.g. `it` or `describe`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TestDefinition<ARGS extends unknown[], RETVAL> = (name: string, ...args: ARGS) => RETVAL;

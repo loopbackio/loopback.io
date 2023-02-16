@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl._constructor_.html
 
 Constructs a new instance of the `CrudRepositoryImpl` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(dataSource: DataSource, entityClass: typeof Entity & {

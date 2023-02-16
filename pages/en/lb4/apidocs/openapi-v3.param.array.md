@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.array.html
 
 Define a parameter of `array` type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 array: (name: string, source: ParameterLocation, itemSpec: SchemaObject | ReferenceObject) => (target: object, member: string, index: number) => void

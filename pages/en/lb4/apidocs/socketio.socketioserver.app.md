@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.app.html
 
 ## SocketIoServer.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: Application;

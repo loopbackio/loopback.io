@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingbindings.winston_invocation_logger
 
 Binding key for method invocation logger with winston
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WINSTON_INVOCATION_LOGGER: BindingKey<Interceptor>

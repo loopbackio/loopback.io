@@ -17,7 +17,7 @@ Representing a value or promise. This type is used to represent results of synch
 
 Note that we are using PromiseLike instead of native Promise to describe the asynchronous variant. This allows producers of async values to use any Promise implementation (e.g. Bluebird) instead of native Promises provided by JavaScript runtime.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ValueOrPromise<T> = T | PromiseLike<T>;

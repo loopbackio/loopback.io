@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.connector.configmodel.html
 
 ## Connector.configModel property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configModel?: Model;

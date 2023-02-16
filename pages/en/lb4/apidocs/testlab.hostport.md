@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.hostport.html
 
 An object that requires host and port properties
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HostPort 

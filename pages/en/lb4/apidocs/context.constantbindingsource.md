@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.constantbindingsource.html
 
 Binding source for `to`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ConstantBindingSource<T> = {
@@ -23,6 +23,6 @@ export type ConstantBindingSource<T> = {
     value: T;
 };
 ```
-<b>References:</b> [BindingType.CONSTANT](./context.bindingtype.md)
+**References:** [BindingType.CONSTANT](./context.bindingtype.md)
 
 

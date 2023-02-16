@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.offset.html
 
 Set `offset`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 offset(offset: number): this;
@@ -27,7 +27,7 @@ offset(offset: number): this;
 |  --- | --- | --- |
 |  offset | number | Offset of the number of records to be returned |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

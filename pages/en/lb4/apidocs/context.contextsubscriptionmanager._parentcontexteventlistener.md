@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager._parentcontext
 
 A listener to watch parent context events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _parentContextEventListener?: ContextEventListener;

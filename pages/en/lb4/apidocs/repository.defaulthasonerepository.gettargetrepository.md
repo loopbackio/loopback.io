@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.gettargetrepos
 
 ## DefaultHasOneRepository.getTargetRepository property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getTargetRepository: Getter<TargetRepository> | {

@@ -19,7 +19,7 @@ Update or recreate the database schema for all repositories.
 
 Please check the documentation for your specific connector(s) for a detailed breakdown of behaviors for automigrate!
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
@@ -29,9 +29,9 @@ migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) | <i>(Optional)</i> Migration options, e.g. whether to update tables preserving data or rebuild everything from scratch. |
+|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) | _(Optional)_ Migration options, e.g. whether to update tables preserving data or rebuild everything from scratch. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

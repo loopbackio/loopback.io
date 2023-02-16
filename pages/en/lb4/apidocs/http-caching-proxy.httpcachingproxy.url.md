@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy.url.html
 
 URL where the proxy is listening on. Provide this value to your HTTP client as the proxy configuration.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 url: string;

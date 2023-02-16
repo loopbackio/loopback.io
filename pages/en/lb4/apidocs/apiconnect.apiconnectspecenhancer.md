@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectspecenhancer.html
 
 An OpenAPI spec enhancer to add `x-ibm-configuration` extension required by API Connect
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiConnectSpecEnhancer implements OASEnhancer 
 ```
-<b>Implements:</b> [OASEnhancer](./openapi-v3.oasenhancer.md)
+**Implements:** [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getownercontext.html
 
 Get the owning context for a binding or its key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getOwnerContext(keyOrBinding: BindingAddress | Readonly<Binding<unknown>>): Context | undefined;
@@ -27,7 +27,7 @@ getOwnerContext(keyOrBinding: BindingAddress | Readonly<Binding<unknown>>): Cont
 |  --- | --- | --- |
 |  keyOrBinding | [BindingAddress](./context.bindingaddress.md) \| Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object or key |
 
-<b>Returns:</b>
+**Returns:**
 
 [Context](./context.context.md) \| undefined
 

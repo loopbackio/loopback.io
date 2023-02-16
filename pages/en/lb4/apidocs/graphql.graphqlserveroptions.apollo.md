@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserveroptions.apollo.html
 
 ApolloServerExpress related configuration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apollo?: ApolloServerExpressConfig;

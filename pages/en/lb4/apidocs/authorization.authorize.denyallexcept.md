@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.denyallexcept.html
 
 Deny all but the given roles
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 denyAllExcept: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

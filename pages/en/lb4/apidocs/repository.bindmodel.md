@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.bindmodel.html
 
 This is a bridge to the legacy DAO class. The function mixes DAO methods into a model class and attach it to a given data source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bindModel<T extends juggler.ModelBaseClass>(modelClass: T, ds: juggler.DataSource): T;
@@ -28,7 +28,7 @@ export declare function bindModel<T extends juggler.ModelBaseClass>(modelClass: 
 |  modelClass | T | Model class |
 |  ds | juggler.DataSource | Data source |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

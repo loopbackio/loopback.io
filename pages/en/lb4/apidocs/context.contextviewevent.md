@@ -15,17 +15,17 @@ permalink: /doc/en/lb4/apidocs.context.contextviewevent.html
 
 An event emitted by a `ContextView`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ContextViewEvent<T> extends ContextEvent 
 ```
-<b>Extends:</b> [ContextEvent](./context.contextevent.md)
+**Extends:** [ContextEvent](./context.contextevent.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [cachedValue?](./context.contextviewevent.cachedvalue.md) |  | T | <i>(Optional)</i> Optional cached value for an <code>unbind</code> event |
+|  [cachedValue?](./context.contextviewevent.cachedvalue.md) |  | T | _(Optional)_ Optional cached value for an <code>unbind</code> event |
 
 

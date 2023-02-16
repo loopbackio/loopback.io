@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.getnumberofparameters.h
 
 Get the number of parameters for a given constructor or method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getNumberOfParameters(target: Object, member?: string): number;
@@ -26,9 +26,9 @@ static getNumberOfParameters(target: Object, member?: string): number;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object | Class or the prototype |
-|  member | string | <i>(Optional)</i> Method name |
+|  member | string | _(Optional)_ Method name |
 
-<b>Returns:</b>
+**Returns:**
 
 number
 

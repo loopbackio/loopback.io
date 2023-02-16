@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.provider.html
 
 Providers allow developers to compute injected values dynamically, with any dependencies required by the value getter injected automatically from the Context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Provider<T> 

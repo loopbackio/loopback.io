@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.operation.html
 
 ## RestBindings.Operation namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 namespace Operation 

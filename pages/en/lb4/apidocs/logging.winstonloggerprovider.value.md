@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.logging.winstonloggerprovider.value.html
 
 ## WinstonLoggerProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): Promise<Logger>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Logger&gt;
 

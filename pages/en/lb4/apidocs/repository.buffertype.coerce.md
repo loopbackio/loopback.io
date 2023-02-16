@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.buffertype.coerce.html
 
 ## BufferType.coerce() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 coerce(value: any, options?: Options): any;
@@ -24,9 +24,9 @@ coerce(value: any, options?: Options): any;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | any |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

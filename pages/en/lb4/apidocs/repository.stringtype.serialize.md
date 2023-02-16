@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.stringtype.serialize.html
 
 ## StringType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: string | null | undefined): string | null | undefined;
@@ -25,7 +25,7 @@ serialize(value: string | null | undefined): string | null | undefined;
 |  --- | --- | --- |
 |  value | string \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| null \| undefined
 

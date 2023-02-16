@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootable.bootoptions.html
 
 Options for boot
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bootOptions?: BootOptions;

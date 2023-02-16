@@ -17,7 +17,7 @@ The title to use in the generated schema.
 
 When using options like `exclude`<!-- -->, the auto-generated title can be difficult to read for humans. Use this option to change the title to a more meaningful value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 title?: string;

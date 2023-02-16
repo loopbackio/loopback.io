@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.middleware.html
 
 Register a middleware function or provider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 middleware(middleware: Middleware | Constructor<Provider<Middleware>>, options?: MiddlewareBindingOptions): Binding<Middleware>;
@@ -26,9 +26,9 @@ middleware(middleware: Middleware | Constructor<Provider<Middleware>>, options?:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middleware | [Middleware](./express.middleware.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;&gt; | Middleware function or provider class |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Middleware binding options |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Middleware binding options |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 

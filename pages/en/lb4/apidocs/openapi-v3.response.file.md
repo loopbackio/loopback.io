@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.response.file.html
 
 Decorate the response as a file
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 file: (...mediaTypes: string[]) => MethodDecorator

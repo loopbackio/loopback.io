@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.impose.html
 
 Add a where object. For conflicting keys with the existing where object, create an `and` clause.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 impose(where: Where<MT>): this;
@@ -27,7 +27,7 @@ impose(where: Where<MT>): this;
 |  --- | --- | --- |
 |  where | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | Where filter |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

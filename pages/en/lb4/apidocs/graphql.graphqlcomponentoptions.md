@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlcomponentoptions.html
 
 Options for GraphQL component
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface GraphQLComponentOptions 

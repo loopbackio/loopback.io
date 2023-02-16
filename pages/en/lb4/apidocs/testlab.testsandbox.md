@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.html
 
 TestSandbox class provides a convenient way to get a reference to a sandbox folder in which you can perform operations for testing purposes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TestSandbox 

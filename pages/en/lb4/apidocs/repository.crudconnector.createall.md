@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.createall.html
 
 Create multiple entities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createAll?(modelClass: Class<Entity>, entities: EntityData[], options?: Options): Promise<EntityData[]>;
@@ -27,9 +27,9 @@ createAll?(modelClass: Class<Entity>, entities: EntityData[], options?: Options)
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  entities | [EntityData](./repository.entitydata.md)<!-- -->\[\] | An array of entity instances or data |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[EntityData](./repository.entitydata.md)<!-- -->\[\]&gt;
 

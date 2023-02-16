@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.save.html
 
 Save an entity. If no id is present, create a new entity
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save(entity: DataObject<T>, options?: Options): Promise<T>;
@@ -26,9 +26,9 @@ save(entity: DataObject<T>, options?: Options): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Entity to be saved |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

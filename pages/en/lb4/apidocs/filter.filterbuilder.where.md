@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.where.html
 
 Declare a where clause
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 where(w: Where<MT>): this;
@@ -27,7 +27,7 @@ where(w: Where<MT>): this;
 |  --- | --- | --- |
 |  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | Where object |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

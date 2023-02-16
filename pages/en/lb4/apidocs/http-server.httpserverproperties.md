@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserverproperties.html
 
 The following are for configuring properties which are directly set on https://nodejs.org/api/http.html\#http\_class\_http\_server and https://nodejs.org/api/net.html\#net\_class\_net\_server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HttpServerProperties = Pick<Server, 'keepAliveTimeout' | 'headersTimeout' | 'maxConnections' | 'maxHeadersCount' | 'timeout'>;

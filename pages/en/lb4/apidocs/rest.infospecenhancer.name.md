@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.infospecenhancer.name.html
 
 ## InfoSpecEnhancer.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.graphql_auth_checker.html
 
 Binding key for the GraphQL auth checker
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GRAPHQL_AUTH_CHECKER: BindingKey<AuthChecker<{}, string>>

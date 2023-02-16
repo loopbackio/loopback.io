@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.listening.html
 
 ## SocketIoServer.listening property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get listening(): boolean;

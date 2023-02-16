@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.isproviderclass.html
 
 Check if a class implements `Provider` interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isProviderClass<T>(cls: unknown): cls is Constructor<Provider<T>>;
@@ -27,7 +27,7 @@ export declare function isProviderClass<T>(cls: unknown): cls is Constructor<Pro
 |  --- | --- | --- |
 |  cls | unknown | A class |
 
-<b>Returns:</b>
+**Returns:**
 
 cls is [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt;
 

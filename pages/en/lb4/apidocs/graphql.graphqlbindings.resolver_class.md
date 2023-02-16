@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.resolver_class.html
 
 Binding key for the current resolver class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RESOLVER_CLASS: BindingKey<Constructor<unknown>>

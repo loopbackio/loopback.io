@@ -17,7 +17,7 @@ The value used by the database to store properties set to `undefined`<!-- -->. T
 
 Default: `undefined`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emptyValue: undefined | null;

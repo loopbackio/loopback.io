@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.restserverlike.html
 
 ## RestServerLike interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RestServerLike 
@@ -23,7 +23,7 @@ export interface RestServerLike
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [rootUrl?](./testlab.restserverlike.rooturl.md) |  | string | <i>(Optional)</i> |
-|  [url?](./testlab.restserverlike.url.md) |  | string | <i>(Optional)</i> |
+|  [rootUrl?](./testlab.restserverlike.rooturl.md) |  | string | _(Optional)_ |
+|  [url?](./testlab.restserverlike.url.md) |  | string | _(Optional)_ |
 
 

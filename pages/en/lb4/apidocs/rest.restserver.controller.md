@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.controller.html
 
 Register a controller class with this server.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 controller(controllerCtor: ControllerClass<ControllerInstance>): Binding;
@@ -27,7 +27,7 @@ controller(controllerCtor: ControllerClass<ControllerInstance>): Binding;
 |  --- | --- | --- |
 |  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;[ControllerInstance](./rest.controllerinstance.md)<!-- -->&gt; | The controller class (constructor function). |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.textbodyparser.name.html
 
 ## TextBodyParser.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: symbol;

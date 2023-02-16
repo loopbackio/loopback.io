@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injection.member.html
 
 ## Injection.member property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 member?: string;

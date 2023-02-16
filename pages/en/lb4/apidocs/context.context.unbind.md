@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.unbind.html
 
 Unbind a binding from the context. No parent contexts will be checked.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unbind(key: BindingAddress): boolean;
@@ -27,7 +27,7 @@ unbind(key: BindingAddress): boolean;
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

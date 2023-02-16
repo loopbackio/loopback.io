@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.filtertemplate.html
 
 ## filterTemplate() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function filterTemplate(strings: TemplateStringsArray, ...keys: any[]): (ctx: AnyObject) => any;
@@ -26,7 +26,7 @@ export declare function filterTemplate(strings: TemplateStringsArray, ...keys: a
 |  strings | TemplateStringsArray |  |
 |  keys | any\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 (ctx: AnyObject) =&gt; any
 

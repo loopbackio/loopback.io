@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidpolymorphismerror.code.html
 
 ## InvalidPolymorphismError.code property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string;

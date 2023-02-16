@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.sequenceactions.html
 
 ## SequenceActions variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SequenceActions: typeof RestBindings.SequenceActions

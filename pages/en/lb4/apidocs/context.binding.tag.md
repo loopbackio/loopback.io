@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.tag.html
 
 Tag the binding with names or name/value objects. A tag has a name and an optional value. If not supplied, the tag name is used as the value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tag(...tags: BindingTag[]): this;
@@ -27,7 +27,7 @@ tag(...tags: BindingTag[]): this;
 |  --- | --- | --- |
 |  tags | [BindingTag](./context.bindingtag.md)<!-- -->\[\] | A list of names or name/value objects. Each parameter can be in one of the following forms: - string: A tag name without value - string\[\]: An array of tag names - TagMap: A map of tag name/value pairs |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

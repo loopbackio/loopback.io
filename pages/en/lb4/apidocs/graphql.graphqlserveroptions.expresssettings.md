@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserveroptions.expresssettings.html
 
 Express settings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expressSettings?: Record<string, unknown>;

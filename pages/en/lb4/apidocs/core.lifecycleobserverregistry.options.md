@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.options.html
 
 ## LifeCycleObserverRegistry.options property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly options: LifeCycleObserverOptions;

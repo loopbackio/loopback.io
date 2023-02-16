@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.methodname.html
 
 ## InvocationContext.methodName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly methodName: string;

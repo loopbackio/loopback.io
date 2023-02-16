@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.booter.discover.html
 
 Discover phase of the Booter. It should search for artifacts in this phase.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 discover?(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

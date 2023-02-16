@@ -20,7 +20,7 @@ permalink: /doc/en/lb4/apidocs.context.uuid_pattern.html
 
 A regular expression for testing uuid v4 PATTERN
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 UUID_PATTERN: RegExp

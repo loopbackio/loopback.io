@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontrollerctor.html
 
 Constructor of the controller class returned by `defineCrudRestController`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CrudRestControllerCtor<T extends Entity, IdType, IdName extends keyof T, Relations extends object = {}> 

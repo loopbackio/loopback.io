@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repository_1.html
 
 Decorator for DefaultCrudRepository generation and injection on properties or method arguments based on the given model and dataSource (or their names)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function repository(model: string | typeof Entity, dataSource: string | juggler.DataSource): RepositoryDecorator;
@@ -28,7 +28,7 @@ export declare function repository(model: string | typeof Entity, dataSource: st
 |  model | string \| typeof [Entity](./repository.entity.md) | Name/class of the model |
 |  dataSource | string \| juggler.DataSource | Name/instance of the dataSource |
 
-<b>Returns:</b>
+**Returns:**
 
 [RepositoryDecorator](./repository.repositorydecorator.md)
 

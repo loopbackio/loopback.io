@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.user.verificationtoken.html
 
 ## User.verificationToken property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verificationToken?: string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.observe.html
 
 Listen on `bind` or `unbind` and invalidate the cache
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 observe(event: ContextEventType, binding: Readonly<Binding<unknown>>, context: Context): void;
@@ -29,7 +29,7 @@ observe(event: ContextEventType, binding: Readonly<Binding<unknown>>, context: C
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; |  |
 |  context | [Context](./context.context.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

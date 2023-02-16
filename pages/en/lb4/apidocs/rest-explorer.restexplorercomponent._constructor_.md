@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorercomponent._constructor_
 
 Constructs a new instance of the `RestExplorerComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(application: RestApplication, restExplorerConfig?: RestExplorerConfig);
@@ -26,6 +26,6 @@ constructor(application: RestApplication, restExplorerConfig?: RestExplorerConfi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [RestApplication](./rest.restapplication.md) |  |
-|  restExplorerConfig | [RestExplorerConfig](./rest-explorer.restexplorerconfig.md) | <i>(Optional)</i> |
+|  restExplorerConfig | [RestExplorerConfig](./rest-explorer.restexplorerconfig.md) | _(Optional)_ |
 
 

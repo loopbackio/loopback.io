@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.buffertype.serialize.html
 
 ## BufferType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: Buffer | null | undefined, options?: Options): string | null | undefined;
@@ -24,9 +24,9 @@ serialize(value: Buffer | null | undefined, options?: Options): string | null | 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | Buffer \| null \| undefined |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| null \| undefined
 

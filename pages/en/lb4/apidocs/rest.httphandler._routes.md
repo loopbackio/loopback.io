@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._routes.html
 
 ## HttpHandler.\_routes property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly _routes: RoutingTable;

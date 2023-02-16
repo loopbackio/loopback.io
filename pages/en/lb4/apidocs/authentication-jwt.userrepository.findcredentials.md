@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userrepository.findcredentials
 
 ## UserRepository.findCredentials() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findCredentials(userId: typeof User.prototype.id): Promise<UserCredentials | undefined>;
@@ -25,7 +25,7 @@ findCredentials(userId: typeof User.prototype.id): Promise<UserCredentials | und
 |  --- | --- | --- |
 |  userId | typeof [User.prototype.id](./authentication-jwt.user.id.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserCredentials](./authentication-jwt.usercredentials.md) \| undefined&gt;
 

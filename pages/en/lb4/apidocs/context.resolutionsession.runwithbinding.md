@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.runwithbinding.html
 
 Run the given action with the given binding and session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static runWithBinding(action: ResolutionAction, binding: Readonly<Binding>, session?: ResolutionSession): any;
@@ -27,9 +27,9 @@ static runWithBinding(action: ResolutionAction, binding: Readonly<Binding>, sess
 |  --- | --- | --- |
 |  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | The current binding |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> The current resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ The current resolution session |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

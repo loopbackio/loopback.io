@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.livecheck.html
 
 Functions for liveness check
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type LiveCheck = () => Promise<void>;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.validationerrordetails.info.h
 
 Some additional details that the 3 attributes above don't cover.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 info: object;

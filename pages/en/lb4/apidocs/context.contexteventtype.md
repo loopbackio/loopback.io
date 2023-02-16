@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexteventtype.html
 
 Context event types. We support `bind` and `unbind` for now but keep it open for new types
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextEventType = 'bind' | 'unbind' | string;

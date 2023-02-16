@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.date.html
 
 ## DATE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DATE: DateType

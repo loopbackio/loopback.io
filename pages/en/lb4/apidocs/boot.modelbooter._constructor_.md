@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelbooter._constructor_.html
 
 Constructs a new instance of the `ModelBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: ApplicationWithRepositories, projectRoot: string, modelConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, modelConfig?:
 |  --- | --- | --- |
 |  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
 |  projectRoot | string |  |
-|  modelConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  modelConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

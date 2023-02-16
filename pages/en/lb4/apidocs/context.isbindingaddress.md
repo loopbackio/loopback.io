@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.isbindingaddress.html
 
 Type guard for binding address
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isBindingAddress(bindingSelector: BindingSelector): bindingSelector is BindingAddress;
@@ -27,7 +27,7 @@ export declare function isBindingAddress(bindingSelector: BindingSelector): bind
 |  --- | --- | --- |
 |  bindingSelector | [BindingSelector](./context.bindingselector.md) | Binding key or filter function |
 
-<b>Returns:</b>
+**Returns:**
 
 bindingSelector is [BindingAddress](./context.bindingaddress.md)
 

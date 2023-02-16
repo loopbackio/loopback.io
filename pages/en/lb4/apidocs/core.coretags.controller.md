@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.controller.html
 
 Binding tag for controllers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER = "controller"

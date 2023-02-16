@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.controllers.html
 
 ## CoreBindings.CONTROLLERS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLERS = "controllers"

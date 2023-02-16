@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.userrepository.find.html
 
 find by username
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(username: string): MyUser[];
@@ -27,7 +27,7 @@ find(username: string): MyUser[];
 |  --- | --- | --- |
 |  username | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [MyUser](./mock-oauth2-provider.myuser.md)<!-- -->\[\]
 

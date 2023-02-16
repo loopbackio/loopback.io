@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.httpserver.html
 
 HTTP/HTTPS server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected httpServer: HttpServer;

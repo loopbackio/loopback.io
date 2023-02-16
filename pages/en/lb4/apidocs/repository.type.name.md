@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.type.name.html
 
 Name of the type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

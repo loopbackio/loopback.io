@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.operation.return_value.html
 
 ## RestBindings.Operation.RETURN\_VALUE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RETURN_VALUE: BindingKey<any>

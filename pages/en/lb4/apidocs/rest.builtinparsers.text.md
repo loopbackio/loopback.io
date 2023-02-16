@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.text.html
 
 ## builtinParsers.text variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 text: unique symbol

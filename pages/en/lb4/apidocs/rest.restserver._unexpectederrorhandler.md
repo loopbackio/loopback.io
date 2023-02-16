@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._unexpectederrorhandler.html
 
 Get an Express handler for unexpected errors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _unexpectedErrorHandler(): ErrorRequestHandler;
 ```
-<b>Returns:</b>
+**Returns:**
 
 ErrorRequestHandler
 

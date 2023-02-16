@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.pubsub.html
 
 ## pubSub variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pubSub: typeof PubSub

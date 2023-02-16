@@ -17,7 +17,7 @@ Set this flag if you want the schema to set generated title property.
 
 By default the setting is enabled. (e.g. {<!-- -->setTitle: true<!-- -->}<!-- -->)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setTitle?: boolean;

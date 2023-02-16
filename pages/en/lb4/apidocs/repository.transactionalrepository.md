@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.transactionalrepository.html
 
 Repository Interface for Repositories that support Transactions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface TransactionalRepository<T extends Entity> extends Repository<T> 
 ```
-<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
+**Extends:** [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

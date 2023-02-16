@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validaterequestbody.html
 
 Check whether the request body is valid according to the provided OpenAPI schema. The JSON schema is generated from the OpenAPI schema which is typically defined by `@requestBody()`<!-- -->. The validation leverages AJV schema validator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function validateRequestBody(body: RequestBody, requestBodySpec?: RequestBodyObject, globalSchemas?: SchemasObject, options?: ValidationOptions): Promise<void>;
@@ -26,11 +26,11 @@ export declare function validateRequestBody(body: RequestBody, requestBodySpec?:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  body | [RequestBody](./rest.requestbody.md) | The request body parsed from an HTTP request. |
-|  requestBodySpec | RequestBodyObject | <i>(Optional)</i> The OpenAPI requestBody specification defined in <code>@requestBody()</code>. |
-|  globalSchemas | SchemasObject | <i>(Optional)</i> The referenced schemas generated from <code>OpenAPISpec.components.schemas</code>. |
-|  options | [ValidationOptions](./rest.validationoptions.md) | <i>(Optional)</i> Request body validation options for AJV |
+|  requestBodySpec | RequestBodyObject | _(Optional)_ The OpenAPI requestBody specification defined in <code>@requestBody()</code>. |
+|  globalSchemas | SchemasObject | _(Optional)_ The referenced schemas generated from <code>OpenAPISpec.components.schemas</code>. |
+|  options | [ValidationOptions](./rest.validationoptions.md) | _(Optional)_ Request body validation options for AJV |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

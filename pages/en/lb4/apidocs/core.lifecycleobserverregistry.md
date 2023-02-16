@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.html
 
 A context-based registry for life cycle observers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LifeCycleObserverRegistry implements LifeCycleObserver 
 ```
-<b>Implements:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
+**Implements:** [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

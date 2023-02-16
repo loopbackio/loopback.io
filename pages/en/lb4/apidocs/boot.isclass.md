@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.isclass.html
 
 Given a function, returns true if it is a class, false otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isClass(target: any): target is Constructor<any>;
@@ -27,7 +27,7 @@ export declare function isClass(target: any): target is Constructor<any>;
 |  --- | --- | --- |
 |  target | any | The function to check if it's a class or not. |
 
-<b>Returns:</b>
+**Returns:**
 
 target is [Constructor](./context.constructor.md)<!-- -->&lt;any&gt;
 

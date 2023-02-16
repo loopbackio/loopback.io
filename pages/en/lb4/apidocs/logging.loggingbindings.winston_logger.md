@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingbindings.winston_logger.html
 
 Binding key for winston logger
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WINSTON_LOGGER: BindingKey<WinstonLogger>

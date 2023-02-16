@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.connect.html
 
 ## SocketIoControllerFactory.connect() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 connect(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

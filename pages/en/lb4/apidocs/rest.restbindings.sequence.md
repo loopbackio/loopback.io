@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequence.html
 
 Binding key for setting and injecting a Sequence
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SEQUENCE: BindingKey<SequenceHandler>

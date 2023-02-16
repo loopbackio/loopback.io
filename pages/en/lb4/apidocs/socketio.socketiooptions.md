@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiooptions.html
 
 ## SocketIoOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SocketIoOptions = HttpServerOptions;
 ```
-<b>References:</b> [HttpServerOptions](./http-server.httpserveroptions.md)
+**References:** [HttpServerOptions](./http-server.httpserveroptions.md)
 
 

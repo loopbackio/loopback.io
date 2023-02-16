@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.controllerspec.basepath.html
 
 The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 basePath?: string;

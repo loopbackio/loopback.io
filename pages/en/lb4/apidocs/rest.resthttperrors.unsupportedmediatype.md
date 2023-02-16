@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.unsupportedmediatype.html
 
 ## RestHttpErrors.unsupportedMediaType() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function unsupportedMediaType(contentType: string, allowedTypes?: string[]): HttpErrors.HttpError<415> & {
@@ -28,9 +28,9 @@ function unsupportedMediaType(contentType: string, allowedTypes?: string[]): Htt
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  contentType | string |  |
-|  allowedTypes | string\[\] | <i>(Optional)</i> |
+|  allowedTypes | string\[\] | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 HttpErrors.HttpError&lt;415&gt; &amp; { code: string; contentType: string; allowedMediaTypes: string\[\]; }
 

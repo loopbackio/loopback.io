@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.get_1.html
 
 Get the value bound to the given key, optionally return a (deep) property of the bound value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get<ValueType>(keyWithPath: BindingAddress<ValueType>, options: ResolutionOptions): Promise<ValueType | undefined>;
@@ -28,7 +28,7 @@ get<ValueType>(keyWithPath: BindingAddress<ValueType>, options: ResolutionOption
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
 |  options | [ResolutionOptions](./context.resolutionoptions.md) | Options for resolution. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;ValueType \| undefined&gt;
 

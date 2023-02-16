@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.express.middlewarechain.html
 
 An interceptor chain of middleware. This represents a list of cascading middleware functions to be executed by the order of `group` names.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MiddlewareChain extends GenericInterceptorChain<MiddlewareContext> 
 ```
-<b>Extends:</b> [GenericInterceptorChain](./context.genericinterceptorchain.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
+**Extends:** [GenericInterceptorChain](./context.genericinterceptorchain.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
 
 

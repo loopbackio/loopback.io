@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.invalidrequestbody.html
 
 ## RestHttpErrors.invalidRequestBody() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function invalidRequestBody(details: ValidationErrorDetails[]): HttpErrors.HttpError & {
@@ -27,7 +27,7 @@ function invalidRequestBody(details: ValidationErrorDetails[]): HttpErrors.HttpE
 |  --- | --- | --- |
 |  details | [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)<!-- -->\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 HttpErrors.HttpError &amp; { details: [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)<!-- -->\[\]; }
 

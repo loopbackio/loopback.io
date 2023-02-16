@@ -10,6 +10,19 @@ permalink: /doc/en/lb4/changelog.repository.html
 
 # Change Log
 
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [5.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/repository@5.1.1...@loopback/repository@5.1.2) (2023-01-09)
+
+**Note:** Version bump only for package @loopback/repository
+
+
+
+
+
+# Change Log
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

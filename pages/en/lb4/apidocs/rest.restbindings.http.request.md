@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.http.request.html
 
 Binding key for setting and injecting the http request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REQUEST: BindingKey<Request>

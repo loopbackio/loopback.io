@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routeentry.path.html
 
 http path
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly path: string;

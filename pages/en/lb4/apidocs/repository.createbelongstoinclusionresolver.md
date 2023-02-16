@@ -17,7 +17,7 @@ Creates InclusionResolver for BelongsTo relation. Notice that this function only
 
 Notice: scope field for inclusion is not supported yet
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createBelongsToInclusionResolver<Target extends Entity, TargetID, TargetRelations extends object>(meta: BelongsToDefinition, getTargetRepoDict: {
@@ -32,7 +32,7 @@ export declare function createBelongsToInclusionResolver<Target extends Entity, 
 |  meta | [BelongsToDefinition](./repository.belongstodefinition.md) | resolved BelongsToMetadata |
 |  getTargetRepoDict | { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID, TargetRelations&gt;&gt;; } | dictionary of target model type - target repository i.e where related instances for different types are |
 
-<b>Returns:</b>
+**Returns:**
 
 [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt;
 

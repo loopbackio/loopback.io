@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategyprovider._co
 
 Constructs a new instance of the `AuthenticationStrategyProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(authenticationStrategies: Getter<AuthenticationStrategy[]>, metadata?: AuthenticationMetadata[] | undefined);
@@ -26,6 +26,6 @@ constructor(authenticationStrategies: Getter<AuthenticationStrategy[]>, metadata
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  authenticationStrategies | Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt; |  |
-|  metadata | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined | <i>(Optional)</i> |
+|  metadata | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined | _(Optional)_ |
 
 

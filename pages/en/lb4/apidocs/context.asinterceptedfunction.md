@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.asinterceptedfunction.html
 
 The intercepted variant of a function to return `ValueOrPromise<T>`<!-- -->. If `T` is not a function, the type is `T`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AsInterceptedFunction<T> = T extends (...args: InvocationArgs) => infer R ? (...args: Parameters<T>) => AsValueOrPromise<R> : T;
 ```
-<b>References:</b> [InvocationArgs](./context.invocationargs.md)<!-- -->, [AsValueOrPromise](./context.asvalueorpromise.md)
+**References:** [InvocationArgs](./context.invocationargs.md)<!-- -->, [AsValueOrPromise](./context.asvalueorpromise.md)
 
 

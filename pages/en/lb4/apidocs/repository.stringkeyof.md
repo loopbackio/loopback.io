@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.stringkeyof.html
 
 ## StringKeyOf type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type StringKeyOf<T> = Extract<keyof T, string>;

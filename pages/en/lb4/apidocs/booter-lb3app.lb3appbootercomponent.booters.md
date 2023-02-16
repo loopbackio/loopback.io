@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.booter-lb3app.lb3appbootercomponent.booters.html
 
 ## Lb3AppBooterComponent.booters property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 booters: (typeof Lb3AppBooter)[];

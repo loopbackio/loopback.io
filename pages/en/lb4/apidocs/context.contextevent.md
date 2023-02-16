@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextevent.html
 
 Events emitted by a context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextEvent = {
@@ -24,6 +24,6 @@ export type ContextEvent = {
     type: string;
 };
 ```
-<b>References:</b> [Context](./context.context.md)<!-- -->, [Binding](./context.binding.md)
+**References:** [Context](./context.context.md)<!-- -->, [Binding](./context.binding.md)
 
 

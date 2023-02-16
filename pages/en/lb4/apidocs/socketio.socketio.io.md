@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketio.io.html
 
 ## socketio.io() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function io(): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 (target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 

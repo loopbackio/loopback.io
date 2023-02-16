@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.jsonschemawithextensions.html
 
 This module defines the key classes representing building blocks for Domain Driven Design. See https://en.wikipedia.org/wiki/Domain-driven\_design\#Building\_blocks
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface JsonSchemaWithExtensions extends JsonSchema 
 ```
-<b>Extends:</b> JsonSchema
+**Extends:** JsonSchema
 
 

@@ -17,7 +17,7 @@ This function works as a persist hook. It converts an entity from the CRUD opera
 
 User can extend `DefaultCrudRepository` then override this function to execute custom persist hook.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): legacy.ModelData<legacy.PersistedModel>;
@@ -28,9 +28,9 @@ protected entityToData<R extends T>(entity: R | DataObject<R>, options?: {}): le
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | R \| [DataObject](./repository.dataobject.md)<!-- -->&lt;R&gt; | The entity passed from CRUD operations' caller. |
-|  options | {} | <i>(Optional)</i> |
+|  options | {} | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 legacy.ModelData&lt;legacy.PersistedModel&gt;
 

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.cron.croncomponent.stop.html
 
 ## CronComponent.stop() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stop(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

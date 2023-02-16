@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.filterschemaoptions.html
 
 ## FilterSchemaOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface FilterSchemaOptions 
@@ -23,7 +23,7 @@ export interface FilterSchemaOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [exclude?](./repository-json-schema.filterschemaoptions.exclude.md) |  | string\[\] \| string | <i>(Optional)</i> To exclude one or more property from <code>filter</code> |
-|  [setTitle?](./repository-json-schema.filterschemaoptions.settitle.md) |  | boolean | <p><i>(Optional)</i> Set this flag if you want the schema to set generated title property.</p><p>By default the setting is enabled. (e.g. {<!-- -->setTitle: true<!-- -->}<!-- -->)</p> |
+|  [exclude?](./repository-json-schema.filterschemaoptions.exclude.md) |  | string\[\] \| string | _(Optional)_ To exclude one or more property from <code>filter</code> |
+|  [setTitle?](./repository-json-schema.filterschemaoptions.settitle.md) |  | boolean | <p>_(Optional)_ Set this flag if you want the schema to set generated title property.</p><p>By default the setting is enabled. (e.g. {<!-- -->setTitle: true<!-- -->}<!-- -->)</p> |
 
 

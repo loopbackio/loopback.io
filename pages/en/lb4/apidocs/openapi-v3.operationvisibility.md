@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.operationvisibility.html
 
 ## OperationVisibility enum
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum OperationVisibility 

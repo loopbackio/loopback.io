@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.countschema.html
 
 JSON Schema describing the Count interface. It's the response type for REST calls to APIs which return `count`<!-- -->. The type is compatible with `SchemaObject` from `@loopback/openapi-v3`<!-- -->, which is not an explicit dependency for `@loopback/repository`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CountSchema: {

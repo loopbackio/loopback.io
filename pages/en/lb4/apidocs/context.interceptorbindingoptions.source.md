@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.interceptorbindingoptions.source.html
 
 Source filter for a global interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 source?: string | string[];

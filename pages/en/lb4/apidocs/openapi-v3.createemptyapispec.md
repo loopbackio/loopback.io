@@ -20,12 +20,12 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.createemptyapispec.html
 
 Create an empty OpenApiSpec object that's still a valid openapi document.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createEmptyApiSpec(): OpenApiSpec;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 

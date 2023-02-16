@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiodonefunction.html
 
 ## SocketIoDoneFunction type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SocketIoDoneFunction = (response: unknown) => Promise<void>;

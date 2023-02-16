@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsprovider.html
 
 Provides the function for parsing args in requests at runtime.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ParseParamsProvider 

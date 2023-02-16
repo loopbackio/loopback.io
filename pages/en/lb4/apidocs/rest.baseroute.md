@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute.html
 
 Base implementation of RouteEntry
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class BaseRoute implements RouteEntry 
 ```
-<b>Implements:</b> [RouteEntry](./rest.routeentry.md)
+**Implements:** [RouteEntry](./rest.routeentry.md)
 
 ## Constructors
 
@@ -41,8 +41,8 @@ export declare abstract class BaseRoute implements RouteEntry
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
 |  [describe()](./rest.baseroute.describe.md) |  |  |
-|  [invokeHandler(requestContext, args)](./rest.baseroute.invokehandler.md) |  |  |
+|  [invokeHandler(requestContext, args)](./rest.baseroute.invokehandler.md) | <code>abstract</code> |  |
 |  [toString()](./rest.baseroute.tostring.md) |  |  |
-|  [updateBindings(requestContext)](./rest.baseroute.updatebindings.md) |  |  |
+|  [updateBindings(requestContext)](./rest.baseroute.updatebindings.md) | <code>abstract</code> |  |
 
 

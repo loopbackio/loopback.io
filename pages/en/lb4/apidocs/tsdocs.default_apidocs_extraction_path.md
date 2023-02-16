@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.default_apidocs_extraction_path.html
 
 Default path as the output directory for extracted api reports and models
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_APIDOCS_EXTRACTION_PATH = "docs/apidocs"

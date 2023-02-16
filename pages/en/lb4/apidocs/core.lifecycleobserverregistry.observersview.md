@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.observersview.html
 
 ## LifeCycleObserverRegistry.observersView property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly observersView: ContextView<LifeCycleObserver>;

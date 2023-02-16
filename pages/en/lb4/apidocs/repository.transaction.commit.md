@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.transaction.commit.html
 
 Commit the transaction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 commit(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

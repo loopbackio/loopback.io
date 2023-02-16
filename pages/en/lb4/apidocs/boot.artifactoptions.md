@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.artifactoptions.html
 
 Type definition for ArtifactOptions. These are the options supported by this Booter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ArtifactOptions = {

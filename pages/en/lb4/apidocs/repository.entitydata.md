@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.repository.entitydata.html
 
 ## EntityData type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type EntityData = DataObject<Entity>;
 ```
-<b>References:</b> [DataObject](./repository.dataobject.md)<!-- -->, [Entity](./repository.entity.md)
+**References:** [DataObject](./repository.dataobject.md)<!-- -->, [Entity](./repository.entity.md)
 
 

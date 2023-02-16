@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice.html
 
 ## MyUserService class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MyUserService implements UserService<User, Credentials> 
 ```
-<b>Implements:</b> [UserService](./authentication.userservice.md)<!-- -->&lt;[User](./authentication-jwt.user.md)<!-- -->, [Credentials](./authentication-jwt.credentials.md)<!-- -->&gt;
+**Implements:** [UserService](./authentication.userservice.md)<!-- -->&lt;[User](./authentication-jwt.user.md)<!-- -->, [Credentials](./authentication-jwt.credentials.md)<!-- -->&gt;
 
 ## Constructors
 

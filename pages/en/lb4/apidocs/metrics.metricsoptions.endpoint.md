@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsoptions.endpoint.html
 
 ## MetricsOptions.endpoint property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 endpoint?: {

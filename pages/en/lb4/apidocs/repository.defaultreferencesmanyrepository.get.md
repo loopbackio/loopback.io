@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultreferencesmanyrepository.get.ht
 
 ## DefaultReferencesManyRepository.get() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(options?: Options): Promise<TargetEntity>;
@@ -23,9 +23,9 @@ get(options?: Options): Promise<TargetEntity>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity&gt;
 

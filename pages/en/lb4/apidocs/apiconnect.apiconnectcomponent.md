@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectcomponent.html
 
 ## ApiConnectComponent class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApiConnectComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Properties
 

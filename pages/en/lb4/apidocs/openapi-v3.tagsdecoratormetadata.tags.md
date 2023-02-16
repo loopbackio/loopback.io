@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.tagsdecoratormetadata.tags.html
 
 ## TagsDecoratorMetadata.tags property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tags: string[];

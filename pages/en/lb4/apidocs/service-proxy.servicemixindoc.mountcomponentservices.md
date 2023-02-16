@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.servicemixindoc.mountcomponentservi
 
 Get an instance of a component and mount all it's services. This function is intended to be used internally by component()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mountComponentServices(component: Constructor<unknown>): void;
@@ -27,7 +27,7 @@ mountComponentServices(component: Constructor<unknown>): void;
 |  --- | --- | --- |
 |  component | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | The component to mount services of |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

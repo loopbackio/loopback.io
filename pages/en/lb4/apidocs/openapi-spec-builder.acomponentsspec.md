@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.acomponentsspec.html
 
 Create a new instance of ComponentsSpecBuilder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function aComponentsSpec(): ComponentsSpecBuilder;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md)
 

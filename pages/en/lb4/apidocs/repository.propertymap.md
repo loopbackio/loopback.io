@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.repository.propertymap.html
 
 ## PropertyMap type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PropertyMap = MetadataMap<Partial<PropertyDefinition>>;
 ```
-<b>References:</b> [MetadataMap](./metadata.metadatamap.md)<!-- -->, [PropertyDefinition](./repository.propertydefinition.md)
+**References:** [MetadataMap](./metadata.metadatamap.md)<!-- -->, [PropertyDefinition](./repository.propertydefinition.md)
 
 

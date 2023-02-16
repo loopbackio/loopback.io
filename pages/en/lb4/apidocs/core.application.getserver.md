@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.getserver.html
 
 Retrieve the singleton instance for a bound server.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getServer<T extends Server>(target: Constructor<T> | string): Promise<T>;
@@ -27,7 +27,7 @@ getServer<T extends Server>(target: Constructor<T> | string): Promise<T>;
 |  --- | --- | --- |
 |  target | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

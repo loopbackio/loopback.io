@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.booleantype.html
 
 Boolean type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BooleanType implements Type<boolean> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;boolean&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;boolean&gt;
 
 ## Properties
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.component.bindings.html
 
 An array of bindings to be aded to the application context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings?: Binding[];

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraph.render.html
 
 Render the context graph in graphviz dot format
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 render(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

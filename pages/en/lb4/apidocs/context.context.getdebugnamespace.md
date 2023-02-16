@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.context.getdebugnamespace.html
 
 Get the debug namespace for the context class. Subclasses can override this method to supply its own namespace.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected getDebugNamespace(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

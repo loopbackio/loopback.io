@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.security.typedprincipal.html
 
 ## TypedPrincipal class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TypedPrincipal implements Principal 
 ```
-<b>Implements:</b> [Principal](./security.principal.md)
+**Implements:** [Principal](./security.principal.md)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata.html
 
 Metadata for a repository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RepositoryMetadata 
@@ -31,10 +31,10 @@ export declare class RepositoryMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dataSource?](./repository.repositorymetadata.datasource.md) |  | juggler.DataSource \| [DataSource](./repository.datasource.md) | <i>(Optional)</i> Instance of the data source |
-|  [dataSourceName?](./repository.repositorymetadata.datasourcename.md) |  | string | <i>(Optional)</i> Name of the data source |
-|  [modelClass?](./repository.repositorymetadata.modelclass.md) |  | typeof [Entity](./repository.entity.md) | <i>(Optional)</i> Class of the model |
-|  [modelName?](./repository.repositorymetadata.modelname.md) |  | string | <i>(Optional)</i> Name of the model |
-|  [name?](./repository.repositorymetadata.name.md) |  | string | <i>(Optional)</i> Name of the predefined repository |
+|  [dataSource?](./repository.repositorymetadata.datasource.md) |  | juggler.DataSource \| [DataSource](./repository.datasource.md) | _(Optional)_ Instance of the data source |
+|  [dataSourceName?](./repository.repositorymetadata.datasourcename.md) |  | string | _(Optional)_ Name of the data source |
+|  [modelClass?](./repository.repositorymetadata.modelclass.md) |  | typeof [Entity](./repository.entity.md) | _(Optional)_ Class of the model |
+|  [modelName?](./repository.repositorymetadata.modelname.md) |  | string | _(Optional)_ Name of the model |
+|  [name?](./repository.repositorymetadata.name.md) |  | string | _(Optional)_ Name of the predefined repository |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerbindings.component.html
 
 Binding key for RestExplorerComponent
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<RestExplorerComponent>

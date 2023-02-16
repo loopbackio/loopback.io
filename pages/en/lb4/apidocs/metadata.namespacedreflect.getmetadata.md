@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.getmetadata.html
 
 lookup metadata from a target object and its prototype chain
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getMetadata(metadataKey: string, target: Object, propertyKey?: string): any;
@@ -27,9 +27,9 @@ getMetadata(metadataKey: string, target: Object, propertyKey?: string): any;
 |  --- | --- | --- |
 |  metadataKey | string |  |
 |  target | Object |  |
-|  propertyKey | string | <i>(Optional)</i> |
+|  propertyKey | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

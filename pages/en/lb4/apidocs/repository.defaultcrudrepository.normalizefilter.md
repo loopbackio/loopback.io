@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.normalizefilter.
 
 Removes juggler's "include" filter as it does not apply to LoopBack 4 relations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected normalizeFilter(filter?: Filter<T>): legacy.Filter | undefined;
@@ -25,9 +25,9 @@ protected normalizeFilter(filter?: Filter<T>): legacy.Filter | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Query filter |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ Query filter |
 
-<b>Returns:</b>
+**Returns:**
 
 legacy.Filter \| undefined
 

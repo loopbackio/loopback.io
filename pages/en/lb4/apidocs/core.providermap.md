@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.providermap.html
 
 A map of provider classes to be bound to a context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ProviderMap 

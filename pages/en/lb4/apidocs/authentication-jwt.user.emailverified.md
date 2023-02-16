@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.user.emailverified.html
 
 ## User.emailVerified property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emailVerified?: boolean;

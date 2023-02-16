@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.relationdefinitionbase.html
 
 ## RelationDefinitionBase interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RelationDefinitionBase 

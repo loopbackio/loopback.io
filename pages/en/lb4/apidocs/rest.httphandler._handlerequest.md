@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._handlerequest.html
 
 ## HttpHandler.\_handleRequest() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _handleRequest(request: Request, response: Response): Promise<void>;
@@ -26,7 +26,7 @@ protected _handleRequest(request: Request, response: Response): Promise<void>;
 |  request | Request |  |
 |  response | Response |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

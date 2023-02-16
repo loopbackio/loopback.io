@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice.refreshtok
 
 Refresh the access token bound with the given refresh token.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 refreshToken(refreshToken: string): Promise<TokenObject>;
@@ -27,7 +27,7 @@ refreshToken(refreshToken: string): Promise<TokenObject>;
 |  --- | --- | --- |
 |  refreshToken | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[TokenObject](./authentication-jwt.tokenobject.md)<!-- -->&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.findbyid.html
 
 Find an entity by id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findById?<IdType>(modelClass: Class<Entity>, id: IdType, options?: Options): Promise<EntityData>;
@@ -27,9 +27,9 @@ findById?<IdType>(modelClass: Class<Entity>, id: IdType, options?: Options): Pro
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  id | IdType | The entity id value |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[EntityData](./repository.entitydata.md)<!-- -->&gt;
 

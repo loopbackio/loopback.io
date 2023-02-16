@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanyrepositoryfactory.html
 
 ## HasManyRepositoryFactory interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HasManyRepositoryFactory<Target extends Entity, ForeignKeyType> 

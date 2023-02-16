@@ -19,7 +19,7 @@ This is useful e.g. when implementing Actions that are contributing new Elements
 
 See also `Setter<T>`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setter: (bindingKey: BindingAddress, metadata?: InjectBindingMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.binding.html
 
 Binding represents an entry in the `Context`<!-- -->. Each binding has a key and a corresponding value getter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Binding<T = BoundValue> extends EventEmitter 
 ```
-<b>Extends:</b> EventEmitter
+**Extends:** EventEmitter
 
 ## Constructors
 

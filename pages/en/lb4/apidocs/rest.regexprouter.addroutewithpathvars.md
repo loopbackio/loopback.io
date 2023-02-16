@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.regexprouter.addroutewithpathvars.html
 
 ## RegExpRouter.addRouteWithPathVars() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected addRouteWithPathVars(route: RouteEntry): void;
@@ -25,7 +25,7 @@ protected addRouteWithPathVars(route: RouteEntry): void;
 |  --- | --- | --- |
 |  route | [RouteEntry](./rest.routeentry.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

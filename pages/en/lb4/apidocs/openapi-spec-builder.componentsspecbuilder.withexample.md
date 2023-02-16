@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withex
 
 Define a component example.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withExample(name: string, example: ExampleObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withExample(name: string, example: ExampleObject | ReferenceObject): this;
 |  name | string | The name of the example |
 |  example | ExampleObject \| ReferenceObject | Specification of the example |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

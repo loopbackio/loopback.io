@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry._constructor_.html
 
 Constructs a new instance of the `LifeCycleObserverRegistry` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context, observersView: ContextView<LifeCycleObserver>, options?: LifeCycleObserverOptions);
@@ -27,6 +27,6 @@ constructor(context: Context, observersView: ContextView<LifeCycleObserver>, opt
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) |  |
 |  observersView | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
-|  options | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) | <i>(Optional)</i> |
+|  options | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) | _(Optional)_ |
 
 

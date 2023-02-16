@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.apireportenabled.html
 
 A flag to control if `apiReport` should be enabled
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiReportEnabled?: boolean;

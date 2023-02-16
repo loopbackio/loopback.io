@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence._constructor_.ht
 
 Constructs a new instance of the `DefaultSocketIoSequence` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context, controller: ControllerClass, invoke: SocketIoInvokeMethod, send: SocketIoSendMethod, reject: SocketIoRejectMethod);

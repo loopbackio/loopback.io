@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.subject.authorities.html
 
 An array of authorities granted by the user to the client application. One example is {@<!-- -->link https://tools.ietf.org/html/rfc6749\#section-3.3 \| oAuth2 scopes).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 authorities: Set<Permission>;

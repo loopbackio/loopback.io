@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.getparseroptions_3.html
 
 ## getParserOptions() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getParserOptions(type: 'raw', options: RequestBodyParserOptions): Options;
@@ -26,7 +26,7 @@ export declare function getParserOptions(type: 'raw', options: RequestBodyParser
 |  type | 'raw' |  |
 |  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Options
 

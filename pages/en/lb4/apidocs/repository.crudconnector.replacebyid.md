@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.replacebyid.html
 
 Replace an entity by id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replaceById?<IdType>(modelClass: Class<Entity>, id: IdType, data: EntityData, options?: Options): Promise<boolean>;
@@ -28,9 +28,9 @@ replaceById?<IdType>(modelClass: Class<Entity>, id: IdType, data: EntityData, op
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  id | IdType | The entity id value |
 |  data | [EntityData](./repository.entitydata.md) | The data attributes to be updated |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

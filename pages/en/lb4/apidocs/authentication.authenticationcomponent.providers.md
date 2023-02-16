@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationcomponent.providers.
 
 ## AuthenticationComponent.providers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 providers: {

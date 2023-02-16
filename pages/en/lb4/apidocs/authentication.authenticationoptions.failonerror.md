@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationoptions.failonerror.
 
 This flag allows an authentication strategy to abort the authentication by throwing an error if `failOnError` is set to `true`<!-- -->. By default, the authentication process continues to the next one even when a strategy throws an error. If one of other strategies succeed, the error will be discarded.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 failOnError?: boolean;

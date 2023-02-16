@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.middleware.html
 
 Register a GraphQL middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 middleware<T = unknown>(middleware: Middleware<T>): Binding<Middleware<T>>;
@@ -27,7 +27,7 @@ middleware<T = unknown>(middleware: Middleware<T>): Binding<Middleware<T>>;
 |  --- | --- | --- |
 |  middleware | Middleware&lt;T&gt; | GraphQL middleware |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;Middleware&lt;T&gt;&gt;
 

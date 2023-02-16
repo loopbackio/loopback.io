@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.path.html
 
 ## RedirectRoute.path property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly path: string;

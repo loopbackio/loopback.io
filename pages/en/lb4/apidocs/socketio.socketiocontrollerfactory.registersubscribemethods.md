@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.registersubscr
 
 ## SocketIoControllerFactory.registerSubscribeMethods() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected registerSubscribeMethods(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

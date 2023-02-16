@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withpar
 
 Describe one more parameters accepted by the operation. Note that parameters are positional in OpenAPI Spec, therefore the first call of `withParameter` defines the first parameter, the second call defines the second parameter, etc.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withParameter(...parameterSpecs: ParameterObject[]): this;
@@ -27,7 +27,7 @@ withParameter(...parameterSpecs: ParameterObject[]): this;
 |  --- | --- | --- |
 |  parameterSpecs | ParameterObject\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

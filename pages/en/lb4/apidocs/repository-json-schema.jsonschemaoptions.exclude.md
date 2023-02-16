@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.exclude.
 
 List of model properties to exclude from the schema.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exclude?: (keyof T)[];

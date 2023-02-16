@@ -17,7 +17,7 @@ Defines the requirements to implement a Booter for LoopBack applications: - conf
 
 A Booter will run through the above methods in order.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Booter 
@@ -27,8 +27,8 @@ export interface Booter
 
 |  Method | Description |
 |  --- | --- |
-|  [configure()?](./boot.booter.configure.md) | <i>(Optional)</i> Configure phase of the Booter. It should set options / defaults in this phase. |
-|  [discover()?](./boot.booter.discover.md) | <i>(Optional)</i> Discover phase of the Booter. It should search for artifacts in this phase. |
-|  [load()?](./boot.booter.load.md) | <i>(Optional)</i> Load phase of the Booter. It should bind the artifacts in this phase. |
+|  [configure()?](./boot.booter.configure.md) | _(Optional)_ Configure phase of the Booter. It should set options / defaults in this phase. |
+|  [discover()?](./boot.booter.discover.md) | _(Optional)_ Discover phase of the Booter. It should search for artifacts in this phase. |
+|  [load()?](./boot.booter.load.md) | _(Optional)_ Load phase of the Booter. It should bind the artifacts in this phase. |
 
 

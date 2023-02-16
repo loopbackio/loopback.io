@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.contexteventobserver.html
 
 Context event observer type - An instance of `ContextObserver` or a function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextEventObserver = ContextObserver | ContextObserverFn;
 ```
-<b>References:</b> [ContextObserver](./context.contextobserver.md)<!-- -->, [ContextObserverFn](./context.contextobserverfn.md)
+**References:** [ContextObserver](./context.contextobserver.md)<!-- -->, [ContextObserverFn](./context.contextobserverfn.md)
 
 

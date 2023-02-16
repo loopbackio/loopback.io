@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsmiddlewareprovider.html
 
 ## ParseParamsMiddlewareProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ParseParamsMiddlewareProvider implements Provider<Middleware> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 
 ## Methods
 

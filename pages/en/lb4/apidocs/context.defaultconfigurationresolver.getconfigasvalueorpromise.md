@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.defaultconfigurationresolver.getconfigasv
 
 ## DefaultConfigurationResolver.getConfigAsValueOrPromise() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propertyPath?: string, resolutionOptions?: ResolutionOptions): ValueOrPromise<ConfigValueType | undefined>;
@@ -24,10 +24,10 @@ getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propert
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;unknown&gt; |  |
-|  propertyPath | string | <i>(Optional)</i> |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> |
+|  propertyPath | string | _(Optional)_ |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;ConfigValueType \| undefined&gt;
 

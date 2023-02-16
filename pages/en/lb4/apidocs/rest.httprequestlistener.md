@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httprequestlistener.html
 
 ## HttpRequestListener type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HttpRequestListener = (req: IncomingMessage, res: ServerResponse) => void;

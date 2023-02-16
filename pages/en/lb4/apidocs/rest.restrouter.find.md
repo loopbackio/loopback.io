@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restrouter.find.html
 
 Find a matching route for the given http request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(request: Request): ResolvedRoute | undefined;
@@ -27,7 +27,7 @@ find(request: Request): ResolvedRoute | undefined;
 |  --- | --- | --- |
 |  request | Request | Http request |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolvedRoute](./rest.resolvedroute.md) \| undefined
 

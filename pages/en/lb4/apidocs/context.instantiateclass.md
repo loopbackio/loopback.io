@@ -17,7 +17,7 @@ Create an instance of a class which constructor has arguments decorated with `@i
 
 The function returns a class when all dependencies were resolved synchronously, or a Promise otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function instantiateClass<T extends object>(ctor: Constructor<T>, ctx: Context, session?: ResolutionSession, nonInjectedArgs?: any[]): ValueOrPromise<T>;
@@ -29,10 +29,10 @@ export declare function instantiateClass<T extends object>(ctor: Constructor<T>,
 |  --- | --- | --- |
 |  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The class constructor to call. |
 |  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
-|  nonInjectedArgs | any\[\] | <i>(Optional)</i> Optional array of args for non-injected parameters |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
+|  nonInjectedArgs | any\[\] | _(Optional)_ Optional array of args for non-injected parameters |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 

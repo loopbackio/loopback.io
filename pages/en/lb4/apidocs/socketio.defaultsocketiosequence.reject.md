@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence.reject.html
 
 ## DefaultSocketIoSequence.reject property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected reject: SocketIoRejectMethod;

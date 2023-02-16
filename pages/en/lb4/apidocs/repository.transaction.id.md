@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.transaction.id.html
 
 The transaction Identifier
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id: string;

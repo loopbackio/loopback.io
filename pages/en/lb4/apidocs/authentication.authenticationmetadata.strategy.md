@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmetadata.strategy.ht
 
 Name of the authentication strategy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 strategy: string;

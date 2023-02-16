@@ -19,7 +19,7 @@ An array of principals. It can include information about the current user, the c
 
 Such operations include: - authentication (login) - authorization (access control) - session access - logout
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 principals: Set<TypedPrincipal>;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.tokenservicebindings.token_exp
 
 ## TokenServiceBindings.TOKEN\_EXPIRES\_IN variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 TOKEN_EXPIRES_IN: BindingKey<string>

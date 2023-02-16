@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenrelations.html
 
 ## RefreshTokenRelations interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RefreshTokenRelations 

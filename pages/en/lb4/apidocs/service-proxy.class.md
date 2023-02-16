@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.class.html
 
 Interface for classes with `new` operator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Class<T> 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice.userrepository.h
 
 ## MyUserService.userRepository property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 userRepository: UserRepository;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationerror.code.html
 
 Machine readable code, can be understood by any clients
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code?: string;

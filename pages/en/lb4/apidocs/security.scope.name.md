@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.scope.name.html
 
 ## Scope.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

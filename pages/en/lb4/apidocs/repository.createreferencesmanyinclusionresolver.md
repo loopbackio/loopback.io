@@ -17,7 +17,7 @@ Creates InclusionResolver for ReferencesMany relation. Notice that this function
 
 Notice: scope field for inclusion is not supported yet
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createReferencesManyInclusionResolver<Target extends Entity, TargetIds, TargetRelations extends object>(meta: ReferencesManyDefinition, getTargetRepo: Getter<EntityCrudRepository<Target, TargetIds, TargetRelations>>): InclusionResolver<Entity, Target>;
@@ -30,7 +30,7 @@ export declare function createReferencesManyInclusionResolver<Target extends Ent
 |  meta | [ReferencesManyDefinition](./repository.referencesmanydefinition.md) | resolved ReferencesManyMetadata |
 |  getTargetRepo | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetIds, TargetRelations&gt;&gt; | target repository i.e where related instances are |
 
-<b>Returns:</b>
+**Returns:**
 
 [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt;
 

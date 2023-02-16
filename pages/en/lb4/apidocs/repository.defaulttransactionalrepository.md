@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.repository.defaulttransactionalrepository.html
 
 Default implementation of CRUD repository using legacy juggler model and data source with beginTransaction() method for connectors which support Transactions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultTransactionalRepository<T extends Entity, ID, Relations extends object = {}> extends DefaultCrudRepository<T, ID, Relations> implements TransactionalEntityRepository<T, ID, Relations> 
 ```
-<b>Extends:</b> [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
+**Extends:** [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
 
-<b>Implements:</b> [TransactionalEntityRepository](./repository.transactionalentityrepository.md)<!-- -->&lt;T, ID, Relations&gt;
+**Implements:** [TransactionalEntityRepository](./repository.transactionalentityrepository.md)<!-- -->&lt;T, ID, Relations&gt;
 
 ## Methods
 

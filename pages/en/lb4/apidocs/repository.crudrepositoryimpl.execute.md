@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl.execute.html
 
 ## CrudRepositoryImpl.execute() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute(command: Command, parameters: NamedParameters | PositionalParameters, options?: Options): Promise<AnyObject>;
@@ -25,9 +25,9 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 |  --- | --- | --- |
 |  command | [Command](./repository.command.md) |  |
 |  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 

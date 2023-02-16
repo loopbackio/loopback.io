@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.relations_key.html
 
 ## RELATIONS\_KEY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RELATIONS_KEY = "loopback:relations"

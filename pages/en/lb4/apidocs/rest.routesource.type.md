@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.routesource.type.html
 
 ## RouteSource.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string;

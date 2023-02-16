@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._setupoasenhancerifneeded.html
 
 ## RestServer.\_setupOASEnhancerIfNeeded() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _setupOASEnhancerIfNeeded(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

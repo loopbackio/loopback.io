@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.anoperationspec.html
 
 Create a new instance of OperationSpecBuilder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function anOperationSpec(): OperationSpecBuilder;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md)
 

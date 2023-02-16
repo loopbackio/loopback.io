@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filter.skip.html
 
 Skip N number of entities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip?: number;

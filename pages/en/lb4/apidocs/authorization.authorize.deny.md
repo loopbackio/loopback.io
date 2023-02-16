@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.deny.html
 
 Shortcut to configure denied roles
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deny: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

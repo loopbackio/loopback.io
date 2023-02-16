@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.jsonprimitive.html
 
 JSON primitive types: - string - number - boolean - null
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type JSONPrimitive = string | number | boolean | null;

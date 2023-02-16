@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.sanitizejsonparse.html
 
 Factory to create a reviver function for `JSON.parse` to sanitize keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => any, prohibitedKeys?: string[]): (key: string, value: any) => any;
@@ -25,10 +25,10 @@ export declare function sanitizeJsonParse(reviver?: (key: any, value: any) => an
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  reviver | (key: any, value: any) =&gt; any | <i>(Optional)</i> Reviver function |
-|  prohibitedKeys | string\[\] | <i>(Optional)</i> An array of keys to be rejected |
+|  reviver | (key: any, value: any) =&gt; any | _(Optional)_ Reviver function |
+|  prohibitedKeys | string\[\] | _(Optional)_ An array of keys to be rejected |
 
-<b>Returns:</b>
+**Returns:**
 
 (key: string, value: any) =&gt; any
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.handlercontext.response.html
 
 ## HandlerContext.response property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly response: Response;

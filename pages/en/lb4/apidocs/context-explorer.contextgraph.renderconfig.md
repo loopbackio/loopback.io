@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraph.renderconfig.html
 
 Create an edge for a binding to its configuration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected renderConfig(parent: ICluster, { binding, level, id }: ContextBinding): IEdge | undefined;
@@ -28,7 +28,7 @@ protected renderConfig(parent: ICluster, { binding, level, id }: ContextBinding)
 |  parent | ICluster |  |
 |  { binding, level, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 IEdge \| undefined
 

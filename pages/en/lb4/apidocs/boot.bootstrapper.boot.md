@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootstrapper.boot.html
 
 Function is responsible for calling all registered Booter classes that are bound to the Application instance. Each phase of an instance must complete before the next phase is started.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 boot(execOptions?: BootExecutionOptions, ctx?: Context): Promise<Context>;
@@ -25,10 +25,10 @@ boot(execOptions?: BootExecutionOptions, ctx?: Context): Promise<Context>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  execOptions | [BootExecutionOptions](./boot.bootexecutionoptions.md) | <i>(Optional)</i> Execution options for boot. These determine the phases and booters that are run. |
-|  ctx | [Context](./context.context.md) | <i>(Optional)</i> Optional Context to use to resolve bindings. This is primarily useful when running app.boot() again but with different settings (in particular phases) such as 'start' / 'stop'. Using a returned Context from a previous boot call allows DI to retrieve the same instances of Booters previously used as they are bound using a CONTEXT scope. This is important as Booter instances may maintain state. |
+|  execOptions | [BootExecutionOptions](./boot.bootexecutionoptions.md) | _(Optional)_ Execution options for boot. These determine the phases and booters that are run. |
+|  ctx | [Context](./context.context.md) | _(Optional)_ Optional Context to use to resolve bindings. This is primarily useful when running app.boot() again but with different settings (in particular phases) such as 'start' / 'stop'. Using a returned Context from a previous boot call allows DI to retrieve the same instances of Booters previously used as they are bound using a CONTEXT scope. This is important as Booter instances may maintain state. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Context](./context.context.md)<!-- -->&gt;
 

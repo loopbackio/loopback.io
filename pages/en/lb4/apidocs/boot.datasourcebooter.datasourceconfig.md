@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.datasourcebooter.datasourceconfig.html
 
 ## DataSourceBooter.datasourceConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 datasourceConfig: ArtifactOptions;

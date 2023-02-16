@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.userrepository.list.html
 
 ## UserRepository.list property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly list: Record<string, MyUser>;

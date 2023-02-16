@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.property.err_prop_not_array.html
 
 ## property.ERR\_PROP\_NOT\_ARRAY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ERR_PROP_NOT_ARRAY = "@property.array can only decorate array properties!"

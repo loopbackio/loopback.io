@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootable.projectroot.html
 
 Root directory for the project to be booted
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 projectRoot: string;

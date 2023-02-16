@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.source.html
 
 ## InvocationContext.source property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly source?: InvocationSource<unknown> | undefined;

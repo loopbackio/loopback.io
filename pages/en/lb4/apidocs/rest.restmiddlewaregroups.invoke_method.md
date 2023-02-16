@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.invoke_method.html
 
 Invoke the target controller method or handler function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INVOKE_METHOD = "invokeMethod"

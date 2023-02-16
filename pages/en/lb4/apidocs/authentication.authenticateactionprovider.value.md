@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider.value.h
 
 ## AuthenticateActionProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): AuthenticateFn;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [AuthenticateFn](./authentication.authenticatefn.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.class.html
 
 ## ContextTags.CLASS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CLASS = "class"

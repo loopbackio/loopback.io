@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.basemiddlewarebindingoptions.key.html
 
 Binding key for the middleware.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 key?: BindingAddress<GenericInterceptor<CTX>>;

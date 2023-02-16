@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.trycatchfinally.html
 
 Try to run an action that returns a promise or a value with error and final actions to mimic `try {} catch(err) {} finally {}` for a value or promise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function tryCatchFinally<T>(action: () => ValueOrPromise<T>, errorAction?: (err: unknown) => T | never, finalAction?: () => void): ValueOrPromise<T>;
@@ -26,10 +26,10 @@ export declare function tryCatchFinally<T>(action: () => ValueOrPromise<T>, erro
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  action | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | A function that returns a promise or a value |
-|  errorAction | (err: unknown) =&gt; T \| never | <i>(Optional)</i> A function to be called once the action is rejected (synchronously or asynchronously). It must either return a new value or throw an error. |
-|  finalAction | () =&gt; void | <i>(Optional)</i> A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
+|  errorAction | (err: unknown) =&gt; T \| never | _(Optional)_ A function to be called once the action is rejected (synchronously or asynchronously). It must either return a new value or throw an error. |
+|  finalAction | () =&gt; void | _(Optional)_ A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 

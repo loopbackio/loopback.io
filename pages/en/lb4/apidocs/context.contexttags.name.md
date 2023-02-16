@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.name.html
 
 Name of the artifact
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 NAME = "name"

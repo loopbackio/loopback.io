@@ -17,12 +17,12 @@ A class that extends BaseArtifactBooter to boot the 'Service' artifact type. Dis
 
 Supported phases: configure, discover, load
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ServiceBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

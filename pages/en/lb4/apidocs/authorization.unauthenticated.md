@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.unauthenticated.html
 
 ## UNAUTHENTICATED variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 UNAUTHENTICATED = "$unauthenticated"

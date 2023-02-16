@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponent.servers.html
 
 ## RestComponent.servers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 servers: {

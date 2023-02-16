@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.ts_type_key.html
 
 ## TS\_TYPE\_KEY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 TS_TYPE_KEY = "x-ts-type"

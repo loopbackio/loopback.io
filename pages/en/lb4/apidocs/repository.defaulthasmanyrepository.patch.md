@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository.patch.html
 
 ## DefaultHasManyRepository.patch() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 patch(dataObject: DataObject<TargetEntity>, where?: Where<TargetEntity>, options?: Options): Promise<Count>;
@@ -24,10 +24,10 @@ patch(dataObject: DataObject<TargetEntity>, where?: Where<TargetEntity>, options
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

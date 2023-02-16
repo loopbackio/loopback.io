@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute.path.html
 
 ## BaseRoute.path property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly path: string;

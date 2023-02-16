@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.connector.disconnect.html
 
 ## Connector.disconnect() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 disconnect(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

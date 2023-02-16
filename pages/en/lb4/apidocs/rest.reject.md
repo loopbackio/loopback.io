@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.reject.html
 
 Reject the request with an error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Reject = (handlerContext: HandlerContext, err: Error) => void;
 ```
-<b>References:</b> [HandlerContext](./express.handlercontext.md)
+**References:** [HandlerContext](./express.handlercontext.md)
 
 

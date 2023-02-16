@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.comparebyorder.html
 
 Compare two values by the predefined order
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function compareByOrder(a: string | symbol | undefined | null, b: string | symbol | undefined | null, order?: (string | symbol)[]): number;
@@ -27,9 +27,9 @@ export declare function compareByOrder(a: string | symbol | undefined | null, b:
 |  --- | --- | --- |
 |  a | string \| symbol \| undefined \| null | First value |
 |  b | string \| symbol \| undefined \| null | Second value |
-|  order | (string \| symbol)\[\] | <i>(Optional)</i> An array of values as the predefined order |
+|  order | (string \| symbol)\[\] | _(Optional)_ An array of values as the predefined order |
 
-<b>Returns:</b>
+**Returns:**
 
 number
 

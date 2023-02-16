@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.html
 
 ## BindingKey class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BindingKey<ValueType> 
@@ -25,8 +25,8 @@ export declare class BindingKey<ValueType>
 |  --- | --- | --- | --- |
 |  [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md) | <code>static</code> | string | Name space for configuration binding keys |
 |  [key](./context.bindingkey.key.md) | <code>readonly</code> | string |  |
-|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <p><code>readonly</code></p><p><code>static</code></p> | (not declared) |  |
-|  [propertyPath?](./context.bindingkey.propertypath.md) | <code>readonly</code> | string \| undefined | <i>(Optional)</i> |
+|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
+|  [propertyPath?](./context.bindingkey.propertypath.md) | <code>readonly</code> | string \| undefined | _(Optional)_ |
 
 ## Methods
 

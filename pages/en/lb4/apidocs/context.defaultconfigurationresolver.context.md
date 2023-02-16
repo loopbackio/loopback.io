@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.defaultconfigurationresolver.context.html
 
 ## DefaultConfigurationResolver.context property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly context: Context;

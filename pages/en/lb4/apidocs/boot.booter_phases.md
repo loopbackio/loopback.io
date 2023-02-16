@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.booter_phases.html
 
 Export of an array of all the Booter phases supported by the interface above, in the order they should be run.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOTER_PHASES: string[]

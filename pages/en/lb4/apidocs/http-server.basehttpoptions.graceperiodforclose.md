@@ -19,7 +19,7 @@ Defaults to Infinity (don't force-close). If you want to immediately destroy all
 
 See [stoppable](https://www.npmjs.com/package/stoppable)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 gracePeriodForClose?: number;

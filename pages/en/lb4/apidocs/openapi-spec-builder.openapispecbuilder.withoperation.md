@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.openapispecbuilder.withopera
 
 Define a new OperationObject at the given path and verb (method).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withOperation(verb: string, path: string, spec: OperationObject | OperationSpecBuilder): this;
@@ -29,7 +29,7 @@ withOperation(verb: string, path: string, spec: OperationObject | OperationSpecB
 |  path | string | The path relative to basePath. |
 |  spec | OperationObject \| [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md) | Additional specification of the operation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorycomponent.html
 
 This interface describes additional Component properties allowing components to contribute Repository-related artifacts.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RepositoryComponent 
@@ -25,7 +25,7 @@ export interface RepositoryComponent
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [models?](./repository.repositorycomponent.models.md) |  | [Class](./repository.class.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;\[\] | <i>(Optional)</i> An optional list of Model classes to bind for dependency injection via <code>app.model()</code> API. |
-|  [repositories?](./repository.repositorycomponent.repositories.md) |  | [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;&gt;\[\] | <i>(Optional)</i> An optional list of Repository classes to bind for dependency injection via <code>app.repository()</code> API. |
+|  [models?](./repository.repositorycomponent.models.md) |  | [Class](./repository.class.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;\[\] | _(Optional)_ An optional list of Model classes to bind for dependency injection via <code>app.model()</code> API. |
+|  [repositories?](./repository.repositorycomponent.repositories.md) |  | [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;&gt;\[\] | _(Optional)_ An optional list of Repository classes to bind for dependency injection via <code>app.repository()</code> API. |
 
 

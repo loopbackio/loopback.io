@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.comparebindingsbytag.html
 
 Creates a binding compare function to sort bindings by tagged phase name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function compareBindingsByTag(phaseTagName?: string, orderOfPhases?: (string | symbol)[]): BindingComparator;
@@ -25,10 +25,10 @@ export declare function compareBindingsByTag(phaseTagName?: string, orderOfPhase
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  phaseTagName | string | <i>(Optional)</i> Name of the binding tag for phase |
-|  orderOfPhases | (string \| symbol)\[\] | <i>(Optional)</i> An array of phase names as the predefined order |
+|  phaseTagName | string | _(Optional)_ Name of the binding tag for phase |
+|  orderOfPhases | (string \| symbol)\[\] | _(Optional)_ An array of phase names as the predefined order |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingComparator](./context.bindingcomparator.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.send.html
 
 Binding key for setting and injecting a response writing function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SEND: BindingKey<Send>

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonedefinition.polymorphic.html
 
 The polymorphism of the target model. The discriminator is a key of source model. If the target model is not polymorphic, then the value should be left undefined or false; If the key on source model indicating the concrete class of the target instance is default i.e. camelCase(classNameOf(throughModelInstance)) + "Id" Then the discriminator field can be undefined
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 polymorphic?: boolean | {

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userrepository.usercredentials
 
 ## UserRepository.userCredentials property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly userCredentials: HasOneRepositoryFactory<UserCredentials, typeof User.prototype.id>;

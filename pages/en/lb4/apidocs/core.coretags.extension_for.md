@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.extension_for.html
 
 Binding tag for extensions to specify name of the extension point that an extension contributes to.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 EXTENSION_FOR = "extensionFor"

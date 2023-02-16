@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.html
 
 An Express server that provides middleware composition and injection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExpressServer extends BaseMiddlewareRegistry implements Server 
 ```
-<b>Extends:</b> [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md)
+**Extends:** [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md)
 
-<b>Implements:</b> [Server](./core.server.md)
+**Implements:** [Server](./core.server.md)
 
 ## Constructors
 
@@ -35,7 +35,7 @@ export declare class ExpressServer extends BaseMiddlewareRegistry implements Ser
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [basePath](./express.expressserver.basepath.md) | <code>readonly</code> | string | Base path to mount middleware |
-|  [config?](./express.expressserver.config.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | <i>(Optional)</i> |
+|  [config?](./express.expressserver.config.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | _(Optional)_ |
 |  [expressApp](./express.expressserver.expressapp.md) | <code>readonly</code> | express.Application | Embedded Express application |
 |  [httpServer](./express.expressserver.httpserver.md) | <code>protected</code> | [HttpServer](./http-server.httpserver.md) | HTTP/HTTPS server |
 |  [listening](./express.expressserver.listening.md) | <code>readonly</code> | boolean | Some of the methods below are copied from RestServer TODO(rfeng): We might want to refactor some methods from RestServer into the base ExpressServer. |

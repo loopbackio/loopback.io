@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.executeexpressrequesthandler.html
 
 Execute an Express-style callback-based request handler.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function executeExpressRequestHandler(handler: ExpressRequestHandler, request: Request, response: Response): Promise<boolean>;
@@ -29,7 +29,7 @@ export declare function executeExpressRequestHandler(handler: ExpressRequestHand
 |  request | Request |  |
 |  response | Response |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

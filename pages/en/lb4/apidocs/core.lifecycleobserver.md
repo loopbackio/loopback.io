@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserver.html
 
 Observers to handle life cycle init/start/stop events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface LifeCycleObserver 
@@ -25,8 +25,8 @@ export interface LifeCycleObserver
 
 |  Method | Description |
 |  --- | --- |
-|  [init(injectedArgs)?](./core.lifecycleobserver.init.md) | <i>(Optional)</i> The method to be invoked during <code>init</code>. It will only be called at most once for a given application instance. |
-|  [start(injectedArgs)?](./core.lifecycleobserver.start.md) | <i>(Optional)</i> The method to be invoked during <code>start</code> |
-|  [stop(injectedArgs)?](./core.lifecycleobserver.stop.md) | <i>(Optional)</i> The method to be invoked during <code>stop</code> |
+|  [init(injectedArgs)?](./core.lifecycleobserver.init.md) | _(Optional)_ The method to be invoked during <code>init</code>. It will only be called at most once for a given application instance. |
+|  [start(injectedArgs)?](./core.lifecycleobserver.start.md) | _(Optional)_ The method to be invoked during <code>start</code> |
+|  [stop(injectedArgs)?](./core.lifecycleobserver.stop.md) | _(Optional)_ The method to be invoked during <code>stop</code> |
 
 

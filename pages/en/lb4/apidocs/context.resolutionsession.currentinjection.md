@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.currentinjection.html
 
 Getter for the current injection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get currentInjection(): Readonly<Injection> | undefined;

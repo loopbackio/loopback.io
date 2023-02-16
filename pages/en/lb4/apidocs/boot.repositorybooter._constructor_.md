@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.repositorybooter._constructor_.html
 
 Constructs a new instance of the `RepositoryBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: ApplicationWithRepositories, projectRoot: string, repositoryOptions?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, repositoryOpt
 |  --- | --- | --- |
 |  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
 |  projectRoot | string |  |
-|  repositoryOptions | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  repositoryOptions | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

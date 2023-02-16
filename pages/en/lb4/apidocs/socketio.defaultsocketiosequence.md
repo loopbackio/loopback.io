@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence.html
 
 ## DefaultSocketIoSequence class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultSocketIoSequence implements SocketIoSequence 
 ```
-<b>Implements:</b> [SocketIoSequence](./socketio.socketiosequence.md)
+**Implements:** [SocketIoSequence](./socketio.socketiosequence.md)
 
 ## Constructors
 

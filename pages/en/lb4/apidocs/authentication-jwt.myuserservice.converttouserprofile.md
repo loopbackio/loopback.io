@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice.converttouserpro
 
 ## MyUserService.convertToUserProfile() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 convertToUserProfile(user: User): UserProfile;
@@ -25,7 +25,7 @@ convertToUserProfile(user: User): UserProfile;
 |  --- | --- | --- |
 |  user | [User](./authentication-jwt.user.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [UserProfile](./security.userprofile.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.send_method.html
 
 ## SocketIoBindings.SEND\_METHOD variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SEND_METHOD: BindingKey<SocketIoSendMethod>

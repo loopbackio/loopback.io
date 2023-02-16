@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.securitybindings.user.html
 
 Binding key for current user profile
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 USER: BindingKey<UserProfile>

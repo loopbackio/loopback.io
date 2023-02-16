@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectbindings.api_connect_spec_en
 
 Strongly-typed binding key for ApiConnectSpecEnhancer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 API_CONNECT_SPEC_ENHANCER: BindingKey<ApiConnectSpecEnhancer>

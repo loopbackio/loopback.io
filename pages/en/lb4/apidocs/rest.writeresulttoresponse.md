@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.writeresulttoresponse.html
 
 Writes the result from Application controller method into the HTTP response
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function writeResultToResponse(response: Response, result: OperationRetval): void;
@@ -28,7 +28,7 @@ export declare function writeResultToResponse(response: Response, result: Operat
 |  response | Response | HTTP Response |
 |  result | [OperationRetval](./rest.operationretval.md) | Result from the API to write into HTTP Response |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

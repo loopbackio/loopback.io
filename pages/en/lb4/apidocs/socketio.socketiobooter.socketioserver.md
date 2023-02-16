@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobooter.socketioserver.html
 
 ## SocketIoBooter.socketioServer property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected socketioServer: SocketIoServer;

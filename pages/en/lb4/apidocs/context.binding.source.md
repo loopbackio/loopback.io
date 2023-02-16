@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.source.html
 
 ## Binding.source property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get source(): BindingSource<T> | undefined;

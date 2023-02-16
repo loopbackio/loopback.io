@@ -17,7 +17,7 @@ Create a corresponding binding for configuration of the target bound by the give
 
 For example, `ctx.configure('controllers.MyController').to({x: 1})` will create binding `controllers.MyController:$config` with value `{x: 1}`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configure<ConfigValueType = BoundValue>(key?: BindingAddress): Binding<ConfigValueType>;
@@ -27,9 +27,9 @@ configure<ConfigValueType = BoundValue>(key?: BindingAddress): Binding<ConfigVal
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | <i>(Optional)</i> The key for the binding to be configured |
+|  key | [BindingAddress](./context.bindingaddress.md) | _(Optional)_ The key for the binding to be configured |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;ConfigValueType&gt;
 

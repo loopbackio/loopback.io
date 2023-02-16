@@ -17,7 +17,7 @@ Bind to a class optionally decorated with `@injectable`<!-- -->. Based on the in
 
 This is similar to [createBindingFromClass()](./context.createbindingfromclass.md) but applies to an existing binding.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toInjectable(ctor: DynamicValueProviderClass<T> | Constructor<T | Provider<T>>): this;
@@ -29,7 +29,7 @@ toInjectable(ctor: DynamicValueProviderClass<T> | Constructor<T | Provider<T>>):
 |  --- | --- | --- |
 |  ctor | [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | A class decorated with <code>@injectable</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

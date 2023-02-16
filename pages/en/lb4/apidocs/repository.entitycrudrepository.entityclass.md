@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.entityclass.html
 
 ## EntityCrudRepository.entityClass property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 entityClass: typeof Entity & {

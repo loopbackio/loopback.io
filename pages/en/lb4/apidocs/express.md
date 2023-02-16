@@ -25,14 +25,19 @@ This module also serves as a standalone extension to Express to provide extensib
 
 |  Class | Description |
 |  --- | --- |
-|  [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md) | Base Context that provides APIs to register middleware |
 |  [ExpressApplication](./express.expressapplication.md) | A LoopBack application with Express server |
-|  [ExpressMiddlewareInterceptorProvider](./express.expressmiddlewareinterceptorprovider.md) | Base class for MiddlewareInterceptor provider classes |
 |  [ExpressServer](./express.expressserver.md) | An Express server that provides middleware composition and injection |
 |  [InvokeMiddlewareProvider](./express.invokemiddlewareprovider.md) | Extension point for middleware to be run as part of the sequence actions |
 |  [MiddlewareChain](./express.middlewarechain.md) | An interceptor chain of middleware. This represents a list of cascading middleware functions to be executed by the order of <code>group</code> names. |
 |  [MiddlewareContext](./express.middlewarecontext.md) | A per-request Context for middleware to combine an IoC container with handler context (request, response, etc.). |
 |  [MiddlewareView](./express.middlewareview.md) | Watch middleware binding keys for the given context and sort them by group |
+
+## Abstract Classes
+
+|  Abstract Class | Description |
+|  --- | --- |
+|  [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md) | Base Context that provides APIs to register middleware |
+|  [ExpressMiddlewareInterceptorProvider](./express.expressmiddlewareinterceptorprovider.md) | Base class for MiddlewareInterceptor provider classes |
 
 ## Functions
 

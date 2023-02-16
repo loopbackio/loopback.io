@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice.options.html
 
 An extension point should be able to receive its options via dependency injection.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly options?: OASEnhancerServiceOptions | undefined;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontrollerctor._new_.html
 
 ## CrudRestControllerCtor.(new)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 new (repository: EntityCrudRepository<T, IdType, Relations>): CrudRestController<T, IdType, IdName, Relations>;
@@ -25,7 +25,7 @@ new (repository: EntityCrudRepository<T, IdType, Relations>): CrudRestController
 |  --- | --- | --- |
 |  repository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, IdType, Relations&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [CrudRestController](./rest-crud.crudrestcontroller.md)<!-- -->&lt;T, IdType, IdName, Relations&gt;
 

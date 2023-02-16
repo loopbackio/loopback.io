@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.idproperties.html
 
 Get an array of names of ID properties, which are specified in the model settings or properties with `id` attribute.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 idProperties(): string[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 string\[\]
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectspecoptions.html
 
 Configuration for IBM API Connect extensions to the OpenAPI spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ApiConnectSpecOptions = {

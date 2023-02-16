@@ -18,14 +18,14 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.getapidefinitions.html
 > Use `getApiComponents`
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getApiDefinitions(): {
         [schema: string]: SchemaObject | ReferenceObject;
     } | undefined;
 ```
-<b>Returns:</b>
+**Returns:**
 
 { \[schema: string\]: SchemaObject \| ReferenceObject; } \| undefined
 

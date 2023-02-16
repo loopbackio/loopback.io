@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.interceptedinvocationcontext.getglobalint
 
 Discover all binding keys for global interceptors (tagged by ContextTags.GLOBAL\_INTERCEPTOR)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getGlobalInterceptorBindingKeys(): string[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 string\[\]
 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.binding.tojson.html
 
 Convert to a plain JSON object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toJSON(): JSONObject;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [JSONObject](./context.jsonobject.md)
 

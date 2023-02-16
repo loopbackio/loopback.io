@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.nulltype.serialize.html
 
 ## NullType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: boolean | null | undefined): null;
@@ -25,7 +25,7 @@ serialize(value: boolean | null | undefined): null;
 |  --- | --- | --- |
 |  value | boolean \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 null
 

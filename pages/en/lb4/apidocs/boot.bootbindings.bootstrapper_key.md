@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.bootstrapper_key.html
 
 Binding key for binding the BootStrapper class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOTSTRAPPER_KEY: BindingKey<Bootstrapper>

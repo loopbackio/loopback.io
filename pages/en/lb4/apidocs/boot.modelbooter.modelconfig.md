@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelbooter.modelconfig.html
 
 ## ModelBooter.modelConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modelConfig: ArtifactOptions;

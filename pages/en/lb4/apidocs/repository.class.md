@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.class.html
 
 Interface for classes with `new` operator and static properties/methods
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Class<T> 

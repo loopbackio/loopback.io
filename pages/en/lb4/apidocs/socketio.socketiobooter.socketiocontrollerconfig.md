@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobooter.socketiocontrollerconfig.
 
 ## SocketIoBooter.socketioControllerConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 socketioControllerConfig: ArtifactOptions;

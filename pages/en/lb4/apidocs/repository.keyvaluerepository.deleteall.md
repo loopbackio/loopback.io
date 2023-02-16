@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.deleteall.html
 
 Delete all entries
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteAll(options?: Options): Promise<void>;
@@ -25,9 +25,9 @@ deleteAll(options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

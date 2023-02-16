@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.applicationusingtypeorm.connection.html
 
 ## ApplicationUsingTypeOrm.connection() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 connection(options: ConnectionOptions): void;
@@ -25,7 +25,7 @@ connection(options: ConnectionOptions): void;
 |  --- | --- | --- |
 |  options | ConnectionOptions |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

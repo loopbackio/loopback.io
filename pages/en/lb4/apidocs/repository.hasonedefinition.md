@@ -13,20 +13,20 @@ permalink: /doc/en/lb4/apidocs.repository.hasonedefinition.html
 
 ## HasOneDefinition interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HasOneDefinition extends RelationDefinitionBase 
 ```
-<b>Extends:</b> [RelationDefinitionBase](./repository.relationdefinitionbase.md)
+**Extends:** [RelationDefinitionBase](./repository.relationdefinitionbase.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyFrom?](./repository.hasonedefinition.keyfrom.md) |  | string | <i>(Optional)</i> |
-|  [keyTo?](./repository.hasonedefinition.keyto.md) |  | string | <p><i>(Optional)</i> keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.</p><p>E.g. when a Customer has one Address instance, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo".</p> |
-|  [polymorphic?](./repository.hasonedefinition.polymorphic.md) |  | boolean \| { discriminator: string; } | <i>(Optional)</i> The polymorphism of the target model. The discriminator is a key of source model. If the target model is not polymorphic, then the value should be left undefined or false; If the key on source model indicating the concrete class of the target instance is default i.e. camelCase(classNameOf(throughModelInstance)) + "Id" Then the discriminator field can be undefined |
+|  [keyFrom?](./repository.hasonedefinition.keyfrom.md) |  | string | _(Optional)_ |
+|  [keyTo?](./repository.hasonedefinition.keyto.md) |  | string | <p>_(Optional)_ keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.</p><p>E.g. when a Customer has one Address instance, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo".</p> |
+|  [polymorphic?](./repository.hasonedefinition.polymorphic.md) |  | boolean \| { discriminator: string; } | _(Optional)_ The polymorphism of the target model. The discriminator is a key of source model. If the target model is not polymorphic, then the value should be left undefined or false; If the key on source model indicating the concrete class of the target instance is default i.e. camelCase(classNameOf(throughModelInstance)) + "Id" Then the discriminator field can be undefined |
 |  [targetsMany](./repository.hasonedefinition.targetsmany.md) |  | false |  |
 |  [type](./repository.hasonedefinition.type.md) |  | [RelationType.hasOne](./repository.relationtype.md) |  |
 

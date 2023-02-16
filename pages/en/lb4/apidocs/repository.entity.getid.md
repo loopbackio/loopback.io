@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.entity.getid.html
 
 Get the identity value. If the identity is a composite key, returns an object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getId(): any;
 ```
-<b>Returns:</b>
+**Returns:**
 
 any
 

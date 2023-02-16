@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withsc
 
 Define a component schema.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withSchema(name: string, schema: SchemaObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withSchema(name: string, schema: SchemaObject | ReferenceObject): this;
 |  name | string | The name of the schema |
 |  schema | SchemaObject \| ReferenceObject | Specification of the schema |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

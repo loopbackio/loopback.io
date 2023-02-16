@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.transaction.html
 
 Local transaction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Transaction 

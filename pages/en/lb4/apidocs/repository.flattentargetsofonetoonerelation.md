@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.flattentargetsofonetoonerelation.html
 
 Returns an array of instances. The order of arrays is based on the order of sourceIds
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function flattenTargetsOfOneToOneRelation<Target extends Entity>(sourceIds: unknown[], targetEntities: Target[], targetKey: StringKeyOf<Target>): (Target | undefined)[];
@@ -29,7 +29,7 @@ export declare function flattenTargetsOfOneToOneRelation<Target extends Entity>(
 |  targetEntities | Target\[\] | target entities that satisfy targetKey's value (ids). |
 |  targetKey | [StringKeyOf](./repository.stringkeyof.md)<!-- -->&lt;Target&gt; | name of the target key |
 
-<b>Returns:</b>
+**Returns:**
 
 (Target \| undefined)\[\]
 

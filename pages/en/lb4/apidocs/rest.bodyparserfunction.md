@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.bodyparserfunction.html
 
 Plain function for body parsing
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BodyParserFunction = (request: Request) => Promise<RequestBody>;
 ```
-<b>References:</b> [RequestBody](./rest.requestbody.md)
+**References:** [RequestBody](./rest.requestbody.md)
 
 

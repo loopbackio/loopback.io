@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.injectionstack.html
 
 Getter for injections on the stack
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get injectionStack(): Readonly<Injection>[];

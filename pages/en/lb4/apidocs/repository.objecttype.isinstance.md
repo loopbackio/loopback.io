@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.objecttype.isinstance.html
 
 ## ObjectType.isInstance() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isInstance(value: any): boolean;
@@ -25,7 +25,7 @@ isInstance(value: any): boolean;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata.modelclass.html
 
 Class of the model
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modelClass?: typeof Entity;

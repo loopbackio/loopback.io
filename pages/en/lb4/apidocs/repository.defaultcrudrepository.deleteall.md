@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.deleteall.html
 
 ## DefaultCrudRepository.deleteAll() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteAll(where?: Where<T>, options?: Options): Promise<Count>;
@@ -23,10 +23,10 @@ deleteAll(where?: Where<T>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

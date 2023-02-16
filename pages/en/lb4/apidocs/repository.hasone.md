@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasone.html
 
 ## hasOne() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<HasOneDefinition>): (decoratedTarget: object, key: string) => void;
@@ -24,9 +24,9 @@ export declare function hasOne<T extends Entity>(targetResolver: EntityResolver<
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; |  |
-|  definition | Partial&lt;[HasOneDefinition](./repository.hasonedefinition.md)<!-- -->&gt; | <i>(Optional)</i> |
+|  definition | Partial&lt;[HasOneDefinition](./repository.hasonedefinition.md)<!-- -->&gt; | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 (decoratedTarget: object, key: string) =&gt; void
 

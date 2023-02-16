@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinitionsyntax.properties.html
 
 ## ModelDefinitionSyntax.properties property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 properties?: {

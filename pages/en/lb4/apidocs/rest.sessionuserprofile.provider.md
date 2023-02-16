@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.sessionuserprofile.provider.html
 
 ## SessionUserProfile.provider property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 provider: string;

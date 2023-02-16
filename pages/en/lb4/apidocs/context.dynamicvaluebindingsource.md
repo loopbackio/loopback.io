@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.dynamicvaluebindingsource.html
 
 Binding source for `toDynamicValue`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DynamicValueBindingSource<T> = {
@@ -23,6 +23,6 @@ export type DynamicValueBindingSource<T> = {
     value: ValueFactory<T> | DynamicValueProviderClass<T>;
 };
 ```
-<b>References:</b> [BindingType.DYNAMIC\_VALUE](./context.bindingtype.md)<!-- -->, [ValueFactory](./context.valuefactory.md)<!-- -->, [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)
+**References:** [BindingType.DYNAMIC\_VALUE](./context.bindingtype.md)<!-- -->, [ValueFactory](./context.valuefactory.md)<!-- -->, [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)
 
 

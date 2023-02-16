@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeorm.repository.html
 
 ## typeorm.repository() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function repository(entity: Function, connectionName?: string): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
@@ -24,9 +24,9 @@ function repository(entity: Function, connectionName?: string): (target: Object,
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | Function |  |
-|  connectionName | string | <i>(Optional)</i> |
+|  connectionName | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 

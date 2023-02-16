@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionoptions.session.html
 
 A session to track bindings and injections
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 session?: ResolutionSession;

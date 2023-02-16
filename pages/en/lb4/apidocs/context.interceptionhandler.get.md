@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.interceptionhandler.get.html
 
 ## InterceptionHandler.get() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(target: T, propertyName: PropertyKey, receiver: unknown): any;
@@ -27,7 +27,7 @@ get(target: T, propertyName: PropertyKey, receiver: unknown): any;
 |  propertyName | PropertyKey |  |
 |  receiver | unknown |  |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

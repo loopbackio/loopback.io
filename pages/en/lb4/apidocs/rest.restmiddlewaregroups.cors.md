@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.cors.html
 
 Enforce CORS
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CORS = "cors"

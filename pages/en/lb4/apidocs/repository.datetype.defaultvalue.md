@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.datetype.defaultvalue.html
 
 ## DateType.defaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): Date;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Date
 

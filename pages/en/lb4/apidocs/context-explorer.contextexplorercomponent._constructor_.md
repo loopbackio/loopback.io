@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextexplorercomponent._constr
 
 Constructs a new instance of the `ContextExplorerComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(application: RestApplication, explorerConfig?: ContextExplorerConfig);
@@ -26,6 +26,6 @@ constructor(application: RestApplication, explorerConfig?: ContextExplorerConfig
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [RestApplication](./rest.restapplication.md) |  |
-|  explorerConfig | [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md) | <i>(Optional)</i> |
+|  explorerConfig | [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md) | _(Optional)_ |
 
 

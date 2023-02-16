@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getbinding_1.html
 
 Look up a binding by key in the context and its ancestors. If no matching binding is found and `options.optional` is not set to true, an error will be thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getBinding<ValueType>(key: BindingAddress<ValueType>, options?: {
@@ -28,9 +28,9 @@ getBinding<ValueType>(key: BindingAddress<ValueType>, options?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
-|  options | { optional?: boolean; } | <i>(Optional)</i> Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
+|  options | { optional?: boolean; } | _(Optional)_ Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;ValueType&gt; \| undefined
 

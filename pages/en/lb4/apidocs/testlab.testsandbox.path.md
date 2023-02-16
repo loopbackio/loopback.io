@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.path.html
 
 ## TestSandbox.path property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get path(): string;

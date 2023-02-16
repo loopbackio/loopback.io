@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.reject_method.html
 
 ## SocketIoBindings.REJECT\_METHOD variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REJECT_METHOD: BindingKey<SocketIoRejectMethod>

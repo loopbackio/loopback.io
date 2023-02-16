@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingelement.value.html
 
 ## BindingElement.value property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value: Readonly<Binding>;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxymetadata.datasourcename
 
 ## ServiceProxyMetadata.dataSourceName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSourceName?: string;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.repository
 
 ## ApplicationWithRepositories.repository() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 repository<R extends Repository<any>>(repo: Class<R>, name?: string): Binding<R>;
@@ -24,9 +24,9 @@ repository<R extends Repository<any>>(repo: Class<R>, name?: string): Binding<R>
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;R&gt;
 

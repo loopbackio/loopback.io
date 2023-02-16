@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.withtarget.html
 
 Set a reference to the target class or prototype for a given spec if it's an object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withTarget(spec: T, target: Object): T;
@@ -28,7 +28,7 @@ withTarget(spec: T, target: Object): T;
 |  spec | T | Metadata spec |
 |  target | Object | Target of the decoration. It is a class or the prototype of a class. |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

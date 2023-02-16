@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.isarraytype.html
 
 Determines whether a given string or constructor is array type or not
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isArrayType(type: string | Function | PropertyType): boolean;
@@ -27,7 +27,7 @@ export declare function isArrayType(type: string | Function | PropertyType): boo
 |  --- | --- | --- |
 |  type | string \| Function \| [PropertyType](./repository.propertytype.md) | Type as string or wrapper |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

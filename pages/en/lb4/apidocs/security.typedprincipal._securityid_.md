@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.typedprincipal._securityid_.html
 
 ## TypedPrincipal.\[securityId\] property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get [securityId](): string;

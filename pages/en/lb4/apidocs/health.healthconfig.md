@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.health.healthconfig.html
 
 Configuration for health component with optional properties
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HealthConfig = Partial<HealthOptions>;
 ```
-<b>References:</b> [HealthOptions](./health.healthoptions.md)
+**References:** [HealthOptions](./health.healthoptions.md)
 
 

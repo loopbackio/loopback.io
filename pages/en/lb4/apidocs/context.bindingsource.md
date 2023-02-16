@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.bindingsource.html
 
 Source for the binding, including the type and value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingSource<T> = ConstantBindingSource<T> | DynamicValueBindingSource<T> | ClassBindingSource<T> | ProviderBindingSource<T> | AliasBindingSource<T>;
 ```
-<b>References:</b> [ConstantBindingSource](./context.constantbindingsource.md)<!-- -->, [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md)<!-- -->, [ClassBindingSource](./context.classbindingsource.md)<!-- -->, [ProviderBindingSource](./context.providerbindingsource.md)<!-- -->, [AliasBindingSource](./context.aliasbindingsource.md)
+**References:** [ConstantBindingSource](./context.constantbindingsource.md)<!-- -->, [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md)<!-- -->, [ClassBindingSource](./context.classbindingsource.md)<!-- -->, [ProviderBindingSource](./context.providerbindingsource.md)<!-- -->, [AliasBindingSource](./context.aliasbindingsource.md)
 
 

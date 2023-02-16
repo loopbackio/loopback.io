@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenconstants.html
 
 Constant values used when generating refresh token.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RefreshTokenConstants 

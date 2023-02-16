@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.context.once_1.html
 
 ## Context.once() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 once(event: string | symbol, listener: (...args: any[]) => void): this;
@@ -26,7 +26,7 @@ once(event: string | symbol, listener: (...args: any[]) => void): this;
 |  event | string \| symbol |  |
 |  listener | (...args: any\[\]) =&gt; void |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

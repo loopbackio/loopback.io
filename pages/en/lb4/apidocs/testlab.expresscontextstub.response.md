@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.expresscontextstub.response.html
 
 ## ExpressContextStub.response property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 response: express.Response;

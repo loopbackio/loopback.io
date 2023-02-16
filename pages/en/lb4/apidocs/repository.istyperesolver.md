@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.istyperesolver.html
 
 A function that checks whether a function is a TypeResolver or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isTypeResolver<T extends object>(fn: any): fn is TypeResolver<T>;
@@ -27,7 +27,7 @@ export declare function isTypeResolver<T extends object>(fn: any): fn is TypeRes
 |  --- | --- | --- |
 |  fn | any | The value to check. |
 
-<b>Returns:</b>
+**Returns:**
 
 fn is [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;T&gt;
 

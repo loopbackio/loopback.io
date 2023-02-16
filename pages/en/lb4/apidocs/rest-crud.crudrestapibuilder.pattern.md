@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestapibuilder.pattern.html
 
 ## CrudRestApiBuilder.pattern property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pattern: string;

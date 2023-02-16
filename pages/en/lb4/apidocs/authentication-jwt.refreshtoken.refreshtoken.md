@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtoken.refreshtoken.html
 
 ## RefreshToken.refreshToken property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 refreshToken: string;

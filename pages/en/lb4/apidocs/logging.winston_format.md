@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.winston_format.html
 
 An extension point for winston formats
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WINSTON_FORMAT = "logging.winston.format"

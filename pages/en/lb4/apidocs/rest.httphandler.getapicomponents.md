@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.getapicomponents.html
 
 ## HttpHandler.getApiComponents() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getApiComponents(): ComponentsObject;
 ```
-<b>Returns:</b>
+**Returns:**
 
 ComponentsObject
 

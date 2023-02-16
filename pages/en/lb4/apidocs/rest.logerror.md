@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.logerror.html
 
 Log information about a failed request.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type LogError = (err: Error, statusCode: number, request: Request) => void;

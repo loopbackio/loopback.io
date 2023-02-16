@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.aliasbindingsource.html
 
 Binding source for `toAlias`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AliasBindingSource<T> = {
@@ -23,6 +23,6 @@ export type AliasBindingSource<T> = {
     value: BindingAddress<T>;
 };
 ```
-<b>References:</b> [BindingType.ALIAS](./context.bindingtype.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)
+**References:** [BindingType.ALIAS](./context.bindingtype.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)
 
 

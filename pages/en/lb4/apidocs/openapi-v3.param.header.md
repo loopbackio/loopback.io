@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.header.html
 
 Header parameter decorator
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 header: {

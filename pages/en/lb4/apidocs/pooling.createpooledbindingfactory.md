@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.createpooledbindingfactory.html
 
 Create a function to return a pooled binding factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createPooledBindingFactory<T extends object>(bindingAddress: BindingAddress<T>): (context: Context) => PoolFactory<T>;
@@ -27,7 +27,7 @@ export declare function createPooledBindingFactory<T extends object>(bindingAddr
 |  --- | --- | --- |
 |  bindingAddress | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding address |
 
-<b>Returns:</b>
+**Returns:**
 
 (context: [Context](./context.context.md)<!-- -->) =&gt; [PoolFactory](./pooling.poolfactory.md)<!-- -->&lt;T&gt;
 

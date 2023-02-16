@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.html
 
 An implementation of KeyValueRepository based on loopback-datasource-juggler
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultKeyValueRepository<T extends Model> implements KeyValueRepository<T> 
 ```
-<b>Implements:</b> [KeyValueRepository](./repository.keyvaluerepository.md)<!-- -->&lt;T&gt;
+**Implements:** [KeyValueRepository](./repository.keyvaluerepository.md)<!-- -->&lt;T&gt;
 
 ## Constructors
 

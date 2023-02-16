@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.filter.keyof.html
 
 Key types of a given model, excluding operators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type KeyOf<MT extends object> = Exclude<Extract<keyof MT, string>, Operators>;
 ```
-<b>References:</b> [Operators](./filter.operators.md)
+**References:** [Operators](./filter.operators.md)
 
 

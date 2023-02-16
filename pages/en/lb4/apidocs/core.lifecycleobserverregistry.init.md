@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.init.html
 
 Notify all life cycle observers by group of `init`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 init(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.binding.lock.html
 
 Lock the binding so that it cannot be rebound
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 lock(): this;
 ```
-<b>Returns:</b>
+**Returns:**
 
 this
 

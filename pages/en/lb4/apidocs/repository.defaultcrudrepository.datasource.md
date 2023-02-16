@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.datasource.html
 
 ## DefaultCrudRepository.dataSource property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSource: juggler.DataSource;

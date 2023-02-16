@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.targetname.html
 
 The target name, such as `OrderController.prototype.cancelOrder`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get targetName(): string;

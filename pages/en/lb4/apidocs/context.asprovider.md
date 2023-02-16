@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.asprovider.html
 
 A factory function to create a template function to bind the target class as a `Provider`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asProvider<T>(target: Constructor<Provider<T>>): BindingTemplate<T>;
@@ -27,7 +27,7 @@ export declare function asProvider<T>(target: Constructor<Provider<T>>): Binding
 |  --- | --- | --- |
 |  target | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | Target provider class |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._serverconfig.html
 
 ## HttpHandler.\_serverConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly _serverConfig: RestServerResolvedConfig;

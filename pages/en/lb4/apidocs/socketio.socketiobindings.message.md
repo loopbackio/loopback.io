@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.message.html
 
 ## SocketIoBindings.MESSAGE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MESSAGE: BindingKey<unknown[]>

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.api_spec.html
 
 Binding key for setting and injecting an OpenAPI spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 API_SPEC: BindingKey<OpenApiSpec>

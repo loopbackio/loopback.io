@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.err_no_multi_server.html
 
 ## ERR\_NO\_MULTI\_SERVER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ERR_NO_MULTI_SERVER: string

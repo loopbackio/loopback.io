@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenrepository._constr
 
 Constructs a new instance of the `RefreshTokenRepository` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(dataSource: juggler.DataSource);

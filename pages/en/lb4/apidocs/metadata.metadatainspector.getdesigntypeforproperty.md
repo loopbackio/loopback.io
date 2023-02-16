@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getdesigntypeforproper
 
 Get TypeScript design time type for a property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getDesignTypeForProperty(target: Object, propertyName: string): Function | undefined;
@@ -28,7 +28,7 @@ static getDesignTypeForProperty(target: Object, propertyName: string): Function 
 |  target | Object | Class or prototype |
 |  propertyName | string | Property name |
 
-<b>Returns:</b>
+**Returns:**
 
 Function \| undefined
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraph._constructor_.html
 
 Constructs a new instance of the `ContextGraph` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(ctx: JSONObject, options?: ContextGraphOptions);
@@ -26,6 +26,6 @@ constructor(ctx: JSONObject, options?: ContextGraphOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctx | [JSONObject](./context.jsonobject.md) |  |
-|  options | [ContextGraphOptions](./context-explorer.contextgraphoptions.md) | <i>(Optional)</i> |
+|  options | [ContextGraphOptions](./context-explorer.contextgraphoptions.md) | _(Optional)_ |
 
 

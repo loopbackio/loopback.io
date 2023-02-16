@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationstrategy.toke
 
 ## JWTAuthenticationStrategy.tokenService property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tokenService: TokenService;

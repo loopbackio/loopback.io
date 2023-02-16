@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.default_ordered_groups.html
 
 ## DEFAULT\_ORDERED\_GROUPS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_ORDERED_GROUPS: string[]

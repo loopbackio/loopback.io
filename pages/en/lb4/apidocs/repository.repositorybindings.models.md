@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorybindings.models.html
 
 Namespace for model class bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MODELS = "models"

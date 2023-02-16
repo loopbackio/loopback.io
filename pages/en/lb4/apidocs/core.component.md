@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.component.html
 
 A component declares a set of artifacts so that they can be contributed to an application as a group
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Component 
@@ -25,12 +25,12 @@ export interface Component
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindings?](./core.component.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | <i>(Optional)</i> An array of bindings to be aded to the application context. |
-|  [classes?](./core.component.classes.md) |  | [ClassMap](./core.classmap.md) | <i>(Optional)</i> A map of classes to be bound to the application context. |
-|  [controllers?](./core.component.controllers.md) |  | [ControllerClass](./core.controllerclass.md)<!-- -->\[\] | <i>(Optional)</i> An array of controller classes |
-|  [lifeCycleObservers?](./core.component.lifecycleobservers.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\] | <i>(Optional)</i> |
-|  [providers?](./core.component.providers.md) |  | [ProviderMap](./core.providermap.md) | <i>(Optional)</i> A map of providers to be bound to the application context |
-|  [servers?](./core.component.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } | <i>(Optional)</i> A map of name/class pairs for servers |
-|  [services?](./core.component.services.md) |  | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->\[\] | <i>(Optional)</i> An array of service or provider classes |
+|  [bindings?](./core.component.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | _(Optional)_ An array of bindings to be aded to the application context. |
+|  [classes?](./core.component.classes.md) |  | [ClassMap](./core.classmap.md) | _(Optional)_ A map of classes to be bound to the application context. |
+|  [controllers?](./core.component.controllers.md) |  | [ControllerClass](./core.controllerclass.md)<!-- -->\[\] | _(Optional)_ An array of controller classes |
+|  [lifeCycleObservers?](./core.component.lifecycleobservers.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\] | _(Optional)_ |
+|  [providers?](./core.component.providers.md) |  | [ProviderMap](./core.providermap.md) | _(Optional)_ A map of providers to be bound to the application context |
+|  [servers?](./core.component.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } | _(Optional)_ A map of name/class pairs for servers |
+|  [services?](./core.component.services.md) |  | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->\[\] | _(Optional)_ An array of service or provider classes |
 
 

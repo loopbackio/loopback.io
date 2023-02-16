@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlresolutioncontext.html
 
 Context for graphql resolver resolution
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class GraphQLResolutionContext extends Context 
 ```
-<b>Extends:</b> [Context](./context.context.md)
+**Extends:** [Context](./context.context.md)
 
 ## Constructors
 

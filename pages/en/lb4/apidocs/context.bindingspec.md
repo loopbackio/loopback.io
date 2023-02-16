@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.bindingspec.html
 
 Specification of parameters for `@injectable()`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingSpec<T = unknown> = BindingTemplate<T> | BindingScopeAndTags;
 ```
-<b>References:</b> [BindingTemplate](./context.bindingtemplate.md)<!-- -->, [BindingScopeAndTags](./context.bindingscopeandtags.md)
+**References:** [BindingTemplate](./context.bindingtemplate.md)<!-- -->, [BindingScopeAndTags](./context.bindingscopeandtags.md)
 
 

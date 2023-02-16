@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.html
 
 RestServer-specific bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RestBindings 

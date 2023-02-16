@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.toclass.html
 
 Bind the key to an instance of the given class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toClass<C extends T & object>(ctor: Constructor<C>): this;
@@ -27,7 +27,7 @@ toClass<C extends T & object>(ctor: Constructor<C>): this;
 |  --- | --- | --- |
 |  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;C&gt; | The class constructor to call. Any constructor arguments must be annotated with <code>@inject</code> so that we can resolve them from the context. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

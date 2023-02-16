@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.tag.html
 
 Inject an array of values by a tag pattern string or regexp
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tag: (bindingTag: BindingTag | RegExp, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

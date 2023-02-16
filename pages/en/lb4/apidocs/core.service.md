@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.service.html
 
 `@service` injects a service instance that matches the class or interface.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function service(serviceInterface?: ServiceInterface, metadata?: InjectionMetadata): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
@@ -25,10 +25,10 @@ export declare function service(serviceInterface?: ServiceInterface, metadata?: 
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | <p><i>(Optional)</i> Interface for the service. It can be in one of the following forms:</p><p>- A class, such as MyService - A string that identifies the interface, such as <code>'MyService'</code> - A symbol that identifies the interface, such as <code>Symbol('MyService')</code></p><p>If not provided, the value is inferred from the design:type of the parameter or property</p> |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | <i>(Optional)</i> |
+|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | <p>_(Optional)_ Interface for the service. It can be in one of the following forms:</p><p>- A class, such as MyService - A string that identifies the interface, such as <code>'MyService'</code> - A symbol that identifies the interface, such as <code>Symbol('MyService')</code></p><p>If not provided, the value is inferred from the design:type of the parameter or property</p> |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 

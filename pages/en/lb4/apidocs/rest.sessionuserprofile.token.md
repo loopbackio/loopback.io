@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.sessionuserprofile.token.html
 
 ## SessionUserProfile.token property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 token: string;

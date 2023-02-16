@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding._constructor_.html
 
 Constructs a new instance of the `Binding` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(key: BindingAddress<T>, isLocked?: boolean);
@@ -26,6 +26,6 @@ constructor(key: BindingAddress<T>, isLocked?: boolean);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; |  |
-|  isLocked | boolean | <i>(Optional)</i> |
+|  isLocked | boolean | _(Optional)_ |
 
 

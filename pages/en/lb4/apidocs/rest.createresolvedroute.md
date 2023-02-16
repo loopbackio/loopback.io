@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.createresolvedroute.html
 
 ## createResolvedRoute() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createResolvedRoute(route: RouteEntry, pathParams: PathParameterValues): ResolvedRoute;
@@ -26,7 +26,7 @@ export declare function createResolvedRoute(route: RouteEntry, pathParams: PathP
 |  route | [RouteEntry](./rest.routeentry.md) |  |
 |  pathParams | [PathParameterValues](./rest.pathparametervalues.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolvedRoute](./rest.resolvedroute.md)
 

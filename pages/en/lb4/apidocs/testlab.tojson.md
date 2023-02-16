@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.tojson.html
 
 ## toJSON() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function toJSON(value: Date): string;
@@ -25,7 +25,7 @@ export declare function toJSON(value: Date): string;
 |  --- | --- | --- |
 |  value | Date |  |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

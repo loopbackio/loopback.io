@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.pooledvalue.value.html
 
 Acquired value from the pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value: T;

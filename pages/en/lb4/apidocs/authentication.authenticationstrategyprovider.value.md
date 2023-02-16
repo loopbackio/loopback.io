@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategyprovider.val
 
 ## AuthenticationStrategyProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): Promise<AuthenticationStrategy[] | undefined>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
 

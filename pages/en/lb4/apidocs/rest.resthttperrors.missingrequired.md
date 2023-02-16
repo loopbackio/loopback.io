@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.missingrequired.html
 
 ## RestHttpErrors.missingRequired() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function missingRequired(name: string): HttpErrors.HttpError;
@@ -25,7 +25,7 @@ function missingRequired(name: string): HttpErrors.HttpError;
 |  --- | --- | --- |
 |  name | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 HttpErrors.HttpError
 

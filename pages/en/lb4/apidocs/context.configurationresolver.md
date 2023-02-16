@@ -17,7 +17,7 @@ Resolver for configuration of bindings. It's responsible for finding correspondi
 
 By default, `undefined` is expected if no configuration is provided. The behavior can be overridden by setting `optional` to `false` in resolution options.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ConfigurationResolver 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratoroptions.html
 
 Options for a decorator
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface DecoratorOptions 
@@ -25,8 +25,8 @@ export interface DecoratorOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [allowInheritance?](./metadata.decoratoroptions.allowinheritance.md) |  | boolean | <i>(Optional)</i> Controls if inherited metadata will be honored. Default to <code>true</code>. |
-|  [cloneInputSpec?](./metadata.decoratoroptions.cloneinputspec.md) |  | boolean | <p><i>(Optional)</i> Controls if the value of <code>spec</code> argument will be cloned. Sometimes we use shared spec for the decoration, but the decorator function might need to mutate the object. Cloning the input spec makes it safe to use the same spec (<code>template</code>) to decorate different members.</p><p>Default to <code>true</code>.</p> |
-|  [decoratorName?](./metadata.decoratoroptions.decoratorname.md) |  | string | <i>(Optional)</i> Name of the decorator for debugging purpose, such as <code>@inject</code> |
+|  [allowInheritance?](./metadata.decoratoroptions.allowinheritance.md) |  | boolean | _(Optional)_ Controls if inherited metadata will be honored. Default to <code>true</code>. |
+|  [cloneInputSpec?](./metadata.decoratoroptions.cloneinputspec.md) |  | boolean | <p>_(Optional)_ Controls if the value of <code>spec</code> argument will be cloned. Sometimes we use shared spec for the decoration, but the decorator function might need to mutate the object. Cloning the input spec makes it safe to use the same spec (<code>template</code>) to decorate different members.</p><p>Default to <code>true</code>.</p> |
+|  [decoratorName?](./metadata.decoratoroptions.decoratorname.md) |  | string | _(Optional)_ Name of the decorator for debugging purpose, such as <code>@inject</code> |
 
 

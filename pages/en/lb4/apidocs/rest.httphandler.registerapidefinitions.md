@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.registerapidefinitions.html
 > Use `registerApiComponents`
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerApiDefinitions(defs: SchemasObject): void;
@@ -30,7 +30,7 @@ registerApiDefinitions(defs: SchemasObject): void;
 |  --- | --- | --- |
 |  defs | SchemasObject | Schemas |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

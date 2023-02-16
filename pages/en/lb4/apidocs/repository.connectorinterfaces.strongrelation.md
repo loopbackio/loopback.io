@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.connectorinterfaces.strongrelation.htm
 
 Strong relation interfaces adopted by a [Connector](./repository.connector.md)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 const enum StrongRelation 

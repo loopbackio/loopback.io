@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.inclusion.relation.html
 
 ## Inclusion.relation property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 relation: string;

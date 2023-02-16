@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.pathparams.html
 
 ## RedirectRoute.pathParams property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pathParams: PathParameterValues;

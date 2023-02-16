@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.consolidate.html
 
 Set this flag to `false` to disable OAS schema consolidation. If not set, the value defaults to `true`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 consolidate?: boolean;

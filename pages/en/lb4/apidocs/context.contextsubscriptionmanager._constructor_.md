@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager._constructor_.
 
 Constructs a new instance of the `ContextSubscriptionManager` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context);

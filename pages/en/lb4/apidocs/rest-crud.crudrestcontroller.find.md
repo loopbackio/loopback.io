@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontroller.find.html
 
 Implementation of the endpoint `GET /`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(filter?: Filter<T>): Promise<(T & Relations)[]>;
@@ -25,9 +25,9 @@ find(filter?: Filter<T>): Promise<(T & Relations)[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Filter |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ Filter |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;(T &amp; Relations)\[\]&gt;
 

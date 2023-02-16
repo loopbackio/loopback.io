@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.transformvalueorpromise.html
 
 Transform a value or promise with a function that produces a new value or promise
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function transformValueOrPromise<T, V>(valueOrPromise: ValueOrPromise<T>, transformer: (val: T) => ValueOrPromise<V>): ValueOrPromise<V>;
@@ -28,7 +28,7 @@ export declare function transformValueOrPromise<T, V>(valueOrPromise: ValueOrPro
 |  valueOrPromise | [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | The value or promise |
 |  transformer | (val: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function that maps the source value to a value or promise |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
 

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.asvalueorpromise.html
 
 Create the Promise type for `T`<!-- -->. If `T` extends `Promise`<!-- -->, the type is `T`<!-- -->, otherwise the type is `ValueOrPromise<T>`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AsValueOrPromise<T> = T extends Promise<unknown> ? T : ValueOrPromise<T>;
 ```
-<b>References:</b> [ValueOrPromise](./context.valueorpromise.md)
+**References:** [ValueOrPromise](./context.valueorpromise.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.schemas.html
 
 ## RedirectRoute.schemas property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly schemas: SchemasObject;

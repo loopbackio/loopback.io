@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextbinding.id.html
 
 ## ContextBinding.id property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly id: string;

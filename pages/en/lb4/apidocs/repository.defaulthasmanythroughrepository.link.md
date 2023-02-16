@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.link.h
 
 ## DefaultHasManyThroughRepository.link() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 link(targetId: TargetID, options?: Options & {
@@ -27,9 +27,9 @@ link(targetId: TargetID, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetId | TargetID |  |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

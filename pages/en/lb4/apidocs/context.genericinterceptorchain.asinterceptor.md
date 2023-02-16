@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain.asinterceptor.htm
 
 Use the interceptor chain as an interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asInterceptor(): GenericInterceptor<C>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;C&gt;
 

@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest.routerspec.html
 
 ## RouterSpec type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RouterSpec = Pick<OpenApiSpec, 'paths' | 'components' | 'tags'>;
 ```
-<b>References:</b> [OpenApiSpec](./openapi-v3.openapispec.md)
+**References:** [OpenApiSpec](./openapi-v3.openapispec.md)
 
 

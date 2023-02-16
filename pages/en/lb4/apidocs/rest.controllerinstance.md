@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.controllerinstance.html
 
 ## ControllerInstance type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ControllerInstance = {

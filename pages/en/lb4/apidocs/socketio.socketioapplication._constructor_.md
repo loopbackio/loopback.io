@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioapplication._constructor_.html
 
 Constructs a new instance of the `SocketIoApplication` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(config?: ApplicationConfig);
@@ -25,6 +25,6 @@ constructor(config?: ApplicationConfig);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | [ApplicationConfig](./core.applicationconfig.md) | <i>(Optional)</i> |
+|  config | [ApplicationConfig](./core.applicationconfig.md) | _(Optional)_ |
 
 

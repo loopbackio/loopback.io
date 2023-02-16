@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.hasinjections.html
 
 Check if the given class has `@inject` or other decorations that map to `@inject`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function hasInjections(cls: Constructor<unknown>): boolean;
@@ -27,7 +27,7 @@ export declare function hasInjections(cls: Constructor<unknown>): boolean;
 |  --- | --- | --- |
 |  cls | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | Class with possible <code>@inject</code> decorations |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

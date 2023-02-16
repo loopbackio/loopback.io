@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.silent.html
 
 If `true`<!-- -->, do not print messages to console
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 silent?: boolean;

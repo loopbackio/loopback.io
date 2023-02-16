@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition._constructor_.html
 
 Constructs a new instance of the `ModelDefinition` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(nameOrDef: string | ModelDefinitionSyntax);

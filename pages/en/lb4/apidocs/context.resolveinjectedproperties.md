@@ -17,7 +17,7 @@ Given a class with properties decorated with `@inject`<!-- -->, return the map o
 
 The function returns an argument array when all dependencies were resolved synchronously, or a Promise otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveInjectedProperties(constructor: Function, ctx: Context, session?: ResolutionSession): ValueOrPromise<MapObject<BoundValue>>;
@@ -29,9 +29,9 @@ export declare function resolveInjectedProperties(constructor: Function, ctx: Co
 |  --- | --- | --- |
 |  constructor | Function | The class for which properties should be resolved. |
 |  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[MapObject](./context.mapobject.md)<!-- -->&lt;[BoundValue](./context.boundvalue.md)<!-- -->&gt;&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.html
 
 Options for api docs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ApiDocsOptions 
@@ -25,12 +25,12 @@ export interface ApiDocsOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [apiDocsExtractionPath?](./tsdocs.apidocsoptions.apidocsextractionpath.md) |  | string | <i>(Optional)</i> Path to tsdocs reports/models |
-|  [apiDocsGenerationPath?](./tsdocs.apidocsoptions.apidocsgenerationpath.md) |  | string | <i>(Optional)</i> Path to target directory to generate apidocs |
-|  [dryRun?](./tsdocs.apidocsoptions.dryrun.md) |  | boolean | <i>(Optional)</i> To have a dry-run without generating api reports/doc models |
-|  [generateDefaultPackageDoc?](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) |  | boolean | <i>(Optional)</i> A flag to generate default package documentation |
-|  [lernaPackages?](./tsdocs.apidocsoptions.lernapackages.md) |  | Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt; | <i>(Optional)</i> Package metadata |
-|  [rootDir?](./tsdocs.apidocsoptions.rootdir.md) |  | string | <i>(Optional)</i> Root directory for the lerna-managed monorepo, default to current dir |
-|  [silent?](./tsdocs.apidocsoptions.silent.md) |  | boolean | <i>(Optional)</i> If <code>true</code>, do not print messages to console |
+|  [apiDocsExtractionPath?](./tsdocs.apidocsoptions.apidocsextractionpath.md) |  | string | _(Optional)_ Path to tsdocs reports/models |
+|  [apiDocsGenerationPath?](./tsdocs.apidocsoptions.apidocsgenerationpath.md) |  | string | _(Optional)_ Path to target directory to generate apidocs |
+|  [dryRun?](./tsdocs.apidocsoptions.dryrun.md) |  | boolean | _(Optional)_ To have a dry-run without generating api reports/doc models |
+|  [generateDefaultPackageDoc?](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) |  | boolean | _(Optional)_ A flag to generate default package documentation |
+|  [lernaPackages?](./tsdocs.apidocsoptions.lernapackages.md) |  | Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt; | _(Optional)_ Package metadata |
+|  [rootDir?](./tsdocs.apidocsoptions.rootdir.md) |  | string | _(Optional)_ Root directory for the lerna-managed monorepo, default to current dir |
+|  [silent?](./tsdocs.apidocsoptions.silent.md) |  | boolean | _(Optional)_ If <code>true</code>, do not print messages to console |
 
 

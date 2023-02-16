@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.config.html
 
 Configuration for api-extractor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 config?: IConfigFile;

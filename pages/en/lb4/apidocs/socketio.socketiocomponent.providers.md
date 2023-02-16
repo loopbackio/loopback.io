@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocomponent.providers.html
 
 ## SocketIoComponent.providers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 providers: ProviderMap;

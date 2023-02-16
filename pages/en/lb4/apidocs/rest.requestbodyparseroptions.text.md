@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparseroptions.text.html
 
 Options for text parser
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 text?: OptionsText;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.openapispecbuilder.withcompo
 
 Define a new ComponentsObject.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withComponents(spec: ComponentsObject | ComponentsSpecBuilder): this;
@@ -27,7 +27,7 @@ withComponents(spec: ComponentsObject | ComponentsSpecBuilder): this;
 |  --- | --- | --- |
 |  spec | ComponentsObject \| [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md) | Specification of the components. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

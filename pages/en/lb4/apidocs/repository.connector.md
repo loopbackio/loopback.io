@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.connector.html
 
 Common properties/operations for connectors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Connector 
@@ -25,8 +25,8 @@ export interface Connector
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [configModel?](./repository.connector.configmodel.md) |  | [Model](./repository.model.md) | <i>(Optional)</i> |
-|  [interfaces?](./repository.connector.interfaces.md) |  | (string \| [ConnectorInterfaces.StrongRelation](./repository.connectorinterfaces.strongrelation.md) \| [ConnectorInterfaces.StrongJoins](./repository.connectorinterfaces.strongjoins.md)<!-- -->)\[\] | <i>(Optional)</i> |
+|  [configModel?](./repository.connector.configmodel.md) |  | [Model](./repository.model.md) | _(Optional)_ |
+|  [interfaces?](./repository.connector.interfaces.md) |  | (string \| [ConnectorInterfaces.StrongRelation](./repository.connectorinterfaces.strongrelation.md) \| [ConnectorInterfaces.StrongJoins](./repository.connectorinterfaces.strongjoins.md)<!-- -->)\[\] | _(Optional)_ |
 |  [name](./repository.connector.name.md) |  | string |  |
 
 ## Methods
@@ -35,7 +35,7 @@ export interface Connector
 |  --- | --- |
 |  [connect()](./repository.connector.connect.md) |  |
 |  [disconnect()](./repository.connector.disconnect.md) |  |
-|  [execute(command, parameters, options)?](./repository.connector.execute.md) | <i>(Optional)</i> |
+|  [execute(command, parameters, options)?](./repository.connector.execute.md) | _(Optional)_ |
 |  [ping()](./repository.connector.ping.md) |  |
 
 

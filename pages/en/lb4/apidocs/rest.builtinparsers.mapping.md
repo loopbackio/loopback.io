@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.mapping.html
 
 ## builtinParsers.mapping variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mapping: {

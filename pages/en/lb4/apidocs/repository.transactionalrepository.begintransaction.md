@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.transactionalrepository.begintransacti
 
 Begin a new Transaction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 beginTransaction(options?: IsolationLevel | Options): Promise<Transaction>;
@@ -25,9 +25,9 @@ beginTransaction(options?: IsolationLevel | Options): Promise<Transaction>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [IsolationLevel](./repository.isolationlevel.md) \| [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [IsolationLevel](./repository.isolationlevel.md) \| [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Transaction](./repository.transaction.md)<!-- -->&gt;
 

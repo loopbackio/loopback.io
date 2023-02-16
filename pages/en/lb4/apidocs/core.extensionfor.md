@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.extensionfor.html
 
 A factory function to create binding template for extensions of the given extension point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function extensionFor(...extensionPointNames: string[]): BindingTemplate;
@@ -27,7 +27,7 @@ export declare function extensionFor(...extensionPointNames: string[]): BindingT
 |  --- | --- | --- |
 |  extensionPointNames | string\[\] | Names of the extension point |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)
 

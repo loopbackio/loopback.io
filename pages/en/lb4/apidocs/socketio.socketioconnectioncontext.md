@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioconnectioncontext.html
 
 Request context for a socket.io request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SocketIoConnectionContext extends Context 
 ```
-<b>Extends:</b> [Context](./context.context.md)
+**Extends:** [Context](./context.context.md)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.injectionelement.html
 
 Wrapper for injections tracked by resolution sessions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InjectionElement 

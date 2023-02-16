@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioapplication.socketserver.html
 
 The main Socket server instance providing Socket connections for this application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get socketServer(): SocketIoServer;

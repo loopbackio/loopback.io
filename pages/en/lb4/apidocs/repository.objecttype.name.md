@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.objecttype.name.html
 
 ## ObjectType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

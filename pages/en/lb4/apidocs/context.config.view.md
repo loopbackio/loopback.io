@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.config.view.html
 
 `@inject.view` decorator to inject a config context view to allow dynamic changes in configuration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 view: (propertyPath?: string | ConfigInjectionMetadata, metadata?: ConfigInjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

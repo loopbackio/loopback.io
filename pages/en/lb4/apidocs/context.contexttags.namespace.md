@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.namespace.html
 
 Namespace of the artifact
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 NAMESPACE = "namespace"

@@ -17,7 +17,7 @@ A flag to control if configuration for the middleware can be injected lazily.
 
 - `true` (default): creates a provider class with `@config` - `false`<!-- -->: No configuration injection is supported - 'watch': creates a provider class with `@config.view`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 injectConfiguration?: boolean | 'watch';

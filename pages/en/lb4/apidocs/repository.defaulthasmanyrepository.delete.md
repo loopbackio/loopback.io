@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository.delete.html
 
 ## DefaultHasManyRepository.delete() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(where?: Where<TargetEntity>, options?: Options): Promise<Count>;
@@ -23,10 +23,10 @@ delete(where?: Where<TargetEntity>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

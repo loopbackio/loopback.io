@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.createcontrollerfactoryforbinding.html
 
 Create a controller factory function for a given binding key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createControllerFactoryForBinding<T extends object>(key: string): ControllerFactory<T>;
@@ -27,7 +27,7 @@ export declare function createControllerFactoryForBinding<T extends object>(key:
 |  --- | --- | --- |
 |  key | string | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
 

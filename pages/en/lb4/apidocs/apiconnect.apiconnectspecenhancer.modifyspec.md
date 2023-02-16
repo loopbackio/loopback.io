@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectspecenhancer.modifyspec.html
 
 ## ApiConnectSpecEnhancer.modifySpec() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modifySpec(spec: OpenAPIObject): OpenAPIObject;
@@ -25,7 +25,7 @@ modifySpec(spec: OpenAPIObject): OpenAPIObject;
 |  --- | --- | --- |
 |  spec | OpenAPIObject |  |
 
-<b>Returns:</b>
+**Returns:**
 
 OpenAPIObject
 

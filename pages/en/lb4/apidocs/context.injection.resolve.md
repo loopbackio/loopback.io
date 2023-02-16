@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injection.resolve.html
 
 ## Injection.resolve property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolve?: ResolverFunction;

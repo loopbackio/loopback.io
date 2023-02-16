@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptororkey.html
 
 Interceptor function or a binding key that resolves a generic interceptor function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type GenericInterceptorOrKey<C extends Context = Context> = BindingAddress<GenericInterceptor<C>> | GenericInterceptor<C>;
 ```
-<b>References:</b> [Context](./context.context.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)<!-- -->, [GenericInterceptor](./context.genericinterceptor.md)
+**References:** [Context](./context.context.md)<!-- -->, [BindingAddress](./context.bindingaddress.md)<!-- -->, [GenericInterceptor](./context.genericinterceptor.md)
 
 

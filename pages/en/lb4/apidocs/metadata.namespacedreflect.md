@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.html
 
 ## NamespacedReflect class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class NamespacedReflect 

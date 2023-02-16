@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.getter.html
 
 The function injected by `@inject.getter(bindingSelector)`<!-- -->. It can be used to fetch bound value(s) from the underlying binding(s). The return value will be an array if the `bindingSelector` is a `BindingFilter` function.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Getter<T> = () => Promise<T>;

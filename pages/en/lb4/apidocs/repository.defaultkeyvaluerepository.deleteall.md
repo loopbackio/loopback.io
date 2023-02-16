@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.deleteall.ht
 
 ## DefaultKeyValueRepository.deleteAll() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteAll(options?: Options): Promise<void>;
@@ -23,9 +23,9 @@ deleteAll(options?: Options): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

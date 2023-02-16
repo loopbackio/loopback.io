@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.disabled.html
 
 Set this flag to disable the endpoint for OpenAPI spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 disabled?: true;

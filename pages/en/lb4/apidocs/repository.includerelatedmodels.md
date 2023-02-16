@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.includerelatedmodels.html
 
 Returns model instances that include related models that have a registered resolver.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function includeRelatedModels<T extends Entity, Relations extends object = {}>(targetRepository: EntityCrudRepository<T, unknown, Relations>, entities: T[], include?: InclusionFilter[], options?: Options): Promise<(T & Relations)[]>;
@@ -27,10 +27,10 @@ export declare function includeRelatedModels<T extends Entity, Relations extends
 |  --- | --- | --- |
 |  targetRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, unknown, Relations&gt; | The target repository where the model instances are found |
 |  entities | T\[\] | An array of entity instances or data |
-|  include | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | <i>(Optional)</i> Inclusion filter |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  include | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | _(Optional)_ Inclusion filter |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;(T &amp; Relations)\[\]&gt;
 

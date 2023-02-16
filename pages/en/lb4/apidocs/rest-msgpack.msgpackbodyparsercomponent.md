@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparsercomponent.html
 
 ## MsgPackBodyParserComponent class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MsgPackBodyParserComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

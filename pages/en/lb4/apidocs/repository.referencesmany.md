@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmany.html
 
 Decorator for referencesMany
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function referencesMany<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<ReferencesManyDefinition>, propertyDefinition?: Partial<PropertyDefinition>): (decoratedTarget: Entity, decoratedKey: string) => void;
@@ -26,10 +26,10 @@ export declare function referencesMany<T extends Entity>(targetResolver: EntityR
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | A resolver function that returns the target model for a referencesMany relation |
-|  definition | Partial&lt;[ReferencesManyDefinition](./repository.referencesmanydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up a referencesMany relation |
-|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up the property |
+|  definition | Partial&lt;[ReferencesManyDefinition](./repository.referencesmanydefinition.md)<!-- -->&gt; | _(Optional)_ Optional metadata for setting up a referencesMany relation |
+|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | _(Optional)_ Optional metadata for setting up the property |
 
-<b>Returns:</b>
+**Returns:**
 
 (decoratedTarget: [Entity](./repository.entity.md)<!-- -->, decoratedKey: string) =&gt; void
 

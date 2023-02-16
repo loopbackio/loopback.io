@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext.setupbindings.html
 
 ## RequestContext.setupBindings() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected setupBindings(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

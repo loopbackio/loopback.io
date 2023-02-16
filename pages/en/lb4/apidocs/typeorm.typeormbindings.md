@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormbindings.html
 
 Binding keys used by this component.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace TypeOrmBindings 

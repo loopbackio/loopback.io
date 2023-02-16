@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepository.find.html
 
 Find matching records
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
@@ -25,10 +25,10 @@ find(filter?: Filter<T>, options?: Options): Promise<(T & Relations)[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Query filter |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ Query filter |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;(T &amp; Relations)\[\]&gt;
 

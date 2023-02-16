@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.optional
 
 List of model properties to mark as optional. Overrides the "partial" option if it is not empty.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 optional?: (keyof T)[];

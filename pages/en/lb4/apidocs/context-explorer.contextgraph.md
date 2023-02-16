@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraph.html
 
 A graph for context hierarchy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ContextGraph 

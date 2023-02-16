@@ -17,7 +17,7 @@ Given a function with arguments decorated with `@inject`<!-- -->, return the lis
 
 The function returns an argument array when all dependencies were resolved synchronously, or a Promise otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveInjectedArguments(target: object, method: string, ctx: Context, session?: ResolutionSession, nonInjectedArgs?: any[]): ValueOrPromise<BoundValue[]>;
@@ -30,10 +30,10 @@ export declare function resolveInjectedArguments(target: object, method: string,
 |  target | object | The class for constructor injection or prototype for method injection |
 |  method | string | The method name. If set to '', the constructor will be used. |
 |  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
-|  nonInjectedArgs | any\[\] | <i>(Optional)</i> Optional array of args for non-injected parameters |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
+|  nonInjectedArgs | any\[\] | _(Optional)_ Optional array of args for non-injected parameters |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[BoundValue](./context.boundvalue.md)<!-- -->\[\]&gt;
 

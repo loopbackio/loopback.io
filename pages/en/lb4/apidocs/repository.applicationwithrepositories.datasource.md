@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.datasource
 
 ## ApplicationWithRepositories.dataSource() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSource<D extends juggler.DataSource>(dataSource: Class<D> | D, name?: string): Binding<D>;
@@ -24,9 +24,9 @@ dataSource<D extends juggler.DataSource>(dataSource: Class<D> | D, name?: string
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataSource | [Class](./repository.class.md)<!-- -->&lt;D&gt; \| D |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;D&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver._constructor_.html
 
 Constructs a new instance of the `HttpServer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(requestListener: RequestListener, serverOptions?: HttpServerOptions);
@@ -26,6 +26,6 @@ constructor(requestListener: RequestListener, serverOptions?: HttpServerOptions)
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  requestListener | [RequestListener](./http-server.requestlistener.md) |  |
-|  serverOptions | [HttpServerOptions](./http-server.httpserveroptions.md) | <i>(Optional)</i> |
+|  serverOptions | [HttpServerOptions](./http-server.httpserveroptions.md) | _(Optional)_ |
 
 

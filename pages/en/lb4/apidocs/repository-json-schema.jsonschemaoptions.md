@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.html
 
 ## JsonSchemaOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface JsonSchemaOptions<T extends object> 
@@ -23,10 +23,10 @@ export interface JsonSchemaOptions<T extends object>
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [exclude?](./repository-json-schema.jsonschemaoptions.exclude.md) |  | (keyof T)\[\] | <i>(Optional)</i> List of model properties to exclude from the schema. |
-|  [includeRelations?](./repository-json-schema.jsonschemaoptions.includerelations.md) |  | boolean | <i>(Optional)</i> Set this flag if you want the schema to define navigational properties for model relations. |
-|  [optional?](./repository-json-schema.jsonschemaoptions.optional.md) |  | (keyof T)\[\] | <i>(Optional)</i> List of model properties to mark as optional. Overrides the "partial" option if it is not empty. |
-|  [partial?](./repository-json-schema.jsonschemaoptions.partial.md) |  | boolean \| 'deep' | <p><i>(Optional)</i> Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty.</p><p>The flag also applies to nested model instances if its value is set to 'deep', such as:</p> |
-|  [title?](./repository-json-schema.jsonschemaoptions.title.md) |  | string | <p><i>(Optional)</i> The title to use in the generated schema.</p><p>When using options like <code>exclude</code>, the auto-generated title can be difficult to read for humans. Use this option to change the title to a more meaningful value.</p> |
+|  [exclude?](./repository-json-schema.jsonschemaoptions.exclude.md) |  | (keyof T)\[\] | _(Optional)_ List of model properties to exclude from the schema. |
+|  [includeRelations?](./repository-json-schema.jsonschemaoptions.includerelations.md) |  | boolean | _(Optional)_ Set this flag if you want the schema to define navigational properties for model relations. |
+|  [optional?](./repository-json-schema.jsonschemaoptions.optional.md) |  | (keyof T)\[\] | _(Optional)_ List of model properties to mark as optional. Overrides the "partial" option if it is not empty. |
+|  [partial?](./repository-json-schema.jsonschemaoptions.partial.md) |  | boolean \| 'deep' | <p>_(Optional)_ Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty.</p><p>The flag also applies to nested model instances if its value is set to 'deep', such as:</p> |
+|  [title?](./repository-json-schema.jsonschemaoptions.title.md) |  | string | <p>_(Optional)_ The title to use in the generated schema.</p><p>When using options like <code>exclude</code>, the auto-generated title can be difficult to read for humans. Use this option to change the title to a more meaningful value.</p> |
 
 

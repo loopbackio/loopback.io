@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver.port.html
 
 Port number of the HTTP / HTTPS server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get port(): number;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.route_2.html
 
 Register a new generic route.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 route(route: RouteEntry): Binding;
@@ -27,7 +27,7 @@ route(route: RouteEntry): Binding;
 |  --- | --- | --- |
 |  route | [RouteEntry](./rest.routeentry.md) | The route to add. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

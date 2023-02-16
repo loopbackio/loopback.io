@@ -17,7 +17,7 @@ Alias namespace `bind` to `injectable` for backward compatibility
 
 It should have the same members as `bind`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace bind 

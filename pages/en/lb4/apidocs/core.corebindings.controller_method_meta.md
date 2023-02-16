@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.controller_method_meta.html
 
 Binding key for the controller method metadata resolved in the current request context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER_METHOD_META = "controller.method.meta"

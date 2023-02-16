@@ -17,7 +17,7 @@ Get the base URL used by the client to make the request. This URL contains the p
 
 Please note these values may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx are rewriting them.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get requestedBaseUrl(): string;

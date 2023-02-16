@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.registerroute.html
 
 ## HttpHandler.registerRoute() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerRoute(route: RouteEntry): void;
@@ -25,7 +25,7 @@ registerRoute(route: RouteEntry): void;
 |  --- | --- | --- |
 |  route | [RouteEntry](./rest.routeentry.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

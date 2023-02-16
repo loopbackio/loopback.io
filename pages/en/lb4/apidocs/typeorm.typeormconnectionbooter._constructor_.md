@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormconnectionbooter._constructor_.htm
 
 Constructs a new instance of the `TypeOrmConnectionBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: ApplicationUsingTypeOrm, projectRoot: string, entityConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: ApplicationUsingTypeOrm, projectRoot: string, entityConfig?: Ar
 |  --- | --- | --- |
 |  app | [ApplicationUsingTypeOrm](./typeorm.applicationusingtypeorm.md) |  |
 |  projectRoot | string |  |
-|  entityConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  entityConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

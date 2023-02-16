@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager.html
 
 Manager for context observer subscriptions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ContextSubscriptionManager extends EventEmitter 
 ```
-<b>Extends:</b> EventEmitter
+**Extends:** EventEmitter
 
 ## Constructors
 
@@ -33,7 +33,7 @@ export declare class ContextSubscriptionManager extends EventEmitter
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [\_observers](./context.contextsubscriptionmanager._observers.md) | <code>protected</code> | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | A list of registered context observers. The Set will be created when the first observer is added. |
-|  [\_parentContextEventListener?](./context.contextsubscriptionmanager._parentcontexteventlistener.md) | <code>protected</code> | [ContextEventListener](./context.contexteventlistener.md) | <i>(Optional)</i> A listener to watch parent context events |
+|  [\_parentContextEventListener?](./context.contextsubscriptionmanager._parentcontexteventlistener.md) | <code>protected</code> | [ContextEventListener](./context.contexteventlistener.md) | _(Optional)_ A listener to watch parent context events |
 |  [context](./context.contextsubscriptionmanager.context.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [Context](./context.context.md) |  |
 
 ## Methods

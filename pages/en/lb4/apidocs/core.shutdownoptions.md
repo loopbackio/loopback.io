@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.shutdownoptions.html
 
 Options to set up application shutdown
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ShutdownOptions = {

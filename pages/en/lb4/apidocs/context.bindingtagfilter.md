@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.bindingtagfilter.html
 
 Binding filter function that holds a binding tag pattern. `Context.find()` uses the `bindingTagPattern` to optimize the matching of bindings by tag to avoid expensive check for all bindings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BindingTagFilter extends BindingFilter 
 ```
-<b>Extends:</b> [BindingFilter](./context.bindingfilter.md)
+**Extends:** [BindingFilter](./context.bindingfilter.md)
 
 ## Properties
 

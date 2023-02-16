@@ -21,7 +21,7 @@ E.g a Category has many Products, and a Product can have many Categories. Catego
 
 Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 through?: {

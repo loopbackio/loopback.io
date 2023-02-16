@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context._findbytagindex.html
 
 Find bindings by tag leveraging indexes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _findByTagIndex<ValueType = BoundValue>(tag: BindingTag | RegExp): Readonly<Binding<ValueType>>[];
@@ -27,7 +27,7 @@ protected _findByTagIndex<ValueType = BoundValue>(tag: BindingTag | RegExp): Rea
 |  --- | --- | --- |
 |  tag | [BindingTag](./context.bindingtag.md) \| RegExp | Tag name pattern or name/value pairs |
 
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 

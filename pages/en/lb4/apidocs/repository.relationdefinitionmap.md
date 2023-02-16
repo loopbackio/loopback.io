@@ -15,13 +15,13 @@ permalink: /doc/en/lb4/apidocs.repository.relationdefinitionmap.html
 
 A key-value map describing model relations. A relation name is used as the key, a relation definition is the value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RelationDefinitionMap = {
     [relationName: string]: RelationMetadata;
 };
 ```
-<b>References:</b> [RelationMetadata](./repository.relationmetadata.md)
+**References:** [RelationMetadata](./repository.relationmetadata.md)
 
 

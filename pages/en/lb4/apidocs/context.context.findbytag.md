@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.findbytag.html
 
 Find bindings using the tag filter. If the filter matches one of the binding tags, the binding is included.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findByTag<ValueType = BoundValue>(tagFilter: BindingTag | RegExp): Readonly<Binding<ValueType>>[];
@@ -27,7 +27,7 @@ findByTag<ValueType = BoundValue>(tagFilter: BindingTag | RegExp): Readonly<Bind
 |  --- | --- | --- |
 |  tagFilter | [BindingTag](./context.bindingtag.md) \| RegExp | A filter for tags. It can be in one of the following forms: - A regular expression, such as <code>/controller/</code> - A wildcard pattern string with optional <code>*</code> and <code>?</code>, such as <code>'con*'</code> For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code> - An object containing tag name/value pairs, such as <code>{name: 'my-controller'}</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 

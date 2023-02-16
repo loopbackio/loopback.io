@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.pathparametervalues.html
 
 ## PathParameterValues type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PathParameterValues = {

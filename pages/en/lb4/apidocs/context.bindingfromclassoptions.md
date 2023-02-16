@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingfromclassoptions.html
 
 Options to customize the binding created from a class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingFromClassOptions = {
@@ -28,6 +28,6 @@ export type BindingFromClassOptions = {
     defaultScope?: BindingScope;
 };
 ```
-<b>References:</b> [BindingAddress](./context.bindingaddress.md)<!-- -->, [TypeNamespaceMapping](./context.typenamespacemapping.md)<!-- -->, [BindingScope](./context.bindingscope.md)
+**References:** [BindingAddress](./context.bindingaddress.md)<!-- -->, [TypeNamespaceMapping](./context.typenamespacemapping.md)<!-- -->, [BindingScope](./context.bindingscope.md)
 
 

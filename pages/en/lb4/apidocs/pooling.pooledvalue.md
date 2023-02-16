@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.pooledvalue.html
 
 Pooled resource instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface PooledValue<T> 

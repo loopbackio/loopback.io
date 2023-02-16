@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.andclause.and.html
 
 ## AndClause.and property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 and: Where<MT>[];

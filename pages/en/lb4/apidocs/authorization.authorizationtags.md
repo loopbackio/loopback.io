@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationtags.html
 
 Binding tags used by authorization component
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace AuthorizationTags 

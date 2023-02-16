@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview._cachedvalues.html
 
 A map of cached values by binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _cachedValues: Map<Readonly<Binding<T>>, T> | undefined;

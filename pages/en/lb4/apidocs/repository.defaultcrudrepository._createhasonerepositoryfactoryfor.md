@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._createhasonerep
 > Function to create a constrained hasOne relation repository factory
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _createHasOneRepositoryFactoryFor<Target extends Entity, TargetID, ForeignKeyType>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>> | {
@@ -33,7 +33,7 @@ protected _createHasOneRepositoryFactoryFor<Target extends Entity, TargetID, For
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 

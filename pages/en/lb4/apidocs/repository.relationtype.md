@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.relationtype.html
 
 ## RelationType enum
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum RelationType 

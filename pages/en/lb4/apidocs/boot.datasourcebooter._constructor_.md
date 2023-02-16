@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.datasourcebooter._constructor_.html
 
 Constructs a new instance of the `DataSourceBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: ApplicationWithRepositories, projectRoot: string, datasourceConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, datasourceCon
 |  --- | --- | --- |
 |  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
 |  projectRoot | string |  |
-|  datasourceConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  datasourceConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

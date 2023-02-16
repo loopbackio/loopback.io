@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormlifecyclemanager._constructor_.htm
 
 Constructs a new instance of the `TypeOrmLifeCycleManager` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(manager: ConnectionManager);

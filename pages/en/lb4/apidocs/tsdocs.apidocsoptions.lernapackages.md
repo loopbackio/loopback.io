@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.lernapackages.html
 
 Package metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 lernaPackages?: Record<string, LernaPackage>;

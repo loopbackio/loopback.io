@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.findrouteprovider.html
 
 ## FindRouteProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class FindRouteProvider 

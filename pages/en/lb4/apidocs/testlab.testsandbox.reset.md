@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.reset.html
 
 Resets the TestSandbox. (Remove all files in it).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 reset(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

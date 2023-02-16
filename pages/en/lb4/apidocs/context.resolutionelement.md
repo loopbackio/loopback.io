@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.resolutionelement.html
 
 Binding or injection elements tracked by resolution sessions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ResolutionElement = BindingElement | InjectionElement;
 ```
-<b>References:</b> [BindingElement](./context.bindingelement.md)<!-- -->, [InjectionElement](./context.injectionelement.md)
+**References:** [BindingElement](./context.bindingelement.md)<!-- -->, [InjectionElement](./context.injectionelement.md)
 
 

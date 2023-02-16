@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.html
 
 ## RestHttpErrors namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RestHttpErrors 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.voters.html
 
 Voters that help make the authorization decision
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 voters?: (Authorizer | BindingAddress<Authorizer>)[];

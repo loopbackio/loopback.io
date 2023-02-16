@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.metadata.ht
 
 Key used to inject authentication metadata, which is used to determine whether a request requires authentication or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 METADATA: BindingKey<AuthenticationMetadata[] | undefined>

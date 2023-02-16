@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.isinvalidpolymorphismerror.html
 
 ## isInvalidPolymorphismError() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isInvalidPolymorphismError(e: any): e is InvalidPolymorphismError<any>;
@@ -25,7 +25,7 @@ export declare function isInvalidPolymorphismError(e: any): e is InvalidPolymorp
 |  --- | --- | --- |
 |  e | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 e is [InvalidPolymorphismError](./repository.invalidpolymorphismerror.md)<!-- -->&lt;any&gt;
 

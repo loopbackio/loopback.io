@@ -17,12 +17,12 @@ Filters the exports of 'discovered' files to only be Classes (in case function /
 
 NOTE: Booters extending this class should call this method (await super.load()) and then process the artifact classes as appropriate.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 load(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

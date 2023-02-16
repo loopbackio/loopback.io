@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.createmodelclassbinding.html
 
 Create a binding for the given model class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createModelClassBinding<M extends Class<unknown>>(modelClass: M): Binding<M>;
@@ -27,7 +27,7 @@ export declare function createModelClassBinding<M extends Class<unknown>>(modelC
 |  --- | --- | --- |
 |  modelClass | M | Model class |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;M&gt;
 

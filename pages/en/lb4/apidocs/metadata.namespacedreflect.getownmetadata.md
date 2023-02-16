@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.getownmetadata.html
 
 get own metadata for a target object or it's property/method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getOwnMetadata(metadataKey: string, target: Object, propertyKey?: string): any;
@@ -27,9 +27,9 @@ getOwnMetadata(metadataKey: string, target: Object, propertyKey?: string): any;
 |  --- | --- | --- |
 |  metadataKey | string |  |
 |  target | Object |  |
-|  propertyKey | string | <i>(Optional)</i> |
+|  propertyKey | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

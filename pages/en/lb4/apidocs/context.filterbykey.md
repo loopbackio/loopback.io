@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.filterbykey.html
 
 Create a binding filter from key pattern
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function filterByKey(keyPattern?: string | RegExp | BindingFilter): BindingFilter;
@@ -25,9 +25,9 @@ export declare function filterByKey(keyPattern?: string | RegExp | BindingFilter
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  keyPattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> Binding key/wildcard, regexp, or a filter function |
+|  keyPattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | _(Optional)_ Binding key/wildcard, regexp, or a filter function |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingFilter](./context.bindingfilter.md)
 

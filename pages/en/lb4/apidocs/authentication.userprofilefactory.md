@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.userprofilefactory.html
 
 interface definition of a factory function which accepts a user definition and returns the user profile
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UserProfileFactory<U> 

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.dataobject.html
 
 Type alias for strongly or weakly typed objects of T
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DataObject<T extends object> = T | DeepPartial<T>;
 ```
-<b>References:</b> [DeepPartial](./repository.deeppartial.md)
+**References:** [DeepPartial](./repository.deeppartial.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.operationretval.html
 
 Return value of a controller method (a function implementing an operation). This is a type alias for "any", used to distinguish operation results from other "any" typed values.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type OperationRetval = any;

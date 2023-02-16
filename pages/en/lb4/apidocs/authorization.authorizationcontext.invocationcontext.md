@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcontext.invocationcont
 
 Context for the invocation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 invocationContext: InvocationContext;

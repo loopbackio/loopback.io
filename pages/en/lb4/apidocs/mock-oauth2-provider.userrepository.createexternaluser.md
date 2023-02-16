@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.userrepository.createexterna
 
 create profile for external user
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createExternalUser(user: MyUser): void;
@@ -27,7 +27,7 @@ createExternalUser(user: MyUser): void;
 |  --- | --- | --- |
 |  user | [MyUser](./mock-oauth2-provider.myuser.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

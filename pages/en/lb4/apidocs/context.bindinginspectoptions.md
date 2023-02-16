@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindinginspectoptions.html
 
 Options for binding.inspect()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BindingInspectOptions 
@@ -25,6 +25,6 @@ export interface BindingInspectOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [includeInjections?](./context.bindinginspectoptions.includeinjections.md) |  | boolean | <i>(Optional)</i> The flag to control if injections should be inspected |
+|  [includeInjections?](./context.bindinginspectoptions.includeinjections.md) |  | boolean | _(Optional)_ The flag to control if injections should be inspected |
 
 

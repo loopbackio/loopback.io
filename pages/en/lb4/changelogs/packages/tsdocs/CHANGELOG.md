@@ -10,6 +10,19 @@ permalink: /doc/en/lb4/changelog.tsdocs.html
 
 # Change Log
 
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [4.0.7](https://github.com/loopbackio/loopback-next/compare/@loopback/tsdocs@4.0.6...@loopback/tsdocs@4.0.7) (2023-01-09)
+
+**Note:** Version bump only for package @loopback/tsdocs
+
+
+
+
+
+# Change Log
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.html
 
 A factory to instantiate socket.io controllers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SocketIoControllerFactory 

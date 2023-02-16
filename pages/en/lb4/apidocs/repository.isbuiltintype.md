@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.isbuiltintype.html
 
 Check if the provided function is a built-in type provided by JavaScript and/or Node.js. E.g. `Number`<!-- -->, `Array`<!-- -->, `Buffer`<!-- -->, etc.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isBuiltinType(fn: Function): boolean;
@@ -27,7 +27,7 @@ export declare function isBuiltinType(fn: Function): boolean;
 |  --- | --- | --- |
 |  fn | Function |  |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

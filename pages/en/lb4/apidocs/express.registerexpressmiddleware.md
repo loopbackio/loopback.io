@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.registerexpressmiddleware.html
 
 Bind a Express middleware to the given context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function registerExpressMiddleware<CFG>(ctx: Context, middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?: CFG, options?: MiddlewareBindingOptions): Binding<Middleware>;
@@ -27,10 +27,10 @@ export declare function registerExpressMiddleware<CFG>(ctx: Context, middlewareF
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Middleware module name or factory function |
-|  middlewareConfig | CFG | <i>(Optional)</i> Middleware config |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Options for registration |
+|  middlewareConfig | CFG | _(Optional)_ Middleware config |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Options for registration |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 

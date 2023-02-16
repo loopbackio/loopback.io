@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.useridentityservice.html
 
 The User Identity service links a user to profiles from an external source (eg: ldap, oauth2 provider, saml) which can identify the user. The profile typically has the following information: name, email-id, uuid, roles, authorizations, scope of accessible resources, expiration time for given access
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UserIdentityService<I, U> 

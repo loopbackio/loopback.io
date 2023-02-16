@@ -13,18 +13,18 @@ permalink: /doc/en/lb4/apidocs.rest-crud.modelcrudrestapiconfig.html
 
 ## ModelCrudRestApiConfig interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ModelCrudRestApiConfig extends ModelApiConfig 
 ```
-<b>Extends:</b> [ModelApiConfig](./model-api-builder.modelapiconfig.md)
+**Extends:** [ModelApiConfig](./model-api-builder.modelapiconfig.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [basePath](./rest-crud.modelcrudrestapiconfig.basepath.md) |  | string |  |
-|  [readonly?](./rest-crud.modelcrudrestapiconfig.readonly.md) |  | boolean | <i>(Optional)</i> If true, the generated controller only has find and count APIs |
+|  [readonly?](./rest-crud.modelcrudrestapiconfig.readonly.md) |  | boolean | _(Optional)_ If true, the generated controller only has find and count APIs |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticate.skip.html
 
 `@authenticate.skip()` - a sugar decorator to skip authentication
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

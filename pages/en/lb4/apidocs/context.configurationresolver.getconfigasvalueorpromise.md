@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.configurationresolver.getconfigasvalueorp
 
 Resolve config for the binding key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propertyPath?: string, resolutionOptions?: ResolutionOptions): ValueOrPromise<ConfigValueType | undefined>;
@@ -26,10 +26,10 @@ getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propert
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;unknown&gt; | Binding key |
-|  propertyPath | string | <i>(Optional)</i> Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>config</code> object will be returned. |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Options for the resolution. - optional: if not set or set to <code>true</code>, <code>undefined</code> will be returned if no corresponding value is found. Otherwise, an error will be thrown. |
+|  propertyPath | string | _(Optional)_ Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>config</code> object will be returned. |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ Options for the resolution. - optional: if not set or set to <code>true</code>, <code>undefined</code> will be returned if no corresponding value is found. Otherwise, an error will be thrown. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;ConfigValueType \| undefined&gt;
 

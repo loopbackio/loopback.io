@@ -17,7 +17,7 @@ What type is used for auto-generated primary keys? - SQL databases typically use
 
 Default: `'string'`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 idType: 'string' | 'number';

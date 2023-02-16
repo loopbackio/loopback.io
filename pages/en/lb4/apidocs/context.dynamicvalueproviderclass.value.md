@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.dynamicvalueproviderclass.value.html
 
 ## DynamicValueProviderClass.value property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value: (...args: BoundValue[]) => ValueOrPromise<T>;

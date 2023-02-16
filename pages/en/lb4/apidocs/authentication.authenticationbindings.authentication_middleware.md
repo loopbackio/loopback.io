@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.authenticat
 
 Binding key for AUTHENTICATION\_MIDDLEWARE
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_MIDDLEWARE: BindingKey<Middleware>

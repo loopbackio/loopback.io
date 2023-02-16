@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.referencesmany.html
 
 Define a new referencesMany relation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 referencesMany(name: string, definition: Omit<ReferencesManyDefinition, 'name' | 'type' | 'targetsMany'>): this;
@@ -28,7 +28,7 @@ referencesMany(name: string, definition: Omit<ReferencesManyDefinition, 'name' |
 |  name | string | The name of the referencesMany relation. |
 |  definition | Omit&lt;[ReferencesManyDefinition](./repository.referencesmanydefinition.md)<!-- -->, 'name' \| 'type' \| 'targetsMany'&gt; | The definition of the referencesMany relation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

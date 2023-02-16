@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstodefinition.targetsmany.html
 
 ## BelongsToDefinition.targetsMany property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetsMany: false;

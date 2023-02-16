@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.getvalue_1.html
 
 Returns a value or promise for this binding in the given context. The resolved value can be `undefined` if `optional` is set to `true` in `options`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getValue(ctx: Context, options?: ResolutionOptions): ValueOrPromise<T | undefined>;
@@ -26,9 +26,9 @@ getValue(ctx: Context, options?: ResolutionOptions): ValueOrPromise<T | undefine
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context for the resolution |
-|  options | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Optional options for binding and dependency resolution |
+|  options | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ Optional options for binding and dependency resolution |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T \| undefined&gt;
 

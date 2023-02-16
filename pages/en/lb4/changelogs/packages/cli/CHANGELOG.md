@@ -10,6 +10,19 @@ permalink: /doc/en/lb4/changelog.cli.html
 
 # Change Log
 
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [4.1.7](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.1.6...@loopback/cli@4.1.7) (2023-01-09)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+# Change Log
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

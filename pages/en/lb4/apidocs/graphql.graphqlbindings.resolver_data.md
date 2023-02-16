@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.resolver_data.html
 
 Binding key for the GraphQL resolver data - which is bound per request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RESOLVER_DATA: BindingKey<ResolverData<unknown>>

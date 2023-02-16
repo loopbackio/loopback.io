@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorization_method_key.html
 
 ## AUTHORIZATION\_METHOD\_KEY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHORIZATION_METHOD_KEY: MetadataAccessor<AuthorizationMetadata, MethodDecorator>

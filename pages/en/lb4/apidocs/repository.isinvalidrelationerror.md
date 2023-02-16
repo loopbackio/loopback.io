@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.isinvalidrelationerror.html
 
 ## isInvalidRelationError() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isInvalidRelationError(e: any): e is InvalidRelationError<any>;
@@ -25,7 +25,7 @@ export declare function isInvalidRelationError(e: any): e is InvalidRelationErro
 |  --- | --- | --- |
 |  e | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 e is [InvalidRelationError](./repository.invalidrelationerror.md)<!-- -->&lt;any&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.loopbackcontainer.ctx.html
 
 ## LoopBackContainer.ctx property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly ctx: Context;

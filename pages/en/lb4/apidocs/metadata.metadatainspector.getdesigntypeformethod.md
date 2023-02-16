@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getdesigntypeformethod
 
 Get TypeScript design time type for a method.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMethodMetadata | undefined;
@@ -28,7 +28,7 @@ static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMet
 |  target | Object | Class or prototype |
 |  methodName | string | Method name |
 
-<b>Returns:</b>
+**Returns:**
 
 [DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md) \| undefined
 

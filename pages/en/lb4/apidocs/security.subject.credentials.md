@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.subject.credentials.html
 
 An array of credentials, such as password, access token, or private/public keys.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 credentials: Set<Credential>;

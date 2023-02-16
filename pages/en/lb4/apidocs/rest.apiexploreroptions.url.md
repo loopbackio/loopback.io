@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.apiexploreroptions.url.html
 
 URL for the hosted API explorer UI default to https://loopback.io/api-explorer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 url?: string;

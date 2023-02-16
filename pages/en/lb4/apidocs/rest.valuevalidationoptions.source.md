@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.valuevalidationoptions.source.html
 
 Where the data comes from. It can be 'body', 'path', 'header', 'query', 'cookie', etc...
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 source?: string;

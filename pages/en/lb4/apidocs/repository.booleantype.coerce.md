@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.booleantype.coerce.html
 
 ## BooleanType.coerce() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 coerce(value: any): any;
@@ -25,7 +25,7 @@ coerce(value: any): any;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

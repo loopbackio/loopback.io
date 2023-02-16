@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.type.html
 
 ## PropertyDefinition.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: PropertyType;

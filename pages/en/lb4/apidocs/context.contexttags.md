@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.html
 
 Namespace for context tags
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ContextTags 

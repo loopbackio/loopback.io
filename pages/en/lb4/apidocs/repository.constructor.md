@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.constructor.html
 
 Constructor type - class or function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Constructor<T> = Class<T> | ConstructorFunction<T>;
 ```
-<b>References:</b> [Class](./repository.class.md)<!-- -->, [ConstructorFunction](./repository.constructorfunction.md)
+**References:** [Class](./repository.class.md)<!-- -->, [ConstructorFunction](./repository.constructorfunction.md)
 
 

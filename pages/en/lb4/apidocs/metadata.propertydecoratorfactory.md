@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metadata.propertydecoratorfactory.html
 
 Factory for property decorators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PropertyDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T>, PropertyDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, PropertyDecorator&gt;
+**Extends:** [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, PropertyDecorator&gt;
 
 ## Methods
 

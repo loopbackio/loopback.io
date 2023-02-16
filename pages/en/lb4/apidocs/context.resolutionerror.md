@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.resolutionerror.html
 
 Error for context binding resolutions and dependency injections
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ResolutionError extends Error 
 ```
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Constructors
 

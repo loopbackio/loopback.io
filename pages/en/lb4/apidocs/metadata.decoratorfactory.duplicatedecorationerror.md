@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.duplicatedecorationerro
 
 Create an error to report if the decorator is applied to the target more than once
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected duplicateDecorationError(target: Object, member?: string | symbol, descriptorOrIndex?: TypedPropertyDescriptor<any> | number): Error;
@@ -26,10 +26,10 @@ protected duplicateDecorationError(target: Object, member?: string | symbol, des
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object | Decoration target |
-|  member | string \| symbol | <i>(Optional)</i> Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> Optional parameter index or method descriptor |
+|  member | string \| symbol | _(Optional)_ Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional parameter index or method descriptor |
 
-<b>Returns:</b>
+**Returns:**
 
 Error
 

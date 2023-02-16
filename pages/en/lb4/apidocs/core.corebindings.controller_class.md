@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.controller_class.html
 
 Binding key for the controller class resolved in the current request context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER_CLASS: BindingKey<ControllerClass>

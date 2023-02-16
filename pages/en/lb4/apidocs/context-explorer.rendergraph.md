@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.rendergraph.html
 
 Render a graphviz dot string
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function renderGraph(graph: string, options?: {
@@ -29,9 +29,9 @@ export declare function renderGraph(graph: string, options?: {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  graph | string | A graph in dot format |
-|  options | { engine?: string; format?: string; } | <i>(Optional)</i> Options for the rendering |
+|  options | { engine?: string; format?: string; } | _(Optional)_ Options for the rendering |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.reject.html
 
 Binding key for setting and injecting a bad response writing function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REJECT: BindingKey<Reject>

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.expect.html
 
 ## expect variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expect: Internal

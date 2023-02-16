@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.target.html
 
 ## InvocationContext.target property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly target: object;

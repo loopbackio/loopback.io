@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.registerinclusio
 
 Register an inclusion resolver for the related model name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerInclusionResolver(relationName: string, resolver: InclusionResolver<T, Entity>): void;
@@ -28,7 +28,7 @@ registerInclusionResolver(relationName: string, resolver: InclusionResolver<T, E
 |  relationName | string | Name of the relation defined on the source model |
 |  resolver | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt; | Resolver function for getting related model entities |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence.controller.html
 
 ## DefaultSocketIoSequence.controller property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected controller: ControllerClass;

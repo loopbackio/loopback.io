@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.shouldgeneratetsdocs.html
 
 Check if a package should be processed for tsdocs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function shouldGenerateTsDocs(pkg: LernaPackage): boolean;
@@ -27,7 +27,7 @@ export declare function shouldGenerateTsDocs(pkg: LernaPackage): boolean;
 |  --- | --- | --- |
 |  pkg | [LernaPackage](./tsdocs.lernapackage.md) | Lerna package |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

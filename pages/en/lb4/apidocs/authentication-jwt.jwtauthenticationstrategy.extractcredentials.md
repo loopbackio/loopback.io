@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationstrategy.extr
 
 ## JWTAuthenticationStrategy.extractCredentials() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 extractCredentials(request: Request): string;
@@ -25,7 +25,7 @@ extractCredentials(request: Request): string;
 |  --- | --- | --- |
 |  request | Request |  |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

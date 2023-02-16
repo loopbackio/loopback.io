@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.html
 
 Default implementation of CRUD repository using legacy juggler model and data source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultCrudRepository<T extends Entity, ID, Relations extends object = {}> implements EntityCrudRepository<T, ID, Relations> 
 ```
-<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
+**Implements:** [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
 
 ## Constructors
 

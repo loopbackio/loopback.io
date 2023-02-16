@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationoptions.defaultdecisio
 
 Default decision if all authorizers vote for ABSTAIN If not set, default to `AuthorizationDecision.DENY`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultDecision?: AuthorizationDecision.DENY | AuthorizationDecision.ALLOW;

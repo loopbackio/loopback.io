@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparser.loadrequestbodyifneeded.ht
 
 ## RequestBodyParser.loadRequestBodyIfNeeded() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loadRequestBodyIfNeeded(operationSpec: OperationObject, request: Request): Promise<RequestBody>;
@@ -26,7 +26,7 @@ loadRequestBodyIfNeeded(operationSpec: OperationObject, request: Request): Promi
 |  operationSpec | OperationObject |  |
 |  request | Request |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RequestBody](./rest.requestbody.md)<!-- -->&gt;
 

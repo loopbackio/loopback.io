@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.cron.croncomponent._constructor_.html
 
 Constructs a new instance of the `CronComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(getJobs: Getter<CronJob[]>);

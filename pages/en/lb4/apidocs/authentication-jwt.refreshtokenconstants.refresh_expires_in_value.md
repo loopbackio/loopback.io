@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenconstants.refresh_
 
 The default expiration time for refresh token.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REFRESH_EXPIRES_IN_VALUE = "216000"

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratoroptions.allowinheritance.html
 
 Controls if inherited metadata will be honored. Default to `true`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowInheritance?: boolean;

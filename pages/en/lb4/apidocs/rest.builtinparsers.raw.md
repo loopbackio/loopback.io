@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.raw.html
 
 ## builtinParsers.raw variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 raw: unique symbol

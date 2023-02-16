@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.islifecycleobserverclass.html
 
 Test if a class implements LifeCycleObserver
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isLifeCycleObserverClass(ctor: Constructor<unknown>): ctor is Constructor<LifeCycleObserver>;
@@ -27,7 +27,7 @@ export declare function isLifeCycleObserverClass(ctor: Constructor<unknown>): ct
 |  --- | --- | --- |
 |  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | A class |
 
-<b>Returns:</b>
+**Returns:**
 
 ctor is [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;
 

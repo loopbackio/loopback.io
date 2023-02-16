@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.deniedroles.h
 
 Roles that are denied access
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deniedRoles?: string[];

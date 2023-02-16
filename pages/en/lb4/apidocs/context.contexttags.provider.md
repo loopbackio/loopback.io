@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.provider.html
 
 ## ContextTags.PROVIDER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PROVIDER = "provider"

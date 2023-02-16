@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.redirect.html
 
 Register a route redirecting callers to a different URL.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 redirect(fromPath: string, toPathOrUrl: string, statusCode?: number): Binding;
@@ -27,9 +27,9 @@ redirect(fromPath: string, toPathOrUrl: string, statusCode?: number): Binding;
 |  --- | --- | --- |
 |  fromPath | string | URL path of the redirect endpoint |
 |  toPathOrUrl | string | Location (URL path or full URL) where to redirect to. If your server is configured with a custom <code>basePath</code>, then the base path is prepended to the target location. |
-|  statusCode | number | <i>(Optional)</i> HTTP status code to respond with, defaults to 303 (See Other). |
+|  statusCode | number | _(Optional)_ HTTP status code to respond with, defaults to 303 (See Other). |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.html
 
 A builder for Where object. It provides fluent APIs to add clauses such as `and`<!-- -->, `or`<!-- -->, and other operators.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class WhereBuilder<MT extends object = AnyObject> 

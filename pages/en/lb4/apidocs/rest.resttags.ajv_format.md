@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.ajv_format.html
 
 ## RestTags.AJV\_FORMAT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AJV_FORMAT = "ajvFormat"

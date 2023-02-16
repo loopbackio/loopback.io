@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.ispromiselike.html
 
 Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isPromiseLike<T>(value: T | PromiseLike<T> | undefined): value is PromiseLike<T>;
@@ -27,7 +27,7 @@ export declare function isPromiseLike<T>(value: T | PromiseLike<T> | undefined):
 |  --- | --- | --- |
 |  value | T \| PromiseLike&lt;T&gt; \| undefined | The value to check. |
 
-<b>Returns:</b>
+**Returns:**
 
 value is PromiseLike&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.extensionfilter.html
 
 A factory function to create binding filter for extensions of a named extension point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function extensionFilter(...extensionPointNames: string[]): BindingFilter;
@@ -27,7 +27,7 @@ export declare function extensionFilter(...extensionPointNames: string[]): Bindi
 |  --- | --- | --- |
 |  extensionPointNames | string\[\] | A list of names of extension points |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingFilter](./context.bindingfilter.md)
 

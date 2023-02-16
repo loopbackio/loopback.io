@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.tomiddleware.html
 
 An adapter function to create a LoopBack middleware that invokes the list of Express middleware handler functions in the order of their positions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function toMiddleware(firstHandler: ExpressRequestHandler, ...additionalHandlers: ExpressRequestHandler[]): Middleware;
@@ -28,7 +28,7 @@ export declare function toMiddleware(firstHandler: ExpressRequestHandler, ...add
 |  firstHandler | [ExpressRequestHandler](./express.expressrequesthandler.md) | An Express middleware handler |
 |  additionalHandlers | [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | A list of Express middleware handler functions |
 
-<b>Returns:</b>
+**Returns:**
 
 [Middleware](./express.middleware.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiometadata.namespace.html
 
 ## SocketIoMetadata.namespace property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 namespace?: string | RegExp;

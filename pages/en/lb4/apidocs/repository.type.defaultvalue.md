@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.type.defaultvalue.html
 
 Generate the default value for this type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): T | null | undefined;
 ```
-<b>Returns:</b>
+**Returns:**
 
 T \| null \| undefined
 

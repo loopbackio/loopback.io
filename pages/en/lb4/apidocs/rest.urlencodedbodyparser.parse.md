@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.urlencodedbodyparser.parse.html
 
 ## UrlEncodedBodyParser.parse() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parse(request: Request): Promise<RequestBody>;
@@ -25,7 +25,7 @@ parse(request: Request): Promise<RequestBody>;
 |  --- | --- | --- |
 |  request | Request |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RequestBody](./rest.requestbody.md)<!-- -->&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authentication_strategy_not_found.
 
 ## AUTHENTICATION\_STRATEGY\_NOT\_FOUND variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_STRATEGY_NOT_FOUND = "AUTHENTICATION_STRATEGY_NOT_FOUND"

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allowallexcept.html
 
 Allow all but the given roles
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowAllExcept: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

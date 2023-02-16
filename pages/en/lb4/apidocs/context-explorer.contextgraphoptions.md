@@ -15,13 +15,13 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraphoptions.html
 
 Options for ContextGraph
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextGraphOptions = {
     bindingFilter?: BindingNodeFilter;
 };
 ```
-<b>References:</b> [BindingNodeFilter](./context-explorer.bindingnodefilter.md)
+**References:** [BindingNodeFilter](./context-explorer.bindingnodefilter.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.usercredentials._constructor_.
 
 Constructs a new instance of the `UserCredentials` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(data?: Partial<UserCredentials>);
@@ -25,6 +25,6 @@ constructor(data?: Partial<UserCredentials>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | Partial&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->&gt; | <i>(Optional)</i> |
+|  data | Partial&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->&gt; | _(Optional)_ |
 
 

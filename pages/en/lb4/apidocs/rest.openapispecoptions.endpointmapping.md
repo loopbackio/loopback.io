@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.endpointmapping.html
 
 Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> }
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 endpointMapping?: {

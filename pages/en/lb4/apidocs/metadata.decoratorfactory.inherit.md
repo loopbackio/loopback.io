@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.inherit.html
 
 Inherit metadata from base classes. By default, this method merges base metadata into the spec if `allowInheritance` is set to `true`<!-- -->. To customize the behavior, this method can be overridden by sub classes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected inherit(inheritedMetadata: T | undefined | null): T;
@@ -27,7 +27,7 @@ protected inherit(inheritedMetadata: T | undefined | null): T;
 |  --- | --- | --- |
 |  inheritedMetadata | T \| undefined \| null | Metadata from base classes for the member |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

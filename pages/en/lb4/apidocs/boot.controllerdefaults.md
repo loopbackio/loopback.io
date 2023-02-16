@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.controllerdefaults.html
 
 Default ArtifactOptions for ControllerBooter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ControllerDefaults: ArtifactOptions

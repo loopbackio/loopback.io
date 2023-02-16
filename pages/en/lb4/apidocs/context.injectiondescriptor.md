@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injectiondescriptor.html
 
 ## InjectionDescriptor interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InjectionDescriptor 

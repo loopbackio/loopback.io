@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponent.providers.html
 
 ## RestComponent.providers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 providers: ProviderMap;

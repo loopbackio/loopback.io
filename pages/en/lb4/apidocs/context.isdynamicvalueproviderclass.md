@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.isdynamicvalueproviderclass.html
 
 Check if the factory is a value factory provider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isDynamicValueProviderClass<T = unknown>(factory: unknown): factory is DynamicValueProviderClass<T>;
@@ -27,7 +27,7 @@ export declare function isDynamicValueProviderClass<T = unknown>(factory: unknow
 |  --- | --- | --- |
 |  factory | unknown | A factory function or a dynamic value provider class |
 
-<b>Returns:</b>
+**Returns:**
 
 factory is [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt;
 

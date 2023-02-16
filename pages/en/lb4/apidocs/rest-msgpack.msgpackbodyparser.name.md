@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparser.name.html
 
 ## MsgPackBodyParser.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: symbol;

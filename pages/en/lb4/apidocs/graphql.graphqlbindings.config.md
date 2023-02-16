@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.config.html
 
 Binding key for setting and injecting GraphQLServerConfig
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIG: BindingKey<GraphQLServerOptions>

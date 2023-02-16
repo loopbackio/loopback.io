@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.arraytype.coerce.html
 
 ## ArrayType.coerce() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 coerce(value: any): any;
@@ -25,7 +25,7 @@ coerce(value: any): any;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.gettargetname.html
 
 Get the qualified name of a decoration target.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getTargetName(target: Object, member?: string | symbol, descriptorOrIndex?: TypedPropertyDescriptor<any> | number): string;
@@ -26,10 +26,10 @@ static getTargetName(target: Object, member?: string | symbol, descriptorOrIndex
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object | Class or prototype of a class |
-|  member | string \| symbol | <i>(Optional)</i> Optional property/method name |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> Optional method descriptor or parameter index |
+|  member | string \| symbol | _(Optional)_ Optional property/method name |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional method descriptor or parameter index |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

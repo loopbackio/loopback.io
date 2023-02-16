@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationsource.value.html
 
 Metadata for the source, such as `ResolutionSession`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly value: T;

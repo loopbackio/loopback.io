@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.html
 
 A socketio server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SocketIoServer extends Context 
 ```
-<b>Extends:</b> [Context](./context.context.md)
+**Extends:** [Context](./context.context.md)
 
 ## Constructors
 

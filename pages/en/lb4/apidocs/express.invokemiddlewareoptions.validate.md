@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.validate.html
 
 An optional function to validate the sorted groups before invoking the middleware chain
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validate?: (groups: string[]) => void;

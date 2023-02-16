@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverfilter.html
 
 Find all life cycle observer bindings. By default, a binding tagged with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->. It's used as `BindingFilter`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 lifeCycleObserverFilter: BindingTagFilter

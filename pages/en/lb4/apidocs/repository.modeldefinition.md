@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.html
 
 Definition for a model
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ModelDefinition 

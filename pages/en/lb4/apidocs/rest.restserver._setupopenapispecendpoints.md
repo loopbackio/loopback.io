@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._setupopenapispecendpoints.html
 
 Mount /openapi.json, /openapi.yaml for specs and /swagger-ui, /explorer to redirect to externally hosted API explorer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _setupOpenApiSpecEndpoints(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

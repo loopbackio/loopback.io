@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelapibooter.getmodelapibuilders.html
 
 ## ModelApiBooter.getModelApiBuilders property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getModelApiBuilders: Getter<ModelApiBuilder[]>;

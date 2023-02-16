@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.tags.html
 
 Add tags for an endpoint. When applied to a class, this decorator adds the tags to all endpoints.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function tags(...tagNames: string[]): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
@@ -27,7 +27,7 @@ export declare function tags(...tagNames: string[]): (target: any, method?: stri
 |  --- | --- | --- |
 |  tagNames | string\[\] | A list of tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier. |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 

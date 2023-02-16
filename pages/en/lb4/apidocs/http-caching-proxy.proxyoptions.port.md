@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.proxyoptions.port.html
 
 The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 port?: number;

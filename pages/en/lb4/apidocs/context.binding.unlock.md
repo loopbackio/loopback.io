@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.binding.unlock.html
 
 Unlock the binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unlock(): this;
 ```
-<b>Returns:</b>
+**Returns:**
 
 this
 

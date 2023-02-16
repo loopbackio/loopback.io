@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.booters.html
 
 Booter binding namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOTERS = "booters"

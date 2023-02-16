@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metadata.methoddecoratorfactory.html
 
 Factory for method decorators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MethodDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T>, MethodDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, MethodDecorator&gt;
+**Extends:** [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;, MethodDecorator&gt;
 
 ## Methods
 

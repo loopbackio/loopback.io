@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarebindingoptions.chain.html
 
 Name of the middleware extension point. Default to `DEFAULT_MIDDLEWARE_CHAIN`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 chain?: string;

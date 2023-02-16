@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.healthtags.live_check.html
 
 Binding tag for liveness check functions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LIVE_CHECK = "health.liveCheck"

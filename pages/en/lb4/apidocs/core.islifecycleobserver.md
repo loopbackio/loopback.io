@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.islifecycleobserver.html
 
 Test if an object implements LifeCycleObserver
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isLifeCycleObserver(obj: object): obj is LifeCycleObserver;
@@ -27,7 +27,7 @@ export declare function isLifeCycleObserver(obj: object): obj is LifeCycleObserv
 |  --- | --- | --- |
 |  obj | object | An object |
 
-<b>Returns:</b>
+**Returns:**
 
 obj is [LifeCycleObserver](./core.lifecycleobserver.md)
 

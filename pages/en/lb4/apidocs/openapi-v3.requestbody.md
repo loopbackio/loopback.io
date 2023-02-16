@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.requestbody.html
 
 ## requestBody namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace requestBody 

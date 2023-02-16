@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.security.scope.html
 
 oAuth 2.0 scope
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Scope extends Permission 
 ```
-<b>Extends:</b> [Permission](./security.permission.md)
+**Extends:** [Permission](./security.permission.md)
 
 ## Properties
 

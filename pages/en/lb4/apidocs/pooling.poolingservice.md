@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.html
 
 A singleton service to maintain a pool of resources. This pool service can be bound to different keys to represent multiple pools. Each binding is a singleton so that the state stays the same for injections into multiple instances for other artifacts.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class PoolingService<T> implements LifeCycleObserver 
 ```
-<b>Implements:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
+**Implements:** [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Remarks
 

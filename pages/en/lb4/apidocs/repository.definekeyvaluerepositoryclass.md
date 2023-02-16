@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.definekeyvaluerepositoryclass.html
 
 Create (define) a KeyValue repository class for the given entity. This function always uses `DefaultKeyValueRepository` as the base class, use `defineRepositoryClass` if you want to use your own base repository.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function defineKeyValueRepositoryClass<M extends Model>(modelClass: typeof Model & {
@@ -29,7 +29,7 @@ export declare function defineKeyValueRepositoryClass<M extends Model>(modelClas
 |  --- | --- | --- |
 |  modelClass | typeof [Model](./repository.model.md) &amp; { prototype: M; } | An entity class such as <code>Product</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ModelRepositoryClass](./repository.modelrepositoryclass.md)<!-- -->&lt;M, [DefaultKeyValueRepository](./repository.defaultkeyvaluerepository.md)<!-- -->&lt;M&gt;&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice.applyenhancerbyname
 
 Apply a given enhancer's merge function. Return the latest \_spec.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 applyEnhancerByName(name: string): Promise<OpenApiSpec>;
@@ -27,7 +27,7 @@ applyEnhancerByName(name: string): Promise<OpenApiSpec>;
 |  --- | --- | --- |
 |  name | string | The name of the enhancer you want to apply |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 

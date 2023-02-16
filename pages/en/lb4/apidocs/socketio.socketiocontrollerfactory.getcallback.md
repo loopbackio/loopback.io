@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.getcallback.ht
 
 ## SocketIoControllerFactory.getCallback() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getCallback(methodName: string): (...args: unknown[]) => Promise<void>;
@@ -25,7 +25,7 @@ getCallback(methodName: string): (...args: unknown[]) => Promise<void>;
 |  --- | --- | --- |
 |  methodName | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 (...args: unknown\[\]) =&gt; Promise&lt;void&gt;
 

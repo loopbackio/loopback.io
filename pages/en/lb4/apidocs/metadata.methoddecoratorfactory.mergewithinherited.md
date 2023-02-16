@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.methoddecoratorfactory.mergewithinherite
 
 ## MethodDecoratorFactory.mergeWithInherited() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected mergeWithInherited(inheritedMetadata: MetadataMap<T>, target: Object, methodName?: string, methodDescriptor?: TypedPropertyDescriptor<any> | number): MetadataMap<T>;
@@ -25,10 +25,10 @@ protected mergeWithInherited(inheritedMetadata: MetadataMap<T>, target: Object, 
 |  --- | --- | --- |
 |  inheritedMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; |  |
 |  target | Object |  |
-|  methodName | string | <i>(Optional)</i> |
-|  methodDescriptor | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
+|  methodName | string | _(Optional)_ |
+|  methodDescriptor | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;
 

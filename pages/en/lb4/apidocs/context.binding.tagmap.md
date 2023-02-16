@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.tagmap.html
 
 Map for tag name/value pairs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly tagMap: TagMap;

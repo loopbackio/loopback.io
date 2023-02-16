@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getconfigsync.html
 
 Resolve configuration synchronously for the binding by key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getConfigSync<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutionOptions?: ResolutionOptions): ConfigValueType | undefined;
@@ -26,10 +26,10 @@ getConfigSync<ConfigValueType>(key: BindingAddress, propertyPath?: string, resol
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
-|  propertyPath | string | <i>(Optional)</i> Property path for the option. For example, <code>x.y</code> requests for <code>config.x.y</code>. If not set, the <code>config</code> object will be returned. |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Options for the resolution. |
+|  propertyPath | string | _(Optional)_ Property path for the option. For example, <code>x.y</code> requests for <code>config.x.y</code>. If not set, the <code>config</code> object will be returned. |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ Options for the resolution. |
 
-<b>Returns:</b>
+**Returns:**
 
 ConfigValueType \| undefined
 

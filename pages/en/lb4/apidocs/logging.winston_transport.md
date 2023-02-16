@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.winston_transport.html
 
 An extension point for winston transports
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WINSTON_TRANSPORT = "logging.winston.transport"

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidrelationerror._constructor_.htm
 
 Constructs a new instance of the `InvalidRelationError` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(reason: string, relationMeta: RelationMetadata, extraProperties?: Props);
@@ -27,6 +27,6 @@ constructor(reason: string, relationMeta: RelationMetadata, extraProperties?: Pr
 |  --- | --- | --- |
 |  reason | string |  |
 |  relationMeta | [RelationMetadata](./repository.relationmetadata.md) |  |
-|  extraProperties | Props | <i>(Optional)</i> |
+|  extraProperties | Props | _(Optional)_ |
 
 

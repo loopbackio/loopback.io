@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.mountexpressrouter.html
 
 Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mountExpressRouter(basePath: string, router: ExpressRequestHandler, spec?: RouterSpec): void;
@@ -27,9 +27,9 @@ mountExpressRouter(basePath: string, router: ExpressRequestHandler, spec?: Route
 |  --- | --- | --- |
 |  basePath | string | Path where to mount the router at, e.g. <code>/</code> or <code>/api</code>. |
 |  router | [ExpressRequestHandler](./express.expressrequesthandler.md) | The Express router to handle the requests. |
-|  spec | [RouterSpec](./rest.routerspec.md) | <i>(Optional)</i> A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend <code>basePath</code> to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes. |
+|  spec | [RouterSpec](./rest.routerspec.md) | _(Optional)_ A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend <code>basePath</code> to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes. |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

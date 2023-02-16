@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resolvednode.params.html
 
 ## ResolvedNode.params property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 params?: PathParameterValues;

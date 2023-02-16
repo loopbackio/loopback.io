@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.getkeyvalue.html
 
 Returns value of a keyName. Aims to resolve ObjectId problem of Mongo.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getKeyValue(model: AnyObject, keyName: string): unknown;
@@ -28,7 +28,7 @@ export declare function getKeyValue(model: AnyObject, keyName: string): unknown;
 |  model | [AnyObject](./repository.anyobject.md) | target model |
 |  keyName | string | target key that gets the value from |
 
-<b>Returns:</b>
+**Returns:**
 
 unknown
 

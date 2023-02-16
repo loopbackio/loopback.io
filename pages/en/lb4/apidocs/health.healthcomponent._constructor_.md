@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.healthcomponent._constructor_.html
 
 Constructs a new instance of the `HealthComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(application: Application, healthConfig?: HealthConfig);
@@ -26,6 +26,6 @@ constructor(application: Application, healthConfig?: HealthConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [Application](./core.application.md) |  |
-|  healthConfig | [HealthConfig](./health.healthconfig.md) | <i>(Optional)</i> |
+|  healthConfig | [HealthConfig](./health.healthconfig.md) | _(Optional)_ |
 
 

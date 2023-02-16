@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.express.middlewareview.refresh.html
 
 ## MiddlewareView.refresh() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 refresh(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

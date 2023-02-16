@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.expresssettings.ht
 
 ## RestServerResolvedOptions.expressSettings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expressSettings: {

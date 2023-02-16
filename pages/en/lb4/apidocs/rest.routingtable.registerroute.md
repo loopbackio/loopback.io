@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable.registerroute.html
 
 Register a route
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerRoute(route: RouteEntry): void;
@@ -27,7 +27,7 @@ registerRoute(route: RouteEntry): void;
 |  --- | --- | --- |
 |  route | [RouteEntry](./rest.routeentry.md) | A route entry |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

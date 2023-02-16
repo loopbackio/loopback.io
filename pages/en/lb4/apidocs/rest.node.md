@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.node.html
 
 A Node in the trie
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Node<T> 
@@ -27,8 +27,8 @@ export interface Node<T>
 |  --- | --- | --- | --- |
 |  [children](./rest.node.children.md) | <code>readonly</code> | { \[key: string\]: [Node](./rest.node.md)<!-- -->&lt;T&gt;; } | Children of the node |
 |  [key](./rest.node.key.md) |  | string | Key of the node |
-|  [names?](./rest.node.names.md) |  | string\[\] | <i>(Optional)</i> Names of the node if it contains named parameters |
-|  [regexp?](./rest.node.regexp.md) |  | RegExp | <i>(Optional)</i> Regular expression for the template |
-|  [value?](./rest.node.value.md) |  | T | <i>(Optional)</i> Value of the node |
+|  [names?](./rest.node.names.md) |  | string\[\] | _(Optional)_ Names of the node if it contains named parameters |
+|  [regexp?](./rest.node.regexp.md) |  | RegExp | _(Optional)_ Regular expression for the template |
+|  [value?](./rest.node.value.md) |  | T | _(Optional)_ Value of the node |
 
 

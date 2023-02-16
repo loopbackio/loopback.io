@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.filter.where.html
 
 Where clause
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Where<MT extends object = AnyObject> = Condition<MT> | AndClause<MT> | OrClause<MT>;
 ```
-<b>References:</b> [Condition](./filter.condition.md)<!-- -->, [AndClause](./filter.andclause.md)<!-- -->, [OrClause](./filter.orclause.md)
+**References:** [Condition](./filter.condition.md)<!-- -->, [AndClause](./filter.andclause.md)<!-- -->, [OrClause](./filter.orclause.md)
 
 ## Example
 

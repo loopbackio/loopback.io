@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.requestlistener.html
 
 Request listener function for http/https requests
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RequestListener = (req: IncomingMessage, res: ServerResponse) => void;

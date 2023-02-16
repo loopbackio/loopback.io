@@ -17,13 +17,13 @@ Order by
 
 Example: `{afieldname: 'ASC'}`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Order<MT = AnyObject> = {
     [P in keyof MT]: Direction;
 };
 ```
-<b>References:</b> [Direction](./filter.direction.md)
+**References:** [Direction](./filter.direction.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.stubserverrequest.html
 
 ## stubServerRequest() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function stubServerRequest(options: ShotRequestOptions): IncomingMessage;
@@ -25,7 +25,7 @@ export declare function stubServerRequest(options: ShotRequestOptions): Incoming
 |  --- | --- | --- |
 |  options | ShotRequestOptions |  |
 
-<b>Returns:</b>
+**Returns:**
 
 IncomingMessage
 

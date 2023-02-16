@@ -17,12 +17,12 @@ A class that extends BaseArtifactBooter to boot the 'LifeCycleObserver' artifact
 
 Supported phases: configure, discover, load
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LifeCycleObserverBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

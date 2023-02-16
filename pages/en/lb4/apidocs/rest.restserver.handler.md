@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.handler.html
 
 Configure a custom sequence function for handling incoming requests.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handler(handlerFn: SequenceFunction): void;
@@ -27,7 +27,7 @@ handler(handlerFn: SequenceFunction): void;
 |  --- | --- | --- |
 |  handlerFn | [SequenceFunction](./rest.sequencefunction.md) | The handler to invoke for each incoming request. |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.intercept_class_key.html
 
 Metadata key for method-level interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INTERCEPT_CLASS_KEY: MetadataAccessor<InterceptorOrKey[], ClassDecorator>

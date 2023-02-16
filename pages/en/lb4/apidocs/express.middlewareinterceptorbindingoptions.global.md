@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewareinterceptorbindingoptions.globa
 
 A flag to control if the interceptor should be global. Default to `true`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 global?: boolean;

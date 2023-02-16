@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withtag
 
 Describe tags associated with the operation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withTags(tags: string | string[]): this;
@@ -27,7 +27,7 @@ withTags(tags: string | string[]): this;
 |  --- | --- | --- |
 |  tags | string \| string\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

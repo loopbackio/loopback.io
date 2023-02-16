@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter._constructor_.html
 
 Constructs a new instance of the `BaseArtifactBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(projectRoot: string, options: ArtifactOptions);

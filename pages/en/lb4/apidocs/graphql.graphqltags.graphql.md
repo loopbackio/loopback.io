@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqltags.graphql.html
 
 GraphQL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GRAPHQL = "graphql"

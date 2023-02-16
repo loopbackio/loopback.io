@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.cron.cronjob.emitter.html
 
 ## CronJob.emitter property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly emitter: EventEmitter;

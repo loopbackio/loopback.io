@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.registermiddleware.html
 
 Bind the middleware function or provider class to the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function registerMiddleware(ctx: Context, middleware: Middleware | Constructor<Provider<Middleware>>, options: MiddlewareBindingOptions): Binding<Middleware>;
@@ -29,7 +29,7 @@ export declare function registerMiddleware(ctx: Context, middleware: Middleware 
 |  middleware | [Middleware](./express.middleware.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;&gt; | Middleware function or provider class |
 |  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | Middleware binding options |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 

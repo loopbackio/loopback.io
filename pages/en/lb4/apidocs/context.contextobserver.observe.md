@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextobserver.observe.html
 
 Listen on `bind`<!-- -->, `unbind`<!-- -->, or other events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 observe: ContextObserverFn;

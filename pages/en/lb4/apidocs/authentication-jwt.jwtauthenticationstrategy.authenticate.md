@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationstrategy.auth
 
 ## JWTAuthenticationStrategy.authenticate() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 authenticate(request: Request): Promise<UserProfile | undefined>;
@@ -25,7 +25,7 @@ authenticate(request: Request): Promise<UserProfile | undefined>;
 |  --- | --- | --- |
 |  request | Request |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserProfile](./security.userprofile.md) \| undefined&gt;
 

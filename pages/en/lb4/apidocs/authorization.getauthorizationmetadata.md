@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.getauthorizationmetadata.html
 
 Fetch authorization metadata stored by `@authorize` decorator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getAuthorizationMetadata(target: object, methodName: string): AuthorizationMetadata | undefined;
@@ -28,7 +28,7 @@ export declare function getAuthorizationMetadata(target: object, methodName: str
 |  target | object | Target object/class |
 |  methodName | string | Target method |
 
-<b>Returns:</b>
+**Returns:**
 
 [AuthorizationMetadata](./authorization.authorizationmetadata.md) \| undefined
 

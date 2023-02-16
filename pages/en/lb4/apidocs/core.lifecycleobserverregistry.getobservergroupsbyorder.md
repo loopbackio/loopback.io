@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.getobservergroupsb
 
 Get observer groups ordered by the group
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getObserverGroupsByOrder(): LifeCycleObserverGroup[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\]
 

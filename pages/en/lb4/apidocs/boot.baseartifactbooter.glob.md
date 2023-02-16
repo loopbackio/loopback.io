@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.glob.html
 
 `glob` pattern to match artifact paths
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 glob: string;

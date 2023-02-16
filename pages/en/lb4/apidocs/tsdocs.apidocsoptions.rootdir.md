@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.rootdir.html
 
 Root directory for the lerna-managed monorepo, default to current dir
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rootDir?: string;

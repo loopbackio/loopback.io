@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.port.html
 
 Binding key for setting and injecting the port number of Http Server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PORT: BindingKey<number>

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.requestbodyparser.
 
 ## RestServerResolvedOptions.requestBodyParser property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 requestBodyParser?: RequestBodyParserOptions;

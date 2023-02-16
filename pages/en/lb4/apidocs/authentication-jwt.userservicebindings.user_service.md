@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userservicebindings.user_servi
 
 ## UserServiceBindings.USER\_SERVICE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 USER_SERVICE: BindingKey<UserService<User, Credentials>>

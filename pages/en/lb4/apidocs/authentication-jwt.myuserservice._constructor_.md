@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice._constructor_.ht
 
 Constructs a new instance of the `MyUserService` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(userRepository: UserRepository);

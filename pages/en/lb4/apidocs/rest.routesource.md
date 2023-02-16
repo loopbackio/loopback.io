@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.routesource.html
 
 ## RouteSource class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RouteSource implements InvocationSource<RouteEntry> 
 ```
-<b>Implements:</b> [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[RouteEntry](./rest.routeentry.md)<!-- -->&gt;
+**Implements:** [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[RouteEntry](./rest.routeentry.md)<!-- -->&gt;
 
 ## Constructors
 

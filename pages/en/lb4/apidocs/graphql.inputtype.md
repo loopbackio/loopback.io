@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.inputtype.html
 
 ## inputType variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inputType: typeof InputType

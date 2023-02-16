@@ -15,13 +15,13 @@ permalink: /doc/en/lb4/apidocs.repository-tests.crudrepositoryctor.html
 
 A constructor of a class implementing CrudRepository interface, accepting the Entity class (constructor) and a dataSource instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type CrudRepositoryCtor = new <T extends Entity, ID, Relations extends object>(entityClass: typeof Entity & {
     prototype: T;
 }, dataSource: juggler.DataSource) => EntityCrudRepository<T, ID, Relations>;
 ```
-<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [EntityCrudRepository](./repository.entitycrudrepository.md)
+**References:** [Entity](./repository.entity.md)<!-- -->, [EntityCrudRepository](./repository.entitycrudrepository.md)
 
 

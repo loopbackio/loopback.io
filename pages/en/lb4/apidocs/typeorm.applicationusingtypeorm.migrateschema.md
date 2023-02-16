@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.typeorm.applicationusingtypeorm.migrateschema.htm
 
 ## ApplicationUsingTypeOrm.migrateSchema() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 migrateSchema(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

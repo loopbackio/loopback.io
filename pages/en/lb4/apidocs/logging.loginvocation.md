@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.logging.loginvocation.html
 
 `@logInvocation` decorator for method invocations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function logInvocation(): (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any;
 ```
-<b>Returns:</b>
+**Returns:**
 
 (target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
 

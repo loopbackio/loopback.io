@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonerepositoryfactory.html
 
 ## HasOneRepositoryFactory interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HasOneRepositoryFactory<Target extends Entity, ForeignKeyType> 

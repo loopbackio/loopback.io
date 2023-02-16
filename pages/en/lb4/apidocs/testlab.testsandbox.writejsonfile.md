@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.writejsonfile.html
 
 Creates a new file and writes the given data serialized as JSON.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeJsonFile(dest: string, data: unknown): Promise<void>;
@@ -28,7 +28,7 @@ writeJsonFile(dest: string, data: unknown): Promise<void>;
 |  dest | string | Destination filename, optionally including a relative path. |
 |  data | unknown | The data to write. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

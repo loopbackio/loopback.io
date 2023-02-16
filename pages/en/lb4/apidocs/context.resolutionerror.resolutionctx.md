@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionerror.resolutionctx.html
 
 ## ResolutionError.resolutionCtx property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly resolutionCtx: Partial<ResolutionContext>;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.targetlocation.html
 
 ## RedirectRoute.targetLocation property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly targetLocation: string;

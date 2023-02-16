@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.transactionalentityrepository.html
 
 A type for CRUD repositories that are backed by IDs and support Transactions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TransactionalEntityRepository<T extends Entity, ID, Relations extends object = {}> = TransactionalRepository<T> & EntityCrudRepository<T, ID>;
 ```
-<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [TransactionalRepository](./repository.transactionalrepository.md)<!-- -->, [EntityCrudRepository](./repository.entitycrudrepository.md)
+**References:** [Entity](./repository.entity.md)<!-- -->, [TransactionalRepository](./repository.transactionalrepository.md)<!-- -->, [EntityCrudRepository](./repository.entitycrudrepository.md)
 
 

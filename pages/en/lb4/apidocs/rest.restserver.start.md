@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.start.html
 
 Start this REST API's HTTP/HTTPS server.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 start(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

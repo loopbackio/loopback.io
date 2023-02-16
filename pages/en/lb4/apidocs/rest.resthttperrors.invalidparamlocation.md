@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.invalidparamlocation.html
 
 ## RestHttpErrors.invalidParamLocation() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function invalidParamLocation(location: string): HttpErrors.HttpError;
@@ -25,7 +25,7 @@ function invalidParamLocation(location: string): HttpErrors.HttpError;
 |  --- | --- | --- |
 |  location | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 HttpErrors.HttpError
 

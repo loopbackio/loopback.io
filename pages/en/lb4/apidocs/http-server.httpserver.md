@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver.html
 
 HTTP / HTTPS server used by LoopBack's RestServer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HttpServer 

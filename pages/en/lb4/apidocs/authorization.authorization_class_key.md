@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorization_class_key.html
 
 ## AUTHORIZATION\_CLASS\_KEY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHORIZATION_CLASS_KEY: MetadataAccessor<AuthorizationMetadata, ClassDecorator>

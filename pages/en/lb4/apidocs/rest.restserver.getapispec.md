@@ -19,7 +19,7 @@ This method merges operations (HTTP endpoints) from the following sources: - `ap
 
 If the optional `requestContext` is provided, then the `servers` list in the returned spec will be updated to work in that context. Specifically: 1. if `config.openApi.setServersFromRequest` is enabled, the servers list will be replaced with the context base url 2. Any `servers` entries with a path of `/` will have that path replaced with `requestContext.basePath`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getApiSpec(requestContext?: RequestContext): Promise<OpenApiSpec>;
@@ -29,9 +29,9 @@ getApiSpec(requestContext?: RequestContext): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestContext | [RequestContext](./rest.requestcontext.md) | <i>(Optional)</i> Optional context to update the <code>servers</code> list in the returned spec |
+|  requestContext | [RequestContext](./rest.requestcontext.md) | _(Optional)_ Optional context to update the <code>servers</code> list in the returned spec |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 

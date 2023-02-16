@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.jsonobject.html
 
 JSON object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface JSONObject extends Record<string, JSONValue> 
 ```
-<b>Extends:</b> Record&lt;string, [JSONValue](./context.jsonvalue.md)<!-- -->&gt;
+**Extends:** Record&lt;string, [JSONValue](./context.jsonvalue.md)<!-- -->&gt;
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepository.count.html
 
 Count matching records
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 count(where?: Where<T>, options?: Options): Promise<Count>;
@@ -25,10 +25,10 @@ count(where?: Where<T>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Matching criteria |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | _(Optional)_ Matching criteria |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

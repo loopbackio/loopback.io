@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosendmethod.html
 
 ## SocketIoSendMethod type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SocketIoSendMethod = (done: Function, result: unknown) => unknown;

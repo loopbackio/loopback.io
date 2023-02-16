@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.validate.html
 
 Validate the binding key format. Please note that `#` is reserved. Returns a string representation of the binding key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static validate<T>(key: BindingAddress<T>): string;
@@ -27,7 +27,7 @@ static validate<T>(key: BindingAddress<T>): string;
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding key, such as <code>a</code>, <code>a.b</code>, <code>a:b</code>, or <code>a/b</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

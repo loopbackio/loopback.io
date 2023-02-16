@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparser._constructor_.html
 
 Constructs a new instance of the `RequestBodyParser` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(parsers?: BodyParser[], ctx?: Context | undefined);
@@ -25,7 +25,7 @@ constructor(parsers?: BodyParser[], ctx?: Context | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  parsers | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] | <i>(Optional)</i> |
-|  ctx | [Context](./context.context.md) \| undefined | <i>(Optional)</i> |
+|  parsers | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] | _(Optional)_ |
+|  ctx | [Context](./context.context.md) \| undefined | _(Optional)_ |
 
 

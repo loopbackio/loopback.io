@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.application_config.html
 
 Binding key for application configuration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 APPLICATION_CONFIG: BindingKey<ApplicationConfig>

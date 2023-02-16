@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.exists.html
 
 Check if an entity exists for the given id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exists(id: ID, options?: Options): Promise<boolean>;
@@ -26,9 +26,9 @@ exists(id: ID, options?: Options): Promise<boolean>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewareregistry.html
 
 A context that allows middleware registration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MiddlewareRegistry 

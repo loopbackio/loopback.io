@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiotags.socket_io.html
 
 ## SocketIoTags.SOCKET\_IO variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SOCKET_IO = "socketio"

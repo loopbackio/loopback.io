@@ -17,12 +17,12 @@ A class that extends BaseArtifactBooter to boot the 'DataSource' artifact type. 
 
 Supported phases: configure, discover, load
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DataSourceBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

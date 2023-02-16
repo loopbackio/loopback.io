@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.booter.configure.html
 
 Configure phase of the Booter. It should set options / defaults in this phase.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configure?(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

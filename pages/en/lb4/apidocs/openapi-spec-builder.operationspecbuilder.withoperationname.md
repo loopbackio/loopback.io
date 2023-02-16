@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withope
 
 Define the operation name (controller method name).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withOperationName(name: string): this;
@@ -27,7 +27,7 @@ withOperationName(name: string): this;
 |  --- | --- | --- |
 |  name | string | The name of the controller method implementing this operation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

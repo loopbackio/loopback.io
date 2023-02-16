@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routeentry.invokehandler.html
 
 A handler to invoke the resolved controller method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 invokeHandler(requestContext: Context, args: OperationArgs): Promise<OperationRetval>;
@@ -28,7 +28,7 @@ invokeHandler(requestContext: Context, args: OperationArgs): Promise<OperationRe
 |  requestContext | [Context](./context.context.md) |  |
 |  args | [OperationArgs](./rest.operationargs.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OperationRetval](./rest.operationretval.md)<!-- -->&gt;
 

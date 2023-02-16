@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.contextview.close.html
 
 Stop listening events from the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 close(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

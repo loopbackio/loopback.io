@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.addextension.html
 
 Register an extension for the given extension point to the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function addExtension(context: Context, extensionPointName: string, extensionClass: Constructor<unknown>, options?: BindingFromClassOptions): Binding<unknown>;
@@ -28,9 +28,9 @@ export declare function addExtension(context: Context, extensionPointName: strin
 |  context | [Context](./context.context.md) | Context object |
 |  extensionPointName | string | Name of the extension point |
 |  extensionClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | Class or a provider for an extension |
-|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Options Options for the creation of binding from class |
+|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Options Options for the creation of binding from class |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 

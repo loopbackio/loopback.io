@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.writetextfile.html
 
 Creates a new file and writes the given data as a UTF-8-encoded text.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 writeTextFile(dest: string, data: string): Promise<void>;
@@ -28,7 +28,7 @@ writeTextFile(dest: string, data: string): Promise<void>;
 |  dest | string | Destination filename, optionally including a relative path. |
 |  data | string | The text to write. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

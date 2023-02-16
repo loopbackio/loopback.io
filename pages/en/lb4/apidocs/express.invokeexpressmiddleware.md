@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokeexpressmiddleware.html
 
 Invoke a list of Express middleware handler functions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function invokeExpressMiddleware(middlewareCtx: MiddlewareContext, ...handlers: ExpressRequestHandler[]): ValueOrPromise<boolean>;
@@ -28,7 +28,7 @@ export declare function invokeExpressMiddleware(middlewareCtx: MiddlewareContext
 |  middlewareCtx | [MiddlewareContext](./express.middlewarecontext.md) | Middleware context |
 |  handlers | [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | A list of Express middleware handler functions |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;boolean&gt;
 

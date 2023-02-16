@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.tagnames.html
 
 Get an array of tag names
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get tagNames(): string[];

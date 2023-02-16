@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.ajvfactory.html
 
 Factory function for Ajv instances
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AjvFactory = (options?: AjvOptions) => Ajv;

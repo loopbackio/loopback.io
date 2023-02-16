@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.datasourcebooter.app.html
 
 ## DataSourceBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: ApplicationWithRepositories;

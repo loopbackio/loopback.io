@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserveroptions.html
 
 ## SocketIoServerOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface SocketIoServerOptions 
@@ -23,7 +23,7 @@ export interface SocketIoServerOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [httpServerOptions?](./socketio.socketioserveroptions.httpserveroptions.md) |  | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) | <i>(Optional)</i> |
-|  [socketIoOptions?](./socketio.socketioserveroptions.socketiooptions.md) |  | ServerOptions | <i>(Optional)</i> |
+|  [httpServerOptions?](./socketio.socketioserveroptions.httpserveroptions.md) |  | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) | _(Optional)_ |
+|  [socketIoOptions?](./socketio.socketioserveroptions.socketiooptions.md) |  | ServerOptions | _(Optional)_ |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.resolver.html
 
 ## resolver variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolver: typeof Resolver

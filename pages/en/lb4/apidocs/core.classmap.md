@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.classmap.html
 
 A map of classes to be bound to a context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ClassMap 

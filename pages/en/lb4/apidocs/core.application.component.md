@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.component.html
 
 Add a component to this application and register extensions such as controllers, providers, and servers from the component.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 component<T extends Component = Component>(componentCtor: Constructor<T>, nameOrOptions?: string | BindingFromClassOptions): Binding<T>;
@@ -26,9 +26,9 @@ component<T extends Component = Component>(componentCtor: Constructor<T>, nameOr
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  componentCtor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The component class to add. |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Optional component name or options, default to the class name |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Optional component name or options, default to the class name |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;T&gt;
 

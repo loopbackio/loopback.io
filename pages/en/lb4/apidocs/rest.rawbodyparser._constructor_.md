@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.rawbodyparser._constructor_.html
 
 Constructs a new instance of the `RawBodyParser` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options?: RequestBodyParserOptions);
@@ -25,6 +25,6 @@ constructor(options?: RequestBodyParserOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | <i>(Optional)</i> |
+|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | _(Optional)_ |
 
 

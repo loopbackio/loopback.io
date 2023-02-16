@@ -21,7 +21,7 @@ async function onChat(msg: string) {
 }
 ```
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function subscribe(...messageTypes: (string | RegExp)[]): MethodDecorator;
@@ -33,7 +33,7 @@ function subscribe(...messageTypes: (string | RegExp)[]): MethodDecorator;
 |  --- | --- | --- |
 |  messageTypes | (string \| RegExp)\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 MethodDecorator
 

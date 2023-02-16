@@ -17,7 +17,7 @@ Wait until observers are notified for all of currently pending notification even
 
 This method is for test only to perform assertions after observers are notified for relevant events.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 waitUntilPendingNotificationsDone(timeout?: number): Promise<void>;
@@ -27,9 +27,9 @@ waitUntilPendingNotificationsDone(timeout?: number): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  timeout | number | <i>(Optional)</i> |
+|  timeout | number | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

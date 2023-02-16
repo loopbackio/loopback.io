@@ -21,7 +21,7 @@ Two types of states are expected: - stable, such as `started` and `stopped` - in
 
 Operations such as `start` and `stop` can only be called at a stable state. The logic should immediately set the state to a new one indicating work in process, such as `starting` and `stopping`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get state(): string;

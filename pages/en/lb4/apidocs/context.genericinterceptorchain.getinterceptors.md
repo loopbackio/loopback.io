@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain.getinterceptors.h
 
 A getter for an array of interceptor functions or binding keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected getInterceptors: () => GenericInterceptorOrKey<C>[];

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.user_profil
 
 Key used to bind a user profile factory to the context for any consumer to use when they need to convert a user object into a slimmer user profile object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 USER_PROFILE_FACTORY: BindingKey<UserProfileFactory<any>>

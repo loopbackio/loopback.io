@@ -17,7 +17,7 @@ Build a JSON schema describing the format of the "filter" object used to query m
 
 Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getFilterJsonSchemaFor(modelCtor: typeof Model, options?: FilterSchemaOptions): JsonSchema;
@@ -28,9 +28,9 @@ export declare function getFilterJsonSchemaFor(modelCtor: typeof Model, options?
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | The model constructor to build the filter schema for. |
-|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | <i>(Optional)</i> Options to build the filter schema. |
+|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | _(Optional)_ Options to build the filter schema. |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

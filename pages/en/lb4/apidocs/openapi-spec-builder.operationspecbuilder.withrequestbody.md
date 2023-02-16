@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withreq
 
 ## OperationSpecBuilder.withRequestBody() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withRequestBody(requestBodySpec: RequestBodyObject): this;
@@ -25,7 +25,7 @@ withRequestBody(requestBodySpec: RequestBodyObject): this;
 |  --- | --- | --- |
 |  requestBodySpec | RequestBodyObject |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

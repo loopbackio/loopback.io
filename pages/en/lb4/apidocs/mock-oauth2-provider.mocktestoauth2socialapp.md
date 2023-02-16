@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.mocktestoauth2socialapp.html
 
 ## MockTestOauth2SocialApp namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace MockTestOauth2SocialApp 

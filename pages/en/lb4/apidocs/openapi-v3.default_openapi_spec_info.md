@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.default_openapi_spec_info.html
 
 ## DEFAULT\_OPENAPI\_SPEC\_INFO variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_OPENAPI_SPEC_INFO: {

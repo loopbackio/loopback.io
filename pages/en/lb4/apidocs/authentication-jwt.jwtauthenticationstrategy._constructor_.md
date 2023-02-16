@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationstrategy._con
 
 Constructs a new instance of the `JWTAuthenticationStrategy` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(tokenService: TokenService);

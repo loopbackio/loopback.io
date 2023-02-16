@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.openapispecbuilder._construc
 
 Constructs a new instance of the `OpenApiSpecBuilder` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor();

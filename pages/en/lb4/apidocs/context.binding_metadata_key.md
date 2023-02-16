@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding_metadata_key.html
 
 Metadata key for binding metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BINDING_METADATA_KEY: MetadataAccessor<BindingMetadata<unknown>, ClassDecorator>

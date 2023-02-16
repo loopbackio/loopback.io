@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertyform.html
 
 See https://github.com/loopbackio/loopback-datasource-juggler/issues/432
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface PropertyForm 
@@ -25,8 +25,8 @@ export interface PropertyForm
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [in?](./repository.propertyform.in.md) |  | boolean | <i>(Optional)</i> |
-|  [name?](./repository.propertyform.name.md) |  | string | <i>(Optional)</i> |
-|  [out?](./repository.propertyform.out.md) |  | boolean | <i>(Optional)</i> |
+|  [in?](./repository.propertyform.in.md) |  | boolean | _(Optional)_ |
+|  [name?](./repository.propertyform.name.md) |  | string | _(Optional)_ |
+|  [out?](./repository.propertyform.out.md) |  | boolean | _(Optional)_ |
 
 

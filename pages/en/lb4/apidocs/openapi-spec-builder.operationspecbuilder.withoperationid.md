@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withope
 
 Define the operationId
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withOperationId(operationId: string): this;
@@ -27,7 +27,7 @@ withOperationId(operationId: string): this;
 |  --- | --- | --- |
 |  operationId | string | Operation id |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

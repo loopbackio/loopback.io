@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.keys.html
 
 Get an Iterator for matching keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keys?(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
@@ -25,10 +25,10 @@ keys?(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | <i>(Optional)</i> Filter for keys |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | _(Optional)_ Filter for keys |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 AsyncIterable&lt;string&gt;
 

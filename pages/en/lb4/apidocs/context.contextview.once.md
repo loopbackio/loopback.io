@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.once.html
 
 The "bind" event is emitted when a new binding is added to the view.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 once(eventName: 'bind', listener: <V>(event: ContextViewEvent<V>) => void): this;
@@ -28,7 +28,7 @@ once(eventName: 'bind', listener: <V>(event: ContextViewEvent<V>) => void): this
 |  eventName | 'bind' | The name of the event - always <code>bind</code>. |
 |  listener | &lt;V&gt;(event: [ContextViewEvent](./context.contextviewevent.md)<!-- -->&lt;V&gt;) =&gt; void | The listener function to call when the event is emitted. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

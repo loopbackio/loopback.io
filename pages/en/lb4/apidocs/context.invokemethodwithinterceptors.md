@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invokemethodwithinterceptors.html
 
 Invoke a method with the given context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function invokeMethodWithInterceptors(context: Context, target: object, methodName: string, args: InvocationArgs, options?: InvocationOptions): ValueOrPromise<InvocationResult>;
@@ -29,9 +29,9 @@ export declare function invokeMethodWithInterceptors(context: Context, target: o
 |  target | object | Target class (for static methods) or object (for instance methods) |
 |  methodName | string | Method name |
 |  args | [InvocationArgs](./context.invocationargs.md) | An array of argument values |
-|  options | [InvocationOptions](./context.invocationoptions.md) | <i>(Optional)</i> Options for the invocation |
+|  options | [InvocationOptions](./context.invocationoptions.md) | _(Optional)_ Options for the invocation |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[InvocationResult](./context.invocationresult.md)<!-- -->&gt;
 

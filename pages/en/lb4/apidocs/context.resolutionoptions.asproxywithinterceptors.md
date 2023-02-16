@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionoptions.asproxywithinterceptors
 
 A boolean flag to control if a proxy should be created to apply interceptors for the resolved value. It's only honored for bindings backed by a class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asProxyWithInterceptors?: boolean;

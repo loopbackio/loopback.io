@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.delete.html
 
 Delete an entry by key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(key: string, options?: Options): Promise<void>;
@@ -26,9 +26,9 @@ delete(key: string, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string | Key for the entry |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

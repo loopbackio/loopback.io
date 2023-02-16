@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingevent.html
 
 Information for a binding event
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingEvent = {
@@ -24,6 +24,6 @@ export type BindingEvent = {
     operation: 'tag' | 'scope' | 'value' | string;
 };
 ```
-<b>References:</b> [Binding](./context.binding.md)
+**References:** [Binding](./context.binding.md)
 
 

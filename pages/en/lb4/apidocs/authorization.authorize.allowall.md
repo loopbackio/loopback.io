@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allowall.html
 
 Allows all
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowAll: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

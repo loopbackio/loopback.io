@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.defaultconfigurationresolver._constructor
 
 Constructs a new instance of the `DefaultConfigurationResolver` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context);

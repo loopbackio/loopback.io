@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.build.html
 
 Return the filter object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 build(): Filter<MT>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Filter](./filter.filter.md)<!-- -->&lt;MT&gt;
 

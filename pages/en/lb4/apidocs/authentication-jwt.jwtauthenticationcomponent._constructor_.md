@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationcomponent._co
 
 Constructs a new instance of the `JWTAuthenticationComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application);

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.tointerceptor.html
 
 Wrap an express middleware handler function as an interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function toInterceptor<CTX extends Context = InvocationContext>(firstHandler: ExpressRequestHandler, ...additionalHandlers: ExpressRequestHandler[]): GenericInterceptor<CTX>;
@@ -28,7 +28,7 @@ export declare function toInterceptor<CTX extends Context = InvocationContext>(f
 |  firstHandler | [ExpressRequestHandler](./express.expressrequesthandler.md) | An Express middleware handler |
 |  additionalHandlers | [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | A list of Express middleware handler function |
 
-<b>Returns:</b>
+**Returns:**
 
 [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;
 

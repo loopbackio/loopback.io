@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.providerconstructor.html
 
 For bindings bound via `toProvider()`<!-- -->, this property contains the constructor function of the provider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get providerConstructor(): Constructor<Provider<T>> | undefined;

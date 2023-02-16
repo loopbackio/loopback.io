@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.inspect.html
 
 Inspect the context and dump out a JSON object representing the context hierarchy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inspect(options?: ContextInspectOptions): JSONObject;
@@ -25,9 +25,9 @@ inspect(options?: ContextInspectOptions): JSONObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [ContextInspectOptions](./context.contextinspectoptions.md) | <i>(Optional)</i> Options for inspect |
+|  options | [ContextInspectOptions](./context.contextinspectoptions.md) | _(Optional)_ Options for inspect |
 
-<b>Returns:</b>
+**Returns:**
 
 [JSONObject](./context.jsonobject.md)
 

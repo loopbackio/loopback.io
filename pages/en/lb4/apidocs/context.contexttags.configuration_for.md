@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.configuration_for.html
 
 Binding tag to associate a configuration binding with the target binding key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIGURATION_FOR = "configurationFor"

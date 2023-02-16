@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resolvednode.html
 
 ## ResolvedNode interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ResolvedNode<T> 
@@ -24,6 +24,6 @@ export interface ResolvedNode<T>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [node](./rest.resolvednode.node.md) |  | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
-|  [params?](./rest.resolvednode.params.md) |  | [PathParameterValues](./rest.pathparametervalues.md) | <i>(Optional)</i> |
+|  [params?](./rest.resolvednode.params.md) |  | [PathParameterValues](./rest.pathparametervalues.md) | _(Optional)_ |
 
 

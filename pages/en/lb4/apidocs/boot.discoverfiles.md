@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.discoverfiles.html
 
 Returns all files matching the given glob pattern relative to root
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function discoverFiles(pattern: string, root: string): Promise<string[]>;
@@ -28,7 +28,7 @@ export declare function discoverFiles(pattern: string, root: string): Promise<st
 |  pattern | string | A glob pattern |
 |  root | string | Root folder to start searching for matching files |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string\[\]&gt;
 

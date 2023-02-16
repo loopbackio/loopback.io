@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.datetype.serialize.html
 
 ## DateType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: Date | null | undefined): string | null | undefined;
@@ -25,7 +25,7 @@ serialize(value: Date | null | undefined): string | null | undefined;
 |  --- | --- | --- |
 |  value | Date \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| null \| undefined
 

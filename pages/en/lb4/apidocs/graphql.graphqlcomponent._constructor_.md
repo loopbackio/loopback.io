@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlcomponent._constructor_.html
 
 Constructs a new instance of the `GraphQLComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application);

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.html
 
 Default implementation of `Subject`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultSubject implements Subject 
 ```
-<b>Implements:</b> [Subject](./security.subject.md)
+**Implements:** [Subject](./security.subject.md)
 
 ## Properties
 

@@ -17,7 +17,7 @@ Controls if Allow/Deny vote takes precedence and override other votes. If not se
 
 Once a vote matches the `precedence`<!-- -->, it becomes the final decision. The rest of votes will be skipped.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 precedence?: AuthorizationDecision.DENY | AuthorizationDecision.ALLOW;

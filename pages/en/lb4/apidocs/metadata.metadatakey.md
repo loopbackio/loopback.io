@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatakey.html
 
 Key for metadata access via reflection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MetadataKey<T, D extends DecoratorType> = MetadataAccessor<T, D> | string;
 ```
-<b>References:</b> [DecoratorType](./metadata.decoratortype.md)<!-- -->, [MetadataAccessor](./metadata.metadataaccessor.md)
+**References:** [DecoratorType](./metadata.decoratortype.md)<!-- -->, [MetadataAccessor](./metadata.metadataaccessor.md)
 
 

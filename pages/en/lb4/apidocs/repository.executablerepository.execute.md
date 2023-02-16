@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.executablerepository.execute.html
 
 Execute a query with the given parameter object or an array of parameters
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute(command: Command, parameters: NamedParameters | PositionalParameters, options?: Options): Promise<AnyObject>;
@@ -27,9 +27,9 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 |  --- | --- | --- |
 |  command | [Command](./repository.command.md) | The query string or command object |
 |  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) | The object with name/value pairs or an array of parameter values |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 

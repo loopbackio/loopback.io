@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.injection.html
 
 Descriptor for an injection point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Injection<ValueType = BoundValue> 
@@ -26,10 +26,10 @@ export interface Injection<ValueType = BoundValue>
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [bindingSelector](./context.injection.bindingselector.md) |  | [BindingSelector](./context.bindingselector.md)<!-- -->&lt;ValueType&gt; |  |
-|  [member?](./context.injection.member.md) |  | string | <i>(Optional)</i> |
+|  [member?](./context.injection.member.md) |  | string | _(Optional)_ |
 |  [metadata](./context.injection.metadata.md) |  | [InjectionMetadata](./context.injectionmetadata.md) |  |
-|  [methodDescriptorOrParameterIndex?](./context.injection.methoddescriptororparameterindex.md) |  | TypedPropertyDescriptor&lt;ValueType&gt; \| number | <i>(Optional)</i> |
-|  [resolve?](./context.injection.resolve.md) |  | [ResolverFunction](./context.resolverfunction.md) | <i>(Optional)</i> |
+|  [methodDescriptorOrParameterIndex?](./context.injection.methoddescriptororparameterindex.md) |  | TypedPropertyDescriptor&lt;ValueType&gt; \| number | _(Optional)_ |
+|  [resolve?](./context.injection.resolve.md) |  | [ResolverFunction](./context.resolverfunction.md) | _(Optional)_ |
 |  [target](./context.injection.target.md) |  | Object |  |
 
 

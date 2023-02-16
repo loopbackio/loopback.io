@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.html
 
 ## builtinParsers namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace builtinParsers 

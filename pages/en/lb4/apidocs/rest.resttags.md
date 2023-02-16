@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.html
 
 Binding tags for RestServer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RestTags 

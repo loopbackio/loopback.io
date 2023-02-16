@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.restserverlike.rooturl.html
 
 ## RestServerLike.rootUrl property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rootUrl?: string;

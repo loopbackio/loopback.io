@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.type.iscoercible.html
 
 Check if the given value can be coerced into this type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isCoercible(value: any, options?: Options): boolean;
@@ -26,9 +26,9 @@ isCoercible(value: any, options?: Options): boolean;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | any | The value to to be coerced |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

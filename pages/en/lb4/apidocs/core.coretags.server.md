@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.server.html
 
 Binding tag for servers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SERVER = "server"

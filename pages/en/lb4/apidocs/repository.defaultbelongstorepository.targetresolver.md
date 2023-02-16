@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.targetresol
 
 ## DefaultBelongsToRepository.targetResolver property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetResolver: TypeResolver<Entity, typeof Entity>;

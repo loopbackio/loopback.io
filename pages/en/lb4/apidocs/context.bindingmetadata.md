@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingmetadata.html
 
 Binding metadata from `@injectable`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingMetadata<T = unknown> = {
@@ -23,6 +23,6 @@ export type BindingMetadata<T = unknown> = {
     target: Constructor<T>;
 };
 ```
-<b>References:</b> [BindingTemplate](./context.bindingtemplate.md)<!-- -->, [Constructor](./context.constructor.md)
+**References:** [BindingTemplate](./context.bindingtemplate.md)<!-- -->, [Constructor](./context.constructor.md)
 
 

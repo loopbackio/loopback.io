@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.pushinjection.html
 
 Push the injection onto the session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pushInjection(injection: Readonly<Injection>): void;
@@ -27,7 +27,7 @@ pushInjection(injection: Readonly<Injection>): void;
 |  --- | --- | --- |
 |  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection The current injection |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

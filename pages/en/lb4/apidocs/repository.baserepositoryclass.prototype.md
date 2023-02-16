@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.baserepositoryclass.prototype.html
 
 ## BaseRepositoryClass.prototype property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 prototype: R;

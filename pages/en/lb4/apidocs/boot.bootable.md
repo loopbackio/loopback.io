@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootable.html
 
 Interface to describe the additions made available to an Application that uses BootMixin.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Bootable 
@@ -25,7 +25,7 @@ export interface Bootable
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bootOptions?](./boot.bootable.bootoptions.md) |  | [BootOptions](./boot.bootoptions.md) | <i>(Optional)</i> Options for boot |
+|  [bootOptions?](./boot.bootable.bootoptions.md) |  | [BootOptions](./boot.bootoptions.md) | _(Optional)_ Options for boot |
 |  [projectRoot](./boot.bootable.projectroot.md) |  | string | Root directory for the project to be booted |
 
 ## Methods

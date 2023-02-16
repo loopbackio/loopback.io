@@ -17,7 +17,7 @@ Selection of fields
 
 Example: `{afieldname: true}`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Fields<MT = AnyObject> = {

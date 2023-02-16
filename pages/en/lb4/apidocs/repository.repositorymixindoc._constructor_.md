@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc._constructor_.html
 
 Constructs a new instance of the `RepositoryMixinDoc` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(...args: any[]);

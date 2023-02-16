@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.deepproperty.html
 
 Get a binding address for retrieving a deep property of the object bound to the current binding key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deepProperty<PropertyValueType>(propertyPath: string): BindingKey<PropertyValueType>;
@@ -27,7 +27,7 @@ deepProperty<PropertyValueType>(propertyPath: string): BindingKey<PropertyValueT
 |  --- | --- | --- |
 |  propertyPath | string | A dot-separated path to a (deep) property, e.g. "server.port". |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingKey](./context.bindingkey.md)<!-- -->&lt;PropertyValueType&gt;
 

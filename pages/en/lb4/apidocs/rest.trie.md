@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.trie.html
 
 An implementation of trie for routes. The key hierarchy is built with parts of the route path delimited by `/`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Trie<T> 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.route.html
 
 Register a socketio controller
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 route(controllerClass: Constructor<object>, meta?: SocketIoMetadata | string | RegExp): Server<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any> | import("socket.io").Namespace<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>;
@@ -26,9 +26,9 @@ route(controllerClass: Constructor<object>, meta?: SocketIoMetadata | string | R
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; |  |
-|  meta | [SocketIoMetadata](./socketio.socketiometadata.md) \| string \| RegExp | <i>(Optional)</i> |
+|  meta | [SocketIoMetadata](./socketio.socketiometadata.md) \| string \| RegExp | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Server&lt;import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any&gt; \| import("socket.io").Namespace&lt;import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any&gt;
 

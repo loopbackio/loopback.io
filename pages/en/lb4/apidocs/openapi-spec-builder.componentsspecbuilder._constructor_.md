@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder._const
 
 Constructs a new instance of the `ComponentsSpecBuilder` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor();

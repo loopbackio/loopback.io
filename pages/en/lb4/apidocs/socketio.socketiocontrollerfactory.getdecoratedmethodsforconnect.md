@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.getdecoratedme
 
 ## SocketIoControllerFactory.getDecoratedMethodsForConnect() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDecoratedMethodsForConnect(): MetadataMap<boolean>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;boolean&gt;
 

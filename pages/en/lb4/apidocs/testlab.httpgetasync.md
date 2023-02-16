@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.httpgetasync.html
 
 Async wrapper for making HTTP GET requests
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function httpGetAsync(urlString: string, agent?: http.Agent): Promise<IncomingMessage>;
@@ -26,9 +26,9 @@ export declare function httpGetAsync(urlString: string, agent?: http.Agent): Pro
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  urlString | string |  |
-|  agent | http.Agent | <i>(Optional)</i> |
+|  agent | http.Agent | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;IncomingMessage&gt;
 

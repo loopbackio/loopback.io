@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmany.html
 
 Decorator for hasMany Calls property.array decorator underneath the hood and infers foreign key name from target model name unless explicitly specified
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function hasMany<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<HasManyDefinition>): (decoratedTarget: object, key: string) => void;
@@ -26,9 +26,9 @@ export declare function hasMany<T extends Entity>(targetResolver: EntityResolver
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | Target model for hasMany relation |
-|  definition | Partial&lt;[HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up hasMany relation |
+|  definition | Partial&lt;[HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->&gt; | _(Optional)_ Optional metadata for setting up hasMany relation |
 
-<b>Returns:</b>
+**Returns:**
 
 (decoratedTarget: object, key: string) =&gt; void
 

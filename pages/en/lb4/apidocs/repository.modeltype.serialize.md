@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeltype.serialize.html
 
 ## ModelType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: T | null | undefined): Object | null | undefined;
@@ -25,7 +25,7 @@ serialize(value: T | null | undefined): Object | null | undefined;
 |  --- | --- | --- |
 |  value | T \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Object \| null \| undefined
 

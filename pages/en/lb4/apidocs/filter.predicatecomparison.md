@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.predicatecomparison.html
 
 Matching predicate comparison
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PredicateComparison<PT> = {

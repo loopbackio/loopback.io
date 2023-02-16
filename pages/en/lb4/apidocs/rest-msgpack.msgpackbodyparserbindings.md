@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparserbindings.html
 
 ## MsgPackBodyParserBindings namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace MsgPackBodyParserBindings 

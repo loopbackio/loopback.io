@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.action_middleware_chain.html
 
 Legacy middleware chain for action-based REST sequence
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ACTION_MIDDLEWARE_CHAIN = "middlewareChain.rest.actions"

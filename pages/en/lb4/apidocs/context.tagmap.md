@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.context.tagmap.html
 
 ## TagMap type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TagMap = MapObject<any>;
 ```
-<b>References:</b> [MapObject](./context.mapobject.md)
+**References:** [MapObject](./context.mapobject.md)
 
 

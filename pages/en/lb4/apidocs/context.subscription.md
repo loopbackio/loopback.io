@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.subscription.html
 
 Subscription of context events. It's modeled after https://github.com/tc39/proposal-observable.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Subscription 

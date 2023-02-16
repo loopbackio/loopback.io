@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.mocktestoauth2socialapp.star
 
 ## MockTestOauth2SocialApp.startMock variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 startMock: typeof startApp

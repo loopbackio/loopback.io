@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.servers.html
 
 Binding key for servers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SERVERS = "servers"

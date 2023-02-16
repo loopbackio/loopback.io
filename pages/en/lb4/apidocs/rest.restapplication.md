@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.html
 
 An implementation of the Application class that automatically provides an instance of a REST server. This application class is intended to be a single-server implementation. Any attempt to bind additional servers will throw an error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RestApplication extends Application implements HttpServerLike 
 ```
-<b>Extends:</b> [Application](./core.application.md)
+**Extends:** [Application](./core.application.md)
 
-<b>Implements:</b> [HttpServerLike](./rest.httpserverlike.md)
+**Implements:** [HttpServerLike](./rest.httpserverlike.md)
 
 ## Constructors
 

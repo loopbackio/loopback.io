@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.getreposit
 
 ## ApplicationWithRepositories.getRepository() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
@@ -25,7 +25,7 @@ getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
 |  --- | --- | --- |
 |  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;R&gt;
 

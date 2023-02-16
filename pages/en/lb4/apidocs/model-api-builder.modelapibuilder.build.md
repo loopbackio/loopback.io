@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.modelapibuilder.build.html
 
 ## ModelApiBuilder.build() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 build(application: ApplicationWithRepositories, modelClass: typeof Model & {
@@ -29,7 +29,7 @@ build(application: ApplicationWithRepositories, modelClass: typeof Model & {
 |  modelClass | typeof [Model](./repository.model.md) &amp; { prototype: [Model](./repository.model.md)<!-- -->; } |  |
 |  config | [ModelApiConfig](./model-api-builder.modelapiconfig.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

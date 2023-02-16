@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.orderedgroups.htm
 
 An array of group names to denote the order of execution, such as `['cors', 'caching', 'rate-limiting']`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 orderedGroups?: string[];

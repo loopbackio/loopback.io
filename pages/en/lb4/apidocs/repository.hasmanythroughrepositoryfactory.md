@@ -17,7 +17,7 @@ a factory to generate hasManyThrough repository class.
 
 Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HasManyThroughRepositoryFactory<TargetEntity extends Entity, TargetID, ThroughEntity extends Entity, SourceID> = {
@@ -25,6 +25,6 @@ export type HasManyThroughRepositoryFactory<TargetEntity extends Entity, TargetI
     inclusionResolver: InclusionResolver<Entity, TargetEntity>;
 };
 ```
-<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [HasManyThroughRepository](./repository.hasmanythroughrepository.md)<!-- -->, [InclusionResolver](./repository.inclusionresolver.md)
+**References:** [Entity](./repository.entity.md)<!-- -->, [HasManyThroughRepository](./repository.hasmanythroughrepository.md)<!-- -->, [InclusionResolver](./repository.inclusionresolver.md)
 
 

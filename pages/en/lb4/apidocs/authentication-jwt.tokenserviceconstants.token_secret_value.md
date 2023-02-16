@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.tokenserviceconstants.token_se
 
 ## TokenServiceConstants.TOKEN\_SECRET\_VALUE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 TOKEN_SECRET_VALUE = "myjwts3cr3t"

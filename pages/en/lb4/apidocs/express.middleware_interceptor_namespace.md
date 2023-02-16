@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middleware_interceptor_namespace.html
 
 Default namespace for Express middleware based local interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MIDDLEWARE_INTERCEPTOR_NAMESPACE = "globalInterceptors.middleware"

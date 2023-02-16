@@ -17,7 +17,7 @@ The target model of this relation.
 
 E.g. when a Customer has many Order instances, then Order is the target.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 target: TypeResolver<Entity, typeof Entity>;

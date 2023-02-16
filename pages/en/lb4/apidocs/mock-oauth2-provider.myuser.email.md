@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.myuser.email.html
 
 ## MyUser.email property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 email?: string;

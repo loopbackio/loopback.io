@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonerepository.delete.html
 
 Delete the related target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(options?: Options & {
@@ -27,9 +27,9 @@ delete(options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> options.polymorphicType - a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ options.polymorphicType - a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

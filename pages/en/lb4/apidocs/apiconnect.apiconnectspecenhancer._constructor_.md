@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectspecenhancer._constructor_.h
 
 Constructs a new instance of the `ApiConnectSpecEnhancer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: ApiConnectSpecOptions, appMetadata?: ApplicationMetadata);
@@ -26,6 +26,6 @@ constructor(options: ApiConnectSpecOptions, appMetadata?: ApplicationMetadata);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  options | [ApiConnectSpecOptions](./apiconnect.apiconnectspecoptions.md) |  |
-|  appMetadata | [ApplicationMetadata](./core.applicationmetadata.md) | <i>(Optional)</i> |
+|  appMetadata | [ApplicationMetadata](./core.applicationmetadata.md) | _(Optional)_ |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.applicationmetadata.description.html
 
 ## ApplicationMetadata.description property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 description: string;

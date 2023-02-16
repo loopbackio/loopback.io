@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollers.html
 
 A binding filter to match socket.io controllers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 socketIoControllers: BindingFilter

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.pooledvalue.pool.html
 
 The resource pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pool: Pool<T>;

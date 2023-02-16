@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressmiddlewareinterceptorprovider._con
 
 Constructs a new instance of the `ExpressMiddlewareInterceptorProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?: CFG | ContextView<CFG>);
@@ -26,6 +26,6 @@ constructor(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; |  |
-|  middlewareConfig | CFG \| [ContextView](./context.contextview.md)<!-- -->&lt;CFG&gt; | <i>(Optional)</i> |
+|  middlewareConfig | CFG \| [ContextView](./context.contextview.md)<!-- -->&lt;CFG&gt; | _(Optional)_ |
 
 

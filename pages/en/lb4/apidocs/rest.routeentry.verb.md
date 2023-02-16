@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routeentry.verb.html
 
 http verb
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly verb: string;

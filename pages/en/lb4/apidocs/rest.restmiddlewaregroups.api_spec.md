@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.api_spec.html
 
 Server OpenAPI specs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 API_SPEC = "apiSpec"

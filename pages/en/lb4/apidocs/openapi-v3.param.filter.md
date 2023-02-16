@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.filter.html
 
 Sugar decorator for `filter` query parameter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function filter(modelCtor: typeof Model, options?: string | (FilterSchemaOptions & {
@@ -28,9 +28,9 @@ function filter(modelCtor: typeof Model, options?: string | (FilterSchemaOptions
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | Model class |
-|  options | string \| ([FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) &amp; { name?: string; }) | <i>(Optional)</i> Options to customize the parameter name or filter schema |
+|  options | string \| ([FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) &amp; { name?: string; }) | _(Optional)_ Options to customize the parameter name or filter schema |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: object, member: string, index: number) =&gt; void
 

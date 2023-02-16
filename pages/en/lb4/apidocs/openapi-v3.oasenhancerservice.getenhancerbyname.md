@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice.getenhancerbyname.h
 
 Find an enhancer by its name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getEnhancerByName<T extends OASEnhancer = OASEnhancer>(name: string): Promise<T | undefined>;
@@ -27,7 +27,7 @@ getEnhancerByName<T extends OASEnhancer = OASEnhancer>(name: string): Promise<T 
 |  --- | --- | --- |
 |  name | string | The name of the enhancer you want to find |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T \| undefined&gt;
 

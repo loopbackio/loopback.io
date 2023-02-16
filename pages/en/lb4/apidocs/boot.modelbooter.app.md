@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelbooter.app.html
 
 ## ModelBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: ApplicationWithRepositories;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.target.html
 
 A constant to reference the target of a decoration
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static TARGET: string;

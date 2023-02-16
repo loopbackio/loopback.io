@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injection.target.html
 
 ## Injection.target property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 target: Object;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.decoratorname.html
 
 ## DecoratorFactory.decoratorName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected decoratorName: string;

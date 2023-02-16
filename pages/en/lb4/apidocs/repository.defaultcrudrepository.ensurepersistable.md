@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.ensurepersistabl
 
 Converts an entity object to a JSON object to check if it contains navigational property. Throws an error if `entity` contains navigational property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected ensurePersistable<R extends T>(entity: R | DataObject<R>, options?: {}): legacy.ModelData<legacy.PersistedModel>;
@@ -26,9 +26,9 @@ protected ensurePersistable<R extends T>(entity: R | DataObject<R>, options?: {}
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | R \| [DataObject](./repository.dataobject.md)<!-- -->&lt;R&gt; | The entity passed from CRUD operations' caller. |
-|  options | {} | <i>(Optional)</i> |
+|  options | {} | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 legacy.ModelData&lt;legacy.PersistedModel&gt;
 

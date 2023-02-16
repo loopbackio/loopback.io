@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.next.html
 
 The `next` function that can be used to invoke next generic interceptor in the chain
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Next = () => ValueOrPromise<NonVoid>;
 ```
-<b>References:</b> [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
+**References:** [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
 
 

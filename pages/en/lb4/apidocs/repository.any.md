@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.any.html
 
 ## ANY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ANY: AnyType

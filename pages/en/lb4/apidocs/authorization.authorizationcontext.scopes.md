@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcontext.scopes.html
 
 An array of scopes representing granted permissions - usually come from access tokens
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scopes: string[];

@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyvalidationoptions.html
 
 ## RequestBodyValidationOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RequestBodyValidationOptions = ValidationOptions;
 ```
-<b>References:</b> [ValidationOptions](./rest.validationoptions.md)
+**References:** [ValidationOptions](./rest.validationoptions.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.parseparams.html
 
 ## DefaultSequence.parseParams property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected parseParams: ParseParams;

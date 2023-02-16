@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.once_5.html
 
 ## ContextView.once() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 once(event: string | symbol, listener: (...args: any[]) => void): this;
@@ -26,7 +26,7 @@ once(event: string | symbol, listener: (...args: any[]) => void): this;
 |  event | string \| symbol |  |
 |  listener | (...args: any\[\]) =&gt; void |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

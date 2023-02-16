@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.nulltype.coerce.html
 
 ## NullType.coerce() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 coerce(value: any): null;
@@ -25,7 +25,7 @@ coerce(value: any): null;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 null
 

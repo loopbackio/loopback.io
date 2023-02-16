@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingscope.html
 
 Scope for binding values
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum BindingScope 

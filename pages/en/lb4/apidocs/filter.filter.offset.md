@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filter.offset.html
 
 Offset N number of entities. An alias for `skip`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 offset?: number;

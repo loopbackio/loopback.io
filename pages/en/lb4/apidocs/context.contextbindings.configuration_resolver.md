@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextbindings.configuration_resolver.ht
 
 Binding key for ConfigurationResolver
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIGURATION_RESOLVER: BindingKey<ConfigurationResolver>

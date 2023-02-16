@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.resource.html
 
 Name of the resource, default to the method name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resource?: string;

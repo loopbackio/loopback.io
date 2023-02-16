@@ -17,7 +17,7 @@ permalink: /doc/en/lb4/apidocs.security.subject.html
 
 Such operations include: - authentication (login) - authorization (access control) - session access - logout
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Subject 

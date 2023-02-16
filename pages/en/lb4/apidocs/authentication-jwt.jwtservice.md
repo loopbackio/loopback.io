@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtservice.html
 
 ## JWTService class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JWTService implements TokenService 
 ```
-<b>Implements:</b> [TokenService](./authentication.tokenservice.md)
+**Implements:** [TokenService](./authentication.tokenservice.md)
 
 ## Constructors
 

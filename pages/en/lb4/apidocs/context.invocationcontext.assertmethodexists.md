@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.assertmethodexists.html
 
 Assert the method exists on the target. An error will be thrown if otherwise.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 assertMethodExists(): Record<string, Function>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Record&lt;string, Function&gt;
 

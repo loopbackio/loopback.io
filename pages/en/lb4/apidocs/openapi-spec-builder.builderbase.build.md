@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.builderbase.build.html
 
 Build the spec object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 build(): T;
 ```
-<b>Returns:</b>
+**Returns:**
 
 T
 

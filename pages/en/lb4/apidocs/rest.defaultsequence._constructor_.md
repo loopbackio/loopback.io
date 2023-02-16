@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence._constructor_.html
 
 Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(findRoute: FindRoute, parseParams: ParseParams, invoke: InvokeMethod, send: Send, reject: Reject);

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.applicationconfig.name.html
 
 Name of the application context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name?: string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository._constructo
 
 Constructor of DefaultBelongsToEntityCrudRepository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(getTargetRepository: Getter<TargetRepository> | {

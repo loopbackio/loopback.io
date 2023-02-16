@@ -17,7 +17,7 @@ Type helper to infer prototype from a constructor function.
 
 Example: `PrototypeOf<typeof Entity>` is resolved to `Entity`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PrototypeOf<Ctor extends Function> = Ctor extends {

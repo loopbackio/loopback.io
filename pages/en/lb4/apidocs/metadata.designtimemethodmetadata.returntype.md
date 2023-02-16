@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.returntype.html
 
 Return type, may be `undefined` (e.g. for constructors).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 returnType: Function | undefined;

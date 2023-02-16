@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.notification.html
 
 Event data for observer notifications
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Notification extends ContextEvent 
 ```
-<b>Extends:</b> [ContextEvent](./context.contextevent.md)
+**Extends:** [ContextEvent](./context.contextevent.md)
 
 ## Properties
 

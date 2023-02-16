@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.get.html
 
 ## DefaultKeyValueRepository.get() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(key: string, options?: Options): Promise<T>;
@@ -24,9 +24,9 @@ get(key: string, options?: Options): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

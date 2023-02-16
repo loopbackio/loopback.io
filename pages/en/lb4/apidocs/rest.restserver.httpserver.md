@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.httpserver.html
 
 ## RestServer.httpServer property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get httpServer(): HttpServer | undefined;

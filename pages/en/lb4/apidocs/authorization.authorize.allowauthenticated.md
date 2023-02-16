@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allowauthenticated.html
 
 Allow authenticated users
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowAuthenticated: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

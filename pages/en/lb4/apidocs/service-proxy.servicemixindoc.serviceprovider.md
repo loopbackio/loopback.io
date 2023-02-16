@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.servicemixindoc.serviceprovider.htm
 
 Add a service to this application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serviceProvider<S>(provider: Constructor<Provider<S>>): Binding<S>;
@@ -27,7 +27,7 @@ serviceProvider<S>(provider: Constructor<Provider<S>>): Binding<S>;
 |  --- | --- | --- |
 |  provider | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; | The service provider to register. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;S&gt;
 

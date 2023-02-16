@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.instancewithbooters.booters.html
 
 ## InstanceWithBooters.booters property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 booters?: Constructor<Booter>[];

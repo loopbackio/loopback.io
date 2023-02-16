@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.isvisibleto.html
 
 Check if this context is visible (same or ancestor) to the given one
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isVisibleTo(ctx: Context): boolean;
@@ -27,7 +27,7 @@ isVisibleTo(ctx: Context): boolean;
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Another context object |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

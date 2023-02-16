@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.logging.loggingcomponent.html
 
 A component providing logging facilities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LoggingComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

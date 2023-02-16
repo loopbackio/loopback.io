@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationtags.authorizer.html
 
 A tag for authorizers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHORIZER = "authorizer"

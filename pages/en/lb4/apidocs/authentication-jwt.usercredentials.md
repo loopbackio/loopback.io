@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.usercredentials.html
 
 ## UserCredentials class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class UserCredentials extends Entity 
 ```
-<b>Extends:</b> [Entity](./repository.entity.md)
+**Extends:** [Entity](./repository.entity.md)
 
 ## Constructors
 

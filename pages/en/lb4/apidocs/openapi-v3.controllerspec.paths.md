@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.controllerspec.paths.html
 
 The available paths and operations for the API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 paths: PathObject;

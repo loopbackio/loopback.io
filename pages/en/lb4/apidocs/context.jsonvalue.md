@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.jsonvalue.html
 
 JSON values - primitive - object - array
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type JSONValue = JSONPrimitive | JSONObject | JSONArray;
 ```
-<b>References:</b> [JSONPrimitive](./context.jsonprimitive.md)<!-- -->, [JSONObject](./context.jsonobject.md)<!-- -->, [JSONArray](./context.jsonarray.md)
+**References:** [JSONPrimitive](./context.jsonprimitive.md)<!-- -->, [JSONObject](./context.jsonobject.md)<!-- -->, [JSONArray](./context.jsonarray.md)
 
 

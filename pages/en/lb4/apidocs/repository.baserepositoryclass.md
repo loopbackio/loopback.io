@@ -17,7 +17,7 @@ Signature for repository classes that can be used as the base class for `define*
 
 `define*` functions require a class implementing this interface on input.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BaseRepositoryClass<M extends typeof Model, R extends Repository<PrototypeOf<M>>> 

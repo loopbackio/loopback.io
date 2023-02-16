@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.notification.observers.html
 
 A snapshot of observers when the original event is emitted
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 observers: Set<ContextEventObserver>;

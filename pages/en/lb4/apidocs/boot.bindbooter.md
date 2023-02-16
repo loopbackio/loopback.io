@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bindbooter.html
 
 Method which binds a given Booter to a given Context with the Prefix and Tags expected by the Bootstrapper
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bindBooter(ctx: Context, booterCls: Constructor<Booter>): Binding;
@@ -28,7 +28,7 @@ export declare function bindBooter(ctx: Context, booterCls: Constructor<Booter>)
 |  ctx | [Context](./context.context.md) | The Context to bind the Booter Class |
 |  booterCls | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt; | Booter class to be bound |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

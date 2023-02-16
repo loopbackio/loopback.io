@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.security_scheme_spec.html
 
 ## SECURITY\_SCHEME\_SPEC variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SECURITY_SCHEME_SPEC: SecuritySchemeObjects

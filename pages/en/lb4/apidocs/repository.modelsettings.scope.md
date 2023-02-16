@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelsettings.scope.html
 
 Scope enables you to set a scope that will apply to every query made by the model's repository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scope?: object;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootcomponent.booters.html
 
 ## BootComponent.booters property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 booters: (typeof ApplicationMetadataBooter | typeof ControllerBooter | typeof DataSourceBooter | typeof InterceptorProviderBooter | typeof LifeCycleObserverBooter | typeof ModelApiBooter | typeof ModelBooter | typeof RepositoryBooter | typeof ServiceBooter)[];

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.find.html
 
 Find bindings using a key pattern or filter function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find<ValueType = BoundValue>(pattern?: string | RegExp | BindingFilter): Readonly<Binding<ValueType>>[];
@@ -25,9 +25,9 @@ find<ValueType = BoundValue>(pattern?: string | RegExp | BindingFilter): Readonl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | <p><i>(Optional)</i> A filter function, a regexp or a wildcard pattern with optional <code>*</code> and <code>?</code>. Find returns such bindings where the key matches the provided pattern.</p><p>For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code></p><p>For a filter function: - return <code>true</code> to include the binding in the results - return <code>false</code> to exclude it.</p> |
+|  pattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | <p>_(Optional)_ A filter function, a regexp or a wildcard pattern with optional <code>*</code> and <code>?</code>. Find returns such bindings where the key matches the provided pattern.</p><p>For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code></p><p>For a filter function: - return <code>true</code> to include the binding in the results - return <code>false</code> to exclude it.</p> |
 
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 

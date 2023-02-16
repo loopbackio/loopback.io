@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authmetadataprovider.value.html
 
 ## AuthMetadataProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): AuthenticationMetadata[] | undefined;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined
 

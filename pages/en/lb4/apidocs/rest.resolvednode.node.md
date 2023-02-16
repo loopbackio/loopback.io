@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resolvednode.node.html
 
 ## ResolvedNode.node property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 node: Node<T>;

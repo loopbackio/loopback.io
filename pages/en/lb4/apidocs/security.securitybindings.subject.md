@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.securitybindings.subject.html
 
 Binding key for subject
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SUBJECT: BindingKey<Subject>

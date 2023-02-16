@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajvfactory.html
 
 A factory to create Ajv instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ajvFactory?: (options: AjvOptions) => Ajv;

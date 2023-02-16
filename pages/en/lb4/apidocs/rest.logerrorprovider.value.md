@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.logerrorprovider.value.html
 
 ## LogErrorProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static value(): LogError;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [LogError](./rest.logerror.md)
 

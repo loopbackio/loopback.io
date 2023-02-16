@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder._constr
 
 Constructs a new instance of the `OperationSpecBuilder` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor();

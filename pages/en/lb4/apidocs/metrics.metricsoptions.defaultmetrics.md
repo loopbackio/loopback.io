@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsoptions.defaultmetrics.html
 
 ## MetricsOptions.defaultMetrics property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultMetrics?: {

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect._constructor_.html
 
 Constructs a new instance of the `NamespacedReflect` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(namespace?: string | undefined);
@@ -25,6 +25,6 @@ constructor(namespace?: string | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  namespace | string \| undefined | <i>(Optional)</i> Namespace to bind this reflect context |
+|  namespace | string \| undefined | _(Optional)_ Namespace to bind this reflect context |
 
 

@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.context.bindingaddress.html
 
 ## BindingAddress type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingAddress<T = unknown> = string | BindingKey<T>;
 ```
-<b>References:</b> [BindingKey](./context.bindingkey.md)
+**References:** [BindingKey](./context.bindingkey.md)
 
 

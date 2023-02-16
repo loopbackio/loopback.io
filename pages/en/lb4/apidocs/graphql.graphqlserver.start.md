@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.start.html
 
 ## GraphQLServer.start() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 start(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

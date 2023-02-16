@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.getdecoratesub
 
 ## SocketIoControllerFactory.getDecorateSubscribeMethods() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected getDecorateSubscribeMethods(): MetadataMap<(string | RegExp)[]>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;(string \| RegExp)\[\]&gt;
 

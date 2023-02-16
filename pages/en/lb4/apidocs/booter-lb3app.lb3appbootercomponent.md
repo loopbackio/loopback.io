@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.booter-lb3app.lb3appbootercomponent.html
 
 ## Lb3AppBooterComponent class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Lb3AppBooterComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Properties
 

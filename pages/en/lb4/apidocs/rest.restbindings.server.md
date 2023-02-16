@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.server.html
 
 Binding key for the server itself
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SERVER: BindingKey<RestServer>

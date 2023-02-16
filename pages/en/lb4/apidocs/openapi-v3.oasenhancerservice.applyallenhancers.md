@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice.applyallenhancers.h
 
 Generate OpenAPI spec by applying ALL registered enhancers TBD: load enhancers by group names
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 applyAllEnhancers(options?: {}): Promise<OpenApiSpec>;
@@ -25,9 +25,9 @@ applyAllEnhancers(options?: {}): Promise<OpenApiSpec>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | {} | <i>(Optional)</i> |
+|  options | {} | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 

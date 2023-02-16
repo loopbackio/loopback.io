@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.findroute.html
 
 ## DefaultSequence.findRoute property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected findRoute: FindRoute;

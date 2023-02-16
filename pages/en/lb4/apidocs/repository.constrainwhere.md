@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.constrainwhere.html
 
 A utility function which takes a where filter and enforces constraint(s) on it
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function constrainWhere<T extends object>(originalWhere: Where<T> | undefined, constraint: Where<T>): Where<T>;
@@ -28,7 +28,7 @@ export declare function constrainWhere<T extends object>(originalWhere: Where<T>
 |  originalWhere | [Where](./filter.where.md)<!-- -->&lt;T&gt; \| undefined | the where filter to apply the constrain(s) to |
 |  constraint | [Where](./filter.where.md)<!-- -->&lt;T&gt; | the constraint which is to be applied on the filter |
 
-<b>Returns:</b>
+**Returns:**
 
 [Where](./filter.where.md)<!-- -->&lt;T&gt;
 

@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.html
 
 GraphQL Server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class GraphQLServer extends Context implements Server 
 ```
-<b>Extends:</b> [Context](./context.context.md)
+**Extends:** [Context](./context.context.md)
 
-<b>Implements:</b> [Server](./core.server.md)
+**Implements:** [Server](./core.server.md)
 
 ## Constructors
 
@@ -35,7 +35,7 @@ export declare class GraphQLServer extends Context implements Server
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [expressApp](./graphql.graphqlserver.expressapp.md) | <code>readonly</code> | express.Application |  |
-|  [httpServer?](./graphql.graphqlserver.httpserver.md) | <code>readonly</code> | [HttpServer](./http-server.httpserver.md) | <i>(Optional)</i> |
+|  [httpServer?](./graphql.graphqlserver.httpserver.md) | <code>readonly</code> | [HttpServer](./http-server.httpserver.md) | _(Optional)_ |
 |  [listening](./graphql.graphqlserver.listening.md) | <code>readonly</code> | boolean | Is the GraphQL listening |
 
 ## Methods

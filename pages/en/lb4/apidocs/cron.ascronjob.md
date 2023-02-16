@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.cron.ascronjob.html
 
 A `BindingTemplate` function to configure the binding as a cron job.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asCronJob<T = unknown>(binding: Binding<T>): Binding<T>;
@@ -27,7 +27,7 @@ export declare function asCronJob<T = unknown>(binding: Binding<T>): Binding<T>;
 |  --- | --- | --- |
 |  binding | [Binding](./context.binding.md)<!-- -->&lt;T&gt; | Binding object |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;T&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.securityschemeobjects.html
 
 ## SecuritySchemeObjects type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SecuritySchemeObjects = {

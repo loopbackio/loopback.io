@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.model.tojson.html
 
 Serialize into a plain JSON object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toJSON(): Object;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Object
 

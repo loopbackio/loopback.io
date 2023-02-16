@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontrolleroptions.html
 
 Options to configure different aspects of a CRUD REST Controller.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CrudRestControllerOptions 
@@ -26,6 +26,6 @@ export interface CrudRestControllerOptions
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [basePath](./rest-crud.crudrestcontrolleroptions.basepath.md) |  | string | The base path where to "mount" the controller. |
-|  [readonly?](./rest-crud.crudrestcontrolleroptions.readonly.md) |  | boolean | <i>(Optional)</i> Whether to generate readonly APIs |
+|  [readonly?](./rest-crud.crudrestcontrolleroptions.readonly.md) |  | boolean | _(Optional)_ Whether to generate readonly APIs |
 
 

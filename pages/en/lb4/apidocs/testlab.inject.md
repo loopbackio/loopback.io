@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.inject.html
 
 ## inject variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inject: (dispatchFunc: ShotListener, options: ShotRequestOptions) => Promise<ResponseObject>

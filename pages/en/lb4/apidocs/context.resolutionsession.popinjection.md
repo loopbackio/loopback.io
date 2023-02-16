@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.popinjection.html
 
 Pop the last injection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 popInjection(): Readonly<Injection<any>>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Injection](./context.injection.md)<!-- -->&lt;any&gt;&gt;
 

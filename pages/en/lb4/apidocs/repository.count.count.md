@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.count.count.html
 
 ## Count.count property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 count: number;

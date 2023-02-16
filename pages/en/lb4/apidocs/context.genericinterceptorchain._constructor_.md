@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain._constructor_.htm
 
 Create an invocation chain with a list of interceptor functions or binding keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: C, interceptors: GenericInterceptorOrKey<C>[]);

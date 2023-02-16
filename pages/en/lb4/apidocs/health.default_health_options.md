@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.health.default_health_options.html
 
 ## DEFAULT\_HEALTH\_OPTIONS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_HEALTH_OPTIONS: HealthOptions

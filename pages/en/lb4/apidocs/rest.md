@@ -25,7 +25,6 @@ A REST server for LoopBack 4 application instances, complete with:
 
 |  Class | Description |
 |  --- | --- |
-|  [BaseRoute](./rest.baseroute.md) | Base implementation of RouteEntry |
 |  [ControllerRoute](./rest.controllerroute.md) | A route backed by a controller |
 |  [DefaultSequence](./rest.defaultsequence.md) | The default implementation of SequenceHandler. |
 |  [FindRouteMiddlewareProvider](./rest.findroutemiddlewareprovider.md) |  |
@@ -58,6 +57,12 @@ A REST server for LoopBack 4 application instances, complete with:
 |  [Trie](./rest.trie.md) | An implementation of trie for routes. The key hierarchy is built with parts of the route path delimited by <code>/</code> |
 |  [TrieRouter](./rest.trierouter.md) | Router implementation based on trie |
 |  [UrlEncodedBodyParser](./rest.urlencodedbodyparser.md) |  |
+
+## Abstract Classes
+
+|  Abstract Class | Description |
+|  --- | --- |
+|  [BaseRoute](./rest.baseroute.md) | Base implementation of RouteEntry |
 
 ## Functions
 

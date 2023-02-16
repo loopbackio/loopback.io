@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.getmiddlewarecontext.html
 
 Retrieve the middleware context from the request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getMiddlewareContext(request: Request): MiddlewareContext | undefined;
@@ -27,7 +27,7 @@ getMiddlewareContext(request: Request): MiddlewareContext | undefined;
 |  --- | --- | --- |
 |  request | Request | Request object |
 
-<b>Returns:</b>
+**Returns:**
 
 [MiddlewareContext](./express.middlewarecontext.md) \| undefined
 

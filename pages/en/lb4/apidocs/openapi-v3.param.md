@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.html
 
 Namespace for `@param.*` decorators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace param 

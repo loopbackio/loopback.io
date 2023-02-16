@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.trierouter.findroutewithpathvars.html
 
 ## TrieRouter.findRouteWithPathVars() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected findRouteWithPathVars(verb: string, path: string): ResolvedRoute | undefined;
@@ -26,7 +26,7 @@ protected findRouteWithPathVars(verb: string, path: string): ResolvedRoute | und
 |  verb | string |  |
 |  path | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolvedRoute](./rest.resolvedroute.md) \| undefined
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.context.html
 
 ## PoolingService.context property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly context: Context;

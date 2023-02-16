@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.refresh.html
 
 Invalidate the binding cache so that its value will be reloaded next time. This is useful to force reloading a cached value when its configuration or dependencies are changed. \*\*WARNING\*\*: The state held in the cached value will be gone.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 refresh(ctx: Context): void;
@@ -27,7 +27,7 @@ refresh(ctx: Context): void;
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validateapipath.html
 
 Validate the path to be compatible with OpenAPI path template. No parameter modifier, custom pattern, or unnamed parameter is allowed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function validateApiPath(path?: string): string;
@@ -25,9 +25,9 @@ export declare function validateApiPath(path?: string): string;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | string | <i>(Optional)</i> |
+|  path | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

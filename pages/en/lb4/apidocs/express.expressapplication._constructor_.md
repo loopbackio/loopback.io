@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressapplication._constructor_.html
 
 Constructs a new instance of the `ExpressApplication` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(config?: ApplicationConfig | undefined);
@@ -25,6 +25,6 @@ constructor(config?: ApplicationConfig | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | [ApplicationConfig](./core.applicationconfig.md) \| undefined | <i>(Optional)</i> |
+|  config | [ApplicationConfig](./core.applicationconfig.md) \| undefined | _(Optional)_ |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.asserttargettype.html
 
 Assert the target type inspected from TypeScript for injection to be the expected type. If the types don't match, an error is thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function assertTargetType(injection: Readonly<Injection>, expectedType: Function, expectedTypeName?: string): string;
@@ -27,9 +27,9 @@ export declare function assertTargetType(injection: Readonly<Injection>, expecte
 |  --- | --- | --- |
 |  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection information |
 |  expectedType | Function | Expected type |
-|  expectedTypeName | string | <i>(Optional)</i> Name of the expected type to be used in the error |
+|  expectedTypeName | string | _(Optional)_ Name of the expected type to be used in the error |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.resolvers.html
 
 Binding key namespace for resolvers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RESOLVERS = "graphql.resolvers"

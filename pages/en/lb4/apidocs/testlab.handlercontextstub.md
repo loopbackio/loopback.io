@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.handlercontextstub.html
 
 ## HandlerContextStub interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HandlerContextStub 

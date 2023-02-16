@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.route.html
 
 ## Route class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Route extends BaseRoute 
 ```
-<b>Extends:</b> [BaseRoute](./rest.baseroute.md)
+**Extends:** [BaseRoute](./rest.baseroute.md)
 
 ## Constructors
 

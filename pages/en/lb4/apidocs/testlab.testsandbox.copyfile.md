@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.copyfile.html
 
 Copies a file from src to the TestSandbox. If copying a `.js` file which has an accompanying `.js.map` file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 copyFile(src: string, dest?: string, transform?: (content: string) => string): Promise<void>;
@@ -26,10 +26,10 @@ copyFile(src: string, dest?: string, transform?: (content: string) => string): P
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  src | string | Absolute path of file to be copied to the TestSandbox |
-|  dest | string | <i>(Optional)</i> Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified. |
-|  transform | (content: string) =&gt; string | <i>(Optional)</i> Optional. A function to transform the file content. |
+|  dest | string | _(Optional)_ Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified. |
+|  transform | (content: string) =&gt; string | _(Optional)_ Optional. A function to transform the file content. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.principals.html
 
 ## DefaultSubject.principals property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly principals: Set<TypedPrincipal>;

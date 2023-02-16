@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.parsejson.html
 
 Parse a json string that rejects prohibited keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function parseJson(text: string, reviver?: (key: any, value: any) => any, prohibitedKeys?: string[]): any;
@@ -26,10 +26,10 @@ export declare function parseJson(text: string, reviver?: (key: any, value: any)
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  text | string | JSON string |
-|  reviver | (key: any, value: any) =&gt; any | <i>(Optional)</i> Optional reviver function for <code>JSON.parse</code> |
-|  prohibitedKeys | string\[\] | <i>(Optional)</i> An array of keys to be rejected |
+|  reviver | (key: any, value: any) =&gt; any | _(Optional)_ Optional reviver function for <code>JSON.parse</code> |
+|  prohibitedKeys | string\[\] | _(Optional)_ An array of keys to be rejected |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

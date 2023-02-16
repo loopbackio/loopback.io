@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.kvconnector.set.html
 
 Set an entry with key/value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 set(modelClass: Class<Entity>, key: string, value: EntityData, options?: Options): Promise<boolean>;
@@ -28,9 +28,9 @@ set(modelClass: Class<Entity>, key: string, value: EntityData, options?: Options
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
 |  key | string | Key for the entry |
 |  value | [EntityData](./repository.entitydata.md) | Value for the entry |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

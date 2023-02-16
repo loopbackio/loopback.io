@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.infospecenhancer.modifyspec.html
 
 ## InfoSpecEnhancer.modifySpec() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modifySpec(spec: OpenApiSpec): OpenApiSpec;
@@ -25,7 +25,7 @@ modifySpec(spec: OpenApiSpec): OpenApiSpec;
 |  --- | --- | --- |
 |  spec | [OpenApiSpec](./openapi-v3.openapispec.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 

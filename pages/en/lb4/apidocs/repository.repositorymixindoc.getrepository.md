@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc.getrepository.html
 
 Retrieve the repository instance from the given Repository class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
@@ -27,7 +27,7 @@ getRepository<R extends Repository<any>>(repo: Class<R>): Promise<R>;
 |  --- | --- | --- |
 |  repo | [Class](./repository.class.md)<!-- -->&lt;R&gt; | The repository class to retrieve the instance of |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;R&gt;
 

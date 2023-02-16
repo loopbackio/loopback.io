@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.isbindingtagfilter.html
 
 Type guard for BindingTagFilter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isBindingTagFilter(filter?: BindingFilter): filter is BindingTagFilter;
@@ -25,9 +25,9 @@ export declare function isBindingTagFilter(filter?: BindingFilter): filter is Bi
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> A BindingFilter function |
+|  filter | [BindingFilter](./context.bindingfilter.md) | _(Optional)_ A BindingFilter function |
 
-<b>Returns:</b>
+**Returns:**
 
 filter is [BindingTagFilter](./context.bindingtagfilter.md)
 

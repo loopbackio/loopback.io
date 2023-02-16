@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationdecision.html
 
 Decisions for authorization
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum AuthorizationDecision 

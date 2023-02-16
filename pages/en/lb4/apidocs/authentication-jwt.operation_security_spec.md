@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.operation_security_spec.html
 
 ## OPERATION\_SECURITY\_SPEC variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 OPERATION_SECURITY_SPEC: {

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext.basepath.html
 
 Get the effective base path of the incoming request. This base path combines `baseUrl` provided by Express when LB4 handler is mounted on a non-root path, with the `basePath` value configured at LB4 side.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get basePath(): string;

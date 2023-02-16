@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getbinding.html
 
 Look up a binding by key in the context and its ancestors. If no matching binding is found, an error will be thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getBinding<ValueType = BoundValue>(key: BindingAddress<ValueType>): Binding<ValueType>;
@@ -27,7 +27,7 @@ getBinding<ValueType = BoundValue>(key: BindingAddress<ValueType>): Binding<Valu
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;
 

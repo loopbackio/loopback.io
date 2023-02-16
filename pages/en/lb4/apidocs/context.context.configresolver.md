@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.configresolver.html
 
 Configuration resolver
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected configResolver: ConfigurationResolver;

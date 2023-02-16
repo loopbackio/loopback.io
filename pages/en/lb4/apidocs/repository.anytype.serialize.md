@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.anytype.serialize.html
 
 ## AnyType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: any): any;
@@ -25,7 +25,7 @@ serialize(value: any): any;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

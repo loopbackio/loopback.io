@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarecontext.responsefinished.html
 
 A flag to tell if the response is finished.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 responseFinished: boolean;

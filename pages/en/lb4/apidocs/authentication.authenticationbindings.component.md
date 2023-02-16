@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.component.h
 
 ## AuthenticationBindings.COMPONENT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<AuthenticationComponent>

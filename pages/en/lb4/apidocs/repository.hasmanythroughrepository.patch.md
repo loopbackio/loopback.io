@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanythroughrepository.patch.html
 
 Patch multiple target model instances
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 patch(dataObject: DataObject<Target> | {
@@ -34,10 +34,10 @@ patch(dataObject: DataObject<Target> | {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt;; } | The fields and their new values to patch |
-|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> Instances within the where scope are patched |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> options.throughOptions.discriminator - target discriminator field on through options.isPolymorphic - whether dataObject is a dictionary |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | _(Optional)_ Instances within the where scope are patched |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { isPolymorphic?: boolean; } | _(Optional)_ options.throughOptions.discriminator - target discriminator field on through options.isPolymorphic - whether dataObject is a dictionary |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

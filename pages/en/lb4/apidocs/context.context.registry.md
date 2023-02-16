@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.registry.html
 
 Key to binding map as the internal registry
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly registry: Map<string, Binding>;

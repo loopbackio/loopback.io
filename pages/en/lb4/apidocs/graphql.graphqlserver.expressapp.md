@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.expressapp.html
 
 ## GraphQLServer.expressApp property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly expressApp: express.Application;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.createclientforhandler.html
 
 Create a SuperTest client connected to an HTTP server listening on an ephemeral port and calling `handler` to handle incoming requests.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createClientForHandler(handler: (req: http.IncomingMessage, res: http.ServerResponse) => void): Client;
@@ -27,7 +27,7 @@ export declare function createClientForHandler(handler: (req: http.IncomingMessa
 |  --- | --- | --- |
 |  handler | (req: http.IncomingMessage, res: http.ServerResponse) =&gt; void |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Client](./testlab.client.md)
 

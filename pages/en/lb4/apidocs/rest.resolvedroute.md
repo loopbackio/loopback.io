@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.resolvedroute.html
 
 A route with path parameters resolved
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ResolvedRoute extends RouteEntry 
 ```
-<b>Extends:</b> [RouteEntry](./rest.routeentry.md)
+**Extends:** [RouteEntry](./rest.routeentry.md)
 
 ## Properties
 

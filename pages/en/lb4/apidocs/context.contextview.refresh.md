@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.contextview.refresh.html
 
 Refresh the view by invalidating its cache
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 refresh(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

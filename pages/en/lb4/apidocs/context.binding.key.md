@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.key.html
 
 Key of the binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly key: string;

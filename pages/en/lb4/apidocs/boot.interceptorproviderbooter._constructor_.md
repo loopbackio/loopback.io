@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderbooter._constructor_.html
 
 Constructs a new instance of the `InterceptorProviderBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, projectRoot: string, interceptorConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: Application, projectRoot: string, interceptorConfig?: ArtifactO
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
 |  projectRoot | string |  |
-|  interceptorConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  interceptorConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

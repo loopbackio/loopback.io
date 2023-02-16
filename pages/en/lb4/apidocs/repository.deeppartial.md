@@ -15,13 +15,13 @@ permalink: /doc/en/lb4/apidocs.repository.deeppartial.html
 
 An extension of the built-in Partial<T> type which allows partial values in deeply nested properties too.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DeepPartial<T> = Partial<T> | {
     [P in keyof T]?: DeepPartial<T[P]>;
 };
 ```
-<b>References:</b> [DeepPartial](./repository.deeppartial.md)
+**References:** [DeepPartial](./repository.deeppartial.md)
 
 

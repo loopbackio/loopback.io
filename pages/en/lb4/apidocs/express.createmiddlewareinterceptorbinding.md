@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.createmiddlewareinterceptorbinding.html
 
 Create a binding for the middleware based interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createMiddlewareInterceptorBinding(middlewareProviderClass: Constructor<Provider<Interceptor>>, options?: MiddlewareInterceptorBindingOptions): Binding<Interceptor>;
@@ -26,9 +26,9 @@ export declare function createMiddlewareInterceptorBinding(middlewareProviderCla
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareProviderClass | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | Middleware provider class |
-|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | <i>(Optional)</i> Options to create middlewareFactory interceptor binding |
+|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | _(Optional)_ Options to create middlewareFactory interceptor binding |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;
 

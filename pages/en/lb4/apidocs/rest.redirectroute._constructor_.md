@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute._constructor_.html
 
 Constructs a new instance of the `RedirectRoute` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(sourcePath: string, targetLocation: string, statusCode?: number);
@@ -27,6 +27,6 @@ constructor(sourcePath: string, targetLocation: string, statusCode?: number);
 |  --- | --- | --- |
 |  sourcePath | string |  |
 |  targetLocation | string |  |
-|  statusCode | number | <i>(Optional)</i> |
+|  statusCode | number | _(Optional)_ |
 
 

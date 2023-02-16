@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.destroy.html
 
 Destroy a resource from the pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 destroy(resource: T): Promise<void>;
@@ -27,7 +27,7 @@ destroy(resource: T): Promise<void>;
 |  --- | --- | --- |
 |  resource | T | Resource instance to be destroyed |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.config.html
 
 ## SocketIoBindings.CONFIG variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIG: BindingKey<SocketIoServerOptions>

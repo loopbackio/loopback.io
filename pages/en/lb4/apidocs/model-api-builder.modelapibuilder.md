@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.modelapibuilder.html
 
 Interface for extensions contributing custom API flavors.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ModelApiBuilder 

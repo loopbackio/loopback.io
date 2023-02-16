@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.singlevalue.html
 
 Get the single value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 singleValue(session?: ResolutionOptionsOrSession): Promise<T | undefined>;
@@ -25,9 +25,9 @@ singleValue(session?: ResolutionOptionsOrSession): Promise<T | undefined>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T \| undefined&gt;
 

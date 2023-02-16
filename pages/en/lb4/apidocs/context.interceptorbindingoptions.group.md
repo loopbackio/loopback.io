@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.interceptorbindingoptions.group.html
 
 Group name for a global interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 group?: string;

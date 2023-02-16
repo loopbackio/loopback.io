@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.issubscribed.html
 
 Check if an observer is subscribed to this context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isSubscribed(observer: ContextObserver): boolean;
@@ -27,7 +27,7 @@ isSubscribed(observer: ContextObserver): boolean;
 |  --- | --- | --- |
 |  observer | [ContextObserver](./context.contextobserver.md) | Context observer |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

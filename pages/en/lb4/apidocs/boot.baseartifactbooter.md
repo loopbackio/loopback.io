@@ -21,12 +21,12 @@ Any Booter extending this base class is expected to
 
 Currently supports the following boot phases: configure, discover, load.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BaseArtifactBooter implements Booter 
 ```
-<b>Implements:</b> [Booter](./boot.booter.md)
+**Implements:** [Booter](./boot.booter.md)
 
 ## Constructors
 

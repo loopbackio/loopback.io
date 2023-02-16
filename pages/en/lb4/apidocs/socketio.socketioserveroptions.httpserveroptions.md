@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserveroptions.httpserveroptions.
 
 ## SocketIoServerOptions.httpServerOptions property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 httpServerOptions?: HttpServerResolvedOptions;

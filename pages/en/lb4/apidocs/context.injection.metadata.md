@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injection.metadata.html
 
 ## Injection.metadata property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metadata: InjectionMetadata;

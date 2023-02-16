@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager._observers.htm
 
 A list of registered context observers. The Set will be created when the first observer is added.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _observers: Set<ContextEventObserver> | undefined;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._requesthandler.html
 
 ## RestServer.\_requestHandler property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _requestHandler: HttpRequestListener;

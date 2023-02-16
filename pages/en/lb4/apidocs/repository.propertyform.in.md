@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertyform.in.html
 
 ## PropertyForm.in property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 in?: boolean;

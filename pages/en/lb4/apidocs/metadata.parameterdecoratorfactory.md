@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metadata.parameterdecoratorfactory.html
 
 Factory for parameter decorators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ParameterDecoratorFactory<T> extends DecoratorFactory<T, MetadataMap<T[]>, ParameterDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, ParameterDecorator&gt;
+**Extends:** [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;, ParameterDecorator&gt;
 
 ## Methods
 

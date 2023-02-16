@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository.create.html
 
 ## DefaultHasManyRepository.create() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(targetModelData: DataObject<TargetEntity>, options?: Options): Promise<TargetEntity>;
@@ -24,9 +24,9 @@ create(targetModelData: DataObject<TargetEntity>, options?: Options): Promise<Ta
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.html
 
 Property definition for a model
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface PropertyDefinition 
@@ -25,12 +25,12 @@ export interface PropertyDefinition
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [hidden?](./repository.propertydefinition.hidden.md) |  | boolean | <i>(Optional)</i> Used to hide this property from the response body, adding this property to the hiddenProperties array |
-|  [id?](./repository.propertydefinition.id.md) |  | boolean \| number | <i>(Optional)</i> |
-|  [itemType?](./repository.propertydefinition.itemtype.md) |  | [PropertyType](./repository.propertytype.md) | <i>(Optional)</i> |
-|  [json?](./repository.propertydefinition.json.md) |  | [PropertyForm](./repository.propertyform.md) | <i>(Optional)</i> |
-|  [jsonSchema?](./repository.propertydefinition.jsonschema.md) |  | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | <i>(Optional)</i> |
-|  [store?](./repository.propertydefinition.store.md) |  | [PropertyForm](./repository.propertyform.md) | <i>(Optional)</i> |
+|  [hidden?](./repository.propertydefinition.hidden.md) |  | boolean | _(Optional)_ Used to hide this property from the response body, adding this property to the hiddenProperties array |
+|  [id?](./repository.propertydefinition.id.md) |  | boolean \| number | _(Optional)_ |
+|  [itemType?](./repository.propertydefinition.itemtype.md) |  | [PropertyType](./repository.propertytype.md) | _(Optional)_ |
+|  [json?](./repository.propertydefinition.json.md) |  | [PropertyForm](./repository.propertyform.md) | _(Optional)_ |
+|  [jsonSchema?](./repository.propertydefinition.jsonschema.md) |  | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | _(Optional)_ |
+|  [store?](./repository.propertydefinition.store.md) |  | [PropertyForm](./repository.propertyform.md) | _(Optional)_ |
 |  [type](./repository.propertydefinition.type.md) |  | [PropertyType](./repository.propertytype.md) |  |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.session.profile.html
 
 ## Session.profile property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 profile: SessionUserProfile;

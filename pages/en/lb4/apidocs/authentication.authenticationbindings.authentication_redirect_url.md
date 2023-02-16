@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.authenticat
 
 ## AuthenticationBindings.AUTHENTICATION\_REDIRECT\_URL variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_REDIRECT_URL: BindingKey<string>

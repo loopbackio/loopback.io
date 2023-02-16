@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.loopbackcontainer.get.html
 
 ## LoopBackContainer.get() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(resolverClass: Constructor<unknown>, resolverData: ResolverData<unknown>): unknown;
@@ -26,7 +26,7 @@ get(resolverClass: Constructor<unknown>, resolverData: ResolverData<unknown>): u
 |  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
 |  resolverData | ResolverData&lt;unknown&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 unknown
 

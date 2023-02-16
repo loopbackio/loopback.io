@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.healthoptions.html
 
 Options for health component
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HealthOptions = {

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.debug.html
 
 Wrap the debug statement so that it always print out the context name as the prefix
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected debug(...args: unknown[]): void;
@@ -27,7 +27,7 @@ protected debug(...args: unknown[]): void;
 |  --- | --- | --- |
 |  args | unknown\[\] | Arguments for the debug |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

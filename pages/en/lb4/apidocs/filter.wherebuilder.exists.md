@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.exists.html
 
 Add a `exists` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exists<K extends KeyOf<MT>>(key: K, val?: boolean): this;
@@ -26,9 +26,9 @@ exists<K extends KeyOf<MT>>(key: K, val?: boolean): this;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | K | Property name |
-|  val | boolean | <i>(Optional)</i> Exists or not |
+|  val | boolean | _(Optional)_ Exists or not |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.mapobject.html
 
 ## MapObject type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MapObject<T> = Record<string, T>;

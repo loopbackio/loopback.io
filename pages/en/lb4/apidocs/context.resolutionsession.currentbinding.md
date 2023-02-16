@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.currentbinding.html
 
 Getter for the current binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get currentBinding(): Readonly<Binding> | undefined;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.sequence.html
 
 ## SocketIoBindings.SEQUENCE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SEQUENCE: BindingKey<SocketIoSequence>

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootable.booters.html
 
 Register booters
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 booters(...booterClasses: Constructor<Booter>[]): Binding[];
@@ -27,7 +27,7 @@ booters(...booterClasses: Constructor<Booter>[]): Binding[];
 |  --- | --- | --- |
 |  booterClasses | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\] | A list of booter classes |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->\[\]
 

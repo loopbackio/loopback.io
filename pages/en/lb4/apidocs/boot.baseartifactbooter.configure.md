@@ -17,12 +17,12 @@ Configure the Booter by initializing the 'dirs', 'extensions' and 'glob' propert
 
 NOTE: All properties are configured even if all aren't used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configure(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

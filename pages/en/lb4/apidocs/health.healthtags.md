@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.healthtags.html
 
 Binding tags for health related services
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace HealthTags 

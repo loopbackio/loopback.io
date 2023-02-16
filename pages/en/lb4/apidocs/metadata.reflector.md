@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.reflector.html
 
 ## Reflector variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 Reflector: NamespacedReflect

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewaregroups.middleware.html
 
 Default middleware group
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MIDDLEWARE = "middleware"

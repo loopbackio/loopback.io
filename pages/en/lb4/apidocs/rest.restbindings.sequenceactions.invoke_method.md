@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.invoke_method.h
 
 Binding key for setting and injecting a controller route invoking function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INVOKE_METHOD: BindingKey<InvokeMethod>

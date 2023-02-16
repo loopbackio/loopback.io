@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.extensions.view.html
 
 Inject a `ContextView` for extensions of the extension point. The view can then be listened on events such as `bind`<!-- -->, `unbind`<!-- -->, or `refresh` to react on changes of extensions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function view(extensionPointName?: string, metadata?: InjectionMetadata): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
@@ -25,10 +25,10 @@ function view(extensionPointName?: string, metadata?: InjectionMetadata): (targe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | string | <i>(Optional)</i> Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | <i>(Optional)</i> Optional injection metadata |
+|  extensionPointName | string | _(Optional)_ Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional injection metadata |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 

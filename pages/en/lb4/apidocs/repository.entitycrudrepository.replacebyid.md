@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.replacebyid.html
 
 Replace an entity by id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 replaceById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
@@ -27,9 +27,9 @@ replaceById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Data attributes to be replaced |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

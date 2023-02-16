@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence.send.html
 
 ## DefaultSocketIoSequence.send property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected send: SocketIoSendMethod;

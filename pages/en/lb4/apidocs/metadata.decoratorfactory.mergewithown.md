@@ -17,7 +17,7 @@ This method is called by the default implementation of the decorator function to
 
 It MUST be overridden by subclasses to process own metadata.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected mergeWithOwn(ownMetadata: M, target: Object, member?: string | symbol, descriptorOrIndex?: TypedPropertyDescriptor<any> | number): M;
@@ -29,10 +29,10 @@ protected mergeWithOwn(ownMetadata: M, target: Object, member?: string | symbol,
 |  --- | --- | --- |
 |  ownMetadata | M | Own Metadata exists locally on the target |
 |  target | Object | Decoration target |
-|  member | string \| symbol | <i>(Optional)</i> Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> Optional parameter index or method descriptor |
+|  member | string \| symbol | _(Optional)_ Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional parameter index or method descriptor |
 
-<b>Returns:</b>
+**Returns:**
 
 M
 

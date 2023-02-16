@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.boot.modelapibooter.html
 
 ## ModelApiBooter class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ModelApiBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

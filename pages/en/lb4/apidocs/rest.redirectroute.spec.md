@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.spec.html
 
 ## RedirectRoute.spec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly spec: OperationObject;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.invoke_method.html
 
 ## SocketIoBindings.INVOKE\_METHOD variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INVOKE_METHOD: BindingKey<SocketIoInvokeMethod>

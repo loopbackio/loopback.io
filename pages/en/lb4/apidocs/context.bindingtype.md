@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingtype.html
 
 Type of the binding source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum BindingType 

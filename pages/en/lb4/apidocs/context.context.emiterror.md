@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.emiterror.html
 
 Emit an `error` event
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emitError(err: unknown): void;
@@ -27,7 +27,7 @@ emitError(err: unknown): void;
 |  --- | --- | --- |
 |  err | unknown | Error |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

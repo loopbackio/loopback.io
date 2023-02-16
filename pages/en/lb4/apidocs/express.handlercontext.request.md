@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.handlercontext.request.html
 
 ## HandlerContext.request property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly request: Request;

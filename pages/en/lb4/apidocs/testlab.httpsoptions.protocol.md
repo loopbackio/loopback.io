@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.httpsoptions.protocol.html
 
 ## HttpsOptions.protocol property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protocol: 'https';

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice.spec.html
 
 Getter for `_spec`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get spec(): OpenApiSpec;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.createbelongstoa
 
 Function to create a belongs to accessor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetId>> | {
@@ -30,7 +30,7 @@ protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationNa
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [BelongsToAccessor](./repository.belongstoaccessor.md)<!-- -->&lt;Target, ID&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.parse_params.html
 
 Parse the http request to extract parameter values for the operation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PARSE_PARAMS = "parseParams"

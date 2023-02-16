@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.metatojsonproperty.html
 
 Converts property metadata into a JSON property definition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function metaToJsonProperty(meta: PropertyDefinition): JsonSchema;
@@ -27,7 +27,7 @@ export declare function metaToJsonProperty(meta: PropertyDefinition): JsonSchema
 |  --- | --- | --- |
 |  meta | [PropertyDefinition](./repository.propertydefinition.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

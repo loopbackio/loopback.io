@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextexplorercomponent.html
 
 A component providing a self-hosted API Explorer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ContextExplorerComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

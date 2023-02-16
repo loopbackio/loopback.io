@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.authenticat
 
 ## AuthenticationBindings.AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_STRATEGY_EXTENSION_POINT_NAME = "authentication.strategies"

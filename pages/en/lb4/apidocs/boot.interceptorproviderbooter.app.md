@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderbooter.app.html
 
 ## InterceptorProviderBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: Application;

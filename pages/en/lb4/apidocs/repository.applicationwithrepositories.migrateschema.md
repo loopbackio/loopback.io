@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.migratesch
 
 ## ApplicationWithRepositories.migrateSchema() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
@@ -23,9 +23,9 @@ migrateSchema(options?: SchemaMigrationOptions): Promise<void>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) | <i>(Optional)</i> |
+|  options | [SchemaMigrationOptions](./repository.schemamigrationoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

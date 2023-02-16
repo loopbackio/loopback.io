@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.uniontype.itemtypes.html
 
 ## UnionType.itemTypes property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 itemTypes: Type<any>[];

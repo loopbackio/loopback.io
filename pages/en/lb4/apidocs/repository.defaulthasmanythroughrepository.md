@@ -17,12 +17,12 @@ a class for CRUD operations for hasManyThrough relation.
 
 Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultHasManyThroughRepository<TargetEntity extends Entity, TargetID, TargetRepository extends EntityCrudRepository<TargetEntity, TargetID>, ThroughEntity extends Entity, ThroughID, ThroughRepository extends EntityCrudRepository<ThroughEntity, ThroughID>> implements HasManyThroughRepository<TargetEntity, TargetID, ThroughEntity> 
 ```
-<b>Implements:</b> [HasManyThroughRepository](./repository.hasmanythroughrepository.md)<!-- -->&lt;TargetEntity, TargetID, ThroughEntity&gt;
+**Implements:** [HasManyThroughRepository](./repository.hasmanythroughrepository.md)<!-- -->&lt;TargetEntity, TargetID, ThroughEntity&gt;
 
 ## Constructors
 

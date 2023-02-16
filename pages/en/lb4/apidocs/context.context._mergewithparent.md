@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.context._mergewithparent.html
 
 ## Context.\_mergeWithParent() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _mergeWithParent<ValueType>(childList: Readonly<Binding<ValueType>>[], parentList?: Readonly<Binding<ValueType>>[]): Readonly<Binding<ValueType>>[];
@@ -24,9 +24,9 @@ protected _mergeWithParent<ValueType>(childList: Readonly<Binding<ValueType>>[],
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  childList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] |  |
-|  parentList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] | <i>(Optional)</i> |
+|  parentList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 

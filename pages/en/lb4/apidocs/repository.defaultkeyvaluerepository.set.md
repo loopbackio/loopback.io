@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.set.html
 
 ## DefaultKeyValueRepository.set() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 set(key: string, value: DataObject<T>, options?: Options): Promise<void>;
@@ -25,9 +25,9 @@ set(key: string, value: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  key | string |  |
 |  value | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

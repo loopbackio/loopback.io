@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.lernapackage.manifestlocation.html
 
 Location of `package.json`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 manifestLocation: string;

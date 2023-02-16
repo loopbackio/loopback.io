@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.any_tag_value.html
 
 A symbol that can be used to match binding tags by name regardless of the value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ANY_TAG_VALUE: TagValueMatcher

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.once_3.html
 
 The "resolve" event is emitted when the cached values are resolved and updated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 once(eventName: 'refresh', listener: <V>(result: V[]) => void): this;
@@ -28,7 +28,7 @@ once(eventName: 'refresh', listener: <V>(result: V[]) => void): this;
 |  eventName | 'refresh' | The name of the event - always <code>refresh</code>. |
 |  listener | &lt;V&gt;(result: V\[\]) =&gt; void | The listener function to call when the event is emitted. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.trierouter.listrouteswithpathvars.html
 
 ## TrieRouter.listRoutesWithPathVars() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected listRoutesWithPathVars(): RouteEntry[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 [RouteEntry](./rest.routeentry.md)<!-- -->\[\]
 

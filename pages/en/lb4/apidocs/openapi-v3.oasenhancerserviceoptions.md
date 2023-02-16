@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerserviceoptions.html
 
 Options for the OpenAPI Spec enhancer extension point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface OASEnhancerServiceOptions 

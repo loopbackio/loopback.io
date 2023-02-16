@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservicebindings.ht
 
 Bindings related to token refresh service. The omitted explanation can be found in namespace `RefreshTokenConstants`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RefreshTokenServiceBindings 

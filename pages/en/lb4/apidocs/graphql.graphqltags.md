@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqltags.html
 
 Namespace for GraphQL related tags
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace GraphQLTags 

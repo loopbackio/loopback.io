@@ -17,21 +17,21 @@ Options for request body parsing See https://github.com/expressjs/body-parser/\#
 
 Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RequestBodyParserOptions extends Options 
 ```
-<b>Extends:</b> Options
+**Extends:** Options
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [json?](./rest.requestbodyparseroptions.json.md) |  | OptionsJson | <i>(Optional)</i> Options for json parser |
-|  [raw?](./rest.requestbodyparseroptions.raw.md) |  | Options | <i>(Optional)</i> Options for raw parser |
-|  [text?](./rest.requestbodyparseroptions.text.md) |  | OptionsText | <i>(Optional)</i> Options for text parser |
-|  [urlencoded?](./rest.requestbodyparseroptions.urlencoded.md) |  | OptionsUrlencoded | <i>(Optional)</i> Options for urlencoded parser |
-|  [validation?](./rest.requestbodyparseroptions.validation.md) |  | [ValidationOptions](./rest.validationoptions.md) | <i>(Optional)</i> Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as <code>json</code> or <code>text</code>. |
+|  [json?](./rest.requestbodyparseroptions.json.md) |  | OptionsJson | _(Optional)_ Options for json parser |
+|  [raw?](./rest.requestbodyparseroptions.raw.md) |  | Options | _(Optional)_ Options for raw parser |
+|  [text?](./rest.requestbodyparseroptions.text.md) |  | OptionsText | _(Optional)_ Options for text parser |
+|  [urlencoded?](./rest.requestbodyparseroptions.urlencoded.md) |  | OptionsUrlencoded | _(Optional)_ Options for urlencoded parser |
+|  [validation?](./rest.requestbodyparseroptions.validation.md) |  | [ValidationOptions](./rest.validationoptions.md) | _(Optional)_ Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as <code>json</code> or <code>text</code>. |
 
 

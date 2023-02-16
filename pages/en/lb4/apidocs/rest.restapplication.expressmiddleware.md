@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.expressmiddleware.html
 
 Bind an Express middleware to this server context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expressMiddleware(key: BindingAddress, middleware: ExpressRequestHandler | ExpressRequestHandler[], options?: MiddlewareBindingOptions): Binding<Middleware>;
@@ -27,9 +27,9 @@ expressMiddleware(key: BindingAddress, middleware: ExpressRequestHandler | Expre
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Middleware binding key |
 |  middleware | [ExpressRequestHandler](./express.expressrequesthandler.md) \| [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | Express middleware handler function(s) |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 

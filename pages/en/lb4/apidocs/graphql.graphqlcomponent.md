@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlcomponent.html
 
 Component for GraphQL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class GraphQLComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

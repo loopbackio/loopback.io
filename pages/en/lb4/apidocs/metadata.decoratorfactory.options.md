@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.options.html
 
 ## DecoratorFactory.options property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected options: DecoratorOptions;

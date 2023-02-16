@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.context.provider.value.html
 
 ## Provider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): ValueOrPromise<T>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 

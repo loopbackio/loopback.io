@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.responsedecoratormetadataitem.response
 
 ## ResponseDecoratorMetadataItem.responseCode property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 responseCode: number;

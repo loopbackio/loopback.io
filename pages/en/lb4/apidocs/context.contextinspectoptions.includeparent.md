@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextinspectoptions.includeparent.html
 
 The flag to control if parent context should be inspected
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 includeParent?: boolean;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.andclause.html
 
 And clause
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AndClause<MT extends object> 

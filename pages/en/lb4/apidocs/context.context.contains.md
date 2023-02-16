@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.contains.html
 
 Check if a binding exists with the given key in the local context without delegating to the parent context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 contains(key: BindingAddress): boolean;
@@ -27,7 +27,7 @@ contains(key: BindingAddress): boolean;
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

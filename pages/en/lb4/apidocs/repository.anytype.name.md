@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.anytype.name.html
 
 ## AnyType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "any";

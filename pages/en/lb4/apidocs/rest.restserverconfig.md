@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.restserverconfig.html
 
 Valid configuration for the RestServer constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RestServerConfig = RestServerOptions & HttpServerOptions;
 ```
-<b>References:</b> [RestServerOptions](./rest.restserveroptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
+**References:** [RestServerOptions](./rest.restserveroptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
 
 

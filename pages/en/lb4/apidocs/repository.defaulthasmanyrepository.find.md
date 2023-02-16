@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository.find.html
 
 ## DefaultHasManyRepository.find() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(filter?: Filter<TargetEntity>, options?: Options): Promise<TargetEntity[]>;
@@ -23,10 +23,10 @@ find(filter?: Filter<TargetEntity>, options?: Options): Promise<TargetEntity[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity\[\]&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosequence.handle.html
 
 ## SocketIoSequence.handle() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(methodName: string, args: unknown[], done: Function): Promise<void>;
@@ -27,7 +27,7 @@ handle(methodName: string, args: unknown[], done: Function): Promise<void>;
 |  args | unknown\[\] |  |
 |  done | Function |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

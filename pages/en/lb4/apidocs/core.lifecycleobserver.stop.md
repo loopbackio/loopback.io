@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserver.stop.html
 
 The method to be invoked during `stop`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stop?(...injectedArgs: unknown[]): ValueOrPromise<void>;
@@ -27,7 +27,7 @@ stop?(...injectedArgs: unknown[]): ValueOrPromise<void>;
 |  --- | --- | --- |
 |  injectedArgs | unknown\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.buildname.html
 
 Build a name for the middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function buildName<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, providedName?: string, suffix?: string): string | undefined;
@@ -26,10 +26,10 @@ export declare function buildName<CFG>(middlewareFactory: ExpressMiddlewareFacto
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  providedName | string | <i>(Optional)</i> Provided name |
-|  suffix | string | <i>(Optional)</i> Suffix |
+|  providedName | string | _(Optional)_ Provided name |
+|  suffix | string | _(Optional)_ Suffix |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

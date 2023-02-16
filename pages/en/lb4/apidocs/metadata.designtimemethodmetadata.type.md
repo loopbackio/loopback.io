@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.type.html
 
 Type of the method itself. It is `Function` for methods, `undefined` for the constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: Function | undefined;

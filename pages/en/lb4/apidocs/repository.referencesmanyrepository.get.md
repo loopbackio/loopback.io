@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanyrepository.get.html
 
 Gets the target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(options?: Options): Promise<Target>;
@@ -25,9 +25,9 @@ get(options?: Options): Promise<Target>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target&gt;
 

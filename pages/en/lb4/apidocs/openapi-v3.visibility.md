@@ -17,7 +17,7 @@ Marks an api path with the specfied visibility. When applied to a class, this de
 
 You can optionally mark all controllers in a class with `@visibility('undocumented')`<!-- -->, but use `@visibility('documented')` on a specific method to ensure it is not marked as `undocumented`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function visibility(visibilityType: OperationVisibility): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
@@ -29,7 +29,7 @@ export declare function visibility(visibilityType: OperationVisibility): (target
 |  --- | --- | --- |
 |  visibilityType | [OperationVisibility](./openapi-v3.operationvisibility.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 

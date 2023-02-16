@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.options.html
 
 ## SocketIoServer.options property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected options: SocketIoServerOptions;

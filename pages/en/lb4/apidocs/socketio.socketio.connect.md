@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketio.connect.html
 
 Decorate a controller method for `connect`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function connect(): MethodDecorator;
 ```
-<b>Returns:</b>
+**Returns:**
 
 MethodDecorator
 

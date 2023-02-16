@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.getsocketiometadata.html
 
 ## getSocketIoMetadata() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getSocketIoMetadata(controllerClass: Constructor<unknown>): SocketIoMetadata | undefined;
@@ -25,7 +25,7 @@ export declare function getSocketIoMetadata(controllerClass: Constructor<unknown
 |  --- | --- | --- |
 |  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [SocketIoMetadata](./socketio.socketiometadata.md) \| undefined
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.applicationmetadatabooter._constructor_.html
 
 Constructs a new instance of the `ApplicationMetadataBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, projectRoot: string);

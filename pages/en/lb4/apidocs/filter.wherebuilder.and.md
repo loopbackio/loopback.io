@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.and.html
 
 Add an `and` clause.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 and(...w: (Where<MT> | Where<MT>[])[]): this;
@@ -27,7 +27,7 @@ and(...w: (Where<MT> | Where<MT>[])[]): this;
 |  --- | --- | --- |
 |  w | ([Where](./filter.where.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\])\[\] | One or more where objects |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

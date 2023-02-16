@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.entitynotfounderror.html
 
 ## EntityNotFoundError class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class EntityNotFoundError<ID, Props extends object = {}> extends Error 
 ```
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Constructors
 

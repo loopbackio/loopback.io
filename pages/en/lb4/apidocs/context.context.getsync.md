@@ -17,7 +17,7 @@ Get the synchronous value bound to the given key, optionally return a (deep) pro
 
 This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getSync<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionSession): ValueType;
@@ -28,9 +28,9 @@ getSync<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionS
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Session for resolution (accepted for backward compatibility) |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Session for resolution (accepted for backward compatibility) |
 
-<b>Returns:</b>
+**Returns:**
 
 ValueType
 

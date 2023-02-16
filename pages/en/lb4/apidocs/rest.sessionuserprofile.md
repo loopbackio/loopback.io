@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.sessionuserprofile.html
 
 user profile to add in session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface SessionUserProfile 

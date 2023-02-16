@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonedefinition.keyfrom.html
 
 ## HasOneDefinition.keyFrom property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyFrom?: string;

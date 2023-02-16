@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.router.html
 
 ## RestServerResolvedOptions.router property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 router: RestRouterOptions;

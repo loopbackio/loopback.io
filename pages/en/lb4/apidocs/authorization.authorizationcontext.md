@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcontext.html
 
 Request context for authorization
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AuthorizationContext 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstodefinition.keyto.html
 
 ## BelongsToDefinition.keyTo property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyTo?: string;

@@ -17,7 +17,7 @@ Does the connector support using transactions for performing CRUD operations ato
 
 Default: `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 supportsTransactions: boolean;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.genericservice.html
 
 A generic service interface with any number of methods that return a promise
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface GenericService 

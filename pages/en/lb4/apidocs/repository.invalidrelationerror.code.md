@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidrelationerror.code.html
 
 ## InvalidRelationError.code property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string;

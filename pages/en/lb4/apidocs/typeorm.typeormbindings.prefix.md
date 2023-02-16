@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormbindings.prefix.html
 
 ## TypeOrmBindings.PREFIX variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PREFIX = "connection"

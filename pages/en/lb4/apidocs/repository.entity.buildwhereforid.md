@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entity.buildwhereforid.html
 
 Build the where object for the given id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static buildWhereForId(id: any): any;
@@ -27,7 +27,7 @@ static buildWhereForId(id: any): any;
 |  --- | --- | --- |
 |  id | any | The id value |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

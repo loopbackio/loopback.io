@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute._constructor_.html
 
 Construct a new route
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(verb: string, path: string, spec: OperationObject);

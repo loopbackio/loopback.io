@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.definemodelclass.html
 
 Create (define) a new model class with the given name and definition.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function defineModelClass<BaseCtor extends typeof Model, Props extends object = {}>(base: BaseCtor, definition: ModelDefinition): DynamicModelCtor<BaseCtor, Props>;
@@ -28,7 +28,7 @@ export declare function defineModelClass<BaseCtor extends typeof Model, Props ex
 |  base | BaseCtor | The base model to extend, typically Model or Entity. You can also use your own base class, e.g. <code>User</code>. |
 |  definition | [ModelDefinition](./repository.modeldefinition.md) | Definition of the model to create. |
 
-<b>Returns:</b>
+**Returns:**
 
 [DynamicModelCtor](./repository.dynamicmodelctor.md)<!-- -->&lt;BaseCtor, Props&gt;
 

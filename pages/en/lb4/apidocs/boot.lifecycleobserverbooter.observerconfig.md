@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.lifecycleobserverbooter.observerconfig.html
 
 ## LifeCycleObserverBooter.observerConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 observerConfig: ArtifactOptions;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.application_metadata.html
 
 Binding key for the content of `package.json`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 APPLICATION_METADATA: BindingKey<ApplicationMetadata>

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata.name.html
 
 Name of the predefined repository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name?: string;

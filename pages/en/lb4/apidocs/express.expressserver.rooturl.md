@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.rooturl.html
 
 The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the `basePath`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get rootUrl(): string | undefined;

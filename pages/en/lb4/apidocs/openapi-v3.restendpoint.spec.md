@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.restendpoint.spec.html
 
 ## RestEndpoint.spec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 spec?: OperationObject;

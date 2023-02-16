@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingfilter.html
 
 A function that filters bindings. It returns `true` to select a given binding.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BindingFilter 

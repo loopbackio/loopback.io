@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcontext.principals.htm
 
 An array of principals identified for the request - it should come from authentication
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 principals: Principal[];

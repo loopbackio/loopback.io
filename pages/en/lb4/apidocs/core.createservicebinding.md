@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.createservicebinding.html
 
 Create a service binding from a class or provider
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createServiceBinding<S>(cls: ServiceOrProviderClass<S>, options?: ServiceOptions): Binding<S>;
@@ -26,9 +26,9 @@ export declare function createServiceBinding<S>(cls: ServiceOrProviderClass<S>, 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt; | Service class or provider |
-|  options | [ServiceOptions](./core.serviceoptions.md) | <i>(Optional)</i> Service options |
+|  options | [ServiceOptions](./core.serviceoptions.md) | _(Optional)_ Service options |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;S&gt;
 

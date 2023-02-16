@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.parametertypes.
 
 An array of parameter types.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parameterTypes: Function[];

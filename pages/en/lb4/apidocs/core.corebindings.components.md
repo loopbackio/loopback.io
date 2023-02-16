@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.components.html
 
 Binding key for components
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENTS = "components"

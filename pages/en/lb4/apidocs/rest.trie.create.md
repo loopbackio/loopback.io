@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.trie.create.html
 
 Create a node for a given path template
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(routeTemplate: string, value: T): Node<T>;
@@ -28,7 +28,7 @@ create(routeTemplate: string, value: T): Node<T>;
 |  routeTemplate | string |  |
 |  value | T | Value of the route |
 
-<b>Returns:</b>
+**Returns:**
 
 [Node](./rest.node.md)<!-- -->&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.connectorinterfaces.html
 
 Interfaces adopted by a [Connector](./repository.connector.md)<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ConnectorInterfaces 

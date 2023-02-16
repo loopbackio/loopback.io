@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.like.html
 
 Add a `like` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 like<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
@@ -28,7 +28,7 @@ like<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
 |  key | K | Property name |
 |  val | MT\[K\] | Regexp condition |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

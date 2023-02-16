@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.getmiddlewarelist.html
 
 Get a list of middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getMiddlewareList(): Promise<Middleware<unknown>[]>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Middleware&lt;unknown&gt;\[\]&gt;
 

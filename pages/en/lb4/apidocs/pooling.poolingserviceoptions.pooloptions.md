@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingserviceoptions.pooloptions.html
 
 Options for the generic pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 poolOptions?: Options;

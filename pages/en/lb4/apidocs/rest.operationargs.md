@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.operationargs.html
 
 ## OperationArgs type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type OperationArgs = any[];

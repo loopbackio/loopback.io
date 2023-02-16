@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontroller.html
 
 This interface describes prototype members of the controller class returned by `defineCrudRestController`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CrudRestController<T extends Entity, IdType, IdName extends keyof T, Relations extends object = {}> 

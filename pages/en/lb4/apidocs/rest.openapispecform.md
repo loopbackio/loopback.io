@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecform.html
 
 The form of OpenAPI specs to be served
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface OpenApiSpecForm 
@@ -25,7 +25,7 @@ export interface OpenApiSpecForm
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [format?](./rest.openapispecform.format.md) |  | string | <i>(Optional)</i> |
-|  [version?](./rest.openapispecform.version.md) |  | string | <i>(Optional)</i> |
+|  [format?](./rest.openapispecform.format.md) |  | string | _(Optional)_ |
+|  [version?](./rest.openapispecform.version.md) |  | string | _(Optional)_ |
 
 

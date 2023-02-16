@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.getdeepproperty.html
 
 Get nested properties of an object by path
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getDeepProperty<OUT = BoundValue, IN = BoundValue>(value: IN, path: string): OUT | undefined;
@@ -28,7 +28,7 @@ export declare function getDeepProperty<OUT = BoundValue, IN = BoundValue>(value
 |  value | IN | Value of the source object |
 |  path | string | Path to the property |
 
-<b>Returns:</b>
+**Returns:**
 
 OUT \| undefined
 

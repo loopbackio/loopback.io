@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormlifecyclemanager.html
 
 ## TypeOrmLifeCycleManager class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TypeOrmLifeCycleManager implements LifeCycleObserver 
 ```
-<b>Implements:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
+**Implements:** [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

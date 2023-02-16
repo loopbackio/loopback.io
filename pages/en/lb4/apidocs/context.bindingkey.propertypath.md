@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.propertypath.html
 
 ## BindingKey.propertyPath property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly propertyPath?: string | undefined;

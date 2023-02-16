@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.createcomponentapplicationbooterbinding.html
 
 Create a binding to register a booter that boots the component application. Bindings that exist in the component application before `boot` are skipped. Locked bindings in the main application will not be overridden.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createComponentApplicationBooterBinding(componentApp: Application & Bootable, filter?: BindingFilter): Binding<Booter>;
@@ -26,9 +26,9 @@ export declare function createComponentApplicationBooterBinding(componentApp: Ap
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  componentApp | [Application](./core.application.md) &amp; [Bootable](./boot.bootable.md) | The application exposing a component |
-|  filter | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> Binding filter to selected bindings to be added |
+|  filter | [BindingFilter](./context.bindingfilter.md) | _(Optional)_ Binding filter to selected bindings to be added |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;
 

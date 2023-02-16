@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withca
 
 Define a component callback.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withCallback(name: string, callback: CallbackObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withCallback(name: string, callback: CallbackObject | ReferenceObject): this;
 |  name | string | The name of the callback |
 |  callback | CallbackObject \| ReferenceObject | Specification of the callback |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.expire.html
 
 ## DefaultKeyValueRepository.expire() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expire(key: string, ttl: number, options?: Options): Promise<void>;
@@ -25,9 +25,9 @@ expire(key: string, ttl: number, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  key | string |  |
 |  ttl | number |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

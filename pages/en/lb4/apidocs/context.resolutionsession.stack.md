@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.stack.html
 
 A stack of bindings for the current resolution session. It's used to track the path of dependency resolution and detect circular dependencies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly stack: ResolutionElement[];

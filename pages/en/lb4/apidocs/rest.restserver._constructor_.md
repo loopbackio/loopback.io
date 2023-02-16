@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._constructor_.html
 
 Creates an instance of RestServer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, config?: RestServerConfig);
@@ -26,6 +26,6 @@ constructor(app: Application, config?: RestServerConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) | The application instance (injected via CoreBindings.APPLICATION\_INSTANCE). |
-|  config | [RestServerConfig](./rest.restserverconfig.md) | <i>(Optional)</i> The configuration options (injected via RestBindings.CONFIG). |
+|  config | [RestServerConfig](./rest.restserverconfig.md) | _(Optional)_ The configuration options (injected via RestBindings.CONFIG). |
 
 

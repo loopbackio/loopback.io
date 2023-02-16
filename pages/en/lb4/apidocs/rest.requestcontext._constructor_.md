@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext._constructor_.html
 
 Constructs a new instance of the `RequestContext` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(request: Request, response: Response, parent: Context, serverConfig: RestServerResolvedConfig, name?: string);
@@ -29,6 +29,6 @@ constructor(request: Request, response: Response, parent: Context, serverConfig:
 |  response | Response |  |
 |  parent | [Context](./context.context.md) |  |
 |  serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.repositorydefaults.html
 
 Default ArtifactOptions for RepositoryBooter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RepositoryDefaults: ArtifactOptions

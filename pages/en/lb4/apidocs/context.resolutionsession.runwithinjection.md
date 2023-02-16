@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.runwithinjection.html
 
 Run the given action with the given injection and session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static runWithInjection(action: ResolutionAction, injection: Readonly<Injection>, session?: ResolutionSession): any;
@@ -27,9 +27,9 @@ static runWithInjection(action: ResolutionAction, injection: Readonly<Injection>
 |  --- | --- | --- |
 |  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
 |  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; |  |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> The current resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ The current resolution session |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

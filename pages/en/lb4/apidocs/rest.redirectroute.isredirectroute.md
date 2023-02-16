@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.isredirectroute.html
 
 type guard type checker for this class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static isRedirectRoute(obj: any): obj is RedirectRoute;
@@ -27,7 +27,7 @@ static isRedirectRoute(obj: any): obj is RedirectRoute;
 |  --- | --- | --- |
 |  obj | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 obj is [RedirectRoute](./rest.redirectroute.md)
 

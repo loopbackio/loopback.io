@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.property.err_no_args.html
 
 ## property.ERR\_NO\_ARGS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ERR_NO_ARGS = "decorator received less than two parameters"

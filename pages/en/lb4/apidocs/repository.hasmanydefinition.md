@@ -15,21 +15,21 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanydefinition.html
 
 HasManyDefinition defines one-to-many relations and also possible defines many-to-many relations with through models.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HasManyDefinition extends RelationDefinitionBase 
 ```
-<b>Extends:</b> [RelationDefinitionBase](./repository.relationdefinitionbase.md)
+**Extends:** [RelationDefinitionBase](./repository.relationdefinitionbase.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyFrom?](./repository.hasmanydefinition.keyfrom.md) |  | string | <i>(Optional)</i> |
-|  [keyTo?](./repository.hasmanydefinition.keyto.md) |  | string | <p><i>(Optional)</i> keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.</p><p>E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo".</p> |
+|  [keyFrom?](./repository.hasmanydefinition.keyfrom.md) |  | string | _(Optional)_ |
+|  [keyTo?](./repository.hasmanydefinition.keyto.md) |  | string | <p>_(Optional)_ keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.</p><p>E.g. when a Customer has many Order instances, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo".</p> |
 |  [targetsMany](./repository.hasmanydefinition.targetsmany.md) |  | true |  |
-|  [through?](./repository.hasmanydefinition.through.md) |  | { model: [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt;; keyFrom?: string; keyTo?: string; polymorphic?: boolean \| { discriminator: string; }; } | <p><i>(Optional)</i> Description of the through model of the hasManyThrough relation.</p><p>A <code>hasManyThrough</code> relation defines a many-to-many connection with another model. This relation indicates that the declaring model can be matched with zero or more instances of another model by proceeding through a third model.</p><p>E.g a Category has many Products, and a Product can have many Categories. CategoryProductLink can be the through model. Such a through model has information of foreign keys of the source model(Category) and the target model(Product).</p><p>Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.</p> |
+|  [through?](./repository.hasmanydefinition.through.md) |  | { model: [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, typeof [Entity](./repository.entity.md)<!-- -->&gt;; keyFrom?: string; keyTo?: string; polymorphic?: boolean \| { discriminator: string; }; } | <p>_(Optional)_ Description of the through model of the hasManyThrough relation.</p><p>A <code>hasManyThrough</code> relation defines a many-to-many connection with another model. This relation indicates that the declaring model can be matched with zero or more instances of another model by proceeding through a third model.</p><p>E.g a Category has many Products, and a Product can have many Categories. CategoryProductLink can be the through model. Such a through model has information of foreign keys of the source model(Category) and the target model(Product).</p><p>Warning: The hasManyThrough interface is experimental and is subject to change. If backwards-incompatible changes are made, a new major version may not be released.</p> |
 |  [type](./repository.hasmanydefinition.type.md) |  | [RelationType.hasMany](./repository.relationtype.md) |  |
 
 

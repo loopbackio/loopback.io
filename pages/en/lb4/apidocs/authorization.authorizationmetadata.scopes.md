@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.scopes.html
 
 Define the access scopes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scopes?: string[];

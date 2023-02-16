@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.key.html
 
 ## BindingKey.key property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly key: string;

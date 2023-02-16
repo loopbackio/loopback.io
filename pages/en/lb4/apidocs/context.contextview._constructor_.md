@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview._constructor_.html
 
 Create a context view
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context, filter: BindingFilter, comparator?: BindingComparator | undefined, resolutionOptions?: Omit<ResolutionOptions, "session"> | undefined);
@@ -27,7 +27,7 @@ constructor(context: Context, filter: BindingFilter, comparator?: BindingCompara
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) | Context object to watch |
 |  filter | [BindingFilter](./context.bindingfilter.md) | Binding filter to match bindings of interest |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) \| undefined | <i>(Optional)</i> Comparator to sort the matched bindings |
-|  resolutionOptions | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined | <i>(Optional)</i> |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) \| undefined | _(Optional)_ Comparator to sort the matched bindings |
+|  resolutionOptions | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined | _(Optional)_ |
 
 

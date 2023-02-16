@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.modelapiconfig.html
 
 Configuration settings for individual model files. This type describes content of `public-models/{model-name}.config.json` files.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ModelApiConfig = {
@@ -27,6 +27,6 @@ export type ModelApiConfig = {
     [patternSpecificSetting: string]: unknown;
 };
 ```
-<b>References:</b> [Model](./repository.model.md)
+**References:** [Model](./repository.model.md)
 
 

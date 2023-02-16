@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepository.create.html
 
 Create a new record
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(dataObject: DataObject<T>, options?: Options): Promise<T>;
@@ -26,9 +26,9 @@ create(dataObject: DataObject<T>, options?: Options): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | The data to be created |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

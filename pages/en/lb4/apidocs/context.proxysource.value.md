@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.proxysource.value.html
 
 ## ProxySource.value property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly value: ResolutionSession;

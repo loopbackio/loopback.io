@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.description.html
 
 Description of the invocation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get description(): string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.requestbody.array.html
 
 Define a requestBody of `array` type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 array: (itemSpec: SchemaObject | ReferenceObject, properties?: {

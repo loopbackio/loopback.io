@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.setmetadata.html
 
 Set application metadata. `@loopback/boot` calls this method to populate the metadata from `package.json`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setMetadata(metadata: ApplicationMetadata): void;
@@ -27,7 +27,7 @@ setMetadata(metadata: ApplicationMetadata): void;
 |  --- | --- | --- |
 |  metadata | [ApplicationMetadata](./core.applicationmetadata.md) | Application metadata |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

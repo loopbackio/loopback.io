@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.proxysource.type.html
 
 ## ProxySource.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string;

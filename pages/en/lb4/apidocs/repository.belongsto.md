@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongsto.html
 
 Decorator for belongsTo
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function belongsTo<T extends Entity>(targetResolver: EntityResolver<T>, definition?: Partial<BelongsToDefinition>, propertyDefinition?: Partial<PropertyDefinition>): (decoratedTarget: Entity, decoratedKey: string) => void;
@@ -26,10 +26,10 @@ export declare function belongsTo<T extends Entity>(targetResolver: EntityResolv
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetResolver | [EntityResolver](./repository.entityresolver.md)<!-- -->&lt;T&gt; | A resolver function that returns the target model for a belongsTo relation |
-|  definition | Partial&lt;[BelongsToDefinition](./repository.belongstodefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up a belongsTo relation |
-|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional metadata for setting up the property |
+|  definition | Partial&lt;[BelongsToDefinition](./repository.belongstodefinition.md)<!-- -->&gt; | _(Optional)_ Optional metadata for setting up a belongsTo relation |
+|  propertyDefinition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | _(Optional)_ Optional metadata for setting up the property |
 
-<b>Returns:</b>
+**Returns:**
 
 (decoratedTarget: [Entity](./repository.entity.md)<!-- -->, decoratedKey: string) =&gt; void
 

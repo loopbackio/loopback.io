@@ -17,7 +17,7 @@ Enforces a constraint on a repository based on a relationship contract between m
 
 If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->}
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createHasOneRepositoryFactory<Target extends Entity, TargetID, ForeignKeyType>(relationMetadata: HasOneDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>> | {
@@ -32,7 +32,7 @@ export declare function createHasOneRepositoryFactory<Target extends Entity, Tar
 |  relationMetadata | [HasOneDefinition](./repository.hasonedefinition.md) | The relation metadata used to describe the relationship and determine how to apply the constraint. |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } | The repository or a dictionary of classname - repository, which represents the target model of a relation attached to a datasource. For the dictionary, the key is the class name of the concrete class the the polymorphic model. |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 

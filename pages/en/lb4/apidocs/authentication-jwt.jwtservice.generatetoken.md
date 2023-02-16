@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtservice.generatetoken.html
 
 ## JWTService.generateToken() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generateToken(userProfile: UserProfile): Promise<string>;
@@ -25,7 +25,7 @@ generateToken(userProfile: UserProfile): Promise<string>;
 |  --- | --- | --- |
 |  userProfile | [UserProfile](./security.userprofile.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

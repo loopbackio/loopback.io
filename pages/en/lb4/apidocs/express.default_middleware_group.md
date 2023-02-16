@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.default_middleware_group.html
 
 Default order group name for Express middleware based global interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_MIDDLEWARE_GROUP = "middleware"

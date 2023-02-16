@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getpropertymetadata.ht
 
 Get the metadata associated with the given key for a given property of the target class or prototype
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getPropertyMetadata<T>(key: MetadataKey<T, PropertyDecorator>, target: Object, propertyName: string, options?: InspectionOptions): T | undefined;
@@ -28,9 +28,9 @@ static getPropertyMetadata<T>(key: MetadataKey<T, PropertyDecorator>, target: Ob
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt; | Metadata key |
 |  target | Object | Class for static properties or prototype for instance properties |
 |  propertyName | string | Property name |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
 
-<b>Returns:</b>
+**Returns:**
 
 T \| undefined
 

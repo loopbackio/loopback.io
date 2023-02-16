@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstoaccessor.inclusionresolver.ht
 
 Use `resolver` property to obtain an InclusionResolver for this relation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inclusionResolver: InclusionResolver<Entity, Target>;

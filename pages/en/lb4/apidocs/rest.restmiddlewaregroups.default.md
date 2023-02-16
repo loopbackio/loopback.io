@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.default.html
 
 ## RestMiddlewareGroups.DEFAULT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT = "middleware"

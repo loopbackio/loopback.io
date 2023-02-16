@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategyprovider.met
 
 ## AuthenticationStrategyProvider.metadata property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected metadata?: AuthenticationMetadata[] | undefined;

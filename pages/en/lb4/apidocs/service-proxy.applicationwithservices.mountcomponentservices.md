@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.mountcompon
 
 ## ApplicationWithServices.mountComponentServices() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mountComponentServices(component: Constructor<{}>): void;
@@ -25,7 +25,7 @@ mountComponentServices(component: Constructor<{}>): void;
 |  --- | --- | --- |
 |  component | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

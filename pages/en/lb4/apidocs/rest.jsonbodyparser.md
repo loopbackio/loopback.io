@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.jsonbodyparser.html
 
 ## JsonBodyParser class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JsonBodyParser implements BodyParser 
 ```
-<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
+**Implements:** [BodyParser](./rest.bodyparser.md)
 
 ## Constructors
 

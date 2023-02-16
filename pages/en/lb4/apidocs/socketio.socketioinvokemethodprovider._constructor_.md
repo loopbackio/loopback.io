@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioinvokemethodprovider._constructo
 
 Constructs a new instance of the `SocketIoInvokeMethodProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor();

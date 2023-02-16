@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.getpooledvalue.html
 
 Acquire a resource from the pooling service or pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getPooledValue<T>(poolingService: PoolingService<T> | Pool<T>, requestCtx?: Context): Promise<PooledValue<T>>;
@@ -26,9 +26,9 @@ export declare function getPooledValue<T>(poolingService: PoolingService<T> | Po
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  poolingService | [PoolingService](./pooling.poolingservice.md)<!-- -->&lt;T&gt; \| Pool&lt;T&gt; | Pooling service or pool |
-|  requestCtx | [Context](./context.context.md) | <i>(Optional)</i> Request context |
+|  requestCtx | [Context](./context.context.md) | _(Optional)_ Request context |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[PooledValue](./pooling.pooledvalue.md)<!-- -->&lt;T&gt;&gt;
 

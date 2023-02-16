@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.lifecycleobserverbooter.observers.html
 
 ## LifeCycleObserverBooter.observers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 observers: LifeCycleObserverClass[];

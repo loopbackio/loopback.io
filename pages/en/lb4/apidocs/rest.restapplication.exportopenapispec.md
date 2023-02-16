@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.exportopenapispec.html
 
 Export the OpenAPI spec to the given json or yaml file
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportOpenApiSpec(outFile?: string, log?: (message?: any, ...optionalParams: any[]) => void): Promise<void>;
@@ -25,10 +25,10 @@ exportOpenApiSpec(outFile?: string, log?: (message?: any, ...optionalParams: any
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  outFile | string | <i>(Optional)</i> File name for the spec. The extension of the file determines the format of the file. - <code>yaml</code> or <code>yml</code>: YAML - <code>json</code> or other: JSON If the outFile is not provided or its value is <code>''</code> or <code>'-'</code>, the spec is written to the console using the <code>log</code> function. |
-|  log | (message?: any, ...optionalParams: any\[\]) =&gt; void | <i>(Optional)</i> Log function, default to <code>console.log</code> |
+|  outFile | string | _(Optional)_ File name for the spec. The extension of the file determines the format of the file. - <code>yaml</code> or <code>yml</code>: YAML - <code>json</code> or other: JSON If the outFile is not provided or its value is <code>''</code> or <code>'-'</code>, the spec is written to the console using the <code>log</code> function. |
+|  log | (message?: any, ...optionalParams: any\[\]) =&gt; void | _(Optional)_ Log function, default to <code>console.log</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

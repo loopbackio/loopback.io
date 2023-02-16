@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.runextractorforpackage.html
 
 ## runExtractorForPackage() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function runExtractorForPackage(pkgDir?: string, options?: ExtractorOptions): void;
@@ -23,10 +23,10 @@ export declare function runExtractorForPackage(pkgDir?: string, options?: Extrac
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pkgDir | string | <i>(Optional)</i> |
-|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | <i>(Optional)</i> |
+|  pkgDir | string | _(Optional)_ |
+|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

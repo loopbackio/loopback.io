@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.contextobserverfn.html
 
 Listen on `bind`<!-- -->, `unbind`<!-- -->, or other events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextObserverFn = (eventType: ContextEventType, binding: Readonly<Binding<unknown>>, context: Context) => ValueOrPromise<void>;
 ```
-<b>References:</b> [ContextEventType](./context.contexteventtype.md)<!-- -->, [Binding](./context.binding.md)<!-- -->, [Context](./context.context.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
+**References:** [ContextEventType](./context.contexteventtype.md)<!-- -->, [Binding](./context.binding.md)<!-- -->, [Context](./context.context.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 
 

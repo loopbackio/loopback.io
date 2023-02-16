@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.default_limit.html
 
 ## DEFAULT\_LIMIT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_LIMIT = "1mb"

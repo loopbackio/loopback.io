@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.gettar
 
 ## DefaultHasManyThroughRepository.getTargetConstraintFromThroughModels property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getTargetConstraintFromThroughModels: (throughInstances: ThroughEntity[]) => DataObject<TargetEntity>;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withres
 
 Describe a response for a given HTTP status code.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withResponse(status: number | 'default', responseSpec: ResponseObject): this;
@@ -28,7 +28,7 @@ withResponse(status: number | 'default', responseSpec: ResponseObject): this;
 |  status | number \| 'default' | HTTP status code or string "default" |
 |  responseSpec | ResponseObject | Specification of the response |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.send.html
 
 Send the operation response back to the client.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Send = (response: Response, result: OperationRetval) => void;
 ```
-<b>References:</b> [OperationRetval](./rest.operationretval.md)
+**References:** [OperationRetval](./rest.operationretval.md)
 
 

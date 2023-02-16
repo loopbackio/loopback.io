@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.arraytype.itemtype.html
 
 ## ArrayType.itemType property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 itemType: Type<T>;

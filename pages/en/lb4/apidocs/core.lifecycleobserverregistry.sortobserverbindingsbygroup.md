@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.sortobserverbindin
 
 Sort the life cycle observer bindings so that we can start/stop them in the right order. By default, we can start other observers before servers and stop them in the reverse order
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected sortObserverBindingsByGroup(bindings: Readonly<Binding<LifeCycleObserver>>[]): LifeCycleObserverGroup[];
@@ -27,7 +27,7 @@ protected sortObserverBindingsByGroup(bindings: Readonly<Binding<LifeCycleObserv
 |  --- | --- | --- |
 |  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\] | Life cycle observer bindings |
 
-<b>Returns:</b>
+**Returns:**
 
 [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\]
 

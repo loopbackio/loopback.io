@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.config.html
 
 ## SocketIoServer.config property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly config: HttpServerResolvedOptions;

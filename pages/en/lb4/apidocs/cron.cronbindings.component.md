@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.cron.cronbindings.component.html
 
 Binding key for `CronComponent`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<CronComponent>

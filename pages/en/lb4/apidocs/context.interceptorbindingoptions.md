@@ -15,19 +15,19 @@ permalink: /doc/en/lb4/apidocs.context.interceptorbindingoptions.html
 
 Options for an interceptor binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InterceptorBindingOptions extends BindingFromClassOptions 
 ```
-<b>Extends:</b> [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+**Extends:** [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [global?](./context.interceptorbindingoptions.global.md) |  | boolean | <i>(Optional)</i> Global or local interceptor |
-|  [group?](./context.interceptorbindingoptions.group.md) |  | string | <i>(Optional)</i> Group name for a global interceptor |
-|  [source?](./context.interceptorbindingoptions.source.md) |  | string \| string\[\] | <i>(Optional)</i> Source filter for a global interceptor |
+|  [global?](./context.interceptorbindingoptions.global.md) |  | boolean | _(Optional)_ Global or local interceptor |
+|  [group?](./context.interceptorbindingoptions.group.md) |  | string | _(Optional)_ Group name for a global interceptor |
+|  [source?](./context.interceptorbindingoptions.source.md) |  | string \| string\[\] | _(Optional)_ Source filter for a global interceptor |
 
 

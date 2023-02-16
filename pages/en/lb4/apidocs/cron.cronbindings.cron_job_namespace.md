@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.cron.cronbindings.cron_job_namespace.html
 
 Namespace for cron jobs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CRON_JOB_NAMESPACE = "cron.jobs"

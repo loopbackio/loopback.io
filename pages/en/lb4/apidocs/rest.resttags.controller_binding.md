@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.controller_binding.html
 
 Binding tag for controller route bindings to represent the controller binding key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER_BINDING = "controllerBinding"

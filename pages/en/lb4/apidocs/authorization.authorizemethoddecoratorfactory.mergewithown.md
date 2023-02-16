@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizemethoddecoratorfactory.mer
 
 ## AuthorizeMethodDecoratorFactory.mergeWithOwn() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected mergeWithOwn(ownMetadata: MetadataMap<AuthorizationMetadata>, target: Object, methodName?: string, methodDescriptor?: TypedPropertyDescriptor<any> | number): MetadataMap<AuthorizationMetadata>;
@@ -25,10 +25,10 @@ protected mergeWithOwn(ownMetadata: MetadataMap<AuthorizationMetadata>, target: 
 |  --- | --- | --- |
 |  ownMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt; |  |
 |  target | Object |  |
-|  methodName | string | <i>(Optional)</i> |
-|  methodDescriptor | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
+|  methodName | string | _(Optional)_ |
+|  methodDescriptor | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt;
 

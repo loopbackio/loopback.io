@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allow.html
 
 Shortcut to configure allowed roles
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allow: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservicebindings.re
 
 Key for the repository that stores the refresh token and its bound user information
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REFRESH_REPOSITORY = "repositories.RefreshTokenRepository"

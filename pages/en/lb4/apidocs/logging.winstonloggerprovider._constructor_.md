@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.winstonloggerprovider._constructor_.html
 
 Constructs a new instance of the `WinstonLoggerProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(
@@ -30,6 +30,6 @@ constructor(
 |  --- | --- | --- |
 |  transports | Getter&lt;Transport\[\]&gt; |  |
 |  formats | Getter&lt;Format\[\]&gt; |  |
-|  options | LoggerOptions | <i>(Optional)</i> |
+|  options | LoggerOptions | _(Optional)_ |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.registerresolver.html
 
 Register a GraphQL resolver class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function registerResolver(ctx: Context, resolverClass: Constructor<object>, nameOrOptions?: string | BindingFromClassOptions): Binding;
@@ -27,9 +27,9 @@ export declare function registerResolver(ctx: Context, resolverClass: Constructo
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; | Resolver class |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Resolver name or binding options |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Resolver name or binding options |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

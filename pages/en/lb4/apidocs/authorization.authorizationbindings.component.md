@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationbindings.component.htm
 
 ## AuthorizationBindings.COMPONENT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<AuthorizationComponent>

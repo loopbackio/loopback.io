@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injectionelement.type.html
 
 ## InjectionElement.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: 'injection';

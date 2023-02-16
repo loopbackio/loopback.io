@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.config.html
 
 Binding key for setting and injecting RestComponentConfig
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIG: BindingKey<RestServerConfig>

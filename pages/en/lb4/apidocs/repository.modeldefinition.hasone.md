@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.hasone.html
 
 Define a new hasOne relation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hasOne(name: string, definition: Omit<HasOneDefinition, 'name' | 'type' | 'targetsMany'>): this;
@@ -28,7 +28,7 @@ hasOne(name: string, definition: Omit<HasOneDefinition, 'name' | 'type' | 'targe
 |  name | string | The name of the hasOne relation. |
 |  definition | Omit&lt;[HasOneDefinition](./repository.hasonedefinition.md)<!-- -->, 'name' \| 'type' \| 'targetsMany'&gt; | The definition of the hasOne relation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

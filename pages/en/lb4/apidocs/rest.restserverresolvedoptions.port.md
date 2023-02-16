@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.port.html
 
 ## RestServerResolvedOptions.port property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 port: number;

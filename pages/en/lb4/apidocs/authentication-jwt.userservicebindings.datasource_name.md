@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userservicebindings.datasource
 
 ## UserServiceBindings.DATASOURCE\_NAME variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DATASOURCE_NAME = "jwtdb"

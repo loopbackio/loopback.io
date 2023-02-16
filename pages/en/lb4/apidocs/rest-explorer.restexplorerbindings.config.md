@@ -17,7 +17,7 @@ Binding key for configuration of RestExplorerComponent.
 
 We recommend `ctx.configure(RestExplorerBindings.COMPONENT)` to be used instead of `ctx.bind(RestExplorerBindings.CONFIG)`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIG: BindingAddress<RestExplorerConfig>

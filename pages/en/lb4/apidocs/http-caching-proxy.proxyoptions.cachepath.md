@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.proxyoptions.cachepath.html
 
 Directory where to keep the cached snapshots.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 cachePath: string;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.datetype.name.html
 
 ## DateType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "date";

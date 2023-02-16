@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.createmiddlewarebinding.html
 
 Create a binding for the middleware provider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createMiddlewareBinding(middlewareProviderClass: Constructor<Provider<Middleware>>, options?: MiddlewareBindingOptions): Binding<Middleware>;
@@ -26,9 +26,9 @@ export declare function createMiddlewareBinding(middlewareProviderClass: Constru
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareProviderClass | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;&gt; | Middleware provider class |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Options to create middleware binding |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Options to create middleware binding |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 

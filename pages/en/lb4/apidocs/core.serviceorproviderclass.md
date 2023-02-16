@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.core.serviceorproviderclass.html
 
 ## ServiceOrProviderClass type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ServiceOrProviderClass<T = any> = Constructor<T | Provider<T>> | DynamicValueProviderClass<T>;
 ```
-<b>References:</b> [Constructor](./context.constructor.md)<!-- -->, [Provider](./context.provider.md)<!-- -->, [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)
+**References:** [Constructor](./context.constructor.md)<!-- -->, [Provider](./context.provider.md)<!-- -->, [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injectionelement.value.html
 
 ## InjectionElement.value property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value: Readonly<Injection>;

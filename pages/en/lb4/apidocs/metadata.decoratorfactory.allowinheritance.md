@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.allowinheritance.html
 
 ## DecoratorFactory.allowInheritance() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected allowInheritance(): boolean;
 ```
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

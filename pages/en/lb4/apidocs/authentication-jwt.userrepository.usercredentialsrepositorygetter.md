@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userrepository.usercredentials
 
 ## UserRepository.userCredentialsRepositoryGetter property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected userCredentialsRepositoryGetter: Getter<UserCredentialsRepository>;

@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.pooling.poolable.html
 
 Life cycle methods that a poolable resource can optionally implement so that they can be triggered by the pooling service
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Poolable extends LifeCycleObserver 
 ```
-<b>Extends:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
+**Extends:** [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [acquire(requestCtx)?](./pooling.poolable.acquire.md) | <i>(Optional)</i> To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource. |
-|  [release()?](./pooling.poolable.release.md) | <i>(Optional)</i> To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned. |
+|  [acquire(requestCtx)?](./pooling.poolable.acquire.md) | _(Optional)_ To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource. |
+|  [release()?](./pooling.poolable.release.md) | _(Optional)_ To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned. |
 
 

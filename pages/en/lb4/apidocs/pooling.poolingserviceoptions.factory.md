@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingserviceoptions.factory.html
 
 A factory to create/destroy/validate resources for the pool or a function to create a factory for the given context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 factory: PoolFactory<T> | ((ctx: Context) => PoolFactory<T>);

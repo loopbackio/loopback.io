@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcontext.roles.html
 
 An array of roles for principals
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 roles: Role[];

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.interceptor.html
 
 Interceptor function to intercept method invocations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Interceptor extends GenericInterceptor<InvocationContext> 
 ```
-<b>Extends:</b> [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;
+**Extends:** [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;
 
 

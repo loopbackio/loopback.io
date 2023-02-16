@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.options.html
 
 Type alias for Node.js options object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Options = AnyObject;
 ```
-<b>References:</b> [AnyObject](./repository.anyobject.md)
+**References:** [AnyObject](./repository.anyobject.md)
 
 

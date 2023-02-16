@@ -17,7 +17,7 @@ Binding key for setting and injecting Reject action's error handling options.
 
 See https://github.com/loopbackio/strong-error-handler\#options for the list of available options. Please note that the flag `log` is not used by `@loopback/rest`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ERROR_WRITER_OPTIONS: BindingKey<ErrorWriterOptions>

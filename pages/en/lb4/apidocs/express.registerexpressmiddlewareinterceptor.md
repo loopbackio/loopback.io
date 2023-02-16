@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.registerexpressmiddlewareinterceptor.html
 
 Bind a middleware interceptor to the given context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function registerExpressMiddlewareInterceptor<CFG>(ctx: Context, middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?: CFG, options?: MiddlewareInterceptorBindingOptions): Binding<GenericInterceptor<InvocationContext>>;
@@ -27,10 +27,10 @@ export declare function registerExpressMiddlewareInterceptor<CFG>(ctx: Context, 
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  middlewareConfig | CFG | <i>(Optional)</i> Express middleware config |
-|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | <i>(Optional)</i> Options for registration |
+|  middlewareConfig | CFG | _(Optional)_ Express middleware config |
+|  options | [MiddlewareInterceptorBindingOptions](./express.middlewareinterceptorbindingoptions.md) | _(Optional)_ Options for registration |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;&gt;
 

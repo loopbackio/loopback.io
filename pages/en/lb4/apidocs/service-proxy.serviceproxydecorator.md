@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxydecorator.html
 
 Type definition for decorators returned by `@serviceProxy` decorator factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ServiceProxyDecorator = PropertyDecorator | ParameterDecorator;

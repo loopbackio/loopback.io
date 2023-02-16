@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.io.html
 
 ## SocketIoBindings.IO variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 IO: BindingKey<Server<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>>

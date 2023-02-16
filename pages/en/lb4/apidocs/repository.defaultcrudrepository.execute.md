@@ -17,7 +17,7 @@ Execute a SQL command.
 
 \*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute(command: Command, parameters: NamedParameters | PositionalParameters, options?: Options): Promise<AnyObject>;
@@ -29,9 +29,9 @@ execute(command: Command, parameters: NamedParameters | PositionalParameters, op
 |  --- | --- | --- |
 |  command | [Command](./repository.command.md) | A parameterized SQL command or query. Check your database documentation for information on which characters to use as parameter placeholders. |
 |  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) | List of parameter values to use. |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Additional options, for example <code>transaction</code>. |
+|  options | [Options](./repository.options.md) | _(Optional)_ Additional options, for example <code>transaction</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 

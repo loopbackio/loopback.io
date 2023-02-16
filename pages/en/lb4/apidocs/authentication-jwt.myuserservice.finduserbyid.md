@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice.finduserbyid.htm
 
 ## MyUserService.findUserById() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findUserById(id: string): Promise<User & UserWithRelations>;
@@ -25,7 +25,7 @@ findUserById(id: string): Promise<User & UserWithRelations>;
 |  --- | --- | --- |
 |  id | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[User](./authentication-jwt.user.md) &amp; [UserWithRelations](./authentication-jwt.userwithrelations.md)<!-- -->&gt;
 

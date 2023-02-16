@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.html
 
 Bindings for potential actions that could be used in a sequence
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 namespace SequenceActions 

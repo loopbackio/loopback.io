@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketio.disconnect.html
 
 Decorate a controller method for `disconnect`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function disconnect(): MethodDecorator;
 ```
-<b>Returns:</b>
+**Returns:**
 
 MethodDecorator
 

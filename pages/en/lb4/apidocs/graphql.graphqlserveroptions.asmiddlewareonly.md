@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserveroptions.asmiddlewareonly.htm
 
 Use as a middleware for RestServer instead of a standalone server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asMiddlewareOnly?: boolean;

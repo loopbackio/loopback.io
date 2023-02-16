@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingcreationpolicy.html
 
 Policy to control if a binding should be created for the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum BindingCreationPolicy 

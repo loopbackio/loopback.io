@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.asservice.html
 
 Create a binding template for a service interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asService(serviceInterface: ServiceInterface): BindingTemplate;
@@ -27,7 +27,7 @@ export declare function asService(serviceInterface: ServiceInterface): BindingTe
 |  --- | --- | --- |
 |  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Service interface |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)
 

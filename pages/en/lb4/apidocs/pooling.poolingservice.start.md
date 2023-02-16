@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.start.html
 
 Start the pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 start(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

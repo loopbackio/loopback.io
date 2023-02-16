@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.infospecenhancer.pkg.html
 
 ## InfoSpecEnhancer.pkg property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pkg?: ApplicationMetadata | undefined;

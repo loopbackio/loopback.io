@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.anyscopefilterschema.html
 
 ## AnyScopeFilterSchema variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AnyScopeFilterSchema: JsonSchema

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.getunscopedpackagename.html
 
 Get un-scoped package name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getUnscopedPackageName(name: string): string;
@@ -27,7 +27,7 @@ export declare function getUnscopedPackageName(name: string): string;
 |  --- | --- | --- |
 |  name | string | Name of the npm package |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

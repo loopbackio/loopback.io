@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.tokenobject.html
 
 Describes the token object that returned by the refresh token service functions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TokenObject = {

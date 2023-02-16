@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.discovered.html
 
 List of files discovered by the Booter that matched artifact requirements
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 discovered: string[];

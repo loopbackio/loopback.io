@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver.address.html
 
 Address of the HTTP / HTTPS server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get address(): string | AddressInfo | undefined;

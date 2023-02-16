@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.invokemethodprovider.html
 
 ## InvokeMethodProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InvokeMethodProvider 

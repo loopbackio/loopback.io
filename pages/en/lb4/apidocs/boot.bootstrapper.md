@@ -17,7 +17,7 @@ The Bootstrapper class provides the `boot` function that is responsible for find
 
 NOTE: Bootstrapper should be bound as a SINGLETON so it can be cached as it does not maintain any state of it's own.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Bootstrapper 

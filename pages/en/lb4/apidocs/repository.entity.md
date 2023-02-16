@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.repository.entity.html
 
 Base class for entities which have unique ids
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Entity extends Model implements Persistable 
 ```
-<b>Extends:</b> [Model](./repository.model.md)
+**Extends:** [Model](./repository.model.md)
 
-<b>Implements:</b> [Persistable](./repository.persistable.md)
+**Implements:** [Persistable](./repository.persistable.md)
 
 ## Methods
 

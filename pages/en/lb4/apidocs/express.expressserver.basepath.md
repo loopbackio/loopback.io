@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.basepath.html
 
 Base path to mount middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly basePath: string;

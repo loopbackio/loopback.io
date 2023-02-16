@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.inspectinjections.html
 
 Inspect injections for a binding created with `toClass` or `toProvider`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function inspectInjections(binding: Readonly<Binding<unknown>>): JSONObject;
@@ -27,7 +27,7 @@ export declare function inspectInjections(binding: Readonly<Binding<unknown>>): 
 |  --- | --- | --- |
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object |
 
-<b>Returns:</b>
+**Returns:**
 
 [JSONObject](./context.jsonobject.md)
 

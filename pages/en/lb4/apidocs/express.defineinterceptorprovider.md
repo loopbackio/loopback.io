@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.defineinterceptorprovider.html
 
 Define a provider class that wraps the middleware as an interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function defineInterceptorProvider<CFG, CTX extends Context = InvocationContext>(middlewareFactory: ExpressMiddlewareFactory<CFG>, defaultMiddlewareConfig?: CFG, options?: MiddlewareCreationOptions): Constructor<Provider<GenericInterceptor<CTX>>>;
@@ -26,10 +26,10 @@ export declare function defineInterceptorProvider<CFG, CTX extends Context = Inv
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  defaultMiddlewareConfig | CFG | <i>(Optional)</i> Default middleware config |
-|  options | [MiddlewareCreationOptions](./express.middlewarecreationoptions.md) | <i>(Optional)</i> |
+|  defaultMiddlewareConfig | CFG | _(Optional)_ Default middleware config |
+|  options | [MiddlewareCreationOptions](./express.middlewarecreationoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt;&gt;
 

@@ -17,7 +17,7 @@ Execute a MongoDB command.
 
 \*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing MongoDB commands may lead to unexpected results and other issues.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute(collectionName: string, command: string, ...parameters: PositionalParameters): Promise<AnyObject>;
@@ -31,7 +31,7 @@ execute(collectionName: string, command: string, ...parameters: PositionalParame
 |  command | string | The command name. See \[Collection API docs\](http://mongodb.github.io/node-mongodb-native/3.6/api/Collection.html) for the list of commands supported by the MongoDB client. |
 |  parameters | [PositionalParameters](./repository.positionalparameters.md) | Command parameters (arguments), as described in MongoDB API docs for individual collection methods. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 

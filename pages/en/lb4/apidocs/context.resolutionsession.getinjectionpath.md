@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.getinjectionpath.html
 
 Get the injection path as `injectionA --> injectionB --> injectionC`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getInjectionPath(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

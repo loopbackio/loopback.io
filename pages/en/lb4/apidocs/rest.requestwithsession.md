@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.requestwithsession.html
 
 extending express request type with a session field
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RequestWithSession extends Request 
 ```
-<b>Extends:</b> Request
+**Extends:** Request
 
 ## Properties
 

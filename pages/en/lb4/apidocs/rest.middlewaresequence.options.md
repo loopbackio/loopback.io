@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.middlewaresequence.options.html
 
 ## MiddlewareSequence.options property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly options: InvokeMiddlewareOptions;

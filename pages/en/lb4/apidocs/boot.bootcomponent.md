@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.bootcomponent.html
 
 BootComponent is used to export the default list of Booter's made available by this module as well as bind the BootStrapper to the app so it can be used to run the Booters.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BootComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

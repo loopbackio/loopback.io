@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice.revoketoke
 
 ## RefreshtokenService.revokeToken() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 revokeToken(refreshToken: string): Promise<void>;
@@ -25,7 +25,7 @@ revokeToken(refreshToken: string): Promise<void>;
 |  --- | --- | --- |
 |  refreshToken | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

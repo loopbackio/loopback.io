@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.service.html
 
 Binding tag for services
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SERVICE = "service"

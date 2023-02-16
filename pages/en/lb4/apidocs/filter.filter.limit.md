@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filter.limit.html
 
 Maximum number of entities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 limit?: number;

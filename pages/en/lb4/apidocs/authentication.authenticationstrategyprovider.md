@@ -17,12 +17,12 @@ An authentication strategy provider responsible for resolving an authentication 
 
 It declares an extension point to which all authentication strategy implementations must register themselves as extensions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AuthenticationStrategyProvider implements Provider<AuthenticationStrategy[] | undefined> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
 
 ## Example
 
@@ -39,7 +39,7 @@ export declare class AuthenticationStrategyProvider implements Provider<Authenti
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [authenticationStrategies](./authentication.authenticationstrategyprovider.authenticationstrategies.md) | <code>protected</code> | Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt; |  |
-|  [metadata?](./authentication.authenticationstrategyprovider.metadata.md) | <code>protected</code> | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined | <i>(Optional)</i> |
+|  [metadata?](./authentication.authenticationstrategyprovider.metadata.md) | <code>protected</code> | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined | _(Optional)_ |
 
 ## Methods
 

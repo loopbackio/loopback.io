@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerbindings.oas_enhancer_exten
 
 Name/id of the OAS enhancer extension point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 OAS_ENHANCER_EXTENSION_POINT_NAME = "oas-enhancer"

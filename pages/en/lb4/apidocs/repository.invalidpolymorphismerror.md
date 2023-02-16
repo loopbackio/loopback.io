@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.invalidpolymorphismerror.html
 
 ## InvalidPolymorphismError class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InvalidPolymorphismError<Props extends object = {}> extends Error 
 ```
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Constructors
 

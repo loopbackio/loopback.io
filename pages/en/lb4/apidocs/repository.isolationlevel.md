@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.isolationlevel.html
 
 Isolation level
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare enum IsolationLevel 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.rejectprovider.html
 
 ## RejectProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RejectProvider 

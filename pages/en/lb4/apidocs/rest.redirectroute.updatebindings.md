@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.updatebindings.html
 
 ## RedirectRoute.updateBindings() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateBindings(requestContext: RequestContext): void;
@@ -25,7 +25,7 @@ updateBindings(requestContext: RequestContext): void;
 |  --- | --- | --- |
 |  requestContext | [RequestContext](./rest.requestcontext.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

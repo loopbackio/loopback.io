@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.definemetadata.html
 
 define metadata for a target class or it's property/method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defineMetadata(metadataKey: string, metadataValue: any, target: Object, propertyKey?: string): void;
@@ -28,9 +28,9 @@ defineMetadata(metadataKey: string, metadataValue: any, target: Object, property
 |  metadataKey | string |  |
 |  metadataValue | any |  |
 |  target | Object |  |
-|  propertyKey | string | <i>(Optional)</i> |
+|  propertyKey | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

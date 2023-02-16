@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.find.h
 
 ## DefaultHasManyThroughRepository.find() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(filter?: Filter<TargetEntity>, options?: Options & {
@@ -29,10 +29,10 @@ find(filter?: Filter<TargetEntity>, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity\[\]&gt;
 

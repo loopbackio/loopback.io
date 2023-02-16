@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice._construct
 
 Constructs a new instance of the `RefreshtokenService` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(refreshSecret: string, refreshExpiresIn: string, refreshIssure: string, refreshTokenRepository: RefreshTokenRepository, userService: MyUserService, jwtService: TokenService);

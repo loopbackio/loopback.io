@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.route.html
 
 Register a new Controller-based route.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 route<I extends object>(verb: string, path: string, spec: OperationObject, controllerCtor: ControllerClass<I>, controllerFactory: ControllerFactory<I>, methodName: string): Binding;
@@ -32,7 +32,7 @@ route<I extends object>(verb: string, path: string, spec: OperationObject, contr
 |  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;I&gt; | A factory function to create controller instance |
 |  methodName | string | The name of the controller method |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

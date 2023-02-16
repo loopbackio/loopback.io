@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.getservice.html
 
 Get a service proxy from a LoopBack 3.x data source backed by service-oriented connectors such as `rest`<!-- -->, `soap`<!-- -->, and `grpc`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getService<T = GenericService>(ds: legacy.DataSource): Promise<T>;
@@ -27,7 +27,7 @@ export declare function getService<T = GenericService>(ds: legacy.DataSource): P
 |  --- | --- | --- |
 |  ds | legacy.DataSource | A legacy data source |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

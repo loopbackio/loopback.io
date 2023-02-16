@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.ajverroroptions.html
 
 Options for AJV errors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AjvErrorOptions = ErrorMessageOptions;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.expressmiddlewareinterceptorprovider.midd
 
 ## ExpressMiddlewareInterceptorProvider.middlewareConfigView property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected middlewareConfigView?: ContextView<CFG>;

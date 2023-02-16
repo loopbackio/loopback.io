@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingbindings.component.html
 
 ## LoggingBindings.COMPONENT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<LoggingComponent>

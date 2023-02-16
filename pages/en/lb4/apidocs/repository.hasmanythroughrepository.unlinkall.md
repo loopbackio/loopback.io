@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanythroughrepository.unlinkall.htm
 
 Remove all association to an existing target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unlinkAll(options?: Options & {
@@ -27,9 +27,9 @@ unlinkAll(options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i>  A promise which resolves to void |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | _(Optional)_  A promise which resolves to void |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.fork.html
 
 Fork the current session so that a new one with the same stack can be used in parallel or future resolutions, such as multiple method arguments, multiple properties, or a getter function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static fork(session?: ResolutionSession): ResolutionSession | undefined;
@@ -25,9 +25,9 @@ static fork(session?: ResolutionSession): ResolutionSession | undefined;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> The current session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ The current session |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolutionSession](./context.resolutionsession.md) \| undefined
 

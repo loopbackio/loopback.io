@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanydefinition.targetsmany.h
 
 ## ReferencesManyDefinition.targetsMany property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetsMany: true;

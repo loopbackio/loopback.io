@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.uniontype.name.html
 
 ## UnionType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "union";

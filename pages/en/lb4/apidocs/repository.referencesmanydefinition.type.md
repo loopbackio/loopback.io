@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanydefinition.type.html
 
 ## ReferencesManyDefinition.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: RelationType.referencesMany;

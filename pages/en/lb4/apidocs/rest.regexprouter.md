@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.regexprouter.html
 
 Router implementation based on regexp matching
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RegExpRouter extends BaseRouter 
 ```
-<b>Extends:</b> BaseRouter
+**Extends:** BaseRouter
 
 ## Constructors
 

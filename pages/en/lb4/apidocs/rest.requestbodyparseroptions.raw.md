@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparseroptions.raw.html
 
 Options for raw parser
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 raw?: Options;

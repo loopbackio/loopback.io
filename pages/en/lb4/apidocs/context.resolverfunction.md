@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolverfunction.html
 
 A function to provide resolution of injected values.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ResolverFunction 

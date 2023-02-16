@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.express.expressmiddlewareinterceptorprovider.html
 
 Base class for MiddlewareInterceptor provider classes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class ExpressMiddlewareInterceptorProvider<CFG, CTX extends Context = InvocationContext> implements Provider<GenericInterceptor<CTX>> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt;
 
 ## Example
 
@@ -57,8 +57,8 @@ class SpyInterceptorProvider extends ExpressMiddlewareInterceptorProvider<
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [middlewareConfig?](./express.expressmiddlewareinterceptorprovider.middlewareconfig.md) | <code>protected</code> | CFG | <i>(Optional)</i> |
-|  [middlewareConfigView?](./express.expressmiddlewareinterceptorprovider.middlewareconfigview.md) | <code>protected</code> | [ContextView](./context.contextview.md)<!-- -->&lt;CFG&gt; | <i>(Optional)</i> |
+|  [middlewareConfig?](./express.expressmiddlewareinterceptorprovider.middlewareconfig.md) | <code>protected</code> | CFG | _(Optional)_ |
+|  [middlewareConfigView?](./express.expressmiddlewareinterceptorprovider.middlewareconfigview.md) | <code>protected</code> | [ContextView](./context.contextview.md)<!-- -->&lt;CFG&gt; | _(Optional)_ |
 |  [middlewareFactory](./express.expressmiddlewareinterceptorprovider.middlewarefactory.md) | <code>protected</code> | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; |  |
 
 ## Methods

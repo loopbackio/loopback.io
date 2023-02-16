@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratortype.html
 
 Decorator function types
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DecoratorType = ClassDecorator | PropertyDecorator | MethodDecorator | ParameterDecorator;

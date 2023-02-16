@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injectiondescriptor.targetname.html
 
 ## InjectionDescriptor.targetName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetName: string;

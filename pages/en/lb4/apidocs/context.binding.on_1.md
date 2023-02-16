@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.on_1.html
 
 ## Binding.on() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 on(event: string | symbol, listener: (...args: any[]) => void): this;
@@ -26,7 +26,7 @@ on(event: string | symbol, listener: (...args: any[]) => void): this;
 |  event | string \| symbol |  |
 |  listener | (...args: any\[\]) =&gt; void |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.trierouter.html
 
 Router implementation based on trie
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TrieRouter extends BaseRouter 
 ```
-<b>Extends:</b> BaseRouter
+**Extends:** BaseRouter
 
 ## Constructors
 

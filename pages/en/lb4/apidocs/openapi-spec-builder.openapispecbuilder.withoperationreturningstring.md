@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.openapispecbuilder.withopera
 
 Define a new operation that returns a string response.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withOperationReturningString(verb: string, path: string, operationName?: string): this;
@@ -27,9 +27,9 @@ withOperationReturningString(verb: string, path: string, operationName?: string)
 |  --- | --- | --- |
 |  verb | string | The HTTP verb. |
 |  path | string | The path relative to basePath. |
-|  operationName | string | <i>(Optional)</i> The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
+|  operationName | string | _(Optional)_ The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

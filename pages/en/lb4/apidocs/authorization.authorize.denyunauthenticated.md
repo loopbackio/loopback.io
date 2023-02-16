@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.denyunauthenticated.html
 
 Deny unauthenticated users
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 denyUnauthenticated: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

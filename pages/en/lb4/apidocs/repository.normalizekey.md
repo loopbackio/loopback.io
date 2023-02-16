@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.normalizekey.html
 
 Workaround for MongoDB, where the connector returns ObjectID values even for properties configured with "type: string".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function normalizeKey(rawKey: unknown): unknown;
@@ -27,7 +27,7 @@ export declare function normalizeKey(rawKey: unknown): unknown;
 |  --- | --- | --- |
 |  rawKey | unknown |  |
 
-<b>Returns:</b>
+**Returns:**
 
 unknown
 

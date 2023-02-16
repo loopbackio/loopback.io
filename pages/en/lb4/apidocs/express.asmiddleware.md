@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.asmiddleware.html
 
 Template function for middleware bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asMiddleware(options?: MiddlewareBindingOptions): BindingTemplate;
@@ -25,9 +25,9 @@ export declare function asMiddleware(options?: MiddlewareBindingOptions): Bindin
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Options to configure the binding |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Options to configure the binding |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarebindings.html
 
 ## MiddlewareBindings namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace MiddlewareBindings 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl.html
 
 Repository implementation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CrudRepositoryImpl<T extends Entity, ID> implements EntityCrudRepository<T, ID> 
 ```
-<b>Implements:</b> [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID&gt;
+**Implements:** [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID&gt;
 
 ## Example
 

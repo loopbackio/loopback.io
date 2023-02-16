@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.classdecoratorfactory.mergewithinherited
 
 ## ClassDecoratorFactory.mergeWithInherited() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected mergeWithInherited(inheritedMetadata: T, target: Object, member?: string, descriptorOrIndex?: TypedPropertyDescriptor<any> | number): T;
@@ -25,10 +25,10 @@ protected mergeWithInherited(inheritedMetadata: T, target: Object, member?: stri
 |  --- | --- | --- |
 |  inheritedMetadata | T |  |
 |  target | Object |  |
-|  member | string | <i>(Optional)</i> |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
+|  member | string | _(Optional)_ |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

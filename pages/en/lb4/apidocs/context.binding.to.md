@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.to.html
 
 Bind the key to a constant value. The value must be already available at binding time, it is not allowed to pass a Promise instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 to(value: T): this;
@@ -27,7 +27,7 @@ to(value: T): this;
 |  --- | --- | --- |
 |  value | T | The bound value. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

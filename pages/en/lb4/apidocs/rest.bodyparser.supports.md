@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.bodyparser.supports.html
 
 Indicate if the given media type is supported
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 supports(mediaType: string): boolean;
@@ -27,7 +27,7 @@ supports(mediaType: string): boolean;
 |  --- | --- | --- |
 |  mediaType | string | Media type |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

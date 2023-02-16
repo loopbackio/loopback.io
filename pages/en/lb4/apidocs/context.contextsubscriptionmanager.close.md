@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager.close.html
 
 Close the context: clear observers, stop notifications, and remove event listeners from its parent context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 close(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

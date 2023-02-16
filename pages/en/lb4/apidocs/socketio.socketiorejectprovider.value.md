@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiorejectprovider.value.html
 
 ## SocketIoRejectProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): SocketIoRejectMethod;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [SocketIoRejectMethod](./socketio.socketiorejectmethod.md)
 

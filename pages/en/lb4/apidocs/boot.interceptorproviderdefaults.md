@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderdefaults.html
 
 Default ArtifactOptions for InterceptorProviderBooter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 InterceptorProviderDefaults: ArtifactOptions

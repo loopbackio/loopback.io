@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.principal.html
 
 Represent a user, an application, or a device
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Principal 

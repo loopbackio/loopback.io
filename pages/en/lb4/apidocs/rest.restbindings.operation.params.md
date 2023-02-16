@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.operation.params.html
 
 ## RestBindings.Operation.PARAMS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PARAMS: BindingKey<OperationArgs>

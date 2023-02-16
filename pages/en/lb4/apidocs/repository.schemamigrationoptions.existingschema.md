@@ -17,7 +17,7 @@ When set to 'drop', schema migration will drop existing tables and recreate them
 
 When set to 'alter', schema migration will try to preserve current schema and data, and perform a non-destructive incremental update.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 existingSchema?: 'drop' | 'alter';

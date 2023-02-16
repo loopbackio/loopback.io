@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonerepository.create.html
 
 Create a target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(targetModelData: DataObject<Target>, options?: Options & {
@@ -28,9 +28,9 @@ create(targetModelData: DataObject<Target>, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
-|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string; } | <i>(Optional)</i> Options for the operation options.polymorphicType - If polymorphic target model, specify of which concrete model the created instance should be |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string; } | _(Optional)_ Options for the operation options.polymorphicType - If polymorphic target model, specify of which concrete model the created instance should be |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target&gt;
 

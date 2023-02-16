@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenconstants.refresh_
 
 The default secret used when generating refresh token.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REFRESH_SECRET_VALUE = "r3fr35htok3n"

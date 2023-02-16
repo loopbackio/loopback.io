@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.basemiddlewarebindingoptions.group.html
 
 An optional `group` name to be used for order of executions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 group?: string;

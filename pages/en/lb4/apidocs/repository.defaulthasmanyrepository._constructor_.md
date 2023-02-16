@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanyrepository._constructor_
 
 Constructor of DefaultHasManyEntityCrudRepository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(getTargetRepository: Getter<TargetRepository>, constraint: DataObject<TargetEntity>);

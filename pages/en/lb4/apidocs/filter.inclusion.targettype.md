@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.inclusion.targettype.html
 
 ## Inclusion.targetType property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetType?: string;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.applicationmetadatabooter.app.html
 
 ## ApplicationMetadataBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: Application;

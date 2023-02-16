@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.callback.html
 
 Type alias for Node.js callback functions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Callback<T> = (err: Error | string | null | undefined, result?: T) => void;

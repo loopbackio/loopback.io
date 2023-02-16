@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.cron.croncomponent.html
 
 The CronComponent manages cron jobs. It serves as an extension point for cron jobs.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CronComponent implements Component, LifeCycleObserver 
 ```
-<b>Implements:</b> [Component](./core.component.md)<!-- -->, [LifeCycleObserver](./core.lifecycleobserver.md)
+**Implements:** [Component](./core.component.md)<!-- -->, [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

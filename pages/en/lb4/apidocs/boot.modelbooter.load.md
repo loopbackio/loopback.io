@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.modelbooter.load.html
 
 Uses super method to get a list of Artifact classes. Boot each file by creating a DataSourceConstructor and binding it to the application class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 load(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

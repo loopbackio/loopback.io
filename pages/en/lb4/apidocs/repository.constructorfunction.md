@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.constructorfunction.html
 
 Interface for constructor functions without `new` operator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ConstructorFunction<T> 

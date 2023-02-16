@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerservice._constructor_.html
 
 Constructs a new instance of the `OASEnhancerService` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(
@@ -28,6 +28,6 @@ constructor(
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  getEnhancers | Getter&lt;[OASEnhancer](./openapi-v3.oasenhancer.md)<!-- -->\[\]&gt; |  |
-|  options | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined | <i>(Optional)</i> |
+|  options | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined | _(Optional)_ |
 
 

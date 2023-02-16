@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationrequest.subject.html
 
 The requestor that wants to access a resource.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 subject: string;

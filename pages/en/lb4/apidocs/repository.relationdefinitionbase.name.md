@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.relationdefinitionbase.name.html
 
 The relation name, typically matching the name of the accessor property defined on the source model. For example "orders" or "customer".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

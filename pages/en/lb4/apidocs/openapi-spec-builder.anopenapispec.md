@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.anopenapispec.html
 
 Create a new instance of OpenApiSpecBuilder.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function anOpenApiSpec(): OpenApiSpecBuilder;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [OpenApiSpecBuilder](./openapi-spec-builder.openapispecbuilder.md)
 

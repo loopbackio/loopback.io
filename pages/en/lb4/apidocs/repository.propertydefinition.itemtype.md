@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.itemtype.html
 
 ## PropertyDefinition.itemType property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 itemType?: PropertyType;

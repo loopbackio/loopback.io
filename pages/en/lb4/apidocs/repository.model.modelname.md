@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.model.modelname.html
 
 ## Model.modelName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static get modelName(): string;

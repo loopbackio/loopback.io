@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.requesthandler.html
 
 Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get requestHandler(): HttpRequestListener;

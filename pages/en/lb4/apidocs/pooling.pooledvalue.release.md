@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.pooling.pooledvalue.release.html
 
 The function to release the acquired value back to the pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 release(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

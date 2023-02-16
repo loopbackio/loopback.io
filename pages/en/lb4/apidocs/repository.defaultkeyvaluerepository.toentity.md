@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.toentity.htm
 
 ## DefaultKeyValueRepository.toEntity() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected toEntity(modelData: legacy.ModelData): T;
@@ -25,7 +25,7 @@ protected toEntity(modelData: legacy.ModelData): T;
 |  --- | --- | --- |
 |  modelData | legacy.ModelData |  |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

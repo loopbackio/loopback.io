@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinitionsyntax.jsonschema.html
 
 ## ModelDefinitionSyntax.jsonSchema property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 jsonSchema?: JsonSchemaWithExtensions;

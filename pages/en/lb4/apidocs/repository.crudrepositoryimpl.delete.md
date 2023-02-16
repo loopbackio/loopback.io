@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl.delete.html
 
 ## CrudRepositoryImpl.delete() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(entity: DataObject<T>, options?: Options): Promise<void>;
@@ -24,9 +24,9 @@ delete(entity: DataObject<T>, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

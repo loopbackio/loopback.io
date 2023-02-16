@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.trie.match.html
 
 Match a route path against the trie
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 match(path: string): (ResolvedNode<T> & {
@@ -29,7 +29,7 @@ match(path: string): (ResolvedNode<T> & {
 |  --- | --- | --- |
 |  path | string | The route path, such as <code>/customers/c01</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 ([ResolvedNode](./rest.resolvednode.md)<!-- -->&lt;T&gt; &amp; { node: [NodeWithValue](./rest.nodewithvalue.md)<!-- -->&lt;T&gt;; }) \| undefined
 

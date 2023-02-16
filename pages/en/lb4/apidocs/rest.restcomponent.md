@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponent.html
 
 ## RestComponent class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RestComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

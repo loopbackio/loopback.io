@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.bindingeventlistener.html
 
 Event listeners for binding events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingEventListener = (
 event: BindingEvent) => void;
 ```
-<b>References:</b> [BindingEvent](./context.bindingevent.md)
+**References:** [BindingEvent](./context.bindingevent.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.mergesecurityschemetospec.html
 
 Security scheme merge helper function to patch the current OpenAPI spec. It provides a direct route to add a security schema to the specs components. It returns a new merged object without modifying the original one.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function mergeSecuritySchemeToSpec(spec: OpenApiSpec, schemeName: string, schemeSpec: SecuritySchemeObject): OpenApiSpec;
@@ -29,7 +29,7 @@ export declare function mergeSecuritySchemeToSpec(spec: OpenApiSpec, schemeName:
 |  schemeName | string | The name of the security scheme to be added |
 |  schemeSpec | SecuritySchemeObject | The security scheme spec body to be added, |
 
-<b>Returns:</b>
+**Returns:**
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 

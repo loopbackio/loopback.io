@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.openapispec.html
 
 ## OpenApiSpec type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type OpenApiSpec = OpenAPIObject;

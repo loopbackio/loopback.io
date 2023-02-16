@@ -17,7 +17,7 @@ Does the connector have the revision token for replacement operations? (Cloudant
 
 Default: `false`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hasRevisionToken: boolean;

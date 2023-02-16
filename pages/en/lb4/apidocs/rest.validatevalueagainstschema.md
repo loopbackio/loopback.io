@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validatevalueagainstschema.html
 
 Validate the value against JSON schema.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function validateValueAgainstSchema(value: any, schema: SchemaObject | ReferenceObject, globalSchemas?: SchemasObject, options?: ValueValidationOptions): Promise<any>;
@@ -27,10 +27,10 @@ export declare function validateValueAgainstSchema(value: any, schema: SchemaObj
 |  --- | --- | --- |
 |  value | any | The data value. |
 |  schema | SchemaObject \| ReferenceObject | The JSON schema used to perform the validation. |
-|  globalSchemas | SchemasObject | <i>(Optional)</i> Schema references. |
-|  options | [ValueValidationOptions](./rest.valuevalidationoptions.md) | <i>(Optional)</i> Value validation options. |
+|  globalSchemas | SchemasObject | _(Optional)_ Schema references. |
+|  options | [ValueValidationOptions](./rest.valuevalidationoptions.md) | _(Optional)_ Value validation options. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

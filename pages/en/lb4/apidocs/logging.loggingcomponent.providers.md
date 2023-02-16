@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingcomponent.providers.html
 
 ## LoggingComponent.providers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 providers: ProviderMap;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.getauthenticatemetadata.html
 
 Fetch authentication metadata stored by `@authenticate` decorator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, methodName: string): AuthenticationMetadata[] | undefined;
@@ -28,7 +28,7 @@ export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, me
 |  targetClass | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; | Target controller |
 |  methodName | string | Target method |
 
-<b>Returns:</b>
+**Returns:**
 
 [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined
 

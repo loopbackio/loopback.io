@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.bodyparser.html
 
 Interface to be implemented by body parser extensions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BodyParser 

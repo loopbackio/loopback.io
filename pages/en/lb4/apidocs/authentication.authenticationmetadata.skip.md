@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmetadata.skip.html
 
 A flag to skip authentication
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip?: boolean;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanydefinition.type.html
 
 ## HasManyDefinition.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: RelationType.hasMany;

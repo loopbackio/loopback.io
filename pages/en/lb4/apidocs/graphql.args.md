@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.args.html
 
 ## args variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 args: typeof Args

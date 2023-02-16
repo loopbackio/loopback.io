@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.keys.html
 
 ## DefaultKeyValueRepository.keys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keys(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
@@ -23,10 +23,10 @@ keys(filter?: KeyValueFilter, options?: Options): AsyncIterable<string>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  filter | [KeyValueFilter](./repository.keyvaluefilter.md) | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 AsyncIterable&lt;string&gt;
 

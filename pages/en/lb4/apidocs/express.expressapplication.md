@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.express.expressapplication.html
 
 A LoopBack application with Express server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ExpressApplication extends Application 
 ```
-<b>Extends:</b> [Application](./core.application.md)
+**Extends:** [Application](./core.application.md)
 
 ## Constructors
 
@@ -32,7 +32,7 @@ export declare class ExpressApplication extends Application
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [config?](./express.expressapplication.config.md) | <code>readonly</code> | [ApplicationConfig](./core.applicationconfig.md) \| undefined | <i>(Optional)</i> |
+|  [config?](./express.expressapplication.config.md) | <code>readonly</code> | [ApplicationConfig](./core.applicationconfig.md) \| undefined | _(Optional)_ |
 |  [expressServer](./express.expressapplication.expressserver.md) | <code>readonly</code> | [ExpressServer](./express.expressserver.md) | Embedded Express Server |
 
 

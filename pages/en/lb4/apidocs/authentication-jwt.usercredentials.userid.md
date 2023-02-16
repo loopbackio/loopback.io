@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.usercredentials.userid.html
 
 ## UserCredentials.userId property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 userId: string;

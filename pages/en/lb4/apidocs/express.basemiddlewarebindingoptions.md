@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.express.basemiddlewarebindingoptions.html
 
 Options to create a middleware binding for the sequence action or interceptor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BaseMiddlewareBindingOptions<CTX extends Context> extends MiddlewareCreationOptions 
 ```
-<b>Extends:</b> [MiddlewareCreationOptions](./express.middlewarecreationoptions.md)
+**Extends:** [MiddlewareCreationOptions](./express.middlewarecreationoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [group?](./express.basemiddlewarebindingoptions.group.md) |  | string | <i>(Optional)</i> An optional <code>group</code> name to be used for order of executions |
-|  [key?](./express.basemiddlewarebindingoptions.key.md) |  | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt; | <i>(Optional)</i> Binding key for the middleware. |
+|  [group?](./express.basemiddlewarebindingoptions.group.md) |  | string | _(Optional)_ An optional <code>group</code> name to be used for order of executions |
+|  [key?](./express.basemiddlewarebindingoptions.key.md) |  | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;&gt; | _(Optional)_ Binding key for the middleware. |
 
 

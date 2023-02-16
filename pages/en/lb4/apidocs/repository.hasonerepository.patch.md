@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonerepository.patch.html
 
 Patch the related target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 patch(dataObject: DataObject<Target> | {
@@ -30,9 +30,9 @@ patch(dataObject: DataObject<Target> | {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt;; } | The target model fields and their new values to patch If the target models are of different types, this should be a dictionary |
-|  options | [Options](./repository.options.md) &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> options.isPolymorphic - whether dataObject is a dictionary |
+|  options | [Options](./repository.options.md) &amp; { isPolymorphic?: boolean; } | _(Optional)_ options.isPolymorphic - whether dataObject is a dictionary |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolveuntil.html
 
 Resolve an iterator of source values into a result until the evaluator returns `true`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveUntil<T, V>(source: Iterator<T>, resolver: (sourceVal: T) => ValueOrPromise<V | undefined>, evaluator: (sourceVal: T, targetVal: V | undefined) => boolean): ValueOrPromise<V | undefined>;
@@ -29,7 +29,7 @@ export declare function resolveUntil<T, V>(source: Iterator<T>, resolver: (sourc
 |  resolver | (sourceVal: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V \| undefined&gt; | The resolve function that maps the source value to a result |
 |  evaluator | (sourceVal: T, targetVal: V \| undefined) =&gt; boolean | The evaluate function that decides when to stop |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V \| undefined&gt;
 

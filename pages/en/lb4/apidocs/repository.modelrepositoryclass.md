@@ -17,7 +17,7 @@ Signature for a Repository class bound to a given model. The constructor accepts
 
 `define*` functions return a class implementing this interface.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ModelRepositoryClass<M extends Model, R extends Repository<M>> 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.providerbindingsource.html
 
 Binding source for `toProvider`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ProviderBindingSource<T> = {
@@ -23,6 +23,6 @@ export type ProviderBindingSource<T> = {
     value: Constructor<Provider<T>>;
 };
 ```
-<b>References:</b> [BindingType.PROVIDER](./context.bindingtype.md)<!-- -->, [Constructor](./context.constructor.md)<!-- -->, [Provider](./context.provider.md)
+**References:** [BindingType.PROVIDER](./context.bindingtype.md)<!-- -->, [Constructor](./context.constructor.md)<!-- -->, [Provider](./context.provider.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.number.html
 
 ## NUMBER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 NUMBER: NumberType

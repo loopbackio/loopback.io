@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.aslifecycleobserver.html
 
 A `BindingTemplate` function to configure the binding as life cycle observer by tagging it with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asLifeCycleObserver<T = unknown>(binding: Binding<T>): Binding<T>;
@@ -27,7 +27,7 @@ export declare function asLifeCycleObserver<T = unknown>(binding: Binding<T>): B
 |  --- | --- | --- |
 |  binding | [Binding](./context.binding.md)<!-- -->&lt;T&gt; | Binding object |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;T&gt;
 

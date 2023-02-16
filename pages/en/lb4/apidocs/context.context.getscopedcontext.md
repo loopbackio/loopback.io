@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getscopedcontext.html
 
 Get the context matching the scope
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getScopedContext(scope: BindingScope.APPLICATION | BindingScope.SERVER | BindingScope.REQUEST): Context | undefined;
@@ -27,7 +27,7 @@ getScopedContext(scope: BindingScope.APPLICATION | BindingScope.SERVER | Binding
 |  --- | --- | --- |
 |  scope | [BindingScope.APPLICATION](./context.bindingscope.md) \| [BindingScope.SERVER](./context.bindingscope.md) \| [BindingScope.REQUEST](./context.bindingscope.md) | Binding scope |
 
-<b>Returns:</b>
+**Returns:**
 
 [Context](./context.context.md) \| undefined
 

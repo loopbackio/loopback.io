@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.bindingtag.html
 
 Binding tag can be a simple name or name/value pairs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingTag = TagMap | string;
 ```
-<b>References:</b> [TagMap](./context.tagmap.md)
+**References:** [TagMap](./context.tagmap.md)
 
 

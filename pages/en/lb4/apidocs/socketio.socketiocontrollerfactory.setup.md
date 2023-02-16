@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.setup.html
 
 Set up the controller for the given socket
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setup(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.sendresponsemiddlewareprovider.html
 
 ## SendResponseMiddlewareProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SendResponseMiddlewareProvider implements Provider<Middleware> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 
 ## Methods
 

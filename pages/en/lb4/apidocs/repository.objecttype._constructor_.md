@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.objecttype._constructor_.html
 
 Constructs a new instance of the `ObjectType` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(type: Class<T>);

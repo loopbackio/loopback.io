@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.toexpressmiddleware.html
 
 An adapter function to create an Express middleware handler to discover and invoke registered LoopBack-style middleware in the context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function toExpressMiddleware(ctx: Context): ExpressRequestHandler;
@@ -27,7 +27,7 @@ export declare function toExpressMiddleware(ctx: Context): ExpressRequestHandler
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object to discover registered middleware |
 
-<b>Returns:</b>
+**Returns:**
 
 [ExpressRequestHandler](./express.expressrequesthandler.md)
 

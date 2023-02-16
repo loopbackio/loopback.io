@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.fields.html
 
 Describe what fields to be included/excluded
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fields(...f: (Fields<MT> | Extract<keyof MT, string>)[]): this;
@@ -27,7 +27,7 @@ fields(...f: (Fields<MT> | Extract<keyof MT, string>)[]): this;
 |  --- | --- | --- |
 |  f | ([Fields](./filter.fields.md)<!-- -->&lt;MT&gt; \| Extract&lt;keyof MT, string&gt;)\[\] | A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

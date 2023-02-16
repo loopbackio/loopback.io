@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.adduser.html
 
 ## DefaultSubject.addUser() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addUser(...users: UserProfile[]): void;
@@ -25,7 +25,7 @@ addUser(...users: UserProfile[]): void;
 |  --- | --- | --- |
 |  users | [UserProfile](./security.userprofile.md)<!-- -->\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.query.html
 
 Query parameter decorator
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 query: {

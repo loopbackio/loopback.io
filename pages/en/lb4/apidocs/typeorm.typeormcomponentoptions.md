@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormcomponentoptions.html
 
 ## TypeOrmComponentOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TypeOrmComponentOptions = {

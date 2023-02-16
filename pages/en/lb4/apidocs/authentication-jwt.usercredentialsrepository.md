@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.usercredentialsrepository.html
 
 ## UserCredentialsRepository class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class UserCredentialsRepository extends DefaultCrudRepository<UserCredentials, typeof UserCredentials.prototype.id, UserCredentialsRelations> 
 ```
-<b>Extends:</b> [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [UserCredentials.prototype.id](./authentication-jwt.usercredentials.id.md)<!-- -->, [UserCredentialsRelations](./authentication-jwt.usercredentialsrelations.md)<!-- -->&gt;
+**Extends:** [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [UserCredentials.prototype.id](./authentication-jwt.usercredentials.id.md)<!-- -->, [UserCredentialsRelations](./authentication-jwt.usercredentialsrelations.md)<!-- -->&gt;
 
 ## Constructors
 

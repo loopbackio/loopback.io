@@ -13,19 +13,19 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanydefinition.html
 
 ## ReferencesManyDefinition interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ReferencesManyDefinition extends RelationDefinitionBase 
 ```
-<b>Extends:</b> [RelationDefinitionBase](./repository.relationdefinitionbase.md)
+**Extends:** [RelationDefinitionBase](./repository.relationdefinitionbase.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [keyFrom?](./repository.referencesmanydefinition.keyfrom.md) |  | string | <i>(Optional)</i> |
-|  [keyTo?](./repository.referencesmanydefinition.keyto.md) |  | string | <p><i>(Optional)</i> keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.</p><p>TODO(bajtos) Add relation description.</p> |
+|  [keyFrom?](./repository.referencesmanydefinition.keyfrom.md) |  | string | _(Optional)_ |
+|  [keyTo?](./repository.referencesmanydefinition.keyto.md) |  | string | <p>_(Optional)_ keyTo: The foreign key used by the target model for this relation. keyFrom: The source key used by the source model for this relation.</p><p>TODO(bajtos) Add relation description.</p> |
 |  [targetsMany](./repository.referencesmanydefinition.targetsmany.md) |  | true |  |
 |  [type](./repository.referencesmanydefinition.type.md) |  | [RelationType.referencesMany](./repository.relationtype.md) |  |
 

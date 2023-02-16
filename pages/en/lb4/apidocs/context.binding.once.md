@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.once.html
 
 The "changed" event is emitted by methods such as `tag`<!-- -->, `inScope`<!-- -->, `to`<!-- -->, and `toClass`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 once(eventName: 'changed', listener: BindingEventListener): this;
@@ -28,7 +28,7 @@ once(eventName: 'changed', listener: BindingEventListener): this;
 |  eventName | 'changed' | The name of the event - always <code>changed</code>. |
 |  listener | [BindingEventListener](./context.bindingeventlistener.md) | The listener function to call when the event is emitted. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

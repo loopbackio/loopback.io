@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.lernapackage.html
 
 TypeScript definition for [Lerna Package](https://github.com/lerna/lerna/blob/master/core/package/index.js)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface LernaPackage 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxymetadata.datasource.htm
 
 ## ServiceProxyMetadata.dataSource property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSource?: juggler.DataSource;

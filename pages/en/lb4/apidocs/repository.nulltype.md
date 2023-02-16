@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.nulltype.html
 
 Null type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class NullType implements Type<null> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;null&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;null&gt;
 
 ## Properties
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanyrepository.html
 
 CRUD operations for a target repository of a ReferencesMany relation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ReferencesManyRepository<Target extends Entity> 

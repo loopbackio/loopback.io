@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.getter.fromvalue.html
 
 Convert a value into a Getter returning that value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function fromValue<T>(value: T): Getter<T>;
@@ -27,7 +27,7 @@ function fromValue<T>(value: T): Getter<T>;
 |  --- | --- | --- |
 |  value | T |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Getter](./context.getter.md)<!-- -->&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.decorate.html
 
 Base implementation of the decorator function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected decorate(target: Object, member?: string | symbol, descriptorOrIndex?: TypedPropertyDescriptor<any> | number): void;
@@ -26,10 +26,10 @@ protected decorate(target: Object, member?: string | symbol, descriptorOrIndex?:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object | Decorator target |
-|  member | string \| symbol | <i>(Optional)</i> Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> Optional method descriptor or parameter index |
+|  member | string \| symbol | _(Optional)_ Optional property or method |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional method descriptor or parameter index |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

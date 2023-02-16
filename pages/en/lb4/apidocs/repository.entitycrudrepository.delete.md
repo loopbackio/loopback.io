@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.delete.html
 
 Delete an entity
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(entity: DataObject<T>, options?: Options): Promise<void>;
@@ -26,9 +26,9 @@ delete(entity: DataObject<T>, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Entity to be deleted |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorytags.model.html
 
 Tag for model class bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MODEL = "model"

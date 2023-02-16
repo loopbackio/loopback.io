@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootexecutionoptions.html
 
 Options for boot() execution
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BootExecutionOptions = {
@@ -27,6 +27,6 @@ export type BootExecutionOptions = {
     [prop: string]: any;
 };
 ```
-<b>References:</b> [Constructor](./context.constructor.md)<!-- -->, [Booter](./boot.booter.md)
+**References:** [Constructor](./context.constructor.md)<!-- -->, [Booter](./boot.booter.md)
 
 

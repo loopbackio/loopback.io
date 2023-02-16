@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.user.realm.html
 
 ## User.realm property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 realm?: string;

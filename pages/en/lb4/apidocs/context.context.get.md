@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.get.html
 
 Get the value bound to the given key, throw an error when no value is bound for the given key.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionSession): Promise<ValueType>;
@@ -26,9 +26,9 @@ get<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionSessi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for resolution (accepted for backward compatibility) |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for resolution (accepted for backward compatibility) |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;ValueType&gt;
 

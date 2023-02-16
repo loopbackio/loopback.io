@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.applicationmetadata.version.html
 
 ## ApplicationMetadata.version property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 version: string;

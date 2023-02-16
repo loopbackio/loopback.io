@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosendprovider.action.html
 
 ## SocketIoSendProvider.action() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 action(done: Function, result: unknown): void;
@@ -26,7 +26,7 @@ action(done: Function, result: unknown): void;
 |  done | Function |  |
 |  result | unknown |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

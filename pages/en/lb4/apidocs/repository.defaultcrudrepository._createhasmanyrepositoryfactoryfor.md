@@ -20,7 +20,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._createhasmanyre
 > Use `this.createHasManyRepositoryFactoryFor()` instead
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, ForeignKeyType>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>>): HasManyRepositoryFactory<Target, ForeignKeyType>;
@@ -33,7 +33,7 @@ protected _createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, Fo
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 

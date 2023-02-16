@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitynotfounderror._constructor_.html
 
 Constructs a new instance of the `EntityNotFoundError` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(entityOrName: typeof Entity | string, entityId: ID, extraProperties?: Props);
@@ -27,6 +27,6 @@ constructor(entityOrName: typeof Entity | string, entityId: ID, extraProperties?
 |  --- | --- | --- |
 |  entityOrName | typeof [Entity](./repository.entity.md) \| string |  |
 |  entityId | ID |  |
-|  extraProperties | Props | <i>(Optional)</i> |
+|  extraProperties | Props | _(Optional)_ |
 
 

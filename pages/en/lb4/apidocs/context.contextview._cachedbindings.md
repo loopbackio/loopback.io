@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview._cachedbindings.html
 
 An array of cached bindings that matches the binding filter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _cachedBindings: Readonly<Binding<T>>[] | undefined;

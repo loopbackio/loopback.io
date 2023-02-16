@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.compiledschemacache.html
 
 Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 compiledSchemaCache?: SchemaValidatorCache;

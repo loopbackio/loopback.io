@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filter.fields.html
 
 To include/exclude fields
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fields?: Fields<MT>;

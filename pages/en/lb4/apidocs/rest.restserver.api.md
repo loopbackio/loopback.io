@@ -17,7 +17,7 @@ Set the OpenAPI specification that defines the REST API schema for this server. 
 
 Note that this will override any routes defined via decorators at the controller level (this function takes precedent).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 api(spec: OpenApiSpec): Binding;
@@ -29,7 +29,7 @@ api(spec: OpenApiSpec): Binding;
 |  --- | --- | --- |
 |  spec | [OpenApiSpec](./openapi-v3.openapispec.md) | The OpenAPI specification, as an object. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

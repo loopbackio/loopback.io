@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.httpserverresolvedoptions.html
 
 Valid configuration for the HttpServer constructor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HttpServerResolvedOptions 
@@ -25,10 +25,10 @@ export interface HttpServerResolvedOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [basePath?](./socketio.httpserverresolvedoptions.basepath.md) |  | string | <i>(Optional)</i> |
+|  [basePath?](./socketio.httpserverresolvedoptions.basepath.md) |  | string | _(Optional)_ |
 |  [cors](./socketio.httpserverresolvedoptions.cors.md) |  | cors.CorsOptions |  |
-|  [host?](./socketio.httpserverresolvedoptions.host.md) |  | string | <i>(Optional)</i> |
-|  [path?](./socketio.httpserverresolvedoptions.path.md) |  | string | <i>(Optional)</i> |
+|  [host?](./socketio.httpserverresolvedoptions.host.md) |  | string | _(Optional)_ |
+|  [path?](./socketio.httpserverresolvedoptions.path.md) |  | string | _(Optional)_ |
 |  [port](./socketio.httpserverresolvedoptions.port.md) |  | number |  |
 
 

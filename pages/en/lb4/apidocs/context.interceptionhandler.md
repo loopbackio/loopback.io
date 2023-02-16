@@ -17,12 +17,12 @@ A proxy handler that applies interceptors
 
 See https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Proxy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InterceptionHandler<T extends object> implements ProxyHandler<T> 
 ```
-<b>Implements:</b> ProxyHandler&lt;T&gt;
+**Implements:** ProxyHandler&lt;T&gt;
 
 ## Constructors
 

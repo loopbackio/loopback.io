@@ -17,7 +17,7 @@ Execute a raw database command using a connector that's not described by LoopBac
 
 \*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing database commands may lead to unexpected results and other issues.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 execute(...args: PositionalParameters): Promise<AnyObject>;
@@ -29,7 +29,7 @@ execute(...args: PositionalParameters): Promise<AnyObject>;
 |  --- | --- | --- |
 |  args | [PositionalParameters](./repository.positionalparameters.md) | Command and parameters, please consult your connector's documentation to learn about supported commands and their parameters. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
 

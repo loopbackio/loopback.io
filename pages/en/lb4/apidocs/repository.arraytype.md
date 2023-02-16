@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.arraytype.html
 
 Array type, such as string\[\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ArrayType<T> implements Type<T[]> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;T\[\]&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;T\[\]&gt;
 
 ## Constructors
 

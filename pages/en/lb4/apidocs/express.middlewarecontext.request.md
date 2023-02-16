@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarecontext.request.html
 
 ## MiddlewareContext.request property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly request: Request;

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.controllerclass.html
 
 Controller class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ControllerClass<T extends ControllerInstance> = Constructor<T>;
 ```
-<b>References:</b> [ControllerInstance](./rest.controllerinstance.md)<!-- -->, [Constructor](./context.constructor.md)
+**References:** [ControllerInstance](./rest.controllerinstance.md)<!-- -->, [Constructor](./context.constructor.md)
 
 

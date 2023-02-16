@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.impose.html
 
 Add a Filter or Where constraint object. If it is a filter object, create an `and` clause for conflicting keys with its where object. For any other properties, throw an error. If it's not a Filter, coerce it to a filter, and carry out the same logic.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 impose(constraint: Filter<MT> | Where<MT>): this;
@@ -27,7 +27,7 @@ impose(constraint: Filter<MT> | Where<MT>): this;
 |  --- | --- | --- |
 |  constraint | [Filter](./filter.filter.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt; | a constraint object to merge with own filter object |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

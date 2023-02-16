@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.tagsdecoratormetadata.html
 
 ## TagsDecoratorMetadata interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface TagsDecoratorMetadata 

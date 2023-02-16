@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.createinterceptor.html
 
 Create an interceptor function from express middleware.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createInterceptor<CFG, CTX extends Context = InvocationContext>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?: CFG): GenericInterceptor<CTX>;
@@ -26,9 +26,9 @@ export declare function createInterceptor<CFG, CTX extends Context = InvocationC
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function. A wrapper can be created if the Express middleware module does not conform to the factory pattern and signature. |
-|  middlewareConfig | CFG | <i>(Optional)</i> Configuration for the Express middleware |
+|  middlewareConfig | CFG | _(Optional)_ Configuration for the Express middleware |
 
-<b>Returns:</b>
+**Returns:**
 
 [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.hasmany.html
 
 Define a new hasMany relation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hasMany(name: string, definition: Omit<HasManyDefinition, 'name' | 'type' | 'targetsMany'>): this;
@@ -28,7 +28,7 @@ hasMany(name: string, definition: Omit<HasManyDefinition, 'name' | 'type' | 'tar
 |  name | string | The name of the hasMany relation. |
 |  definition | Omit&lt;[HasManyDefinition](./repository.hasmanydefinition.md)<!-- -->, 'name' \| 'type' \| 'targetsMany'&gt; | The definition of the hasMany relation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.bind.html
 
 A static method to create a binding so that we can do `Binding.bind('foo').to('bar');` as `new Binding('foo').to('bar')` is not easy to read.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static bind<V = unknown>(key: BindingAddress<V>): Binding<V>;
@@ -27,7 +27,7 @@ static bind<V = unknown>(key: BindingAddress<V>): Binding<V>;
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;V&gt; | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;V&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.stubbedinstancewithsinonaccessor.html
 
 ## StubbedInstanceWithSinonAccessor type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type StubbedInstanceWithSinonAccessor<T> = T & {

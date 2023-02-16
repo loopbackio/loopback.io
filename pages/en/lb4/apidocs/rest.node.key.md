@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.node.key.html
 
 Key of the node
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 key: string;

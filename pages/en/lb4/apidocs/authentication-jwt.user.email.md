@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.user.email.html
 
 ## User.email property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 email: string;

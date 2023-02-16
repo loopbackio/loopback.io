@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.regexprouter.listrouteswithpathvars.html
 
 ## RegExpRouter.listRoutesWithPathVars() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected listRoutesWithPathVars(): RegExpRouteEntry[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 RegExpRouteEntry\[\]
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.view.html
 
 Inject matching bound values by the filter function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 view: (bindingFilter: BindingFilter, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

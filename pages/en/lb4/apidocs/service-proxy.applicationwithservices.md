@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.html
 
 Interface for an Application mixed in with ServiceMixin
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ApplicationWithServices extends Application 
 ```
-<b>Extends:</b> [Application](./core.application.md)
+**Extends:** [Application](./core.application.md)
 
 ## Methods
 

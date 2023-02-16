@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.datasource.html
 
 DataSource denotes a configured connector
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface DataSource 
@@ -25,7 +25,7 @@ export interface DataSource
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [connector?](./repository.datasource.connector.md) |  | [Connector](./repository.connector.md) | <i>(Optional)</i> |
+|  [connector?](./repository.datasource.connector.md) |  | [Connector](./repository.connector.md) | _(Optional)_ |
 |  [name](./repository.datasource.name.md) |  | string |  |
 |  [settings](./repository.datasource.settings.md) |  | [AnyObject](./repository.anyobject.md) |  |
 

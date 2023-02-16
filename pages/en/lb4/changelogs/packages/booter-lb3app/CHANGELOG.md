@@ -10,6 +10,19 @@ permalink: /doc/en/lb4/changelog.booter-lb3app.html
 
 # Change Log
 
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [4.0.7](https://github.com/loopbackio/loopback-next/compare/@loopback/booter-lb3app@4.0.6...@loopback/booter-lb3app@4.0.7) (2023-01-09)
+
+**Note:** Version bump only for package @loopback/booter-lb3app
+
+
+
+
+
+# Change Log
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.mutation.html
 
 ## mutation variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mutation: typeof Mutation

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationbindings.html
 
 Binding keys used by authorization component.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace AuthorizationBindings 

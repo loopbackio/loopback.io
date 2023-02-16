@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.connctx.html
 
 ## SocketIoControllerFactory.connCtx property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly connCtx: SocketIoConnectionContext;

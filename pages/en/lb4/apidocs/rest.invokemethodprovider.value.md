@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.invokemethodprovider.value.html
 
 ## InvokeMethodProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static value(context: Context): InvokeMethod;
@@ -25,7 +25,7 @@ static value(context: Context): InvokeMethod;
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [InvokeMethod](./rest.invokemethod.md)
 

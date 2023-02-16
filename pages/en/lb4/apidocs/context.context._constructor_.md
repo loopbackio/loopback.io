@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context._constructor_.html
 
 Create a new context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(_parent?: Context | string, name?: string);
@@ -25,8 +25,8 @@ constructor(_parent?: Context | string, name?: string);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_parent | [Context](./context.context.md) \| string | <i>(Optional)</i> The optional parent context |
-|  name | string | <i>(Optional)</i> Name of the context. If not provided, a unique identifier will be generated as the name. |
+|  \_parent | [Context](./context.context.md) \| string | _(Optional)_ The optional parent context |
+|  name | string | _(Optional)_ Name of the context. If not provided, a unique identifier will be generated as the name. |
 
 ## Example
 

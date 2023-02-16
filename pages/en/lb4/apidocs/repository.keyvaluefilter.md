@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluefilter.html
 
 Filter for keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type KeyValueFilter = {

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.numbertype.defaultvalue.html
 
 ## NumberType.defaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): number;
 ```
-<b>Returns:</b>
+**Returns:**
 
 number
 

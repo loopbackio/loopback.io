@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.inscope.html
 
 Set the binding scope
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inScope(scope: BindingScope): this;
@@ -27,7 +27,7 @@ inScope(scope: BindingScope): this;
 |  --- | --- | --- |
 |  scope | [BindingScope](./context.bindingscope.md) | Binding scope |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.stringtype.defaultvalue.html
 
 ## StringType.defaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

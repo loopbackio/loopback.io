@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.model.html
 
 ## ApplicationWithRepositories.model() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 model<M extends Class<unknown>>(modelClass: M): Binding<M>;
@@ -25,7 +25,7 @@ model<M extends Class<unknown>>(modelClass: M): Binding<M>;
 |  --- | --- | --- |
 |  modelClass | M |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;M&gt;
 

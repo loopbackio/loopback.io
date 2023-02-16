@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.validationerrordetails.messag
 
 A human readable description of the error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 message: string;

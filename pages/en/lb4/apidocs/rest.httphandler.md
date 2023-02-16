@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.html
 
 ## HttpHandler class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HttpHandler 

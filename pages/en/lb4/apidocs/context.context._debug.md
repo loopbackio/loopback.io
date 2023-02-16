@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context._debug.html
 
 A debug function which can be overridden by subclasses.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _debug: Debugger;

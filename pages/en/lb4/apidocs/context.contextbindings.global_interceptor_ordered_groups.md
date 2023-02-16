@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextbindings.global_interceptor_ordere
 
 Binding key for ordered groups of global interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GLOBAL_INTERCEPTOR_ORDERED_GROUPS: BindingKey<string[]>

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httpserverlike.html
 
 ## HttpServerLike interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HttpServerLike 

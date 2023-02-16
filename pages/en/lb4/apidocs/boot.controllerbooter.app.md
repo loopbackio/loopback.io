@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.controllerbooter.app.html
 
 ## ControllerBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: Application;

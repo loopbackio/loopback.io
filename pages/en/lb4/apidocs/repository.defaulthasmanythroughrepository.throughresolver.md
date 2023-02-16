@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.throug
 
 ## DefaultHasManyThroughRepository.throughResolver property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 throughResolver: TypeResolver<Entity, typeof Entity>;

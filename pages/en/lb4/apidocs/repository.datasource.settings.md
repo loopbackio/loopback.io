@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.datasource.settings.html
 
 ## DataSource.settings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 settings: AnyObject;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpoptions.protocol.html
 
 ## HttpOptions.protocol property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protocol?: 'http';

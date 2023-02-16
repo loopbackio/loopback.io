@@ -19,7 +19,7 @@ For example:
 
 - \[log\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[log, cache\] =<!-- -->&gt; \[log, cache\] - \[\] + \[cache, log\] =<!-- -->&gt; \[cache, log\] - \[cache, log\] + \[\] =<!-- -->&gt; \[cache, log\] - \[log\] + \[cache\] =<!-- -->&gt; \[log, cache\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey[], existingInterceptors: InterceptorOrKey[]): InterceptorOrKey[];
@@ -32,7 +32,7 @@ export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey
 |  interceptorsFromSpec | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | Interceptors from <code>@intercept</code> |
 |  existingInterceptors | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | Interceptors already applied for the method |
 
-<b>Returns:</b>
+**Returns:**
 
 [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
 

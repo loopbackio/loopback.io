@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.getcontenttype.html
 
 Get the content-type header value from the request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getContentType(req: Request): string | undefined;
@@ -27,7 +27,7 @@ export declare function getContentType(req: Request): string | undefined;
 |  --- | --- | --- |
 |  req | Request | Http request |
 
-<b>Returns:</b>
+**Returns:**
 
 string \| undefined
 

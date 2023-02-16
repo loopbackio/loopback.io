@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.rawbodyparser.html
 
 Parsing the request body into Buffer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RawBodyParser implements BodyParser 
 ```
-<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
+**Implements:** [BodyParser](./rest.bodyparser.md)
 
 ## Constructors
 

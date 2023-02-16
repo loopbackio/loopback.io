@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.graphql_server.html
 
 Binding key for the GraphQL server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GRAPHQL_SERVER: BindingKey<GraphQLServer>

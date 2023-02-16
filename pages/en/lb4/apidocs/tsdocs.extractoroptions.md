@@ -15,22 +15,22 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.html
 
 Options to run api-extractor against the lerna repo
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ExtractorOptions extends ApiDocsOptions 
 ```
-<b>Extends:</b> [ApiDocsOptions](./tsdocs.apidocsoptions.md)
+**Extends:** [ApiDocsOptions](./tsdocs.apidocsoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md) |  | boolean | <i>(Optional)</i> A flag to control if <code>apiReport</code> should be enabled |
-|  [config?](./tsdocs.extractoroptions.config.md) |  | IConfigFile | <i>(Optional)</i> Configuration for api-extractor |
-|  [ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md) |  | boolean | <i>(Optional)</i> A flag to control if errors should be ignored |
-|  [mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md) |  | string | <i>(Optional)</i> mainEntryPointFilePath |
-|  [tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md) |  | string | <i>(Optional)</i> Path for tsconfig |
-|  [typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md) |  | string | <i>(Optional)</i> Custom TypeScript compiler dir |
+|  [apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md) |  | boolean | _(Optional)_ A flag to control if <code>apiReport</code> should be enabled |
+|  [config?](./tsdocs.extractoroptions.config.md) |  | IConfigFile | _(Optional)_ Configuration for api-extractor |
+|  [ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md) |  | boolean | _(Optional)_ A flag to control if errors should be ignored |
+|  [mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md) |  | string | _(Optional)_ mainEntryPointFilePath |
+|  [tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md) |  | string | _(Optional)_ Path for tsconfig |
+|  [typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md) |  | string | _(Optional)_ Custom TypeScript compiler dir |
 
 

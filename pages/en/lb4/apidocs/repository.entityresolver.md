@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.repository.entityresolver.html
 
 ## EntityResolver type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type EntityResolver<T extends Entity> = TypeResolver<T, typeof Entity>;
 ```
-<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [TypeResolver](./repository.typeresolver.md)
+**References:** [Entity](./repository.entity.md)<!-- -->, [TypeResolver](./repository.typeresolver.md)
 
 

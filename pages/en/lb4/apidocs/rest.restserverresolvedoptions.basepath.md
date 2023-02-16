@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.basepath.html
 
 Base path for API/static routes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 basePath?: string;

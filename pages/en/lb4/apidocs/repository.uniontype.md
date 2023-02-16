@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.uniontype.html
 
 Union type, such as string \| number
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class UnionType implements Type<any> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;any&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;any&gt;
 
 ## Constructors
 

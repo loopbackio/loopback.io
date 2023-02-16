@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.html
 
 A builder for Filter. It provides fleunt APIs to add clauses such as `fields`<!-- -->, `order`<!-- -->, `where`<!-- -->, `limit`<!-- -->, `offset`<!-- -->, and `include`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class FilterBuilder<MT extends object = AnyObject> 

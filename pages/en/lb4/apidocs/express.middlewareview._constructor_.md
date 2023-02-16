@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewareview._constructor_.html
 
 Constructs a new instance of the `MiddlewareView` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(ctx: Context, options?: InvokeMiddlewareOptions);
@@ -26,6 +26,6 @@ constructor(ctx: Context, options?: InvokeMiddlewareOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) |  |
-|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | <i>(Optional)</i> |
+|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | _(Optional)_ |
 
 

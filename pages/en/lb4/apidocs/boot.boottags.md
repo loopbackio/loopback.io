@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.boottags.html
 
 Namespace for boot related tags
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace BootTags 

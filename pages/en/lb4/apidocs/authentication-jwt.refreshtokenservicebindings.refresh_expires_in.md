@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservicebindings.re
 
 ## RefreshTokenServiceBindings.REFRESH\_EXPIRES\_IN variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REFRESH_EXPIRES_IN: BindingKey<string>

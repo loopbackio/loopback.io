@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.propertytype.html
 
 ## PropertyType type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PropertyType = {

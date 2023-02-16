@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormconnectionbooter.load.html
 
 ## TypeOrmConnectionBooter.load() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 load(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

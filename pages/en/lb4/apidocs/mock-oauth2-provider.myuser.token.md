@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.myuser.token.html
 
 ## MyUser.token property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 token?: string;

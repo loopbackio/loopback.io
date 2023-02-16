@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.streambodyparser.name.html
 
 ## StreamBodyParser.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: symbol;

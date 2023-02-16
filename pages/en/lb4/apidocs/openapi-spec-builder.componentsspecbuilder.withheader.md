@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withhe
 
 Define a component header.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withHeader(name: string, header: HeaderObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withHeader(name: string, header: HeaderObject | ReferenceObject): this;
 |  name | string | The name of the header |
 |  header | HeaderObject \| ReferenceObject | Specification of the header |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

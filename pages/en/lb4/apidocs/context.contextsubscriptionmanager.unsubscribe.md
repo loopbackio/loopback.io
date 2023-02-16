@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager.unsubscribe.ht
 
 Remove the context event observer from the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unsubscribe(observer: ContextEventObserver): boolean;
@@ -27,7 +27,7 @@ unsubscribe(observer: ContextEventObserver): boolean;
 |  --- | --- | --- |
 |  observer | [ContextEventObserver](./context.contexteventobserver.md) | Context event observer |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

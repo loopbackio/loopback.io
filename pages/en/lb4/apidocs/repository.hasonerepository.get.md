@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonerepository.get.html
 
 Find the only target model instance that belongs to the declaring model.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, options?: Options & {
@@ -27,10 +27,10 @@ get(filter?: Pick<Filter<Target>, Exclude<keyof Filter<Target>, 'where'>>, optio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | <i>(Optional)</i> Query filter without a Where condition |
-|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> Options for the operations options.polymorphicType - a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
+|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;Target&gt;, 'where'&gt;&gt; | _(Optional)_ Query filter without a Where condition |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ Options for the operations options.polymorphicType - a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target&gt;
 

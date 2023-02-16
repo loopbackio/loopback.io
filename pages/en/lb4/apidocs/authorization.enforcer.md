@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.enforcer.html
 
 An enforcer of authorization policies
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Enforcer 

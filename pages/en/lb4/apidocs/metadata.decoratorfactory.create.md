@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.create.html
 
 Create a decorator function of the given type. Each sub class MUST implement this method.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(): D;
 ```
-<b>Returns:</b>
+**Returns:**
 
 D
 

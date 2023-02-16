@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.openapispec.html
 
 ## RestServerResolvedOptions.openApiSpec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 openApiSpec: OpenApiSpecOptions;

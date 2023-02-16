@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.createhasmanythr
 
 Function to create a constrained hasManyThrough relation repository factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected createHasManyThroughRepositoryFactoryFor<Target extends Entity, TargetID, Through extends Entity, ThroughID, ForeignKeyType>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>> | {
@@ -31,7 +31,7 @@ protected createHasManyThroughRepositoryFactoryFor<Target extends Entity, Target
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } |  |
 |  throughRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Through, ThroughID&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md)<!-- -->&lt;Target, TargetID, Through, ForeignKeyType&gt;
 

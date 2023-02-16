@@ -17,7 +17,7 @@ Controls if the value of `spec` argument will be cloned. Sometimes we use shared
 
 Default to `true`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 cloneInputSpec?: boolean;

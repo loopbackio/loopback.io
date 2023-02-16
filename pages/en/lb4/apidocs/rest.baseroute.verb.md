@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute.verb.html
 
 ## BaseRoute.verb property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly verb: string;

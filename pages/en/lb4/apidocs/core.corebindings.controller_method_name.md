@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.controller_method_name.html
 
 Binding key for the controller method resolved in the current request context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER_METHOD_NAME: BindingKey<string>

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserverconfig.html
 
 Configuration for a LoopBack based Express server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ExpressServerConfig = (HttpOptions | HttpsOptions) & {
@@ -23,6 +23,6 @@ export type ExpressServerConfig = (HttpOptions | HttpsOptions) & {
     settings?: Record<string, unknown>;
 };
 ```
-<b>References:</b> [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
+**References:** [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
 
 

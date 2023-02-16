@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider._constr
 
 Constructs a new instance of the `AuthenticateActionProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrategy[] | undefined>, setCurrentUser: Setter<UserProfile>, setRedirectUrl: Setter<string>, setRedirectStatus: Setter<number>, options?: AuthenticationOptions);
@@ -29,6 +29,6 @@ constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrateg
 |  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
 |  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
 |  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
-|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | <i>(Optional)</i> |
+|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | _(Optional)_ |
 
 

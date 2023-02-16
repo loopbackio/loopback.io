@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable.find.html
 
 Map a request to a route
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(request: Request): ResolvedRoute;
@@ -27,7 +27,7 @@ find(request: Request): ResolvedRoute;
 |  --- | --- | --- |
 |  request | Request |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolvedRoute](./rest.resolvedroute.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.setstate.html
 
 Transition the application to a new state and emit an event
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected setState(state: string): void;
@@ -27,7 +27,7 @@ protected setState(state: string): void;
 |  --- | --- | --- |
 |  state | string | The new state |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

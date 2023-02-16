@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain.invokeinterceptor
 
 Invoke the interceptor chain
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 invokeInterceptors(finalHandler?: Next): ValueOrPromise<InvocationResult>;
@@ -25,9 +25,9 @@ invokeInterceptors(finalHandler?: Next): ValueOrPromise<InvocationResult>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  finalHandler | [Next](./context.next.md) | <i>(Optional)</i> |
+|  finalHandler | [Next](./context.next.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[InvocationResult](./context.invocationresult.md)<!-- -->&gt;
 

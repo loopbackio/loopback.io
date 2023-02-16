@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.find_route.html
 
 Find the route that can serve the request
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 FIND_ROUTE = "findRoute"

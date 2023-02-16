@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getresolutioncontext.html
 
 Locate the resolution context for the given binding. Only bindings in the resolution context and its ancestors are visible as dependencies to resolve the given binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getResolutionContext(binding: Readonly<Binding<unknown>>): Context | undefined;
@@ -27,7 +27,7 @@ getResolutionContext(binding: Readonly<Binding<unknown>>): Context | undefined;
 |  --- | --- | --- |
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object |
 
-<b>Returns:</b>
+**Returns:**
 
 [Context](./context.context.md) \| undefined
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.controllers_namespace.h
 
 ## SocketIoBindings.CONTROLLERS\_NAMESPACE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLERS_NAMESPACE = "socketio.controllers"

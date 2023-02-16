@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.createroutesforcontroller.html
 
 Create routes for a controller with the given spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createRoutesForController<T extends object>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): ControllerRoute<T>[];
@@ -27,9 +27,9 @@ export declare function createRoutesForController<T extends object>(spec: Contro
 |  --- | --- | --- |
 |  spec | [ControllerSpec](./openapi-v3.controllerspec.md) | Controller spec |
 |  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Controller factory |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | _(Optional)_ Controller factory |
 
-<b>Returns:</b>
+**Returns:**
 
 [ControllerRoute](./rest.controllerroute.md)<!-- -->&lt;T&gt;\[\]
 

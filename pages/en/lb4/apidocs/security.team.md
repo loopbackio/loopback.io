@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.security.team.html
 
 ## Team interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Team extends Principal 
 ```
-<b>Extends:</b> [Principal](./security.principal.md)
+**Extends:** [Principal](./security.principal.md)
 
 

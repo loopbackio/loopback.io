@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.configure.html
 
 Create a configuration binding for the given key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static configure<V = unknown>(key: BindingAddress): Binding<V>;
@@ -27,7 +27,7 @@ static configure<V = unknown>(key: BindingAddress): Binding<V>;
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Key for the binding to be configured |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;V&gt;
 

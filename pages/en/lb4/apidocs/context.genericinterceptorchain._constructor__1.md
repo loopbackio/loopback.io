@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain._constructor__1.h
 
 Create an invocation interceptor chain with a binding filter and comparator. The interceptors are discovered from the context using the binding filter and sorted by the comparator (if provided).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: C, filter: BindingFilter, comparator?: BindingComparator);
@@ -27,6 +27,6 @@ constructor(context: C, filter: BindingFilter, comparator?: BindingComparator);
 |  --- | --- | --- |
 |  context | C | Context object |
 |  filter | [BindingFilter](./context.bindingfilter.md) | A binding filter function to select interceptors |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> An optional comparator to sort matched interceptor bindings |
+|  comparator | [BindingComparator](./context.bindingcomparator.md) | _(Optional)_ An optional comparator to sort matched interceptor bindings |
 
 

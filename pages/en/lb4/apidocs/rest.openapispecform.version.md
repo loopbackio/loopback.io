@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecform.version.html
 
 ## OpenApiSpecForm.version property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 version?: string;

@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.boot.boottags.booter_tag.html
 > Use `BootTags.BOOTER` instead.
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOTER_TAG = "booter"

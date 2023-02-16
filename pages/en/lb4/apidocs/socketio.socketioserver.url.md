@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.url.html
 
 ## SocketIoServer.url property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get url(): string;

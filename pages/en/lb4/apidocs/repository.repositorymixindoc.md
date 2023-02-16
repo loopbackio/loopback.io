@@ -17,7 +17,7 @@ A dummy class created to generate the tsdoc for the members in repository mixin.
 
 The members are implemented in function <a href="#RepositoryMixin">RepositoryMixin</a>
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RepositoryMixinDoc 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withse
 
 Define a component security scheme.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withSecurityScheme(name: string, securityScheme: SecuritySchemeObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withSecurityScheme(name: string, securityScheme: SecuritySchemeObject | Referenc
 |  name | string | The name of the security scheme |
 |  securityScheme | SecuritySchemeObject \| ReferenceObject | Specification of the security scheme |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

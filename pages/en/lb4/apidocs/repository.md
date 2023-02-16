@@ -51,6 +51,11 @@ This module provides data access facilities to various databases and services as
 |  [RepositoryMixinDoc](./repository.repositorymixindoc.md) | <p>A dummy class created to generate the tsdoc for the members in repository mixin. Please don't use it.</p><p>The members are implemented in function <a href="#RepositoryMixin">RepositoryMixin</a></p> |
 |  [StringType](./repository.stringtype.md) | String type |
 |  [UnionType](./repository.uniontype.md) | Union type, such as string \| number |
+
+## Abstract Classes
+
+|  Abstract Class | Description |
+|  --- | --- |
 |  [ValueObject](./repository.valueobject.md) | Base class for value objects - An object that contains attributes but has no conceptual identity. They should be treated as immutable. |
 
 ## Enumerations

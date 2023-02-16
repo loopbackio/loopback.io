@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.emitevent.html
 
 A strongly-typed method to emit context events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 emitEvent<T extends ContextEvent>(type: string, event: T): void;
@@ -28,7 +28,7 @@ emitEvent<T extends ContextEvent>(type: string, event: T): void;
 |  type | string | Event type |
 |  event | T | Context event |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -39,7 +39,7 @@ A typical credential would be:
 
 It could be read from a local configuration file in the app.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UserService<U, C> 

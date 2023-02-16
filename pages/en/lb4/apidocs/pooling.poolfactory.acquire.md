@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolfactory.acquire.html
 
 To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 acquire?(resource: T, requestCtx: Context): ValueOrPromise<void>;
@@ -28,7 +28,7 @@ acquire?(resource: T, requestCtx: Context): ValueOrPromise<void>;
 |  resource | T | Resource instance |
 |  requestCtx | [Context](./context.context.md) | Request context |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 

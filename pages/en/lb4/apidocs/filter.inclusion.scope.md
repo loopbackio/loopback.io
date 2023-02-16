@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.inclusion.scope.html
 
 ## Inclusion.scope property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scope?: Filter<AnyObject> & {

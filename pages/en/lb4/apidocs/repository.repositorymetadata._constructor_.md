@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata._constructor_.html
 
 Constructor for RepositoryMetadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(modelOrRepo: string | typeof Entity, dataSource?: string | juggler.DataSource | DataSource);
@@ -26,6 +26,6 @@ constructor(modelOrRepo: string | typeof Entity, dataSource?: string | juggler.D
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelOrRepo | string \| typeof [Entity](./repository.entity.md) | Name or class of the model. If the value is a string and <code>dataSource</code> is not present, it will treated as the name of a predefined repository |
-|  dataSource | string \| juggler.DataSource \| [DataSource](./repository.datasource.md) | <p><i>(Optional)</i> Name or instance of the data source</p><p>For example:</p><p>- new RepositoryMetadata(repoName); - new RepositoryMetadata(modelName, dataSourceName); - new RepositoryMetadata(modelClass, dataSourceInstance); - new RepositoryMetadata(modelName, dataSourceInstance); - new RepositoryMetadata(modelClass, dataSourceName);</p> |
+|  dataSource | string \| juggler.DataSource \| [DataSource](./repository.datasource.md) | <p>_(Optional)_ Name or instance of the data source</p><p>For example:</p><p>- new RepositoryMetadata(repoName); - new RepositoryMetadata(modelName, dataSourceName); - new RepositoryMetadata(modelClass, dataSourceInstance); - new RepositoryMetadata(modelName, dataSourceInstance); - new RepositoryMetadata(modelClass, dataSourceName);</p> |
 
 

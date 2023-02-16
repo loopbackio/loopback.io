@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.constrainfilter.html
 
 A utility function which takes a filter and enforces constraint(s) on it
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function constrainFilter<T extends object>(originalFilter: Filter<T> | undefined, constraint: AnyObject): Filter<T>;
@@ -28,7 +28,7 @@ export declare function constrainFilter<T extends object>(originalFilter: Filter
 |  originalFilter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; \| undefined | the filter to apply the constrain(s) to |
 |  constraint | [AnyObject](./repository.anyobject.md) | the constraint which is to be applied on the filter |
 
-<b>Returns:</b>
+**Returns:**
 
 [Filter](./filter.filter.md)<!-- -->&lt;T&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.stubserverresponse.html
 
 ## stubServerResponse() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function stubServerResponse(request: IncomingMessage, onEnd: ShotCallback): ServerResponse;
@@ -26,7 +26,7 @@ export declare function stubServerResponse(request: IncomingMessage, onEnd: Shot
 |  request | IncomingMessage |  |
 |  onEnd | [ShotCallback](./testlab.shotcallback.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 ServerResponse
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withre
 
 Define a component request body.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withRequestBody(name: string, requestBody: RequestBodyObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withRequestBody(name: string, requestBody: RequestBodyObject | ReferenceObject):
 |  name | string | The name of the request body |
 |  requestBody | RequestBodyObject \| ReferenceObject | Specification of the request body |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

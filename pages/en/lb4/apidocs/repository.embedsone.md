@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.embedsone.html
 
 Decorator for embedsOne
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function embedsOne(definition?: Object): PropertyDecorator;
@@ -25,9 +25,9 @@ export declare function embedsOne(definition?: Object): PropertyDecorator;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | Object | <i>(Optional)</i> |
+|  definition | Object | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 PropertyDecorator
 

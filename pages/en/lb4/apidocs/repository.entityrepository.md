@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.entityrepository.html
 
 Base interface for a repository of entities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface EntityRepository<T extends Entity, ID> extends ExecutableRepository<T> 
 ```
-<b>Extends:</b> [ExecutableRepository](./repository.executablerepository.md)<!-- -->&lt;T&gt;
+**Extends:** [ExecutableRepository](./repository.executablerepository.md)<!-- -->&lt;T&gt;
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.get.html
 
 ## DefaultHasOneRepository.get() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(filter?: Pick<Filter<TargetEntity>, Exclude<keyof Filter<TargetEntity>, 'where'>>, options?: Options & {
@@ -25,10 +25,10 @@ get(filter?: Pick<Filter<TargetEntity>, Exclude<keyof Filter<TargetEntity>, 'whe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
+|  filter | Pick&lt;[Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, Exclude&lt;keyof [Filter](./filter.filter.md)<!-- -->&lt;TargetEntity&gt;, 'where'&gt;&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity&gt;
 

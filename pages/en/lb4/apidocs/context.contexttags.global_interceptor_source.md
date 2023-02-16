@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.global_interceptor_source.htm
 
 Binding tag for global interceptors to specify sources of invocations that the interceptor should apply. The tag value can be a string or string\[\], such as `'route'` or `['route', 'proxy']`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GLOBAL_INTERCEPTOR_SOURCE = "globalInterceptorSource"

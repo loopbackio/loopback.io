@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.islocked.html
 
 ## Binding.isLocked property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isLocked: boolean;

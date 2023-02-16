@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.testlab.shotresponsector.html
 
 ## ShotResponseCtor type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ShotResponseCtor = new (request: IncomingMessage, onEnd: ShotCallback) => ServerResponse;
 ```
-<b>References:</b> [ShotCallback](./testlab.shotcallback.md)
+**References:** [ShotCallback](./testlab.shotcallback.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.getbindingmetadata.html
 
 Get binding metadata for a class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getBindingMetadata<T = unknown>(target: Function): BindingMetadata<T> | undefined;
@@ -27,7 +27,7 @@ export declare function getBindingMetadata<T = unknown>(target: Function): Bindi
 |  --- | --- | --- |
 |  target | Function | The target class |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingMetadata](./context.bindingmetadata.md)<!-- -->&lt;T&gt; \| undefined
 

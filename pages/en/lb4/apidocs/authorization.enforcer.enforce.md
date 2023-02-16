@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.enforcer.enforce.html
 
 Decide if the request can be granted access
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 enforce(request: AuthorizationRequest): Promise<AuthorizationDecision>;
@@ -27,7 +27,7 @@ enforce(request: AuthorizationRequest): Promise<AuthorizationDecision>;
 |  --- | --- | --- |
 |  request | [AuthorizationRequest](./authorization.authorizationrequest.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AuthorizationDecision](./authorization.authorizationdecision.md)<!-- -->&gt;
 

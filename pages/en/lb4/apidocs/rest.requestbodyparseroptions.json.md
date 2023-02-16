@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparseroptions.json.html
 
 Options for json parser
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 json?: OptionsJson;

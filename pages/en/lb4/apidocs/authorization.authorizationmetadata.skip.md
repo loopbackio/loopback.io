@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.skip.html
 
 A flag to skip authorization
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip?: boolean;

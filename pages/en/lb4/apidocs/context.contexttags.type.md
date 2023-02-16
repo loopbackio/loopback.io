@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.type.html
 
 Type of the artifact
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 TYPE = "type"

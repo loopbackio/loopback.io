@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormcomponent._constructor_.html
 
 Constructs a new instance of the `TypeOrmComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options?: TypeOrmComponentOptions);
@@ -25,6 +25,6 @@ constructor(options?: TypeOrmComponentOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [TypeOrmComponentOptions](./typeorm.typeormcomponentoptions.md) | <i>(Optional)</i> |
+|  options | [TypeOrmComponentOptions](./typeorm.typeormcomponentoptions.md) | _(Optional)_ |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelapibooter._constructor_.html
 
 Constructs a new instance of the `ModelApiBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: ApplicationWithRepositories, projectRoot: string, getModelApiBuilders: Getter<ModelApiBuilder[]>, booterConfig?: ArtifactOptions);
@@ -28,6 +28,6 @@ constructor(app: ApplicationWithRepositories, projectRoot: string, getModelApiBu
 |  app | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
 |  projectRoot | string |  |
 |  getModelApiBuilders | Getter&lt;[ModelApiBuilder](./model-api-builder.modelapibuilder.md)<!-- -->\[\]&gt; |  |
-|  booterConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  booterConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

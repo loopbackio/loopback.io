@@ -20,12 +20,12 @@ permalink: /doc/en/lb4/apidocs.context.uuid.html
 
 A utility to generate uuid v4
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function uuid(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

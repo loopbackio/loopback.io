@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider.setcurr
 
 ## AuthenticateActionProvider.setCurrentUser property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly setCurrentUser: Setter<UserProfile>;

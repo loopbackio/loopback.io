@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.middlewaresequence.html
 
 A sequence implementation using middleware chains
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MiddlewareSequence implements SequenceHandler 
 ```
-<b>Implements:</b> [SequenceHandler](./rest.sequencehandler.md)
+**Implements:** [SequenceHandler](./rest.sequencehandler.md)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptorchain.html
 
 A chain of generic interceptors to be invoked for the given context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class GenericInterceptorChain<C extends Context = Context> 

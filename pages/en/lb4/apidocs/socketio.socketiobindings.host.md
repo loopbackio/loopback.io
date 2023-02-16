@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.host.html
 
 Binding key for setting and injecting the host name of Http Server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 HOST: BindingKey<string | undefined>

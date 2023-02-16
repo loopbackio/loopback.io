@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.describeinjection.html
 
 Describe the injection for debugging purpose
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static describeInjection(injection: Readonly<Injection>): InjectionDescriptor;
@@ -27,7 +27,7 @@ static describeInjection(injection: Readonly<Injection>): InjectionDescriptor;
 |  --- | --- | --- |
 |  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection object |
 
-<b>Returns:</b>
+**Returns:**
 
 [InjectionDescriptor](./context.injectiondescriptor.md)
 

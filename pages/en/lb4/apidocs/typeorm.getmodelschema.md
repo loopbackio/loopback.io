@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.getmodelschema.html
 
 Describe the provided Entity as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getModelSchema<T extends object>(modelCtor: Function & {
@@ -28,9 +28,9 @@ export declare function getModelSchema<T extends object>(modelCtor: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | Function &amp; { prototype: T; } | The entity constructor (e.g. <code>Product</code>) |
-|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Additional options |
+|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | _(Optional)_ Additional options |
 
-<b>Returns:</b>
+**Returns:**
 
 SchemaObject
 

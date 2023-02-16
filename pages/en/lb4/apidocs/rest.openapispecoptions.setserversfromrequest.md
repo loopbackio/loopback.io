@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.setserversfromrequest.htm
 
 A flag to force `servers` to be set from the http request for the OpenAPI spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setServersFromRequest?: boolean;

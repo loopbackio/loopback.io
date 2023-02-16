@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.sockiomiddleware.html
 
 ## SockIOMiddleware type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SockIOMiddleware = (socket: Socket, fn: (err?: any) => void) => void;

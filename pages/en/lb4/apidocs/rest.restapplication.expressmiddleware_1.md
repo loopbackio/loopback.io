@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.expressmiddleware_1.html
 
 Bind an Express middleware to this server context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expressMiddleware<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?: CFG, options?: MiddlewareBindingOptions): Binding<Middleware>;
@@ -26,10 +26,10 @@ expressMiddleware<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlew
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Middleware module name or factory function |
-|  middlewareConfig | CFG | <i>(Optional)</i> Middleware config |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | <i>(Optional)</i> Options for registration |
+|  middlewareConfig | CFG | _(Optional)_ Middleware config |
+|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Options for registration |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
 

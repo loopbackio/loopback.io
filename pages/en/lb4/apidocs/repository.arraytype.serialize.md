@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.arraytype.serialize.html
 
 ## ArrayType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: T[] | null | undefined): any[] | null | undefined;
@@ -25,7 +25,7 @@ serialize(value: T[] | null | undefined): any[] | null | undefined;
 |  --- | --- | --- |
 |  value | T\[\] \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 any\[\] \| null \| undefined
 

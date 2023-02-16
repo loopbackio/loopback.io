@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.auth_action
 
 Key used to inject the authentication function into the sequence.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTH_ACTION: BindingKey<AuthenticateFn>

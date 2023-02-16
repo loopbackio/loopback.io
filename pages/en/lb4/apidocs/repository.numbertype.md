@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.numbertype.html
 
 Number type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class NumberType implements Type<number> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;number&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;number&gt;
 
 ## Properties
 

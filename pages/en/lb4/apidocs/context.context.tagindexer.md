@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.tagindexer.html
 
 Indexer for bindings by tag
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly tagIndexer: ContextTagIndexer;

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.interceptororkey.html
 
 Interceptor function or binding key that can be used as parameters for `@intercept()`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type InterceptorOrKey = GenericInterceptorOrKey<InvocationContext>;
 ```
-<b>References:</b> [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->, [InvocationContext](./context.invocationcontext.md)
+**References:** [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->, [InvocationContext](./context.invocationcontext.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._rootcontext.html
 
 ## HttpHandler.\_rootContext property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly _rootContext: Context;

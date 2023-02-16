@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.getdecoratesub
 
 ## SocketIoControllerFactory.getDecorateSubscribeMethodsByEventName() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getDecorateSubscribeMethodsByEventName(): Map<string, SocketIoEventMatcherInfo>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;string, SocketIoEventMatcherInfo&gt;
 

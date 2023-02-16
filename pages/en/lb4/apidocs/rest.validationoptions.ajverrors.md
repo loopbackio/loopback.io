@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajverrors.html
 
 Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - `true`<!-- -->: Enable `ajv-errors` - `AjvErrorOptions`<!-- -->: Enable `ajv-errors` with options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ajvErrors?: AjvErrorOptions;

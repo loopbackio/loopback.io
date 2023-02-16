@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.decorate_1.html
 
 ## NamespacedReflect.decorate() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 decorate(decorators: ClassDecorator[], target: Object): PropertyDescriptor | Function;
@@ -26,7 +26,7 @@ decorate(decorators: ClassDecorator[], target: Object): PropertyDescriptor | Fun
 |  decorators | ClassDecorator\[\] |  |
 |  target | Object |  |
 
-<b>Returns:</b>
+**Returns:**
 
 PropertyDescriptor \| Function
 

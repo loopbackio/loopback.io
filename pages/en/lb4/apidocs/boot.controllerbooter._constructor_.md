@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.controllerbooter._constructor_.html
 
 Constructs a new instance of the `ControllerBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, projectRoot: string, controllerConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: Application, projectRoot: string, controllerConfig?: ArtifactOp
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
 |  projectRoot | string |  |
-|  controllerConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  controllerConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

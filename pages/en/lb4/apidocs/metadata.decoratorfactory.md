@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.html
 
 Base factory class for decorator functions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DecoratorFactory<T, // Type of the metadata spec for individual class/method/property/parameter

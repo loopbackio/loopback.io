@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.modelcrudrestapiconfig.readonly.html
 
 If true, the generated controller only has find and count APIs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly?: boolean;

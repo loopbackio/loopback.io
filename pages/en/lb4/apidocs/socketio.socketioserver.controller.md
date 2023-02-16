@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.controller.html
 
 Register a socket.io controller
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 controller(controllerClass: Constructor<unknown>): Binding<unknown>;
@@ -27,7 +27,7 @@ controller(controllerClass: Constructor<unknown>): Binding<unknown>;
 |  --- | --- | --- |
 |  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 

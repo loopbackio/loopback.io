@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxymetadata._constructor_.
 
 Constructs a new instance of the `ServiceProxyMetadata` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(dataSource: string | juggler.DataSource);

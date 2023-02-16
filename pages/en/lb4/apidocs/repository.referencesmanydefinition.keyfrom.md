@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanydefinition.keyfrom.html
 
 ## ReferencesManyDefinition.keyFrom property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyFrom?: string;

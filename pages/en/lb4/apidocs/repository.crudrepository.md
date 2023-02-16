@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepository.html
 
 Basic CRUD operations for ValueObject and Entity. No ID is required.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CrudRepository<T extends ValueObject | Entity, Relations extends object = {}> extends Repository<T> 
 ```
-<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
+**Extends:** [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

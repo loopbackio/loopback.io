@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.readycheck.html
 
 Functions for readiness check
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ReadyCheck = () => Promise<void>;

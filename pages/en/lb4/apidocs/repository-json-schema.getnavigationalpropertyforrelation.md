@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.getnavigationalpropertyfor
 
 Checks and return navigational property definition for the relation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getNavigationalPropertyForRelation(relMeta: RelationMetadata, targetRef: JsonSchema): JsonSchema;
@@ -28,7 +28,7 @@ export declare function getNavigationalPropertyForRelation(relMeta: RelationMeta
 |  relMeta | [RelationMetadata](./repository.relationmetadata.md) | Relation metadata object |
 |  targetRef | JsonSchema | Schema definition for the target model |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

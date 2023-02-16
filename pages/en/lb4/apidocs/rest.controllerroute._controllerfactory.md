@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.controllerroute._controllerfactory.html
 
 ## ControllerRoute.\_controllerFactory property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly _controllerFactory: ControllerFactory<T>;

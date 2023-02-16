@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.contextview.findbindings.html
 
 Find matching bindings and refresh the cache
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected findBindings(): Readonly<Binding<T>>[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
 

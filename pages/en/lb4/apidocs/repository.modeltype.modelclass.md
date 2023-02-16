@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeltype.modelclass.html
 
 ## ModelType.modelClass property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modelClass: Class<T>;

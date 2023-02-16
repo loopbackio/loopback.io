@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeorm.html
 
 ## typeorm namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace typeorm 

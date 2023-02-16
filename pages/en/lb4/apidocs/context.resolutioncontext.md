@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutioncontext.html
 
 Contextual metadata for resolution
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ResolutionContext<T = unknown> 

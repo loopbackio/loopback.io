@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedconfig.html
 
 ## RestServerResolvedConfig type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RestServerResolvedConfig = RestServerResolvedOptions & HttpServerOptions;
 ```
-<b>References:</b> [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
+**References:** [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)<!-- -->, [HttpServerOptions](./http-server.httpserveroptions.md)
 
 

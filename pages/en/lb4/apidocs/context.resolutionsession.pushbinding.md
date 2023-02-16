@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.pushbinding.html
 
 Enter the resolution of the given binding. If
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pushBinding(binding: Readonly<Binding>): void;
@@ -27,7 +27,7 @@ pushBinding(binding: Readonly<Binding>): void;
 |  --- | --- | --- |
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | Binding |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

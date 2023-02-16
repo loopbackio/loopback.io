@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinitionsyntax.relations.html
 
 ## ModelDefinitionSyntax.relations property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 relations?: RelationDefinitionMap;

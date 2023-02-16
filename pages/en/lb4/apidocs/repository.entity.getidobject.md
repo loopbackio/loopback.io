@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.entity.getidobject.html
 
 Get the identity as an object, such as `{id: 1}` or `{schoolId: 1, studentId: 2}`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getIdObject(): Object;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Object
 

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.security.role.html
 
 ## Role interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Role extends Principal 
 ```
-<b>Extends:</b> [Principal](./security.principal.md)
+**Extends:** [Principal](./security.principal.md)
 
 ## Properties
 

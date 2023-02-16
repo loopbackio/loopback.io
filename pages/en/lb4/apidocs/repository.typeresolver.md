@@ -17,11 +17,11 @@ A type resolver is a function that returns a class representing the type, typica
 
 We use type resolvers to break require() loops when defining relations. The target model (class) is provided via a provider, thus deferring the actual reference to the class itself until later, when both sides of the relation are created as JavaScript classes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TypeResolver<Type extends Object, StaticMembers = Function> = () => Class<Type> & StaticMembers;
 ```
-<b>References:</b> [Class](./repository.class.md)
+**References:** [Class](./repository.class.md)
 
 

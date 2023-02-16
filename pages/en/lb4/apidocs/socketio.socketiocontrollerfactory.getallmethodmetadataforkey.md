@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.getallmethodme
 
 ## SocketIoControllerFactory.getAllMethodMetadataForKey() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected getAllMethodMetadataForKey<V, DT extends DecoratorType>(metadataAccessor: MetadataAccessor<V, DT>): MetadataMap<V>;
@@ -25,7 +25,7 @@ protected getAllMethodMetadataForKey<V, DT extends DecoratorType>(metadataAccess
 |  --- | --- | --- |
 |  metadataAccessor | [MetadataAccessor](./metadata.metadataaccessor.md)<!-- -->&lt;V, DT&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;V&gt;
 

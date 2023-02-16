@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository-tests.datasourceoptions.html
 
 DataSource configuration (connector name, connection string, etc.).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DataSourceOptions = Options;
 ```
-<b>References:</b> [Options](./repository.options.md)
+**References:** [Options](./repository.options.md)
 
 

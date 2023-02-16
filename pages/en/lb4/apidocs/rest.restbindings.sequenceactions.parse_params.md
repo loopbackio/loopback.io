@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.parse_params.ht
 
 Binding key for setting and injecting a parameter parsing function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PARSE_PARAMS: BindingKey<ParseParams>

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.cron.cron_job_scheduler.html
 
 Name of the cron job extension point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CRON_JOB_SCHEDULER = "cron.jobScheduler"

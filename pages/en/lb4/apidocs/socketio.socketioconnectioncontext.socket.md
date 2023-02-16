@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioconnectioncontext.socket.html
 
 ## SocketIoConnectionContext.socket property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly socket: Socket;

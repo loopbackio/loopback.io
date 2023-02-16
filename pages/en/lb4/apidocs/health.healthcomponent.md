@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.health.healthcomponent.html
 
 A component providing health status
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HealthComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

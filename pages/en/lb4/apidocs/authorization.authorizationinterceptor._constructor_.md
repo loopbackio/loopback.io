@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor._construct
 
 Constructs a new instance of the `AuthorizationInterceptor` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options?: AuthorizationOptions);
@@ -25,6 +25,6 @@ constructor(options?: AuthorizationOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [AuthorizationOptions](./authorization.authorizationoptions.md) | <i>(Optional)</i> |
+|  options | [AuthorizationOptions](./authorization.authorizationoptions.md) | _(Optional)_ |
 
 

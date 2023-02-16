@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata.datasource.html
 
 Instance of the data source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSource?: juggler.DataSource | DataSource;

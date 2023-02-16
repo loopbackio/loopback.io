@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.getjsonschema.html
 
 Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a cache. If not, one is generated and then cached.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getJsonSchema<T extends object>(ctor: Function & {
@@ -28,9 +28,9 @@ export declare function getJsonSchema<T extends object>(ctor: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctor | Function &amp; { prototype: T; } | Constructor of class to get JSON Schema from |
-|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
+|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

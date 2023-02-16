@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.core.controllerclass.html
 
 ## ControllerClass type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ControllerClass<T = any> = Constructor<T>;
 ```
-<b>References:</b> [Constructor](./context.constructor.md)
+**References:** [Constructor](./context.constructor.md)
 
 

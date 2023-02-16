@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.html
 
 Key/Value operations for connector implementations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface KeyValueRepository<T extends Model> extends Repository<T> 
 ```
-<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
+**Extends:** [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 
@@ -30,8 +30,8 @@ export interface KeyValueRepository<T extends Model> extends Repository<T>
 |  [deleteAll(options)](./repository.keyvaluerepository.deleteall.md) | Delete all entries |
 |  [expire(key, ttl, options)](./repository.keyvaluerepository.expire.md) | Set up ttl for an entry by key |
 |  [get(key, options)](./repository.keyvaluerepository.get.md) | Get an entry by key |
-|  [keys(filter, options)?](./repository.keyvaluerepository.keys.md) | <i>(Optional)</i> Get an Iterator for matching keys |
+|  [keys(filter, options)?](./repository.keyvaluerepository.keys.md) | _(Optional)_ Get an Iterator for matching keys |
 |  [set(key, value, options)](./repository.keyvaluerepository.set.md) | Set an entry with key/value |
-|  [ttl(key, options)?](./repository.keyvaluerepository.ttl.md) | <i>(Optional)</i> Get ttl for an entry by key |
+|  [ttl(key, options)?](./repository.keyvaluerepository.ttl.md) | _(Optional)_ Get ttl for an entry by key |
 
 

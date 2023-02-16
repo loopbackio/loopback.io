@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.givenhttpserverconfig.html
 
 Create an HTTP-server configuration that works well in test environments. - Ask the operating system to assign a free (ephemeral) port. - Use IPv4 localhost `127.0.0.1` to avoid known IPv6 issues in Docker-based environments like Travis-CI. - Provide default TLS key &amp; cert when `protocol` is set to `https`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function givenHttpServerConfig<T extends HttpOptions | HttpsOptions>(customConfig?: T): HostPort & T;
@@ -25,9 +25,9 @@ export declare function givenHttpServerConfig<T extends HttpOptions | HttpsOptio
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  customConfig | T | <i>(Optional)</i> Additional configuration options to apply. |
+|  customConfig | T | _(Optional)_ Additional configuration options to apply. |
 
-<b>Returns:</b>
+**Returns:**
 
 [HostPort](./testlab.hostport.md) &amp; T
 

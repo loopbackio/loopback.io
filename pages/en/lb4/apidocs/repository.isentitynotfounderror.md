@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.isentitynotfounderror.html
 
 ## isEntityNotFoundError() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isEntityNotFoundError(e: any): e is EntityNotFoundError<any>;
@@ -25,7 +25,7 @@ export declare function isEntityNotFoundError(e: any): e is EntityNotFoundError<
 |  --- | --- | --- |
 |  e | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 e is [EntityNotFoundError](./repository.entitynotfounderror.md)<!-- -->&lt;any&gt;
 

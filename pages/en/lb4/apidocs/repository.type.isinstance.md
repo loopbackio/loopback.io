@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.type.isinstance.html
 
 Test if the given value is an instance of this type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isInstance(value: any): boolean;
@@ -27,7 +27,7 @@ isInstance(value: any): boolean;
 |  --- | --- | --- |
 |  value | any | The value |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

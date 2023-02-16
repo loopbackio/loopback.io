@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmetadata.options.htm
 
 Options for the authentication strategy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 options?: {

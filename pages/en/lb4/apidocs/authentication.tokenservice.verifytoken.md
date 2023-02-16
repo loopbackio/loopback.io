@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.tokenservice.verifytoken.html
 
 Verifies the validity of a token string and returns a user profile
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyToken(token: string): Promise<UserProfile>;
@@ -27,7 +27,7 @@ verifyToken(token: string): Promise<UserProfile>;
 |  --- | --- | --- |
 |  token | string | The token/secret which should be validated/verified. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.null.html
 
 ## NULL variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 NULL: NullType

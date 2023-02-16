@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.routesource.value.html
 
 ## RouteSource.value property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly value: RouteEntry;

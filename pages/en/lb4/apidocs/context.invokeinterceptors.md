@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invokeinterceptors.html
 
 Invoke a chain of interceptors with the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function invokeInterceptors<C extends Context = Context, T = InvocationResult>(context: C, interceptors: GenericInterceptorOrKey<C>[]): ValueOrPromise<T | undefined>;
@@ -28,7 +28,7 @@ export declare function invokeInterceptors<C extends Context = Context, T = Invo
 |  context | C | Context object |
 |  interceptors | [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | An array of interceptor functions or binding keys |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T \| undefined&gt;
 

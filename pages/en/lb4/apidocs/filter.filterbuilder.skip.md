@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.skip.html
 
 Alias to `offset`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip(skip: number): this;
@@ -27,7 +27,7 @@ skip(skip: number): this;
 |  --- | --- | --- |
 |  skip | number |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

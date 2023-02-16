@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.express.middlewareorkey.html
 
 A middleware function or binding key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MiddlewareOrKey = GenericInterceptorOrKey<MiddlewareContext>;
 ```
-<b>References:</b> [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->, [MiddlewareContext](./express.middlewarecontext.md)
+**References:** [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->, [MiddlewareContext](./express.middlewarecontext.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restrouter.add.html
 
 Add a route to the router
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 add(route: RouteEntry): void;
@@ -27,7 +27,7 @@ add(route: RouteEntry): void;
 |  --- | --- | --- |
 |  route | [RouteEntry](./rest.routeentry.md) | A route entry |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

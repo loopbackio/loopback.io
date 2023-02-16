@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.getmodelrelations.html
 
 Get metadata of all relations defined on a given model class.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getModelRelations(modelCtor: typeof Model): RelationDefinitionMap;
@@ -27,7 +27,7 @@ export declare function getModelRelations(modelCtor: typeof Model): RelationDefi
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | The model class (the constructor function). |
 
-<b>Returns:</b>
+**Returns:**
 
 [RelationDefinitionMap](./repository.relationdefinitionmap.md)
 

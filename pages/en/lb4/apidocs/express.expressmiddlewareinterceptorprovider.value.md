@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.express.expressmiddlewareinterceptorprovider.valu
 
 ## ExpressMiddlewareInterceptorProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): GenericInterceptor<CTX>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;CTX&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtservice.verifytoken.html
 
 ## JWTService.verifyToken() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyToken(token: string): Promise<UserProfile>;
@@ -25,7 +25,7 @@ verifyToken(token: string): Promise<UserProfile>;
 |  --- | --- | --- |
 |  token | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
 

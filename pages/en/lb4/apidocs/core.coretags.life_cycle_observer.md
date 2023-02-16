@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.life_cycle_observer.html
 
 Binding tag for life cycle observers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LIFE_CYCLE_OBSERVER = "lifeCycleObserver"

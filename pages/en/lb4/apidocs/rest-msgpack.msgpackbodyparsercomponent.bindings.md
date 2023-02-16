@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparsercomponent.bindings.
 
 ## MsgPackBodyParserComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

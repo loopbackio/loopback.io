@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.createbelongstoaccessor.html
 
 Enforces a BelongsTo constraint on a repository If the target model is polymorphic, i.e. stored within different repositories, supply the targetRepositoryGetter with a dictionary in the form of {<!-- -->\[typeName: string\]: repositoryGetter<!-- -->}
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createBelongsToAccessor<Target extends Entity, TargetId, Source extends Entity, SourceId>(belongsToMetadata: BelongsToDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetId>> | {
@@ -31,7 +31,7 @@ export declare function createBelongsToAccessor<Target extends Entity, TargetId,
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 |  sourceRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Source, SourceId&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [BelongsToAccessor](./repository.belongstoaccessor.md)<!-- -->&lt;Target, SourceId&gt;
 

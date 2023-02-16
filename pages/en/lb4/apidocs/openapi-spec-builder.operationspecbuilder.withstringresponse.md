@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.withstr
 
 ## OperationSpecBuilder.withStringResponse() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withStringResponse(status?: number | 'default'): this;
@@ -23,9 +23,9 @@ withStringResponse(status?: number | 'default'): this;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  status | number \| 'default' | <i>(Optional)</i> |
+|  status | number \| 'default' | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

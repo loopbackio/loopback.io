@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.constructor.html
 
 A class constructor accepting arbitrary arguments.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Constructor<T> = new (...args: any[]) => T;

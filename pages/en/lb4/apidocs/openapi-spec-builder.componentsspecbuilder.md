@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.html
 
 A builder for creating ComponentsObject specifications.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ComponentsSpecBuilder extends BuilderBase<ComponentsObject> 
 ```
-<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;ComponentsObject&gt;
+**Extends:** [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;ComponentsObject&gt;
 
 ## Constructors
 

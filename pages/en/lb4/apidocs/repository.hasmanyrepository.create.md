@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanyrepository.create.html
 
 Create a target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(targetModelData: DataObject<Target>, options?: Options): Promise<Target>;
@@ -26,9 +26,9 @@ create(targetModelData: DataObject<Target>, options?: Options): Promise<Target>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target&gt;
 

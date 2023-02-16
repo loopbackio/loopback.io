@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routeentry.html
 
 An entry in the routing table
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RouteEntry 

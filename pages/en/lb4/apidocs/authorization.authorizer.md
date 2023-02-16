@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizer.html
 
 A function to decide if access to the target should be allowed or denied
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Authorizer<T extends AuthorizationMetadata = AuthorizationMetadata> = 
 (context: AuthorizationContext, metadata: T) => Promise<AuthorizationDecision>;
 ```
-<b>References:</b> [AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->, [AuthorizationContext](./authorization.authorizationcontext.md)<!-- -->, [AuthorizationDecision](./authorization.authorizationdecision.md)
+**References:** [AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->, [AuthorizationContext](./authorization.authorizationcontext.md)<!-- -->, [AuthorizationDecision](./authorization.authorizationdecision.md)
 
 

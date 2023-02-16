@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.createhasmanythroughrepositoryfactory.
 
 ## createHasManyThroughRepositoryFactory() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createHasManyThroughRepositoryFactory<Target extends Entity, TargetID, Through extends Entity, ThroughID, SourceID>(relationMetadata: HasManyDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>> | {
@@ -29,7 +29,7 @@ export declare function createHasManyThroughRepositoryFactory<Target extends Ent
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } |  |
 |  throughRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Through, ThroughID&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasManyThroughRepositoryFactory](./repository.hasmanythroughrepositoryfactory.md)<!-- -->&lt;Target, TargetID, Through, SourceID&gt;
 

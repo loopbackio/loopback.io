@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelsettings.description.html
 
 Description of the model
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 description?: string;

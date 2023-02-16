@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddleware.html
 
 Interface for the invoker of middleware registered under the an extension point name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InvokeMiddleware 

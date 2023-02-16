@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.createproxywithinterceptors.html
 
 Create a proxy that applies interceptors for method invocations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createProxyWithInterceptors<T extends object>(target: T, context?: Context, session?: ResolutionSession, source?: InvocationSource): AsyncProxy<T>;
@@ -26,11 +26,11 @@ export declare function createProxyWithInterceptors<T extends object>(target: T,
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | T | Target class or object |
-|  context | [Context](./context.context.md) | <i>(Optional)</i> Context object |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Resolution session |
-|  source | [InvocationSource](./context.invocationsource.md) | <i>(Optional)</i> Invocation source |
+|  context | [Context](./context.context.md) | _(Optional)_ Context object |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Resolution session |
+|  source | [InvocationSource](./context.invocationsource.md) | _(Optional)_ Invocation source |
 
-<b>Returns:</b>
+**Returns:**
 
 [AsyncProxy](./context.asyncproxy.md)<!-- -->&lt;T&gt;
 

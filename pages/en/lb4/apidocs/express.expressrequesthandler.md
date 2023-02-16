@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressrequesthandler.html
 
 Type alias for Express RequestHandler
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ExpressRequestHandler = RequestHandler;

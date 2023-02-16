@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.booleantype.name.html
 
 ## BooleanType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "boolean";

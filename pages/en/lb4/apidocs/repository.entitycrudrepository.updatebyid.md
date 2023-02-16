@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.updatebyid.html
 
 Update an entity by id with property/value pairs in the data object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
@@ -27,9 +27,9 @@ updateById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Data attributes to be updated |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

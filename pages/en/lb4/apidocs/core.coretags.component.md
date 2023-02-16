@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.component.html
 
 Binding tag for components
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT = "component"

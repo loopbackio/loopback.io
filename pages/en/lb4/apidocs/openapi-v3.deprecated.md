@@ -17,7 +17,7 @@ Marks an api path as deprecated. When applied to a class, this decorator marks a
 
 You can optionally mark all controllers in a class as deprecated, but use `@deprecated(false)` on a specific method to ensure it is not marked as deprecated in the specification.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function deprecated(isDeprecated?: boolean): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
@@ -27,9 +27,9 @@ export declare function deprecated(isDeprecated?: boolean): (target: any, method
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  isDeprecated | boolean | <i>(Optional)</i> whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
+|  isDeprecated | boolean | _(Optional)_ whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 

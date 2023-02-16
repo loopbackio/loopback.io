@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindinginspectoptions.includeinjections.h
 
 The flag to control if injections should be inspected
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 includeInjections?: boolean;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.restendpoint.html
 
 Data structure for REST related metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RestEndpoint 
@@ -26,7 +26,7 @@ export interface RestEndpoint
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [path](./openapi-v3.restendpoint.path.md) |  | string |  |
-|  [spec?](./openapi-v3.restendpoint.spec.md) |  | OperationObject | <i>(Optional)</i> |
+|  [spec?](./openapi-v3.restendpoint.spec.md) |  | OperationObject | _(Optional)_ |
 |  [verb](./openapi-v3.restendpoint.verb.md) |  | string |  |
 
 

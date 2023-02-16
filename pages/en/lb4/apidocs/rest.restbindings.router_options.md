@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.router_options.html
 
 ## RestBindings.ROUTER\_OPTIONS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ROUTER_OPTIONS: BindingKey<RestRouterOptions>

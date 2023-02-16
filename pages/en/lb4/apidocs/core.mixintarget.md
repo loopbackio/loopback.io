@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.core.mixintarget.html
 
 A replacement for `typeof Target` to be used in mixin class definitions. This is a workaround for TypeScript limitation described in - https://github.com/microsoft/TypeScript/issues/17293 - https://github.com/microsoft/TypeScript/issues/17744 - https://github.com/microsoft/TypeScript/issues/36060
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MixinTarget<T extends object> = Constructor<{
     [P in keyof T]: T[P];
 }>;
 ```
-<b>References:</b> [Constructor](./context.constructor.md)
+**References:** [Constructor](./context.constructor.md)
 
 ## Example
 

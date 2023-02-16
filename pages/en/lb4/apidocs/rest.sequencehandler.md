@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.sequencehandler.html
 
 A sequence handler is a class implementing sequence of actions required to handle an incoming request.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface SequenceHandler 

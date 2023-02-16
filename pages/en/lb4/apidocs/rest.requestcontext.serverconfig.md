@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext.serverconfig.html
 
 ## RequestContext.serverConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly serverConfig: RestServerResolvedConfig;

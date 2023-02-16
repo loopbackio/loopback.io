@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.ttl.html
 
 Get ttl for an entry by key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ttl?(key: string, options?: Options): Promise<number>;
@@ -26,9 +26,9 @@ ttl?(key: string, options?: Options): Promise<number>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string | Key for the entry |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;
 

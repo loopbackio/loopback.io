@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.classes.html
 
 List of exported classes discovered in the files
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 classes: Constructor<{}>[];

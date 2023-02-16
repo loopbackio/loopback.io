@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.validateapispec.html
 
 ## validateApiSpec() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function validateApiSpec(spec: any): Promise<void>;
@@ -25,7 +25,7 @@ export declare function validateApiSpec(spec: any): Promise<void>;
 |  --- | --- | --- |
 |  spec | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

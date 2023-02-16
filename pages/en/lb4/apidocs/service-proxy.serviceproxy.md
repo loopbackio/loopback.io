@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxy.html
 
 ## serviceProxy() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function serviceProxy(dataSource: string | juggler.DataSource): (target: object, key: string, parameterIndex?: number) => void;
@@ -25,7 +25,7 @@ export declare function serviceProxy(dataSource: string | juggler.DataSource): (
 |  --- | --- | --- |
 |  dataSource | string \| juggler.DataSource |  |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: object, key: string, parameterIndex?: number) =&gt; void
 

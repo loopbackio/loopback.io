@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.type.html
 
 Type of the binding value getter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get type(): BindingType | undefined;

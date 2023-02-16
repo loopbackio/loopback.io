@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.asclassorprovider.html
 
 A factory function to create a template function to bind the target class as a class or `Provider`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asClassOrProvider<T>(target: Constructor<T | Provider<T>> | DynamicValueProviderClass<T>): BindingTemplate<T>;
@@ -27,7 +27,7 @@ export declare function asClassOrProvider<T>(target: Constructor<T | Provider<T>
 |  --- | --- | --- |
 |  target | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | Target class, which can be an implementation of <code>Provider</code> or <code>DynamicValueProviderClass</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 

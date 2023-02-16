@@ -17,7 +17,7 @@ Generate a universally unique binding key.
 
 Please note the format of they generated key is not specified, you must not rely on any specific formatting (e.g. UUID style).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static generate<T>(namespace?: string): BindingKey<T>;
@@ -27,9 +27,9 @@ static generate<T>(namespace?: string): BindingKey<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  namespace | string | <i>(Optional)</i> Namespace for the binding |
+|  namespace | string | _(Optional)_ Namespace for the binding |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingKey](./context.bindingkey.md)<!-- -->&lt;T&gt;
 

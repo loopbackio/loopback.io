@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.expressmiddlewareinterceptorprovider.midd
 
 ## ExpressMiddlewareInterceptorProvider.middlewareFactory property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected middlewareFactory: ExpressMiddlewareFactory<CFG>;

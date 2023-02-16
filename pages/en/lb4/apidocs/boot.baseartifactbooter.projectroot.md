@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.projectroot.html
 
 Project root relative to which all other paths are resolved
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly projectRoot: string;

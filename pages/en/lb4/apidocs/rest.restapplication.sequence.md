@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.sequence.html
 
 ## RestApplication.sequence() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sequence(sequence: Constructor<SequenceHandler>): Binding;
@@ -25,7 +25,7 @@ sequence(sequence: Constructor<SequenceHandler>): Binding;
 |  --- | --- | --- |
 |  sequence | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

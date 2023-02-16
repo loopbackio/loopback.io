@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.count.html
 
 Count matching entities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 count(modelClass: Class<Entity>, where?: Where<Entity>, options?: Options): Promise<Count>;
@@ -26,10 +26,10 @@ count(modelClass: Class<Entity>, where?: Where<Entity>, options?: Options): Prom
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
-|  where | [Where](./filter.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | <i>(Optional)</i> The matching criteria |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  where | [Where](./filter.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | _(Optional)_ The matching criteria |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

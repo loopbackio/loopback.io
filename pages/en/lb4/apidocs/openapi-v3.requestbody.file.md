@@ -17,7 +17,7 @@ Define a requestBody of `file` type. This is used to support multipart/form-data
 
 [OpenAPI file upload](https://swagger.io/docs/specification/describing-request-body/file-upload)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 file: (properties?: {

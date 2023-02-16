@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.filter.html
 
 ## FilterBuilder.filter property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filter: Filter<MT>;

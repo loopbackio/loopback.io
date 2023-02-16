@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstorepository.html
 
 CRUD operations for a target repository of a BelongsTo relation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BelongsToRepository<Target extends Entity> 

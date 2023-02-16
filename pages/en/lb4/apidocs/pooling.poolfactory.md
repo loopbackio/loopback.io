@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.pooling.poolfactory.html
 
 Factory for the pooling service
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface PoolFactory<T> extends Factory<T> 
 ```
-<b>Extends:</b> Factory&lt;T&gt;
+**Extends:** Factory&lt;T&gt;
 
 ## Methods
 
 |  Method | Description |
 |  --- | --- |
-|  [acquire(resource, requestCtx)?](./pooling.poolfactory.acquire.md) | <i>(Optional)</i> To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource. |
-|  [release(resource)?](./pooling.poolfactory.release.md) | <i>(Optional)</i> To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned. |
+|  [acquire(resource, requestCtx)?](./pooling.poolfactory.acquire.md) | _(Optional)_ To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource. |
+|  [release(resource)?](./pooling.poolfactory.release.md) | _(Optional)_ To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned. |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.updateall.html
 
 ## DefaultCrudRepository.updateAll() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateAll(data: DataObject<T>, where?: Where<T>, options?: Options): Promise<Count>;
@@ -24,10 +24,10 @@ updateAll(data: DataObject<T>, where?: Where<T>, options?: Options): Promise<Cou
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

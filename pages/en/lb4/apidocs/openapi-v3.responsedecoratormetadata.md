@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.responsedecoratormetadata.html
 
 ## ResponseDecoratorMetadata type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ResponseDecoratorMetadata = ResponseDecoratorMetadataItem[];
 ```
-<b>References:</b> [ResponseDecoratorMetadataItem](./openapi-v3.responsedecoratormetadataitem.md)
+**References:** [ResponseDecoratorMetadataItem](./openapi-v3.responsedecoratormetadataitem.md)
 
 

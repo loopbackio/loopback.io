@@ -15,22 +15,22 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.html
 
 Options for request body validation using AJV
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ValidationOptions extends AjvOptions 
 ```
-<b>Extends:</b> AjvOptions
+**Extends:** AjvOptions
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [ajvErrors?](./rest.validationoptions.ajverrors.md) |  | [AjvErrorOptions](./rest.ajverroroptions.md) | <i>(Optional)</i> Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - <code>true</code>: Enable <code>ajv-errors</code> - <code>AjvErrorOptions</code>: Enable <code>ajv-errors</code> with options |
-|  [ajvErrorTransformer?](./rest.validationoptions.ajverrortransformer.md) |  | (errors: ErrorObject\[\]) =&gt; ErrorObject\[\] | <i>(Optional)</i> A function that transform the <code>ErrorObject</code>s reported by AJV. This could be used for error messages customization, localization, etc. |
-|  [ajvFactory?](./rest.validationoptions.ajvfactory.md) |  | (options: AjvOptions) =&gt; Ajv | <i>(Optional)</i> A factory to create Ajv instance |
-|  [ajvKeywords?](./rest.validationoptions.ajvkeywords.md) |  | string\[\] | <i>(Optional)</i> Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
-|  [compiledSchemaCache?](./rest.validationoptions.compiledschemacache.md) |  | [SchemaValidatorCache](./rest.schemavalidatorcache.md) | <i>(Optional)</i> Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
-|  [prohibitedKeys?](./rest.validationoptions.prohibitedkeys.md) |  | string\[\] | <i>(Optional)</i> An array of keys to be rejected, such as <code>__proto__</code>. |
+|  [ajvErrors?](./rest.validationoptions.ajverrors.md) |  | [AjvErrorOptions](./rest.ajverroroptions.md) | _(Optional)_ Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - <code>true</code>: Enable <code>ajv-errors</code> - <code>AjvErrorOptions</code>: Enable <code>ajv-errors</code> with options |
+|  [ajvErrorTransformer?](./rest.validationoptions.ajverrortransformer.md) |  | (errors: ErrorObject\[\]) =&gt; ErrorObject\[\] | _(Optional)_ A function that transform the <code>ErrorObject</code>s reported by AJV. This could be used for error messages customization, localization, etc. |
+|  [ajvFactory?](./rest.validationoptions.ajvfactory.md) |  | (options: AjvOptions) =&gt; Ajv | _(Optional)_ A factory to create Ajv instance |
+|  [ajvKeywords?](./rest.validationoptions.ajvkeywords.md) |  | string\[\] | _(Optional)_ Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - <code>string[]</code>: Add an array of keywords from <code>ajv-keywords</code> |
+|  [compiledSchemaCache?](./rest.validationoptions.compiledschemacache.md) |  | [SchemaValidatorCache](./rest.schemavalidatorcache.md) | _(Optional)_ Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache. |
+|  [prohibitedKeys?](./rest.validationoptions.prohibitedkeys.md) |  | string\[\] | _(Optional)_ An array of keys to be rejected, such as <code>__proto__</code>. |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.component.controllers.html
 
 An array of controller classes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 controllers?: ControllerClass[];

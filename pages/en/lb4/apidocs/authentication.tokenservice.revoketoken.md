@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.tokenservice.revoketoken.html
 
 Revokes a given token (if supported by token system)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 revokeToken?(token: string): Promise<boolean>;
@@ -27,7 +27,7 @@ revokeToken?(token: string): Promise<boolean>;
 |  --- | --- | --- |
 |  token | string | The token/secret which should be revoked/invalidated. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

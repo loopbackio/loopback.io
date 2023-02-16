@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerdefaults.html
 
 Default ArtifactOptions for SocketIoControllerBooter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SocketIoControllerDefaults: ArtifactOptions

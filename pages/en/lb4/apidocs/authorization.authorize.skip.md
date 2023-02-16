@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.skip.html
 
 Skip authorization
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 skip: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver.server.html
 
 ## HttpServer.server property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly server: http.Server | https.Server;

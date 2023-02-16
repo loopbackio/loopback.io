@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.hidden.html
 
 Used to hide this property from the response body, adding this property to the hiddenProperties array
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hidden?: boolean;

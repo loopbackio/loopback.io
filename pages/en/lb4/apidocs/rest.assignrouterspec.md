@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.assignrouterspec.html
 
 ## assignRouterSpec() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function assignRouterSpec(target: RouterSpec, additions: RouterSpec): void;
@@ -26,7 +26,7 @@ export declare function assignRouterSpec(target: RouterSpec, additions: RouterSp
 |  target | [RouterSpec](./rest.routerspec.md) |  |
 |  additions | [RouterSpec](./rest.routerspec.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

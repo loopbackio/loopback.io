@@ -17,12 +17,12 @@ Stop the application instance and all of its registered observers. The applicati
 
 If the application is already stopped or not started, no operation is performed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stop(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

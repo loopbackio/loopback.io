@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.node.regexp.html
 
 Regular expression for the template
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 regexp?: RegExp;

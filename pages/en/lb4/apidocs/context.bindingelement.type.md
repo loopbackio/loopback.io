@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingelement.type.html
 
 ## BindingElement.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: 'binding';

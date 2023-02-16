@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.mainentrypointfilepath.ht
 
 mainEntryPointFilePath
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mainEntryPointFilePath?: string;

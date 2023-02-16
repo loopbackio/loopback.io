@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparseroptions.urlencoded.html
 
 Options for urlencoded parser
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 urlencoded?: OptionsUrlencoded;

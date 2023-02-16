@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.constraindataobject.html
 
 A utility function which takes a model instance data and enforces constraint(s) on it
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function constrainDataObject<T extends Entity>(originalData: DataObject<T>, constraint: DataObject<T>): DataObject<T>;
@@ -28,7 +28,7 @@ export declare function constrainDataObject<T extends Entity>(originalData: Data
 |  originalData | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | the model data to apply the constrain(s) to |
 |  constraint | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | the constraint which is to be applied on the data object |
 
-<b>Returns:</b>
+**Returns:**
 
 [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;
 

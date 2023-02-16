@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.statuscode.html
 
 ## RedirectRoute.statusCode property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly statusCode: number;

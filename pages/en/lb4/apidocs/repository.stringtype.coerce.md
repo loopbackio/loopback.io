@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.stringtype.coerce.html
 
 ## StringType.coerce() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 coerce(value: any): string;
@@ -25,7 +25,7 @@ coerce(value: any): string;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorycomponent.repositories.html
 
 An optional list of Repository classes to bind for dependency injection via `app.repository()` API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 repositories?: Class<Repository<Model>>[];

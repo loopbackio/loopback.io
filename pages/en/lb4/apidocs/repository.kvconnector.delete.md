@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.kvconnector.delete.html
 
 Delete an entry by key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(modelClass: Class<Entity>, key: string, options?: Options): Promise<boolean>;
@@ -27,9 +27,9 @@ delete(modelClass: Class<Entity>, key: string, options?: Options): Promise<boole
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
 |  key | string | Key for the entry |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserveroptions.middlewareoptions.ht
 
 Middleware options for GraphQL
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 middlewareOptions?: GetMiddlewareOptions;

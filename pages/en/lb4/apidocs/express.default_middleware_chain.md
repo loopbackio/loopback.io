@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.default_middleware_chain.html
 
 Default extension point name for middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_MIDDLEWARE_CHAIN = "middlewareChain.default"

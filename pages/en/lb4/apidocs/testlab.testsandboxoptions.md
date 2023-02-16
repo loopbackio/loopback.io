@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandboxoptions.html
 
 Options for a test sandbox
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface TestSandboxOptions 

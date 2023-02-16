@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.getparseroptions.html
 
 Extract parser options based on the parser type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getParserOptions(type: 'json', options: RequestBodyParserOptions): OptionsJson;
@@ -28,7 +28,7 @@ export declare function getParserOptions(type: 'json', options: RequestBodyParse
 |  type | 'json' | json\|urlencoded\|text |
 |  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 OptionsJson
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutioncontext.context.html
 
 The context for resolution
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly context: Context;

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.jsonarray.html
 
 JSON array
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface JSONArray extends Array<JSONValue> 
 ```
-<b>Extends:</b> Array&lt;[JSONValue](./context.jsonvalue.md)<!-- -->&gt;
+**Extends:** Array&lt;[JSONValue](./context.jsonvalue.md)<!-- -->&gt;
 
 

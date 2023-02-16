@@ -17,7 +17,7 @@ Sorting order for matched entities. Each item should be formatted as `fieldName 
 
 We might want to use `Order` in the future. Keep it as `string[]` for now for compatibility with LoopBack 3.x.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 order?: string[];

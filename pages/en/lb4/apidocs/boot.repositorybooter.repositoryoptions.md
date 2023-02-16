@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.repositorybooter.repositoryoptions.html
 
 ## RepositoryBooter.repositoryOptions property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 repositoryOptions: ArtifactOptions;

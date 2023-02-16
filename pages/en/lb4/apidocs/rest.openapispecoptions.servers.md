@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.servers.html
 
 Configure servers for OpenAPI spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 servers?: ServerObject[];

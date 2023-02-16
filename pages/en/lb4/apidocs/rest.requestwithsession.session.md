@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestwithsession.session.html
 
 ## RequestWithSession.session property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 session: Session;

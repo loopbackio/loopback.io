@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.positionalparameters.html
 
 Positional parameters, such as \[1, 'a'\]
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PositionalParameters = any[];

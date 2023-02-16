@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.addcredential.html
 
 ## DefaultSubject.addCredential() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addCredential(...credentials: Credential[]): void;
@@ -25,7 +25,7 @@ addCredential(...credentials: Credential[]): void;
 |  --- | --- | --- |
 |  credentials | [Credential](./security.credential.md)<!-- -->\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerbindings.oas_enhancer_servi
 
 Strongly-typed binding key for SpecService
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 OAS_ENHANCER_SERVICE: BindingKey<OASEnhancerService>

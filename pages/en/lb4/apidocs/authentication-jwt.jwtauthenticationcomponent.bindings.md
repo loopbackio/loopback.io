@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationcomponent.bin
 
 ## JWTAuthenticationComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

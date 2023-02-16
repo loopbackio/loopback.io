@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.applydefaultscope.html
 
 Apply default scope to the binding. It only changes the scope if it's not set yet
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 applyDefaultScope(scope: BindingScope): this;
@@ -27,7 +27,7 @@ applyDefaultScope(scope: BindingScope): this;
 |  --- | --- | --- |
 |  scope | [BindingScope](./context.bindingscope.md) | Default binding scope |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

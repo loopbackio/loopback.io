@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsmiddlewareprovider.value.html
 
 ## ParseParamsMiddlewareProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): Middleware;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Middleware](./express.middleware.md)
 

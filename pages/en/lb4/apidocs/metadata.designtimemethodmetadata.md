@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.designtimemethodmetadata.html
 
 Design time metadata for a method.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface DesignTimeMethodMetadata 

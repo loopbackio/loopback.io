@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.transaction.rollback.html
 
 Rollback the transaction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rollback(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

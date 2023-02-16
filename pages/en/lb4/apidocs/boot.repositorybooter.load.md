@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.repositorybooter.load.html
 
 Uses super method to get a list of Artifact classes. Boot each class by binding it to the application using `app.repository(repository);` if present.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 load(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

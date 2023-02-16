@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.typedprincipal.principal.html
 
 ## TypedPrincipal.principal property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly principal: Principal;

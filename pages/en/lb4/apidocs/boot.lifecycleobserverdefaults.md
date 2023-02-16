@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.lifecycleobserverdefaults.html
 
 Default ArtifactOptions for DataSourceBooter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LifeCycleObserverDefaults: ArtifactOptions

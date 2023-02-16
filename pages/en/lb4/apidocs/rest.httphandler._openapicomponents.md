@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._openapicomponents.html
 
 Shared OpenAPI spec objects as `components`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _openApiComponents: ComponentsObject;

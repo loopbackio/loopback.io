@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.extensions.html
 
 ## extensions namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace extensions 

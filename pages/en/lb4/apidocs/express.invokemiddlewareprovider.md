@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareprovider.html
 
 Extension point for middleware to be run as part of the sequence actions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InvokeMiddlewareProvider 

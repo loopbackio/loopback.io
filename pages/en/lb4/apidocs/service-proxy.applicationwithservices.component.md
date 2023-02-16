@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.component.h
 
 ## ApplicationWithServices.component() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 component(component: Constructor<{}>, name?: string): Binding;
@@ -24,9 +24,9 @@ component(component: Constructor<{}>, name?: string): Binding;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  component | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

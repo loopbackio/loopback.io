@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.bindingtemplate.html
 
 A function as the template to configure bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingTemplate<T = unknown> = (binding: Binding<T>) => void;
 ```
-<b>References:</b> [Binding](./context.binding.md)
+**References:** [Binding](./context.binding.md)
 
 

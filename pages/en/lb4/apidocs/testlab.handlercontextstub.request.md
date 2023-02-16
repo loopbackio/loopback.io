@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.handlercontextstub.request.html
 
 ## HandlerContextStub.request property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 request: IncomingMessage;

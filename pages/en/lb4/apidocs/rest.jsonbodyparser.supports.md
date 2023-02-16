@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.jsonbodyparser.supports.html
 
 ## JsonBodyParser.supports() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 supports(mediaType: string): boolean;
@@ -25,7 +25,7 @@ supports(mediaType: string): boolean;
 |  --- | --- | --- |
 |  mediaType | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

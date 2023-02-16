@@ -15,13 +15,13 @@ permalink: /doc/en/lb4/apidocs.repository.valueobject.html
 
 Base class for value objects - An object that contains attributes but has no conceptual identity. They should be treated as immutable.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class ValueObject extends Model implements Persistable 
 ```
-<b>Extends:</b> [Model](./repository.model.md)
+**Extends:** [Model](./repository.model.md)
 
-<b>Implements:</b> [Persistable](./repository.persistable.md)
+**Implements:** [Persistable](./repository.persistable.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbody.html
 
 Request body with metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RequestBody = {

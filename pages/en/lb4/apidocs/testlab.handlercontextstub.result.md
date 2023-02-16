@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.handlercontextstub.result.html
 
 ## HandlerContextStub.result property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 result: Promise<ObservedResponse>;

@@ -17,7 +17,7 @@ Register a function to be called when the application initializes.
 
 This is a shortcut for adding a binding for a LifeCycleObserver implementing a `init()` method.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onInit(fn: () => ValueOrPromise<void>): Binding<LifeCycleObserver>;
@@ -29,7 +29,7 @@ onInit(fn: () => ValueOrPromise<void>): Binding<LifeCycleObserver>;
 |  --- | --- | --- |
 |  fn | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt; | The function to invoke, it can be synchronous (returning <code>void</code>) or asynchronous (returning <code>Promise&lt;void&gt;</code>). |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;
 

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.html
 
 ## RedirectRoute class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RedirectRoute implements RouteEntry, ResolvedRoute 
 ```
-<b>Implements:</b> [RouteEntry](./rest.routeentry.md)<!-- -->, [ResolvedRoute](./rest.resolvedroute.md)
+**Implements:** [RouteEntry](./rest.routeentry.md)<!-- -->, [ResolvedRoute](./rest.resolvedroute.md)
 
 ## Constructors
 

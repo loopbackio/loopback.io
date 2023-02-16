@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.userrepository.findbyid.html
 
 find by id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findById(id: string): MyUser | undefined;
@@ -27,7 +27,7 @@ findById(id: string): MyUser | undefined;
 |  --- | --- | --- |
 |  id | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [MyUser](./mock-oauth2-provider.myuser.md) \| undefined
 

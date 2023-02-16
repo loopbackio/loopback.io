@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.trywithfinally.html
 
 Try to run an action that returns a promise or a value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function tryWithFinally<T>(action: () => ValueOrPromise<T>, finalAction: () => void): ValueOrPromise<T>;
@@ -28,7 +28,7 @@ export declare function tryWithFinally<T>(action: () => ValueOrPromise<T>, final
 |  action | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | A function that returns a promise or a value |
 |  finalAction | () =&gt; void | A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.logerrorprovider.html
 
 ## LogErrorProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LogErrorProvider 

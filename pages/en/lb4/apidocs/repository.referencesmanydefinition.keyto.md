@@ -17,7 +17,7 @@ keyTo: The foreign key used by the target model for this relation. keyFrom: The 
 
 TODO(bajtos) Add relation description.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyTo?: string;

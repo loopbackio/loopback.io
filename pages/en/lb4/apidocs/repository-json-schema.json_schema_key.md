@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.json_schema_key.html
 
 Metadata key used to set or retrieve repository JSON Schema
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 JSON_SCHEMA_KEY: MetadataAccessor<{

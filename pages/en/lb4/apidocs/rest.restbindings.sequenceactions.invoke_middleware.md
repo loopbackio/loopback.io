@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.invoke_middlewa
 
 Binding key for setting and injecting `invokeMiddleware` function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INVOKE_MIDDLEWARE: BindingKey<InvokeMiddleware>

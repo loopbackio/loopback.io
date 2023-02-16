@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorytags.datasource.html
 
 Tag for datasource bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DATASOURCE = "datasource"

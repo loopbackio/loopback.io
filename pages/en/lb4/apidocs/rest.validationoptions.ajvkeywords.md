@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajvkeywords.html
 
 Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - `string[]`<!-- -->: Add an array of keywords from `ajv-keywords`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ajvKeywords?: string[];

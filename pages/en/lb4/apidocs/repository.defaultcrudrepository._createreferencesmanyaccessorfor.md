@@ -20,7 +20,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._createreference
 > Use `this.createReferencesManyAccessorFor()` instead
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _createReferencesManyAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepoGetter: Getter<EntityCrudRepository<Target, TargetId>>): ReferencesManyAccessor<Target, ID>;
@@ -33,7 +33,7 @@ protected _createReferencesManyAccessorFor<Target extends Entity, TargetId>(rela
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepoGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ReferencesManyAccessor](./repository.referencesmanyaccessor.md)<!-- -->&lt;Target, ID&gt;
 

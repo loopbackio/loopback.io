@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.createcontrollerfactoryforinstance.html
 
 Create a controller factory function for a given instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createControllerFactoryForInstance<T extends object>(controllerInst: T): ControllerFactory<T>;
@@ -27,7 +27,7 @@ export declare function createControllerFactoryForInstance<T extends object>(con
 |  --- | --- | --- |
 |  controllerInst | T |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
 

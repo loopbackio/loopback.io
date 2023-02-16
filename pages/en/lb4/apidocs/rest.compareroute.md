@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.compareroute.html
 
 Compare two routes by verb/path for sorting
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function compareRoute(route1: Pick<RouteEntry, 'verb' | 'path'>, route2: Pick<RouteEntry, 'verb' | 'path'>): number;
@@ -28,7 +28,7 @@ export declare function compareRoute(route1: Pick<RouteEntry, 'verb' | 'path'>, 
 |  route1 | Pick&lt;[RouteEntry](./rest.routeentry.md)<!-- -->, 'verb' \| 'path'&gt; | First route entry |
 |  route2 | Pick&lt;[RouteEntry](./rest.routeentry.md)<!-- -->, 'verb' \| 'path'&gt; | Second route entry |
 
-<b>Returns:</b>
+**Returns:**
 
 number
 

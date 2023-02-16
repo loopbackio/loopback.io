@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.filter.html
 
 ## ContextView.filter property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly filter: BindingFilter;

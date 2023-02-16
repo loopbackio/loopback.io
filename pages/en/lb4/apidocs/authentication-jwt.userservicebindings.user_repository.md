@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userservicebindings.user_repos
 
 ## UserServiceBindings.USER\_REPOSITORY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 USER_REPOSITORY = "repositories.UserRepository"

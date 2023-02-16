@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategy.authenticat
 
 The 'authenticate' method takes in a given request and returns a user profile which is an instance of 'UserProfile'. (A user profile is a minimal subset of a user object) If the user credentials are valid, this method should return a 'UserProfile' instance. If the user credentials are invalid, this method should throw an error If the user credentials are missing, this method should throw an error, or return 'undefined' and let the authentication action deal with it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 authenticate(request: Request): Promise<UserProfile | RedirectRoute | undefined>;
@@ -27,7 +27,7 @@ authenticate(request: Request): Promise<UserProfile | RedirectRoute | undefined>
 |  --- | --- | --- |
 |  request | Request | Express request object |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserProfile](./security.userprofile.md) \| [RedirectRoute](./rest.redirectroute.md) \| undefined&gt;
 

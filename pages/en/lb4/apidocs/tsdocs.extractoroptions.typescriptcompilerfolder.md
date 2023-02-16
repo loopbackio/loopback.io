@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.typescriptcompilerfolder.
 
 Custom TypeScript compiler dir
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typescriptCompilerFolder?: string;

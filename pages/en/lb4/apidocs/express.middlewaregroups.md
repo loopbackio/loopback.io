@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewaregroups.html
 
 Constants for middleware groups
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace MiddlewareGroups 

@@ -17,7 +17,7 @@ The `subdir` controls if/how the sandbox creates a subdirectory under the root p
 
 - `true`<!-- -->: Creates a unique subdirectory. This will be the default behavior. - `false`<!-- -->: Uses the root path as the target directory without creating a subdirectory. - a string such as `sub-dir-1`<!-- -->: creates a subdirectory with the given value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 subdir: boolean | string;

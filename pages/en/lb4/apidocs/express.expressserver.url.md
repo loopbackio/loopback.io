@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.url.html
 
 The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if `basePath` is set to '/api'.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get url(): string | undefined;

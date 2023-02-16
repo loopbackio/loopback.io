@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.request_body_index.html
 
 ## REQUEST\_BODY\_INDEX variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REQUEST_BODY_INDEX = "x-parameter-index"

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancer.name.html
 
 ## OASEnhancer.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

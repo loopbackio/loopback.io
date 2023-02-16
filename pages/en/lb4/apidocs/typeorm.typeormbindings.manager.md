@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormbindings.manager.html
 
 ## TypeOrmBindings.MANAGER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MANAGER: BindingKey<ConnectionManager>

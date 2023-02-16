@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepository.updateall.html
 
 Updating matching records with attributes from the data object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateAll(dataObject: DataObject<T>, where?: Where<T>, options?: Options): Promise<Count>;
@@ -26,10 +26,10 @@ updateAll(dataObject: DataObject<T>, where?: Where<T>, options?: Options): Promi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | The data to be updated |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Matching criteria |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | _(Optional)_ Matching criteria |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

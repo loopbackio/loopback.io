@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable.html
 
 Routing table
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RoutingTable 

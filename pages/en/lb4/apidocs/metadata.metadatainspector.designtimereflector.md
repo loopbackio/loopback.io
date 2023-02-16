@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.designtimereflector.ht
 
 Expose the reflector for TypeScript design-time metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly DesignTimeReflector: NamespacedReflect;

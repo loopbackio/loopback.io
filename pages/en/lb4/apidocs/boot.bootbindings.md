@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.html
 
 Namespace for boot related binding keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace BootBindings 

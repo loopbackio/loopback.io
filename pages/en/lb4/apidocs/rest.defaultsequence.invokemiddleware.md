@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.invokemiddleware.html
 
 Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected invokeMiddleware: InvokeMiddleware;

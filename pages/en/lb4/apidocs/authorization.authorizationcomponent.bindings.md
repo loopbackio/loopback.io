@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcomponent.bindings.htm
 
 ## AuthorizationComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

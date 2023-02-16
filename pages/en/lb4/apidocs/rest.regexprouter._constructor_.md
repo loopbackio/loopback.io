@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.regexprouter._constructor_.html
 
 Constructs a new instance of the `RegExpRouter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options?: RestRouterOptions);
@@ -25,6 +25,6 @@ constructor(options?: RestRouterOptions);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [RestRouterOptions](./rest.restrouteroptions.md) | <i>(Optional)</i> |
+|  options | [RestRouterOptions](./rest.restrouteroptions.md) | _(Optional)_ |
 
 

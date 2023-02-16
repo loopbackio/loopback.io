@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.restendpoint.verb.html
 
 ## RestEndpoint.verb property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verb: string;

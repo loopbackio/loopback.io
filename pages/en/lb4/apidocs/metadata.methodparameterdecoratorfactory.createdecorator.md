@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.methodparameterdecoratorfactory.createde
 
 Create a method decorator function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createDecorator<S>(key: MetadataKey<S, MethodDecorator>, spec: S, options?: DecoratorOptions): MethodDecorator;
@@ -27,9 +27,9 @@ static createDecorator<S>(key: MetadataKey<S, MethodDecorator>, spec: S, options
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, MethodDecorator&gt; | Metadata key |
 |  spec | S | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | <i>(Optional)</i> Options for the decorator |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | _(Optional)_ Options for the decorator |
 
-<b>Returns:</b>
+**Returns:**
 
 MethodDecorator
 

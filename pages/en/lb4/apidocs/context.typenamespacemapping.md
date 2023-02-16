@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.typenamespacemapping.html
 
 Mapping artifact types to binding key namespaces (prefixes).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type TypeNamespaceMapping = {

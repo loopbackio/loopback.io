@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.local_interceptor_namespace.html
 
 Default namespace for local interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LOCAL_INTERCEPTOR_NAMESPACE = "interceptors"

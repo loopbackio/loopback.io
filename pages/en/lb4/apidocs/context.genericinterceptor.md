@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.genericinterceptor.html
 
 An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type GenericInterceptor<C extends Context = Context> = (context: C, next: Next) => ValueOrPromise<NonVoid>;
 ```
-<b>References:</b> [Context](./context.context.md)<!-- -->, [Next](./context.next.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
+**References:** [Context](./context.context.md)<!-- -->, [Next](./context.next.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [NonVoid](./context.nonvoid.md)
 
 ## Remarks
 

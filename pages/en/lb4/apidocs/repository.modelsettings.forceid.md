@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelsettings.forceid.html
 
 Prevent clients from setting the auto-generated ID value manually
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 forceId?: boolean;

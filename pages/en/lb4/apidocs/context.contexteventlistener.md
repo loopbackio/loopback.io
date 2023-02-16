@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.contexteventlistener.html
 
 Synchronous listener for context events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextEventListener = (event: ContextEvent) => void;
 ```
-<b>References:</b> [ContextEvent](./context.contextevent.md)
+**References:** [ContextEvent](./context.contextevent.md)
 
 

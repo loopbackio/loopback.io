@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.getfieldsjsonschemafor.htm
 
 Build a JSON schema describing the format of the "fields" object used to include or exclude properties of model instances.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getFieldsJsonSchemaFor(modelCtor: typeof Model, options?: FilterSchemaOptions): JsonSchema;
@@ -26,9 +26,9 @@ export declare function getFieldsJsonSchemaFor(modelCtor: typeof Model, options?
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | The model constructor to build the filter schema for. |
-|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | <i>(Optional)</i> |
+|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

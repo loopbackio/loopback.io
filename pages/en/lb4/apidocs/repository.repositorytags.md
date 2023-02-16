@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorytags.html
 
 Binding tags for repository related bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RepositoryTags 

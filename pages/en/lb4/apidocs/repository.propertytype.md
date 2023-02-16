@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.repository.propertytype.html
 
 ## PropertyType type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type PropertyType = string | Function | object | Type<any> | TypeResolver<Model>;
 ```
-<b>References:</b> [Type](./repository.type.md)<!-- -->, [TypeResolver](./repository.typeresolver.md)<!-- -->, [Model](./repository.model.md)
+**References:** [Type](./repository.type.md)<!-- -->, [TypeResolver](./repository.typeresolver.md)<!-- -->, [Model](./repository.model.md)
 
 

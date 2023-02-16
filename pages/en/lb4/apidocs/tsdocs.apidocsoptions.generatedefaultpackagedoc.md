@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.generatedefaultpackagedoc.h
 
 A flag to generate default package documentation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generateDefaultPackageDoc?: boolean;

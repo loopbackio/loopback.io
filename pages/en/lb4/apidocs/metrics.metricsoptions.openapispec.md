@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsoptions.openapispec.html
 
 ## MetricsOptions.openApiSpec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 openApiSpec?: boolean;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.application.options.html
 
 ## Application.options property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly options: ApplicationConfig;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinitionsyntax.html
 
 DSL for building a model definition.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ModelDefinitionSyntax 
@@ -25,10 +25,10 @@ export interface ModelDefinitionSyntax
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [jsonSchema?](./repository.modeldefinitionsyntax.jsonschema.md) |  | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | <i>(Optional)</i> |
+|  [jsonSchema?](./repository.modeldefinitionsyntax.jsonschema.md) |  | [JsonSchemaWithExtensions](./repository.jsonschemawithextensions.md) | _(Optional)_ |
 |  [name](./repository.modeldefinitionsyntax.name.md) |  | string |  |
-|  [properties?](./repository.modeldefinitionsyntax.properties.md) |  | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md)<!-- -->; } | <i>(Optional)</i> |
-|  [relations?](./repository.modeldefinitionsyntax.relations.md) |  | [RelationDefinitionMap](./repository.relationdefinitionmap.md) | <i>(Optional)</i> |
-|  [settings?](./repository.modeldefinitionsyntax.settings.md) |  | [ModelSettings](./repository.modelsettings.md) | <i>(Optional)</i> |
+|  [properties?](./repository.modeldefinitionsyntax.properties.md) |  | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md)<!-- -->; } | _(Optional)_ |
+|  [relations?](./repository.modeldefinitionsyntax.relations.md) |  | [RelationDefinitionMap](./repository.relationdefinitionmap.md) | _(Optional)_ |
+|  [settings?](./repository.modeldefinitionsyntax.settings.md) |  | [ModelSettings](./repository.modelsettings.md) | _(Optional)_ |
 
 

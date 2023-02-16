@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidpolymorphismerror._constructor_
 
 Constructs a new instance of the `InvalidPolymorphismError` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(typeName: string, discriminator?: string, extraProperties?: Props);
@@ -26,7 +26,7 @@ constructor(typeName: string, discriminator?: string, extraProperties?: Props);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  typeName | string |  |
-|  discriminator | string | <i>(Optional)</i> |
-|  extraProperties | Props | <i>(Optional)</i> |
+|  discriminator | string | _(Optional)_ |
+|  extraProperties | Props | _(Optional)_ |
 
 

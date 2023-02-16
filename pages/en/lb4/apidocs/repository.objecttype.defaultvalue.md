@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.objecttype.defaultvalue.html
 
 ## ObjectType.defaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): T;
 ```
-<b>Returns:</b>
+**Returns:**
 
 T
 

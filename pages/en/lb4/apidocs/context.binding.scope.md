@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.scope.html
 
 Scope of the binding to control how the value is cached/shared
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get scope(): BindingScope;

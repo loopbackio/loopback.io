@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.apidocsgenerationpath.html
 
 Path to target directory to generate apidocs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiDocsGenerationPath?: string;

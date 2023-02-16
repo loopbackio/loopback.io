@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.booleantype.serialize.html
 
 ## BooleanType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: boolean | null | undefined): boolean | null | undefined;
@@ -25,7 +25,7 @@ serialize(value: boolean | null | undefined): boolean | null | undefined;
 |  --- | --- | --- |
 |  value | boolean \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean \| null \| undefined
 

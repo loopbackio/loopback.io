@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.metadata.html
 
 ## NamespacedReflect.metadata() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 metadata(metadataKey: string, metadataValue: any): {
@@ -29,7 +29,7 @@ metadata(metadataKey: string, metadataValue: any): {
 |  metadataKey | string |  |
 |  metadataValue | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 { (target: Function): void; (target: Object, targetKey: string \| symbol): void; }
 

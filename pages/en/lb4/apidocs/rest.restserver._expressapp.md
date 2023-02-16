@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._expressapp.html
 
 ## RestServer.\_expressApp property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _expressApp?: express.Application;

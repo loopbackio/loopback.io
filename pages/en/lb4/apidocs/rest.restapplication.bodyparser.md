@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.bodyparser.html
 
 Bind a body parser to the server context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bodyParser(bodyParserClass: Constructor<BodyParser>, address?: BindingAddress<BodyParser>): Binding<BodyParser>;
@@ -26,9 +26,9 @@ bodyParser(bodyParserClass: Constructor<BodyParser>, address?: BindingAddress<Bo
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  bodyParserClass | [Constructor](./context.constructor.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; |  |
-|  address | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | <i>(Optional)</i> Optional binding address |
+|  address | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | _(Optional)_ Optional binding address |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt;
 

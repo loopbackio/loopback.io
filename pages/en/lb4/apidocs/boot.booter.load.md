@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.booter.load.html
 
 Load phase of the Booter. It should bind the artifacts in this phase.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 load?(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

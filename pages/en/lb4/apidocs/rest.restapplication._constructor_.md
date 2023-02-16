@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication._constructor_.html
 
 Create a REST application with the given parent context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(parent: Context);

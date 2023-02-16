@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.proxysource.html
 
 Invocation source for injected proxies. It wraps a snapshot of the `ResolutionSession` that tracks the binding/injection stack.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ProxySource implements InvocationSource<ResolutionSession> 
 ```
-<b>Implements:</b> [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[ResolutionSession](./context.resolutionsession.md)<!-- -->&gt;
+**Implements:** [InvocationSource](./context.invocationsource.md)<!-- -->&lt;[ResolutionSession](./context.resolutionsession.md)<!-- -->&gt;
 
 ## Constructors
 

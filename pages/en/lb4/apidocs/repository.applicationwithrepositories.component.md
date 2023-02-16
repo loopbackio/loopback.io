@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.component.
 
 ## ApplicationWithRepositories.component() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 component(component: Class<unknown>, name?: string): Binding;
@@ -24,9 +24,9 @@ component(component: Class<unknown>, name?: string): Binding;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  component | [Class](./repository.class.md)<!-- -->&lt;unknown&gt; |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

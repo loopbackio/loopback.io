@@ -17,7 +17,7 @@ Only inspect own metadata of a given target. The prototype chain will not be che
 
 The flag is `false` by default for `MetadataInspector`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ownMetadataOnly?: boolean;

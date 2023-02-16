@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarebindings.context.html
 
 Binding key for setting and injecting the http request context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTEXT: BindingKey<MiddlewareContext>

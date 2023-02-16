@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.everyone.html
 
 Built-in roles
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 EVERYONE = "$everyone"

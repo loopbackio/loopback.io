@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.sendprovider.html
 
 Provides the function that populates the response object with the results of the operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SendProvider 

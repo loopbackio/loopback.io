@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.health.healthbindings.config.html
 
 ## HealthBindings.CONFIG variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONFIG: BindingAddress<HealthConfig>

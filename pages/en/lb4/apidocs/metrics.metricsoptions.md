@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsoptions.html
 
 Options for metrics component
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MetricsOptions 
@@ -25,10 +25,10 @@ export interface MetricsOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultLabels?](./metrics.metricsoptions.defaultlabels.md) |  | { \[labelName: string\]: string; } | <i>(Optional)</i> |
-|  [defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md) |  | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration | <i>(Optional)</i> |
-|  [endpoint?](./metrics.metricsoptions.endpoint.md) |  | { disabled?: boolean; basePath?: string; } | <i>(Optional)</i> |
-|  [openApiSpec?](./metrics.metricsoptions.openapispec.md) |  | boolean | <i>(Optional)</i> |
-|  [pushGateway?](./metrics.metricsoptions.pushgateway.md) |  | { disabled?: boolean; url: string; interval?: number; jobName?: string; groupingKey?: { \[key: string\]: string; }; replaceAll?: boolean; } | <i>(Optional)</i> |
+|  [defaultLabels?](./metrics.metricsoptions.defaultlabels.md) |  | { \[labelName: string\]: string; } | _(Optional)_ |
+|  [defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md) |  | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration | _(Optional)_ |
+|  [endpoint?](./metrics.metricsoptions.endpoint.md) |  | { disabled?: boolean; basePath?: string; } | _(Optional)_ |
+|  [openApiSpec?](./metrics.metricsoptions.openapispec.md) |  | boolean | _(Optional)_ |
+|  [pushGateway?](./metrics.metricsoptions.pushgateway.md) |  | { disabled?: boolean; url: string; interval?: number; jobName?: string; groupingKey?: { \[key: string\]: string; }; replaceAll?: boolean; } | _(Optional)_ |
 
 

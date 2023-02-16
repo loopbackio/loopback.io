@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.type.coerce.html
 
 Coerce the value into this type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 coerce(value: any, options?: Options): T | null | undefined;
@@ -26,9 +26,9 @@ coerce(value: any, options?: Options): T | null | undefined;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | any | The value to be coerced |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for coercion |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for coercion |
 
-<b>Returns:</b>
+**Returns:**
 
 T \| null \| undefined
 

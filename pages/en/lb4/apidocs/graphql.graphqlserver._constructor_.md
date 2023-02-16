@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver._constructor_.html
 
 Constructs a new instance of the `GraphQLServer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options?: GraphQLServerOptions, parent?: Context);
@@ -25,7 +25,7 @@ constructor(options?: GraphQLServerOptions, parent?: Context);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [GraphQLServerOptions](./graphql.graphqlserveroptions.md) | <i>(Optional)</i> |
-|  parent | [Context](./context.context.md) | <i>(Optional)</i> |
+|  options | [GraphQLServerOptions](./graphql.graphqlserveroptions.md) | _(Optional)_ |
+|  parent | [Context](./context.context.md) | _(Optional)_ |
 
 

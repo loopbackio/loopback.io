@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.objecttype.html
 
 Object type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ObjectType<T extends AnyObject> implements Type<T> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;T&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;T&gt;
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.modelapibooter.getapibuilderforpattern.html
 
 Retrieve the API builder that matches the pattern provided
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getApiBuilderForPattern(pattern: string): Promise<ModelApiBuilder>;
@@ -27,7 +27,7 @@ getApiBuilderForPattern(pattern: string): Promise<ModelApiBuilder>;
 |  --- | --- | --- |
 |  pattern | string | name of pattern for an API builder |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[ModelApiBuilder](./model-api-builder.modelapibuilder.md)<!-- -->&gt;
 

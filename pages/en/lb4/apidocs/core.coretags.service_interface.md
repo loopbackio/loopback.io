@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.service_interface.html
 
 Binding tag for the service interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SERVICE_INTERFACE = "serviceInterface"

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.interceptedinvocationcontext.html
 
 A specialized InvocationContext for interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InterceptedInvocationContext extends InvocationContext 
 ```
-<b>Extends:</b> [InvocationContext](./context.invocationcontext.md)
+**Extends:** [InvocationContext](./context.invocationcontext.md)
 
 ## Methods
 

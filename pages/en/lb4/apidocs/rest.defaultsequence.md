@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.html
 
 The default implementation of SequenceHandler.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultSequence implements SequenceHandler 
 ```
-<b>Implements:</b> [SequenceHandler](./rest.sequencehandler.md)
+**Implements:** [SequenceHandler](./rest.sequencehandler.md)
 
 ## Remarks
 

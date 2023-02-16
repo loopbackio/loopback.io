@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.describeinjectedarguments.html
 
 Return an array of injection objects for parameters
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function describeInjectedArguments(target: Object, method?: string): Readonly<Injection>[];
@@ -26,9 +26,9 @@ export declare function describeInjectedArguments(target: Object, method?: strin
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object | The target class for constructor or static methods, or the prototype for instance methods |
-|  method | string | <i>(Optional)</i> Method name, undefined for constructor |
+|  method | string | _(Optional)_ Method name, undefined for constructor |
 
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;\[\]
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadataaccessor.html
 
 A strongly-typed metadata accessor via reflection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MetadataAccessor<T, D extends DecoratorType = DecoratorType> 

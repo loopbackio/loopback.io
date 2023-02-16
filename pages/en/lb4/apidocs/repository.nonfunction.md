@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.nonfunction.html
 
 ## NonFunction type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type NonFunction<T> = T extends Function ? never : T;

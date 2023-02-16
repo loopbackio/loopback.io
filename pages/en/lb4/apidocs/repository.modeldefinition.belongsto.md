@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.belongsto.html
 
 Define a new belongsTo relation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 belongsTo(name: string, definition: Omit<BelongsToDefinition, 'name' | 'type' | 'targetsMany'>): this;
@@ -28,7 +28,7 @@ belongsTo(name: string, definition: Omit<BelongsToDefinition, 'name' | 'type' | 
 |  name | string | The name of the belongsTo relation. |
 |  definition | Omit&lt;[BelongsToDefinition](./repository.belongstodefinition.md)<!-- -->, 'name' \| 'type' \| 'targetsMany'&gt; | The definition of the belongsTo relation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

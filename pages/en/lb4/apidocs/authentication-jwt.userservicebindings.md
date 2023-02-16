@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userservicebindings.html
 
 ## UserServiceBindings namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace UserServiceBindings 

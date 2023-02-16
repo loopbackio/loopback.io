@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.injectable.html
 
 A namespace to host shortcuts for `@injectable`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace injectable 

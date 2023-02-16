@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.invalidrelationerror.sourcemodelname.h
 
 ## InvalidRelationError.sourceModelName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sourceModelName: string;

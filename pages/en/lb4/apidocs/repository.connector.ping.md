@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.connector.ping.html
 
 ## Connector.ping() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ping(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

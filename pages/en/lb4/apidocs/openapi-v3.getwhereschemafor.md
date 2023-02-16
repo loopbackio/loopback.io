@@ -17,7 +17,7 @@ Build a OpenAPI schema describing the format of the "where" object used to filte
 
 Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getWhereSchemaFor(modelCtor: typeof Model): SchemaObject;
@@ -29,7 +29,7 @@ export declare function getWhereSchemaFor(modelCtor: typeof Model): SchemaObject
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | The model constructor to build the filter schema for. |
 
-<b>Returns:</b>
+**Returns:**
 
 SchemaObject
 

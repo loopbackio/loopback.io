@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancer.html
 
 Typically an extension point defines an interface as the contract for extensions to implement
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface OASEnhancer 

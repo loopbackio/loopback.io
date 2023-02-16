@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolvelist.html
 
 Resolve entries of an array into a new array with the same indexes. If one or more entries of the source array are resolved to a promise by the `resolver` function, this method returns a promise which will be resolved to the new array with fully resolved entries.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: number, values: T[]) => ValueOrPromise<V>): ValueOrPromise<V[]>;
@@ -28,7 +28,7 @@ export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: n
 |  list | T\[\] | The original array containing the source entries |
 |  resolver | (val: T, index: number, values: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V\[\]&gt;
 

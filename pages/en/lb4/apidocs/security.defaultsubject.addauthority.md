@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.addauthority.html
 
 ## DefaultSubject.addAuthority() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addAuthority(...authorities: Permission[]): void;
@@ -25,7 +25,7 @@ addAuthority(...authorities: Permission[]): void;
 |  --- | --- | --- |
 |  authorities | [Permission](./security.permission.md)<!-- -->\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

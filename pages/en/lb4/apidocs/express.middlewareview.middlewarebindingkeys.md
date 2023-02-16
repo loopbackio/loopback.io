@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewareview.middlewarebindingkeys.html
 
 A list of binding keys sorted by group for registered middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get middlewareBindingKeys(): string[];

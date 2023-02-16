@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.isbound.html
 
 Check if a key is bound in the context or its ancestors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isBound(key: BindingAddress): boolean;
@@ -27,7 +27,7 @@ isBound(key: BindingAddress): boolean;
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

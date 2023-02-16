@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.hostport.port.html
 
 ## HostPort.port property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 port: number;

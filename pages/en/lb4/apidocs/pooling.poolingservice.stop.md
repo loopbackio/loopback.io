@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.stop.html
 
 Stop the pool
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stop(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.route_path.html
 
 Binding tag for the REST route path
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ROUTE_PATH = "restRoutePath"

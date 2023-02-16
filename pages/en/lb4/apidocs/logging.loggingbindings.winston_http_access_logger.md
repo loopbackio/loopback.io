@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingbindings.winston_http_access_logge
 
 Binding key for http access logger with winston
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WINSTON_HTTP_ACCESS_LOGGER: BindingKey<Interceptor>

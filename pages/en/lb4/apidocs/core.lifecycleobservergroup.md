@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobservergroup.html
 
 A group of life cycle observers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type LifeCycleObserverGroup = {
@@ -23,6 +23,6 @@ export type LifeCycleObserverGroup = {
     bindings: Readonly<Binding<LifeCycleObserver>>[];
 };
 ```
-<b>References:</b> [Binding](./context.binding.md)<!-- -->, [LifeCycleObserver](./core.lifecycleobserver.md)
+**References:** [Binding](./context.binding.md)<!-- -->, [LifeCycleObserver](./core.lifecycleobserver.md)
 
 

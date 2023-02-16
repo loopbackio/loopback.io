@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.release.html
 
 Release the resource back to the pool.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 release(resource: T): Promise<void>;
@@ -27,7 +27,7 @@ release(resource: T): Promise<void>;
 |  --- | --- | --- |
 |  resource | T | Resource instance to be returned back to the pool |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

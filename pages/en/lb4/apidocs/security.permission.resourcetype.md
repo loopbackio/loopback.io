@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.permission.resourcetype.html
 
 Type of protected resource, such as `Order` or `Customer`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resourceType: string;

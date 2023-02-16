@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.pub_sub_engine.html
 
 Binding key for the GraphQL pub/sub engine
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PUB_SUB_ENGINE: BindingKey<PubSubEngine>

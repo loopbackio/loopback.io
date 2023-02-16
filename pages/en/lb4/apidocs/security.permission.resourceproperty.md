@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.permission.resourceproperty.html
 
 Property of a protected resource type/instance, such as `email`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resourceProperty?: string;

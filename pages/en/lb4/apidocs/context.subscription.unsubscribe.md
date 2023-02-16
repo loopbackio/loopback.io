@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.subscription.unsubscribe.html
 
 unsubscribe
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unsubscribe(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

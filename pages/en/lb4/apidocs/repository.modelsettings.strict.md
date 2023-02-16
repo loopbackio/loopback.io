@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelsettings.strict.html
 
 Specifies whether the model accepts only predefined properties or not
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 strict?: boolean | 'filter';

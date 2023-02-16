@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticate.html
 
 ## authenticate namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace authenticate 

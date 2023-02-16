@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice._constructor_.html
 
 Constructs a new instance of the `PoolingService` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context, options: PoolingServiceOptions<T>);

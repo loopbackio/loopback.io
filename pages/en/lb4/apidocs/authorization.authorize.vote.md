@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.vote.html
 
 Shortcut to configure voters
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 vote: (...voters: (Authorizer | BindingAddress<Authorizer>)[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

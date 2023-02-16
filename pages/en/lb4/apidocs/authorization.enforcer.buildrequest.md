@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.enforcer.buildrequest.html
 
 Extract the request from authorization context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 buildRequest(authorizationContext: AuthorizationContext): Promise<AuthorizationRequest>;
@@ -27,7 +27,7 @@ buildRequest(authorizationContext: AuthorizationContext): Promise<AuthorizationR
 |  --- | --- | --- |
 |  authorizationContext | [AuthorizationContext](./authorization.authorizationcontext.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[AuthorizationRequest](./authorization.authorizationrequest.md)<!-- -->&gt;
 

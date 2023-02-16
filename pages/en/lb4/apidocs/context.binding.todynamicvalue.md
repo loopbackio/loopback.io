@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.todynamicvalue.html
 
 Bind the key to a computed (dynamic) value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toDynamicValue(factory: ValueFactory<T> | DynamicValueProviderClass<T>): this;
@@ -27,7 +27,7 @@ toDynamicValue(factory: ValueFactory<T> | DynamicValueProviderClass<T>): this;
 |  --- | --- | --- |
 |  factory | [ValueFactory](./context.valuefactory.md)<!-- -->&lt;T&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.openapispecbuilder.html
 
 A builder for creating OpenApiSpec documents.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class OpenApiSpecBuilder extends BuilderBase<OpenAPIObject> 
 ```
-<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;OpenAPIObject&gt;
+**Extends:** [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;OpenAPIObject&gt;
 
 ## Constructors
 

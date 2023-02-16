@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.html
 
 ## inject namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace inject 

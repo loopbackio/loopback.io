@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.asmodelapibuilder.html
 
 A binding template for model API extensions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asModelApiBuilder: BindingTemplate

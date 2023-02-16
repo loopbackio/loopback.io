@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.getparseroptions_1.html
 
 ## getParserOptions() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getParserOptions(type: 'urlencoded', options: RequestBodyParserOptions): OptionsUrlencoded;
@@ -26,7 +26,7 @@ export declare function getParserOptions(type: 'urlencoded', options: RequestBod
 |  type | 'urlencoded' |  |
 |  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 OptionsUrlencoded
 

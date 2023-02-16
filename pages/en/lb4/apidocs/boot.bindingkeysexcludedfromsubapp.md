@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bindingkeysexcludedfromsubapp.html
 
 Binding keys excluded from a sub application. These bindings booted from the sub application won't be added to the main application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindingKeysExcludedFromSubApp: string[]

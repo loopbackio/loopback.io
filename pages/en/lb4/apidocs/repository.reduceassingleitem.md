@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.reduceassingleitem.html
 
 Returns a single of an instance. For HasOne and BelongsTo relation usage.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function reduceAsSingleItem<T>(_acc: T | undefined, it: T): T;
@@ -28,7 +28,7 @@ export declare function reduceAsSingleItem<T>(_acc: T | undefined, it: T): T;
 |  \_acc | T \| undefined |  |
 |  it | T |  |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

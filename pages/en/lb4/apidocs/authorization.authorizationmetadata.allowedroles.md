@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.allowedroles.
 
 Roles that are allowed access
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 allowedRoles?: string[];

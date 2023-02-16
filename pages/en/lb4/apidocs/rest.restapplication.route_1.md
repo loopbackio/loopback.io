@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.route_1.html
 
 Register a new route invoking a handler function.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 route(verb: string, path: string, spec: OperationObject, handler: Function): Binding;
@@ -30,7 +30,7 @@ route(verb: string, path: string, spec: OperationObject, handler: Function): Bin
 |  spec | OperationObject | The OpenAPI spec describing the endpoint (operation) |
 |  handler | Function | The function to invoke with the request parameters described in the spec. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

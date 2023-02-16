@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filter.where.html
 
 The matching criteria
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 where?: Where<MT>;

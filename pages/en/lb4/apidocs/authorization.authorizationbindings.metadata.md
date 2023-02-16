@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationbindings.metadata.html
 
 ## AuthorizationBindings.METADATA variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 METADATA: BindingKey<AuthorizationMetadata>

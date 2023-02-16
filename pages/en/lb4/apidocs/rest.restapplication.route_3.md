@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.route_3.html
 
 Register a new route.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 route(verb: string, path: string, spec: OperationObject, handler: Function): Binding;
@@ -30,7 +30,7 @@ route(verb: string, path: string, spec: OperationObject, handler: Function): Bin
 |  spec | OperationObject |  |
 |  handler | Function |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

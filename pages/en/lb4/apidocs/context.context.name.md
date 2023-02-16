@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.name.html
 
 Name of the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name: string;

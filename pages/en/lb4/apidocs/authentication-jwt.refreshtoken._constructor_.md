@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtoken._constructor_.htm
 
 Constructs a new instance of the `RefreshToken` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(data?: Partial<RefreshToken>);
@@ -25,6 +25,6 @@ constructor(data?: Partial<RefreshToken>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | Partial&lt;[RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->&gt; | <i>(Optional)</i> |
+|  data | Partial&lt;[RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->&gt; | _(Optional)_ |
 
 

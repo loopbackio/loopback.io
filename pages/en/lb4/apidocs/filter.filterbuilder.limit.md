@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.limit.html
 
 Set `limit`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 limit(limit: number): this;
@@ -27,7 +27,7 @@ limit(limit: number): this;
 |  --- | --- | --- |
 |  limit | number | Maximum number of records to be returned |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

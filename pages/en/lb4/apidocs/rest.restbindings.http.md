@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.http.html
 
 Request-specific bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 namespace Http 

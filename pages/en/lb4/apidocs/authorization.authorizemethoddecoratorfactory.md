@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizemethoddecoratorfactory.htm
 
 ## AuthorizeMethodDecoratorFactory class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AuthorizeMethodDecoratorFactory extends MethodDecoratorFactory<AuthorizationMetadata> 
 ```
-<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt;
+**Extends:** [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;[AuthorizationMetadata](./authorization.authorizationmetadata.md)<!-- -->&gt;
 
 ## Methods
 

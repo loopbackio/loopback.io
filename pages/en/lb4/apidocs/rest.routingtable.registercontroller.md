@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable.registercontroller.html
 
 Register a controller as the route
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerController<T extends object>(spec: ControllerSpec, controllerCtor: ControllerClass<T>, controllerFactory?: ControllerFactory<T>): void;
@@ -27,9 +27,9 @@ registerController<T extends object>(spec: ControllerSpec, controllerCtor: Contr
 |  --- | --- | --- |
 |  spec | [ControllerSpec](./openapi-v3.controllerspec.md) |  |
 |  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
+|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

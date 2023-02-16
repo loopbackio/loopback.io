@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.anytype.html
 
 Any type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AnyType implements Type<any> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;any&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;any&gt;
 
 ## Properties
 

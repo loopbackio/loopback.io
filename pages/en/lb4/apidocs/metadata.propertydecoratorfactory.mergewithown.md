@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.propertydecoratorfactory.mergewithown.ht
 
 ## PropertyDecoratorFactory.mergeWithOwn() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected mergeWithOwn(ownMetadata: MetadataMap<T>, target: Object, propertyName?: string, descriptorOrParameterIndex?: TypedPropertyDescriptor<any> | number): MetadataMap<T>;
@@ -25,10 +25,10 @@ protected mergeWithOwn(ownMetadata: MetadataMap<T>, target: Object, propertyName
 |  --- | --- | --- |
 |  ownMetadata | [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; |  |
 |  target | Object |  |
-|  propertyName | string | <i>(Optional)</i> |
-|  descriptorOrParameterIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
+|  propertyName | string | _(Optional)_ |
+|  descriptorOrParameterIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt;
 

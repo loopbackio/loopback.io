@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsoptions.pushgateway.html
 
 ## MetricsOptions.pushGateway property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 pushGateway?: {

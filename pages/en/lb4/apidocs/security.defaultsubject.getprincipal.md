@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.getprincipal.html
 
 ## DefaultSubject.getPrincipal() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getPrincipal(type: string): Principal | undefined;
@@ -25,7 +25,7 @@ getPrincipal(type: string): Principal | undefined;
 |  --- | --- | --- |
 |  type | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [Principal](./security.principal.md) \| undefined
 

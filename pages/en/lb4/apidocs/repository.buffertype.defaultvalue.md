@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.buffertype.defaultvalue.html
 
 ## BufferType.defaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): Buffer;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Buffer
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.invoketargetmethod.html
 
 Invoke the target method with the given context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 invokeTargetMethod(options?: InvocationOptions): any;
@@ -25,9 +25,9 @@ invokeTargetMethod(options?: InvocationOptions): any;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [InvocationOptions](./context.invocationoptions.md) | <i>(Optional)</i> Options for the invocation |
+|  options | [InvocationOptions](./context.invocationoptions.md) | _(Optional)_ Options for the invocation |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

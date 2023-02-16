@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.model._constructor_.html
 
 Constructs a new instance of the `Model` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(data?: DataObject<Model>);
@@ -25,6 +25,6 @@ constructor(data?: DataObject<Model>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt; | <i>(Optional)</i> |
+|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt; | _(Optional)_ |
 
 

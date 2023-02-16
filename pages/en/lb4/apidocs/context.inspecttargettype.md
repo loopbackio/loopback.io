@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.inspecttargettype.html
 
 Inspect the target type for the injection to find out the corresponding JavaScript type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function inspectTargetType(injection: Readonly<Injection>): Function | undefined;
@@ -27,7 +27,7 @@ export declare function inspectTargetType(injection: Readonly<Injection>): Funct
 |  --- | --- | --- |
 |  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection information |
 
-<b>Returns:</b>
+**Returns:**
 
 Function \| undefined
 

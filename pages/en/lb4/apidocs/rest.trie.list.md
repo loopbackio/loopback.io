@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.trie.list.html
 
 List all nodes with value of the trie
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 list(): NodeWithValue<T>[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 [NodeWithValue](./rest.nodewithvalue.md)<!-- -->&lt;T&gt;\[\]
 

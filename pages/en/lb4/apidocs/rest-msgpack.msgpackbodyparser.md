@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparser.html
 
 ## MsgPackBodyParser class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MsgPackBodyParser extends RawBodyParser 
 ```
-<b>Extends:</b> [RawBodyParser](./rest.rawbodyparser.md)
+**Extends:** [RawBodyParser](./rest.rawbodyparser.md)
 
 ## Constructors
 

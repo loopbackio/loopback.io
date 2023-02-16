@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepository.createall.html
 
 Create all records
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 createAll(dataObjects: DataObject<T>[], options?: Options): Promise<T[]>;
@@ -26,9 +26,9 @@ createAll(dataObjects: DataObject<T>[], options?: Options): Promise<T[]>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObjects | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;\[\] | An array of data to be created |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T\[\]&gt;
 

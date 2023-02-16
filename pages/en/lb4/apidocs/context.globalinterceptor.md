@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.globalinterceptor.html
 
 `@globalInterceptor` decorator to mark the class as a global interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function globalInterceptor(group?: string, ...specs: BindingSpec[]): ClassDecorator;
@@ -25,10 +25,10 @@ export declare function globalInterceptor(group?: string, ...specs: BindingSpec[
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  group | string | <i>(Optional)</i> Group for ordering the interceptor |
+|  group | string | _(Optional)_ Group for ordering the interceptor |
 |  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] | Extra binding specs |
 
-<b>Returns:</b>
+**Returns:**
 
 ClassDecorator
 

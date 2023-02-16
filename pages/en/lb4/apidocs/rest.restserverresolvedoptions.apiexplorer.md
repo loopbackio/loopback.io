@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.apiexplorer.html
 
 ## RestServerResolvedOptions.apiExplorer property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiExplorer: ApiExplorerOptions;

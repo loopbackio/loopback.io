@@ -13,13 +13,13 @@ permalink: /doc/en/lb4/apidocs.rest.nodewithvalue.html
 
 ## NodeWithValue type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type NodeWithValue<T> = Node<T> & {
     value: T;
 };
 ```
-<b>References:</b> [Node](./rest.node.md)
+**References:** [Node](./rest.node.md)
 
 

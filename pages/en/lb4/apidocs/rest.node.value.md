@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.node.value.html
 
 Value of the node
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value?: T;

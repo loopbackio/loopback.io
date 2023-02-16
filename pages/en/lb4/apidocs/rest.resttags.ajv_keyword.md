@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.ajv_keyword.html
 
 ## RestTags.AJV\_KEYWORD variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AJV_KEYWORD = "ajvKeyword"

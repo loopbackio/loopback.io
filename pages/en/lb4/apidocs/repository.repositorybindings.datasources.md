@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorybindings.datasources.html
 
 Namespace for datasource bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DATASOURCES = "datasources"

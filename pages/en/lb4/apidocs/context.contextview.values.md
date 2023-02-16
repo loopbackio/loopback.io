@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.values.html
 
 Get the list of resolved values. If they are not cached, it tries to find and resolve them.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 values(session?: ResolutionOptionsOrSession): Promise<T[]>;
@@ -25,9 +25,9 @@ values(session?: ResolutionOptionsOrSession): Promise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T\[\]&gt;
 

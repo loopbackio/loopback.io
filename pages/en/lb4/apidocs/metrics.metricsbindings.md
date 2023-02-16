@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsbindings.html
 
 Binding keys used by this component.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace MetricsBindings 

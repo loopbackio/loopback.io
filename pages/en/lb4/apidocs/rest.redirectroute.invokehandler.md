@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.redirectroute.invokehandler.html
 
 ## RedirectRoute.invokeHandler() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 invokeHandler({ response }: RequestContext, args: OperationArgs): Promise<OperationRetval>;
@@ -26,7 +26,7 @@ invokeHandler({ response }: RequestContext, args: OperationArgs): Promise<Operat
 |  { response } | [RequestContext](./rest.requestcontext.md) |  |
 |  args | [OperationArgs](./rest.operationargs.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OperationRetval](./rest.operationretval.md)<!-- -->&gt;
 

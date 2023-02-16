@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.applicationmetadatabooter.html
 
 Configure the application with metadata from `package.json`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ApplicationMetadataBooter implements Booter 
 ```
-<b>Implements:</b> [Booter](./boot.booter.md)
+**Implements:** [Booter](./boot.booter.md)
 
 ## Constructors
 

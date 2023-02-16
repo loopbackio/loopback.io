@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorybindings.html
 
 Binding keys and namespaces for repository related bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RepositoryBindings 

@@ -17,7 +17,7 @@ An array of group names for downstream middleware in the cascading order.
 
 For example, the `sendResponse` depends on `invokeMethod` for response processing. The `downstreamGroups` for `sendResponse` should be `['invokeMethod']`<!-- -->. The order of groups in the array does not matter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 downstreamGroups?: string | string[];

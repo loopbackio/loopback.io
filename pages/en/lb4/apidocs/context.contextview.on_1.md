@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.on_1.html
 
 The "unbind" event is emitted a new binding is removed from the view.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 on(eventName: 'unbind', listener: <V>(event: ContextViewEvent<V> & {
@@ -30,7 +30,7 @@ on(eventName: 'unbind', listener: <V>(event: ContextViewEvent<V> & {
 |  eventName | 'unbind' | The name of the event - always <code>unbind</code>. |
 |  listener | &lt;V&gt;(event: [ContextViewEvent](./context.contextviewevent.md)<!-- -->&lt;V&gt; &amp; { cachedValue?: V; }) =&gt; void | The listener function to call when the event is emitted. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

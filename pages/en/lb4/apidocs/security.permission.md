@@ -19,7 +19,7 @@ There are three levels of permissions
 
 - Resource level (Order, User) - Instance level (Order-0001, User-1001) - Property level (User-0001.email)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Permission 
@@ -35,8 +35,8 @@ export declare class Permission
 |  --- | --- | --- | --- |
 |  [\[securityId\]](./security.permission._securityid_.md) | <code>readonly</code> | string |  |
 |  [action](./security.permission.action.md) |  | string | Action or access of a protected resources, such as <code>read</code>, <code>create</code>, <code>update</code>, or <code>delete</code> |
-|  [resourceId?](./security.permission.resourceid.md) |  | string | <i>(Optional)</i> Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
-|  [resourceProperty?](./security.permission.resourceproperty.md) |  | string | <i>(Optional)</i> Property of a protected resource type/instance, such as <code>email</code> |
+|  [resourceId?](./security.permission.resourceid.md) |  | string | _(Optional)_ Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
+|  [resourceProperty?](./security.permission.resourceproperty.md) |  | string | _(Optional)_ Property of a protected resource type/instance, such as <code>email</code> |
 |  [resourceType](./security.permission.resourcetype.md) |  | string | Type of protected resource, such as <code>Order</code> or <code>Customer</code> |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.health.healthbindings.health_checker.html
 
 ## HealthBindings.HEALTH\_CHECKER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 HEALTH_CHECKER: BindingKey<HealthChecker>

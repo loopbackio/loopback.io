@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingcomparator.html
 
 Compare function to sort an array of bindings. It is used by `Array.prototype.sort()`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BindingComparator 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.contextview.open.html
 
 Start listening events from the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 open(): Subscription | undefined;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Subscription](./context.subscription.md) \| undefined
 

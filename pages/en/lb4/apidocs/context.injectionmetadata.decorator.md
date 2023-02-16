@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.injectionmetadata.decorator.html
 
 Name of the decorator function, such as `@inject` or `@inject.setter`<!-- -->. It's usually set by the decorator implementation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 decorator?: string;

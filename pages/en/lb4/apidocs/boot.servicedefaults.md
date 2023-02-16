@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.servicedefaults.html
 
 Default ArtifactOptions for DataSourceBooter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ServiceDefaults: ArtifactOptions

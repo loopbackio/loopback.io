@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.useridentityservice.findorcreateus
 
 find or create a local user using a profile from an external source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findOrCreateUser(userIdentity: I): Promise<U>;
@@ -27,7 +27,7 @@ findOrCreateUser(userIdentity: I): Promise<U>;
 |  --- | --- | --- |
 |  userIdentity | I |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;U&gt;
 

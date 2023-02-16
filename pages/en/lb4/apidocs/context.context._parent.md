@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context._parent.html
 
 Parent context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _parent?: Context;

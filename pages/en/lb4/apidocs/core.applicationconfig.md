@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.applicationconfig.html
 
 Configuration for application
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ApplicationConfig 
@@ -25,7 +25,7 @@ export interface ApplicationConfig
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name?](./core.applicationconfig.name.md) |  | string | <i>(Optional)</i> Name of the application context |
-|  [shutdown?](./core.applicationconfig.shutdown.md) |  | [ShutdownOptions](./core.shutdownoptions.md) | <i>(Optional)</i> Configuration for signals that shut down the application |
+|  [name?](./core.applicationconfig.name.md) |  | string | _(Optional)_ Name of the application context |
+|  [shutdown?](./core.applicationconfig.shutdown.md) |  | [ShutdownOptions](./core.shutdownoptions.md) | _(Optional)_ Configuration for signals that shut down the application |
 
 

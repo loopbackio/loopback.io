@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repository.getter.html
 
 Decorator used to inject a Getter for a repository Mainly intended for usage with repository injections on relation repository factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function getter(nameOrClass: string | Class<Repository<Model>>): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
@@ -27,7 +27,7 @@ function getter(nameOrClass: string | Class<Repository<Model>>): (target: Object
 |  --- | --- | --- |
 |  nameOrClass | string \| [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;[Model](./repository.model.md)<!-- -->&gt;&gt; | The repository class (ProductRepository) or a string name ('ProductRepository'). |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 

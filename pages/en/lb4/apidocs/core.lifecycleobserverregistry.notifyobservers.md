@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.notifyobservers.ht
 
 Notify an observer group of the given event
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected notifyObservers(observers: LifeCycleObserver[], bindings: Readonly<Binding<LifeCycleObserver>>[], event: keyof LifeCycleObserver): Promise<void>;
@@ -29,7 +29,7 @@ protected notifyObservers(observers: LifeCycleObserver[], bindings: Readonly<Bin
 |  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\] |  |
 |  event | keyof [LifeCycleObserver](./core.lifecycleobserver.md) | Event name |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

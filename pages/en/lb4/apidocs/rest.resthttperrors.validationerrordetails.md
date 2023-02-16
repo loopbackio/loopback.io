@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.validationerrordetails.html
 
 An invalid request body error contains a `details` property as the machine-readable error. Each entry in `error.details` contains 4 attributes: `path`<!-- -->, `code`<!-- -->, `info` and `message`<!-- -->. `ValidationErrorDetails` defines the type of each entry, which is an object. The type of `error.details` is `ValidationErrorDetails[]`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interface ValidationErrorDetails 

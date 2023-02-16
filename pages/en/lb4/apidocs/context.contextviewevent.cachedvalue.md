@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextviewevent.cachedvalue.html
 
 Optional cached value for an `unbind` event
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 cachedValue?: T;

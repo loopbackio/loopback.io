@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormconnectionbooter.app.html
 
 ## TypeOrmConnectionBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: ApplicationUsingTypeOrm;

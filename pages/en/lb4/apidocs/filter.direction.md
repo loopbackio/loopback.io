@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.direction.html
 
 Order by direction
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Direction = 'ASC' | 'DESC';

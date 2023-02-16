@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.buildmodeldefinition.html
 
 Build model definition from decorations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function buildModelDefinition(target: Function & {
@@ -28,9 +28,9 @@ export declare function buildModelDefinition(target: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md) \| undefined; } | Target model class |
-|  def | [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | <i>(Optional)</i> Model definition spec |
+|  def | [ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md) | _(Optional)_ Model definition spec |
 
-<b>Returns:</b>
+**Returns:**
 
 [ModelDefinition](./repository.modeldefinition.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.setter.html
 
 The function injected by `@inject.setter(bindingKey)`<!-- -->. It sets the underlying binding to a constant value using `binding.to(value)`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Setter<T> = (value: T) => void;

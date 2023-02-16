@@ -17,7 +17,7 @@ The default merge function to patch the current OpenAPI spec. It leverages modul
 
 A list of merging rules can be found in test file: https://github.com/pierreinglebert/json-merge-patch/blob/master/test/lib/merge.js
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function mergeOpenAPISpec<C extends Partial<OpenApiSpec>, P extends Partial<OpenApiSpec>>(currentSpec: C, patchSpec: P): C & P;
@@ -30,7 +30,7 @@ export declare function mergeOpenAPISpec<C extends Partial<OpenApiSpec>, P exten
 |  currentSpec | C | The original spec |
 |  patchSpec | P | The patch spec to be merged into the original spec |
 
-<b>Returns:</b>
+**Returns:**
 
 C &amp; P
 

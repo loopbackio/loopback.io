@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.getpathvariables.html
 
 Get all path variables. For example, `/root/{foo}/bar` =<!-- -->&gt; `['foo']`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getPathVariables(path: string): RegExpMatchArray | null;
@@ -27,7 +27,7 @@ export declare function getPathVariables(path: string): RegExpMatchArray | null;
 |  --- | --- | --- |
 |  path | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 RegExpMatchArray \| null
 

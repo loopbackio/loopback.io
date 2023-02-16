@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingcomponentconfig.html
 
 Configuration for LoggingComponent
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type LoggingComponentConfig = {

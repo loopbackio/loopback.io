@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.logging.winstonloggerprovider.html
 
 A provider class that creates WinstonLogger instances
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class WinstonLoggerProvider implements Provider<Logger> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;Logger&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;Logger&gt;
 
 ## Constructors
 

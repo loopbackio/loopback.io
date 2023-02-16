@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.parseoperationargs.html
 
 Parses the request to derive arguments to be passed in for the Application controller method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function parseOperationArgs(request: Request, route: ResolvedRoute, requestBodyParser?: RequestBodyParser, options?: ValidationOptions): Promise<OperationArgs>;
@@ -27,10 +27,10 @@ export declare function parseOperationArgs(request: Request, route: ResolvedRout
 |  --- | --- | --- |
 |  request | Request | Incoming HTTP request |
 |  route | [ResolvedRoute](./rest.resolvedroute.md) | Resolved Route |
-|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) | <i>(Optional)</i> |
-|  options | [ValidationOptions](./rest.validationoptions.md) | <i>(Optional)</i> |
+|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) | _(Optional)_ |
+|  options | [ValidationOptions](./rest.validationoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OperationArgs](./rest.operationargs.md)<!-- -->&gt;
 

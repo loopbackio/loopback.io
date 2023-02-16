@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.get.html
 
 ## DefaultBelongsToRepository.get() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get(options?: Options & {
@@ -25,9 +25,9 @@ get(options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity&gt;
 

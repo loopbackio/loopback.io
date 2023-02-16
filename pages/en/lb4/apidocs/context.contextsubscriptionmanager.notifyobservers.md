@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager.notifyobserver
 
 Publish an event to the registered observers. Please note the notification is queued and performed asynchronously so that we allow fluent APIs such as `ctx.bind('key').to(...).tag(...);` and give observers the fully populated binding.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected notifyObservers(event: ContextEvent, observers?: Set<ContextEventObserver> | undefined): Promise<void>;
@@ -26,9 +26,9 @@ protected notifyObservers(event: ContextEvent, observers?: Set<ContextEventObser
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  event | [ContextEvent](./context.contextevent.md) | Context event |
-|  observers | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | <i>(Optional)</i> Current set of context observers |
+|  observers | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | _(Optional)_ Current set of context observers |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

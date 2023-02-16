@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.gettarget.html
 
 Get the optional decoration target of a given spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getTarget(spec: T): any;
@@ -27,7 +27,7 @@ getTarget(spec: T): any;
 |  --- | --- | --- |
 |  spec | T | Metadata spec |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.interceptor.html
 
 Register an interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interceptor(interceptor: Interceptor | Constructor<Provider<Interceptor>>, nameOrOptions?: string | InterceptorBindingOptions): Binding<Interceptor>;
@@ -26,9 +26,9 @@ interceptor(interceptor: Interceptor | Constructor<Provider<Interceptor>>, nameO
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  interceptor | [Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | An interceptor function or provider class |
-|  nameOrOptions | string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | <i>(Optional)</i> Binding name or options |
+|  nameOrOptions | string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | _(Optional)_ Binding name or options |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.targetclass.html
 
 The target class, such as `OrderController`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get targetClass(): Function;

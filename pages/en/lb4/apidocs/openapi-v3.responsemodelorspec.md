@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.responsemodelorspec.html
 
 ## ResponseModelOrSpec type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ResponseModelOrSpec = typeof Model | SchemaObject | ResponseObject | ReferenceObject;
 ```
-<b>References:</b> [Model](./repository.model.md)
+**References:** [Model](./repository.model.md)
 
 

@@ -17,12 +17,12 @@ A class that extends BaseArtifactBooter to boot the TypeORM connection artifact 
 
 Supported phases: configure, discover, load
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TypeOrmConnectionBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

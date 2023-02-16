@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextexplorerbindings.componen
 
 Binding key for ContextExplorerComponent
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<ContextExplorerComponent>

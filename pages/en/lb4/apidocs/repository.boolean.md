@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.boolean.html
 
 ## BOOLEAN variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOLEAN: BooleanType

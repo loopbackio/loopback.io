@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserver.init.html
 
 The method to be invoked during `init`<!-- -->. It will only be called at most once for a given application instance.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 init?(...injectedArgs: unknown[]): ValueOrPromise<void>;
@@ -27,7 +27,7 @@ init?(...injectedArgs: unknown[]): ValueOrPromise<void>;
 |  --- | --- | --- |
 |  injectedArgs | unknown\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 

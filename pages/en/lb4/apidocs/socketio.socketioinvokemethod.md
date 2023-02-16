@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioinvokemethod.html
 
 ## SocketIoInvokeMethod type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SocketIoInvokeMethod = (context: Context, controller: ControllerClass, methodName: string, args: unknown[]) => unknown;
 ```
-<b>References:</b> [Context](./context.context.md)<!-- -->, [ControllerClass](./core.controllerclass.md)
+**References:** [Context](./context.context.md)<!-- -->, [ControllerClass](./core.controllerclass.md)
 
 

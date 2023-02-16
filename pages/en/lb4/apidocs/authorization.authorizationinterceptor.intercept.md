@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor.intercept.
 
 ## AuthorizationInterceptor.intercept() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 intercept(invocationCtx: InvocationContext, next: Next): Promise<NonVoid>;
@@ -26,7 +26,7 @@ intercept(invocationCtx: InvocationContext, next: Next): Promise<NonVoid>;
 |  invocationCtx | [InvocationContext](./context.invocationcontext.md) |  |
 |  next | [Next](./context.next.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[NonVoid](./context.nonvoid.md)<!-- -->&gt;
 

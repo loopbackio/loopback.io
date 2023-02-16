@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.filter.inclusionfilter.html
 
 Inclusion filter type e.g. 'property', {<!-- -->relation: 'property'<!-- -->}
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type InclusionFilter = string | Inclusion;
 ```
-<b>References:</b> [Inclusion](./filter.inclusion.md)
+**References:** [Inclusion](./filter.inclusion.md)
 
 

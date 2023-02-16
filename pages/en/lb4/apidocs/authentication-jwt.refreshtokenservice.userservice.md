@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice.userservic
 
 ## RefreshtokenService.userService property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 userService: MyUserService;

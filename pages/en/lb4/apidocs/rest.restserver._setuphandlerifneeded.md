@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._setuphandlerifneeded.html
 
 ## RestServer.\_setupHandlerIfNeeded() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _setupHandlerIfNeeded(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

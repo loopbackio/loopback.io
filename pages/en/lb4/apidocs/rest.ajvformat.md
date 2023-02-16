@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.ajvformat.html
 
 Ajv format definition with a name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AjvFormat<T extends string | number = string> = FormatDefinition<T> & {

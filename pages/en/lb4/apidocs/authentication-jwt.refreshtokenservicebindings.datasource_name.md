@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservicebindings.da
 
 The backend datasource for refresh token's persistency.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DATASOURCE_NAME = "refreshdb"

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.asglobalinterceptor.html
 
 The `BindingTemplate` function to configure a binding as a global interceptor by tagging it with `ContextTags.INTERCEPTOR`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asGlobalInterceptor(group?: string): BindingTemplate;
@@ -25,9 +25,9 @@ export declare function asGlobalInterceptor(group?: string): BindingTemplate;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  group | string | <i>(Optional)</i> Group for ordering the interceptor |
+|  group | string | _(Optional)_ Group for ordering the interceptor |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)
 

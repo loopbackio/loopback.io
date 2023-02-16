@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.lernapackage.rootpath.html
 
 Root directory of the monorepo
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 rootPath: string;

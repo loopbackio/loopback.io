@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.model.html
 
 Decorator for model definitions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function model(definition?: Partial<ModelDefinitionSyntax>): (target: Function & {
@@ -27,9 +27,9 @@ export declare function model(definition?: Partial<ModelDefinitionSyntax>): (tar
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | Partial&lt;[ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md)<!-- -->&gt; | <i>(Optional)</i> |
+|  definition | Partial&lt;[ModelDefinitionSyntax](./repository.modeldefinitionsyntax.md)<!-- -->&gt; | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: Function &amp; { definition?: [ModelDefinition](./repository.modeldefinition.md)<!-- -->; }) =&gt; void
 

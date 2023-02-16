@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.expressapplication.config.html
 
 ## ExpressApplication.config property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly config?: ApplicationConfig | undefined;

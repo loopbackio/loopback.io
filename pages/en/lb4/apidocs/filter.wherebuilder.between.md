@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.between.html
 
 Add a `between` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 between<K extends KeyOf<MT>>(key: K, val1: MT[K], val2: MT[K]): this;
@@ -29,7 +29,7 @@ between<K extends KeyOf<MT>>(key: K, val1: MT[K], val2: MT[K]): this;
 |  val1 | MT\[K\] | Property value lower bound |
 |  val2 | MT\[K\] | Property value upper bound |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

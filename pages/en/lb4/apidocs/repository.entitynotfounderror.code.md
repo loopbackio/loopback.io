@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitynotfounderror.code.html
 
 ## EntityNotFoundError.code property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string;

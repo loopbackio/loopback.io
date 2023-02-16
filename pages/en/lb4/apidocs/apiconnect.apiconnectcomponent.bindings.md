@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectcomponent.bindings.html
 
 ## ApiConnectComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

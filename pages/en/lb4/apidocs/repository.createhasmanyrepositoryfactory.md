@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.createhasmanyrepositoryfactory.html
 
 Enforces a constraint on a repository based on a relationship contract between models. For example, if a Customer model is related to an Order model via a HasMany relation, then, the relational repository returned by the factory function would be constrained by a Customer model instance's id(s).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createHasManyRepositoryFactory<Target extends Entity, TargetID, ForeignKeyType>(relationMetadata: HasManyDefinition, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>>): HasManyRepositoryFactory<Target, ForeignKeyType>;
@@ -28,7 +28,7 @@ export declare function createHasManyRepositoryFactory<Target extends Entity, Ta
 |  relationMetadata | [HasManyDefinition](./repository.hasmanydefinition.md) | The relation metadata used to describe the relationship and determine how to apply the constraint. |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; | The repository which represents the target model of a relation attached to a datasource. |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 

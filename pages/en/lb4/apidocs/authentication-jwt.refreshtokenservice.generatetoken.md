@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice.generateto
 
 Generate a refresh token, bind it with the given user profile + access token, then store them in backend.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generateToken(userProfile: UserProfile, token: string): Promise<TokenObject>;
@@ -28,7 +28,7 @@ generateToken(userProfile: UserProfile, token: string): Promise<TokenObject>;
 |  userProfile | [UserProfile](./security.userprofile.md) |  |
 |  token | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[TokenObject](./authentication-jwt.tokenobject.md)<!-- -->&gt;
 

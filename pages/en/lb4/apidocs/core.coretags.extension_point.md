@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.extension_point.html
 
 Binding tag for an extension point to specify name of the extension point
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 EXTENSION_POINT = "extensionPoint"

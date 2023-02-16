@@ -19,7 +19,7 @@ See also `defineCrudRepositoryClass` and `defineKeyValueRepositoryClass` for con
 
 \*\*❗️IMPORTANT: The compiler (TypeScript 3.8) is not able to correctly infer generic arguments `M` and `R` from the class constructors provided in function arguments. You must always provide both M and R types explicitly.\*\*
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function defineRepositoryClass<M extends typeof Model, R extends Repository<PrototypeOf<M>>>(modelClass: M, baseRepositoryClass: BaseRepositoryClass<M, R>): ModelRepositoryClass<PrototypeOf<M>, R>;
@@ -32,7 +32,7 @@ export declare function defineRepositoryClass<M extends typeof Model, R extends 
 |  modelClass | M | A model class such as <code>Address</code>. |
 |  baseRepositoryClass | [BaseRepositoryClass](./repository.baserepositoryclass.md)<!-- -->&lt;M, R&gt; | Repository implementation to use as the base, e.g. <code>DefaultCrudRepository</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ModelRepositoryClass](./repository.modelrepositoryclass.md)<!-- -->&lt;[PrototypeOf](./repository.prototypeof.md)<!-- -->&lt;M&gt;, R&gt;
 

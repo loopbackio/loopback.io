@@ -15,17 +15,17 @@ permalink: /doc/en/lb4/apidocs.core.serviceoptions.html
 
 Options to register a service binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ServiceOptions extends BindingFromClassOptions 
 ```
-<b>Extends:</b> [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+**Extends:** [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [interface?](./core.serviceoptions.interface.md) |  | [ServiceInterface](./core.serviceinterface.md) | <i>(Optional)</i> |
+|  [interface?](./core.serviceoptions.interface.md) |  | [ServiceInterface](./core.serviceinterface.md) | _(Optional)_ |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultreferencesmanyrepository.constr
 
 ## DefaultReferencesManyRepository.constraint property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constraint: DataObject<TargetEntity>;

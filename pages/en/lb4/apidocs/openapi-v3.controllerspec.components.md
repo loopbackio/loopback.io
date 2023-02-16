@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.controllerspec.components.html
 
 OpenAPI components.schemas generated from model metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 components?: ComponentsObject;

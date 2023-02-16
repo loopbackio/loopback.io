@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.servers.html
 
 Bind an array of Server constructors to the Application's master context. Each server added in this way will automatically be named based on the class constructor name with the "servers." prefix.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 servers<T extends Server>(ctors: Constructor<T>[]): Binding[];
@@ -27,7 +27,7 @@ servers<T extends Server>(ctors: Constructor<T>[]): Binding[];
 |  --- | --- | --- |
 |  ctors | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt;\[\] | An array of Server constructors. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->\[\]
 

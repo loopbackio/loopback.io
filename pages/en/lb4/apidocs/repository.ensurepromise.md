@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.ensurepromise.html
 
 Ensure the value is a promise
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function ensurePromise<T>(p: legacy.PromiseOrVoid<T>): Promise<T>;
@@ -27,7 +27,7 @@ export declare function ensurePromise<T>(p: legacy.PromiseOrVoid<T>): Promise<T>
 |  --- | --- | --- |
 |  p | legacy.PromiseOrVoid&lt;T&gt; | Promise or void |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

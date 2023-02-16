@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressmiddlewarefactory.html
 
 Interface for an express middleware factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ExpressMiddlewareFactory<C> 

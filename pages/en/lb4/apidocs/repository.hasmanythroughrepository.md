@@ -17,7 +17,7 @@ CRUD operations for a target repository of a HasManyThrough relation
 
 EXPERIMENTAL: This interface is not stable and may change in the near future. Backwards-incompatible changes may be introduced in semver-minor versions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HasManyThroughRepository<Target extends Entity, TargetID, Through extends Entity> 

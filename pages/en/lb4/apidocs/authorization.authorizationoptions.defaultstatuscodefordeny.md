@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationoptions.defaultstatusc
 
 Default HTTP status code when the final decision is `AuthorizationDecision.DENY`<!-- -->. If not set, default to 403
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultStatusCodeForDeny?: number;

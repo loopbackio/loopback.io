@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocomponent.booters.html
 
 ## SocketIoComponent.booters property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 booters: (typeof SocketIoBooter)[];

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.findroute.html
 
 ## HttpHandler.findRoute() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findRoute(request: Request): ResolvedRoute;
@@ -25,7 +25,7 @@ findRoute(request: Request): ResolvedRoute;
 |  --- | --- | --- |
 |  request | Request |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolvedRoute](./rest.resolvedroute.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationrequest.domain.html
 
 The domain (realm/tenant)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 domain?: string;

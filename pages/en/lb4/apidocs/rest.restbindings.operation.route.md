@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.operation.route.html
 
 ## RestBindings.Operation.ROUTE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ROUTE: BindingKey<ResolvedRoute>

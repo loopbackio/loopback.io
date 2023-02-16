@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.delete.html
 
 ## DefaultHasOneRepository.delete() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(options?: Options & {
@@ -25,9 +25,9 @@ delete(options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

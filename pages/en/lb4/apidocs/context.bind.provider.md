@@ -14,7 +14,7 @@ permalink: /doc/en/lb4/apidocs.context.bind.provider.html
 ## bind.provider variable
 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 provider: typeof injectable.provider

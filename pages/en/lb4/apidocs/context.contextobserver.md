@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextobserver.html
 
 Observers of context bind/unbind events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ContextObserver 
@@ -25,7 +25,7 @@ export interface ContextObserver
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [filter?](./context.contextobserver.filter.md) |  | [BindingFilter](./context.bindingfilter.md) | <i>(Optional)</i> An optional filter function to match bindings. If not present, the listener will be notified of all binding events. |
+|  [filter?](./context.contextobserver.filter.md) |  | [BindingFilter](./context.bindingfilter.md) | _(Optional)_ An optional filter function to match bindings. If not present, the listener will be notified of all binding events. |
 |  [observe](./context.contextobserver.observe.md) |  | [ContextObserverFn](./context.contextobserverfn.md) | Listen on <code>bind</code>, <code>unbind</code>, or other events |
 
 

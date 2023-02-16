@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filter.include.html
 
 To include related objects
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 include?: InclusionFilter[];

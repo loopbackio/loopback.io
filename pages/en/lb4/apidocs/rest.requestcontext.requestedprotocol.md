@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext.requestedprotocol.html
 
 Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get requestedProtocol(): string;

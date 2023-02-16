@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.metadata.methoddecoratorfactory.create.html
 
 ## MethodDecoratorFactory.create() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(): MethodDecorator;
 ```
-<b>Returns:</b>
+**Returns:**
 
 MethodDecorator
 

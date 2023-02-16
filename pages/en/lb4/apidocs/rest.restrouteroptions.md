@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restrouteroptions.html
 
 ## RestRouterOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RestRouterOptions = {

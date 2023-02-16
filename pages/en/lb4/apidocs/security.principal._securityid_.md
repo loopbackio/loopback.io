@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.principal._securityid_.html
 
 Name/id
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 [securityId]: string;

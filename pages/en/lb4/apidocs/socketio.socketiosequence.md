@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosequence.html
 
 ## SocketIoSequence interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface SocketIoSequence 

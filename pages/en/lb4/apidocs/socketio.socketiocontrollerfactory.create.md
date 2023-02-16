@@ -13,14 +13,14 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocontrollerfactory.create.html
 
 ## SocketIoControllerFactory.create() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(): Promise<{
         [method: string]: Function;
     }>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;{ \[method: string\]: Function; }&gt;
 

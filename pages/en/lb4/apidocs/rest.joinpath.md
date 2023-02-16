@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.joinpath.html
 
 ## joinPath() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function joinPath(basePath: string, path: string): string;
@@ -26,7 +26,7 @@ export declare function joinPath(basePath: string, path: string): string;
 |  basePath | string |  |
 |  path | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

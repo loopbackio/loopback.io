@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.delete.html
 
 ## DefaultCrudRepository.delete() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(entity: T, options?: Options): Promise<void>;
@@ -24,9 +24,9 @@ delete(entity: T, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | T |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

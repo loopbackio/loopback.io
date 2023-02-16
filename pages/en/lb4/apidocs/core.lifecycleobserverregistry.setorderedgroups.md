@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.setorderedgroups.h
 
 ## LifeCycleObserverRegistry.setOrderedGroups() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 setOrderedGroups(groups: string[]): void;
@@ -25,7 +25,7 @@ setOrderedGroups(groups: string[]): void;
 |  --- | --- | --- |
 |  groups | string\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

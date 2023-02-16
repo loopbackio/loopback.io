@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanyrepository.patch.html
 
 Patch multiple target model instances
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 patch(dataObject: DataObject<Target>, where?: Where<Target>, options?: Options): Promise<Count>;
@@ -26,10 +26,10 @@ patch(dataObject: DataObject<Target>, where?: Where<Target>, options?: Options):
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The fields and their new values to patch |
-|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> Instances within the where scope are patched |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | _(Optional)_ Instances within the where scope are patched |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

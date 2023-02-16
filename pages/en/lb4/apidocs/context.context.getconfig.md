@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.getconfig.html
 
 Resolve configuration for the binding by key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getConfig<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutionOptions?: ResolutionOptions): Promise<ConfigValueType | undefined>;
@@ -26,10 +26,10 @@ getConfig<ConfigValueType>(key: BindingAddress, propertyPath?: string, resolutio
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key |
-|  propertyPath | string | <i>(Optional)</i> Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | <i>(Optional)</i> Options for the resolution. |
+|  propertyPath | string | _(Optional)_ Property path for the option. For example, <code>x.y</code> requests for <code>&lt;config&gt;.x.y</code>. If not set, the <code>&lt;config&gt;</code> object will be returned. |
+|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ Options for the resolution. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;ConfigValueType \| undefined&gt;
 

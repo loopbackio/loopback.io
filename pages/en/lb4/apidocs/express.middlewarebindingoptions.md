@@ -15,19 +15,19 @@ permalink: /doc/en/lb4/apidocs.express.middlewarebindingoptions.html
 
 Options to bind middleware as a request context based interceptor within an `InvokeMiddleware` action of the sequence.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MiddlewareBindingOptions extends BaseMiddlewareBindingOptions<MiddlewareContext> 
 ```
-<b>Extends:</b> [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
+**Extends:** [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[MiddlewareContext](./express.middlewarecontext.md)<!-- -->&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [chain?](./express.middlewarebindingoptions.chain.md) |  | string | <i>(Optional)</i> Name of the middleware extension point. Default to <code>DEFAULT_MIDDLEWARE_CHAIN</code>. |
-|  [downstreamGroups?](./express.middlewarebindingoptions.downstreamgroups.md) |  | string \| string\[\] | <p><i>(Optional)</i> An array of group names for downstream middleware in the cascading order.</p><p>For example, the <code>sendResponse</code> depends on <code>invokeMethod</code> for response processing. The <code>downstreamGroups</code> for <code>sendResponse</code> should be <code>['invokeMethod']</code>. The order of groups in the array does not matter.</p> |
-|  [upstreamGroups?](./express.middlewarebindingoptions.upstreamgroups.md) |  | string \| string\[\] | <p><i>(Optional)</i> An array of group names for upstream middleware in the cascading order.</p><p>For example, the <code>invokeMethod</code> depends on <code>parseParams</code> for request processing. The <code>upstreamGroups</code> for <code>invokeMethod</code> should be <code>['parseParams']</code>. The order of groups in the array does not matter.</p> |
+|  [chain?](./express.middlewarebindingoptions.chain.md) |  | string | _(Optional)_ Name of the middleware extension point. Default to <code>DEFAULT_MIDDLEWARE_CHAIN</code>. |
+|  [downstreamGroups?](./express.middlewarebindingoptions.downstreamgroups.md) |  | string \| string\[\] | <p>_(Optional)_ An array of group names for downstream middleware in the cascading order.</p><p>For example, the <code>sendResponse</code> depends on <code>invokeMethod</code> for response processing. The <code>downstreamGroups</code> for <code>sendResponse</code> should be <code>['invokeMethod']</code>. The order of groups in the array does not matter.</p> |
+|  [upstreamGroups?](./express.middlewarebindingoptions.upstreamgroups.md) |  | string \| string\[\] | <p>_(Optional)_ An array of group names for upstream middleware in the cascading order.</p><p>For example, the <code>invokeMethod</code> depends on <code>parseParams</code> for request processing. The <code>upstreamGroups</code> for <code>invokeMethod</code> should be <code>['parseParams']</code>. The order of groups in the array does not matter.</p> |
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.invaliddata.html
 
 ## RestHttpErrors.invalidData() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function invalidData<T, Props extends object = {}>(data: T, name: string, extraProperties?: Props): HttpErrors.HttpError & Props;
@@ -25,9 +25,9 @@ function invalidData<T, Props extends object = {}>(data: T, name: string, extraP
 |  --- | --- | --- |
 |  data | T |  |
 |  name | string |  |
-|  extraProperties | Props | <i>(Optional)</i> |
+|  extraProperties | Props | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 HttpErrors.HttpError &amp; Props
 

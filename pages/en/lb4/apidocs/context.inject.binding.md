@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.binding.html
 
 Inject the binding object for the given key. This is useful if a binding needs to be set up beyond just a constant value allowed by `@inject.setter`<!-- -->. The injected binding is found or created based on the `metadata.bindingCreation` option. See `BindingCreationPolicy` for more details.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 binding: (bindingKey?: string | BindingKey<unknown>, metadata?: InjectBindingMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

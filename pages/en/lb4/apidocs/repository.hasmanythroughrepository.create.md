@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanythroughrepository.create.html
 
 Create a target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(targetModelData: DataObject<Target>, options?: Options & {
@@ -31,9 +31,9 @@ create(targetModelData: DataObject<Target>, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;Target&gt; | The target model data |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } &amp; { polymorphicType?: string; } | <i>(Optional)</i> Options for the operation options.polymorphicType a string or a string array of polymorphic type names specify of which concrete model the created instance should be |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } &amp; { polymorphicType?: string; } | _(Optional)_ Options for the operation options.polymorphicType a string or a string array of polymorphic type names specify of which concrete model the created instance should be |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target&gt;
 

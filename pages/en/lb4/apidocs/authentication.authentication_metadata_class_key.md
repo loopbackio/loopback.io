@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authentication_metadata_class_key.
 
 The key used to store class-level metadata for `@authenticate`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_METADATA_CLASS_KEY: MetadataAccessor<AuthenticationMetadata, ClassDecorator>

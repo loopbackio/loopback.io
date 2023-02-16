@@ -15,17 +15,17 @@ permalink: /doc/en/lb4/apidocs.http-server.httpoptions.html
 
 HTTP server options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HttpOptions extends BaseHttpOptions 
 ```
-<b>Extends:</b> [BaseHttpOptions](./http-server.basehttpoptions.md)
+**Extends:** [BaseHttpOptions](./http-server.basehttpoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [protocol?](./http-server.httpoptions.protocol.md) |  | 'http' | <i>(Optional)</i> |
+|  [protocol?](./http-server.httpoptions.protocol.md) |  | 'http' | _(Optional)_ |
 
 

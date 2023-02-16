@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl.findbyid.html
 
 ## CrudRepositoryImpl.findById() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T>;
@@ -24,10 +24,10 @@ findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

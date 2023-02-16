@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.testlab.expresscontextstub.html
 
 ## ExpressContextStub interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ExpressContextStub extends HandlerContextStub 
 ```
-<b>Extends:</b> [HandlerContextStub](./testlab.handlercontextstub.md)
+**Extends:** [HandlerContextStub](./testlab.handlercontextstub.md)
 
 ## Properties
 

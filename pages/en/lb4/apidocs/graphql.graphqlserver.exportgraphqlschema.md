@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.exportgraphqlschema.html
 
 ## GraphQLServer.exportGraphQLSchema() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exportGraphQLSchema(outFile?: string, log?: {
@@ -26,10 +26,10 @@ exportGraphQLSchema(outFile?: string, log?: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  outFile | string | <i>(Optional)</i> |
-|  log | { (...data: any\[\]): void; (message?: any, ...optionalParams: any\[\]): void; } | <i>(Optional)</i> |
+|  outFile | string | _(Optional)_ |
+|  log | { (...data: any\[\]): void; (message?: any, ...optionalParams: any\[\]): void; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

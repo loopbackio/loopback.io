@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injection.methoddescriptororparameterinde
 
 ## Injection.methodDescriptorOrParameterIndex property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 methodDescriptorOrParameterIndex?: TypedPropertyDescriptor<ValueType> | number;

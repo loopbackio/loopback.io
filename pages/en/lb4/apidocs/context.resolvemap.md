@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolvemap.html
 
 Resolve entries of an object into a new object with the same keys. If one or more entries of the source object are resolved to a promise by the `resolver` function, this method returns a promise which will be resolved to the new object with fully resolved entries.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, key: string, values: MapObject<T>) => ValueOrPromise<V>): ValueOrPromise<MapObject<V>>;
@@ -28,7 +28,7 @@ export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, k
 |  map | [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt; | The original object containing the source entries |
 |  resolver | (val: T, key: string, values: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[MapObject](./context.mapobject.md)<!-- -->&lt;V&gt;&gt;
 

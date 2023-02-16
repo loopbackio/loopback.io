@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routesource._constructor_.html
 
 Constructs a new instance of the `RouteSource` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(value: RouteEntry);

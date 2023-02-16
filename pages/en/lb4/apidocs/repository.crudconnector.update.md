@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.update.html
 
 Update an entity
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 update?(modelClass: Class<Entity>, entity: EntityData, options?: Options): Promise<boolean>;
@@ -27,9 +27,9 @@ update?(modelClass: Class<Entity>, entity: EntityData, options?: Options): Promi
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  entity | [EntityData](./repository.entitydata.md) | The entity instance or data |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;boolean&gt;
 

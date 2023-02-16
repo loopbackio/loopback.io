@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationargs.html
 
 Array of arguments for a method invocation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type InvocationArgs = any[];

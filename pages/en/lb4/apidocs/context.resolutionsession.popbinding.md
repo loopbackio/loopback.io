@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.popbinding.html
 
 Exit the resolution of a binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 popBinding(): Readonly<Binding>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;
 

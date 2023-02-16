@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.gt.html
 
 Add a `>` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 gt<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
@@ -28,7 +28,7 @@ gt<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
 |  key | K | Property name |
 |  val | MT\[K\] | Property value |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

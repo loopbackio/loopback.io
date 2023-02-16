@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.getmiddlewarecontext.html
 
 A helper function to retrieve the MiddlewareContext/RequestContext from the request object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getMiddlewareContext<T extends MiddlewareContext = MiddlewareContext>(request?: Request): T | undefined;
@@ -25,9 +25,9 @@ export declare function getMiddlewareContext<T extends MiddlewareContext = Middl
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  request | Request | <i>(Optional)</i> Express request object |
+|  request | Request | _(Optional)_ Express request object |
 
-<b>Returns:</b>
+**Returns:**
 
 T \| undefined
 

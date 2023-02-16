@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.securityid.html
 
 A symbol for stringified id of security related objects
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 securityId: unique symbol

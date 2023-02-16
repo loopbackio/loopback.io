@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authmetadataprovider._constructor_
 
 Constructs a new instance of the `AuthMetadataProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(controllerClass: Constructor<{}>, methodName: string, options?: AuthenticationOptions);
@@ -27,6 +27,6 @@ constructor(controllerClass: Constructor<{}>, methodName: string, options?: Auth
 |  --- | --- | --- |
 |  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
 |  methodName | string |  |
-|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | <i>(Optional)</i> |
+|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | _(Optional)_ |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.boot_options.html
 
 Binding key for boot options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOT_OPTIONS: BindingKey<BootOptions>

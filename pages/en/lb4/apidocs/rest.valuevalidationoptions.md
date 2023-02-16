@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.rest.valuevalidationoptions.html
 
 Options for any value validation using AJV
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ValueValidationOptions extends ValidationOptions 
 ```
-<b>Extends:</b> [ValidationOptions](./rest.validationoptions.md)
+**Extends:** [ValidationOptions](./rest.validationoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [name?](./rest.valuevalidationoptions.name.md) |  | string | <i>(Optional)</i> Parameter name, as provided in <code>ParameterObject#name</code> property. |
-|  [source?](./rest.valuevalidationoptions.source.md) |  | string | <i>(Optional)</i> Where the data comes from. It can be 'body', 'path', 'header', 'query', 'cookie', etc... |
+|  [name?](./rest.valuevalidationoptions.name.md) |  | string | _(Optional)_ Parameter name, as provided in <code>ParameterObject#name</code> property. |
+|  [source?](./rest.valuevalidationoptions.source.md) |  | string | _(Optional)_ Where the data comes from. It can be 'body', 'path', 'header', 'query', 'cookie', etc... |
 
 

@@ -17,7 +17,7 @@ How long to keep snapshots before making a new request to the backend. The value
 
 Default: one day
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ttl?: number;

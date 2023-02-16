@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middleware_namespace.html
 
 Default namespaces for middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MIDDLEWARE_NAMESPACE = "middleware"

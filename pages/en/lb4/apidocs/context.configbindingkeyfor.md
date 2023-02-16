@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.configbindingkeyfor.html
 
 Create binding key for configuration of the binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function configBindingKeyFor<ConfigValueType = unknown>(key: BindingAddress, propertyPath?: string): BindingKey<ConfigValueType>;
@@ -26,9 +26,9 @@ export declare function configBindingKeyFor<ConfigValueType = unknown>(key: Bind
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md) | Binding key for the target binding |
-|  propertyPath | string | <i>(Optional)</i> Property path for the configuration |
+|  propertyPath | string | _(Optional)_ Property path for the configuration |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingKey](./context.bindingkey.md)<!-- -->&lt;ConfigValueType&gt;
 

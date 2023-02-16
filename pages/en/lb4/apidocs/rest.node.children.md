@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.node.children.html
 
 Children of the node
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly children: {

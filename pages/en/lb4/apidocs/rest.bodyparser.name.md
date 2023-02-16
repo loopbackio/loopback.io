@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.bodyparser.name.html
 
 Name of the parser
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string | symbol;

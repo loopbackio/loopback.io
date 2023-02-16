@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.updatebyid.html
 
 ## DefaultCrudRepository.updateById() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
@@ -25,9 +25,9 @@ updateById(id: ID, data: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  id | ID |  |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

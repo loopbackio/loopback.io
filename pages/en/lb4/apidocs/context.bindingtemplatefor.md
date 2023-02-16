@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingtemplatefor.html
 
 Get the binding template for a class with binding metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>> | DynamicValueProviderClass<T>, options?: BindingFromClassOptions): BindingTemplate<T>;
@@ -26,9 +26,9 @@ export declare function bindingTemplateFor<T>(cls: Constructor<T | Provider<T>> 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | A class with optional <code>@injectable</code> |
-|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> |
+|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingscopeandtags.html
 
 An object to configure binding scope and tags
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingScopeAndTags = {
@@ -23,6 +23,6 @@ export type BindingScopeAndTags = {
     tags?: BindingTag | BindingTag[];
 };
 ```
-<b>References:</b> [BindingScope](./context.bindingscope.md)<!-- -->, [BindingTag](./context.bindingtag.md)
+**References:** [BindingScope](./context.bindingscope.md)<!-- -->, [BindingTag](./context.bindingtag.md)
 
 

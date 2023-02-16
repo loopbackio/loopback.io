@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.apply.html
 
 Apply one or more template functions to set up the binding with scope, tags, and other attributes as a group.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apply(...templateFns: BindingTemplate<T>[]): this;
@@ -27,7 +27,7 @@ apply(...templateFns: BindingTemplate<T>[]): this;
 |  --- | --- | --- |
 |  templateFns | [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;\[\] | One or more functions to configure the binding |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

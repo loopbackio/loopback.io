@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.httpserverresolvedoptions.host.html
 
 ## HttpServerResolvedOptions.host property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 host?: string;

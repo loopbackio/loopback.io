@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getallmethodmetadata.h
 
 Get the metadata associated with the given key for all methods of the target class or prototype
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getAllMethodMetadata<T>(key: MetadataKey<T, MethodDecorator>, target: Object, options?: InspectionOptions): MetadataMap<T> | undefined;
@@ -27,9 +27,9 @@ static getAllMethodMetadata<T>(key: MetadataKey<T, MethodDecorator>, target: Obj
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, MethodDecorator&gt; | Metadata key |
 |  target | Object | Class for static methods or prototype for instance methods |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T&gt; \| undefined
 

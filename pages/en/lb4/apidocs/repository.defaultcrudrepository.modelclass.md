@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.modelclass.html
 
 ## DefaultCrudRepository.modelClass property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modelClass: juggler.PersistedModelClass;

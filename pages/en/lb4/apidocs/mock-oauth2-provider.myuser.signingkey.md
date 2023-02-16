@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.myuser.signingkey.html
 
 ## MyUser.signingKey property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 signingKey: string;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultbelongstorepository.gettargetre
 
 ## DefaultBelongsToRepository.getTargetRepositoryDict property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getTargetRepositoryDict: {

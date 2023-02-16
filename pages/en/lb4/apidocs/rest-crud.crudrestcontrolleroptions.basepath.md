@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontrolleroptions.basepath.html
 
 The base path where to "mount" the controller.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 basePath: string;

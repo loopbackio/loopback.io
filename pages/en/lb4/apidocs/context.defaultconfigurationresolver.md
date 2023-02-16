@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.defaultconfigurationresolver.html
 
 Resolver for configurations of bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultConfigurationResolver implements ConfigurationResolver 
 ```
-<b>Implements:</b> [ConfigurationResolver](./context.configurationresolver.md)
+**Implements:** [ConfigurationResolver](./context.configurationresolver.md)
 
 ## Constructors
 

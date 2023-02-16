@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metrics.default_metrics_options.html
 
 ## DEFAULT\_METRICS\_OPTIONS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_METRICS_OPTIONS: MetricsOptions

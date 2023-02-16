@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.role.name.html
 
 ## Role.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

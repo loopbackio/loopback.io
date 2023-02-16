@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparsercomponent._construc
 
 Constructs a new instance of the `MsgPackBodyParserComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(rawBodyParser?: RawBodyParser);
@@ -25,6 +25,6 @@ constructor(rawBodyParser?: RawBodyParser);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rawBodyParser | [RawBodyParser](./rest.rawbodyparser.md) | <i>(Optional)</i> |
+|  rawBodyParser | [RawBodyParser](./rest.rawbodyparser.md) | _(Optional)_ |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc.datasource.html
 
 Add the dataSource to this application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSource(dataSource: Class<juggler.DataSource> | juggler.DataSource, name?: string): Binding;
@@ -26,9 +26,9 @@ dataSource(dataSource: Class<juggler.DataSource> | juggler.DataSource, name?: st
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataSource | [Class](./repository.class.md)<!-- -->&lt;juggler.DataSource&gt; \| juggler.DataSource | The dataSource to add. |
-|  name | string | <i>(Optional)</i> The binding name of the datasource; defaults to dataSource.name |
+|  name | string | _(Optional)_ The binding name of the datasource; defaults to dataSource.name |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

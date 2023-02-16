@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.findone.html
 
 ## DefaultCrudRepository.findOne() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findOne(filter?: Filter<T>, options?: Options): Promise<(T & Relations) | null>;
@@ -23,10 +23,10 @@ findOne(filter?: Filter<T>, options?: Options): Promise<(T & Relations) | null>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;(T &amp; Relations) \| null&gt;
 

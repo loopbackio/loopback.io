@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.rejectprovider.value.html
 
 ## RejectProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static value(logError: LogError, errorWriterOptions?: ErrorWriterOptions): Reject;
@@ -24,9 +24,9 @@ static value(logError: LogError, errorWriterOptions?: ErrorWriterOptions): Rejec
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  logError | [LogError](./rest.logerror.md) |  |
-|  errorWriterOptions | ErrorWriterOptions | <i>(Optional)</i> |
+|  errorWriterOptions | ErrorWriterOptions | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Reject](./rest.reject.md)
 

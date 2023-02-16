@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.express.middlewareview.html
 
 Watch middleware binding keys for the given context and sort them by group
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MiddlewareView extends ContextView 
 ```
-<b>Extends:</b> [ContextView](./context.contextview.md)
+**Extends:** [ContextView](./context.contextview.md)
 
 ## Constructors
 

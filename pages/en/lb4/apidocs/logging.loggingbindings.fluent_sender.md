@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingbindings.fluent_sender.html
 
 ## LoggingBindings.FLUENT\_SENDER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 FLUENT_SENDER: BindingKey<FluentSender<any>>

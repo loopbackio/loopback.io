@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiocomponent.bindings.html
 
 Add built-in body parsers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

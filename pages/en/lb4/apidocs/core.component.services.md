@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.component.services.html
 
 An array of service or provider classes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 services?: ServiceOrProviderClass[];

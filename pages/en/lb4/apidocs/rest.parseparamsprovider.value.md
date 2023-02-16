@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsprovider.value.html
 
 ## ParseParamsProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static value(requestBodyParser: RequestBodyParser, validationOptions: ValidationOptions | undefined, ajvFactory: AjvFactory): ParseParams;
@@ -27,7 +27,7 @@ static value(requestBodyParser: RequestBodyParser, validationOptions: Validation
 |  validationOptions | [ValidationOptions](./rest.validationoptions.md) \| undefined |  |
 |  ajvFactory | [AjvFactory](./rest.ajvfactory.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ParseParams](./rest.parseparams.md)
 

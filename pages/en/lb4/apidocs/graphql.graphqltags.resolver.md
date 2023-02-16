@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqltags.resolver.html
 
 Tag for GraphQL resolver bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RESOLVER = "graphql.resolver"

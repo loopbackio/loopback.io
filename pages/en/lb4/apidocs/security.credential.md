@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.credential.html
 
 Security attributes used to authenticate the subject. Such credentials include passwords, Kerberos tickets, and public key certificates.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Credential 

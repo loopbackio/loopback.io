@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.discover.html
 
 Discover files based on the 'glob' property relative to the 'projectRoot'. Discovered artifact files matching the pattern are saved to the 'discovered' property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 discover(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

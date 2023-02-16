@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.anyobject.html
 
 Objects with open properties
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AnyObject 

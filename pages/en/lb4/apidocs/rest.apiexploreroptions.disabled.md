@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.apiexploreroptions.disabled.html
 
 Set this flag to disable the built-in redirect to externally hosted API Explorer UI.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 disabled?: true;

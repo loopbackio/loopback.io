@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.modelcrudrestapiconfig.basepath.html
 
 ## ModelCrudRestApiConfig.basePath property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 basePath: string;

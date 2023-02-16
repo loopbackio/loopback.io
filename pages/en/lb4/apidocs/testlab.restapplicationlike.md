@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.restapplicationlike.html
 
 ## RestApplicationLike interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RestApplicationLike 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.serviceinterface.html
 
 Representing an interface for services. In TypeScript, the `interface` does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ServiceInterface = string | symbol | Function;

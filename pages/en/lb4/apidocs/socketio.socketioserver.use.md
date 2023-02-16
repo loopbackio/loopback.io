@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.use.html
 
 Register a sock.io middleware function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 use(fn: SockIOMiddleware): Server<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>;
@@ -27,7 +27,7 @@ use(fn: SockIOMiddleware): Server<import("socket.io/dist/typed-events").DefaultE
 |  --- | --- | --- |
 |  fn | [SockIOMiddleware](./socketio.sockiomiddleware.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Server&lt;import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any&gt;
 

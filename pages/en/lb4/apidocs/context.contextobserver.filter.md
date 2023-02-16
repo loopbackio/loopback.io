@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextobserver.filter.html
 
 An optional filter function to match bindings. If not present, the listener will be notified of all binding events.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 filter?: BindingFilter;

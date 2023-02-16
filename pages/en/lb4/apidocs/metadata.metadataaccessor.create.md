@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadataaccessor.create.html
 
 Create a strongly-typed metadata accessor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static create<V, DT extends DecoratorType>(key: string): MetadataAccessor<V, DT>;
@@ -27,7 +27,7 @@ static create<V, DT extends DecoratorType>(key: string): MetadataAccessor<V, DT>
 |  --- | --- | --- |
 |  key | string | The metadata key |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataAccessor](./metadata.metadataaccessor.md)<!-- -->&lt;V, DT&gt;
 

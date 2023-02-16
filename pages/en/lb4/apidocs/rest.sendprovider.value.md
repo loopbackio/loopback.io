@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.sendprovider.value.html
 
 ## SendProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static value(): typeof writeResultToResponse;
 ```
-<b>Returns:</b>
+**Returns:**
 
 typeof writeResultToResponse
 

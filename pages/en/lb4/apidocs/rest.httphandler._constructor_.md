@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler._constructor_.html
 
 Constructs a new instance of the `HttpHandler` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(_rootContext: Context, _serverConfig: RestServerResolvedConfig, _routes?: RoutingTable);
@@ -27,6 +27,6 @@ constructor(_rootContext: Context, _serverConfig: RestServerResolvedConfig, _rou
 |  --- | --- | --- |
 |  \_rootContext | [Context](./context.context.md) |  |
 |  \_serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  \_routes | [RoutingTable](./rest.routingtable.md) | <i>(Optional)</i> |
+|  \_routes | [RoutingTable](./rest.routingtable.md) | _(Optional)_ |
 
 

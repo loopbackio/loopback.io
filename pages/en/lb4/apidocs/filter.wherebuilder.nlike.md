@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.nlike.html
 
 Add a `nlike` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 nlike<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
@@ -28,7 +28,7 @@ nlike<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
 |  key | K | Property name |
 |  val | MT\[K\] | Regexp condition |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.prohibitedkeys.html
 
 An array of keys to be rejected, such as `__proto__`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 prohibitedKeys?: string[];

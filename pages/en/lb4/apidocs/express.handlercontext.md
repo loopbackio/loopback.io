@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.handlercontext.html
 
 An object holding HTTP request, response and other data needed to handle an incoming HTTP request.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HandlerContext 

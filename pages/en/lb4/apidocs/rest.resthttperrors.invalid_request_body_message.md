@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.invalid_request_body_message.
 
 ## RestHttpErrors.INVALID\_REQUEST\_BODY\_MESSAGE variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INVALID_REQUEST_BODY_MESSAGE = "The request body is invalid. See error object `details` property for more info."

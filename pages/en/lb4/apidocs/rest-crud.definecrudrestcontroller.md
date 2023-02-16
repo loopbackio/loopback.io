@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.definecrudrestcontroller.html
 
 Create (define) a CRUD Controller class for the given model.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function defineCrudRestController<T extends Entity, IdType, IdName extends keyof T, Relations extends object = {}>(modelCtor: typeof Entity & {
@@ -32,7 +32,7 @@ export declare function defineCrudRestController<T extends Entity, IdType, IdNam
 |  modelCtor | typeof [Entity](./repository.entity.md) &amp; { prototype: T &amp; { \[key in IdName\]: IdType; }; } | A model class, e.g. <code>Product</code>. |
 |  options | [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md) | Configuration options, e.g. <code>{basePath: '/products'}</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 [CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md)<!-- -->&lt;T, IdType, IdName, Relations&gt;
 

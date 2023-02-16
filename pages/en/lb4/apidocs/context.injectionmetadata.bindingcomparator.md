@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.injectionmetadata.bindingcomparator.html
 
 Optional comparator for matched bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindingComparator?: BindingComparator;

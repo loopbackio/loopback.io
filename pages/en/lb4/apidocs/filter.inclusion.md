@@ -19,7 +19,7 @@ Note: scope means filter on related items
 
 Example: `{relation: 'aRelationName', scope: {<AFilterObject>}}`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Inclusion 
@@ -30,7 +30,7 @@ export interface Inclusion
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [relation](./filter.inclusion.relation.md) |  | string |  |
-|  [scope?](./filter.inclusion.scope.md) |  | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; } | <i>(Optional)</i> |
-|  [targetType?](./filter.inclusion.targettype.md) |  | string | <i>(Optional)</i> |
+|  [scope?](./filter.inclusion.scope.md) |  | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; } | _(Optional)_ |
+|  [targetType?](./filter.inclusion.targettype.md) |  | string | _(Optional)_ |
 
 

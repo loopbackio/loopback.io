@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.bindingstack.html
 
 Getter for bindings on the stack
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get bindingStack(): Readonly<Binding>[];

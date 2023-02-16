@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.applicationwithservices.serviceprov
 
 ## ApplicationWithServices.serviceProvider() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serviceProvider<S>(provider: Constructor<Provider<S>>, name?: string): Binding<S>;
@@ -24,9 +24,9 @@ serviceProvider<S>(provider: Constructor<Provider<S>>, name?: string): Binding<S
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  provider | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;S&gt;&gt; |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;S&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.save.html
 
 ## DefaultCrudRepository.save() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save(entity: T, options?: Options): Promise<T>;
@@ -24,9 +24,9 @@ save(entity: T, options?: Options): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | T |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.uniontype._constructor_.html
 
 Constructs a new instance of the `UnionType` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(itemTypes: Type<any>[]);

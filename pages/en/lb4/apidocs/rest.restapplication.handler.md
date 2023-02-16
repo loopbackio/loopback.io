@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.handler.html
 
 ## RestApplication.handler() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handler(handlerFn: SequenceFunction): void;
@@ -25,7 +25,7 @@ handler(handlerFn: SequenceFunction): void;
 |  --- | --- | --- |
 |  handlerFn | [SequenceFunction](./rest.sequencefunction.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

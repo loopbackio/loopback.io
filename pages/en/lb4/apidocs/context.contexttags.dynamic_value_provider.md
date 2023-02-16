@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.dynamic_value_provider.html
 
 ## ContextTags.DYNAMIC\_VALUE\_PROVIDER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DYNAMIC_VALUE_PROVIDER = "dynamicValueProvider"

@@ -17,7 +17,7 @@ Options for a cron job. It adds an optional `name` to cron parameters.
 
 [cron configuration](https://github.com/kelektiv/node-cron#api)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type CronJobOptions = CronJobParameters & {

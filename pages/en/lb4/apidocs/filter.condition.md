@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.filter.condition.html
 
 Condition clause
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Condition<MT extends object> = {
     [P in KeyOf<MT>]?: PredicateComparison<MT[P]> | (MT[P] & ShortHandEqualType);
 };
 ```
-<b>References:</b> [KeyOf](./filter.keyof.md)<!-- -->, [PredicateComparison](./filter.predicatecomparison.md)<!-- -->, [ShortHandEqualType](./filter.shorthandequaltype.md)
+**References:** [KeyOf](./filter.keyof.md)<!-- -->, [PredicateComparison](./filter.predicatecomparison.md)<!-- -->, [ShortHandEqualType](./filter.shorthandequaltype.md)
 
 ## Example
 

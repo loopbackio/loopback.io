@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.id.html
 
 ## PropertyDefinition.id property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 id?: boolean | number;

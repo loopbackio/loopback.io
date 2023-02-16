@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.inclusionresolve
 
 ## DefaultCrudRepository.inclusionResolvers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly inclusionResolvers: Map<string, InclusionResolver<T, Entity>>;

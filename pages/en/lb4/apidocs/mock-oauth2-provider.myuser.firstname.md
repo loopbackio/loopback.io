@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.myuser.firstname.html
 
 ## MyUser.firstName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 firstName?: string;

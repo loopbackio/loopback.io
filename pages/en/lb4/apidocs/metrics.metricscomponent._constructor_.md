@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricscomponent._constructor_.html
 
 Constructs a new instance of the `MetricsComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(application: Application, metricsConfig?: MetricsConfig);
@@ -26,6 +26,6 @@ constructor(application: Application, metricsConfig?: MetricsConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  application | [Application](./core.application.md) |  |
-|  metricsConfig | [MetricsConfig](./metrics.metricsconfig.md) | <i>(Optional)</i> |
+|  metricsConfig | [MetricsConfig](./metrics.metricsconfig.md) | _(Optional)_ |
 
 

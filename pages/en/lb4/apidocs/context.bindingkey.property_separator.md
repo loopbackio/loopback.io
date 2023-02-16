@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.property_separator.html
 
 ## BindingKey.PROPERTY\_SEPARATOR property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly PROPERTY_SEPARATOR = "#";

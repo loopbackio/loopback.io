@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.orclause.or.html
 
 ## OrClause.or property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 or: Where<MT>[];

@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponentconfig.html
 
 ## RestComponentConfig type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RestComponentConfig = RestServerConfig;
 ```
-<b>References:</b> [RestServerConfig](./rest.restserverconfig.md)
+**References:** [RestServerConfig](./rest.restserverconfig.md)
 
 

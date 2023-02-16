@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.typeorm.applicationusingtypeorm.html
 
 ## ApplicationUsingTypeOrm interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ApplicationUsingTypeOrm extends Application 
 ```
-<b>Extends:</b> [Application](./core.application.md)
+**Extends:** [Application](./core.application.md)
 
 ## Methods
 

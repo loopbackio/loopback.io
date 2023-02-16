@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.order.html
 
 Describe the sorting order
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 order(...o: (string | string[] | Order<MT>)[]): this;
@@ -27,7 +27,7 @@ order(...o: (string | string[] | Order<MT>)[]): this;
 |  --- | --- | --- |
 |  o | (string \| string\[\] \| [Order](./filter.order.md)<!-- -->&lt;MT&gt;)\[\] | A field name with optional direction, an array of field names, or an Order object for the field/direction pairs |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

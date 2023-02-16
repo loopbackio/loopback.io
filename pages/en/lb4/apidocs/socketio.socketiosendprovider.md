@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosendprovider.html
 
 ## SocketIoSendProvider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SocketIoSendProvider implements Provider<SocketIoSendMethod> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[SocketIoSendMethod](./socketio.socketiosendmethod.md)<!-- -->&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[SocketIoSendMethod](./socketio.socketiosendmethod.md)<!-- -->&gt;
 
 ## Methods
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.invokebodyparsermiddleware.html
 
 Parse the request body asynchronously
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function invokeBodyParserMiddleware(handle: BodyParserMiddleware, request: Request): Promise<any>;
@@ -28,7 +28,7 @@ export declare function invokeBodyParserMiddleware(handle: BodyParserMiddleware,
 |  handle | [BodyParserMiddleware](./rest.bodyparsermiddleware.md) | The express middleware handler |
 |  request | Request | Http request |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

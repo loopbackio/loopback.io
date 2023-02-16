@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.controllerfactory.html
 
 A factory function to create controller instances synchronously or asynchronously
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ControllerFactory<T extends ControllerInstance> = (ctx: Context) => ValueOrPromise<T>;
 ```
-<b>References:</b> [ControllerInstance](./rest.controllerinstance.md)<!-- -->, [Context](./context.context.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
+**References:** [ControllerInstance](./rest.controllerinstance.md)<!-- -->, [Context](./context.context.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 
 

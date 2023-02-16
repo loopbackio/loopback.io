@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.context.proxysource.tostring.html
 
 ## ProxySource.toString() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toString(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

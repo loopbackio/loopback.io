@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.arg.html
 
 Re-exporting type-graphql decorators as lower case versions for two purposes: - To be consistent with LoopBack's naming convention of decorators - Allow future possibility to add extra metadata in addition to type-graphql's behavior, for example, mapping to LoopBack model properties
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 arg: typeof Arg

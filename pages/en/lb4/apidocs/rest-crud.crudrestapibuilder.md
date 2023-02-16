@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestapibuilder.html
 
 ## CrudRestApiBuilder class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class CrudRestApiBuilder implements ModelApiBuilder 
 ```
-<b>Implements:</b> [ModelApiBuilder](./model-api-builder.modelapibuilder.md)
+**Implements:** [ModelApiBuilder](./model-api-builder.modelapibuilder.md)
 
 ## Properties
 

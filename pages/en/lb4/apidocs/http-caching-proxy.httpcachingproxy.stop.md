@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy.stop.html
 
 Stop listening.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stop(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

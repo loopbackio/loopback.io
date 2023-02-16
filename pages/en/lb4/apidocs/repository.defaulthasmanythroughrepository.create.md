@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.create
 
 ## DefaultHasManyThroughRepository.create() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(targetModelData: DataObject<TargetEntity>, options?: Options & {
@@ -29,9 +29,9 @@ create(targetModelData: DataObject<TargetEntity>, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelData | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; |  |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } &amp; { polymorphicType?: string; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;ThroughEntity&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } &amp; { polymorphicType?: string; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;TargetEntity&gt;
 

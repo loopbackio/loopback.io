@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontroller.repository.html
 
 The backing repository used to access &amp; modify model data.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly repository: EntityCrudRepository<T, IdType>;

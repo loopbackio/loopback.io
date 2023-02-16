@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.assertnotinprocess.html
 
 Assert there is no other operation is in progress, i.e., the state is not `*ing`<!-- -->, such as `starting` or `stopping`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected assertNotInProcess(op: string): void;
@@ -27,7 +27,7 @@ protected assertNotInProcess(op: string): void;
 |  --- | --- | --- |
 |  op | string | The operation name, such as 'boot', 'start', or 'stop' |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

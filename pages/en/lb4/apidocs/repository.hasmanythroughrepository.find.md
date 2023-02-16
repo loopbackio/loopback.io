@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanythroughrepository.find.html
 
 Find target model instance(s)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(filter?: Filter<Target>, options?: Options & {
@@ -31,10 +31,10 @@ find(filter?: Filter<Target>, options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> A filter object for where, order, limit, etc. |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { polymorphicType?: string \| string\[\]; } | <i>(Optional)</i> Options for the operation options.throughOptions.discriminator - target discriminator field on through options.polymorphicType a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; | _(Optional)_ A filter object for where, order, limit, etc. |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { polymorphicType?: string \| string\[\]; } | _(Optional)_ Options for the operation options.throughOptions.discriminator - target discriminator field on through options.polymorphicType a string or a string array of polymorphic type names to specify which repositories should are expected to be searched It is highly recommended to contain this param especially for datasources using deplicated ids across tables |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target\[\]&gt;
 

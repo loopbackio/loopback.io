@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resolvedroute.schemas.html
 
 Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/loopbackio/loopback-next/issues/435
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly schemas: SchemasObject;

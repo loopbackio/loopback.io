@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.definecrudrepositoryclass.html
 
 Create (define) an entity CRUD repository class for the given model. This function always uses `DefaultCrudRepository` as the base class, use `defineRepositoryClass` if you want to use your own base repository.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function defineCrudRepositoryClass<E extends Entity, IdType, Relations extends object>(entityClass: typeof Entity & {
@@ -29,7 +29,7 @@ export declare function defineCrudRepositoryClass<E extends Entity, IdType, Rela
 |  --- | --- | --- |
 |  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: E; } | An entity class such as <code>Product</code>. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ModelRepositoryClass](./repository.modelrepositoryclass.md)<!-- -->&lt;E, [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;E, IdType, Relations&gt;&gt;
 

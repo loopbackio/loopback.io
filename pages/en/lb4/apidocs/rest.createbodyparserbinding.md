@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.createbodyparserbinding.html
 
 Create a binding for the given body parser class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createBodyParserBinding(parserClass: Constructor<BodyParser>, key?: BindingAddress<BodyParser>): Binding<BodyParser>;
@@ -26,9 +26,9 @@ export declare function createBodyParserBinding(parserClass: Constructor<BodyPar
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  parserClass | [Constructor](./context.constructor.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | Body parser class |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | <i>(Optional)</i> Optional binding address |
+|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | _(Optional)_ Optional binding address |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt;
 

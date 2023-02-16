@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.userrepository._constructor_
 
 Constructs a new instance of the `UserRepository` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(list: Record<string, MyUser>);

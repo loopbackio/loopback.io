@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioapplication.html
 
 ## SocketIoApplication class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SocketIoApplication extends Application 
 ```
-<b>Extends:</b> [Application](./core.application.md)
+**Extends:** [Application](./core.application.md)
 
 ## Constructors
 

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.findroute.html
 
 Find a route matching the incoming request. Throw an error when no route was found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FindRoute = (request: Request) => ResolvedRoute;
 ```
-<b>References:</b> [ResolvedRoute](./rest.resolvedroute.md)
+**References:** [ResolvedRoute](./rest.resolvedroute.md)
 
 

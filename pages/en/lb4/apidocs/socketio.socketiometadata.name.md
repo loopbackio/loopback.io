@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiometadata.name.html
 
 ## SocketIoMetadata.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name?: string;

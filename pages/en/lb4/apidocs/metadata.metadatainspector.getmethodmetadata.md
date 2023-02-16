@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getmethodmetadata.html
 
 Get the metadata associated with the given key for a given method of the target class or prototype
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getMethodMetadata<T>(key: MetadataKey<T, MethodDecorator>, target: Object, methodName?: string, options?: InspectionOptions): T | undefined;
@@ -27,10 +27,10 @@ static getMethodMetadata<T>(key: MetadataKey<T, MethodDecorator>, target: Object
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, MethodDecorator&gt; | Metadata key |
 |  target | Object | Class for static methods or prototype for instance methods |
-|  methodName | string | <i>(Optional)</i> Method name. If not present, default to '' to use the constructor |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
+|  methodName | string | _(Optional)_ Method name. If not present, default to '' to use the constructor |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
 
-<b>Returns:</b>
+**Returns:**
 
 T \| undefined
 

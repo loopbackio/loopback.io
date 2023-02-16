@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc.mountcomponentrepos
 
 Get an instance of a component and mount all it's repositories. This function is intended to be used internally by component()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mountComponentRepository(component: Class<{}>): void;
@@ -27,7 +27,7 @@ mountComponentRepository(component: Class<{}>): void;
 |  --- | --- | --- |
 |  component | [Class](./repository.class.md)<!-- -->&lt;{}&gt; | The component to mount repositories of |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

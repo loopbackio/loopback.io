@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.modeltype.html
 
 Model type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ModelType<T extends Model> extends ObjectType<T> 
 ```
-<b>Extends:</b> [ObjectType](./repository.objecttype.md)<!-- -->&lt;T&gt;
+**Extends:** [ObjectType](./repository.objecttype.md)<!-- -->&lt;T&gt;
 
 ## Constructors
 

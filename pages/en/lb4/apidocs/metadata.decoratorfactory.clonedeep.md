@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.clonedeep.html
 
 ## DecoratorFactory.cloneDeep() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static cloneDeep<V>(val: Readonly<V>): V;
@@ -25,7 +25,7 @@ static cloneDeep<V>(val: Readonly<V>): V;
 |  --- | --- | --- |
 |  val | Readonly&lt;V&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 V
 

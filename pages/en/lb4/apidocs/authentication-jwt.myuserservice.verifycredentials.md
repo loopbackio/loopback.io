@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.myuserservice.verifycredential
 
 ## MyUserService.verifyCredentials() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyCredentials(credentials: Credentials): Promise<User>;
@@ -25,7 +25,7 @@ verifyCredentials(credentials: Credentials): Promise<User>;
 |  --- | --- | --- |
 |  credentials | [Credentials](./authentication-jwt.credentials.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[User](./authentication-jwt.user.md)<!-- -->&gt;
 

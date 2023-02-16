@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-passport.strategyadapter._construc
 
 Constructs a new instance of the `StrategyAdapter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(strategy: Strategy, name: string, userProfileFactory?: UserProfileFactory<U>);
@@ -27,6 +27,6 @@ constructor(strategy: Strategy, name: string, userProfileFactory?: UserProfileFa
 |  --- | --- | --- |
 |  strategy | Strategy | instance of a class which implements a [passport-strategy](http://passportjs.org/)<!-- -->. |
 |  name | string |  |
-|  userProfileFactory | [UserProfileFactory](./authentication.userprofilefactory.md)<!-- -->&lt;U&gt; | <i>(Optional)</i> |
+|  userProfileFactory | [UserProfileFactory](./authentication.userprofilefactory.md)<!-- -->&lt;U&gt; | _(Optional)_ |
 
 

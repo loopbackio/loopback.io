@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmiddlewareprovider.v
 
 ## AuthenticationMiddlewareProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): Middleware;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Middleware](./express.middleware.md)
 

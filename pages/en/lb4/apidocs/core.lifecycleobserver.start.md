@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserver.start.html
 
 The method to be invoked during `start`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 start?(...injectedArgs: unknown[]): ValueOrPromise<void>;
@@ -27,7 +27,7 @@ start?(...injectedArgs: unknown[]): ValueOrPromise<void>;
 |  --- | --- | --- |
 |  injectedArgs | unknown\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.artifactname.html
 
 Get the name of the artifact loaded by this booter, e.g. "Controller". Subclasses can override the default logic based on the class name.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get artifactName(): string;

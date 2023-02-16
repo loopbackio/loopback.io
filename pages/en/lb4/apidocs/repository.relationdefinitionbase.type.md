@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.relationdefinitionbase.type.html
 
 The type of the relation, must be one of RelationType values.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: RelationType;

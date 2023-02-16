@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder._constructor_.html
 
 Constructs a new instance of the `WhereBuilder` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(w?: Where<MT>);
@@ -25,6 +25,6 @@ constructor(w?: Where<MT>);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | <i>(Optional)</i> |
+|  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | _(Optional)_ |
 
 

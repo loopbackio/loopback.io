@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.infospecenhancer._constructor_.html
 
 Constructs a new instance of the `InfoSpecEnhancer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(pkg?: ApplicationMetadata | undefined);
@@ -25,6 +25,6 @@ constructor(pkg?: ApplicationMetadata | undefined);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  pkg | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined | <i>(Optional)</i> |
+|  pkg | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined | _(Optional)_ |
 
 

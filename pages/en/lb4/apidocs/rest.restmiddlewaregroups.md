@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.html
 
 Built-in middleware groups for the REST sequence
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace RestMiddlewareGroups 

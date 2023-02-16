@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.serviceoptions.interface.html
 
 ## ServiceOptions.interface property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interface?: ServiceInterface;

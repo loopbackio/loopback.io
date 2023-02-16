@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.isbsontype.html
 
 Checks if the value is BsonType (mongodb) It uses a general way to check the type ,so that it can detect different versions of bson that might be used in the code base. Might need to update in the future.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isBsonType(value: unknown): value is object;
@@ -27,7 +27,7 @@ export declare function isBsonType(value: unknown): value is object;
 |  --- | --- | --- |
 |  value | unknown |  |
 
-<b>Returns:</b>
+**Returns:**
 
 value is object
 

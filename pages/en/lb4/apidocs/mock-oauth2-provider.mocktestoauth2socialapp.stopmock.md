@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.mocktestoauth2socialapp.stop
 
 ## MockTestOauth2SocialApp.stopMock variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stopMock: typeof stopApp

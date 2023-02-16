@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.restserver._applyexpresssettings.html
 
 Apply express settings.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _applyExpressSettings(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

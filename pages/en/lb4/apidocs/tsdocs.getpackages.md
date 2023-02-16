@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.getpackages.html
 
 Get lerna packages and sorted them by location
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getPackages(rootDir?: string): Promise<LernaPackage[]>;
@@ -25,9 +25,9 @@ export declare function getPackages(rootDir?: string): Promise<LernaPackage[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rootDir | string | <i>(Optional)</i> Root directory to find lerna.json |
+|  rootDir | string | _(Optional)_ Root directory to find lerna.json |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[LernaPackage](./tsdocs.lernapackage.md)<!-- -->\[\]&gt;
 

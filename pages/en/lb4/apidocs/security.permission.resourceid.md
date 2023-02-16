@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.permission.resourceid.html
 
 Identity of a protected resource instance, such as `order-0001` or `customer-101`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resourceId?: string;

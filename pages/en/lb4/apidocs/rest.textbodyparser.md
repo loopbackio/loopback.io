@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.textbodyparser.html
 
 ## TextBodyParser class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class TextBodyParser implements BodyParser 
 ```
-<b>Implements:</b> [BodyParser](./rest.bodyparser.md)
+**Implements:** [BodyParser](./rest.bodyparser.md)
 
 ## Constructors
 

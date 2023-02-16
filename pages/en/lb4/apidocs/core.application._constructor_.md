@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application._constructor_.html
 
 Create an application with the given parent context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(parent: Context);

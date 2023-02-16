@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.next.html
 
 Optional next handler
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 next?: Next;

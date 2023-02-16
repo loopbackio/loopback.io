@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.resolutionoptionsorsession.html
 
 Resolution options or session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ResolutionOptionsOrSession = ResolutionOptions | ResolutionSession;
 ```
-<b>References:</b> [ResolutionOptions](./context.resolutionoptions.md)<!-- -->, [ResolutionSession](./context.resolutionsession.md)
+**References:** [ResolutionOptions](./context.resolutionoptions.md)<!-- -->, [ResolutionSession](./context.resolutionsession.md)
 
 

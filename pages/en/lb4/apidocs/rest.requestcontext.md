@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext.html
 
 A per-request Context combining an IoC container with handler context (request, response, etc.).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RequestContext extends MiddlewareContext implements HandlerContext 
 ```
-<b>Extends:</b> [MiddlewareContext](./express.middlewarecontext.md)
+**Extends:** [MiddlewareContext](./express.middlewarecontext.md)
 
-<b>Implements:</b> [HandlerContext](./express.handlercontext.md)
+**Implements:** [HandlerContext](./express.handlercontext.md)
 
 ## Constructors
 

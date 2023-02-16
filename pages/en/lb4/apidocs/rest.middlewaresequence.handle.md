@@ -23,7 +23,7 @@ In front of the groups above, we have a special middleware called `sendResponse`
 
 - Writes the result from API into the HTTP response (if the HTTP response has not been produced yet by the middleware chain. - Catches error logs it using 'logError' if any of the above steps in the sequence fails with an error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(context: RequestContext): Promise<void>;
@@ -35,7 +35,7 @@ handle(context: RequestContext): Promise<void>;
 |  --- | --- | --- |
 |  context | [RequestContext](./rest.requestcontext.md) | The request context: HTTP request and response objects, per-request IoC container and more. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

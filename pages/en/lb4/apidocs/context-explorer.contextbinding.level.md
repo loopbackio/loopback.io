@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextbinding.level.html
 
 ## ContextBinding.level property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly level: number;

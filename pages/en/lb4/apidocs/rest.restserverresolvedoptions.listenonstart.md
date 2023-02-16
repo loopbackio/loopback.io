@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.listenonstart.html
 
 Set this flag to `false` to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to `true`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 listenOnStart?: boolean;

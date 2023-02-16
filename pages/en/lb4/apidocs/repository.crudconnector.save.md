@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.save.html
 
 Save an entity
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 save?(modelClass: Class<Entity>, entity: EntityData, options?: Options): Promise<EntityData>;
@@ -27,9 +27,9 @@ save?(modelClass: Class<Entity>, entity: EntityData, options?: Options): Promise
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  entity | [EntityData](./repository.entitydata.md) | The entity instance or data |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[EntityData](./repository.entitydata.md)<!-- -->&gt;
 

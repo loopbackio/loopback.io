@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserver.host.html
 
 Host of the HTTP / HTTPS server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get host(): string | undefined;

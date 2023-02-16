@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.anytype.defaultvalue.html
 
 ## AnyType.defaultValue() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultValue(): any;
 ```
-<b>Returns:</b>
+**Returns:**
 
 any
 

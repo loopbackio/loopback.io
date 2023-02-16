@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.classbindingsource.html
 
 Binding source for `toClass`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ClassBindingSource<T> = {
@@ -23,6 +23,6 @@ export type ClassBindingSource<T> = {
     value: Constructor<T>;
 };
 ```
-<b>References:</b> [BindingType.CLASS](./context.bindingtype.md)<!-- -->, [Constructor](./context.constructor.md)
+**References:** [BindingType.CLASS](./context.bindingtype.md)<!-- -->, [Constructor](./context.constructor.md)
 
 

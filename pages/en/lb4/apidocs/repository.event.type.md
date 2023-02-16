@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.event.type.html
 
 ## Event.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: string;

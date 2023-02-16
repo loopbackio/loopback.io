@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.includefieldifnot.html
 
 ## includeFieldIfNot() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function includeFieldIfNot<MT>(fields: Fields<MT> | undefined, fieldToInclude: Extract<keyof MT, string>): false | Fields<MT>;
@@ -26,7 +26,7 @@ export declare function includeFieldIfNot<MT>(fields: Fields<MT> | undefined, fi
 |  fields | [Fields](./filter.fields.md)<!-- -->&lt;MT&gt; \| undefined |  |
 |  fieldToInclude | Extract&lt;keyof MT, string&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 false \| [Fields](./filter.fields.md)<!-- -->&lt;MT&gt;
 

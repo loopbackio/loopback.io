@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.createhasmanyrep
 
 Function to create a constrained relation repository factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, ForeignKeyType>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetID>>): HasManyRepositoryFactory<Target, ForeignKeyType>;
@@ -28,7 +28,7 @@ protected createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, For
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
 

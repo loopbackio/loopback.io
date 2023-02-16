@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.addsetting.html
 
 Add a setting
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addSetting(name: string, value: any): this;
@@ -28,7 +28,7 @@ addSetting(name: string, value: any): this;
 |  name | string | Setting name |
 |  value | any | Setting value |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

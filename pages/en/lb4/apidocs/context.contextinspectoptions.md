@@ -15,17 +15,17 @@ permalink: /doc/en/lb4/apidocs.context.contextinspectoptions.html
 
 Options for context.inspect()
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ContextInspectOptions extends BindingInspectOptions 
 ```
-<b>Extends:</b> [BindingInspectOptions](./context.bindinginspectoptions.md)
+**Extends:** [BindingInspectOptions](./context.bindinginspectoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [includeParent?](./context.contextinspectoptions.includeparent.md) |  | boolean | <i>(Optional)</i> The flag to control if parent context should be inspected |
+|  [includeParent?](./context.contextinspectoptions.includeparent.md) |  | boolean | _(Optional)_ The flag to control if parent context should be inspected |
 
 

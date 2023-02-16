@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory.spec.html
 
 ## DecoratorFactory.spec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected spec: T;

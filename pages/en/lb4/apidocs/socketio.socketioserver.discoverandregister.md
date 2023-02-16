@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.discoverandregister.html
 
 Discover all socket.io controllers and register routes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 discoverAndRegister(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

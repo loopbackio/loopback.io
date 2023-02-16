@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.configinjectionmetadata.propertypath.html
 
 Property path to retrieve the configuration of the target binding, for example, `rest.host`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 propertyPath?: string;

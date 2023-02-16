@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlresolutioncontext.resolverclass.ht
 
 ## GraphQLResolutionContext.resolverClass property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly resolverClass: Constructor<unknown>;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.oasenhancer.html
 
 ## RestServer.OASEnhancer property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get OASEnhancer(): OASEnhancerService;

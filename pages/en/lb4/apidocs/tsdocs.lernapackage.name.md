@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.lernapackage.name.html
 
 Package name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.instancewithbooters.html
 
 Interface to describe an object that may have an array of `booters`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InstanceWithBooters 
@@ -25,6 +25,6 @@ export interface InstanceWithBooters
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [booters?](./boot.instancewithbooters.booters.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\] | <i>(Optional)</i> |
+|  [booters?](./boot.instancewithbooters.booters.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Booter](./boot.booter.md)<!-- -->&gt;\[\] | _(Optional)_ |
 
 

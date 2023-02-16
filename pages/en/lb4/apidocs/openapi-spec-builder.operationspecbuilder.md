@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.operationspecbuilder.html
 
 A builder for creating OperationObject specifications.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class OperationSpecBuilder extends BuilderBase<OperationObject> 
 ```
-<b>Extends:</b> [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;OperationObject&gt;
+**Extends:** [BuilderBase](./openapi-spec-builder.builderbase.md)<!-- -->&lt;OperationObject&gt;
 
 ## Constructors
 

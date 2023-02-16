@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.flattenmapbykeys.html
 
 Returns an array of instances from the target map. The order of arrays is based on the order of sourceIds
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function flattenMapByKeys<T>(sourceIds: unknown[], targetMap: Map<unknown, T>): (T | undefined)[];
@@ -28,7 +28,7 @@ export declare function flattenMapByKeys<T>(sourceIds: unknown[], targetMap: Map
 |  sourceIds | unknown\[\] | One value or array of values (of the target key) |
 |  targetMap | Map&lt;unknown, T&gt; | a map that matches sourceIds with instances |
 
-<b>Returns:</b>
+**Returns:**
 
 (T \| undefined)\[\]
 

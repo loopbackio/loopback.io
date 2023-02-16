@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlresolutioncontext.resolverdata.htm
 
 ## GraphQLResolutionContext.resolverData property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly resolverData: ResolverData<unknown>;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.string.html
 
 ## STRING variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 STRING: StringType

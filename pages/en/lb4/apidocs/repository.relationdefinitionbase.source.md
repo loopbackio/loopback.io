@@ -17,7 +17,7 @@ The source model of this relation.
 
 E.g. when a Customer has many Order instances, then Customer is the source.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 source: typeof Entity;

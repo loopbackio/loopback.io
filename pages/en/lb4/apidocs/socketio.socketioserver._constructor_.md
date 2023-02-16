@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver._constructor_.html
 
 Constructs a new instance of the `SocketIoServer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, options?: SocketIoServerOptions);
@@ -26,6 +26,6 @@ constructor(app: Application, options?: SocketIoServerOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
-|  options | [SocketIoServerOptions](./socketio.socketioserveroptions.md) | <i>(Optional)</i> |
+|  options | [SocketIoServerOptions](./socketio.socketioserveroptions.md) | _(Optional)_ |
 
 

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.bindingselector.html
 
 Select binding(s) by key or a filter function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingSelector<ValueType = unknown> = BindingAddress<ValueType> | BindingFilter;
 ```
-<b>References:</b> [BindingAddress](./context.bindingaddress.md)<!-- -->, [BindingFilter](./context.bindingfilter.md)
+**References:** [BindingAddress](./context.bindingaddress.md)<!-- -->, [BindingFilter](./context.bindingfilter.md)
 
 

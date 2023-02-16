@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstoaccessor.html
 
 ## BelongsToAccessor interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BelongsToAccessor<Target extends Entity, SourceId> 

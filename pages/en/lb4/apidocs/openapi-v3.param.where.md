@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.where.html
 
 Sugar decorator for `where` query parameter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function where(modelCtor: typeof Model, name?: string): (target: object, member: string, index: number) => void;
@@ -26,9 +26,9 @@ function where(modelCtor: typeof Model, name?: string): (target: object, member:
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelCtor | typeof [Model](./repository.model.md) | Model class |
-|  name | string | <i>(Optional)</i> Custom name for the parameter, default to <code>where</code> |
+|  name | string | _(Optional)_ Custom name for the parameter, default to <code>where</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: object, member: string, index: number) =&gt; void
 

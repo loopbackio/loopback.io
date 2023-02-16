@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.injectbindingmetadata.bindingcreation.htm
 
 Controls how the underlying binding is resolved/created
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindingCreation?: BindingCreationPolicy;

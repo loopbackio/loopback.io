@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.shotcallback.html
 
 ## ShotCallback type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ShotCallback = (response: ResponseObject) => void;

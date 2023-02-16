@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.server.html
 
 ## RestApplication.server() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 server(server: Constructor<Server>, name?: string): Binding;
@@ -24,9 +24,9 @@ server(server: Constructor<Server>, name?: string): Binding;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  server | [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt; |  |
-|  name | string | <i>(Optional)</i> |
+|  name | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

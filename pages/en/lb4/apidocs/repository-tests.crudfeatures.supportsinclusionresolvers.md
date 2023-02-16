@@ -17,7 +17,7 @@ Does the repository provide `inclusionResolvers` object where resolvers can be r
 
 Default: `true`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 supportsInclusionResolvers: boolean;

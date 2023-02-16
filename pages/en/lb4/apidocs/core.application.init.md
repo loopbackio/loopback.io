@@ -19,12 +19,12 @@ If the application is already initialized, no operation is performed.
 
 This method is automatically invoked by `start()` if the application is not initialized.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 init(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

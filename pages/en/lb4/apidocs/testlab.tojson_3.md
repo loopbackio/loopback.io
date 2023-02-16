@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.tojson_3.html
 
 JSON encoding does not preserve properties that are undefined As a result, deepEqual checks fail because the expected model value contains these undefined property values, while the actual result returned by REST API does not. Use this function to convert a model instance into a data object as returned by REST API
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function toJSON(value: object): object;
@@ -27,7 +27,7 @@ export declare function toJSON(value: object): object;
 |  --- | --- | --- |
 |  value | object |  |
 
-<b>Returns:</b>
+**Returns:**
 
 object
 

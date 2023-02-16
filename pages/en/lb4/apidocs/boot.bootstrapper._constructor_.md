@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootstrapper._constructor_.html
 
 Constructs a new instance of the `Bootstrapper` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application & Bootable, projectRoot: string, bootOptions?: BootOptions);
@@ -27,6 +27,6 @@ constructor(app: Application & Bootable, projectRoot: string, bootOptions?: Boot
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) &amp; [Bootable](./boot.bootable.md) |  |
 |  projectRoot | string |  |
-|  bootOptions | [BootOptions](./boot.bootoptions.md) | <i>(Optional)</i> |
+|  bootOptions | [BootOptions](./boot.bootoptions.md) | _(Optional)_ |
 
 

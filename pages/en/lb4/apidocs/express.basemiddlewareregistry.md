@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.express.basemiddlewareregistry.html
 
 Base Context that provides APIs to register middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare abstract class BaseMiddlewareRegistry extends BaseMiddlewareRegistry_base 
 ```
-<b>Extends:</b> BaseMiddlewareRegistry\_base
+**Extends:** BaseMiddlewareRegistry\_base
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.stringtypetowrapper.html
 
 Gets the wrapper function of primitives string, number, and boolean
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function stringTypeToWrapper(type: string | Function): Function;
@@ -27,7 +27,7 @@ export declare function stringTypeToWrapper(type: string | Function): Function;
 |  --- | --- | --- |
 |  type | string \| Function | Name of type |
 
-<b>Returns:</b>
+**Returns:**
 
 Function
 

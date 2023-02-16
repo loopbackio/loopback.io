@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socket_io_subscribe_metadata.html
 
 ## SOCKET\_IO\_SUBSCRIBE\_METADATA variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SOCKET_IO_SUBSCRIBE_METADATA: MetadataAccessor<(string | RegExp)[], MethodDecorator>

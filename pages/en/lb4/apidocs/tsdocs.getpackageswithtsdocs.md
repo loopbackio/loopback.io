@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.getpackageswithtsdocs.html
 
 Get an array of lerna-managed TypeScript packages to generate tsdocs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getPackagesWithTsDocs(rootDir?: string): Promise<LernaPackage[]>;
@@ -25,9 +25,9 @@ export declare function getPackagesWithTsDocs(rootDir?: string): Promise<LernaPa
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  rootDir | string | <i>(Optional)</i> Root directory to find the monorepo |
+|  rootDir | string | _(Optional)_ Root directory to find the monorepo |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[LernaPackage](./tsdocs.lernapackage.md)<!-- -->\[\]&gt;
 

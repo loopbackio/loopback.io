@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.removenameandkeytags.html
 
 A binding template function to delete `name` and `key` tags
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function removeNameAndKeyTags(binding: Binding<unknown>): void;
@@ -27,7 +27,7 @@ export declare function removeNameAndKeyTags(binding: Binding<unknown>): void;
 |  --- | --- | --- |
 |  binding | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

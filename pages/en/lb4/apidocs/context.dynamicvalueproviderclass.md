@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.dynamicvalueproviderclass.html
 
 A class with a static `value` method as the factory function for `toDynamicValue`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface DynamicValueProviderClass<T = unknown> extends Constructor<unknown>, Function 
 ```
-<b>Extends:</b> [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;, Function
+**Extends:** [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;, Function
 
 ## Example
 

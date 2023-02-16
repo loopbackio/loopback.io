@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.connectiondefaults.html
 
 Default ArtifactOptions for TypeORM connection.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ConnectionDefaults: ArtifactOptions

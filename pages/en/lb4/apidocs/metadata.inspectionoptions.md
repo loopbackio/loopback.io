@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.inspectionoptions.html
 
 Options for inspection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InspectionOptions 
@@ -25,6 +25,6 @@ export interface InspectionOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [ownMetadataOnly?](./metadata.inspectionoptions.ownmetadataonly.md) |  | boolean | <p><i>(Optional)</i> Only inspect own metadata of a given target. The prototype chain will not be checked. The implementation uses <code>Reflect.getOwnMetadata()</code> if the flag is set to <code>true</code>. Otherwise, it uses <code>Reflect.getMetadata()</code>.</p><p>The flag is <code>false</code> by default for <code>MetadataInspector</code>.</p> |
+|  [ownMetadataOnly?](./metadata.inspectionoptions.ownmetadataonly.md) |  | boolean | <p>_(Optional)_ Only inspect own metadata of a given target. The prototype chain will not be checked. The implementation uses <code>Reflect.getOwnMetadata()</code> if the flag is set to <code>true</code>. Otherwise, it uses <code>Reflect.getMetadata()</code>.</p><p>The flag is <code>false</code> by default for <code>MetadataInspector</code>.</p> |
 
 

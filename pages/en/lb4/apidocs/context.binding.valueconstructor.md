@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.valueconstructor.html
 
 For bindings bound via `toClass()`<!-- -->, this property contains the constructor function of the class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get valueConstructor(): Constructor<T> | undefined;

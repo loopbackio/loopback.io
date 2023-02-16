@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.html
 
 A REST API server for use with Loopback. Add this server to your application by importing the RestComponent.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RestServer extends BaseMiddlewareRegistry implements Server, HttpServerLike 
 ```
-<b>Extends:</b> [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md)
+**Extends:** [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md)
 
-<b>Implements:</b> [Server](./core.server.md)<!-- -->, [HttpServerLike](./rest.httpserverlike.md)
+**Implements:** [Server](./core.server.md)<!-- -->, [HttpServerLike](./rest.httpserverlike.md)
 
 ## Example
 
@@ -54,7 +54,7 @@ const server = await app.get('servers.foo');
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [\_expressApp?](./rest.restserver._expressapp.md) | <code>protected</code> | express.Application | <i>(Optional)</i> |
+|  [\_expressApp?](./rest.restserver._expressapp.md) | <code>protected</code> | express.Application | _(Optional)_ |
 |  [\_httpHandler](./rest.restserver._httphandler.md) | <code>protected</code> | [HttpHandler](./rest.httphandler.md) |  |
 |  [\_httpServer](./rest.restserver._httpserver.md) | <code>protected</code> | [HttpServer](./http-server.httpserver.md) \| undefined |  |
 |  [\_requestHandler](./rest.restserver._requesthandler.md) | <code>protected</code> | [HttpRequestListener](./rest.httprequestlistener.md) |  |

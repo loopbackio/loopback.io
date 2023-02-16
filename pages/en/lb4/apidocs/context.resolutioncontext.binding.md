@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutioncontext.binding.html
 
 The binding to be resolved
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly binding: Readonly<Binding<T>>;

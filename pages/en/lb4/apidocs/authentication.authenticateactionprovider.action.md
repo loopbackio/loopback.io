@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider.action.
 
 The implementation of authenticate() sequence action.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 action(request: Request): Promise<UserProfile | undefined>;
@@ -27,7 +27,7 @@ action(request: Request): Promise<UserProfile | undefined>;
 |  --- | --- | --- |
 |  request | Request | The incoming request provided by the REST layer |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserProfile](./security.userprofile.md) \| undefined&gt;
 

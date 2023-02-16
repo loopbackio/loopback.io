@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.filterbuilder.include.html
 
 Declare `include`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 include(...i: (string | string[] | Inclusion)[]): this;
@@ -27,7 +27,7 @@ include(...i: (string | string[] | Inclusion)[]): this;
 |  --- | --- | --- |
 |  i | (string \| string\[\] \| [Inclusion](./filter.inclusion.md)<!-- -->)\[\] | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

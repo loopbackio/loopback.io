@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.reduceasarray.html
 
 Returns an array of instances. For HasMany relation usage.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function reduceAsArray<T>(acc: T[] | undefined, it: T): T[];
@@ -28,7 +28,7 @@ export declare function reduceAsArray<T>(acc: T[] | undefined, it: T): T[];
 |  acc | T\[\] \| undefined |  |
 |  it | T |  |
 
-<b>Returns:</b>
+**Returns:**
 
 T\[\]
 

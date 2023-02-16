@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderbooter.interceptorconfig.
 
 ## InterceptorProviderBooter.interceptorConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interceptorConfig: ArtifactOptions;

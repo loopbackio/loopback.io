@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oas.html
 
 ## oas variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 oas: {

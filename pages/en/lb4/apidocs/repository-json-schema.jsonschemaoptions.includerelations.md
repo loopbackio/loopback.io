@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.jsonschemaoptions.includer
 
 Set this flag if you want the schema to define navigational properties for model relations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 includeRelations?: boolean;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-tests.crudfeatures.html
 
 List of flags describing behavior specific to different connectors and repository implementations. These flags are used by the test suite to tweak assertions and skip tests for scenarios not supported by some implementations.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface CrudFeatures 

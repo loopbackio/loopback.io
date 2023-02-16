@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.datetype.html
 
 Date type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DateType implements Type<Date> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Date&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;Date&gt;
 
 ## Properties
 

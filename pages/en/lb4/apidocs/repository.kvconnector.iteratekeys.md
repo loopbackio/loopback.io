@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.kvconnector.iteratekeys.html
 
 Get an Iterator for matching keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 iterateKeys?(modelClass: Class<Entity>, filter?: Filter, options?: Options): Promise<Iterator<T>>;
@@ -26,10 +26,10 @@ iterateKeys?(modelClass: Class<Entity>, filter?: Filter, options?: Options): Pro
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
-|  filter | [Filter](./filter.filter.md) | <i>(Optional)</i> Matching filter |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  filter | [Filter](./filter.filter.md) | _(Optional)_ Matching filter |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Iterator&lt;T&gt;&gt;
 

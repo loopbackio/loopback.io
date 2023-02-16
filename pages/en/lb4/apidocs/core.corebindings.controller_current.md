@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.controller_current.html
 
 Binding key for the controller instance resolved in the current request context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER_CURRENT: BindingKey<unknown>

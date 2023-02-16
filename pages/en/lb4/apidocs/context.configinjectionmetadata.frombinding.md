@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.configinjectionmetadata.frombinding.html
 
 Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fromBinding?: BindingAddress;

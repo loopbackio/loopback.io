@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.authentication.html
 
 Perform authentication
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION = "authentication"

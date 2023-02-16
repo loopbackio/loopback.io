@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl.deletebyid.html
 
 ## CrudRepositoryImpl.deleteById() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteById(id: ID, options?: Options): Promise<void>;
@@ -24,9 +24,9 @@ deleteById(id: ID, options?: Options): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

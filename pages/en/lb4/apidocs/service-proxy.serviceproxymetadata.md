@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxymetadata.html
 
 Metadata for a service proxy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ServiceProxyMetadata implements InjectionMetadata 
 ```
-<b>Implements:</b> [InjectionMetadata](./context.injectionmetadata.md)
+**Implements:** [InjectionMetadata](./context.injectionmetadata.md)
 
 ## Constructors
 
@@ -32,8 +32,8 @@ export declare class ServiceProxyMetadata implements InjectionMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [dataSource?](./service-proxy.serviceproxymetadata.datasource.md) |  | juggler.DataSource | <i>(Optional)</i> |
-|  [dataSourceName?](./service-proxy.serviceproxymetadata.datasourcename.md) |  | string | <i>(Optional)</i> |
+|  [dataSource?](./service-proxy.serviceproxymetadata.datasource.md) |  | juggler.DataSource | _(Optional)_ |
+|  [dataSourceName?](./service-proxy.serviceproxymetadata.datasourcename.md) |  | string | _(Optional)_ |
 |  [decorator](./service-proxy.serviceproxymetadata.decorator.md) |  | string |  |
 
 

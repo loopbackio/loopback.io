@@ -15,17 +15,17 @@ permalink: /doc/en/lb4/apidocs.express.middlewareinterceptorbindingoptions.html
 
 Options to bind a middleware as an interceptor to the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MiddlewareInterceptorBindingOptions extends BaseMiddlewareBindingOptions<InvocationContext> 
 ```
-<b>Extends:</b> [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;
+**Extends:** [BaseMiddlewareBindingOptions](./express.basemiddlewarebindingoptions.md)<!-- -->&lt;[InvocationContext](./context.invocationcontext.md)<!-- -->&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [global?](./express.middlewareinterceptorbindingoptions.global.md) |  | boolean | <i>(Optional)</i> A flag to control if the interceptor should be global. Default to <code>true</code>. |
+|  [global?](./express.middlewareinterceptorbindingoptions.global.md) |  | boolean | _(Optional)_ A flag to control if the interceptor should be global. Default to <code>true</code>. |
 
 

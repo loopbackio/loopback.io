@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.kvmodelclass
 
 A legacy KeyValueModel class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 kvModelClass: typeof juggler.KeyValueModel;

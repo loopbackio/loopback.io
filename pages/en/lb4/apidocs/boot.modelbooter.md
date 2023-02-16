@@ -17,12 +17,12 @@ A class that extends BaseArtifactBooter to boot the 'Model' artifact type.
 
 Supported phases: configure, discover, load
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ModelBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Constructors
 

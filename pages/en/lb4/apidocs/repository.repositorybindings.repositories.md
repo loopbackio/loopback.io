@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorybindings.repositories.html
 
 Namespace for repository bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REPOSITORIES = "repositories"

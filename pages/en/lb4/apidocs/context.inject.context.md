@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.context.html
 
 Inject the context object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 context: () => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

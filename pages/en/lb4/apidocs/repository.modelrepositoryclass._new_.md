@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelrepositoryclass._new_.html
 
 The constructor for the generated repository class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 new (dataSource: juggler.DataSource): R;
@@ -27,7 +27,7 @@ new (dataSource: juggler.DataSource): R;
 |  --- | --- | --- |
 |  dataSource | juggler.DataSource | DataSource object |
 
-<b>Returns:</b>
+**Returns:**
 
 R
 

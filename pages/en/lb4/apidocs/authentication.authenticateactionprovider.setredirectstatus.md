@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider.setredi
 
 ## AuthenticateActionProvider.setRedirectStatus property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly setRedirectStatus: Setter<number>;

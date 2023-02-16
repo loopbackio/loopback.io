@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.base_path.html
 
 Internal binding key for basePath
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BASE_PATH: BindingKey<string>

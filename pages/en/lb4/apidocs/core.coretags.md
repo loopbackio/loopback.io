@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.html
 
 ## CoreTags namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace CoreTags 

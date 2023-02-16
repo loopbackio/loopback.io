@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.addopenapispecendpoint.html
 
 Add a new non-controller endpoint hosting a form of the OpenAPI spec.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addOpenApiSpecEndpoint(path: string, form: OpenApiSpecForm, router?: express.Router): void;
@@ -27,9 +27,9 @@ addOpenApiSpecEndpoint(path: string, form: OpenApiSpecForm, router?: express.Rou
 |  --- | --- | --- |
 |  path | string | Path at which to host the copy of the OpenAPI |
 |  form | [OpenApiSpecForm](./rest.openapispecform.md) | Form that should be rendered from that path |
-|  router | express.Router | <i>(Optional)</i> |
+|  router | express.Router | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

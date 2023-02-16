@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc.component.html
 
 Add a component to this application. Also mounts all the components repositories.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 component(component: Class<{}>): Binding;
@@ -27,7 +27,7 @@ component(component: Class<{}>): Binding;
 |  --- | --- | --- |
 |  component | [Class](./repository.class.md)<!-- -->&lt;{}&gt; | The component to add. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

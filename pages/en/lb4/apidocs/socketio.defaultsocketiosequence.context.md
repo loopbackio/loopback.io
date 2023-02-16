@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence.context.html
 
 ## DefaultSocketIoSequence.context property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected context: Context;

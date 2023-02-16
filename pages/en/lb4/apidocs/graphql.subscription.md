@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.subscription.html
 
 ## subscription variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 subscription: typeof Subscription

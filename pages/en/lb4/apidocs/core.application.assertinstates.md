@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.assertinstates.html
 
 Assert current state of the application to be one of the expected values
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected assertInStates(op: string, ...states: string[]): void;
@@ -28,7 +28,7 @@ protected assertInStates(op: string, ...states: string[]): void;
 |  op | string | The operation name, such as 'boot', 'start', or 'stop' |
 |  states | string\[\] | Valid states |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

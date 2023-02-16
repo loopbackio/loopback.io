@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.operation_spec_current.html
 
 Binding key for setting and injecting an OpenAPI operation spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 OPERATION_SPEC_CURRENT: BindingKey<OperationObject>

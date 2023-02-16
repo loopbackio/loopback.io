@@ -15,17 +15,17 @@ permalink: /doc/en/lb4/apidocs.context.injectbindingmetadata.html
 
 Metadata for `@inject.binding`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InjectBindingMetadata extends InjectionMetadata 
 ```
-<b>Extends:</b> [InjectionMetadata](./context.injectionmetadata.md)
+**Extends:** [InjectionMetadata](./context.injectionmetadata.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindingCreation?](./context.injectbindingmetadata.bindingcreation.md) |  | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | <i>(Optional)</i> Controls how the underlying binding is resolved/created |
+|  [bindingCreation?](./context.injectbindingmetadata.bindingcreation.md) |  | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | _(Optional)_ Controls how the underlying binding is resolved/created |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-server.httpprotocol.html
 
 Supported protocols
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HttpProtocol = 'http' | 'https';

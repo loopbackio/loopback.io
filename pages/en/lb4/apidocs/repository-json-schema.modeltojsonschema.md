@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.modeltojsonschema.html
 
 Converts a TypeScript class into a JSON Schema using TypeScript's reflection API
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function modelToJsonSchema<T extends object>(ctor: Function & {
@@ -28,9 +28,9 @@ export declare function modelToJsonSchema<T extends object>(ctor: Function & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctor | Function &amp; { prototype: T; } | Constructor of class to convert from |
-|  jsonSchemaOptions | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> |
+|  jsonSchemaOptions | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

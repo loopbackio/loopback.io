@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.invoke_middleware_service.html
 
 Binding key for setting and injecting a `invokeMiddleware` function for middleware based sequence
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 INVOKE_MIDDLEWARE_SERVICE: BindingKey<InvokeMiddleware>

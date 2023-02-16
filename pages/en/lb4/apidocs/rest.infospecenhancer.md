@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.infospecenhancer.html
 
 An OpenAPI spec enhancer to populate `info` with application metadata (package.json).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InfoSpecEnhancer implements OASEnhancer 
 ```
-<b>Implements:</b> [OASEnhancer](./openapi-v3.oasenhancer.md)
+**Implements:** [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 ## Constructors
 
@@ -33,7 +33,7 @@ export declare class InfoSpecEnhancer implements OASEnhancer
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [name](./rest.infospecenhancer.name.md) |  | string |  |
-|  [pkg?](./rest.infospecenhancer.pkg.md) | <code>readonly</code> | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined | <i>(Optional)</i> |
+|  [pkg?](./rest.infospecenhancer.pkg.md) | <code>readonly</code> | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined | _(Optional)_ |
 
 ## Methods
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-passport.strategyadapter.authentic
 
 The function to invoke the contained passport strategy. 1. Create an instance of the strategy 2. add success and failure state handlers 3. authenticate using the strategy
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 authenticate(request: Request, options?: AuthenticateOptions): Promise<UserProfile | RedirectRoute>;
@@ -26,9 +26,9 @@ authenticate(request: Request, options?: AuthenticateOptions): Promise<UserProfi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  request | Request | The incoming request. |
-|  options | AuthenticateOptions | <i>(Optional)</i> Options passed through to strategy.authenticate. |
+|  options | AuthenticateOptions | _(Optional)_ Options passed through to strategy.authenticate. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[UserProfile](./security.userprofile.md) \| [RedirectRoute](./rest.redirectroute.md)<!-- -->&gt;
 

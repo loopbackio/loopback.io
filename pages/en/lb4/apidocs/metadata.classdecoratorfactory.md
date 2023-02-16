@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metadata.classdecoratorfactory.html
 
 Factory for class decorators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ClassDecoratorFactory<T> extends DecoratorFactory<T, T, ClassDecorator> 
 ```
-<b>Extends:</b> [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, T, ClassDecorator&gt;
+**Extends:** [DecoratorFactory](./metadata.decoratorfactory.md)<!-- -->&lt;T, T, ClassDecorator&gt;
 
 ## Methods
 

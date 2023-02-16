@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.findbyid.html
 
 Find an entity by id, return a rejected promise if not found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T & Relations>;
@@ -26,10 +26,10 @@ findById(id: ID, filter?: FilterExcludingWhere<T>, options?: Options): Promise<T
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID | Value for the entity id |
-|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | <i>(Optional)</i> Additional query options. E.g. <code>filter.include</code> configures which related models to fetch as part of the database query (or queries). |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operations |
+|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | _(Optional)_ Additional query options. E.g. <code>filter.include</code> configures which related models to fetch as part of the database query (or queries). |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operations |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T &amp; Relations&gt;
 

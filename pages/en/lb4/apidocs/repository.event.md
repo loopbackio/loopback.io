@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.event.html
 
 Domain events
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Event 

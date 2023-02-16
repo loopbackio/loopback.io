@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextbinding._constructor_.htm
 
 Constructs a new instance of the `ContextBinding` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: JSONObject, binding: JSONObject, level: number);

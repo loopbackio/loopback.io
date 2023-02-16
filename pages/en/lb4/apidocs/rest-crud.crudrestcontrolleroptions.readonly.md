@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcontrolleroptions.readonly.html
 
 Whether to generate readonly APIs
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly?: boolean;

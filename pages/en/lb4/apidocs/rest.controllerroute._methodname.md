@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.controllerroute._methodname.html
 
 ## ControllerRoute.\_methodName property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly _methodName: string;

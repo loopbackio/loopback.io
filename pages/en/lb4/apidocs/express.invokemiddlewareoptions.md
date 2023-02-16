@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.html
 
 Options for `InvokeMiddleware`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InvokeMiddlewareOptions 
@@ -25,10 +25,10 @@ export interface InvokeMiddlewareOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [chain?](./express.invokemiddlewareoptions.chain.md) |  | string | <i>(Optional)</i> Name of the extension point. Default to the <code>extensionPoint</code> tag value from the binding |
-|  [middlewareList?](./express.invokemiddlewareoptions.middlewarelist.md) |  | [MiddlewareOrKey](./express.middlewareorkey.md)<!-- -->\[\] | <i>(Optional)</i> Pre-built middleware list. If set, the list will be used to create the middleware chain without discovering again within the context. |
-|  [next?](./express.invokemiddlewareoptions.next.md) |  | [Next](./context.next.md) | <i>(Optional)</i> Optional next handler |
-|  [orderedGroups?](./express.invokemiddlewareoptions.orderedgroups.md) |  | string\[\] | <i>(Optional)</i> An array of group names to denote the order of execution, such as <code>['cors', 'caching', 'rate-limiting']</code>. |
-|  [validate?](./express.invokemiddlewareoptions.validate.md) |  | (groups: string\[\]) =&gt; void | <i>(Optional)</i> An optional function to validate the sorted groups before invoking the middleware chain |
+|  [chain?](./express.invokemiddlewareoptions.chain.md) |  | string | _(Optional)_ Name of the extension point. Default to the <code>extensionPoint</code> tag value from the binding |
+|  [middlewareList?](./express.invokemiddlewareoptions.middlewarelist.md) |  | [MiddlewareOrKey](./express.middlewareorkey.md)<!-- -->\[\] | _(Optional)_ Pre-built middleware list. If set, the list will be used to create the middleware chain without discovering again within the context. |
+|  [next?](./express.invokemiddlewareoptions.next.md) |  | [Next](./context.next.md) | _(Optional)_ Optional next handler |
+|  [orderedGroups?](./express.invokemiddlewareoptions.orderedgroups.md) |  | string\[\] | _(Optional)_ An array of group names to denote the order of execution, such as <code>['cors', 'caching', 'rate-limiting']</code>. |
+|  [validate?](./express.invokemiddlewareoptions.validate.md) |  | (groups: string\[\]) =&gt; void | _(Optional)_ An optional function to validate the sorted groups before invoking the middleware chain |
 
 

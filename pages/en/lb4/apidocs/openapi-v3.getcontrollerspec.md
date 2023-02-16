@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.getcontrollerspec.html
 
 Get the controller spec for the given class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getControllerSpec(constructor: Function): ControllerSpec;
@@ -27,7 +27,7 @@ export declare function getControllerSpec(constructor: Function): ControllerSpec
 |  --- | --- | --- |
 |  constructor | Function | Controller class |
 
-<b>Returns:</b>
+**Returns:**
 
 [ControllerSpec](./openapi-v3.controllerspec.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.servicebooter.serviceconfig.html
 
 ## ServiceBooter.serviceConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serviceConfig: ArtifactOptions;

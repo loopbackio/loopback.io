@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.type.serialize.html
 
 Serialize a value into json
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: T | null | undefined, options?: Options): any;
@@ -26,9 +26,9 @@ serialize(value: T | null | undefined, options?: Options): any;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  value | T \| null \| undefined | The value of this type |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for serialization |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for serialization |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

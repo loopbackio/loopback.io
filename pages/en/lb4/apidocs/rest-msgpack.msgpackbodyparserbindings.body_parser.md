@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.msgpackbodyparserbindings.body_parse
 
 ## MsgPackBodyParserBindings.BODY\_PARSER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BODY_PARSER: BindingKey<BodyParser>

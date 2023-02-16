@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.operation.html
 
 Expose a Controller method as a REST API operation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function operation(verb: string, path: string, spec?: OperationObject): MethodDecorator;
@@ -27,9 +27,9 @@ export declare function operation(verb: string, path: string, spec?: OperationOb
 |  --- | --- | --- |
 |  verb | string | HTTP verb, e.g. <code>GET</code> or <code>POST</code>. |
 |  path | string | The URL path of this operation, e.g. <code>/product/{id}</code> |
-|  spec | OperationObject | <i>(Optional)</i> The OpenAPI specification describing parameters and responses of this operation. |
+|  spec | OperationObject | _(Optional)_ The OpenAPI specification describing parameters and responses of this operation. |
 
-<b>Returns:</b>
+**Returns:**
 
 MethodDecorator
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.orclause.html
 
 Or clause
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface OrClause<MT extends object> 

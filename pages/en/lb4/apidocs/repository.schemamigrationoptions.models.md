@@ -17,7 +17,7 @@ List of model names to migrate.
 
 By default, all models are migrated.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 models?: string[];

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.on.html
 
 The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 on(eventName: 'bind' | 'unbind', listener: ContextEventListener): this;
@@ -28,7 +28,7 @@ on(eventName: 'bind' | 'unbind', listener: ContextEventListener): this;
 |  eventName | 'bind' \| 'unbind' | The name of the event - always <code>bind</code> or <code>unbind</code>. |
 |  listener | [ContextEventListener](./context.contexteventlistener.md) | The listener function to call when the event is emitted. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

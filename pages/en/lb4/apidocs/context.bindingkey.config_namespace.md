@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.config_namespace.html
 
 Name space for configuration binding keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static CONFIG_NAMESPACE: string;

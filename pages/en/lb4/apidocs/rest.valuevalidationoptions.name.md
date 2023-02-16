@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.valuevalidationoptions.name.html
 
 Parameter name, as provided in `ParameterObject#name` property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name?: string;

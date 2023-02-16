@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.stringifiedtypeoptions.html
 
 ## StringifiedTypeOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type StringifiedTypeOptions = {

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanythroughrepository.unlink.html
 
 Removes an association to an existing target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unlink(targetModelId: TargetID, options?: Options & {
@@ -28,9 +28,9 @@ unlink(targetModelId: TargetID, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelId | TargetID | The target model to unlink |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

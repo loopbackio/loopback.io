@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.project_root.html
 
 Binding key for determining project root directory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PROJECT_ROOT: BindingKey<string>

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authorization.anonymous.html
 
 ## ANONYMOUS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ANONYMOUS = "$anonymous"

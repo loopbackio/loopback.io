@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.schemavalidatorcache.html
 
 Cache for AJV schema validators
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SchemaValidatorCache = WeakMap<SchemaObject | ReferenceObject, // First keyed by schema object

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.user.html
 
 ## DefaultSubject.user property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get user(): UserProfile | undefined;

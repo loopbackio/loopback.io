@@ -17,7 +17,7 @@ Set this flag to mark all model properties as optional. This is typically used t
 
 The flag also applies to nested model instances if its value is set to 'deep', such as:
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 partial?: boolean | 'deep';

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.executablerepository.html
 
 ## ExecutableRepository interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ExecutableRepository<T extends Model> extends Repository<T> 
 ```
-<b>Extends:</b> [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
+**Extends:** [Repository](./repository.repository.md)<!-- -->&lt;T&gt;
 
 ## Methods
 

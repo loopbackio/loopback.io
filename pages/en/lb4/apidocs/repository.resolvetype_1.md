@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.resolvetype_1.html
 
 ## resolveType() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveType<T>(fn: NonFunction<T>): T;
@@ -25,7 +25,7 @@ export declare function resolveType<T>(fn: NonFunction<T>): T;
 |  --- | --- | --- |
 |  fn | [NonFunction](./repository.nonfunction.md)<!-- -->&lt;T&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

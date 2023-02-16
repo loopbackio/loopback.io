@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.parsekeywithpath.html
 
 Parse a string containing both the binding key and the path to the deeply nested property to retrieve.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static parseKeyWithPath<T>(keyWithPath: BindingAddress<T>): BindingKey<T>;
@@ -27,7 +27,7 @@ static parseKeyWithPath<T>(keyWithPath: BindingAddress<T>): BindingKey<T>;
 |  --- | --- | --- |
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | The key with an optional path, e.g. "application.instance" or "config\#rest.port". |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingKey](./context.bindingkey.md)<!-- -->&lt;T&gt;
 

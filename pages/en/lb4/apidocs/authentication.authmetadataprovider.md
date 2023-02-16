@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authmetadataprovider.html
 
 Provides authentication metadata of a controller method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AuthMetadataProvider implements Provider<AuthenticationMetadata[] | undefined> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined&gt;
 
 ## Example
 

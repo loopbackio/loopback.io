@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.class._new_.html
 
 ## Class.(new)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 new (...args: any[]): T;
@@ -25,7 +25,7 @@ new (...args: any[]): T;
 |  --- | --- | --- |
 |  args | any\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

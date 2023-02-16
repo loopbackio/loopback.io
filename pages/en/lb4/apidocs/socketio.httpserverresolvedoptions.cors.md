@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.httpserverresolvedoptions.cors.html
 
 ## HttpServerResolvedOptions.cors property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 cors: cors.CorsOptions;

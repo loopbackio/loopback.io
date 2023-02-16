@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.buffertype.html
 
 Buffer (binary) type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BufferType implements Type<Buffer> 
 ```
-<b>Implements:</b> [Type](./repository.type.md)<!-- -->&lt;Buffer&gt;
+**Implements:** [Type](./repository.type.md)<!-- -->&lt;Buffer&gt;
 
 ## Properties
 

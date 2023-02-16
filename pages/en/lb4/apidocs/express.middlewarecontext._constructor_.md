@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarecontext._constructor_.html
 
 Constructor for `MiddlewareContext`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(request: Request, response: Response, parent?: Context, name?: string);
@@ -27,7 +27,7 @@ constructor(request: Request, response: Response, parent?: Context, name?: strin
 |  --- | --- | --- |
 |  request | Request | Express request object |
 |  response | Response | Express response object |
-|  parent | [Context](./context.context.md) | <i>(Optional)</i> Parent context |
-|  name | string | <i>(Optional)</i> Name of the middleware context |
+|  parent | [Context](./context.context.md) | _(Optional)_ Parent context |
+|  name | string | _(Optional)_ Name of the middleware context |
 
 

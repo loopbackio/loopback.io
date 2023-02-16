@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.gettar
 
 ## DefaultHasManyThroughRepository.getTargetIds property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getTargetIds: (targetInstances: TargetEntity[]) => TargetID[];

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.userrepository._constructor_.h
 
 Constructs a new instance of the `UserRepository` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(dataSource: juggler.DataSource, userCredentialsRepositoryGetter: Getter<UserCredentialsRepository>);

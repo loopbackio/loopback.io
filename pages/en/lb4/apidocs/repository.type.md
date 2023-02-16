@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.type.html
 
 ## Type interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Type<T> 

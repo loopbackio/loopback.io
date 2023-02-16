@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.reject.html
 
 ## DefaultSequence.reject property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 reject: Reject;

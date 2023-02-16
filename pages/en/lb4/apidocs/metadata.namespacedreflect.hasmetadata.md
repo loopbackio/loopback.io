@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.hasmetadata.html
 
 Check if the target has corresponding metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hasMetadata(metadataKey: string, target: Object, propertyKey?: string): boolean;
@@ -27,9 +27,9 @@ hasMetadata(metadataKey: string, target: Object, propertyKey?: string): boolean;
 |  --- | --- | --- |
 |  metadataKey | string | Key |
 |  target | Object | Target |
-|  propertyKey | string | <i>(Optional)</i> Optional property key |
+|  propertyKey | string | _(Optional)_ Optional property key |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

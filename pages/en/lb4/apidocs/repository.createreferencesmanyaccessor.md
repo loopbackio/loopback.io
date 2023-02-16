@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.createreferencesmanyaccessor.html
 
 Enforces a ReferencesMany constraint on a repository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createReferencesManyAccessor<Target extends Entity, TargetIds, Source extends Entity, SourceId>(referencesManyMetadata: ReferencesManyDefinition, targetRepoGetter: Getter<EntityCrudRepository<Target, TargetIds>>, sourceRepository: EntityCrudRepository<Source, SourceId>): ReferencesManyAccessor<Target, SourceId>;
@@ -29,7 +29,7 @@ export declare function createReferencesManyAccessor<Target extends Entity, Targ
 |  targetRepoGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetIds&gt;&gt; |  |
 |  sourceRepository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Source, SourceId&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ReferencesManyAccessor](./repository.referencesmanyaccessor.md)<!-- -->&lt;Target, SourceId&gt;
 

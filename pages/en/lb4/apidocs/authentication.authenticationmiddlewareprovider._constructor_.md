@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationmiddlewareprovider._
 
 Constructs a new instance of the `AuthenticationMiddlewareProvider` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(authenticate: AuthenticateFn);

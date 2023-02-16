@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.createmiddleware.html
 
 An adapter function to create a LoopBack middleware from Express middleware factory function and configuration object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createMiddleware<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlewareConfig?: CFG): Middleware;
@@ -26,9 +26,9 @@ export declare function createMiddleware<CFG>(middlewareFactory: ExpressMiddlewa
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Express middleware factory function |
-|  middlewareConfig | CFG | <i>(Optional)</i> Express middleware config |
+|  middlewareConfig | CFG | _(Optional)_ Express middleware config |
 
-<b>Returns:</b>
+**Returns:**
 
 [Middleware](./express.middleware.md)
 

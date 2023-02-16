@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.updateall.html
 
 Update matching entities
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 updateAll(modelClass: Class<Entity>, data: EntityData, where?: Where<Entity>, options?: Options): Promise<Count>;
@@ -27,10 +27,10 @@ updateAll(modelClass: Class<Entity>, data: EntityData, where?: Where<Entity>, op
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
 |  data | [EntityData](./repository.entitydata.md) | The data attributes to be updated |
-|  where | [Where](./filter.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | <i>(Optional)</i> The matching criteria |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  where | [Where](./filter.where.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | _(Optional)_ The matching criteria |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

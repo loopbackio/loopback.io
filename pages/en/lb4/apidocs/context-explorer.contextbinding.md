@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextbinding.html
 
 A wrapper class for context, binding, and its level in the chain
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ContextBinding 

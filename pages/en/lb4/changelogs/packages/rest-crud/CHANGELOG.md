@@ -10,6 +10,19 @@ permalink: /doc/en/lb4/changelog.rest-crud.html
 
 # Change Log
 
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.15.6](https://github.com/loopbackio/loopback-next/compare/@loopback/rest-crud@0.15.5...@loopback/rest-crud@0.15.6) (2023-01-09)
+
+**Note:** Version bump only for package @loopback/rest-crud
+
+
+
+
+
+# Change Log
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

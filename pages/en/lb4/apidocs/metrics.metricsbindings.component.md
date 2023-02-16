@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsbindings.component.html
 
 ## MetricsBindings.COMPONENT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<MetricsComponent>

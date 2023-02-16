@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.config.getter.html
 
 `@inject.getter` decorator to inject a config getter function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getter: (propertyPath?: string | ConfigInjectionMetadata, metadata?: ConfigInjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

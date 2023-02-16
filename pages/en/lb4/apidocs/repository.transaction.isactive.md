@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.transaction.isactive.html
 
 Check if the transaction has an active connection
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isActive(): boolean;
 ```
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

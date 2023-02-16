@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest-crud.crudrestcomponent.bindings.html
 
 ## CrudRestComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

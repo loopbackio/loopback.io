@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.scope.html
 
 Scope for binding resolution
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scope: BindingScope;

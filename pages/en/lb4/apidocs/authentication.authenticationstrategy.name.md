@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationstrategy.name.html
 
 The 'name' property is a unique identifier for the authentication strategy ( for example : 'basic', 'jwt', etc)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

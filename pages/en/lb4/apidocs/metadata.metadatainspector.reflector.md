@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.reflector.html
 
 Expose Reflector, which is a wrapper of `Reflect` and it uses `loopback` as the namespace prefix for all metadata keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static readonly Reflector: NamespacedReflect;

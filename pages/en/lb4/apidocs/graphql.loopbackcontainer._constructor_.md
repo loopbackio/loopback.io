@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.loopbackcontainer._constructor_.html
 
 Constructs a new instance of the `LoopBackContainer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(ctx: Context);

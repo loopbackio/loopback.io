@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioinvokemethodprovider.action.html
 
 ## SocketIoInvokeMethodProvider.action() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 action(context: Context, controller: ControllerClass, methodName: string, args: unknown[]): any;
@@ -28,7 +28,7 @@ action(context: Context, controller: ControllerClass, methodName: string, args: 
 |  methodName | string |  |
 |  args | unknown\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

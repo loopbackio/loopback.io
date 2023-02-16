@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.rebaseopenapispec.html
 
 ## rebaseOpenApiSpec() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function rebaseOpenApiSpec<T extends Partial<OpenApiSpec>>(spec: T, basePath: string): T;
@@ -26,7 +26,7 @@ export declare function rebaseOpenApiSpec<T extends Partial<OpenApiSpec>>(spec: 
 |  spec | T |  |
 |  basePath | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

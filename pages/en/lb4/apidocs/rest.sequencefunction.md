@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.sequencefunction.html
 
 A sequence function is a function implementing a custom sequence of actions to handle an incoming request.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SequenceFunction = (context: RequestContext, sequence: DefaultSequence) => ValueOrPromise<void>;
 ```
-<b>References:</b> [RequestContext](./rest.requestcontext.md)<!-- -->, [DefaultSequence](./rest.defaultsequence.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
+**References:** [RequestContext](./rest.requestcontext.md)<!-- -->, [DefaultSequence](./rest.defaultsequence.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 
 

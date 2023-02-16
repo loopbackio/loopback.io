@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationmetadata.html
 
 Authorization metadata supplied via `@authorize` decorator
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AuthorizationMetadata 
@@ -25,11 +25,11 @@ export interface AuthorizationMetadata
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [allowedRoles?](./authorization.authorizationmetadata.allowedroles.md) |  | string\[\] | <i>(Optional)</i> Roles that are allowed access |
-|  [deniedRoles?](./authorization.authorizationmetadata.deniedroles.md) |  | string\[\] | <i>(Optional)</i> Roles that are denied access |
-|  [resource?](./authorization.authorizationmetadata.resource.md) |  | string | <i>(Optional)</i> Name of the resource, default to the method name |
-|  [scopes?](./authorization.authorizationmetadata.scopes.md) |  | string\[\] | <i>(Optional)</i> Define the access scopes |
-|  [skip?](./authorization.authorizationmetadata.skip.md) |  | boolean | <i>(Optional)</i> A flag to skip authorization |
-|  [voters?](./authorization.authorizationmetadata.voters.md) |  | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] | <i>(Optional)</i> Voters that help make the authorization decision |
+|  [allowedRoles?](./authorization.authorizationmetadata.allowedroles.md) |  | string\[\] | _(Optional)_ Roles that are allowed access |
+|  [deniedRoles?](./authorization.authorizationmetadata.deniedroles.md) |  | string\[\] | _(Optional)_ Roles that are denied access |
+|  [resource?](./authorization.authorizationmetadata.resource.md) |  | string | _(Optional)_ Name of the resource, default to the method name |
+|  [scopes?](./authorization.authorizationmetadata.scopes.md) |  | string\[\] | _(Optional)_ Define the access scopes |
+|  [skip?](./authorization.authorizationmetadata.skip.md) |  | boolean | _(Optional)_ A flag to skip authorization |
+|  [voters?](./authorization.authorizationmetadata.voters.md) |  | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] | _(Optional)_ Voters that help make the authorization decision |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationsource.type.html
 
 Type of the invoker, such as `proxy` and `route`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly type: string;

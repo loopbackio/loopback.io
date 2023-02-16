@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider.html
 
 Provides the authentication action for a sequence
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AuthenticateActionProvider implements Provider<AuthenticateFn> 
 ```
-<b>Implements:</b> [Provider](./context.provider.md)<!-- -->&lt;[AuthenticateFn](./authentication.authenticatefn.md)<!-- -->&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[AuthenticateFn](./authentication.authenticatefn.md)<!-- -->&gt;
 
 ## Example
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory._constructor_.html
 
 Construct a new class decorator factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(key: string, spec: T, options?: DecoratorOptions);
@@ -27,6 +27,6 @@ constructor(key: string, spec: T, options?: DecoratorOptions);
 |  --- | --- | --- |
 |  key | string | Metadata key |
 |  spec | T | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | <i>(Optional)</i> Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | _(Optional)_ Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
 
 

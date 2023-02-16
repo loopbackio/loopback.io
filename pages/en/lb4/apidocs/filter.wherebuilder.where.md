@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.where.html
 
 ## WhereBuilder.where property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 where: Where<MT>;

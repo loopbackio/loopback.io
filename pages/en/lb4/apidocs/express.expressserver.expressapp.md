@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.expressapp.html
 
 Embedded Express application
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly expressApp: express.Application;

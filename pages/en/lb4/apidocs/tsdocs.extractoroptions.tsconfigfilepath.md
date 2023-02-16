@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.tsconfigfilepath.html
 
 Path for tsconfig
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tsconfigFilePath?: string;

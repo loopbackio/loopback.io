@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.createunexpectedhttperrorlogger.html
 
 Creates a Logger that logs an Error if the HTTP status code is not expected
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createUnexpectedHttpErrorLogger(expectedStatusCode?: number): LogError;
@@ -25,9 +25,9 @@ export declare function createUnexpectedHttpErrorLogger(expectedStatusCode?: num
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  expectedStatusCode | number | <i>(Optional)</i> HTTP status code that is expected |
+|  expectedStatusCode | number | _(Optional)_ HTTP status code that is expected |
 
-<b>Returns:</b>
+**Returns:**
 
 LogError
 

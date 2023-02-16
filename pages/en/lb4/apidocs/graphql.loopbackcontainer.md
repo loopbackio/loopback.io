@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.graphql.loopbackcontainer.html
 
 Implementation of `ContainerType` to plug into `type-graphql` as the IoC container
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class LoopBackContainer implements ContainerType 
 ```
-<b>Implements:</b> ContainerType
+**Implements:** ContainerType
 
 ## Constructors
 

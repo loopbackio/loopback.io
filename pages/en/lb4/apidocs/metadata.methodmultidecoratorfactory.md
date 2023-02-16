@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metadata.methodmultidecoratorfactory.html
 
 Factory for an append-array of method-level decorators The `@response` metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow:
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MethodMultiDecoratorFactory<T> extends MethodDecoratorFactory<T[]> 
 ```
-<b>Extends:</b> [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;T\[\]&gt;
+**Extends:** [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)<!-- -->&lt;T\[\]&gt;
 
 ## Example
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.createbindingfromclass.html
 
 Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - `binding.toClass(cls)`<!-- -->: if `cls` is a plain class such as `MyController` - `binding.toProvider(cls)`<!-- -->: if `cls` is a value provider class with a prototype method `value()` - `binding.toDynamicValue(cls)`<!-- -->: if `cls` is a dynamic value provider class with a static method `value()`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createBindingFromClass<T>(cls: Constructor<T | Provider<T>> | DynamicValueProviderClass<T>, options?: BindingFromClassOptions): Binding<T>;
@@ -26,9 +26,9 @@ export declare function createBindingFromClass<T>(cls: Constructor<T | Provider<
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | A class. It can be either a plain class, a value provider class, or a dynamic value provider class |
-|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Options to customize the binding key |
+|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Options to customize the binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;T&gt;
 

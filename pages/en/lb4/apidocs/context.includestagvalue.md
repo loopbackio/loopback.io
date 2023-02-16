@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.includestagvalue.html
 
 Create a tag value matcher function that returns `true` if the target tag value equals to the item value or is an array that includes the item value.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function includesTagValue(...itemValues: unknown[]): TagValueMatcher;
@@ -27,7 +27,7 @@ export declare function includesTagValue(...itemValues: unknown[]): TagValueMatc
 |  --- | --- | --- |
 |  itemValues | unknown\[\] | A list of tag item value |
 
-<b>Returns:</b>
+**Returns:**
 
 [TagValueMatcher](./context.tagvaluematcher.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.request_body_parser_text.html
 
 Binding key for request text body parser
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REQUEST_BODY_PARSER_TEXT: BindingKey<BodyParser>

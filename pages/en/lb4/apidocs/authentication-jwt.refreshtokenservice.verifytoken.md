@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice.verifytoke
 
 Verify the validity of a refresh token, and make sure it exists in backend.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyToken(refreshToken: string): Promise<RefreshToken & RefreshTokenRelations>;
@@ -27,7 +27,7 @@ verifyToken(refreshToken: string): Promise<RefreshToken & RefreshTokenRelations>
 |  --- | --- | --- |
 |  refreshToken | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RefreshToken](./authentication-jwt.refreshtoken.md) &amp; [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md)<!-- -->&gt;
 

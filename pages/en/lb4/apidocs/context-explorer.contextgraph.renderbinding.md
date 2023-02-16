@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraph.renderbinding.html
 
 Render a binding object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected renderBinding(parent: ICluster, { binding, id }: ContextBinding): INode;
@@ -28,7 +28,7 @@ protected renderBinding(parent: ICluster, { binding, id }: ContextBinding): INod
 |  parent | ICluster | Parent subgraph |
 |  { binding, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 INode
 

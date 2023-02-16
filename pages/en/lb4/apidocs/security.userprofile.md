@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.security.userprofile.html
 
 The minimum set of attributes that describe a user.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface UserProfile extends Principal 
 ```
-<b>Extends:</b> [Principal](./security.principal.md)
+**Extends:** [Principal](./security.principal.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [email?](./security.userprofile.email.md) |  | string | <i>(Optional)</i> |
-|  [name?](./security.userprofile.name.md) |  | string | <i>(Optional)</i> |
+|  [email?](./security.userprofile.email.md) |  | string | _(Optional)_ |
+|  [name?](./security.userprofile.name.md) |  | string | _(Optional)_ |
 
 

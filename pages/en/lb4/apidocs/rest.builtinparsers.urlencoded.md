@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.urlencoded.html
 
 ## builtinParsers.urlencoded variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 urlencoded: unique symbol

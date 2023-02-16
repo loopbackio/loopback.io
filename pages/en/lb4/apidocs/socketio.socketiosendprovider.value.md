@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiosendprovider.value.html
 
 ## SocketIoSendProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): SocketIoSendMethod;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [SocketIoSendMethod](./socketio.socketiosendmethod.md)
 

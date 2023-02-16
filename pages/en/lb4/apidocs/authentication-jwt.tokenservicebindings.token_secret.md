@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.tokenservicebindings.token_sec
 
 ## TokenServiceBindings.TOKEN\_SECRET variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 TOKEN_SECRET: BindingKey<string>

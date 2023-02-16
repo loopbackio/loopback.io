@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.tagvaluematcher.html
 
 A function to check if a given tag value is matched for `filterByTag`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface TagValueMatcher 

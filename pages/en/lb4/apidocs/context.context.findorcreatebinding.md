@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.findorcreatebinding.html
 
 Find or create a binding for the given key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 findOrCreateBinding<T>(key: BindingAddress<T>, policy?: BindingCreationPolicy): Binding<T>;
@@ -26,9 +26,9 @@ findOrCreateBinding<T>(key: BindingAddress<T>, policy?: BindingCreationPolicy): 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding address |
-|  policy | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | <i>(Optional)</i> Binding creation policy |
+|  policy | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | _(Optional)_ Binding creation policy |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;T&gt;
 

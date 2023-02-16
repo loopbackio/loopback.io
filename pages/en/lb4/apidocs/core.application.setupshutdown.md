@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.core.application.setupshutdown.html
 
 Set up signals that are captured to shutdown the application
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected setupShutdown(): (signal: string) => Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 (signal: string) =&gt; Promise&lt;void&gt;
 

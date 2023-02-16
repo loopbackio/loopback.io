@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.restserveroptions.html
 
 RestServer options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RestServerOptions = Partial<RestServerResolvedOptions>;
 ```
-<b>References:</b> [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)
+**References:** [RestServerResolvedOptions](./rest.restserverresolvedoptions.md)
 
 

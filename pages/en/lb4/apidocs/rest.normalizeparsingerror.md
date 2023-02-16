@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.normalizeparsingerror.html
 
 Normalize parsing errors as `4xx`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function normalizeParsingError(err: HttpError): HttpError<number>;
@@ -27,7 +27,7 @@ export declare function normalizeParsingError(err: HttpError): HttpError<number>
 |  --- | --- | --- |
 |  err | HttpError |  |
 
-<b>Returns:</b>
+**Returns:**
 
 HttpError&lt;number&gt;
 

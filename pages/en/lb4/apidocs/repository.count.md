@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.count.html
 
 Count of Model instances that were successful for methods like `updateAll`<!-- -->, `deleteAll`<!-- -->, etc.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Count 

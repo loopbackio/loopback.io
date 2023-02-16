@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.html
 
 ## RestServerResolvedOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RestServerResolvedOptions 
@@ -24,15 +24,15 @@ export interface RestServerResolvedOptions
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [apiExplorer](./rest.restserverresolvedoptions.apiexplorer.md) |  | [ApiExplorerOptions](./rest.apiexploreroptions.md) |  |
-|  [basePath?](./rest.restserverresolvedoptions.basepath.md) |  | string | <i>(Optional)</i> Base path for API/static routes |
+|  [basePath?](./rest.restserverresolvedoptions.basepath.md) |  | string | _(Optional)_ Base path for API/static routes |
 |  [cors](./rest.restserverresolvedoptions.cors.md) |  | cors.CorsOptions |  |
 |  [expressSettings](./rest.restserverresolvedoptions.expresssettings.md) |  | { \[name: string\]: any; } |  |
-|  [listenOnStart?](./rest.restserverresolvedoptions.listenonstart.md) |  | boolean | <i>(Optional)</i> Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
+|  [listenOnStart?](./rest.restserverresolvedoptions.listenonstart.md) |  | boolean | _(Optional)_ Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
 |  [openApiSpec](./rest.restserverresolvedoptions.openapispec.md) |  | [OpenApiSpecOptions](./rest.openapispecoptions.md) |  |
-|  [path?](./rest.restserverresolvedoptions.path.md) |  | string | <i>(Optional)</i> |
+|  [path?](./rest.restserverresolvedoptions.path.md) |  | string | _(Optional)_ |
 |  [port](./rest.restserverresolvedoptions.port.md) |  | number |  |
-|  [requestBodyParser?](./rest.restserverresolvedoptions.requestbodyparser.md) |  | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | <i>(Optional)</i> |
+|  [requestBodyParser?](./rest.restserverresolvedoptions.requestbodyparser.md) |  | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | _(Optional)_ |
 |  [router](./rest.restserverresolvedoptions.router.md) |  | [RestRouterOptions](./rest.restrouteroptions.md) |  |
-|  [sequence?](./rest.restserverresolvedoptions.sequence.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | <i>(Optional)</i> |
+|  [sequence?](./rest.restserverresolvedoptions.sequence.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | _(Optional)_ |
 
 

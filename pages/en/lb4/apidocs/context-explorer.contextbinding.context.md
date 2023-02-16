@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextbinding.context.html
 
 ## ContextBinding.context property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly context: JSONObject;

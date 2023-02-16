@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.boot.modelapibooter.load.html
 
 Load the the model config files
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 load(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

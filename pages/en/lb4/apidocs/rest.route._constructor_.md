@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.route._constructor_.html
 
 Constructs a new instance of the `Route` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(verb: string, path: string, spec: OperationObject, _handler: Function);

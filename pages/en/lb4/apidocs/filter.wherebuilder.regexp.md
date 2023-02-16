@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.regexp.html
 
 Add a `regexp` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 regexp<K extends KeyOf<MT>>(key: K, val: string | RegExp): this;
@@ -28,7 +28,7 @@ regexp<K extends KeyOf<MT>>(key: K, val: string | RegExp): this;
 |  key | K | Property name |
 |  val | string \| RegExp | Regexp condition |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

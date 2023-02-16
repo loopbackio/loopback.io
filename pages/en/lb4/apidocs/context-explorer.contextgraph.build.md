@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextgraph.build.html
 
 Build a direct graph
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 build(): void;
 ```
-<b>Returns:</b>
+**Returns:**
 
 void
 

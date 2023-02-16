@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.controllerroute.html
 
 A route backed by a controller
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ControllerRoute<T extends object> extends BaseRoute 
 ```
-<b>Extends:</b> [BaseRoute](./rest.baseroute.md)
+**Extends:** [BaseRoute](./rest.baseroute.md)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.application_instance.html
 
 Binding key for application instance itself
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 APPLICATION_INSTANCE: BindingKey<Application>

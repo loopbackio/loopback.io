@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparser.parsers.html
 
 ## RequestBodyParser.parsers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly parsers: BodyParser[];

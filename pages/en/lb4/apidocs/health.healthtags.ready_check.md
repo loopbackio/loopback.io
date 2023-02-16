@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.health.healthtags.ready_check.html
 
 Binding tag for readiness check functions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 READY_CHECK = "health.readyCheck"

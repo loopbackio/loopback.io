@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.nonvoid.html
 
 Any type except `void`<!-- -->. We use this type to enforce that interceptor functions always return a value (including undefined or null).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type NonVoid = string | number | boolean | null | undefined | object;

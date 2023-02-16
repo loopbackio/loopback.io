@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.strategy.ht
 
 Key used to bind an authentication strategy or multiple strategies to the context for the authentication function to use.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 STRATEGY: BindingKey<AuthenticationStrategy | AuthenticationStrategy[] | undefined>

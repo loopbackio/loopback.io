@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.https_options.html
 
 Binding key for HTTPS options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 HTTPS_OPTIONS: BindingKey<https.ServerOptions<typeof import("http").IncomingMessage, typeof import("http").ServerResponse>>

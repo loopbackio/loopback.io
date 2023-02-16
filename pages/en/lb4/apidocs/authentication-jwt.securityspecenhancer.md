@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.securityspecenhancer.html
 
 A spec enhancer to add bearer token OpenAPI security entry to `spec.component.securitySchemes`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SecuritySpecEnhancer implements OASEnhancer 
 ```
-<b>Implements:</b> [OASEnhancer](./openapi-v3.oasenhancer.md)
+**Implements:** [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 ## Properties
 

@@ -17,7 +17,7 @@ Creates InclusionResolver for HasMany relation. Notice that this function only g
 
 Notice: scope field for inclusion is not supported yet.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createHasManyInclusionResolver<Target extends Entity, TargetID, TargetRelations extends object>(meta: HasManyDefinition, getTargetRepo: Getter<EntityCrudRepository<Target, TargetID, TargetRelations>>): InclusionResolver<Entity, Target>;
@@ -30,7 +30,7 @@ export declare function createHasManyInclusionResolver<Target extends Entity, Ta
 |  meta | [HasManyDefinition](./repository.hasmanydefinition.md) | resolved metadata of the hasMany relation |
 |  getTargetRepo | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID, TargetRelations&gt;&gt; | target repository i.e where related instances are |
 
-<b>Returns:</b>
+**Returns:**
 
 [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->, Target&gt;
 

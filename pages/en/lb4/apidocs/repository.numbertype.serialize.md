@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.numbertype.serialize.html
 
 ## NumberType.serialize() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 serialize(value: number | null | undefined): number | null | undefined;
@@ -25,7 +25,7 @@ serialize(value: number | null | undefined): number | null | undefined;
 |  --- | --- | --- |
 |  value | number \| null \| undefined |  |
 
-<b>Returns:</b>
+**Returns:**
 
 number \| null \| undefined
 

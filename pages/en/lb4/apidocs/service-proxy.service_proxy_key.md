@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.service_proxy_key.html
 
 ## SERVICE\_PROXY\_KEY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SERVICE_PROXY_KEY: MetadataAccessor<string, ServiceProxyDecorator>

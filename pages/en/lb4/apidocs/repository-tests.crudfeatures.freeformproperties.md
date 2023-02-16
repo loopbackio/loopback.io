@@ -17,7 +17,7 @@ Does the database (or the connector) require a fixed schema, or can it support a
 
 Default: `true`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 freeFormProperties: boolean;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.buffertype.name.html
 
 ## BufferType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "buffer";

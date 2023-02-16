@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormbindings.tag.html
 
 ## TypeOrmBindings.TAG variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 TAG = "typeOrmConnection"

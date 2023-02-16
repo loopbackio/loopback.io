@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.invokeobserver.htm
 
 Invoke an observer for the given event
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected invokeObserver(observer: LifeCycleObserver, event: keyof LifeCycleObserver): Promise<void>;
@@ -28,7 +28,7 @@ protected invokeObserver(observer: LifeCycleObserver, event: keyof LifeCycleObse
 |  observer | [LifeCycleObserver](./core.lifecycleobserver.md) | A life cycle observer |
 |  event | keyof [LifeCycleObserver](./core.lifecycleobserver.md) | Event name |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

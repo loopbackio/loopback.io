@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtoken.html
 
 ## RefreshToken class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class RefreshToken extends Entity 
 ```
-<b>Extends:</b> [Entity](./repository.entity.md)
+**Extends:** [Entity](./repository.entity.md)
 
 ## Constructors
 

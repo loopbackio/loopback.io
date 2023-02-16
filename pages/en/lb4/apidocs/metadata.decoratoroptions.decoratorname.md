@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratoroptions.decoratorname.html
 
 Name of the decorator for debugging purpose, such as `@inject`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 decoratorName?: string;

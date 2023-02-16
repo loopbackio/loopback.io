@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionerror._constructor_.html
 
 Constructs a new instance of the `ResolutionError` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(message: string, resolutionCtx: Partial<ResolutionContext>);

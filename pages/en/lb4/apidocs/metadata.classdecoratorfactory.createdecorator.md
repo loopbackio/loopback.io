@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.classdecoratorfactory.createdecorator.ht
 
 Create a class decorator function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static createDecorator<S>(key: MetadataKey<S, ClassDecorator>, spec: S, options?: DecoratorOptions): ClassDecorator;
@@ -27,9 +27,9 @@ static createDecorator<S>(key: MetadataKey<S, ClassDecorator>, spec: S, options?
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, ClassDecorator&gt; | Metadata key |
 |  spec | S | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | <i>(Optional)</i> Options for the decorator |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | _(Optional)_ Options for the decorator |
 
-<b>Returns:</b>
+**Returns:**
 
 ClassDecorator
 

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.command.html
 
 Type for a command
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Command = string | AnyObject;
 ```
-<b>References:</b> [AnyObject](./repository.anyobject.md)
+**References:** [AnyObject](./repository.anyobject.md)
 
 

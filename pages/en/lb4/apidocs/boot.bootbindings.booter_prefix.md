@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootbindings.booter_prefix.html
 
 ## BootBindings.BOOTER\_PREFIX variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOTER_PREFIX = "booters"

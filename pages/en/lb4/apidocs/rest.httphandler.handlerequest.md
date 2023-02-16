@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.handlerequest.html
 
 ## HttpHandler.handleRequest property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handleRequest: (request: Request, response: Response) => Promise<void>;

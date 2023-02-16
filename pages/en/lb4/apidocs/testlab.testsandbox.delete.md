@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.delete.html
 
 Deletes the TestSandbox.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

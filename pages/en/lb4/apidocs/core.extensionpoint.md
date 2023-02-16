@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.extensionpoint.html
 
 Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function extensionPoint(name: string, ...specs: BindingSpec[]): ClassDecorator;
@@ -28,7 +28,7 @@ export declare function extensionPoint(name: string, ...specs: BindingSpec[]): C
 |  name | string | Name of the extension point |
 |  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 ClassDecorator
 

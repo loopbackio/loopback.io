@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.openapispecoptions.html
 
 Options to customize how OpenAPI specs are served
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface OpenApiSpecOptions 
@@ -25,10 +25,10 @@ export interface OpenApiSpecOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [consolidate?](./rest.openapispecoptions.consolidate.md) |  | boolean | <i>(Optional)</i> Set this flag to <code>false</code> to disable OAS schema consolidation. If not set, the value defaults to <code>true</code>. |
-|  [disabled?](./rest.openapispecoptions.disabled.md) |  | true | <i>(Optional)</i> Set this flag to disable the endpoint for OpenAPI spec |
-|  [endpointMapping?](./rest.openapispecoptions.endpointmapping.md) |  | { \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; } | <i>(Optional)</i> Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> } |
-|  [servers?](./rest.openapispecoptions.servers.md) |  | ServerObject\[\] | <i>(Optional)</i> Configure servers for OpenAPI spec |
-|  [setServersFromRequest?](./rest.openapispecoptions.setserversfromrequest.md) |  | boolean | <i>(Optional)</i> A flag to force <code>servers</code> to be set from the http request for the OpenAPI spec |
+|  [consolidate?](./rest.openapispecoptions.consolidate.md) |  | boolean | _(Optional)_ Set this flag to <code>false</code> to disable OAS schema consolidation. If not set, the value defaults to <code>true</code>. |
+|  [disabled?](./rest.openapispecoptions.disabled.md) |  | true | _(Optional)_ Set this flag to disable the endpoint for OpenAPI spec |
+|  [endpointMapping?](./rest.openapispecoptions.endpointmapping.md) |  | { \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; } | _(Optional)_ Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> } |
+|  [servers?](./rest.openapispecoptions.servers.md) |  | ServerObject\[\] | _(Optional)_ Configure servers for OpenAPI spec |
+|  [setServersFromRequest?](./rest.openapispecoptions.setserversfromrequest.md) |  | boolean | _(Optional)_ A flag to force <code>servers</code> to be set from the http request for the OpenAPI spec |
 
 

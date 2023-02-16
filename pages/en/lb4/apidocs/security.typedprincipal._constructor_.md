@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.typedprincipal._constructor_.html
 
 Constructs a new instance of the `TypedPrincipal` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(principal: Principal, type: string);

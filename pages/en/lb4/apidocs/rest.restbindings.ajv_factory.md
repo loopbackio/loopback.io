@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.ajv_factory.html
 
 Binding key for AJV
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AJV_FACTORY: BindingKey<AjvFactory>

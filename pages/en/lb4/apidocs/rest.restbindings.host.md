@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.host.html
 
 Binding key for setting and injecting the host name of RestServer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 HOST: BindingKey<string | undefined>

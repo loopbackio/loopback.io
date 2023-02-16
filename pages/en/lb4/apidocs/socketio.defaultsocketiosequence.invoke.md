@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.defaultsocketiosequence.invoke.html
 
 ## DefaultSocketIoSequence.invoke property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected invoke: SocketIoInvokeMethod;

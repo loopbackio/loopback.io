@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.classdecoratorfactory.mergewithown.html
 
 ## ClassDecoratorFactory.mergeWithOwn() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected mergeWithOwn(ownMetadata: T, target: Object, member?: string, descriptorOrIndex?: TypedPropertyDescriptor<any> | number): T;
@@ -25,10 +25,10 @@ protected mergeWithOwn(ownMetadata: T, target: Object, member?: string, descript
 |  --- | --- | --- |
 |  ownMetadata | T |  |
 |  target | Object |  |
-|  member | string | <i>(Optional)</i> |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | <i>(Optional)</i> |
+|  member | string | _(Optional)_ |
+|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 T
 

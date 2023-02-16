@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutioncontext.options.html
 
 The options used for resolution
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly options: ResolutionOptions;

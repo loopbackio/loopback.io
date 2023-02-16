@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.servicemixindoc.component.html
 
 Add a component to this application. Also mounts all the components services.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 component(component: Constructor<unknown>): Binding;
@@ -27,7 +27,7 @@ component(component: Constructor<unknown>): Binding;
 |  --- | --- | --- |
 |  component | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | The component to add. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

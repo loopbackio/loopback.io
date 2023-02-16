@@ -17,7 +17,7 @@ Bind the key to a value computed by a Provider.
 
 \*
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toProvider(providerClass: Constructor<Provider<T>>): this;
@@ -29,7 +29,7 @@ toProvider(providerClass: Constructor<Provider<T>>): this;
 |  --- | --- | --- |
 |  providerClass | [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

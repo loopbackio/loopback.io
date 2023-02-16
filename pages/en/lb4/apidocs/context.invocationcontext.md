@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.invocationcontext.html
 
 InvocationContext represents the context to invoke interceptors for a method. The context can be used to access metadata about the invocation as well as other dependencies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class InvocationContext extends Context 
 ```
-<b>Extends:</b> [Context](./context.context.md)
+**Extends:** [Context](./context.context.md)
 
 ## Constructors
 
@@ -35,7 +35,7 @@ export declare class InvocationContext extends Context
 |  [args](./context.invocationcontext.args.md) | <code>readonly</code> | [InvocationArgs](./context.invocationargs.md) |  |
 |  [description](./context.invocationcontext.description.md) | <code>readonly</code> | string | Description of the invocation |
 |  [methodName](./context.invocationcontext.methodname.md) | <code>readonly</code> | string |  |
-|  [source?](./context.invocationcontext.source.md) | <code>readonly</code> | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | <i>(Optional)</i> |
+|  [source?](./context.invocationcontext.source.md) | <code>readonly</code> | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | _(Optional)_ |
 |  [target](./context.invocationcontext.target.md) | <code>readonly</code> | object |  |
 |  [targetClass](./context.invocationcontext.targetclass.md) | <code>readonly</code> | Function | The target class, such as <code>OrderController</code> |
 |  [targetName](./context.invocationcontext.targetname.md) | <code>readonly</code> | string | The target name, such as <code>OrderController.prototype.cancelOrder</code> |

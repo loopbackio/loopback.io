@@ -17,13 +17,13 @@ A type describing a model class created via `defineModelClass`<!-- -->.
 
 Assuming template arguments `BaseCtor` and `Props`<!-- -->, this type describes a class constructor with the following properties: - a constructor function accepting `DataObject<Props>` as the only argument, this argument is optional - all static fields (properties, methods) from `BaseCtor` are inherited and available as static fields on the dynamic class - all prototype fields from `BaseCtor` prototype are inherited and available as prototype fields on the dynamic class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type DynamicModelCtor<BaseCtor extends typeof Model, Props extends object> = {
     new (data?: DataObject<PrototypeOf<BaseCtor> & Props>): PrototypeOf<BaseCtor> & Props;
 } & BaseCtor;
 ```
-<b>References:</b> [Model](./repository.model.md)<!-- -->, [DataObject](./repository.dataobject.md)<!-- -->, [PrototypeOf](./repository.prototypeof.md)
+**References:** [Model](./repository.model.md)<!-- -->, [DataObject](./repository.dataobject.md)<!-- -->, [PrototypeOf](./repository.prototypeof.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.route._handler.html
 
 ## Route.\_handler property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly _handler: Function;

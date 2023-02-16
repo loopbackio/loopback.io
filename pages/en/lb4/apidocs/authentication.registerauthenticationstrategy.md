@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.registerauthenticationstrategy.htm
 
 Registers an authentication strategy as an extension of the AuthenticationBindings.AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME extension point.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function registerAuthenticationStrategy(context: Context, strategyClass: Constructor<AuthenticationStrategy>): Binding<unknown>;
@@ -28,7 +28,7 @@ export declare function registerAuthenticationStrategy(context: Context, strateg
 |  context | [Context](./context.context.md) | Context object |
 |  strategyClass | [Constructor](./context.constructor.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; | Class for the authentication strategy |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 

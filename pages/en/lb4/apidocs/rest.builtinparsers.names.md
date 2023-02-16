@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.names.html
 
 ## builtinParsers.names variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 names: (string | symbol)[]

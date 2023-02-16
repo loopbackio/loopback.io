@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.schemaref.html
 
 Custom LoopBack extension: a reference to Schema object that's bundled inside `definitions` property.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type SchemaRef = ReferenceObject & {

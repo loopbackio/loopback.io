@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.responsedecoratormetadataitem.html
 
 ## ResponseDecoratorMetadataItem interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ResponseDecoratorMetadataItem 

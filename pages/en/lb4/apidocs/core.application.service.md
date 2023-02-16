@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.service.html
 
 Add a service to this application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 service<S>(cls: ServiceOrProviderClass<S>, nameOrOptions?: string | ServiceOptions): Binding<S>;
@@ -26,9 +26,9 @@ service<S>(cls: ServiceOrProviderClass<S>, nameOrOptions?: string | ServiceOptio
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  cls | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt; | The service or provider class |
-|  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) | <i>(Optional)</i> |
+|  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;S&gt;
 

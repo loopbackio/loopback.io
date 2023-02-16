@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtservice._constructor_.html
 
 Constructs a new instance of the `JWTService` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(jwtSecret: string, jwtExpiresIn: string);

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.listening.html
 
 ## RestServer.listening property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get listening(): boolean;

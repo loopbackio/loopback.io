@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authentication_metadata_method_key
 
 The key used to store method-level metadata for `@authenticate`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_METADATA_METHOD_KEY: MetadataAccessor<AuthenticationMetadata, MethodDecorator>

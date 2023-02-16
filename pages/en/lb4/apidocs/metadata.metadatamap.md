@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatamap.html
 
 An object mapping keys to corresponding metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MetadataMap<T> 

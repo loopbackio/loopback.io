@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.request_body_parser_tag.html
 
 Binding tag for request body parser extensions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REQUEST_BODY_PARSER_TAG = "rest.requestBodyParser"

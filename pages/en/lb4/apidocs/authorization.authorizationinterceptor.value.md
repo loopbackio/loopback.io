@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationinterceptor.value.html
 
 ## AuthorizationInterceptor.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 value(): Interceptor;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Interceptor](./context.interceptor.md)
 

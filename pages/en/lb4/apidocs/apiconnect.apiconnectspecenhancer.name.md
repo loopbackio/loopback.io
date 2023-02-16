@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectspecenhancer.name.html
 
 ## ApiConnectSpecEnhancer.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

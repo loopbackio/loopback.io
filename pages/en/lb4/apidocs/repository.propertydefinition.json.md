@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.propertydefinition.json.html
 
 ## PropertyDefinition.json property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 json?: PropertyForm;

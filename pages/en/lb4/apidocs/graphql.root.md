@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.root.html
 
 ## root variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 root: typeof Root

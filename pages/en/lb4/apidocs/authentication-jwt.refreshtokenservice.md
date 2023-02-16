@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenservice.html
 
 The token refresh service. An access token expires in limited time. Therefore token refresh service is needed to keep replacing the old access token with a new one periodically.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RefreshTokenService 

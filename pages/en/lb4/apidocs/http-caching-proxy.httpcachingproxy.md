@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy.html
 
 The HTTP proxy implementation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class HttpCachingProxy 

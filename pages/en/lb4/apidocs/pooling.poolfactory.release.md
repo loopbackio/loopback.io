@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolfactory.release.html
 
 To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 release?(resource: T): ValueOrPromise<void>;
@@ -27,7 +27,7 @@ release?(resource: T): ValueOrPromise<void>;
 |  --- | --- | --- |
 |  resource | T | Resource instance |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 

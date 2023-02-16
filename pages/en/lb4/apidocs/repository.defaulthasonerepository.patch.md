@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.patch.html
 
 ## DefaultHasOneRepository.patch() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 patch(dataObject: DataObject<TargetEntity> | {
@@ -28,9 +28,9 @@ patch(dataObject: DataObject<TargetEntity> | {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt;; } |  |
-|  options | [Options](./repository.options.md) &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { isPolymorphic?: boolean; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

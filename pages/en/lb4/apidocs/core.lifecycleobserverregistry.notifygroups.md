@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.notifygroups.html
 
 Emit events to the observer groups
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected notifyGroups(events: (keyof LifeCycleObserver)[], groups: LifeCycleObserverGroup[], reverse?: boolean): Promise<void>;
@@ -27,9 +27,9 @@ protected notifyGroups(events: (keyof LifeCycleObserver)[], groups: LifeCycleObs
 |  --- | --- | --- |
 |  events | (keyof [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->)\[\] | Event names |
 |  groups | [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\] | Observer groups |
-|  reverse | boolean | <i>(Optional)</i> |
+|  reverse | boolean | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.find_route.html
 
 Binding key for setting and injecting a route finding function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 FIND_ROUTE: BindingKey<FindRoute>

@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.cron.cronjobconfig.html
 
 Configuration for a cron job.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type CronJobConfig = Partial<CronJobOptions>;
 ```
-<b>References:</b> [CronJobOptions](./cron.cronjoboptions.md)
+**References:** [CronJobOptions](./cron.cronjoboptions.md)
 
 

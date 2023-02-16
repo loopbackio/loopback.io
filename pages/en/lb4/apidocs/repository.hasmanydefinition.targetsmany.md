@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanydefinition.targetsmany.html
 
 ## HasManyDefinition.targetsMany property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetsMany: true;

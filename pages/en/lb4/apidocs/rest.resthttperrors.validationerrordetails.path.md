@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.validationerrordetails.path.h
 
 A path to the invalid field.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 path: string;

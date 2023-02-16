@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.filter.filterexcludingwhere.html
 
 Filter without `where` property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type FilterExcludingWhere<MT extends object = AnyObject> = Omit<Filter<MT>, 'where'>;
 ```
-<b>References:</b> [Filter](./filter.filter.md)
+**References:** [Filter](./filter.filter.md)
 
 

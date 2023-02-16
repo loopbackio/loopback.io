@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.property.html
 
 ## property namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace property 

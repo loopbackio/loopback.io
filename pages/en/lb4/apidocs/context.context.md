@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.context.html
 
 Context provides an implementation of Inversion of Control (IoC) container
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Context extends EventEmitter 
 ```
-<b>Extends:</b> EventEmitter
+**Extends:** EventEmitter
 
 ## Constructors
 
@@ -33,7 +33,7 @@ export declare class Context extends EventEmitter
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [\_debug](./context.context._debug.md) | <code>protected</code> | Debugger | A debug function which can be overridden by subclasses. |
-|  [\_parent?](./context.context._parent.md) | <code>protected</code> | [Context](./context.context.md) | <i>(Optional)</i> Parent context |
+|  [\_parent?](./context.context._parent.md) | <code>protected</code> | [Context](./context.context.md) | _(Optional)_ Parent context |
 |  [configResolver](./context.context.configresolver.md) | <code>protected</code> | [ConfigurationResolver](./context.configurationresolver.md) | Configuration resolver |
 |  [name](./context.context.name.md) | <code>readonly</code> | string | Name of the context |
 |  [registry](./context.context.registry.md) | <p><code>protected</code></p><p><code>readonly</code></p> | Map&lt;string, [Binding](./context.binding.md)<!-- -->&gt; | Key to binding map as the internal registry |

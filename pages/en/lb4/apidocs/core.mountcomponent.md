@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.mountcomponent.html
 
 Mount a component to an Application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function mountComponent(app: Application, component: Component): void;
@@ -28,7 +28,7 @@ export declare function mountComponent(app: Application, component: Component): 
 |  app | [Application](./core.application.md) | Application |
 |  component | [Component](./core.component.md) | Component instance |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

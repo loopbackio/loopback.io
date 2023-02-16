@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.application.awaitstate.html
 
 ## Application.awaitState() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected awaitState(state: string): Promise<void>;
@@ -25,7 +25,7 @@ protected awaitState(state: string): Promise<void>;
 |  --- | --- | --- |
 |  state | string |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextsubscriptionmanager.subscribe.html
 
 Add a context event observer to the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 subscribe(observer: ContextEventObserver): Subscription;
@@ -27,7 +27,7 @@ subscribe(observer: ContextEventObserver): Subscription;
 |  --- | --- | --- |
 |  observer | [ContextEventObserver](./context.contexteventobserver.md) | Context observer instance or function |
 
-<b>Returns:</b>
+**Returns:**
 
 [Subscription](./context.subscription.md)
 

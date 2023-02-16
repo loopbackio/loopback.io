@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox._constructor_.html
 
 Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(rootPath: string, options?: TestSandboxOptions);
@@ -26,7 +26,7 @@ constructor(rootPath: string, options?: TestSandboxOptions);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  rootPath | string | Root path of the TestSandbox. If relative it will be resolved against the current directory. |
-|  options | [TestSandboxOptions](./testlab.testsandboxoptions.md) | <i>(Optional)</i> Options to control if/how the sandbox creates a subdirectory for the sandbox. If not provided, the sandbox will automatically creates a unique temporary subdirectory. This allows sandboxes with the same root path can be used in parallel during testing. |
+|  options | [TestSandboxOptions](./testlab.testsandboxoptions.md) | _(Optional)_ Options to control if/how the sandbox creates a subdirectory for the sandbox. If not provided, the sandbox will automatically creates a unique temporary subdirectory. This allows sandboxes with the same root path can be used in parallel during testing. |
 
 ## Example
 

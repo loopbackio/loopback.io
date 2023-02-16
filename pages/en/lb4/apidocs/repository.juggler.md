@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.juggler.html
 
 ## juggler namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace juggler 

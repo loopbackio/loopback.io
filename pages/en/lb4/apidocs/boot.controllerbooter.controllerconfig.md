@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.controllerbooter.controllerconfig.html
 
 ## ControllerBooter.controllerConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 controllerConfig: ArtifactOptions;

@@ -17,7 +17,7 @@ An array of group names for upstream middleware in the cascading order.
 
 For example, the `invokeMethod` depends on `parseParams` for request processing. The `upstreamGroups` for `invokeMethod` should be `['parseParams']`<!-- -->. The order of groups in the array does not matter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 upstreamGroups?: string | string[];

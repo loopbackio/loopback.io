@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.deduplicate.html
 
 Dedupe an array
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function deduplicate<T>(input: T[]): T[];
@@ -27,7 +27,7 @@ export declare function deduplicate<T>(input: T[]): T[];
 |  --- | --- | --- |
 |  input | T\[\] | an array of sourceIds |
 
-<b>Returns:</b>
+**Returns:**
 
 T\[\]
 

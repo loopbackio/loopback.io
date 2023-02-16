@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.core.application.html
 
 Application is the container for various types of artifacts, such as components, servers, controllers, repositories, datasources, connectors, and models.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class Application extends Context implements LifeCycleObserver 
 ```
-<b>Extends:</b> [Context](./context.context.md)
+**Extends:** [Context](./context.context.md)
 
-<b>Implements:</b> [LifeCycleObserver](./core.lifecycleobserver.md)
+**Implements:** [LifeCycleObserver](./core.lifecycleobserver.md)
 
 ## Constructors
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restcomponent._constructor_.html
 
 Constructs a new instance of the `RestComponent` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, config?: RestComponentConfig);
@@ -26,6 +26,6 @@ constructor(app: Application, config?: RestComponentConfig);
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
-|  config | [RestComponentConfig](./rest.restcomponentconfig.md) | <i>(Optional)</i> |
+|  config | [RestComponentConfig](./rest.restcomponentconfig.md) | _(Optional)_ |
 
 

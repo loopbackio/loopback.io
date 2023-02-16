@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.context.configinjectionmetadata.html
 
 Injection metadata for `@config.*`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ConfigInjectionMetadata extends InjectionMetadata 
 ```
-<b>Extends:</b> [InjectionMetadata](./context.injectionmetadata.md)
+**Extends:** [InjectionMetadata](./context.injectionmetadata.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [fromBinding?](./context.configinjectionmetadata.frombinding.md) |  | [BindingAddress](./context.bindingaddress.md) | <i>(Optional)</i> Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used. |
-|  [propertyPath?](./context.configinjectionmetadata.propertypath.md) |  | string | <i>(Optional)</i> Property path to retrieve the configuration of the target binding, for example, <code>rest.host</code>. |
+|  [fromBinding?](./context.configinjectionmetadata.frombinding.md) |  | [BindingAddress](./context.bindingaddress.md) | _(Optional)_ Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used. |
+|  [propertyPath?](./context.configinjectionmetadata.propertypath.md) |  | string | _(Optional)_ Property path to retrieve the configuration of the target binding, for example, <code>rest.host</code>. |
 
 

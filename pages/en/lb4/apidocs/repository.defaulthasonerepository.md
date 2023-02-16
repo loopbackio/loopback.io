@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository.html
 
 ## DefaultHasOneRepository class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class DefaultHasOneRepository<TargetEntity extends Entity, TargetID, TargetRepository extends EntityCrudRepository<TargetEntity, TargetID>> implements HasOneRepository<TargetEntity> 
 ```
-<b>Implements:</b> [HasOneRepository](./repository.hasonerepository.md)<!-- -->&lt;TargetEntity&gt;
+**Implements:** [HasOneRepository](./repository.hasonerepository.md)<!-- -->&lt;TargetEntity&gt;
 
 ## Constructors
 

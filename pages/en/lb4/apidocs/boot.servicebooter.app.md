@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.servicebooter.app.html
 
 ## ServiceBooter.app property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 app: ApplicationWithServices;

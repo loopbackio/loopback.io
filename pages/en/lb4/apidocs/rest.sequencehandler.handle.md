@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.sequencehandler.handle.html
 
 Handle the request by running the configured sequence of actions.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(context: RequestContext): Promise<void>;
@@ -27,7 +27,7 @@ handle(context: RequestContext): Promise<void>;
 |  --- | --- | --- |
 |  context | [RequestContext](./rest.requestcontext.md) | The request context: HTTP request and response objects, per-request IoC container and more. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

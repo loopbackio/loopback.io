@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.kvconnector.deleteall.html
 
 Delete all entries
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteAll(modelClass: Class<Entity>, options?: Options): Promise<number>;
@@ -26,9 +26,9 @@ deleteAll(modelClass: Class<Entity>, options?: Options): Promise<number>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | Model class |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;
 

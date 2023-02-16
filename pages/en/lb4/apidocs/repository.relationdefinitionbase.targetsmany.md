@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.relationdefinitionbase.targetsmany.htm
 
 True for relations targeting multiple instances (e.g. HasMany), false for relations with a single target (e.g. BelongsTo, HasOne). This property is needed by OpenAPI/JSON Schema generator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 targetsMany: boolean;

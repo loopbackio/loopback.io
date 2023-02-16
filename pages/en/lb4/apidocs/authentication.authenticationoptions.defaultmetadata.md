@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationoptions.defaultmetad
 
 Default authentication metadata if a method or class is not decorated with `@authenticate`<!-- -->. If not set, no default authentication will be enforced for those methods without authentication metadata.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 defaultMetadata?: AuthenticationMetadata[];

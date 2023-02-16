@@ -19,7 +19,7 @@ If `ignoreUnknownProperty` is set to false, convert all properties in the model 
 
 See function `asObject` for each property's conversion rules.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toObject(options?: Options): Object;
@@ -29,9 +29,9 @@ toObject(options?: Options): Object;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Object
 

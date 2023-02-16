@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.stringtype.name.html
 
 ## StringType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "string";

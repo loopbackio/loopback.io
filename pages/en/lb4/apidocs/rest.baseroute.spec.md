@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute.spec.html
 
 ## BaseRoute.spec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly spec: OperationObject;

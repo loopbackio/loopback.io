@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.html
 
 Namespace for core binding keys
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace CoreBindings 

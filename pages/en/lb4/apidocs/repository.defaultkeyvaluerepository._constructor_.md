@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository._constructor
 
 Construct a KeyValueRepository with a legacy DataSource
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(entityClass: typeof Model & {

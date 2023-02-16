@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository-tests.crudrepositorytestsuite.html
 
 ## crudRepositoryTestSuite() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function crudRepositoryTestSuite(dataSourceOptions: DataSourceOptions, repositoryClass: CrudRepositoryCtor, partialFeatures: Partial<CrudFeatures>): void;
@@ -27,7 +27,7 @@ export declare function crudRepositoryTestSuite(dataSourceOptions: DataSourceOpt
 |  repositoryClass | [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md) |  |
 |  partialFeatures | Partial&lt;[CrudFeatures](./repository-tests.crudfeatures.md)<!-- -->&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

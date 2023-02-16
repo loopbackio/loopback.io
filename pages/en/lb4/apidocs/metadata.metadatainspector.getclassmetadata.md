@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.metadatainspector.getclassmetadata.html
 
 Get the metadata associated with the given key for a given class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getClassMetadata<T>(key: MetadataKey<T, ClassDecorator>, target: Function, options?: InspectionOptions): T | undefined;
@@ -27,9 +27,9 @@ static getClassMetadata<T>(key: MetadataKey<T, ClassDecorator>, target: Function
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ClassDecorator&gt; | Metadata key |
 |  target | Function | Class that contains the metadata |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> Options for inspection |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
 
-<b>Returns:</b>
+**Returns:**
 
 T \| undefined
 

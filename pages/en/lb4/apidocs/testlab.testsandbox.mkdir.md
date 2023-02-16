@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.testsandbox.mkdir.html
 
 Makes a directory in the TestSandbox
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mkdir(dir: string): Promise<void>;
@@ -27,7 +27,7 @@ mkdir(dir: string): Promise<void>;
 |  --- | --- | --- |
 |  dir | string | Name of directory to create (relative to TestSandbox path) |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

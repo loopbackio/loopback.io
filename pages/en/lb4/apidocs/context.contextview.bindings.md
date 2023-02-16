@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.bindings.html
 
 Get the list of matched bindings. If they are not cached, it tries to find them from the context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get bindings(): Readonly<Binding<T>>[];

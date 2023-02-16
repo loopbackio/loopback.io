@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.core.applicationmetadata.html
 
 Type description for `package.json`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ApplicationMetadata extends JSONObject 
 ```
-<b>Extends:</b> [JSONObject](./context.jsonobject.md)
+**Extends:** [JSONObject](./context.jsonobject.md)
 
 ## Properties
 

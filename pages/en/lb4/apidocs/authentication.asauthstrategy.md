@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.asauthstrategy.html
 
 A binding template for auth strategy contributor extensions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asAuthStrategy: BindingTemplate

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.toexpresspath.html
 
 Convert an OpenAPI path to Express (path-to-regexp) style
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function toExpressPath(path: string): string;
@@ -27,7 +27,7 @@ export declare function toExpressPath(path: string): string;
 |  --- | --- | --- |
 |  path | string | OpenAPI path with optional variables as <code>{var}</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

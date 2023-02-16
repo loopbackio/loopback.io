@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.once_4.html
 
 The "close" event is emitted when the view is closed (stopped observing context events)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 once(eventName: 'close', listener: () => void): this;
@@ -28,7 +28,7 @@ once(eventName: 'close', listener: () => void): this;
 |  eventName | 'close' | The name of the event - always <code>close</code>. |
 |  listener | () =&gt; void | The listener function to call when the event is emitted. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

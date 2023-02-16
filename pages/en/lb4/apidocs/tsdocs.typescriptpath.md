@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.typescriptpath.html
 
 Export the TypeScript path from `@loopback/build`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 typeScriptPath: any

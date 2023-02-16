@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.dryrun.html
 
 To have a dry-run without generating api reports/doc models
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dryRun?: boolean;

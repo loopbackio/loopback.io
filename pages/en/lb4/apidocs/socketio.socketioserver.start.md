@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioserver.start.html
 
 Start the socketio server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 start(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

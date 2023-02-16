@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.extractoroptions.ignoreerrors.html
 
 A flag to control if errors should be ignored
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ignoreErrors?: boolean;

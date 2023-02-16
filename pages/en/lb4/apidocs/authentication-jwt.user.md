@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.user.html
 
 ## User class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class User extends Entity 
 ```
-<b>Extends:</b> [Entity](./repository.entity.md)
+**Extends:** [Entity](./repository.entity.md)
 
 ## Constructors
 
@@ -31,11 +31,11 @@ export declare class User extends Entity
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [email](./authentication-jwt.user.email.md) |  | string |  |
-|  [emailVerified?](./authentication-jwt.user.emailverified.md) |  | boolean | <i>(Optional)</i> |
+|  [emailVerified?](./authentication-jwt.user.emailverified.md) |  | boolean | _(Optional)_ |
 |  [id](./authentication-jwt.user.id.md) |  | string |  |
-|  [realm?](./authentication-jwt.user.realm.md) |  | string | <i>(Optional)</i> |
+|  [realm?](./authentication-jwt.user.realm.md) |  | string | _(Optional)_ |
 |  [userCredentials](./authentication-jwt.user.usercredentials.md) |  | [UserCredentials](./authentication-jwt.usercredentials.md) |  |
-|  [username?](./authentication-jwt.user.username.md) |  | string | <i>(Optional)</i> |
-|  [verificationToken?](./authentication-jwt.user.verificationtoken.md) |  | string | <i>(Optional)</i> |
+|  [username?](./authentication-jwt.user.username.md) |  | string | _(Optional)_ |
+|  [verificationToken?](./authentication-jwt.user.verificationtoken.md) |  | string | _(Optional)_ |
 
 

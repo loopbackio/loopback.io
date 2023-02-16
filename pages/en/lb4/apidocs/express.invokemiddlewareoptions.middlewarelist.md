@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.middlewarelist.ht
 
 Pre-built middleware list. If set, the list will be used to create the middleware chain without discovering again within the context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 middlewareList?: MiddlewareOrKey[];

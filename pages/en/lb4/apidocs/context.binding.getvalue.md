@@ -19,7 +19,7 @@ Get the value bound to this key. Depending on `isSync`<!-- -->, this function re
 
 Consumers wishing to consume sync values directly should use `isPromiseLike` to check the type of the returned value to decide how to handle it.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getValue(ctx: Context, session?: ResolutionSession): ValueOrPromise<T>;
@@ -30,9 +30,9 @@ getValue(ctx: Context, session?: ResolutionSession): ValueOrPromise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context for the resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Optional session for binding and dependency resolution |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationerror.statuscode.html
 
 The status code for HTTP requests
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 statusCode?: number;

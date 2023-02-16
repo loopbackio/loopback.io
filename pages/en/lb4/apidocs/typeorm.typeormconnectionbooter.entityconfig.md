@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormconnectionbooter.entityconfig.html
 
 ## TypeOrmConnectionBooter.entityConfig property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 entityConfig: ArtifactOptions;

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.build.html
 
 Get the where object
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 build(): Where<MT>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Where](./filter.where.md)<!-- -->&lt;MT&gt;
 

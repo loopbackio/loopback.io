@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.apiexploreroptions.httpurl.html
 
 URL for the API explorer served over `http` protocol to deal with mixed content security imposed by browsers as the spec is exposed over `http` by default. See https://github.com/loopbackio/loopback-next/issues/1603
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 httpUrl?: string;

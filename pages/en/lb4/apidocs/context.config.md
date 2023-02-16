@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.config.html
 
 ## config namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace config 

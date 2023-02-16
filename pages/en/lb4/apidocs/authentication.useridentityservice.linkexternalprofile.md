@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.useridentityservice.linkexternalpr
 
 link an external profile with an existing local user id.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 linkExternalProfile(userId: string, userIdentity: I): Promise<U>;
@@ -28,7 +28,7 @@ linkExternalProfile(userId: string, userIdentity: I): Promise<U>;
 |  userId | string |  |
 |  userIdentity | I |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;U&gt;
 

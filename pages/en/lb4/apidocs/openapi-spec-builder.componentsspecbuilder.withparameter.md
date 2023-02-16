@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withpa
 
 Define a component parameter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withParameter(name: string, parameter: ParameterObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withParameter(name: string, parameter: ParameterObject | ReferenceObject): this;
 |  name | string | The name of the parameter |
 |  parameter | ParameterObject \| ReferenceObject | Specification of the parameter |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

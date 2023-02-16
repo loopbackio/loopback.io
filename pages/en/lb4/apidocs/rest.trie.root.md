@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.trie.root.html
 
 ## Trie.root property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly root: Node<T>;

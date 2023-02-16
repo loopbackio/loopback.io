@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.typeorm.typeormcomponent.bindings.html
 
 ## TypeOrmComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonedefinition.type.html
 
 ## HasOneDefinition.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: RelationType.hasOne;

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiotags.html
 
 ## SocketIoTags namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace SocketIoTags 

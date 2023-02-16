@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.rejectnavigationalpropertiesindata.htm
 
 Check model data for navigational properties linking to related models. Throw a descriptive error if any such property is found.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function rejectNavigationalPropertiesInData<M extends typeof Entity>(modelClass: M, data: DataObject<PrototypeOf<M>>): void;
@@ -28,7 +28,7 @@ export declare function rejectNavigationalPropertiesInData<M extends typeof Enti
 |  modelClass | M | Model constructor, e.g. <code>Product</code>. |
 |  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;[PrototypeOf](./repository.prototypeof.md)<!-- -->&lt;M&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

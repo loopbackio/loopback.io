@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlresolutioncontext._constructor_.ht
 
 Constructs a new instance of the `GraphQLResolutionContext` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(parent: Context, resolverClass: Constructor<unknown>, resolverData: ResolverData<unknown>);

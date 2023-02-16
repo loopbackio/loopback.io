@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.metrics.metricscomponent.html
 
 A component providing metrics for Prometheus
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class MetricsComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

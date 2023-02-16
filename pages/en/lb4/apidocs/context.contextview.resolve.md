@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.resolve.html
 
 Resolve values for the matching bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resolve(session?: ResolutionOptionsOrSession): ValueOrPromise<T[]>;
@@ -25,9 +25,9 @@ resolve(session?: ResolutionOptionsOrSession): ValueOrPromise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> Resolution session |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ Resolution session |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T\[\]&gt;
 

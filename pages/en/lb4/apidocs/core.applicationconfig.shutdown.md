@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.applicationconfig.shutdown.html
 
 Configuration for signals that shut down the application
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 shutdown?: ShutdownOptions;

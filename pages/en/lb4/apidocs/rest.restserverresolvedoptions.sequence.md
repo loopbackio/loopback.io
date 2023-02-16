@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.sequence.html
 
 ## RestServerResolvedOptions.sequence property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sequence?: Constructor<SequenceHandler>;

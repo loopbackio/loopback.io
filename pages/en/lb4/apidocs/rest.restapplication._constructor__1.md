@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication._constructor__1.html
 
 Create a REST application with the given configuration and parent context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(config?: ApplicationConfig, parent?: Context);
@@ -25,7 +25,7 @@ constructor(config?: ApplicationConfig, parent?: Context);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | [ApplicationConfig](./core.applicationconfig.md) | <i>(Optional)</i> Application configuration |
-|  parent | [Context](./context.context.md) | <i>(Optional)</i> Parent context |
+|  config | [ApplicationConfig](./core.applicationconfig.md) | _(Optional)_ Application configuration |
+|  parent | [Context](./context.context.md) | _(Optional)_ Parent context |
 
 

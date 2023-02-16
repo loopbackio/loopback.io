@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.proxysource._constructor_.html
 
 Constructs a new instance of the `ProxySource` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(value: ResolutionSession);

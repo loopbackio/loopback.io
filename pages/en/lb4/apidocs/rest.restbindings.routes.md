@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.routes.html
 
 Namespace for REST routes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ROUTES = "routes"

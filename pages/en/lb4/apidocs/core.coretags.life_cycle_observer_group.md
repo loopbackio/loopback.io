@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.coretags.life_cycle_observer_group.html
 
 Binding tag for group name of life cycle observers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LIFE_CYCLE_OBSERVER_GROUP = "lifeCycleObserverGroup"

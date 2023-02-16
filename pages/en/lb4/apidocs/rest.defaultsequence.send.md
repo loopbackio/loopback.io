@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.send.html
 
 ## DefaultSequence.send property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 send: Send;

@@ -17,7 +17,7 @@ keyTo: The foreign key used by the target model for this relation. keyFrom: The 
 
 E.g. when a Customer has one Address instance, then keyTo is "customerId". Note that "customerId" is the default FK assumed by the framework, users can provide a custom FK name by setting "keyTo". And Customer.id is keyFrom. keyFrom defaults to the id property of a model. Users can provide a custom source key name by setting "keyTo".
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 keyTo?: string;

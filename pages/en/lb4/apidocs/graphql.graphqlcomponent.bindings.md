@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlcomponent.bindings.html
 
 ## GraphQLComponent.bindings property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindings: Binding[];

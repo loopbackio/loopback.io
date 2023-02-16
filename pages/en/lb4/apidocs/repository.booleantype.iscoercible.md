@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.booleantype.iscoercible.html
 
 ## BooleanType.isCoercible() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isCoercible(value: any): boolean;
@@ -25,7 +25,7 @@ isCoercible(value: any): boolean;
 |  --- | --- | --- |
 |  value | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

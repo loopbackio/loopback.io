@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserverresolvedoptions.path.html
 
 ## RestServerResolvedOptions.path property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 path?: string;

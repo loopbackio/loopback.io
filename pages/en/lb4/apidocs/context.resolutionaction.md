@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.resolutionaction.html
 
 A function to be executed with the resolution session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ResolutionAction = (session: ResolutionSession) => ValueOrPromise<BoundValue>;
 ```
-<b>References:</b> [ResolutionSession](./context.resolutionsession.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [BoundValue](./context.boundvalue.md)
+**References:** [ResolutionSession](./context.resolutionsession.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)<!-- -->, [BoundValue](./context.boundvalue.md)
 
 

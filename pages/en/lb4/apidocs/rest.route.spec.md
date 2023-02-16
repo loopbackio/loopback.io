@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.route.spec.html
 
 ## Route.spec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly spec: OperationObject;

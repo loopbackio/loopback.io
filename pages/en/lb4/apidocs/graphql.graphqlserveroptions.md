@@ -15,20 +15,20 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserveroptions.html
 
 Options for GraphQL server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface GraphQLServerOptions extends HttpOptions 
 ```
-<b>Extends:</b> [HttpOptions](./http-server.httpoptions.md)
+**Extends:** [HttpOptions](./http-server.httpoptions.md)
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [apollo?](./graphql.graphqlserveroptions.apollo.md) |  | ApolloServerExpressConfig | <i>(Optional)</i> ApolloServerExpress related configuration |
-|  [asMiddlewareOnly?](./graphql.graphqlserveroptions.asmiddlewareonly.md) |  | boolean | <i>(Optional)</i> Use as a middleware for RestServer instead of a standalone server |
-|  [expressSettings?](./graphql.graphqlserveroptions.expresssettings.md) |  | Record&lt;string, unknown&gt; | <i>(Optional)</i> Express settings |
-|  [middlewareOptions?](./graphql.graphqlserveroptions.middlewareoptions.md) |  | GetMiddlewareOptions | <i>(Optional)</i> Middleware options for GraphQL |
+|  [apollo?](./graphql.graphqlserveroptions.apollo.md) |  | ApolloServerExpressConfig | _(Optional)_ ApolloServerExpress related configuration |
+|  [asMiddlewareOnly?](./graphql.graphqlserveroptions.asmiddlewareonly.md) |  | boolean | _(Optional)_ Use as a middleware for RestServer instead of a standalone server |
+|  [expressSettings?](./graphql.graphqlserveroptions.expresssettings.md) |  | Record&lt;string, unknown&gt; | _(Optional)_ Express settings |
+|  [middlewareOptions?](./graphql.graphqlserveroptions.middlewareoptions.md) |  | GetMiddlewareOptions | _(Optional)_ Middleware options for GraphQL |
 
 

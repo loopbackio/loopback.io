@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable._constructor_.html
 
 Constructs a new instance of the `RoutingTable` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(_router?: RestRouter, _externalRoutes?: ExternalExpressRoutes | undefined);
@@ -25,7 +25,7 @@ constructor(_router?: RestRouter, _externalRoutes?: ExternalExpressRoutes | unde
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  \_router | [RestRouter](./rest.restrouter.md) | <i>(Optional)</i> |
-|  \_externalRoutes | ExternalExpressRoutes \| undefined | <i>(Optional)</i> |
+|  \_router | [RestRouter](./rest.restrouter.md) | _(Optional)_ |
+|  \_externalRoutes | ExternalExpressRoutes \| undefined | _(Optional)_ |
 
 

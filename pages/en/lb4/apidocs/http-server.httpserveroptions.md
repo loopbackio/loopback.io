@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.http-server.httpserveroptions.html
 
 Possible server options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type HttpServerOptions = HttpOptions | HttpsOptions;
 ```
-<b>References:</b> [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
+**References:** [HttpOptions](./http-server.httpoptions.md)<!-- -->, [HttpsOptions](./http-server.httpsoptions.md)
 
 

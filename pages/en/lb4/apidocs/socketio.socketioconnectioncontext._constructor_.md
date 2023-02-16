@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketioconnectioncontext._constructor_.
 
 Constructs a new instance of the `SocketIoConnectionContext` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(socket: Socket, parent: Context);

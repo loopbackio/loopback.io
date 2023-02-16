@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.builderbase.withextension.ht
 
 Add a custom (extension) property to the spec object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withExtension(key: string, value: any): this;
@@ -28,7 +28,7 @@ withExtension(key: string, value: any): this;
 |  key | string | The property name starting with "x-". |
 |  value | any | The property value. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

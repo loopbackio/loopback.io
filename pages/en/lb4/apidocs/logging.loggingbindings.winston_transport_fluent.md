@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.logging.loggingbindings.winston_transport_fluent.
 
 Binding key for winston transport backed by fluent
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 WINSTON_TRANSPORT_FLUENT: BindingKey<WinstonTransport>

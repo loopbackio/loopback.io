@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelsettings.hiddenproperties.html
 
 Hides properties from response bodies
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 hiddenProperties?: string[];

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.basepath.html
 
 Configure the `basePath` for the rest server
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 basePath(path?: string): void;
@@ -25,9 +25,9 @@ basePath(path?: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  path | string | <i>(Optional)</i> Base path |
+|  path | string | _(Optional)_ Base path |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

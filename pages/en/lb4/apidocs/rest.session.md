@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.session.html
 
 interface to set variables in user session
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Session 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationoptions.html
 
 Options for authentication component
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AuthenticationOptions 
@@ -25,7 +25,7 @@ export interface AuthenticationOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultMetadata?](./authentication.authenticationoptions.defaultmetadata.md) |  | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] | <i>(Optional)</i> Default authentication metadata if a method or class is not decorated with <code>@authenticate</code>. If not set, no default authentication will be enforced for those methods without authentication metadata. |
-|  [failOnError?](./authentication.authenticationoptions.failonerror.md) |  | boolean | <i>(Optional)</i> This flag allows an authentication strategy to abort the authentication by throwing an error if <code>failOnError</code> is set to <code>true</code>. By default, the authentication process continues to the next one even when a strategy throws an error. If one of other strategies succeed, the error will be discarded. |
+|  [defaultMetadata?](./authentication.authenticationoptions.defaultmetadata.md) |  | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] | _(Optional)_ Default authentication metadata if a method or class is not decorated with <code>@authenticate</code>. If not set, no default authentication will be enforced for those methods without authentication metadata. |
+|  [failOnError?](./authentication.authenticationoptions.failonerror.md) |  | boolean | _(Optional)_ This flag allows an authentication strategy to abort the authentication by throwing an error if <code>failOnError</code> is set to <code>true</code>. By default, the authentication process continues to the next one even when a strategy throws an error. If one of other strategies succeed, the error will be discarded. |
 
 

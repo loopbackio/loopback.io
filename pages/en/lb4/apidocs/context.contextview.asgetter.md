@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.asgetter.html
 
 As a `Getter` function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asGetter(session?: ResolutionOptionsOrSession): Getter<T[]>;
@@ -25,9 +25,9 @@ asGetter(session?: ResolutionOptionsOrSession): Getter<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Getter&lt;T\[\]&gt;
 

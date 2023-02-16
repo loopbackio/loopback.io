@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.numbertype.name.html
 
 ## NumberType.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly name = "number";

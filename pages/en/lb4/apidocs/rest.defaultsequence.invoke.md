@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.defaultsequence.invoke.html
 
 ## DefaultSequence.invoke property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected invoke: InvokeMethod;

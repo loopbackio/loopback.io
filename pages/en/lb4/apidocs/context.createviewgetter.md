@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.createviewgetter.html
 
 Create a context view as a getter with the given filter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilter: BindingFilter, session?: ResolutionSession): Getter<T[]>;
@@ -27,9 +27,9 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
-|  session | [ResolutionSession](./context.resolutionsession.md) | <i>(Optional)</i> Resolution session |
+|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Resolution session |
 
-<b>Returns:</b>
+**Returns:**
 
 Getter&lt;T\[\]&gt;
 

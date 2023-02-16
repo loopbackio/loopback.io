@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.rest.parseparams.html
 
 A function to parse OpenAPI operation parameters for a given route
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ParseParams = (request: Request, route: ResolvedRoute) => Promise<OperationArgs>;
 ```
-<b>References:</b> [ResolvedRoute](./rest.resolvedroute.md)<!-- -->, [OperationArgs](./rest.operationargs.md)
+**References:** [ResolvedRoute](./rest.resolvedroute.md)<!-- -->, [OperationArgs](./rest.operationargs.md)
 
 

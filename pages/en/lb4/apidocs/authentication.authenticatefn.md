@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticatefn.html
 
 interface definition of a function which accepts a request and returns an authenticated user
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AuthenticateFn 

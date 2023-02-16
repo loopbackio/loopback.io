@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.getresolutionpath.html
 
 Get the resolution path including bindings and injections, for example: `bindingA --> @ClassA[0] --> bindingB --> @ClassB.prototype.prop1 --> bindingC`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getResolutionPath(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

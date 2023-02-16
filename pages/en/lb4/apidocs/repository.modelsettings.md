@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelsettings.html
 
 Defining the settings for a model See https://loopback.io/doc/en/lb4/Model.html\#supported-entries-of-model-definition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ModelSettings 
@@ -25,10 +25,10 @@ export interface ModelSettings
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [description?](./repository.modelsettings.description.md) |  | string | <i>(Optional)</i> Description of the model |
-|  [forceId?](./repository.modelsettings.forceid.md) |  | boolean | <i>(Optional)</i> Prevent clients from setting the auto-generated ID value manually |
-|  [hiddenProperties?](./repository.modelsettings.hiddenproperties.md) |  | string\[\] | <i>(Optional)</i> Hides properties from response bodies |
-|  [scope?](./repository.modelsettings.scope.md) |  | object | <i>(Optional)</i> Scope enables you to set a scope that will apply to every query made by the model's repository |
-|  [strict?](./repository.modelsettings.strict.md) |  | boolean \| 'filter' | <i>(Optional)</i> Specifies whether the model accepts only predefined properties or not |
+|  [description?](./repository.modelsettings.description.md) |  | string | _(Optional)_ Description of the model |
+|  [forceId?](./repository.modelsettings.forceid.md) |  | boolean | _(Optional)_ Prevent clients from setting the auto-generated ID value manually |
+|  [hiddenProperties?](./repository.modelsettings.hiddenproperties.md) |  | string\[\] | _(Optional)_ Hides properties from response bodies |
+|  [scope?](./repository.modelsettings.scope.md) |  | object | _(Optional)_ Scope enables you to set a scope that will apply to every query made by the model's repository |
+|  [strict?](./repository.modelsettings.strict.md) |  | boolean \| 'filter' | _(Optional)_ Specifies whether the model accepts only predefined properties or not |
 
 

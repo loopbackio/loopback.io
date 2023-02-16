@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.user_profile_not_found.html
 
 ## USER\_PROFILE\_NOT\_FOUND variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 USER_PROFILE_NOT_FOUND = "USER_PROFILE_NOT_FOUND"

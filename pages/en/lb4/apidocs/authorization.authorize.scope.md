@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.scope.html
 
 Shortcut to specify access scopes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 scope: (...scopes: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any

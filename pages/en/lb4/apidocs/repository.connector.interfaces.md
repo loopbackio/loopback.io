@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.connector.interfaces.html
 
 ## Connector.interfaces property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interfaces?: (string | ConnectorInterfaces.StrongRelation | ConnectorInterfaces.StrongJoins)[];

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareprovider.value.html
 
 ## InvokeMiddlewareProvider.value() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static value(
@@ -26,9 +26,9 @@ static value(
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  binding | [Binding](./context.binding.md)<!-- -->&lt;[InvokeMiddleware](./express.invokemiddleware.md)<!-- -->&gt; |  |
-|  defaultOptions | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | <i>(Optional)</i> |
+|  defaultOptions | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [InvokeMiddleware](./express.invokemiddleware.md)
 

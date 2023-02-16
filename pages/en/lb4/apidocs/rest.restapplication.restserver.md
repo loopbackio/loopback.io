@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.restserver.html
 
 The main REST server instance providing REST API for this application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get restServer(): RestServer;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionoptions.optional.html
 
 A boolean flag to indicate if the dependency is optional. If it's set to `true` and the binding is not bound in a context, the resolution will return `undefined` instead of throwing an error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 optional?: boolean;

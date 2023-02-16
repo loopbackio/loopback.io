@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationresult.html
 
 Return value for a method invocation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type InvocationResult = any;

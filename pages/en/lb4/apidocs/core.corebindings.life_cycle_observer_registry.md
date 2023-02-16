@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.life_cycle_observer_registry.ht
 
 Binding key for life cycle observer options
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LIFE_CYCLE_OBSERVER_REGISTRY: BindingKey<LifeCycleObserverRegistry>

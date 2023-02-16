@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.permission.action.html
 
 Action or access of a protected resources, such as `read`<!-- -->, `create`<!-- -->, `update`<!-- -->, or `delete`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 action: string;

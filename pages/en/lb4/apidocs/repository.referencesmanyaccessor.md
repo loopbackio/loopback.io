@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.referencesmanyaccessor.html
 
 ## ReferencesManyAccessor interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ReferencesManyAccessor<Target extends Entity, SourceId> 

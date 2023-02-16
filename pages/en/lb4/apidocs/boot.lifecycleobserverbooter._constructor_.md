@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.lifecycleobserverbooter._constructor_.html
 
 Constructs a new instance of the `LifeCycleObserverBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: Application, projectRoot: string, observerConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: Application, projectRoot: string, observerConfig?: ArtifactOpti
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
 |  projectRoot | string |  |
-|  observerConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  observerConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

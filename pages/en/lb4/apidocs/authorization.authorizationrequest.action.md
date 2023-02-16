@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationrequest.action.html
 
 The operation that the requestor performs on the resource.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 action: string;

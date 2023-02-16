@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.run.html
 
 Run the task with an acquired resource from the pool. If task is completed successfully, the resource is returned to the pool. Otherwise, the resource is destroyed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 run(task: (resource: T) => ValueOrPromise<void>, requestCtx?: Context): Promise<void>;
@@ -26,9 +26,9 @@ run(task: (resource: T) => ValueOrPromise<void>, requestCtx?: Context): Promise<
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  task | (resource: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt; | A function that accepts a resource and returns a Promise. |
-|  requestCtx | [Context](./context.context.md) | <i>(Optional)</i> |
+|  requestCtx | [Context](./context.context.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

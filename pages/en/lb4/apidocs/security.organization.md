@@ -13,11 +13,11 @@ permalink: /doc/en/lb4/apidocs.security.organization.html
 
 ## Organization interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface Organization extends Principal 
 ```
-<b>Extends:</b> [Principal](./security.principal.md)
+**Extends:** [Principal](./security.principal.md)
 
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.unlink
 
 ## DefaultHasManyThroughRepository.unlinkAll() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 unlinkAll(options?: Options & {
@@ -25,9 +25,9 @@ unlinkAll(options?: Options & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md)<!-- -->; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

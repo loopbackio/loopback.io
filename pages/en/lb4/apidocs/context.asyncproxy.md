@@ -15,14 +15,14 @@ permalink: /doc/en/lb4/apidocs.context.asyncproxy.html
 
 The proxy type for `T`<!-- -->. The return type for any method of `T` with original return type `R` becomes `ValueOrPromise<R>` if `R` does not extend `Promise`<!-- -->. Property types stay untouched.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AsyncProxy<T> = {
     [P in keyof T]: AsInterceptedFunction<T[P]>;
 };
 ```
-<b>References:</b> [AsInterceptedFunction](./context.asinterceptedfunction.md)
+**References:** [AsInterceptedFunction](./context.asinterceptedfunction.md)
 
 ## Example
 

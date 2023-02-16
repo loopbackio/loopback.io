@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.objecttype.html
 
 ## objectType variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 objectType: typeof ObjectType

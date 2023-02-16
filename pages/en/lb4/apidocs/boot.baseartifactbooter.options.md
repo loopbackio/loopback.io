@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.options.html
 
 Options being used by the Booter.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly options: ArtifactOptions;

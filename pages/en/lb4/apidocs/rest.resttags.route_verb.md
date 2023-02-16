@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.route_verb.html
 
 Binding tag for the REST route verb
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ROUTE_VERB = "restRouteVerb"

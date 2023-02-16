@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.tokenservice.generatetoken.html
 
 Generates a token string based on a user profile
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 generateToken(userProfile: UserProfile): Promise<string>;
@@ -27,7 +27,7 @@ generateToken(userProfile: UserProfile): Promise<string>;
 |  --- | --- | --- |
 |  userProfile | [UserProfile](./security.userprofile.md) | A UserProfile for which a token should be generated. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;string&gt;
 

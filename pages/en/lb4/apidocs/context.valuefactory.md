@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context.valuefactory.html
 
 A factory function for `toDynamicValue`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ValueFactory<T = unknown> = (resolutionCtx: ResolutionContext) => ValueOrPromise<T | undefined>;
 ```
-<b>References:</b> [ResolutionContext](./context.resolutioncontext.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
+**References:** [ResolutionContext](./context.resolutioncontext.md)<!-- -->, [ValueOrPromise](./context.valueorpromise.md)
 
 

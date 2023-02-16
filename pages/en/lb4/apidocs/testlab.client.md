@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.client.html
 
 ## Client type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Client = supertest.SuperTest<supertest.Test>;

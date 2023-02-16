@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.add.html
 
 Add a binding to the context. If a locked binding already exists with the same key, an error will be thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 add(binding: Binding<unknown>): this;
@@ -27,7 +27,7 @@ add(binding: Binding<unknown>): this;
 |  --- | --- | --- |
 |  binding | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt; | The configured binding to be added |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

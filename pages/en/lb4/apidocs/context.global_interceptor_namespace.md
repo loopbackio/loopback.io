@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.global_interceptor_namespace.html
 
 Default namespace for global interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GLOBAL_INTERCEPTOR_NAMESPACE = "globalInterceptors"

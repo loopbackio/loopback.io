@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.gettar
 
 ## DefaultHasManyThroughRepository.getTargetRepositoryDict property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getTargetRepositoryDict: {

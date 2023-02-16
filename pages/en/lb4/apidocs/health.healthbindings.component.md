@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.health.healthbindings.component.html
 
 ## HealthBindings.COMPONENT variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 COMPONENT: BindingKey<HealthComponent>

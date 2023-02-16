@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.getauthenticationmetadataforstrate
 
 Get the authentication metadata object for the specified strategy.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function getAuthenticationMetadataForStrategy(metadata: AuthenticationMetadata[], strategyName: string): AuthenticationMetadata | undefined;
@@ -28,7 +28,7 @@ export declare function getAuthenticationMetadataForStrategy(metadata: Authentic
 |  metadata | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] | Array of authentication metadata objects |
 |  strategyName | string | Name of the authentication strategy |
 
-<b>Returns:</b>
+**Returns:**
 
 [AuthenticationMetadata](./authentication.authenticationmetadata.md) \| undefined
 

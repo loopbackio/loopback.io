@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarecreationoptions.providerclassna
 
 Class name for the created provider class. It's only used if `injectConfiguration` is not set to `false`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 providerClassName?: string;

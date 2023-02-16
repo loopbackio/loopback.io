@@ -17,7 +17,7 @@ Decorate the given Controller constructor with metadata describing the HTTP/REST
 
 `@api` can be applied to controller classes.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function api(spec: Partial<ControllerSpec>): ClassDecorator;
@@ -29,7 +29,7 @@ export declare function api(spec: Partial<ControllerSpec>): ClassDecorator;
 |  --- | --- | --- |
 |  spec | Partial&lt;[ControllerSpec](./openapi-v3.controllerspec.md)<!-- -->&gt; | OpenAPI specification describing the endpoints handled by this controller |
 
-<b>Returns:</b>
+**Returns:**
 
 ClassDecorator
 

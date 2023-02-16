@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.sortbindingsbyphase.html
 
 Sort bindings by phase names denoted by a tag and the predefined order
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function sortBindingsByPhase<T = unknown>(bindings: Readonly<Binding<T>>[], phaseTagName?: string, orderOfPhases?: (string | symbol)[]): Readonly<Binding<T>>[];
@@ -26,10 +26,10 @@ export declare function sortBindingsByPhase<T = unknown>(bindings: Readonly<Bind
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | An array of bindings |
-|  phaseTagName | string | <i>(Optional)</i> Tag name for phase, for example, we can use the value <code>'a'</code> of tag <code>order</code> as the phase name for <code>binding.tag({order: 'a'})</code>. |
-|  orderOfPhases | (string \| symbol)\[\] | <i>(Optional)</i> An array of phase names as the predefined order |
+|  phaseTagName | string | _(Optional)_ Tag name for phase, for example, we can use the value <code>'a'</code> of tag <code>order</code> as the phase name for <code>binding.tag({order: 'a'})</code>. |
+|  orderOfPhases | (string \| symbol)\[\] | _(Optional)_ An array of phase names as the predefined order |
 
-<b>Returns:</b>
+**Returns:**
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
 

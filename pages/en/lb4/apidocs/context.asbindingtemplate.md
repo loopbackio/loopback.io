@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.asbindingtemplate.html
 
 Convert binding scope and tags as a template function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asBindingTemplate<T = unknown>(scopeAndTags: BindingScopeAndTags): BindingTemplate<T>;
@@ -27,7 +27,7 @@ export declare function asBindingTemplate<T = unknown>(scopeAndTags: BindingScop
 |  --- | --- | --- |
 |  scopeAndTags | [BindingScopeAndTags](./context.bindingscopeandtags.md) | Binding scope and tags |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;
 

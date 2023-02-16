@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.create.html
 
 Create a new key for a binding bound to a value of type `ValueType`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static create<V>(key: string, propertyPath?: string): BindingKey<V>;
@@ -26,9 +26,9 @@ static create<V>(key: string, propertyPath?: string): BindingKey<V>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string | The binding key. When propertyPath is not provided, the key is allowed to contain propertyPath as encoded via <code>BindingKey#toString()</code> |
-|  propertyPath | string | <i>(Optional)</i> Optional path to a deep property of the bound value. |
+|  propertyPath | string | _(Optional)_ Optional path to a deep property of the bound value. |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingKey](./context.bindingkey.md)<!-- -->&lt;V&gt;
 

@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.getbindingpath.html
 
 Get the binding path as `bindingA --> bindingB --> bindingC`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getBindingPath(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

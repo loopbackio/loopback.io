@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserveroptions.html
 
 ## LifeCycleObserverOptions type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type LifeCycleObserverOptions = {

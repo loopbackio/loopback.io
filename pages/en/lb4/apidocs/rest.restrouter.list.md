@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.rest.restrouter.list.html
 
 List all routes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 list(): RouteEntry[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 [RouteEntry](./rest.routeentry.md)<!-- -->\[\]
 

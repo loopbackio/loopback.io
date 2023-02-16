@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancerbindings.html
 
 ## OASEnhancerBindings namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace OASEnhancerBindings 

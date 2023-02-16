@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.path.html
 
 Binding key for setting and injecting the socket path of the RestServer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PATH: BindingKey<string | undefined>

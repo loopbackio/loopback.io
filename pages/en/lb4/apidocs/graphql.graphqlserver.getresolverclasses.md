@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.getresolverclasses.html
 
 Get a list of resolver classes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getResolverClasses(): Constructor<ResolverInterface<object>>[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 [Constructor](./context.constructor.md)<!-- -->&lt;ResolverInterface&lt;object&gt;&gt;\[\]
 

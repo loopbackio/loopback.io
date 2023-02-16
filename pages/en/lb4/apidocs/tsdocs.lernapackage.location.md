@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.lernapackage.location.html
 
 Location of the package
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 location: string;

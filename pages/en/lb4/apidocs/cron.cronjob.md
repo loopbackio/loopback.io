@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.cron.cronjob.html
 
 `@cronJob` decorates a cron job provider class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function cronJob(...specs: BindingSpec[]): ClassDecorator;
@@ -27,7 +27,7 @@ export declare function cronJob(...specs: BindingSpec[]): ClassDecorator;
 |  --- | --- | --- |
 |  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] | Extra binding specs |
 
-<b>Returns:</b>
+**Returns:**
 
 ClassDecorator
 

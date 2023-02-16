@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.datasource.name.html
 
 ## DataSource.name property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 name: string;

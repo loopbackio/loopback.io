@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.toalias.html
 
 Bind the key to an alias of another binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 toAlias(keyWithPath: BindingAddress<T>): this;
@@ -27,7 +27,7 @@ toAlias(keyWithPath: BindingAddress<T>): this;
 |  --- | --- | --- |
 |  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Target binding key with optional path, such as <code>servers.RestServer.options#apiExplorer</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

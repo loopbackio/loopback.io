@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.interceptorproviderbooter.interceptors.html
 
 ## InterceptorProviderBooter.interceptors property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interceptors: InterceptorProviderClass[];

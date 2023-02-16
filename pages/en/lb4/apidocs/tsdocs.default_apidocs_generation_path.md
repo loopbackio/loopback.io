@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.default_apidocs_generation_path.html
 
 Default path for apidocs to be generated for loopback.io site
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_APIDOCS_GENERATION_PATH = "docs/site/apidocs"

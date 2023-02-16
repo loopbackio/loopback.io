@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.component.lifecycleobservers.html
 
 ## Component.lifeCycleObservers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 lifeCycleObservers?: Constructor<LifeCycleObserver>[];

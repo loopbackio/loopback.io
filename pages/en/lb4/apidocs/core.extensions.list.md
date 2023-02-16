@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.extensions.list.html
 
 Inject an array of resolved extension instances for the extension point. The list is a snapshot of registered extensions when the injection is fulfilled. Extensions added or removed afterward won't impact the list.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function list(extensionPointName?: string, metadata?: InjectionMetadata): (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void;
@@ -25,10 +25,10 @@ function list(extensionPointName?: string, metadata?: InjectionMetadata): (targe
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  extensionPointName | string | <i>(Optional)</i> Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | <i>(Optional)</i> Optional injection metadata |
+|  extensionPointName | string | _(Optional)_ Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional injection metadata |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 

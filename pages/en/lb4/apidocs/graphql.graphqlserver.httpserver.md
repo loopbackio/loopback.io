@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.httpserver.html
 
 ## GraphQLServer.httpServer property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly httpServer?: HttpServer;

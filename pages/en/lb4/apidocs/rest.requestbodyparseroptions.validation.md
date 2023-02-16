@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestbodyparseroptions.validation.html
 
 Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as `json` or `text`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 validation?: ValidationOptions;

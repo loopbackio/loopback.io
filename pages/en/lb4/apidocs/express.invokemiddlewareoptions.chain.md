@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareoptions.chain.html
 
 Name of the extension point. Default to the `extensionPoint` tag value from the binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 chain?: string;

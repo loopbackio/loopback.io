@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymixindoc.repository.html
 
 Add a repository to this application.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 repository(repo: Class<Repository<any>>): Binding;
@@ -27,7 +27,7 @@ repository(repo: Class<Repository<any>>): Binding;
 |  --- | --- | --- |
 |  repo | [Class](./repository.class.md)<!-- -->&lt;[Repository](./repository.repository.md)<!-- -->&lt;any&gt;&gt; | The repository to add. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.getthr
 
 ## DefaultHasManyThroughRepository.getThroughConstraintFromSource property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getThroughConstraintFromSource: () => DataObject<ThroughEntity>;

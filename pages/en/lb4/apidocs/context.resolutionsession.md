@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.resolutionsession.html
 
 Object to keep states for a session to resolve bindings and their dependencies within a context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class ResolutionSession 

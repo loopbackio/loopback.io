@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationcontext.resource.html
 
 An name for the target resource to be accessed, such as `OrderController.prototype.cancelOrder`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 resource: string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.application.server.html
 
 Bind a Server constructor to the Application's master context. Each server constructor added in this way must provide a unique prefix to prevent binding overlap.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 server<T extends Server>(ctor: Constructor<T>, nameOrOptions?: string | BindingFromClassOptions): Binding<T>;
@@ -26,9 +26,9 @@ server<T extends Server>(ctor: Constructor<T>, nameOrOptions?: string | BindingF
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; |  |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | <i>(Optional)</i> Optional override for name or options. |
+|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Optional override for name or options. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;T&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.global_interceptor.html
 
 Binding tag for global interceptors
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GLOBAL_INTERCEPTOR = "globalInterceptor"

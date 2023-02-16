@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.describeinjectedproperties.html
 
 Return a map of injection objects for properties
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function describeInjectedProperties(target: Object): MetadataMap<Readonly<Injection>>;
@@ -27,7 +27,7 @@ export declare function describeInjectedProperties(target: Object): MetadataMap<
 |  --- | --- | --- |
 |  target | Object | The target class for static properties or prototype for instance properties. |
 
-<b>Returns:</b>
+**Returns:**
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;&gt;
 

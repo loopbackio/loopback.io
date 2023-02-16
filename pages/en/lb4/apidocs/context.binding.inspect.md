@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.binding.inspect.html
 
 Inspect the binding to return a json representation of the binding information
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inspect(options?: BindingInspectOptions): JSONObject;
@@ -25,9 +25,9 @@ inspect(options?: BindingInspectOptions): JSONObject;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [BindingInspectOptions](./context.bindinginspectoptions.md) | <i>(Optional)</i> Options to control what information should be included |
+|  options | [BindingInspectOptions](./context.bindinginspectoptions.md) | _(Optional)_ Options to control what information should be included |
 
-<b>Returns:</b>
+**Returns:**
 
 [JSONObject](./context.jsonobject.md)
 

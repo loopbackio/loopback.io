@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.filterbyserviceinterface.html
 
 Create a binding filter by service class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function filterByServiceInterface(serviceInterface: ServiceInterface): BindingFilter;
@@ -27,7 +27,7 @@ export declare function filterByServiceInterface(serviceInterface: ServiceInterf
 |  --- | --- | --- |
 |  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Service class matching the one used by <code>binding.toClass()</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingFilter](./context.bindingfilter.md)
 

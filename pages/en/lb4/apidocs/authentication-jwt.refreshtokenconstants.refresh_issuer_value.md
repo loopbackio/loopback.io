@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenconstants.refresh_
 
 The default issuer used when generating refresh token.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REFRESH_ISSUER_VALUE = "loopback4"

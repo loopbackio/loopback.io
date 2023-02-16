@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.shorthandequaltype.html
 
 Value types for `{propertyName: value}`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ShortHandEqualType = string | number | boolean | Date;

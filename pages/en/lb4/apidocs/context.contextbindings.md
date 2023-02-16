@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contextbindings.html
 
 Namespace for context bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ContextBindings 

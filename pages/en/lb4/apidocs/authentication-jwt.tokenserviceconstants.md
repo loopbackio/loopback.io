@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.tokenserviceconstants.html
 
 ## TokenServiceConstants namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace TokenServiceConstants 

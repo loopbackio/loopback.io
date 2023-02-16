@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.credentials.html
 
 A pre-defined type for user credentials. It assumes a user logs in using the email and password. You can modify it if your app has different credential fields
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Credentials = {

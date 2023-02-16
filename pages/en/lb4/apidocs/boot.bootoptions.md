@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.bootoptions.html
 
 Options to configure `Bootstrapper`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BootOptions = {
@@ -24,6 +24,6 @@ export type BootOptions = {
     [prop: string]: any;
 };
 ```
-<b>References:</b> [ArtifactOptions](./boot.artifactoptions.md)
+**References:** [ArtifactOptions](./boot.artifactoptions.md)
 
 

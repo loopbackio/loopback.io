@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.path.html
 
 Path parameter decorator
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 path: {

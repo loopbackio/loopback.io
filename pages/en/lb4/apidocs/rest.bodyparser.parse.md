@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.bodyparser.parse.html
 
 Parse the request body
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 parse(request: Request): Promise<RequestBody>;
@@ -27,7 +27,7 @@ parse(request: Request): Promise<RequestBody>;
 |  --- | --- | --- |
 |  request | Request | http request |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[RequestBody](./rest.requestbody.md)<!-- -->&gt;
 

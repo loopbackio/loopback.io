@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.jwtauthenticationcomponent.htm
 
 ## JWTAuthenticationComponent class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class JWTAuthenticationComponent implements Component 
 ```
-<b>Implements:</b> [Component](./core.component.md)
+**Implements:** [Component](./core.component.md)
 
 ## Constructors
 

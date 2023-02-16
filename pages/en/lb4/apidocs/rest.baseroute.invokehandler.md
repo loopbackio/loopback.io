@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.baseroute.invokehandler.html
 
 ## BaseRoute.invokeHandler() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 abstract invokeHandler(requestContext: Context, args: OperationArgs): Promise<OperationRetval>;
@@ -26,7 +26,7 @@ abstract invokeHandler(requestContext: Context, args: OperationArgs): Promise<Op
 |  requestContext | [Context](./context.context.md) |  |
 |  args | [OperationArgs](./rest.operationargs.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[OperationRetval](./rest.operationretval.md)<!-- -->&gt;
 

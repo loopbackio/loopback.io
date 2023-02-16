@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.model_api_builder_plugins.html
 
 Extension Point name for Model API builders.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MODEL_API_BUILDER_PLUGINS = "model-api-builders"

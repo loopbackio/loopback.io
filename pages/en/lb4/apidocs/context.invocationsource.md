@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationsource.html
 
 An interface to represent the caller of the invocation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InvocationSource<T = unknown> 

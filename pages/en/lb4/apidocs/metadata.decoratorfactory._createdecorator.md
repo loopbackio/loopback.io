@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.metadata.decoratorfactory._createdecorator.html
 
 Create a decorator function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected static _createDecorator<S, MT extends S | MetadataMap<S> | MetadataMap<S[]>, DT extends DecoratorType>(key: MetadataKey<S, DT>, spec: S, options?: DecoratorOptions): DT;
@@ -27,9 +27,9 @@ protected static _createDecorator<S, MT extends S | MetadataMap<S> | MetadataMap
 |  --- | --- | --- |
 |  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, DT&gt; | Metadata key |
 |  spec | S | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | <i>(Optional)</i> Options for the decorator |
+|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | _(Optional)_ Options for the decorator |
 
-<b>Returns:</b>
+**Returns:**
 
 DT
 

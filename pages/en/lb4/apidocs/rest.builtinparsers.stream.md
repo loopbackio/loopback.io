@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.stream.html
 
 ## builtinParsers.stream variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 stream: unique symbol

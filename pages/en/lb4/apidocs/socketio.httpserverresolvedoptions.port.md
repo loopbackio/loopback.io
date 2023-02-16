@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.httpserverresolvedoptions.port.html
 
 ## HttpServerResolvedOptions.port property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 port: number;

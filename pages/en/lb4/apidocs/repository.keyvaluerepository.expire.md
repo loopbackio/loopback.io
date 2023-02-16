@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.expire.html
 
 Set up ttl for an entry by key
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 expire(key: string, ttl: number, options?: Options): Promise<void>;
@@ -27,9 +27,9 @@ expire(key: string, ttl: number, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  key | string | Key for the entry |
 |  ttl | number | Ttl for the entry |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

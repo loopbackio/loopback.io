@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorycomponent.models.html
 
 An optional list of Model classes to bind for dependency injection via `app.model()` API.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 models?: Class<Model>[];

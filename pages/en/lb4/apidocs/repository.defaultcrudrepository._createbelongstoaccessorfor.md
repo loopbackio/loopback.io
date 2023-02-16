@@ -20,7 +20,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._createbelongsto
 > Use `this.createBelongsToAccessorFor()` instead
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _createBelongsToAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepositoryGetter: Getter<EntityCrudRepository<Target, TargetId>> | {
@@ -35,7 +35,7 @@ protected _createBelongsToAccessorFor<Target extends Entity, TargetId>(relationN
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [BelongsToAccessor](./repository.belongstoaccessor.md)<!-- -->&lt;Target, ID&gt;
 

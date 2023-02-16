@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.routingtable.describeapipaths.html
 
 ## RoutingTable.describeApiPaths() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 describeApiPaths(): PathObject;
 ```
-<b>Returns:</b>
+**Returns:**
 
 PathObject
 

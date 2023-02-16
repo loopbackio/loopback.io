@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.apiconnect.apiconnectbindings.html
 
 ## ApiConnectBindings namespace
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace ApiConnectBindings 

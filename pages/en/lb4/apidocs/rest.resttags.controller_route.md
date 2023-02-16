@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.controller_route.html
 
 Binding tag to identify controller based REST routes
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CONTROLLER_ROUTE = "controllerRoute"

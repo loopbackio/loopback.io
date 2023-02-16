@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.isfilter.html
 
 TypeGuard for Filter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function isFilter<MT extends object>(candidate: any): candidate is Filter<MT>;
@@ -27,7 +27,7 @@ export declare function isFilter<MT extends object>(candidate: any): candidate i
 |  --- | --- | --- |
 |  candidate | any |  |
 
-<b>Returns:</b>
+**Returns:**
 
 candidate is [Filter](./filter.filter.md)<!-- -->&lt;MT&gt;
 

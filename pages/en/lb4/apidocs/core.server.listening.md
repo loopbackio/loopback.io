@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.server.listening.html
 
 Tells whether the server is listening for connections or not
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly listening: boolean;

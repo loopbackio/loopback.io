@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.middlewaresequence.invokemiddleware.html
 
 ## MiddlewareSequence.invokeMiddleware property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly invokeMiddleware: InvokeMiddleware;

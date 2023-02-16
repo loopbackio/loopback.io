@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.skipontravis.html
 
 Helper function for skipping tests on Travis CI.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function skipOnTravis<ARGS extends unknown[], RETVAL>(verb: TestDefinition<ARGS, RETVAL> & {
@@ -31,7 +31,7 @@ export declare function skipOnTravis<ARGS extends unknown[], RETVAL>(verb: TestD
 |  name | string | The test name (the first argument of <code>verb</code> function). |
 |  args | ARGS | Additional arguments (framework specific), typically a function implementing the test. |
 
-<b>Returns:</b>
+**Returns:**
 
 RETVAL
 

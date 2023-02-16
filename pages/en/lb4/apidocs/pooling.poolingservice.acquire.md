@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.pooling.poolingservice.acquire.html
 
 Acquire a new instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 acquire(requestCtx?: Context): Promise<T>;
@@ -25,9 +25,9 @@ acquire(requestCtx?: Context): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestCtx | [Context](./context.context.md) | <i>(Optional)</i> Optional request context, default to the owning context |
+|  requestCtx | [Context](./context.context.md) | _(Optional)_ Optional request context, default to the owning context |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

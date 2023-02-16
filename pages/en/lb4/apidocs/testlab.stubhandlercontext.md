@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.stubhandlercontext.html
 
 ## stubHandlerContext() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function stubHandlerContext(requestOptions?: ShotRequestOptions): HandlerContextStub;
@@ -23,9 +23,9 @@ export declare function stubHandlerContext(requestOptions?: ShotRequestOptions):
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  requestOptions | ShotRequestOptions | <i>(Optional)</i> |
+|  requestOptions | ShotRequestOptions | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 [HandlerContextStub](./testlab.handlercontextstub.md)
 

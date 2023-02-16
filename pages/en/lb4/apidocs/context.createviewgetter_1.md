@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.createviewgetter_1.html
 
 Create a context view as a getter with the given filter and sort matched bindings by the comparator.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilter: BindingFilter, bindingComparator?: BindingComparator, session?: ResolutionOptionsOrSession): Getter<T[]>;
@@ -27,10 +27,10 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 |  --- | --- | --- |
 |  ctx | [Context](./context.context.md) | Context object |
 |  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
-|  bindingComparator | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> A function to compare two bindings |
-|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> Resolution session |
+|  bindingComparator | [BindingComparator](./context.bindingcomparator.md) | _(Optional)_ A function to compare two bindings |
+|  session | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ Resolution session |
 
-<b>Returns:</b>
+**Returns:**
 
 Getter&lt;T\[\]&gt;
 

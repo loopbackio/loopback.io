@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.restrouter.html
 
 ## RestRouter interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface RestRouter 

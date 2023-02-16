@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restapplication.static.html
 
 Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static(path: PathParams, rootDir: string, options?: ServeStaticOptions): void;
@@ -27,9 +27,9 @@ static(path: PathParams, rootDir: string, options?: ServeStaticOptions): void;
 |  --- | --- | --- |
 |  path | PathParams | The path(s) to serve the asset. See examples at https://expressjs.com/en/4x/api.html\#path-examples To avoid performance penalty, <code>/</code> is not allowed for now. |
 |  rootDir | string | The root directory from which to serve static assets |
-|  options | ServeStaticOptions | <i>(Optional)</i> Options for serve-static |
+|  options | ServeStaticOptions | _(Optional)_ Options for serve-static |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

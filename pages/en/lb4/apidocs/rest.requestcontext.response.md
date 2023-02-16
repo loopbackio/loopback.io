@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.requestcontext.response.html
 
 ## RequestContext.response property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly response: Response;

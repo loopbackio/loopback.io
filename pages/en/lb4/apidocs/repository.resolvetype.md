@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.resolvetype.html
 
 Resolve a type value that may have been provided via TypeResolver.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function resolveType<T extends object>(fn: TypeResolver<T, {}> | Class<T> | Function): Class<T>;
@@ -27,7 +27,7 @@ export declare function resolveType<T extends object>(fn: TypeResolver<T, {}> | 
 |  --- | --- | --- |
 |  fn | [TypeResolver](./repository.typeresolver.md)<!-- -->&lt;T, {}&gt; \| [Class](./repository.class.md)<!-- -->&lt;T&gt; \| Function | A type class or a type provider. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Class](./repository.class.md)<!-- -->&lt;T&gt;
 

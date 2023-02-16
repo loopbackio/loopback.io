@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest-explorer.restexplorerconfig.html
 
 Options to configure API Explorer UI
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RestExplorerConfig = {

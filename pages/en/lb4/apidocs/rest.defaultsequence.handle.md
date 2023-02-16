@@ -17,7 +17,7 @@ Runs the default sequence. Given a handler context (request and response), runni
 
 Default sequence executes these steps - Executes middleware for CORS, OpenAPI spec endpoints - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 handle(context: RequestContext): Promise<void>;
@@ -29,7 +29,7 @@ handle(context: RequestContext): Promise<void>;
 |  --- | --- | --- |
 |  context | [RequestContext](./rest.requestcontext.md) | The request context: HTTP request and response objects, per-request IoC container and more. |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

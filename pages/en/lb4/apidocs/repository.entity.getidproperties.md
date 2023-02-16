@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.repository.entity.getidproperties.html
 
 Get the names of identity properties (primary keys).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getIdProperties(): string[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 string\[\]
 

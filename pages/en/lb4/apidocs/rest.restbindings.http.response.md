@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.http.response.html
 
 Binding key for setting and injecting the http response
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 RESPONSE: BindingKey<Response<any, Record<string, any>>>

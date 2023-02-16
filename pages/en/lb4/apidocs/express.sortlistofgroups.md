@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.sortlistofgroups.html
 
 Sort the groups by their relative order
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function sortListOfGroups(...orderedGroups: string[][]): string[];
@@ -27,7 +27,7 @@ export declare function sortListOfGroups(...orderedGroups: string[][]): string[]
 |  --- | --- | --- |
 |  orderedGroups | string\[\]\[\] | A list of arrays - each of which represents a partial order of groups. |
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver._constructor_.html
 
 Constructs a new instance of the `ExpressServer` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(config?: ExpressServerConfig | undefined, parent?: Context);
@@ -25,7 +25,7 @@ constructor(config?: ExpressServerConfig | undefined, parent?: Context);
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  config | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | <i>(Optional)</i> |
-|  parent | [Context](./context.context.md) | <i>(Optional)</i> |
+|  config | [ExpressServerConfig](./express.expressserverconfig.md) \| undefined | _(Optional)_ |
+|  parent | [Context](./context.context.md) | _(Optional)_ |
 
 

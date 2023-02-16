@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.bind.html
 
 Create a binding with the given key in the context. If a locked binding already exists with the same key, an error will be thrown.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bind<ValueType = BoundValue>(key: BindingAddress<ValueType>): Binding<ValueType>;
@@ -27,7 +27,7 @@ bind<ValueType = BoundValue>(key: BindingAddress<ValueType>): Binding<ValueType>
 |  --- | --- | --- |
 |  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.injectiondescriptor.bindingselector.html
 
 ## InjectionDescriptor.bindingSelector property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindingSelector: BindingSelector;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withre
 
 Define a component response.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withResponse(name: string, response: ResponseObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withResponse(name: string, response: ResponseObject | ReferenceObject): this;
 |  name | string | The name of the response |
 |  response | ResponseObject \| ReferenceObject | Specification of the response |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

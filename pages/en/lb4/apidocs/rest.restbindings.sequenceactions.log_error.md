@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.sequenceactions.log_error.html
 
 Binding key for setting and injecting an error logging function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LOG_ERROR: BindingKey<LogError>

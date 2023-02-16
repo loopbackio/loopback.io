@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.asspecenhancer.html
 
 A binding template for spec contributor extensions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 asSpecEnhancer: BindingTemplate

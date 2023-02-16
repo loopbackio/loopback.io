@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.context.html
 
 ## LifeCycleObserverRegistry.context property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected readonly context: Context;

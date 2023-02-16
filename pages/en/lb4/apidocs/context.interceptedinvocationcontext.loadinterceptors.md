@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.interceptedinvocationcontext.loadintercep
 
 Load all interceptors for the given invocation context. It adds interceptors from possibly three sources: 1. method level `@intercept` 2. class level `@intercept` 3. global interceptors discovered in the context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 loadInterceptors(): InterceptorOrKey[];
 ```
-<b>Returns:</b>
+**Returns:**
 
 [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.interceptorbindingoptions.global.html
 
 Global or local interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 global?: boolean;

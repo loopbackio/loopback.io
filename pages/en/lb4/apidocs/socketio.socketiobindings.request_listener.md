@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobindings.request_listener.html
 
 ## SocketIoBindings.REQUEST\_LISTENER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REQUEST_LISTENER: BindingKey<RequestListener>

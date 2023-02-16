@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot._bindbooter.html
 
 ## \_bindBooter variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 _bindBooter: typeof bindBooter

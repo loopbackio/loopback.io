@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.metadata.parameterdecoratorfactory.create.html
 
 ## ParameterDecoratorFactory.create() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(): ParameterDecorator;
 ```
-<b>Returns:</b>
+**Returns:**
 
 ParameterDecorator
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultkeyvaluerepository.ttl.html
 
 ## DefaultKeyValueRepository.ttl() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ttl(key: string, options?: Options): Promise<number>;
@@ -24,9 +24,9 @@ ttl(key: string, options?: Options): Promise<number>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  key | string |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;number&gt;
 

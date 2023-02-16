@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.filterbytag.html
 
 Create a binding filter for the tag pattern
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingTagFilter;
@@ -27,7 +27,7 @@ export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingTag
 |  --- | --- | --- |
 |  tagPattern | [BindingTag](./context.bindingtag.md) \| RegExp | Binding tag name, regexp, or object |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingTagFilter](./context.bindingtagfilter.md)
 

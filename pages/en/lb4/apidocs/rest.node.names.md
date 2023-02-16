@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.node.names.html
 
 Names of the node if it contains named parameters
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 names?: string[];

@@ -17,7 +17,7 @@ permalink: /doc/en/lb4/apidocs.context.injectable.provider.html
 
 A list of binding scope/tags or template functions to configure the binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function provider(...specs: BindingSpec[]): (target: Constructor<unknown>) => void;
@@ -29,7 +29,7 @@ function provider(...specs: BindingSpec[]): (target: Constructor<unknown>) => vo
 |  --- | --- | --- |
 |  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;) =&gt; void
 

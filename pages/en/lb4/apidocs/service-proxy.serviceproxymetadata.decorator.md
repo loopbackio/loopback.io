@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.service-proxy.serviceproxymetadata.decorator.html
 
 ## ServiceProxyMetadata.decorator property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 decorator: string;

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingkey.buildkeyforconfig.html
 
 Build a binding key for the configuration of the given binding. The format is `<key>:$config`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static buildKeyForConfig<T>(key?: BindingAddress): BindingAddress<T>;
@@ -25,9 +25,9 @@ static buildKeyForConfig<T>(key?: BindingAddress): BindingAddress<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | <i>(Optional)</i> Key of the target binding to be configured |
+|  key | [BindingAddress](./context.bindingaddress.md) | _(Optional)_ Key of the target binding to be configured |
 
-<b>Returns:</b>
+**Returns:**
 
 [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
 

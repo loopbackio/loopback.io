@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.invocationoptions.html
 
 Options to control invocations
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type InvocationOptions = {
@@ -25,6 +25,6 @@ export type InvocationOptions = {
     session?: ResolutionSession;
 };
 ```
-<b>References:</b> [InvocationSource](./context.invocationsource.md)<!-- -->, [ResolutionSession](./context.resolutionsession.md)
+**References:** [InvocationSource](./context.invocationsource.md)<!-- -->, [ResolutionSession](./context.resolutionsession.md)
 
 

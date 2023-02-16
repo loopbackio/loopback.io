@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.apidocsoptions.apidocsextractionpath.html
 
 Path to tsdocs reports/models
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 apiDocsExtractionPath?: string;

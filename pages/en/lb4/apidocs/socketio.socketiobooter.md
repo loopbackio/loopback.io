@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobooter.html
 
 A class that extends [BaseArtifactBooter](./boot.baseartifactbooter.md) to boot the  artifact type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class SocketIoBooter extends BaseArtifactBooter 
 ```
-<b>Extends:</b> [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
 
 ## Remarks
 

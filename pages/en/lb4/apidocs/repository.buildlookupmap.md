@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.buildlookupmap.html
 
 Returns a map which maps key values(ids) to instances. The instances can be grouped by different strategies.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function buildLookupMap<Key, InType extends object, OutType = InType>(list: InType[], keyName: StringKeyOf<InType>, reducer: (accumulator: OutType | undefined, current: InType) => OutType): Map<Key, OutType>;
@@ -29,7 +29,7 @@ export declare function buildLookupMap<Key, InType extends object, OutType = InT
 |  keyName | [StringKeyOf](./repository.stringkeyof.md)<!-- -->&lt;InType&gt; | key name of the source |
 |  reducer | (accumulator: OutType \| undefined, current: InType) =&gt; OutType | a strategy to reduce inputs to single item or array |
 
-<b>Returns:</b>
+**Returns:**
 
 Map&lt;Key, OutType&gt;
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.builderbase._constructor_.ht
 
 Constructs a new instance of the `BuilderBase` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(initialSpec: T);

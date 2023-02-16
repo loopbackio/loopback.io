@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.contexttags.key.html
 
 Binding key for the artifact
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 KEY = "key"

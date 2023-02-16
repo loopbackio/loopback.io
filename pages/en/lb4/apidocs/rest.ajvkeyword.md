@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.ajvkeyword.html
 
 Ajv keyword definition with a name
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type AjvKeyword = KeywordDefinition;

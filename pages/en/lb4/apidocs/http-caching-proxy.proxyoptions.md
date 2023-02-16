@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.proxyoptions.html
 
 ## ProxyOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ProxyOptions 
@@ -24,9 +24,9 @@ export interface ProxyOptions
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [cachePath](./http-caching-proxy.proxyoptions.cachepath.md) |  | string | Directory where to keep the cached snapshots. |
-|  [logError?](./http-caching-proxy.proxyoptions.logerror.md) |  | boolean | <i>(Optional)</i> A flag if the error should be logged |
-|  [port?](./http-caching-proxy.proxyoptions.port.md) |  | number | <i>(Optional)</i> The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port) |
-|  [timeout?](./http-caching-proxy.proxyoptions.timeout.md) |  | number | <i>(Optional)</i> Timeout to connect to the target service |
-|  [ttl?](./http-caching-proxy.proxyoptions.ttl.md) |  | number | <p><i>(Optional)</i> How long to keep snapshots before making a new request to the backend. The value is in milliseconds.</p><p>Default: one day</p> |
+|  [logError?](./http-caching-proxy.proxyoptions.logerror.md) |  | boolean | _(Optional)_ A flag if the error should be logged |
+|  [port?](./http-caching-proxy.proxyoptions.port.md) |  | number | _(Optional)_ The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port) |
+|  [timeout?](./http-caching-proxy.proxyoptions.timeout.md) |  | number | _(Optional)_ Timeout to connect to the target service |
+|  [ttl?](./http-caching-proxy.proxyoptions.ttl.md) |  | number | <p>_(Optional)_ How long to keep snapshots before making a new request to the backend. The value is in milliseconds.</p><p>Default: one day</p> |
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.httphandler.registerapicomponents.html
 
 Merge components into the OpenApi spec
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 registerApiComponents(defs: ComponentsObject): void;
@@ -27,7 +27,7 @@ registerApiComponents(defs: ComponentsObject): void;
 |  --- | --- | --- |
 |  defs | ComponentsObject | Components |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

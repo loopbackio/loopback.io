@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingelement.html
 
 Wrapper for bindings tracked by resolution sessions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface BindingElement 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.core.corebindings.life_cycle_observers.html
 
 ## CoreBindings.LIFE\_CYCLE\_OBSERVERS variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LIFE_CYCLE_OBSERVERS = "lifeCycleObservers"

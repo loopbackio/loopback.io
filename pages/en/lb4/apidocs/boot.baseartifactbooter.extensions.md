@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.extensions.html
 
 File extensions to be searched
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 extensions: string[];

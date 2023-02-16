@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.userrepository.html
 
 Sample data to mock existing registered users new users can be registered with the repository functions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 userRepository: UserRepository

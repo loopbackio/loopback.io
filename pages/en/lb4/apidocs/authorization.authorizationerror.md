@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationerror.html
 
 The custom error class that describes the error thrown by the authorization module. Should be extracted to the common layer shared by authentication and authorization.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class AuthorizationError extends Error 
 ```
-<b>Extends:</b> Error
+**Extends:** Error
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [code?](./authorization.authorizationerror.code.md) |  | string | <i>(Optional)</i> Machine readable code, can be understood by any clients |
-|  [statusCode?](./authorization.authorizationerror.statuscode.md) |  | number | <i>(Optional)</i> The status code for HTTP requests |
+|  [code?](./authorization.authorizationerror.code.md) |  | string | _(Optional)_ Machine readable code, can be understood by any clients |
+|  [statusCode?](./authorization.authorizationerror.statuscode.md) |  | number | _(Optional)_ The status code for HTTP requests |
 
 

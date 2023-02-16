@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlserver.listening.html
 
 Is the GraphQL listening
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get listening(): boolean;

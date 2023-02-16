@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.middlewarecreationoptions.html
 
 Options for defining a middleware
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MiddlewareCreationOptions 
@@ -25,7 +25,7 @@ export interface MiddlewareCreationOptions
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [injectConfiguration?](./express.middlewarecreationoptions.injectconfiguration.md) |  | boolean \| 'watch' | <p><i>(Optional)</i> A flag to control if configuration for the middleware can be injected lazily.</p><p>- <code>true</code> (default): creates a provider class with <code>@config</code> - <code>false</code>: No configuration injection is supported - 'watch': creates a provider class with <code>@config.view</code></p> |
-|  [providerClassName?](./express.middlewarecreationoptions.providerclassname.md) |  | string | <i>(Optional)</i> Class name for the created provider class. It's only used if <code>injectConfiguration</code> is not set to <code>false</code>. |
+|  [injectConfiguration?](./express.middlewarecreationoptions.injectconfiguration.md) |  | boolean \| 'watch' | <p>_(Optional)_ A flag to control if configuration for the middleware can be injected lazily.</p><p>- <code>true</code> (default): creates a provider class with <code>@config</code> - <code>false</code>: No configuration injection is supported - 'watch': creates a provider class with <code>@config.view</code></p> |
+|  [providerClassName?](./express.middlewarecreationoptions.providerclassname.md) |  | string | _(Optional)_ Class name for the created provider class. It's only used if <code>injectConfiguration</code> is not set to <code>false</code>. |
 
 

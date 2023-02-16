@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.bindingtagfilter.bindingtagpattern.html
 
 A special property on the filter function to provide access to the binding tag pattern which can be utilized to optimize the matching of bindings by tag in a context.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 bindingTagPattern: BindingTag | RegExp;

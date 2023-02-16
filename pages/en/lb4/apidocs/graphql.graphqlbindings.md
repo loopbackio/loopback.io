@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.html
 
 Namespace for GraphQL related bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace GraphQLBindings 

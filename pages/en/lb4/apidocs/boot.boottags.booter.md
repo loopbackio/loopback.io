@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.boot.boottags.booter.html
 
 ## BootTags.BOOTER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 BOOTER = "booter"

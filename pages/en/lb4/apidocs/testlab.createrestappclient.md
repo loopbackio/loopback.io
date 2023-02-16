@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.createrestappclient.html
 
 Create a SuperTest client for a running RestApplication instance. It is the responsibility of the caller to ensure that the app is running and to stop the application after all tests are done.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function createRestAppClient(app: RestApplicationLike): supertest.SuperTest<supertest.Test>;
@@ -27,7 +27,7 @@ export declare function createRestAppClient(app: RestApplicationLike): supertest
 |  --- | --- | --- |
 |  app | [RestApplicationLike](./testlab.restapplicationlike.md) | A running (listening) instance of a RestApplication. |
 
-<b>Returns:</b>
+**Returns:**
 
 supertest.SuperTest&lt;supertest.Test&gt;
 

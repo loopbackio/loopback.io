@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.composeinterceptors.html
 
 Compose a list of interceptors as a single interceptor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function composeInterceptors<C extends Context = Context>(...interceptors: GenericInterceptorOrKey<C>[]): GenericInterceptor<C>;
@@ -27,7 +27,7 @@ export declare function composeInterceptors<C extends Context = Context>(...inte
 |  --- | --- | --- |
 |  interceptors | [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | A list of interceptor functions or binding keys |
 
-<b>Returns:</b>
+**Returns:**
 
 [GenericInterceptor](./context.genericinterceptor.md)<!-- -->&lt;C&gt;
 

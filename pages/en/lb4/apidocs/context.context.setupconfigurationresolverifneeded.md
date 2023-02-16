@@ -15,12 +15,12 @@ permalink: /doc/en/lb4/apidocs.context.context.setupconfigurationresolverifneede
 
 Set up the configuration resolver if needed
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected setupConfigurationResolverIfNeeded(): ConfigurationResolver;
 ```
-<b>Returns:</b>
+**Returns:**
 
 [ConfigurationResolver](./context.configurationresolver.md)
 

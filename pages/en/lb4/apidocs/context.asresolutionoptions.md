@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.asresolutionoptions.html
 
 Normalize ResolutionOptionsOrSession to ResolutionOptions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function asResolutionOptions(optionsOrSession?: ResolutionOptionsOrSession): ResolutionOptions;
@@ -25,9 +25,9 @@ export declare function asResolutionOptions(optionsOrSession?: ResolutionOptions
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  optionsOrSession | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | <i>(Optional)</i> resolution options or session |
+|  optionsOrSession | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ resolution options or session |
 
-<b>Returns:</b>
+**Returns:**
 
 [ResolutionOptions](./context.resolutionoptions.md)
 

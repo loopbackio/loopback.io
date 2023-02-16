@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.router.html
 
 Internal binding key for rest router
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ROUTER: BindingKey<RestRouter>

@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.rest.route.describe.html
 
 ## Route.describe() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 describe(): string;
 ```
-<b>Returns:</b>
+**Returns:**
 
 string
 

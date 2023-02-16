@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.cron.cronjob.onerror.html
 
 ## CronJob.onError() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 onError(listener: (err: unknown) => void): void;
@@ -25,7 +25,7 @@ onError(listener: (err: unknown) => void): void;
 |  --- | --- | --- |
 |  listener | (err: unknown) =&gt; void |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

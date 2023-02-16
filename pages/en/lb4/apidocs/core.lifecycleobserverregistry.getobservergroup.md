@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.lifecycleobserverregistry.getobservergroup.h
 
 Get the group for a given life cycle observer binding
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected getObserverGroup(binding: Readonly<Binding<LifeCycleObserver>>): string;
@@ -27,7 +27,7 @@ protected getObserverGroup(binding: Readonly<Binding<LifeCycleObserver>>): strin
 |  --- | --- | --- |
 |  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt; | Life cycle observer binding |
 
-<b>Returns:</b>
+**Returns:**
 
 string
 

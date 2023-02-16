@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitycrudrepository.inclusionresolver
 
 ## EntityCrudRepository.inclusionResolvers property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 inclusionResolvers: Map<string, InclusionResolver<T, Entity>>;

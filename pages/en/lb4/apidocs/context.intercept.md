@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.intercept.html
 
 Decorator function `@intercept` for classes/methods to apply interceptors. It can be applied on a class and its public methods. Multiple occurrences of `@intercept` are allowed on the same target class or method. The decorator takes a list of `interceptor` functions or binding keys.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor<any>) => any;
@@ -27,7 +27,7 @@ export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (ta
 |  --- | --- | --- |
 |  interceptorOrKeys | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | One or more interceptors or binding keys that are resolved to be interceptors |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: any, method?: string, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt;) =&gt; any
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.myuser.html
 
 A simple User model
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface MyUser 
@@ -25,13 +25,13 @@ export interface MyUser
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [email?](./mock-oauth2-provider.myuser.email.md) |  | string | <i>(Optional)</i> |
-|  [firstName?](./mock-oauth2-provider.myuser.firstname.md) |  | string | <i>(Optional)</i> |
+|  [email?](./mock-oauth2-provider.myuser.email.md) |  | string | _(Optional)_ |
+|  [firstName?](./mock-oauth2-provider.myuser.firstname.md) |  | string | _(Optional)_ |
 |  [id](./mock-oauth2-provider.myuser.id.md) |  | string |  |
-|  [lastName?](./mock-oauth2-provider.myuser.lastname.md) |  | string | <i>(Optional)</i> |
-|  [password?](./mock-oauth2-provider.myuser.password.md) |  | string | <i>(Optional)</i> |
+|  [lastName?](./mock-oauth2-provider.myuser.lastname.md) |  | string | _(Optional)_ |
+|  [password?](./mock-oauth2-provider.myuser.password.md) |  | string | _(Optional)_ |
 |  [signingKey](./mock-oauth2-provider.myuser.signingkey.md) |  | string |  |
-|  [token?](./mock-oauth2-provider.myuser.token.md) |  | string | <i>(Optional)</i> |
-|  [username?](./mock-oauth2-provider.myuser.username.md) |  | string | <i>(Optional)</i> |
+|  [token?](./mock-oauth2-provider.myuser.token.md) |  | string | _(Optional)_ |
+|  [username?](./mock-oauth2-provider.myuser.username.md) |  | string | _(Optional)_ |
 
 

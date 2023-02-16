@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.model-api-builder.modelapibuilder.pattern.html
 
 ## ModelApiBuilder.pattern property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly pattern: string;

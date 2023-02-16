@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.controllerspec.html
 
 ## ControllerSpec interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface ControllerSpec 
@@ -23,8 +23,8 @@ export interface ControllerSpec
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [basePath?](./openapi-v3.controllerspec.basepath.md) |  | string | <i>(Optional)</i> The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/). |
-|  [components?](./openapi-v3.controllerspec.components.md) |  | ComponentsObject | <i>(Optional)</i> OpenAPI components.schemas generated from model metadata |
+|  [basePath?](./openapi-v3.controllerspec.basepath.md) |  | string | _(Optional)_ The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/). |
+|  [components?](./openapi-v3.controllerspec.components.md) |  | ComponentsObject | _(Optional)_ OpenAPI components.schemas generated from model metadata |
 |  [paths](./openapi-v3.controllerspec.paths.md) |  | PathObject | The available paths and operations for the API. |
 
 

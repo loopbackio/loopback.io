@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.userservice.converttouserprofile.h
 
 Convert the user returned by `verifyCredentials()` to a common user profile that describes a user in your application
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 convertToUserProfile(user: U): UserProfile;
@@ -27,7 +27,7 @@ convertToUserProfile(user: U): UserProfile;
 |  --- | --- | --- |
 |  user | U | The user returned from <code>verifyCredentials()</code> |
 
-<b>Returns:</b>
+**Returns:**
 
 [UserProfile](./security.userprofile.md)
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlbindings.graphql_context_resolver.
 
 Binding key for the GraphQL context resolver
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 GRAPHQL_CONTEXT_RESOLVER: BindingKey<ContextFunction<ExpressContext, object>>

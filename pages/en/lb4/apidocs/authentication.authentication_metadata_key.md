@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authentication_metadata_key.html
 
 Alias for AUTHENTICATION\_METADATA\_METHOD\_KEY to keep it backward compatible
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 AUTHENTICATION_METADATA_KEY: MetadataAccessor<AuthenticationMetadata, MethodDecorator>

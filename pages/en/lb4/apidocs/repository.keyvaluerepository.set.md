@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.keyvaluerepository.set.html
 
 Set an entry with key/value
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 set(key: string, value: DataObject<T>, options?: Options): Promise<void>;
@@ -27,9 +27,9 @@ set(key: string, value: DataObject<T>, options?: Options): Promise<void>;
 |  --- | --- | --- |
 |  key | string | Key for the entry |
 |  value | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; | Value for the entry |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

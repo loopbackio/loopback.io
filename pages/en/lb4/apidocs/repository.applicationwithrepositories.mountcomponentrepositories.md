@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.applicationwithrepositories.mountcompo
 
 ## ApplicationWithRepositories.mountComponentRepositories() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 mountComponentRepositories(component: Class<unknown>): void;
@@ -25,7 +25,7 @@ mountComponentRepositories(component: Class<unknown>): void;
 |  --- | --- | --- |
 |  component | [Class](./repository.class.md)<!-- -->&lt;unknown&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

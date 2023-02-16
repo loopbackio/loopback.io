@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.resttags.rest_middleware_chain.html
 
 ## RestTags.REST\_MIDDLEWARE\_CHAIN variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 REST_MIDDLEWARE_CHAIN = "middlewareChain.default"

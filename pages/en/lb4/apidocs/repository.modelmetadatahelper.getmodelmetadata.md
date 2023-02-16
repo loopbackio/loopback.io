@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modelmetadatahelper.getmodelmetadata.h
 
 A utility function to simplify retrieving metadata from a target model and its properties.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getModelMetadata(target: Function, options?: InspectionOptions): ModelDefinition | {};
@@ -26,9 +26,9 @@ static getModelMetadata(target: Function, options?: InspectionOptions): ModelDef
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Function | The class from which to retrieve metadata. |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | <i>(Optional)</i> An options object for the MetadataInspector to customize the output of the metadata retrieval functions. |
+|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ An options object for the MetadataInspector to customize the output of the metadata retrieval functions. |
 
-<b>Returns:</b>
+**Returns:**
 
 [ModelDefinition](./repository.modeldefinition.md) \| {}
 

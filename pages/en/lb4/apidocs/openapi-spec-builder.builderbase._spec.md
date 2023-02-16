@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.builderbase._spec.html
 
 ## BuilderBase.\_spec property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected _spec: T;

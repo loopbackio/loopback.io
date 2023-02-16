@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.property.array.html
 
 ## property.array() function
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 function array(itemType: PropertyType, definition?: Partial<PropertyDefinition>): (target: object, propertyName: string) => void;
@@ -24,9 +24,9 @@ function array(itemType: PropertyType, definition?: Partial<PropertyDefinition>)
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  itemType | [PropertyType](./repository.propertytype.md) | The type of array items. Examples: <code>number</code>, <code>Product</code>, <code>() =&gt; Order</code>. |
-|  definition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | <i>(Optional)</i> Optional PropertyDefinition object for additional metadata |
+|  definition | Partial&lt;[PropertyDefinition](./repository.propertydefinition.md)<!-- -->&gt; | _(Optional)_ Optional PropertyDefinition object for additional metadata |
 
-<b>Returns:</b>
+**Returns:**
 
 (target: object, propertyName: string) =&gt; void
 

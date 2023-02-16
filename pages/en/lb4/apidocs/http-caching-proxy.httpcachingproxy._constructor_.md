@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy._constructor_
 
 Constructs a new instance of the `HttpCachingProxy` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(options: ProxyOptions);

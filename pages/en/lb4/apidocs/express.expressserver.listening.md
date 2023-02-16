@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.express.expressserver.listening.html
 
 Some of the methods below are copied from RestServer TODO(rfeng): We might want to refactor some methods from RestServer into the base ExpressServer.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 get listening(): boolean;

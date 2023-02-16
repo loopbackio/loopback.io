@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository._constructor_.ht
 
 Constructor of DefaultCrudRepository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(entityClass: typeof Entity & {

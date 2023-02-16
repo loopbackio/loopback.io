@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasonerepository.html
 
 CRUD operations for a target repository of a HasMany relation
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HasOneRepository<Target extends Entity> 

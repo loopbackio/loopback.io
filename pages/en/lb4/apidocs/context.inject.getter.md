@@ -19,7 +19,7 @@ This is useful when implementing Actions, where the action is instantiated for S
 
 See also `Getter<T>`<!-- -->.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getter: (bindingSelector: BindingSelector<unknown>, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasonerepository._constructor_.
 
 Constructor of DefaultHasOneEntityCrudRepository
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(getTargetRepository: Getter<TargetRepository> | {

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.loadclassesfromfiles.html
 
 Returns an Array of Classes from given files. Works by requiring the file, identifying the exports from the file by getting the keys of the file and then testing each exported member to see if it's a class or not.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function loadClassesFromFiles(files: string[], projectRootDir: string): Constructor<{}>[];
@@ -28,7 +28,7 @@ export declare function loadClassesFromFiles(files: string[], projectRootDir: st
 |  files | string\[\] | An array of string of absolute file paths |
 |  projectRootDir | string | The project root directory |
 
-<b>Returns:</b>
+**Returns:**
 
 [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;\[\]
 

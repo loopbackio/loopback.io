@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.validationoptions.ajverrortransformer.html
 
 A function that transform the `ErrorObject`<!-- -->s reported by AJV. This could be used for error messages customization, localization, etc.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 ajvErrorTransformer?: (errors: ErrorObject[]) => ErrorObject[];

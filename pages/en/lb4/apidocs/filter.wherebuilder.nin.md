@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.nin.html
 
 Add a `nin` condition
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 nin<K extends KeyOf<MT>>(key: K, val: MT[K][]): this;
@@ -28,7 +28,7 @@ nin<K extends KeyOf<MT>>(key: K, val: MT[K][]): this;
 |  key | K | Property name |
 |  val | MT\[K\]\[\] | An array of property values |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

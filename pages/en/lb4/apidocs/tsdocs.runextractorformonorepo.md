@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.tsdocs.runextractorformonorepo.html
 
 Run api-extractor for a lerna-managed monrepo
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function runExtractorForMonorepo(options?: ExtractorOptions): Promise<void>;
@@ -25,9 +25,9 @@ export declare function runExtractorForMonorepo(options?: ExtractorOptions): Pro
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | <i>(Optional)</i> Options for running api-extractor |
+|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | _(Optional)_ Options for running api-extractor |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

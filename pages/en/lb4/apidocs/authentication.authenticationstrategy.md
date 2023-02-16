@@ -17,7 +17,7 @@ An interface that describes the common authentication strategy.
 
 An authentication strategy is a class with an 'authenticate' method that verifies a user's credentials and returns the corresponding user profile.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface AuthenticationStrategy 

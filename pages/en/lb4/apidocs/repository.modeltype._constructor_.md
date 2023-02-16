@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeltype._constructor_.html
 
 Constructs a new instance of the `ModelType` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(modelClass: Class<T>);

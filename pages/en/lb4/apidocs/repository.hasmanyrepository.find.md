@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanyrepository.find.html
 
 Find target model instance(s)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(filter?: Filter<Target>, options?: Options): Promise<Target[]>;
@@ -25,10 +25,10 @@ find(filter?: Filter<Target>, options?: Options): Promise<Target[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> A filter object for where, order, limit, etc. |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  filter | [Filter](./filter.filter.md)<!-- -->&lt;Target&gt; | _(Optional)_ A filter object for where, order, limit, etc. |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;Target\[\]&gt;
 

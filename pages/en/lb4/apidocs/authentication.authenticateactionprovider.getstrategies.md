@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticateactionprovider.getstra
 
 ## AuthenticateActionProvider.getStrategies property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly getStrategies: Getter<AuthenticationStrategy | AuthenticationStrategy[] | undefined>;

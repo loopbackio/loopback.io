@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restserver.sequence.html
 
 Configure a custom sequence class for handling incoming requests.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 sequence(sequenceClass: Constructor<SequenceHandler>): Binding<SequenceHandler>;
@@ -27,7 +27,7 @@ sequence(sequenceClass: Constructor<SequenceHandler>): Binding<SequenceHandler>;
 |  --- | --- | --- |
 |  sequenceClass | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | The sequence class to invoke for each incoming request. |
 
-<b>Returns:</b>
+**Returns:**
 
 [Binding](./context.binding.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt;
 

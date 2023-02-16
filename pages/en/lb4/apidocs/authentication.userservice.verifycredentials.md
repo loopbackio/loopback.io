@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authentication.userservice.verifycredentials.html
 
 Verify the identity of a user, construct a corresponding user profile using the user information and return the user profile.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 verifyCredentials(credentials: C): Promise<U>;
@@ -27,7 +27,7 @@ verifyCredentials(credentials: C): Promise<U>;
 |  --- | --- | --- |
 |  credentials | C | Credentials for basic auth or configurations for 3rd party. Example see the |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;U&gt;
 

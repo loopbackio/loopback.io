@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.security.securitybindings.html
 
 Binding keys for security related metadata
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare namespace SecurityBindings 

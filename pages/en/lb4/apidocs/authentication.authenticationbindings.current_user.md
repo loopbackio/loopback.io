@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticationbindings.current_use
 
 ## AuthenticationBindings.CURRENT\_USER variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 CURRENT_USER: BindingKey<UserProfile>

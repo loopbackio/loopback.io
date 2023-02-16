@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository.patch.
 
 ## DefaultHasManyThroughRepository.patch() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 patch(dataObject: DataObject<TargetEntity> | {
@@ -32,10 +32,10 @@ patch(dataObject: DataObject<TargetEntity> | {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  dataObject | [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt; \| { \[polymorphicType: string\]: [DataObject](./repository.dataobject.md)<!-- -->&lt;TargetEntity&gt;; } |  |
-|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | <i>(Optional)</i> |
-|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { isPolymorphic?: boolean; } | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;TargetEntity&gt; | _(Optional)_ |
+|  options | [Options](./repository.options.md) &amp; { throughOptions?: [Options](./repository.options.md) &amp; { discriminator?: string; }; } &amp; { isPolymorphic?: boolean; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

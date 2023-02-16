@@ -13,17 +13,17 @@ permalink: /doc/en/lb4/apidocs.testlab.httpoptions.html
 
 ## HttpOptions interface
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface HttpOptions extends ListenOptions 
 ```
-<b>Extends:</b> ListenOptions
+**Extends:** ListenOptions
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [protocol?](./testlab.httpoptions.protocol.md) |  | 'http' | <i>(Optional)</i> |
+|  [protocol?](./testlab.httpoptions.protocol.md) |  | 'http' | _(Optional)_ |
 
 

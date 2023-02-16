@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.boundvalue.html
 
 ## BoundValue type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BoundValue = any;

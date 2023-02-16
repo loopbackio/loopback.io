@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.addrelation.html
 
 Define a new relation.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addRelation(definition: RelationMetadata): this;
@@ -27,7 +27,7 @@ addRelation(definition: RelationMetadata): this;
 |  --- | --- | --- |
 |  definition | [RelationMetadata](./repository.relationmetadata.md) | The definition of the new relation. |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

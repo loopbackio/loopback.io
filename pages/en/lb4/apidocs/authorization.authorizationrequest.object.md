@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorizationrequest.object.html
 
 The resource that is going to be accessed.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 object: string;

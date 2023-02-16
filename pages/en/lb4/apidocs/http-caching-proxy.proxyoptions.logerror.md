@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.proxyoptions.logerror.html
 
 A flag if the error should be logged
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 logError?: boolean;

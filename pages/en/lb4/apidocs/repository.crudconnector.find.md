@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudconnector.find.html
 
 Find matching entities by the filter
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 find(modelClass: Class<Entity>, filter?: Filter, options?: Options): Promise<EntityData[]>;
@@ -26,10 +26,10 @@ find(modelClass: Class<Entity>, filter?: Filter, options?: Options): Promise<Ent
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  modelClass | [Class](./repository.class.md)<!-- -->&lt;[Entity](./repository.entity.md)<!-- -->&gt; | The model class |
-|  filter | [Filter](./filter.filter.md) | <i>(Optional)</i> The query filter |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> Options for the operation |
+|  filter | [Filter](./filter.filter.md) | _(Optional)_ The query filter |
+|  options | [Options](./repository.options.md) | _(Optional)_ Options for the operation |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[EntityData](./repository.entitydata.md)<!-- -->\[\]&gt;
 

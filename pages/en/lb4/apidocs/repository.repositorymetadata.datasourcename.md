@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorymetadata.datasourcename.html
 
 Name of the data source
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dataSourceName?: string;

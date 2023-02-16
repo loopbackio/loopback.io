@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.default_type_namespaces.html
 
 ## DEFAULT\_TYPE\_NAMESPACES variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 DEFAULT_TYPE_NAMESPACES: TypeNamespaceMapping

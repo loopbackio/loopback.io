@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.middlewaresequence._constructor_.html
 
 Constructor: Injects `InvokeMiddleware` and `InvokeMiddlewareOptions`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(context: Context, invokeMiddleware: InvokeMiddleware, options?: InvokeMiddlewareOptions);
@@ -27,6 +27,6 @@ constructor(context: Context, invokeMiddleware: InvokeMiddleware, options?: Invo
 |  --- | --- | --- |
 |  context | [Context](./context.context.md) |  |
 |  invokeMiddleware | [InvokeMiddleware](./express.invokemiddleware.md) | invoker for registered middleware in a chain. To be injected via RestBindings.INVOKE\_MIDDLEWARE\_SERVICE. |
-|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | <i>(Optional)</i> |
+|  options | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) | _(Optional)_ |
 
 

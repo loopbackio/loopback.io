@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.inclusionresolver.html
 
 ## InclusionResolver type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type InclusionResolver<S extends Entity, T extends Entity> = (
@@ -21,6 +21,6 @@ sourceEntities: S[],
 inclusion: InclusionFilter, 
 options?: Options) => Promise<(T | undefined)[] | (T[] | undefined)[]>;
 ```
-<b>References:</b> [Entity](./repository.entity.md)<!-- -->, [InclusionFilter](./filter.inclusionfilter.md)<!-- -->, [Options](./repository.options.md)
+**References:** [Entity](./repository.entity.md)<!-- -->, [InclusionFilter](./filter.inclusionfilter.md)<!-- -->, [Options](./repository.options.md)
 
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.operators.html
 
 Operators for where clauses
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type Operators = 'eq' | 'neq' | 'gt' | 'gte' | 'lt' | 'lte' | 'inq' | 'nin' | 'between' | 'exists' | 'and' | 'or' | 'like' | 'nlike' | 'ilike' | 'nilike' | 'regexp';

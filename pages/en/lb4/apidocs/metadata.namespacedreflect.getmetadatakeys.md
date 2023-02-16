@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.getmetadatakeys.html
 
 ## NamespacedReflect.getMetadataKeys() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getMetadataKeys(target: Object, propertyKey?: string): string[];
@@ -24,9 +24,9 @@ getMetadataKeys(target: Object, propertyKey?: string): string[];
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  target | Object |  |
-|  propertyKey | string | <i>(Optional)</i> |
+|  propertyKey | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 string\[\]
 

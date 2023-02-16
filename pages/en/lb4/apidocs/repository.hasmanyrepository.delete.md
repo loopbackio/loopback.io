@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanyrepository.delete.html
 
 Delete multiple target model instances
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 delete(where?: Where<Target>, options?: Options): Promise<Count>;
@@ -25,10 +25,10 @@ delete(where?: Where<Target>, options?: Options): Promise<Count>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | <i>(Optional)</i> Instances within the where scope are deleted |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  where | [Where](./filter.where.md)<!-- -->&lt;Target&gt; | _(Optional)_ Instances within the where scope are deleted |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
 

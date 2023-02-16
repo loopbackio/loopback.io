@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.component.providers.html
 
 A map of providers to be bound to the application context
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 providers?: ProviderMap;

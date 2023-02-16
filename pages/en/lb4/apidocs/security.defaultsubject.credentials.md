@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.credentials.html
 
 ## DefaultSubject.credentials property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly credentials: Set<Credential>;

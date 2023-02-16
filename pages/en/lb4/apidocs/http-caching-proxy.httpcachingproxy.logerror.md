@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.httpcachingproxy.logerror.html
 
 ## HttpCachingProxy.logError() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 logError(request: IncomingMessage, error: Error): void;
@@ -26,7 +26,7 @@ logError(request: IncomingMessage, error: Error): void;
 |  request | IncomingMessage |  |
 |  error | Error |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

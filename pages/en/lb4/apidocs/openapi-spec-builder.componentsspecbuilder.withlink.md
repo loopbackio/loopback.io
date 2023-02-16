@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.componentsspecbuilder.withli
 
 Define a component link.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 withLink(name: string, link: LinkObject | ReferenceObject): this;
@@ -28,7 +28,7 @@ withLink(name: string, link: LinkObject | ReferenceObject): this;
 |  name | string | The name of the link |
 |  link | LinkObject \| ReferenceObject | Specification of the link |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

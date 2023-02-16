@@ -20,7 +20,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.cast.html
 > Cast an `and`<!-- -->, `or`<!-- -->, or condition clause to Where
 > 
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 cast(clause: AndClause<MT> | OrClause<MT> | Condition<MT>): Where<MT>;
@@ -32,7 +32,7 @@ cast(clause: AndClause<MT> | OrClause<MT> | Condition<MT>): Where<MT>;
 |  --- | --- | --- |
 |  clause | [AndClause](./filter.andclause.md)<!-- -->&lt;MT&gt; \| [OrClause](./filter.orclause.md)<!-- -->&lt;MT&gt; \| [Condition](./filter.condition.md)<!-- -->&lt;MT&gt; | And/Or/Condition clause |
 
-<b>Returns:</b>
+**Returns:**
 
 [Where](./filter.where.md)<!-- -->&lt;MT&gt;
 

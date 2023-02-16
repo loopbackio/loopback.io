@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaultcrudrepository.createreferences
 
 Function to create a references many accessor
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 protected createReferencesManyAccessorFor<Target extends Entity, TargetId>(relationName: string, targetRepoGetter: Getter<EntityCrudRepository<Target, TargetId>>): ReferencesManyAccessor<Target, ID>;
@@ -28,7 +28,7 @@ protected createReferencesManyAccessorFor<Target extends Entity, TargetId>(relat
 |  relationName | string | Name of the relation defined on the source model |
 |  targetRepoGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ReferencesManyAccessor](./repository.referencesmanyaccessor.md)<!-- -->&lt;Target, ID&gt;
 

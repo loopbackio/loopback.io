@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.entitynotfounderror.entityid.html
 
 ## EntityNotFoundError.entityId property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 entityId: ID;

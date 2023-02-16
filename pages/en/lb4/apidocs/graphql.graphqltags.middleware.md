@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqltags.middleware.html
 
 Tag for GraphQL middleware bindings
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MIDDLEWARE = "graphql.middleware"

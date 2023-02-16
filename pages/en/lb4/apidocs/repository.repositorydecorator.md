@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.repositorydecorator.html
 
 Type definition for decorators returned by `@repository` decorator factory
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type RepositoryDecorator = (target: Object, key?: string, descriptorOrIndex?: TypedPropertyDescriptor<any> | number) => void;

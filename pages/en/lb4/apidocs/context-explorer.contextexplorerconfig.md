@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context-explorer.contextexplorerconfig.html
 
 Options to configure Context Explorer
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ContextExplorerConfig = {

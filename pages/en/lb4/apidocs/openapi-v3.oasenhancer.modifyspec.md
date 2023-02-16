@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.oasenhancer.modifyspec.html
 
 ## OASEnhancer.modifySpec() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 modifySpec(spec: OpenApiSpec): ValueOrPromise<OpenApiSpec>;
@@ -25,7 +25,7 @@ modifySpec(spec: OpenApiSpec): ValueOrPromise<OpenApiSpec>;
 |  --- | --- | --- |
 |  spec | [OpenApiSpec](./openapi-v3.openapispec.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;[OpenApiSpec](./openapi-v3.openapispec.md)<!-- -->&gt;
 

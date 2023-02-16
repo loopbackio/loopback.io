@@ -13,12 +13,12 @@ permalink: /doc/en/lb4/apidocs.boot.applicationmetadatabooter.configure.html
 
 ## ApplicationMetadataBooter.configure() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 configure(): Promise<void>;
 ```
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

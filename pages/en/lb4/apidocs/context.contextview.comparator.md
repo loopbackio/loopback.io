@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.context.contextview.comparator.html
 
 ## ContextView.comparator property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly comparator?: BindingComparator | undefined;

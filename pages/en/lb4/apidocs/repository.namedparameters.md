@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.repository.namedparameters.html
 
 Named parameters, such as `{x: 1, y: 'a'}`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type NamedParameters = AnyObject;
 ```
-<b>References:</b> [AnyObject](./repository.anyobject.md)
+**References:** [AnyObject](./repository.anyobject.md)
 
 

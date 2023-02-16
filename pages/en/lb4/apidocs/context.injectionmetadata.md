@@ -15,18 +15,18 @@ permalink: /doc/en/lb4/apidocs.context.injectionmetadata.html
 
 An object to provide metadata for `@inject`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export interface InjectionMetadata extends Omit<ResolutionOptions, 'session'> 
 ```
-<b>Extends:</b> Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
+**Extends:** Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
 
 ## Properties
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [bindingComparator?](./context.injectionmetadata.bindingcomparator.md) |  | [BindingComparator](./context.bindingcomparator.md) | <i>(Optional)</i> Optional comparator for matched bindings |
-|  [decorator?](./context.injectionmetadata.decorator.md) |  | string | <i>(Optional)</i> Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
+|  [bindingComparator?](./context.injectionmetadata.bindingcomparator.md) |  | [BindingComparator](./context.bindingcomparator.md) | _(Optional)_ Optional comparator for matched bindings |
+|  [decorator?](./context.injectionmetadata.decorator.md) |  | string | _(Optional)_ Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
 
 

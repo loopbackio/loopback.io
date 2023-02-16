@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.defaulthasmanythroughrepository._const
 
 Constructs a new instance of the `DefaultHasManyThroughRepository` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(getTargetRepository: Getter<TargetRepository> | {

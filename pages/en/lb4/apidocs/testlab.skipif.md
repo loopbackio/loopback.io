@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.testlab.skipif.html
 
 Helper function for skipping tests when a certain condition is met.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function skipIf<ARGS extends unknown[], RETVAL>(skip: boolean, verb: TestDefinition<ARGS, RETVAL> & {
@@ -32,7 +32,7 @@ export declare function skipIf<ARGS extends unknown[], RETVAL>(skip: boolean, ve
 |  name | string | The test name (the first argument of <code>verb</code> function). |
 |  args | ARGS | Additional arguments (framework specific), typically a function implementing the test. |
 
-<b>Returns:</b>
+**Returns:**
 
 RETVAL
 

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.belongstodefinition.type.html
 
 ## BelongsToDefinition.type property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 type: RelationType.belongsTo;

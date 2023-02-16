@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.subscription.closed.html
 
 Is the subscription closed?
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 closed: boolean;

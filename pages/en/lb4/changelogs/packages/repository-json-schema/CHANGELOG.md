@@ -10,6 +10,19 @@ permalink: /doc/en/lb4/changelog.repository-json-schema.html
 
 # Change Log
 
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [6.1.1](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@6.1.0...@loopback/repository-json-schema@6.1.1) (2023-01-09)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
+# Change Log
+
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

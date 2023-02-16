@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.modeldefinition.addproperty.html
 
 Add a property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addProperty(name: string, definitionOrType: PropertyDefinition | PropertyType): this;
@@ -28,7 +28,7 @@ addProperty(name: string, definitionOrType: PropertyDefinition | PropertyType): 
 |  name | string | Property definition or name (string) |
 |  definitionOrType | [PropertyDefinition](./repository.propertydefinition.md) \| [PropertyType](./repository.propertytype.md) | Definition or property type |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

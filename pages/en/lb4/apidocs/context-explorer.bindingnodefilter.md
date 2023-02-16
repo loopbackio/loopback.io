@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.context-explorer.bindingnodefilter.html
 
 A filter function to control if a binding is to be rendered
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BindingNodeFilter = (binding: ContextBinding) => boolean;
 ```
-<b>References:</b> [ContextBinding](./context-explorer.contextbinding.md)
+**References:** [ContextBinding](./context-explorer.contextbinding.md)
 
 

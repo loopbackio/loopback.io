@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.context.context.subscriptionmanager.html
 
 Manager for observer subscriptions
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 readonly subscriptionManager: ContextSubscriptionManager;

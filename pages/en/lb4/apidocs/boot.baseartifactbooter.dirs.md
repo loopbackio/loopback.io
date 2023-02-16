@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.baseartifactbooter.dirs.html
 
 Relative paths of directories to be searched
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 dirs: string[];

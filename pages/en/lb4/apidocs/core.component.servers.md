@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.core.component.servers.html
 
 A map of name/class pairs for servers
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 servers?: {

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.express.invokemiddlewareprovider.action.html
 
 ## InvokeMiddlewareProvider.action() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static action(middlewareCtx: MiddlewareContext, optionsOrHandlers?: InvokeMiddlewareOptions | ExpressRequestHandler[]): Promise<any>;
@@ -24,9 +24,9 @@ static action(middlewareCtx: MiddlewareContext, optionsOrHandlers?: InvokeMiddle
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  middlewareCtx | [MiddlewareContext](./express.middlewarecontext.md) |  |
-|  optionsOrHandlers | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) \| [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | <i>(Optional)</i> |
+|  optionsOrHandlers | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) \| [ExpressRequestHandler](./express.expressrequesthandler.md)<!-- -->\[\] | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;any&gt;
 

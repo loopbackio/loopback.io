@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.filter.wherebuilder.or.html
 
 Add an `or` clause.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 or(...w: (Where<MT> | Where<MT>[])[]): this;
@@ -27,7 +27,7 @@ or(...w: (Where<MT> | Where<MT>[])[]): this;
 |  --- | --- | --- |
 |  w | ([Where](./filter.where.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\])\[\] | One or more where objects |
 
-<b>Returns:</b>
+**Returns:**
 
 this
 

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository-json-schema.filterschemaoptions.exclud
 
 To exclude one or more property from `filter`
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 exclude?: string[] | string;

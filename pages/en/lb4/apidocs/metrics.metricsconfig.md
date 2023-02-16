@@ -15,11 +15,11 @@ permalink: /doc/en/lb4/apidocs.metrics.metricsconfig.html
 
 Configuration for metrics component with optional properties
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type MetricsConfig = Partial<MetricsOptions>;
 ```
-<b>References:</b> [MetricsOptions](./metrics.metricsoptions.md)
+**References:** [MetricsOptions](./metrics.metricsoptions.md)
 
 

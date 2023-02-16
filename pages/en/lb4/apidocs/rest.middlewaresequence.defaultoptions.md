@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.middlewaresequence.defaultoptions.html
 
 ## MiddlewareSequence.defaultOptions property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static defaultOptions: InvokeMiddlewareOptions;

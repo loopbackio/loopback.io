@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.hasmanythroughrepository.link.html
 
 Creates a new many-to-many association to an existing target model instance
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 link(targetModelId: TargetID, options?: Options & {
@@ -29,9 +29,9 @@ link(targetModelId: TargetID, options?: Options & {
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  targetModelId | TargetID | The target model ID to link |
-|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) &amp; { throughData?: [DataObject](./repository.dataobject.md)<!-- -->&lt;Through&gt;; throughOptions?: [Options](./repository.options.md)<!-- -->; } | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;void&gt;
 

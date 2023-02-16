@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restbindings.handler.html
 
 Internal binding key for http-handler
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 HANDLER: BindingKey<HttpHandler>

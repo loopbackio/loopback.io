@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.socketio.getnamespacekeyforname.html
 
 ## getNamespaceKeyForName variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 getNamespaceKeyForName: (name: string) => string

@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-spec-builder.builderbase.html
 
 ## BuilderBase class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare class BuilderBase<T extends ISpecificationExtension> 

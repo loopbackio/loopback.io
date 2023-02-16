@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.http-caching-proxy.proxyoptions.timeout.html
 
 Timeout to connect to the target service
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 timeout?: number;

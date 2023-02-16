@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.bodyparsermiddleware.html
 
 Express body parser function type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type BodyParserMiddleware = (request: Request, response: Response, next: (err: HttpError) => void) => void;

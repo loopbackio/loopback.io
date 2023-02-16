@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.repository.entity.getidof.html
 
 Get the identity value for a given entity instance or entity data object.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 static getIdOf(entityOrData: AnyObject): any;
@@ -27,7 +27,7 @@ static getIdOf(entityOrData: AnyObject): any;
 |  --- | --- | --- |
 |  entityOrData | [AnyObject](./repository.anyobject.md) | The data object for which to determine the identity value. |
 
-<b>Returns:</b>
+**Returns:**
 
 any
 

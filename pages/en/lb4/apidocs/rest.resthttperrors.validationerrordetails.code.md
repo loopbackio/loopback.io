@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.resthttperrors.validationerrordetails.code.h
 
 A single word code represents the error's type.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 code: string;

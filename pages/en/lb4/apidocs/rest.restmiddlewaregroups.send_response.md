@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.rest.restmiddlewaregroups.send_response.html
 
 Invoke downstream middleware to get the result or catch errors so that it can produce the http response
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 SEND_RESPONSE = "sendResponse"

@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.boot.servicebooter._constructor_.html
 
 Constructs a new instance of the `ServiceBooter` class
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 constructor(app: ApplicationWithServices, projectRoot: string, serviceConfig?: ArtifactOptions);
@@ -27,6 +27,6 @@ constructor(app: ApplicationWithServices, projectRoot: string, serviceConfig?: A
 |  --- | --- | --- |
 |  app | [ApplicationWithServices](./service-proxy.applicationwithservices.md) |  |
 |  projectRoot | string |  |
-|  serviceConfig | [ArtifactOptions](./boot.artifactoptions.md) | <i>(Optional)</i> |
+|  serviceConfig | [ArtifactOptions](./boot.artifactoptions.md) | _(Optional)_ |
 
 

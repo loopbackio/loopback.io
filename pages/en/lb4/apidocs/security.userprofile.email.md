@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.userprofile.email.html
 
 ## UserProfile.email property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 email?: string;

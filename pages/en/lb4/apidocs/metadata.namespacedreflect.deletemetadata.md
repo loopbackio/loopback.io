@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.metadata.namespacedreflect.deletemetadata.html
 
 ## NamespacedReflect.deleteMetadata() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 deleteMetadata(metadataKey: string, target: Object, propertyKey?: string): boolean;
@@ -25,9 +25,9 @@ deleteMetadata(metadataKey: string, target: Object, propertyKey?: string): boole
 |  --- | --- | --- |
 |  metadataKey | string |  |
 |  target | Object |  |
-|  propertyKey | string | <i>(Optional)</i> |
+|  propertyKey | string | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 boolean
 

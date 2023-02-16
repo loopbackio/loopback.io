@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.security.defaultsubject.addapplication.html
 
 ## DefaultSubject.addApplication() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 addApplication(app: ClientApplication): void;
@@ -25,7 +25,7 @@ addApplication(app: ClientApplication): void;
 |  --- | --- | --- |
 |  app | [ClientApplication](./security.clientapplication.md) |  |
 
-<b>Returns:</b>
+**Returns:**
 
 void
 

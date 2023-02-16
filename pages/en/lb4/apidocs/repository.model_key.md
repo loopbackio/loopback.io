@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.model_key.html
 
 ## MODEL\_KEY variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 MODEL_KEY: MetadataAccessor<Partial<ModelDefinitionSyntax>, ClassDecorator>

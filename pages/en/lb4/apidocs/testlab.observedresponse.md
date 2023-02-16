@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.testlab.observedresponse.html
 
 ## ObservedResponse type
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export type ObservedResponse = ResponseObject;

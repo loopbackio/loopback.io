@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.rest.builtinparsers.json.html
 
 ## builtinParsers.json variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 json: unique symbol

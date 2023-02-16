@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.datasource.connector.html
 
 ## DataSource.connector property
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 connector?: Connector;

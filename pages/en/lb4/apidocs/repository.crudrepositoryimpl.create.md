@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.repository.crudrepositoryimpl.create.html
 
 ## CrudRepositoryImpl.create() method
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 create(entity: DataObject<T>, options?: Options): Promise<T>;
@@ -24,9 +24,9 @@ create(entity: DataObject<T>, options?: Options): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [Options](./repository.options.md) | <i>(Optional)</i> |
+|  options | [Options](./repository.options.md) | _(Optional)_ |
 
-<b>Returns:</b>
+**Returns:**
 
 Promise&lt;T&gt;
 

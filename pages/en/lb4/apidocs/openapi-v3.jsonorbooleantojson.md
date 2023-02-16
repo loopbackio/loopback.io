@@ -15,7 +15,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.jsonorbooleantojson.html
 
 Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 export declare function jsonOrBooleanToJSON(jsonOrBool: boolean | JsonSchema): JsonSchema;
@@ -27,7 +27,7 @@ export declare function jsonOrBooleanToJSON(jsonOrBool: boolean | JsonSchema): J
 |  --- | --- | --- |
 |  jsonOrBool | boolean \| JsonSchema | converts boolean values into their representative JSON Schemas |
 
-<b>Returns:</b>
+**Returns:**
 
 JsonSchema
 

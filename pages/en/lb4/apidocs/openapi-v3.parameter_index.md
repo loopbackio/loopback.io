@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.parameter_index.html
 
 ## PARAMETER\_INDEX variable
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 PARAMETER_INDEX = "x-parameter-index"
