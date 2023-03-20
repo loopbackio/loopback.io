@@ -25,7 +25,7 @@
   "devDependencies": {
     "@loopback/docs": "latest",
     "chalk": "^5.2.0",
-    "fs-extra": "^11.1.0",
+    "fs-extra": "^11.1.1",
     "ibm-watson": "^8.0.0",
     "markdownlint-cli": "^0.33.0",
     "retry": "^0.13.1",
