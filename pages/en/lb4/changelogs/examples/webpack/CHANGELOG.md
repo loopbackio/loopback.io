@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-webpack.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.8](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.8.7...@loopback/example-webpack@0.8.8) (2023-02-07)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
 ## [0.8.7](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.8.6...@loopback/example-webpack@0.8.7) (2023-01-09)
 
 **Note:** Version bump only for package @loopback/example-webpack

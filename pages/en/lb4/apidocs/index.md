@@ -50,6 +50,7 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/rest-explorer](./rest-explorer.md) | A LoopBack 4 component for adding a self-hosted REST API Explorer. |
 |  [@loopback/rest-msgpack](./rest-msgpack.md) |  |
 |  [@loopback/security](./security.md) | Common types/interfaces for LoopBack 4 security including authentication and authorization. |
+|  [@loopback/sequelize](./sequelize.md) |  |
 |  [@loopback/service-proxy](./service-proxy.md) | A common set of interfaces for interacting with service oriented backends such as REST APIs, SOAP Web Services, and gRPC microservices. |
 |  [@loopback/socketio](./socketio.md) |  |
 |  [@loopback/testlab](./testlab.md) | A collection of test utilities we use to write LoopBack tests. |

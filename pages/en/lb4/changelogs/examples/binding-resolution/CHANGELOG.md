@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-binding-resolution.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.8](https://github.com/loopbackio/loopback-next/compare/@loopback/example-binding-resolution@0.7.7...@loopback/example-binding-resolution@0.7.8) (2023-02-07)
+
+**Note:** Version bump only for package @loopback/example-binding-resolution
+
+
+
+
+
 ## [0.7.7](https://github.com/loopbackio/loopback-next/compare/@loopback/example-binding-resolution@0.7.6...@loopback/example-binding-resolution@0.7.7) (2023-01-09)
 
 **Note:** Version bump only for package @loopback/example-binding-resolution
