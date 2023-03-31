@@ -52,18 +52,9 @@
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
 			{% include feedback.html %}
     {% endif %}
+                
                 <li>
-                    <form id="search" name="search" class="input-group lb-search" action="/search" method="GET">
-                        <input type="text" class="form-control search-bar" placeholder="Search (powered by Watson)" name="q">
-                        {% if page.sidebar contains "lb" %}
-                          <input type="hidden" name="sidebar" value="{{page.sidebar}}">
-                        {% endif %}
-                        <div class="input-group-btn">
-                            <button type="submit" class="btn btn-default" aria-label="search">
-                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                      </form>
+                  <span id="algolia-docsearch"></span>
                 </li>
             </ul>
         </div>
