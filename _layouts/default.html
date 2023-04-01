@@ -21,7 +21,10 @@
         });
     </script>
     {% endif %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 </head>
 <body>
 {% include topnav.html %}
@@ -41,6 +44,19 @@
 </div>
 <!-- /.container -->
     </div>
+    <script type="text/javascript">
+        docsearch({
+          appId: 'JHHAZ68MS2',
+          apiKey: 'd5ea594dd98a77b9e4b27fb69776fa9f',
+          indexName: 'loopback',
+          container: '#algolia-docsearch',
+          searchParameters: {
+            facetFilters: ['lang:en']
+          }
+        });
+      
+      </script>
+
 </body>
 
 </html>
