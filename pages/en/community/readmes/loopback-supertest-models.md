@@ -1,66 +1,17 @@
-# loopback-supertest-models
 
-## Setup
-
-```
-  var app = require('./server/server.js');
-  var models = require('loopback-supertest-models')(app);
-```
-
-## Example
-
-using supertest's `end` function 
-
-```javascript
-describe('GET /api/pokemon', function() {
-  it('respond with pokemon', function(done) {
-    return models.Pokemon
-      .find()
-      .expect(200)
-      .end(function(err, res) {
-        if (err) return done(err);
-        done();
-      });
-  });
-});
-```
-
-You can also use promises
-
-```javascript
-describe('GET /api/pokemon/?filter={"name": "pikachu"}', function() {
-  it('respond with pikachu', function() {
-    return models.Pokemon
-      .find({ "name": "pikachu"})
-      .expect(200)
-      .then(response => {
-          assert(response.body.name, 'pikachu')
-      })
-  });
-});
-```
-
-## Spy
-
-Spy on when a remote method is called 
-
-```javascript
-describe('GET /api/pokemon/?filter={"name": "pikachu"}', function() {
-  it('respond with pikachu', function() {
-    models.Pokemon.on('find', function(ctx) {
-      console.log('on', ctx.filter);
-    })
-    models.Pokemon.once('find', function(ctx) {
-      console.log('once', ctx.filter);
-    })
-    return models.Pokemon
-      .find()
-      .expect(200)
-      .end(function(err, res) {
-        if (err) return done(err);
-        done();
-      });
-  });
-});
-```
-License: MIT
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 first byte timeout</title>
+  </head>
+  <body>
+    <h1>Error 503 first byte timeout</h1>
+    <p>first byte timeout</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-sjc10031-SJC 1681047224 1416592361</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>

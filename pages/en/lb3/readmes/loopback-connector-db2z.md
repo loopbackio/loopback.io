@@ -4,13 +4,13 @@
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>503 between bytes timeout</title>
+    <title>503 backend read error</title>
   </head>
   <body>
-    <h1>Error 503 between bytes timeout</h1>
-    <p>between bytes timeout</p>
+    <h1>Error 503 backend read error</h1>
+    <p>backend read error</p>
     <h3>Error 54113</h3>
-    <p>Details: cache-dfw-kdfw8210078-DFW 1681046305 2097221363</p>
+    <p>Details: cache-sjc10065-SJC 1681047088 2658260683</p>
     <hr>
     <p>Varnish cache server</p>
   </body>

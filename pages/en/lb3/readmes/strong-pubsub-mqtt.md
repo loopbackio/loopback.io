@@ -1,20 +1,17 @@
-# strong-pubsub-mqtt
 
-**An MQTT `Adapter` for strong-pubsub**
-
-## Installation
-
-```
-$ npm install strong-pubsub-mqtt
-```
-
-## Use
-
-```js
-var Client = require('strong-pubsub');
-var Adapter = require('strong-pubsub-mqtt');
-
-var client = new Client({host: 'http://my.message-broker.com', port: 3000}, Adapter);
-
-client.publish('my topic', 'my message');
-```
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>503 first byte timeout</title>
+  </head>
+  <body>
+    <h1>Error 503 first byte timeout</h1>
+    <p>first byte timeout</p>
+    <h3>Error 54113</h3>
+    <p>Details: cache-sjc10073-SJC 1681047134 2551835148</p>
+    <hr>
+    <p>Varnish cache server</p>
+  </body>
+</html>
