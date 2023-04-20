@@ -13,7 +13,7 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizecrudrepository.db_specific_set
 
 ## SequelizeCrudRepository.DB\_SPECIFIC\_SETTINGS\_KEYS property
 
-Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float { type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }<!-- -->, }
+Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float `{ type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }, }`
 
 This array of keys is used while building model definition for sequelize.
 

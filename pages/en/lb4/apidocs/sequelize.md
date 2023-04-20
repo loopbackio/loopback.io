@@ -21,7 +21,7 @@ permalink: /doc/en/lb4/apidocs.sequelize.html
 |  --- | --- |
 |  [LoopbackSequelizeComponent](./sequelize.loopbacksequelizecomponent.md) |  |
 |  [SequelizeCrudRepository](./sequelize.sequelizecrudrepository.md) | Sequelize implementation of CRUD repository to be used with default loopback entities and SequelizeDataSource for SQL Databases |
-|  [SequelizeDataSource](./sequelize.sequelizedatasource.md) |  |
+|  [SequelizeDataSource](./sequelize.sequelizedatasource.md) | Sequelize DataSource Class |
 
 ## Interfaces
 

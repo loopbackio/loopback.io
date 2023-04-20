@@ -16,10 +16,10 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizedatasource.stop.html
 **Signature:**
 
 ```typescript
-stop(): void;
+stop(): Promise<void>;
 ```
 **Returns:**
 
-void
+Promise&lt;void&gt;
 
 

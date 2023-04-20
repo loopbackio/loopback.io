@@ -13,6 +13,8 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizedatasource.html
 
 ## SequelizeDataSource class
 
+Sequelize DataSource Class
+
 **Signature:**
 
 ```typescript
@@ -42,6 +44,8 @@ export declare class SequelizeDataSource implements LifeCycleObserver
 |  --- | --- | --- |
 |  [automigrate()](./sequelize.sequelizedatasource.automigrate.md) |  |  |
 |  [autoupdate()](./sequelize.sequelizedatasource.autoupdate.md) |  |  |
+|  [beginTransaction(options)](./sequelize.sequelizedatasource.begintransaction.md) |  | Begin a new transaction. |
+|  [getPoolOptions()](./sequelize.sequelizedatasource.getpooloptions.md) |  |  |
 |  [init()](./sequelize.sequelizedatasource.init.md) |  |  |
 |  [start(\_injectedArgs)](./sequelize.sequelizedatasource.start.md) |  |  |
 |  [stop()](./sequelize.sequelizedatasource.stop.md) |  |  |

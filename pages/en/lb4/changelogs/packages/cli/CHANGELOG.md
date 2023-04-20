@@ -13,6 +13,41 @@ permalink: /doc/en/lb4/changelog.cli.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.2.0...@loopback/cli@4.2.1) (2023-04-13)
+
+
+### Bug Fixes
+
+* allow belongsTo relation with same table ([584e4ac](https://github.com/loopbackio/loopback-next/commit/584e4acb174280fe947ac39ce099b7f72c08ca11))
+* **cli:** extend from DefaultKeyValueRepository in case of kv datasource ([7afd25a](https://github.com/loopbackio/loopback-next/commit/7afd25a97fa0bd28f9319d31690ac20467c8a3b2))
+* **cli:** pass flags to mysql-connector while lb4 discover ([357d0c3](https://github.com/loopbackio/loopback-next/commit/357d0c3c1b0dae27b1b2fafa4a04c9e170d4cff2))
+* refresh package lock files ([9979eb1](https://github.com/loopbackio/loopback-next/commit/9979eb183b6c6cd5775da7478cdede8a92ce0d5e)), closes [#9351](https://github.com/loopbackio/loopback-next/issues/9351)
+* replace backslash with forward slash ([38665f9](https://github.com/loopbackio/loopback-next/commit/38665f9f54fe94d5cbbb8b744f6b82854f444849))
+* use glob named import ([7daf6fb](https://github.com/loopbackio/loopback-next/commit/7daf6fb6b82e2ce01e3693869c695fe77146238d))
+
+
+
+
+
+# [4.2.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.1.8...@loopback/cli@4.2.0) (2023-03-09)
+
+
+### Bug Fixes
+
+* **cli:** add lerna bootstrap as dep ([c37658c](https://github.com/loopbackio/loopback-next/commit/c37658c45968171a8f02b4d9e706b4c60607a20e))
+* **cli:** fixed cli not detecting custom base repositories ([1e70be0](https://github.com/loopbackio/loopback-next/commit/1e70be0a7e4997b71f0bb529bfff5579b89033f1)), closes [#8637](https://github.com/loopbackio/loopback-next/issues/8637)
+* **cli:** response type from array to object in belongsTo ([d9a0f69](https://github.com/loopbackio/loopback-next/commit/d9a0f695be3cf22481b33de102dfb3656209fa22))
+
+
+### Features
+
+* **cli:** add support for Binary to handle blob ([f8dde03](https://github.com/loopbackio/loopback-next/commit/f8dde034a5d4eaf7c32c0150ca40dcdd3e5d90a9))
+* **cli:** specify models with --models in lb4 discover ([4f5f9cc](https://github.com/loopbackio/loopback-next/commit/4f5f9cc17ac0acfab17abfceaaaf3b9171d8066f))
+
+
+
+
+
 ## [4.1.8](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.1.7...@loopback/cli@4.1.8) (2023-02-07)
 
 

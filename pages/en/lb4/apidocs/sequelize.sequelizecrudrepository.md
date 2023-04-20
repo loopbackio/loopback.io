@@ -33,7 +33,7 @@ export declare class SequelizeCrudRepository<T extends Entity, ID, Relations ext
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [dataSource](./sequelize.sequelizecrudrepository.datasource.md) |  | [SequelizeDataSource](./sequelize.sequelizedatasource.md) |  |
-|  [DB\_SPECIFIC\_SETTINGS\_KEYS](./sequelize.sequelizecrudrepository.db_specific_settings_keys.md) | <code>readonly</code> | readonly \["postgresql", "mysql", "sqlite3"\] | <p>Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float { type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }<!-- -->, }</p><p>This array of keys is used while building model definition for sequelize.</p> |
+|  [DB\_SPECIFIC\_SETTINGS\_KEYS](./sequelize.sequelizecrudrepository.db_specific_settings_keys.md) | <code>readonly</code> | readonly \["postgresql", "mysql", "sqlite3"\] | <p>Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float <code>{ type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }, }</code></p><p>This array of keys is used while building model definition for sequelize.</p> |
 |  [DEFAULT\_ORDER\_STYLE](./sequelize.sequelizecrudrepository.default_order_style.md) | <code>readonly</code> | (not declared) | Default <code>order</code> filter style if only column name is specified |
 |  [entityClass](./sequelize.sequelizecrudrepository.entityclass.md) |  | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
 |  [inclusionResolvers](./sequelize.sequelizecrudrepository.inclusionresolvers.md) | <code>readonly</code> | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
@@ -43,6 +43,7 @@ export declare class SequelizeCrudRepository<T extends Entity, ID, Relations ext
 
 |  Method | Modifiers | Description |
 |  --- | --- | --- |
+|  [beginTransaction(options)](./sequelize.sequelizecrudrepository.begintransaction.md) |  |  |
 |  [buildSequelizeAttributeFilter(fields)](./sequelize.sequelizecrudrepository.buildsequelizeattributefilter.md) | <code>protected</code> | Get Sequelize <code>attributes</code> filter value from <code>fields</code> of loopback. |
 |  [buildSequelizeIncludeFilter(inclusionFilters, sourceModel)](./sequelize.sequelizecrudrepository.buildsequelizeincludefilter.md) | <code>protected</code> | Build Sequelize compatible <code>include</code> filter |
 |  [buildSequelizeOrder(order)](./sequelize.sequelizecrudrepository.buildsequelizeorder.md) | <code>protected</code> | Get Sequelize Order filter value from loopback style order value |

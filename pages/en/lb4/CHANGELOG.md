@@ -55,6 +55,7 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/logging](changelogs/extensions/logging/CHANGELOG.md)
 - [@loopback/metrics](changelogs/extensions/metrics/CHANGELOG.md)
 - [@loopback/pooling](changelogs/extensions/pooling/CHANGELOG.md)
+- [@loopback/sequelize](changelogs/extensions/sequelize/CHANGELOG.md)
 - [@loopback/socketio](changelogs/extensions/socketio/CHANGELOG.md)
 - [@loopback/typeorm](changelogs/extensions/typeorm/CHANGELOG.md)
 
