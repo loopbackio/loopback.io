@@ -53,7 +53,6 @@ permalink: /doc/en/lb4/apidocs.typeorm.html
 
 |  Type Alias | Description |
 |  --- | --- |
-|  [PropertyType](./typeorm.propertytype.md) |  |
 |  [StringifiedTypeOptions](./typeorm.stringifiedtypeoptions.md) |  |
 |  [TypeOrmComponentOptions](./typeorm.typeormcomponentoptions.md) |  |
 
