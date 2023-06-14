@@ -1,6 +1,6 @@
 # loopback-connector-soap
 
-[![CI](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yaml/badge.svg)](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yaml)
+[![CI](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yml)
 [![Build Status](https://app.travis-ci.com/loopbackio/loopback-connector-soap.svg?branch=master)](https://app.travis-ci.com/loopbackio/loopback-connector-soap)
 [![Coverage Status](https://coveralls.io/repos/github/loopbackio/loopback-connector-soap/badge.svg?branch=master)](https://coveralls.io/github/loopbackio/loopback-connector-soap?branch=master)
 
