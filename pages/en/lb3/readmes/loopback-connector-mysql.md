@@ -12,7 +12,7 @@ In your application root directory, enter this command to install the connector:
 npm install loopback-connector-mysql --save
 ```
 
-**Note**: The MySQL connector requires MySQL 5.0+.
+**Note**: Since `loopback-connector-mysql` v7.x.x, this MySQL connector has dropped support for MySQL 5.7 and requires MySQL 8.0+.
 
 This installs the module from npm and adds it as a dependency to the
 application's `package.json` file.
