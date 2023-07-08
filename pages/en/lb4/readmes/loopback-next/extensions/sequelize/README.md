@@ -49,7 +49,7 @@ simply changing the parent classes in the target Data Source and Repositories.
 Change the parent class from `juggler.DataSource` to `SequelizeDataSource` like
 below.
 
-```ts title="pg.datasource.ts"
+```ts
 // ...
 import {SequelizeDataSource} from '@loopback/sequelize';
 
@@ -61,12 +61,38 @@ export class PgDataSource
 }
 ```
 
+`SequelizeDataSource` accepts commonly used config in the same way as LoopBack
+did. So in most cases you won't need to change your existing configuration. But
+if you want to use sequelize specific options pass them in `sequelizeOptions`
+like below:
+
+```ts
+let config = {
+  name: 'db',
+  connector: 'postgresql',
+  sequelizeOptions: {
+    username: 'postgres',
+    password: 'secret',
+    dialectOptions: {
+      ssl: {
+        rejectUnauthorized: false,
+        ca: fs.readFileSync('/path/to/root.crt').toString(),
+      },
+    },
+  },
+};
+```
+
+> Note: Options provided in `sequelizeOptions` will take priority over others,
+> For example, if you have password specified in both `config.password` and
+> `config.password.sequelizeOptions` the latter one will be used.
+
 ### Step 2: Configure Repository
 
 Change the parent class from `DefaultCrudRepository` to
 `SequelizeCrudRepository` like below.
 
-```ts title="your.repository.ts"
+```ts
 // ...
 import {SequelizeCrudRepository} from '@loopback/sequelize';
 

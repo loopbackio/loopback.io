@@ -25,7 +25,6 @@ permalink: /doc/en/lb4/changelog.index.html
 - [@loopback/http-server](changelogs/packages/http-server/CHANGELOG.md)
 - [@loopback/metadata](changelogs/packages/metadata/CHANGELOG.md)
 - [@loopback/model-api-builder](changelogs/packages/model-api-builder/CHANGELOG.md)
-- [@loopback/monorepo](changelogs/packages/monorepo/CHANGELOG.md)
 - [@loopback/openapi-spec-builder](changelogs/packages/openapi-spec-builder/CHANGELOG.md)
 - [@loopback/openapi-v3](changelogs/packages/openapi-v3/CHANGELOG.md)
 - [@loopback/repository](changelogs/packages/repository/CHANGELOG.md)
