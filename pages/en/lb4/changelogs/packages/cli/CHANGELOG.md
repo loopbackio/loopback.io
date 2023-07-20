@@ -13,6 +13,43 @@ permalink: /doc/en/lb4/changelog.cli.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@5.1.0...@loopback/cli@5.2.0) (2023-07-17)
+
+
+### Bug Fixes
+
+* fix the script to update cli templates ([b657b0e](https://github.com/loopbackio/loopback-next/commit/b657b0e3a28c0fdbe6234fc1fafc6ff5a384aa5e))
+* pin ts-query to 5.x as 6.x breaks cli tests on macos ([7a0424b](https://github.com/loopbackio/loopback-next/commit/7a0424bf842e34f031495428b7df35e62a79dd36))
+* use named exports ([34dfe4f](https://github.com/loopbackio/loopback-next/commit/34dfe4f107bf190c2b9fddeeef1702d72a34b9f2))
+
+
+### Features
+
+* add binary lb for cli ([f7ad002](https://github.com/loopbackio/loopback-next/commit/f7ad0020fbadbf7125340cd2fd66336a1eae1b86))
+
+
+
+
+
+# [5.1.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@5.0.0...@loopback/cli@5.1.0) (2023-06-28)
+
+
+### Bug Fixes
+
+* check for existing relationImports ([2d5b659](https://github.com/loopbackio/loopback-next/commit/2d5b6597490a98151727a04268c07497da006652))
+* fix the usage of the option --connector ([5ed00ea](https://github.com/loopbackio/loopback-next/commit/5ed00ea491424b648d24fa83a9b627d7682f9f4e)), closes [#9607](https://github.com/loopbackio/loopback-next/issues/9607)
+* migrate Lerna to NPM Workspaces ([d5c4994](https://github.com/loopbackio/loopback-next/commit/d5c4994d28f1741427b427d99ca4df03936547e6))
+* run lerna repair command ([fe72763](https://github.com/loopbackio/loopback-next/commit/fe727639605b839dbfb5afd953a47238aa5c01cc))
+
+
+### Features
+
+* update dependency @types/node to ^16 ([2af42b7](https://github.com/loopbackio/loopback-next/commit/2af42b721c6dfc2df49bfcac1cbea478aba417ab))
+
+
+
+
+
 # [5.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@4.2.1...@loopback/cli@5.0.0) (2023-05-15)
 
 
