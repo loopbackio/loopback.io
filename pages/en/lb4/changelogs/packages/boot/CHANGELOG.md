@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.boot.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/loopbackio/loopback-next/compare/@loopback/boot@6.1.0...@loopback/boot@6.1.1) (2023-07-17)
+
+**Note:** Version bump only for package @loopback/boot
+
+
+
+
+
 # [6.1.0](https://github.com/loopbackio/loopback-next/compare/@loopback/boot@6.0.0...@loopback/boot@6.1.0) (2023-06-28)
 
 

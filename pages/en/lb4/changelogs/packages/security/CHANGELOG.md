@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.security.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/loopbackio/loopback-next/compare/@loopback/security@0.10.0...@loopback/security@0.10.1) (2023-07-17)
+
+**Note:** Version bump only for package @loopback/security
+
+
+
+
+
 # [0.10.0](https://github.com/loopbackio/loopback-next/compare/@loopback/security@0.9.0...@loopback/security@0.10.0) (2023-06-28)
 
 

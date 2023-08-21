@@ -31,7 +31,7 @@ array: (itemSpec: SchemaObject | ReferenceObject, properties?: {
 export class MyController {
   @post('/greet')
   greet(@requestBody.array(
-    {schema: {type: 'string'}},
+    {type: 'string'},
     {description: 'an array of names', required: false}
   ) names: string[]): string {
     return `Hello, ${names}`;
