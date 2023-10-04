@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([[1389],{4278:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/interceptor","name":"interceptor","count":2,"permalink":"/blog/tags/interceptor"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkloopback_blog=self.webpackChunkloopback_blog||[]).push([[1618],{4635:l=>{l.exports=JSON.parse('{"label":"related models","permalink":"/blog/tags/related-models","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkloopback_blog=self.webpackChunkloopback_blog||[]).push([[5156],{2109:a=>{a.exports=JSON.parse('{"label":"Quarterly update","permalink":"/blog/tags/quarterly-update","allTagsPath":"/blog/tags","count":7}')}}]);

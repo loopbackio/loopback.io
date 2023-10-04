@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([[8425],{4407:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/casco-nx-evoke","name":"CASCONxEVOKE","count":1,"permalink":"/blog/tags/casco-nx-evoke"}')}}]);

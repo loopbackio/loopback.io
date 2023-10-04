@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkloopback_blog=self.webpackChunkloopback_blog||[]).push([[5628],{5136:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/milestone-update/page/3","page":3,"postsPerPage":10,"totalPages":3,"totalCount":24,"previousPage":"/blog/tags/milestone-update/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

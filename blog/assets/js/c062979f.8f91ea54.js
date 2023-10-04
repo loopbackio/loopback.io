@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_blog=self.webpackChunkmy_blog||[]).push([[5156],{2109:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/quarterly-update","name":"Quarterly update","count":7,"permalink":"/blog/tags/quarterly-update"}')}}]);
