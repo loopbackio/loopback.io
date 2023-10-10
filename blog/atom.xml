@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loopback.io/blog/</id>
     <title>LoopBack Blog</title>
-    <updated>2022-04-13T00:00:00.000Z</updated>
+    <updated>2023-10-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loopback.io/blog/"/>
     <subtitle>LoopBack Blog</subtitle>
     <icon>https://loopback.io/blog/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Happy 5th Birthday LoopBack 4!]]></title>
+        <id>https://loopback.io/blog/happy-5th-bday</id>
+        <link href="https://loopback.io/blog/happy-5th-bday"/>
+        <updated>2023-10-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Can you believe it's been 5 years that LoopBack 4 GA was announced at Node+JS Interactive conference?]]></summary>
+        <content type="html"><![CDATA[<p>Can you believe it's been 5 years that LoopBack 4 GA was <a href="https://strongloop.com/strongblog/loopback-4-ga" target="_blank" rel="noopener noreferrer">announced</a> at Node+JS Interactive conference?</p><p><img loading="lazy" alt="Happy birthday LoopBack" src="/blog/assets/images/bday-0ff7a81f833c0ae2f86583db8b7d6a95.jpg" width="5184" height="3456" class="img_ev3q"><span style="font-size:0.4em;text-align:center"><i>Photo by <a href="https://unsplash.com/@socialcut?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">S O C I A L . C U T</a> on <a href="https://unsplash.com/photos/ww8hljWABIE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></i></span></p><p>Since then, the framework has gained stability and has gained users substantially. We also see more contributions from the community not only to the core framework, but also building extensions. Thank you for all your contributions to LoopBack and the <a href="https://www.npmjs.com/search?q=loopback-extension" target="_blank" rel="noopener noreferrer">160+ extensions published on npmjs.com</a>!</p><p>To continue moving towards an open governace model, it's exciting to see LoopBack <a href="https://openjsf.org/blog/2021/06/02/loopback-joins-openjs-foundation-as-new-incubating-project/" target="_blank" rel="noopener noreferrer">joined the OpenJS foundation as the incubating project</a> in 2021 and <a href="https://openjsf.org/blog/2022/04/25/node-js-framework-loopback-graduates-to-at-large-project-at-openjs-foundation/" target="_blank" rel="noopener noreferrer">graduated to at-large project</a> the following year.</p><p>Lastly, don't forget that <a href="https://hacktoberfest.com/" target="_blank" rel="noopener noreferrer">HacktoberFest</a> is on this month. No matter you're a new developer to LoopBack or seasoned contributors, your contributions are always welcomed!</p>]]></content>
+        <author>
+            <name>Diana Lau</name>
+            <uri>https://github.com/dhmlau</uri>
+        </author>
+        <category label="Meta" term="Meta"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[New Home for the LoopBack Blog]]></title>
         <id>https://loopback.io/blog/new-home-for-the-loopback-blog</id>
