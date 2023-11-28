@@ -36,7 +36,7 @@ jobs:
           npm run build
       
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@a1ea191d508feb8485aceba848389d49f80ca2dc # v4.4.3
+        uses: JamesIves/github-pages-deploy-action@65b5dfd4f5bcd3a7403bbc2959c144256167464e # v4.5.0
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           branch: gh-pages
