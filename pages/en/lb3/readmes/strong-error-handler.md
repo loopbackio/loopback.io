@@ -1,5 +1,10 @@
 # strong-error-handler
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/8058/badge)](https://www.bestpractices.dev/projects/8058)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/loopbackio/strong-error-handler/badge)](https://securityscorecards.dev/viewer/?uri=github.com/loopbackio/strong-error-handler)
+[![Continuous Integration](https://github.com/loopbackio/strong-error-handler/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/loopbackio/strong-error-handler/actions/workflows/continuous-integration.yml)
+[![CodeQL](https://github.com/loopbackio/strong-error-handler/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/loopbackio/strong-error-handler/actions/workflows/codeql-analysis.yml)
+
 This package is an error handler for use in both development (debug) and production environments.
 
 In production mode, `strong-error-handler` omits details from error responses to prevent leaking sensitive information:
