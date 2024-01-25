@@ -18,15 +18,15 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Use Node.js 16
+      - name: Use Node.js 18
         uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version: 16
+          node-version: 18
 
-      - name: Set up Ruby 2.7
-        uses: ruby/setup-ruby@bd03e04863f52d169e18a2b190e8fa6b84938215 # v1.170.0
+      - name: Set up Ruby 3.2
+        uses: ruby/setup-ruby@5daca165445f0ae10478593083f72ca2625e241d # v1.169.0
         with:
-          ruby-version: 2.7
+          ruby-version: 3.2
 
       - name: Install and Build 🔧
         run: |
