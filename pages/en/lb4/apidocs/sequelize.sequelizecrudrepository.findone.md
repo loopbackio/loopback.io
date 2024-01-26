@@ -16,15 +16,15 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizecrudrepository.findone.html
 **Signature:**
 
 ```typescript
-findOne(filter?: Filter<T>, options?: AnyObject): Promise<(T & Relations) | null>;
+findOne(filter?: FilterWithRequired<T>, options?: AnyObject): Promise<(T & Relations) | null>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  filter | FilterWithRequired&lt;T&gt; | _(Optional)_ |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

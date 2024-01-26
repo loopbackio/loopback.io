@@ -26,10 +26,10 @@ protected createReferencesManyAccessorFor<Target extends Entity, TargetId>(relat
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  targetRepoGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; |  |
+|  targetRepoGetter | Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt; |  |
 
 **Returns:**
 
-[ReferencesManyAccessor](./repository.referencesmanyaccessor.md)<!-- -->&lt;Target, ID&gt;
+ReferencesManyAccessor&lt;Target, ID&gt;
 
 

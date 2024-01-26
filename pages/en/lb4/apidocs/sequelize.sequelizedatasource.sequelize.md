@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizedatasource.sequelize.html
 **Signature:**
 
 ```typescript
-sequelize?: Sequelize;
+sequelize: Sequelize;
 ```
 

@@ -29,7 +29,7 @@ getTableName(entityClass?: typeof Entity & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } | _(Optional)_ The entity class for which the table name is being retrieved. |
+|  entityClass | typeof Entity &amp; { prototype: T; } | _(Optional)_ The entity class for which the table name is being retrieved. |
 
 **Returns:**
 

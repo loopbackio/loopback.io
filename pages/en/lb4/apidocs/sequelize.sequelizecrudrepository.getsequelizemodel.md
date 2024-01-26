@@ -27,7 +27,7 @@ getSequelizeModel(entityClass?: typeof Entity & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } | _(Optional)_ |
+|  entityClass | typeof Entity &amp; { prototype: T; } | _(Optional)_ |
 
 **Returns:**
 

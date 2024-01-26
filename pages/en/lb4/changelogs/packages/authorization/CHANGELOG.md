@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.authorization.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.4](https://github.com/loopbackio/loopback-next/compare/@loopback/authorization@0.14.3...@loopback/authorization@0.14.4) (2023-12-12)
+
+**Note:** Version bump only for package @loopback/authorization
+
+
+
+
+
+## [0.14.3](https://github.com/loopbackio/loopback-next/compare/@loopback/authorization@0.14.2...@loopback/authorization@0.14.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/authorization
+
+
+
+
+
+## [0.14.2](https://github.com/loopbackio/loopback-next/compare/@loopback/authorization@0.14.1...@loopback/authorization@0.14.2) (2023-08-15)
+
+**Note:** Version bump only for package @loopback/authorization
+
+
+
+
+
 ## [0.14.1](https://github.com/loopbackio/loopback-next/compare/@loopback/authorization@0.14.0...@loopback/authorization@0.14.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/authorization

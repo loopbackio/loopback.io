@@ -16,15 +16,15 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizecrudrepository.find.html
 **Signature:**
 
 ```typescript
-find(filter?: Filter<T>, options?: AnyObject): Promise<(T & Relations)[]>;
+find(filter?: FilterWithRequired<T>, options?: AnyObject): Promise<(T & Relations)[]>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  filter | FilterWithRequired&lt;T&gt; | _(Optional)_ |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

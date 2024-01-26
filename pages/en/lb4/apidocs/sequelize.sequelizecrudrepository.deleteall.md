@@ -24,10 +24,10 @@ deleteAll(where?: Where<T> | undefined, options?: AnyObject | undefined): Promis
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; \| undefined | _(Optional)_ |
-|  options | [AnyObject](./repository.anyobject.md) \| undefined | _(Optional)_ |
+|  options | AnyObject \| undefined | _(Optional)_ |
 
 **Returns:**
 
-Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
+Promise&lt;Count&gt;
 
 

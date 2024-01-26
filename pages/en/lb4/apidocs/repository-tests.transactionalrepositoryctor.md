@@ -22,6 +22,4 @@ export type TransactionalRepositoryCtor = new <T extends Entity, ID, Relations e
     prototype: T;
 }, dataSource: juggler.DataSource) => TransactionalEntityRepository<T, ID, Relations>;
 ```
-**References:** [Entity](./repository.entity.md)<!-- -->, [TransactionalEntityRepository](./repository.transactionalentityrepository.md)
-
 

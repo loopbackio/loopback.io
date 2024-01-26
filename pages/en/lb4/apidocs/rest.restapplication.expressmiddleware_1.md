@@ -25,13 +25,13 @@ expressMiddleware<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlew
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  middlewareFactory | [ExpressMiddlewareFactory](./express.expressmiddlewarefactory.md)<!-- -->&lt;CFG&gt; | Middleware module name or factory function |
+|  middlewareFactory | ExpressMiddlewareFactory&lt;CFG&gt; | Middleware module name or factory function |
 |  middlewareConfig | CFG | _(Optional)_ Middleware config |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Options for registration |
+|  options | MiddlewareBindingOptions | _(Optional)_ Options for registration |
 
 **Returns:**
 
-[Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+[Binding](./context.binding.md)<!-- -->&lt;Middleware&gt;
 
 ## Example
 

@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtokenrepository.html
 ```typescript
 export declare class RefreshTokenRepository extends DefaultCrudRepository<RefreshToken, typeof RefreshToken.prototype.id, RefreshTokenRelations> 
 ```
-**Extends:** [DefaultCrudRepository](./repository.defaultcrudrepository.md)<!-- -->&lt;[RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->, typeof [RefreshToken.prototype.id](./authentication-jwt.refreshtoken.id.md)<!-- -->, [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md)<!-- -->&gt;
+**Extends:** DefaultCrudRepository&lt;[RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->, typeof [RefreshToken.prototype.id](./authentication-jwt.refreshtoken.id.md)<!-- -->, [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md)<!-- -->&gt;
 
 ## Constructors
 

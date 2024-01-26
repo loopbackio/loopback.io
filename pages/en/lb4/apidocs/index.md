@@ -22,13 +22,11 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/authentication-jwt](./authentication-jwt.md) |  |
 |  [@loopback/authentication-passport](./authentication-passport.md) | An adapter to plug in passport based strategies to the authentication system in [@loopback/authentication @3.x](./authentication.md)<!-- -->. |
 |  [@loopback/authorization](./authorization.md) | A LoopBack 4 component for authorization support (Role based, Permission based, Vote based) |
-|  [@loopback/boot](./boot.md) | A convention based project Bootstrapper and Booters for LoopBack Applications. |
 |  [@loopback/booter-lb3app](./booter-lb3app.md) |  |
 |  [@loopback/context](./context.md) |  |
 |  [@loopback/context-explorer](./context-explorer.md) |  |
 |  [@loopback/core](./core.md) | The core foundation for LoopBack 4. It can also serve as the platform to build large-scale Node.js applications and frameworks. |
 |  [@loopback/cron](./cron.md) |  |
-|  [@loopback/express](./express.md) | The Express integration package for loopback-next. |
 |  [@loopback/filter](./filter.md) | A set of utility typings and filter builders to aid in constructing LoopBack filters using the [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)<!-- -->. |
 |  [@loopback/graphql](./graphql.md) |  |
 |  [@loopback/health](./health.md) | A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->. |
@@ -42,7 +40,6 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/openapi-spec-builder](./openapi-spec-builder.md) | A package to simplify creating OpenAPI specification documents in your tests using the builder pattern. |
 |  [@loopback/openapi-v3](./openapi-v3.md) | Decorators that describe LoopBack artifacts as OpenAPI 3.0.0 metadata and utilities that transfer LoopBack metadata to OpenAPI 3.0.0 specifications. |
 |  [@loopback/pooling](./pooling.md) |  |
-|  [@loopback/repository](./repository.md) | <p>A common set of interfaces for interacting with databases.</p><p>This module provides data access facilities to various databases and services as well as the constructs for modeling and accessing those data.</p> |
 |  [@loopback/repository-json-schema](./repository-json-schema.md) | Convert a TypeScript class/model to a JSON Schema for users, leveraging LoopBack4's decorators, metadata, and reflection system. |
 |  [@loopback/repository-tests](./repository-tests.md) | A test suite verifying functionality of <code>@loopback/repository</code> in a connector -independent way. |
 |  [@loopback/rest](./rest.md) | The REST API package for loopback-next. |
@@ -51,10 +48,8 @@ permalink: /doc/en/lb4/apidocs.index.html
 |  [@loopback/rest-msgpack](./rest-msgpack.md) |  |
 |  [@loopback/security](./security.md) | Common types/interfaces for LoopBack 4 security including authentication and authorization. |
 |  [@loopback/sequelize](./sequelize.md) |  |
-|  [@loopback/service-proxy](./service-proxy.md) | A common set of interfaces for interacting with service oriented backends such as REST APIs, SOAP Web Services, and gRPC microservices. |
 |  [@loopback/socketio](./socketio.md) |  |
 |  [@loopback/testlab](./testlab.md) | A collection of test utilities we use to write LoopBack tests. |
 |  [@loopback/tsdocs](./tsdocs.md) | The <code>@loopback/tsdocs</code> package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for <code>@loopback/*</code> packages within [loopback-next](https://github.com/loopbackio/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->. |
-|  [@loopback/typeorm](./typeorm.md) |  |
 
 

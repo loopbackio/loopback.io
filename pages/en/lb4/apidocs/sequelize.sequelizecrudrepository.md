@@ -20,7 +20,7 @@ Sequelize implementation of CRUD repository to be used with default loopback ent
 ```typescript
 export declare class SequelizeCrudRepository<T extends Entity, ID, Relations extends object = {}> implements EntityCrudRepository<T, ID, Relations> 
 ```
-**Implements:** [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, ID, Relations&gt;
+**Implements:** EntityCrudRepository&lt;T, ID, Relations&gt;
 
 ## Constructors
 
@@ -36,8 +36,8 @@ export declare class SequelizeCrudRepository<T extends Entity, ID, Relations ext
 |  [DB\_SPECIFIC\_SETTINGS\_KEYS](./sequelize.sequelizecrudrepository.db_specific_settings_keys.md) | <code>readonly</code> | readonly \["postgresql", "mysql", "sqlite3"\] | <p>Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float <code>{ type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }, }</code></p><p>This array of keys is used while building model definition for sequelize.</p> |
 |  [DEFAULT\_ORDER\_STYLE](./sequelize.sequelizecrudrepository.default_order_style.md) | <code>readonly</code> | (not declared) | Default <code>order</code> filter style if only column name is specified |
 |  [defaultFnRegistry](./sequelize.sequelizecrudrepository.defaultfnregistry.md) | <code>protected</code> | Record&lt;string, unknown&gt; | <p>The alias registry for <code>defaultFn</code> option used in model property definition.</p><p>See: https://loopback.io/doc/en/lb4/Model.html\#property-decorator</p> |
-|  [entityClass](./sequelize.sequelizecrudrepository.entityclass.md) |  | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
-|  [inclusionResolvers](./sequelize.sequelizecrudrepository.inclusionresolvers.md) | <code>readonly</code> | Map&lt;string, [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt;&gt; |  |
+|  [entityClass](./sequelize.sequelizecrudrepository.entityclass.md) |  | typeof Entity &amp; { prototype: T; } |  |
+|  [inclusionResolvers](./sequelize.sequelizecrudrepository.inclusionresolvers.md) | <code>readonly</code> | Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt; |  |
 |  [NANO\_ID\_LENGTH](./sequelize.sequelizecrudrepository.nano_id_length.md) |  | number | Length of the <code>nanoid</code> generated for defaultFn's <code>shortid</code> and <code>nanoid</code> aliases. |
 |  [sequelizeModel](./sequelize.sequelizecrudrepository.sequelizemodel.md) |  | ModelStatic&lt;Model&lt;T&gt;&gt; | Sequelize Model Instance created from the model definition received from the <code>entityClass</code> |
 

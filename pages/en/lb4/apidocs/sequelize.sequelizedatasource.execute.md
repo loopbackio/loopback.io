@@ -27,13 +27,13 @@ execute(command: Command, parameters?: NamedParameters | PositionalParameters, o
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  command | [Command](./repository.command.md) | A parameterized SQL command or query. |
-|  parameters | [NamedParameters](./repository.namedparameters.md) \| [PositionalParameters](./repository.positionalparameters.md) | _(Optional)_ List of parameter values to use. |
-|  options | [Options](./repository.options.md) | _(Optional)_ Additional options, for example <code>transaction</code>. |
+|  command | Command | A parameterized SQL command or query. |
+|  parameters | NamedParameters \| PositionalParameters | _(Optional)_ List of parameter values to use. |
+|  options | Options | _(Optional)_ Additional options, for example <code>transaction</code>. |
 
 **Returns:**
 
-Promise&lt;[AnyObject](./repository.anyobject.md)<!-- -->&gt;
+Promise&lt;AnyObject&gt;
 
 A promise which resolves to the command output. The output type (data structure) is database specific and often depends on the command executed.
 

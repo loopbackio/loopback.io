@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.refreshtoken.html
 ```typescript
 export declare class RefreshToken extends Entity 
 ```
-**Extends:** [Entity](./repository.entity.md)
+**Extends:** Entity
 
 ## Constructors
 

@@ -20,7 +20,7 @@ A REST API server for use with Loopback. Add this server to your application by 
 ```typescript
 export declare class RestServer extends BaseMiddlewareRegistry implements Server, HttpServerLike 
 ```
-**Extends:** [BaseMiddlewareRegistry](./express.basemiddlewareregistry.md)
+**Extends:** BaseMiddlewareRegistry
 
 **Implements:** [Server](./core.server.md)<!-- -->, [HttpServerLike](./rest.httpserverlike.md)
 

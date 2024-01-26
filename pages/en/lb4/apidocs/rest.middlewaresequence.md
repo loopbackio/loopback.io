@@ -32,9 +32,9 @@ export declare class MiddlewareSequence implements SequenceHandler
 
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
-|  [defaultOptions](./rest.middlewaresequence.defaultoptions.md) | <code>static</code> | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
-|  [invokeMiddleware](./rest.middlewaresequence.invokemiddleware.md) | <code>readonly</code> | [InvokeMiddleware](./express.invokemiddleware.md) |  |
-|  [options](./rest.middlewaresequence.options.md) | <code>readonly</code> | [InvokeMiddlewareOptions](./express.invokemiddlewareoptions.md) |  |
+|  [defaultOptions](./rest.middlewaresequence.defaultoptions.md) | <code>static</code> | InvokeMiddlewareOptions |  |
+|  [invokeMiddleware](./rest.middlewaresequence.invokemiddleware.md) | <code>readonly</code> | InvokeMiddleware |  |
+|  [options](./rest.middlewaresequence.options.md) | <code>readonly</code> | InvokeMiddlewareOptions |  |
 
 ## Methods
 

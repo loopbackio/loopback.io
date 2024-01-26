@@ -24,8 +24,8 @@ updateById(id: ID, data: DataObject<T>, options?: AnyObject): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  data | DataObject&lt;T&gt; |  |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

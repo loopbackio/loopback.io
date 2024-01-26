@@ -18,6 +18,4 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.responsemodelorspec.html
 ```typescript
 export type ResponseModelOrSpec = typeof Model | SchemaObject | ResponseObject | ReferenceObject;
 ```
-**References:** [Model](./repository.model.md)
-
 

@@ -28,7 +28,7 @@ protected includeReferencesIfRequested(parentEntities: Model<T, T>[], parentEnti
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  parentEntities | Model&lt;T, T&gt;\[\] | source table data |
-|  parentEntityClass | typeof [Entity](./repository.entity.md) | loopback entity class for the parent entity |
+|  parentEntityClass | typeof Entity | loopback entity class for the parent entity |
 |  inclusionFilters | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | _(Optional)_ |
 
 **Returns:**

@@ -24,7 +24,7 @@ deleteById(id: ID, options?: AnyObject | undefined): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  options | [AnyObject](./repository.anyobject.md) \| undefined | _(Optional)_ |
+|  options | AnyObject \| undefined | _(Optional)_ |
 
 **Returns:**
 

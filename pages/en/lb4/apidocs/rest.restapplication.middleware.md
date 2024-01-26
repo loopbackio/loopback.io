@@ -25,12 +25,12 @@ middleware(middleware: Middleware | Constructor<Provider<Middleware>>, options?:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  middleware | [Middleware](./express.middleware.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;&gt; | Middleware function or provider class |
-|  options | [MiddlewareBindingOptions](./express.middlewarebindingoptions.md) | _(Optional)_ Middleware binding options |
+|  middleware | Middleware \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;Middleware&gt;&gt; | Middleware function or provider class |
+|  options | MiddlewareBindingOptions | _(Optional)_ Middleware binding options |
 
 **Returns:**
 
-[Binding](./context.binding.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+[Binding](./context.binding.md)<!-- -->&lt;Middleware&gt;
 
 ## Example
 

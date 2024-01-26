@@ -27,7 +27,7 @@ constructor(entityClass: typeof Entity & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entityClass | typeof [Entity](./repository.entity.md) &amp; { prototype: T; } |  |
+|  entityClass | typeof Entity &amp; { prototype: T; } |  |
 |  dataSource | [SequelizeDataSource](./sequelize.sequelizedatasource.md) |  |
 
 

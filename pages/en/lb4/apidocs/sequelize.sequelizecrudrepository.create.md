@@ -23,8 +23,8 @@ create(entity: DataObject<T>, options?: AnyObject): Promise<T>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entity | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  entity | DataObject&lt;T&gt; |  |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

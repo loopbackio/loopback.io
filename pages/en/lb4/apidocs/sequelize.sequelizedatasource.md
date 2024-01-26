@@ -34,7 +34,7 @@ export declare class SequelizeDataSource implements LifeCycleObserver
 |  --- | --- | --- | --- |
 |  [config](./sequelize.sequelizedatasource.config.md) |  | [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md) |  |
 |  [name](./sequelize.sequelizedatasource.name.md) |  | string |  |
-|  [sequelize?](./sequelize.sequelizedatasource.sequelize.md) |  | Sequelize | _(Optional)_ |
+|  [sequelize](./sequelize.sequelizedatasource.sequelize.md) |  | Sequelize |  |
 |  [sequelizeConfig](./sequelize.sequelizedatasource.sequelizeconfig.md) |  | SequelizeOptions |  |
 |  [settings](./sequelize.sequelizedatasource.settings.md) |  | {} |  |
 

@@ -26,7 +26,7 @@ registerInclusionResolver(relationName: string, resolver: InclusionResolver<T, E
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  resolver | [InclusionResolver](./repository.inclusionresolver.md)<!-- -->&lt;T, [Entity](./repository.entity.md)<!-- -->&gt; | Resolver function for getting related model entities |
+|  resolver | InclusionResolver&lt;T, Entity&gt; | Resolver function for getting related model entities |
 
 **Returns:**
 

@@ -20,6 +20,6 @@ value(): Middleware;
 ```
 **Returns:**
 
-[Middleware](./express.middleware.md)
+Middleware
 
 

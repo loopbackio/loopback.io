@@ -25,7 +25,7 @@ export declare function isArrayType(type: string | Function | PropertyType): boo
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  type | string \| Function \| [PropertyType](./repository.propertytype.md) | Type as string or wrapper |
+|  type | string \| Function \| PropertyType | Type as string or wrapper |
 
 **Returns:**
 

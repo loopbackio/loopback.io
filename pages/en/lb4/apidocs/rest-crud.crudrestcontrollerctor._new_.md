@@ -23,7 +23,7 @@ new (repository: EntityCrudRepository<T, IdType, Relations>): CrudRestController
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  repository | [EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;T, IdType, Relations&gt; |  |
+|  repository | EntityCrudRepository&lt;T, IdType, Relations&gt; |  |
 
 **Returns:**
 

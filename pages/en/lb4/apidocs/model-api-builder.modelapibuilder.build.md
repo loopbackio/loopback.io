@@ -25,8 +25,8 @@ build(application: ApplicationWithRepositories, modelClass: typeof Model & {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  application | [ApplicationWithRepositories](./repository.applicationwithrepositories.md) |  |
-|  modelClass | typeof [Model](./repository.model.md) &amp; { prototype: [Model](./repository.model.md)<!-- -->; } |  |
+|  application | ApplicationWithRepositories |  |
+|  modelClass | typeof Model &amp; { prototype: Model; } |  |
 |  config | [ModelApiConfig](./model-api-builder.modelapiconfig.md) |  |
 
 **Returns:**

@@ -29,7 +29,7 @@ export declare function defineCrudRestController<T extends Entity, IdType, IdNam
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | typeof [Entity](./repository.entity.md) &amp; { prototype: T &amp; { \[key in IdName\]: IdType; }; } | A model class, e.g. <code>Product</code>. |
+|  modelCtor | typeof Entity &amp; { prototype: T &amp; { \[key in IdName\]: IdType; }; } | A model class, e.g. <code>Product</code>. |
 |  options | [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md) | Configuration options, e.g. <code>{basePath: '/products'}</code>. |
 
 **Returns:**

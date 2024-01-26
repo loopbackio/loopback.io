@@ -24,10 +24,10 @@ count(where?: Where<T>, options?: AnyObject): Promise<Count>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | _(Optional)_ |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 
-Promise&lt;[Count](./repository.count.md)<!-- -->&gt;
+Promise&lt;Count&gt;
 
 

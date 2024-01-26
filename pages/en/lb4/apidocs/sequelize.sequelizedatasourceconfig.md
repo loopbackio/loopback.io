@@ -24,6 +24,4 @@ export type SequelizeDataSourceConfig = {
     sequelizeOptions?: SequelizeOptions;
 } & AnyObject;
 ```
-**References:** [AnyObject](./repository.anyobject.md)
-
 

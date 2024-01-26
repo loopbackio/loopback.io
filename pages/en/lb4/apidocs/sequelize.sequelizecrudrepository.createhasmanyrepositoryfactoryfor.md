@@ -26,11 +26,11 @@ protected createHasManyRepositoryFactoryFor<Target extends Entity, TargetID, For
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; |  |
+|  targetRepositoryGetter | Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt; |  |
 
 **Returns:**
 
-[HasManyRepositoryFactory](./repository.hasmanyrepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
+HasManyRepositoryFactory&lt;Target, ForeignKeyType&gt;
 
 ## Example
 

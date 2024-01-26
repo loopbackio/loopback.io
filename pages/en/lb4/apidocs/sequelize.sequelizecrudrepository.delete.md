@@ -24,7 +24,7 @@ delete(entity: T, options?: AnyObject): Promise<void>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | T |  |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

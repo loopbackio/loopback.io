@@ -28,10 +28,10 @@ protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationNa
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetId&gt;&gt;; } |  |
+|  targetRepositoryGetter | Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt;; } |  |
 
 **Returns:**
 
-[BelongsToAccessor](./repository.belongstoaccessor.md)<!-- -->&lt;Target, ID&gt;
+BelongsToAccessor&lt;Target, ID&gt;
 
 

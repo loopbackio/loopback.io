@@ -13,14 +13,14 @@ permalink: /doc/en/lb4/apidocs.socketio.socketiobooter.html
 
 ## SocketIoBooter class
 
-A class that extends [BaseArtifactBooter](./boot.baseartifactbooter.md) to boot the  artifact type.
+A class that extends  to boot the  artifact type.
 
 **Signature:**
 
 ```typescript
 export declare class SocketIoBooter extends BaseArtifactBooter 
 ```
-**Extends:** [BaseArtifactBooter](./boot.baseartifactbooter.md)
+**Extends:** BaseArtifactBooter
 
 ## Remarks
 
@@ -39,7 +39,7 @@ Supported phases: `configure`<!-- -->, `discover`<!-- -->, `load`
 |  Property | Modifiers | Type | Description |
 |  --- | --- | --- | --- |
 |  [app](./socketio.socketiobooter.app.md) |  | [Application](./core.application.md) |  |
-|  [socketioControllerConfig](./socketio.socketiobooter.socketiocontrollerconfig.md) |  | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  [socketioControllerConfig](./socketio.socketiobooter.socketiocontrollerconfig.md) |  | ArtifactOptions |  |
 |  [socketioServer](./socketio.socketiobooter.socketioserver.md) | <code>protected</code> | [SocketIoServer](./socketio.socketioserver.md) |  |
 
 ## Methods

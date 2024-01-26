@@ -28,10 +28,10 @@ protected createHasOneRepositoryFactoryFor<Target extends Entity, TargetID, Fore
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  relationName | string | Name of the relation defined on the source model |
-|  targetRepositoryGetter | Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;[EntityCrudRepository](./repository.entitycrudrepository.md)<!-- -->&lt;Target, TargetID&gt;&gt;; } |  |
+|  targetRepositoryGetter | Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt;; } |  |
 
 **Returns:**
 
-[HasOneRepositoryFactory](./repository.hasonerepositoryfactory.md)<!-- -->&lt;Target, ForeignKeyType&gt;
+HasOneRepositoryFactory&lt;Target, ForeignKeyType&gt;
 
 

@@ -48,7 +48,7 @@ app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
 |  --- | --- | --- | --- |
 |  [findRoute](./rest.defaultsequence.findroute.md) | <code>protected</code> | [FindRoute](./rest.findroute.md) |  |
 |  [invoke](./rest.defaultsequence.invoke.md) | <code>protected</code> | [InvokeMethod](./rest.invokemethod.md) |  |
-|  [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md) | <code>protected</code> | [InvokeMiddleware](./express.invokemiddleware.md) | Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE. |
+|  [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md) | <code>protected</code> | InvokeMiddleware | Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE. |
 |  [parseParams](./rest.defaultsequence.parseparams.md) | <code>protected</code> | [ParseParams](./rest.parseparams.md) |  |
 |  [reject](./rest.defaultsequence.reject.md) |  | [Reject](./rest.reject.md) |  |
 |  [send](./rest.defaultsequence.send.md) |  | [Send](./rest.send.md) |  |

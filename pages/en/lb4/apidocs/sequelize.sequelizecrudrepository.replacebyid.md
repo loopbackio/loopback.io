@@ -24,8 +24,8 @@ replaceById(id: ID, data: DataObject<T>, options?: AnyObject | undefined): Promi
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  data | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt; |  |
-|  options | [AnyObject](./repository.anyobject.md) \| undefined | _(Optional)_ |
+|  data | DataObject&lt;T&gt; |  |
+|  options | AnyObject \| undefined | _(Optional)_ |
 
 **Returns:**
 

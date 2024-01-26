@@ -18,7 +18,7 @@ permalink: /doc/en/lb4/apidocs.rest.parseparamsmiddlewareprovider.html
 ```typescript
 export declare class ParseParamsMiddlewareProvider implements Provider<Middleware> 
 ```
-**Implements:** [Provider](./context.provider.md)<!-- -->&lt;[Middleware](./express.middleware.md)<!-- -->&gt;
+**Implements:** [Provider](./context.provider.md)<!-- -->&lt;Middleware&gt;
 
 ## Methods
 

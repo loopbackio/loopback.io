@@ -23,8 +23,8 @@ createAll(entities: DataObject<T>[], options?: AnyObject): Promise<T[]>;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  entities | [DataObject](./repository.dataobject.md)<!-- -->&lt;T&gt;\[\] |  |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  entities | DataObject&lt;T&gt;\[\] |  |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

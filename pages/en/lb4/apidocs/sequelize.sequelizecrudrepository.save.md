@@ -24,7 +24,7 @@ save(entity: T, options?: AnyObject): Promise<T>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  entity | T |  |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

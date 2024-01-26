@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.example-metrics-prometheus.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-metrics-prometheus@0.12.3...@loopback/example-metrics-prometheus@0.12.4) (2023-12-12)
+
+**Note:** Version bump only for package @loopback/example-metrics-prometheus
+
+
+
+
+
+## [0.12.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-metrics-prometheus@0.12.2...@loopback/example-metrics-prometheus@0.12.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/example-metrics-prometheus
+
+
+
+
+
+## [0.12.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-metrics-prometheus@0.12.1...@loopback/example-metrics-prometheus@0.12.2) (2023-08-15)
+
+**Note:** Version bump only for package @loopback/example-metrics-prometheus
+
+
+
+
+
 ## [0.12.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-metrics-prometheus@0.12.0...@loopback/example-metrics-prometheus@0.12.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/example-metrics-prometheus

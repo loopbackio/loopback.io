@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.testlab.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.5](https://github.com/loopbackio/loopback-next/compare/@loopback/testlab@6.1.4...@loopback/testlab@6.1.5) (2024-01-11)
+
+**Note:** Version bump only for package @loopback/testlab
+
+
+
+
+
+## [6.1.4](https://github.com/loopbackio/loopback-next/compare/@loopback/testlab@6.1.3...@loopback/testlab@6.1.4) (2023-12-12)
+
+**Note:** Version bump only for package @loopback/testlab
+
+
+
+
+
+## [6.1.3](https://github.com/loopbackio/loopback-next/compare/@loopback/testlab@6.1.2...@loopback/testlab@6.1.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/testlab
+
+
+
+
+
 ## [6.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/testlab@6.1.1...@loopback/testlab@6.1.2) (2023-08-15)
 
 **Note:** Version bump only for package @loopback/testlab

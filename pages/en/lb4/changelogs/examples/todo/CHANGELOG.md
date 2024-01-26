@@ -13,6 +13,33 @@ permalink: /doc/en/lb4/changelog.example-todo.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-todo@7.1.3...@loopback/example-todo@7.1.4) (2023-12-12)
+
+
+### Bug Fixes
+
+* updating the geopoint as per census bureau update ([e0f7b2d](https://github.com/loopbackio/loopback-next/commit/e0f7b2d03b4e42917099f2744b515f052a68ec75))
+
+
+
+
+
+## [7.1.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-todo@7.1.2...@loopback/example-todo@7.1.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/example-todo
+
+
+
+
+
+## [7.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-todo@7.1.1...@loopback/example-todo@7.1.2) (2023-08-15)
+
+**Note:** Version bump only for package @loopback/example-todo
+
+
+
+
+
 ## [7.1.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-todo@7.1.0...@loopback/example-todo@7.1.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/example-todo

@@ -21,7 +21,7 @@ permalink: /doc/en/lb4/apidocs.socketio.html
 |  --- | --- |
 |  [DefaultSocketIoSequence](./socketio.defaultsocketiosequence.md) |  |
 |  [SocketIoApplication](./socketio.socketioapplication.md) |  |
-|  [SocketIoBooter](./socketio.socketiobooter.md) | A class that extends [BaseArtifactBooter](./boot.baseartifactbooter.md) to boot the  artifact type. |
+|  [SocketIoBooter](./socketio.socketiobooter.md) | A class that extends  to boot the  artifact type. |
 |  [SocketIoComponent](./socketio.socketiocomponent.md) |  |
 |  [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md) | Request context for a socket.io request |
 |  [SocketIoControllerFactory](./socketio.socketiocontrollerfactory.md) | A factory to instantiate socket.io controllers |

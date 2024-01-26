@@ -20,6 +20,4 @@ Reject the request with an error.
 ```typescript
 export type Reject = (handlerContext: HandlerContext, err: Error) => void;
 ```
-**References:** [HandlerContext](./express.handlercontext.md)
-
 

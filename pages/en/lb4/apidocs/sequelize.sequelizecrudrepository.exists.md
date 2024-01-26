@@ -24,7 +24,7 @@ exists(id: ID, _options?: AnyObject): Promise<boolean>;
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  \_options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  \_options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

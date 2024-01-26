@@ -16,7 +16,7 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizecrudrepository.findbyid.html
 **Signature:**
 
 ```typescript
-findById(id: ID, filter?: FilterExcludingWhere<T>, options?: AnyObject): Promise<T & Relations>;
+findById(id: ID, filter?: FilterWithRequiredExcludingWhere<T>, options?: AnyObject): Promise<T & Relations>;
 ```
 
 ## Parameters
@@ -24,8 +24,8 @@ findById(id: ID, filter?: FilterExcludingWhere<T>, options?: AnyObject): Promise
 |  Parameter | Type | Description |
 |  --- | --- | --- |
 |  id | ID |  |
-|  filter | [FilterExcludingWhere](./filter.filterexcludingwhere.md)<!-- -->&lt;T&gt; | _(Optional)_ |
-|  options | [AnyObject](./repository.anyobject.md) | _(Optional)_ |
+|  filter | FilterWithRequiredExcludingWhere&lt;T&gt; | _(Optional)_ |
+|  options | AnyObject | _(Optional)_ |
 
 **Returns:**
 

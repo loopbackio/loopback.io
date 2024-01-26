@@ -13,6 +13,38 @@ permalink: /doc/en/lb4/changelog.mock-oauth2-provider.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.8.4...@loopback/mock-oauth2-provider@0.8.5) (2024-01-11)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.8.4](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.8.3...@loopback/mock-oauth2-provider@0.8.4) (2023-12-12)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.8.3](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.8.2...@loopback/mock-oauth2-provider@0.8.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.8.2](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.8.1...@loopback/mock-oauth2-provider@0.8.2) (2023-08-15)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
 ## [0.8.1](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.8.0...@loopback/mock-oauth2-provider@0.8.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/mock-oauth2-provider

@@ -27,7 +27,7 @@ function filter(modelCtor: typeof Model, options?: string | (FilterSchemaOptions
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | typeof [Model](./repository.model.md) | Model class |
+|  modelCtor | typeof Model | Model class |
 |  options | string \| ([FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) &amp; { name?: string; }) | _(Optional)_ Options to customize the parameter name or filter schema |
 
 **Returns:**

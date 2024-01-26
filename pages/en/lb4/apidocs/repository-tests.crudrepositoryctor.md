@@ -22,6 +22,4 @@ export type CrudRepositoryCtor = new <T extends Entity, ID, Relations extends ob
     prototype: T;
 }, dataSource: juggler.DataSource) => EntityCrudRepository<T, ID, Relations>;
 ```
-**References:** [Entity](./repository.entity.md)<!-- -->, [EntityCrudRepository](./repository.entitycrudrepository.md)
-
 

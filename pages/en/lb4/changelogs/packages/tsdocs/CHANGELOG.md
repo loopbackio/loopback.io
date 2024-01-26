@@ -13,6 +13,36 @@ permalink: /doc/en/lb4/changelog.tsdocs.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.4](https://github.com/loopbackio/loopback-next/compare/@loopback/tsdocs@5.1.3...@loopback/tsdocs@5.1.4) (2023-12-12)
+
+
+### Bug Fixes
+
+* **tsdocs:** disable some repos to gen tsdocs ([ab3a7a6](https://github.com/loopbackio/loopback-next/commit/ab3a7a6c4f78fd16ea10cf16da73b1c4f5ff3323))
+
+
+
+
+
+## [5.1.3](https://github.com/loopbackio/loopback-next/compare/@loopback/tsdocs@5.1.2...@loopback/tsdocs@5.1.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/tsdocs
+
+
+
+
+
+## [5.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/tsdocs@5.1.1...@loopback/tsdocs@5.1.2) (2023-08-15)
+
+
+### Bug Fixes
+
+* apidocs generation ([1b6daa6](https://github.com/loopbackio/loopback-next/commit/1b6daa6848b8deb80f53fbac604fc8f94967b028))
+
+
+
+
+
 ## [5.1.1](https://github.com/loopbackio/loopback-next/compare/@loopback/tsdocs@5.1.0...@loopback/tsdocs@5.1.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/tsdocs

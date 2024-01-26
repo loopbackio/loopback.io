@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.rest-crud.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.4](https://github.com/loopbackio/loopback-next/compare/@loopback/rest-crud@0.17.3...@loopback/rest-crud@0.17.4) (2023-12-12)
+
+**Note:** Version bump only for package @loopback/rest-crud
+
+
+
+
+
+## [0.17.3](https://github.com/loopbackio/loopback-next/compare/@loopback/rest-crud@0.17.2...@loopback/rest-crud@0.17.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/rest-crud
+
+
+
+
+
+## [0.17.2](https://github.com/loopbackio/loopback-next/compare/@loopback/rest-crud@0.17.1...@loopback/rest-crud@0.17.2) (2023-08-15)
+
+**Note:** Version bump only for package @loopback/rest-crud
+
+
+
+
+
 ## [0.17.1](https://github.com/loopbackio/loopback-next/compare/@loopback/rest-crud@0.17.0...@loopback/rest-crud@0.17.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/rest-crud

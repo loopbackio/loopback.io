@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.logging.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.4](https://github.com/loopbackio/loopback-next/compare/@loopback/logging@0.11.3...@loopback/logging@0.11.4) (2023-12-12)
+
+**Note:** Version bump only for package @loopback/logging
+
+
+
+
+
+## [0.11.3](https://github.com/loopbackio/loopback-next/compare/@loopback/logging@0.11.2...@loopback/logging@0.11.3) (2023-09-12)
+
+**Note:** Version bump only for package @loopback/logging
+
+
+
+
+
+## [0.11.2](https://github.com/loopbackio/loopback-next/compare/@loopback/logging@0.11.1...@loopback/logging@0.11.2) (2023-08-15)
+
+**Note:** Version bump only for package @loopback/logging
+
+
+
+
+
 ## [0.11.1](https://github.com/loopbackio/loopback-next/compare/@loopback/logging@0.11.0...@loopback/logging@0.11.1) (2023-07-17)
 
 **Note:** Version bump only for package @loopback/logging

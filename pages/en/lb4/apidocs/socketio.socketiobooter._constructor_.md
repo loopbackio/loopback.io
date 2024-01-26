@@ -27,7 +27,7 @@ constructor(app: Application, projectRoot: string, socketioControllerConfig: Art
 |  --- | --- | --- |
 |  app | [Application](./core.application.md) |  |
 |  projectRoot | string |  |
-|  socketioControllerConfig | [ArtifactOptions](./boot.artifactoptions.md) |  |
+|  socketioControllerConfig | ArtifactOptions |  |
 |  socketioServer | [SocketIoServer](./socketio.socketioserver.md) |  |
 
 

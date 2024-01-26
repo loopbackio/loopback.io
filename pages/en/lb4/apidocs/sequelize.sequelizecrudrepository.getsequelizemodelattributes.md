@@ -27,7 +27,7 @@ protected getSequelizeModelAttributes(definition: {
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  definition | { \[name: string\]: [PropertyDefinition](./repository.propertydefinition.md)<!-- -->; } | property definition received from loopback entityClass eg. <code>{ id: { type: &quot;Number&quot;, id: true } }</code> |
+|  definition | { \[name: string\]: PropertyDefinition; } | property definition received from loopback entityClass eg. <code>{ id: { type: &quot;Number&quot;, id: true } }</code> |
 
 **Returns:**
 

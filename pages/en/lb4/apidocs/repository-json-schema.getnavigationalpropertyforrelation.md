@@ -25,7 +25,7 @@ export declare function getNavigationalPropertyForRelation(relMeta: RelationMeta
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  relMeta | [RelationMetadata](./repository.relationmetadata.md) | Relation metadata object |
+|  relMeta | RelationMetadata | Relation metadata object |
 |  targetRef | JsonSchema | Schema definition for the target model |
 
 **Returns:**

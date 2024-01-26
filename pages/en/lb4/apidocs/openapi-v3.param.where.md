@@ -25,7 +25,7 @@ function where(modelCtor: typeof Model, name?: string): (target: object, member:
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  modelCtor | typeof [Model](./repository.model.md) | Model class |
+|  modelCtor | typeof Model | Model class |
 |  name | string | _(Optional)_ Custom name for the parameter, default to <code>where</code> |
 
 **Returns:**
