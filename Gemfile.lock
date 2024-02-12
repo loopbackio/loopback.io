@@ -220,7 +220,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.22.1)
+    minitest (5.22.2)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
