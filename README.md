@@ -76,7 +76,7 @@ summary: A brief tutorial on creating an Angular client app using the Loopback A
 
 ## Incorporating updates from loopback-next
 
-We use a node script `update-lb4-docs` to copy over contents from loopback-next
+We use a node script `update-lb4-docs` to copy over contents from the loopback-next
 repository using `@loopback/docs` package. The script is responsible for copying
 over the markdown documentation and related tables, as well as the sidebar used
 for LoopBack 4 content. The changes are then picked up as part of Travis CI's
@@ -105,11 +105,11 @@ There are two parts of work to get this working:
 
 1. The [Discovery service](https://www.ibm.com/watson/services/discovery/) is one of the services provided by [IBM Cloud](https://cloud.ibm.com/). A collection is created with loopback.io as the URL we'd like to sync.
 
-2. The [IBM Cloud function](https://www.ibm.com/cloud/functions) is used for the search function calling the discovery service and parse the output in the form that the LoopBack web site understands.  
+2. The [IBM Cloud function](https://www.ibm.com/cloud/functions) is used for the search function calling the discovery service and parse the output in the form that the LoopBack website understands.  
 
 ### Front End
 
-Each documentation page has a search bar the top. The search will redirect the
+Each documentation page has a search bar at the top. The search will redirect the
 user to a `/search` page to show the results. The results are retrieved from a
 [IBM Cloud Function](https://www.ibm.com/cloud/functions) that acts as a proxy
 to protect Watson Discovery credentials. The search bar also contains a hidden
