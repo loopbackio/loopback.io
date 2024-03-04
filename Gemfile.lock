@@ -25,8 +25,7 @@ GEM
     connection_pool (2.4.1)
     dnsruby (1.70.0)
       simpleidn (~> 0.2.1)
-    drb (2.2.0)
-      ruby2_keywords
+    drb (2.2.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -239,7 +238,6 @@ GEM
       ffi (~> 1.0)
     rexml (3.2.6)
     rouge (3.30.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
     sass (3.7.4)
