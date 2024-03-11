@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allowallexcept.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [allowAllExcept](./authorization.authorize.allowallexcept.md)
 
-## authorize.allowAllExcept variable
+## authorize.allowAllExcept() function
 
 Allow all but the given roles
 
@@ -20,4 +20,15 @@ Allow all but the given roles
 ```typescript
 allowAllExcept: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  roles | string\[\] |  |
+
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

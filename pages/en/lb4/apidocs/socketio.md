@@ -34,6 +34,7 @@ permalink: /doc/en/lb4/apidocs.socketio.html
 
 |  Function | Description |
 |  --- | --- |
+|  [getNamespaceKeyForName(name)](./socketio.getnamespacekeyforname.md) |  |
 |  [getSocketIoMetadata(controllerClass)](./socketio.getsocketiometadata.md) |  |
 |  [socketio(spec)](./socketio.socketio.md) | Decorate a socketio controller class to specify the namespace. |
 
@@ -59,7 +60,6 @@ permalink: /doc/en/lb4/apidocs.socketio.html
 |  Variable | Description |
 |  --- | --- |
 |  [ERR\_NO\_MULTI\_SERVER](./socketio.err_no_multi_server.md) |  |
-|  [getNamespaceKeyForName](./socketio.getnamespacekeyforname.md) |  |
 |  [SOCKET\_IO\_CONNECT\_METADATA](./socketio.socket_io_connect_metadata.md) |  |
 |  [SOCKET\_IO\_METADATA](./socketio.socket_io_metadata.md) |  |
 |  [SOCKET\_IO\_SUBSCRIBE\_METADATA](./socketio.socket_io_subscribe_metadata.md) |  |

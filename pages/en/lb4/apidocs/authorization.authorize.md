@@ -19,20 +19,20 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.html
 export declare namespace authorize 
 ```
 
-## Variables
+## Functions
 
-|  Variable | Description |
+|  Function | Description |
 |  --- | --- |
-|  [allow](./authorization.authorize.allow.md) | Shortcut to configure allowed roles |
-|  [allowAll](./authorization.authorize.allowall.md) | Allows all |
-|  [allowAllExcept](./authorization.authorize.allowallexcept.md) | Allow all but the given roles |
-|  [allowAuthenticated](./authorization.authorize.allowauthenticated.md) | Allow authenticated users |
-|  [deny](./authorization.authorize.deny.md) | Shortcut to configure denied roles |
-|  [denyAll](./authorization.authorize.denyall.md) | Deny all |
-|  [denyAllExcept](./authorization.authorize.denyallexcept.md) | Deny all but the given roles |
-|  [denyUnauthenticated](./authorization.authorize.denyunauthenticated.md) | Deny unauthenticated users |
-|  [scope](./authorization.authorize.scope.md) | Shortcut to specify access scopes |
-|  [skip](./authorization.authorize.skip.md) | Skip authorization |
-|  [vote](./authorization.authorize.vote.md) | Shortcut to configure voters |
+|  [allow(roles)](./authorization.authorize.allow.md) | Shortcut to configure allowed roles |
+|  [allowAll()](./authorization.authorize.allowall.md) | Allows all |
+|  [allowAllExcept(roles)](./authorization.authorize.allowallexcept.md) | Allow all but the given roles |
+|  [allowAuthenticated()](./authorization.authorize.allowauthenticated.md) | Allow authenticated users |
+|  [deny(roles)](./authorization.authorize.deny.md) | Shortcut to configure denied roles |
+|  [denyAll()](./authorization.authorize.denyall.md) | Deny all |
+|  [denyAllExcept(roles)](./authorization.authorize.denyallexcept.md) | Deny all but the given roles |
+|  [denyUnauthenticated()](./authorization.authorize.denyunauthenticated.md) | Deny unauthenticated users |
+|  [scope(scopes)](./authorization.authorize.scope.md) | Shortcut to specify access scopes |
+|  [skip()](./authorization.authorize.skip.md) | Skip authorization |
+|  [vote(voters)](./authorization.authorize.vote.md) | Shortcut to configure voters |
 
 

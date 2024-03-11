@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.view.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [inject](./context.inject.md) &gt; [view](./context.inject.view.md)
 
-## inject.view variable
+## inject.view() function
 
 Inject matching bound values by the filter function
 
@@ -20,6 +20,17 @@ Inject matching bound values by the filter function
 ```typescript
 view: (bindingFilter: BindingFilter, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A binding filter function |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ |
+
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 ## Example
 

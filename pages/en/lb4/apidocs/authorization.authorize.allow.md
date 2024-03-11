@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allow.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [allow](./authorization.authorize.allow.md)
 
-## authorize.allow variable
+## authorize.allow() function
 
 Shortcut to configure allowed roles
 
@@ -20,4 +20,15 @@ Shortcut to configure allowed roles
 ```typescript
 allow: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  roles | string\[\] |  |
+
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.param.array.html
 
 [Home](./index.md) &gt; [@loopback/openapi-v3](./openapi-v3.md) &gt; [param](./openapi-v3.param.md) &gt; [array](./openapi-v3.param.array.md)
 
-## param.array variable
+## param.array() function
 
 Define a parameter of `array` type.
 
@@ -20,6 +20,18 @@ Define a parameter of `array` type.
 ```typescript
 array: (name: string, source: ParameterLocation, itemSpec: SchemaObject | ReferenceObject) => (target: object, member: string, index: number) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  name | string | Parameter name |
+|  source | ParameterLocation | Source of the parameter value |
+|  itemSpec | SchemaObject \| ReferenceObject | Item type for the array or the full item object |
+
+**Returns:**
+
+(target: object, member: string, index: number) =&gt; void
 
 ## Example
 

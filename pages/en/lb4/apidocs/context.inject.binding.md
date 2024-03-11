@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.binding.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [inject](./context.inject.md) &gt; [binding](./context.inject.binding.md)
 
-## inject.binding variable
+## inject.binding() function
 
 Inject the binding object for the given key. This is useful if a binding needs to be set up beyond just a constant value allowed by `@inject.setter`<!-- -->. The injected binding is found or created based on the `metadata.bindingCreation` option. See `BindingCreationPolicy` for more details.
 
@@ -20,6 +20,17 @@ Inject the binding object for the given key. This is useful if a binding needs t
 ```typescript
 binding: (bindingKey?: string | BindingKey<unknown>, metadata?: InjectBindingMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  bindingKey | string \| [BindingKey](./context.bindingkey.md)<!-- -->&lt;unknown&gt; | _(Optional)_ Binding key |
+|  metadata | [InjectBindingMetadata](./context.injectbindingmetadata.md) | _(Optional)_ Metadata for the injection |
+
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 ## Example
 

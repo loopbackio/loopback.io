@@ -48,7 +48,7 @@ export declare class SequelizeCrudRepository<T extends Entity, ID, Relations ext
 |  [beginTransaction(options)](./sequelize.sequelizecrudrepository.begintransaction.md) |  |  |
 |  [buildSequelizeAttributeFilter(fields)](./sequelize.sequelizecrudrepository.buildsequelizeattributefilter.md) | <code>protected</code> | Get Sequelize <code>attributes</code> filter value from <code>fields</code> of loopback. |
 |  [buildSequelizeIncludeFilter(inclusionFilters, sourceModel)](./sequelize.sequelizecrudrepository.buildsequelizeincludefilter.md) | <code>protected</code> | Build Sequelize compatible <code>include</code> filter |
-|  [buildSequelizeOrder(order)](./sequelize.sequelizecrudrepository.buildsequelizeorder.md) | <code>protected</code> | Get Sequelize Order filter value from loopback style order value |
+|  [buildSequelizeOrder(order)](./sequelize.sequelizecrudrepository.buildsequelizeorder.md) | <code>protected</code> | <p>Get Sequelize Order filter value from loopback style order value.</p><p>It also supports passing associations in the order array to sort by nested models. Example: <code>[&quot;user email ASC&quot;]</code>.</p> |
 |  [buildSequelizeWhere(where)](./sequelize.sequelizecrudrepository.buildsequelizewhere.md) | <code>protected</code> | Build Sequelize compatible where condition object |
 |  [count(where, options)](./sequelize.sequelizecrudrepository.count.md) |  |  |
 |  [create(entity, options)](./sequelize.sequelizecrudrepository.create.md) |  |  |

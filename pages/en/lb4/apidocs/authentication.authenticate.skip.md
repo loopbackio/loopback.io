@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticate.skip.html
 
 [Home](./index.md) &gt; [@loopback/authentication](./authentication.md) &gt; [authenticate](./authentication.authenticate.md) &gt; [skip](./authentication.authenticate.skip.md)
 
-## authenticate.skip variable
+## authenticate.skip() function
 
 `@authenticate.skip()` - a sugar decorator to skip authentication
 
@@ -20,4 +20,8 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticate.skip.html
 ```typescript
 skip: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

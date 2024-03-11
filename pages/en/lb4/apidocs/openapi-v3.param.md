@@ -25,6 +25,7 @@ export declare namespace param
 
 |  Function | Description |
 |  --- | --- |
+|  [array(name, source, itemSpec)](./openapi-v3.param.array.md) | Define a parameter of <code>array</code> type. |
 |  [filter(modelCtor, options)](./openapi-v3.param.filter.md) | Sugar decorator for <code>filter</code> query parameter |
 |  [where(modelCtor, name)](./openapi-v3.param.where.md) | Sugar decorator for <code>where</code> query parameter |
 
@@ -32,7 +33,6 @@ export declare namespace param
 
 |  Variable | Description |
 |  --- | --- |
-|  [array](./openapi-v3.param.array.md) | Define a parameter of <code>array</code> type. |
 |  [header](./openapi-v3.param.header.md) | Header parameter decorator |
 |  [path](./openapi-v3.param.path.md) | Path parameter decorator |
 |  [query](./openapi-v3.param.query.md) | Query parameter decorator |

@@ -19,11 +19,11 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.requestbody.html
 export declare namespace requestBody 
 ```
 
-## Variables
+## Functions
 
-|  Variable | Description |
+|  Function | Description |
 |  --- | --- |
-|  [array](./openapi-v3.requestbody.array.md) | Define a requestBody of <code>array</code> type. |
-|  [file](./openapi-v3.requestbody.file.md) | <p>Define a requestBody of <code>file</code> type. This is used to support multipart/form-data based file upload. Use <code>@requestBody</code> for other content types.</p><p>[OpenAPI file upload](https://swagger.io/docs/specification/describing-request-body/file-upload)</p> |
+|  [array(itemSpec, properties)](./openapi-v3.requestbody.array.md) | Define a requestBody of <code>array</code> type. |
+|  [file(properties)](./openapi-v3.requestbody.file.md) | <p>Define a requestBody of <code>file</code> type. This is used to support multipart/form-data based file upload. Use <code>@requestBody</code> for other content types.</p><p>[OpenAPI file upload](https://swagger.io/docs/specification/describing-request-body/file-upload)</p> |
 
 

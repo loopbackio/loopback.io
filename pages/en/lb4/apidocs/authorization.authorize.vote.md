@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.vote.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [vote](./authorization.authorize.vote.md)
 
-## authorize.vote variable
+## authorize.vote() function
 
 Shortcut to configure voters
 
@@ -20,4 +20,15 @@ Shortcut to configure voters
 ```typescript
 vote: (...voters: (Authorizer | BindingAddress<Authorizer>)[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  voters | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] |  |
+
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

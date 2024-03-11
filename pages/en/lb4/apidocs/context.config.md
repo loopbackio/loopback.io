@@ -19,11 +19,11 @@ permalink: /doc/en/lb4/apidocs.context.config.html
 export declare namespace config 
 ```
 
-## Variables
+## Functions
 
-|  Variable | Description |
+|  Function | Description |
 |  --- | --- |
-|  [getter](./context.config.getter.md) | <code>@inject.getter</code> decorator to inject a config getter function |
-|  [view](./context.config.view.md) | <code>@inject.view</code> decorator to inject a config context view to allow dynamic changes in configuration |
+|  [getter(propertyPath, metadata)](./context.config.getter.md) | <code>@inject.getter</code> decorator to inject a config getter function |
+|  [view(propertyPath, metadata)](./context.config.view.md) | <code>@inject.view</code> decorator to inject a config context view to allow dynamic changes in configuration |
 
 

@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.denyall.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [denyAll](./authorization.authorize.denyall.md)
 
-## authorize.denyAll variable
+## authorize.denyAll() function
 
 Deny all
 
@@ -20,4 +20,8 @@ Deny all
 ```typescript
 denyAll: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

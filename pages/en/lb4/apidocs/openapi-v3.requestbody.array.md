@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.requestbody.array.html
 
 [Home](./index.md) &gt; [@loopback/openapi-v3](./openapi-v3.md) &gt; [requestBody](./openapi-v3.requestbody.md) &gt; [array](./openapi-v3.requestbody.array.md)
 
-## requestBody.array variable
+## requestBody.array() function
 
 Define a requestBody of `array` type.
 
@@ -23,6 +23,17 @@ array: (itemSpec: SchemaObject | ReferenceObject, properties?: {
         required?: boolean;
     }) => (target: object, member: string, index: number) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  itemSpec | SchemaObject \| ReferenceObject | the full item object |
+|  properties | { description?: string; required?: boolean; } | _(Optional)_ The requestBody properties other than <code>content</code> |
+
+**Returns:**
+
+(target: object, member: string, index: number) =&gt; void
 
 ## Example
 

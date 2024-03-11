@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allowall.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [allowAll](./authorization.authorize.allowall.md)
 
-## authorize.allowAll variable
+## authorize.allowAll() function
 
 Allows all
 
@@ -20,4 +20,8 @@ Allows all
 ```typescript
 allowAll: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

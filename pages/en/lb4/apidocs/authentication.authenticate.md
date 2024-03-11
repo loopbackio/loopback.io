@@ -19,10 +19,10 @@ permalink: /doc/en/lb4/apidocs.authentication.authenticate.html
 export declare namespace authenticate 
 ```
 
-## Variables
+## Functions
 
-|  Variable | Description |
+|  Function | Description |
 |  --- | --- |
-|  [skip](./authentication.authenticate.skip.md) | <code>@authenticate.skip()</code> - a sugar decorator to skip authentication |
+|  [skip()](./authentication.authenticate.skip.md) | <code>@authenticate.skip()</code> - a sugar decorator to skip authentication |
 
 

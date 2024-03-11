@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.setter.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [inject](./context.inject.md) &gt; [setter](./context.inject.setter.md)
 
-## inject.setter variable
+## inject.setter() function
 
 Inject a function for setting (binding) the given key to a given value. (Only static/constant values are supported, it's not possible to bind a key to a class or a provider.)
 
@@ -24,4 +24,16 @@ See also `Setter<T>`<!-- -->.
 ```typescript
 setter: (bindingKey: BindingAddress, metadata?: InjectBindingMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  bindingKey | [BindingAddress](./context.bindingaddress.md) | The key of the value we want to set. |
+|  metadata | [InjectBindingMetadata](./context.injectbindingmetadata.md) | _(Optional)_ Optional metadata to help the injection |
+
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
+
 

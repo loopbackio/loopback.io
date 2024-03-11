@@ -38,6 +38,7 @@ Test utilities to help write LoopBack 4 tests:
 |  [givenHttpServerConfig(customConfig)](./testlab.givenhttpserverconfig.md) | Create an HTTP-server configuration that works well in test environments. - Ask the operating system to assign a free (ephemeral) port. - Use IPv4 localhost <code>127.0.0.1</code> to avoid known IPv6 issues in Docker-based environments like Travis-CI. - Provide default TLS key &amp; cert when <code>protocol</code> is set to <code>https</code>. |
 |  [httpGetAsync(urlString, agent)](./testlab.httpgetasync.md) | Async wrapper for making HTTP GET requests |
 |  [httpsGetAsync(urlString, agent)](./testlab.httpsgetasync.md) | Async wrapper for making HTTPS GET requests |
+|  [inject(dispatchFunc, options)](./testlab.inject.md) |  |
 |  [skipIf(skip, verb, name, args)](./testlab.skipif.md) | Helper function for skipping tests when a certain condition is met. |
 |  [skipOnTravis(verb, name, args)](./testlab.skipontravis.md) | Helper function for skipping tests on Travis CI. |
 |  [stubExpressContext(requestOptions)](./testlab.stubexpresscontext.md) |  |
@@ -79,7 +80,6 @@ Test utilities to help write LoopBack 4 tests:
 |  Variable | Description |
 |  --- | --- |
 |  [expect](./testlab.expect.md) |  |
-|  [inject](./testlab.inject.md) |  |
 
 ## Type Aliases
 

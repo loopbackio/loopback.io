@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.deny.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [deny](./authorization.authorize.deny.md)
 
-## authorize.deny variable
+## authorize.deny() function
 
 Shortcut to configure denied roles
 
@@ -20,4 +20,15 @@ Shortcut to configure denied roles
 ```typescript
 deny: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  roles | string\[\] |  |
+
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

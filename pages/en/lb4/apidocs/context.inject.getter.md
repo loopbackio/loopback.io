@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.getter.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [inject](./context.inject.md) &gt; [getter](./context.inject.getter.md)
 
-## inject.getter variable
+## inject.getter() function
 
 Inject a function for getting the actual bound value.
 
@@ -24,4 +24,16 @@ See also `Getter<T>`<!-- -->.
 ```typescript
 getter: (bindingSelector: BindingSelector<unknown>, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  bindingSelector | [BindingSelector](./context.bindingselector.md)<!-- -->&lt;unknown&gt; | The binding key or filter we want to eventually get value(s) from. |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional metadata to help the injection |
+
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
+
 

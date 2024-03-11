@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.allowauthenticated.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [allowAuthenticated](./authorization.authorize.allowauthenticated.md)
 
-## authorize.allowAuthenticated variable
+## authorize.allowAuthenticated() function
 
 Allow authenticated users
 
@@ -20,4 +20,8 @@ Allow authenticated users
 ```typescript
 allowAuthenticated: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

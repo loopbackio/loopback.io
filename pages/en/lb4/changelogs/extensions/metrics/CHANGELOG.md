@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.metrics.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.5](https://github.com/loopbackio/loopback-next/compare/@loopback/metrics@0.13.4...@loopback/metrics@0.13.5) (2024-01-11)
+
+**Note:** Version bump only for package @loopback/metrics
+
+
+
+
+
 ## [0.13.4](https://github.com/loopbackio/loopback-next/compare/@loopback/metrics@0.13.3...@loopback/metrics@0.13.4) (2023-12-12)
 
 **Note:** Version bump only for package @loopback/metrics

@@ -13,7 +13,9 @@ permalink: /doc/en/lb4/apidocs.sequelize.sequelizecrudrepository.buildsequelizeo
 
 ## SequelizeCrudRepository.buildSequelizeOrder() method
 
-Get Sequelize Order filter value from loopback style order value
+Get Sequelize Order filter value from loopback style order value.
+
+It also supports passing associations in the order array to sort by nested models. Example: `["user email ASC"]`<!-- -->.
 
 **Signature:**
 

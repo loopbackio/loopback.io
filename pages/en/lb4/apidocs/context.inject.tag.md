@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.tag.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [inject](./context.inject.md) &gt; [tag](./context.inject.tag.md)
 
-## inject.tag variable
+## inject.tag() function
 
 Inject an array of values by a tag pattern string or regexp
 
@@ -20,6 +20,17 @@ Inject an array of values by a tag pattern string or regexp
 ```typescript
 tag: (bindingTag: BindingTag | RegExp, metadata?: InjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  bindingTag | [BindingTag](./context.bindingtag.md) \| RegExp | Tag name, regex or object |
+|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional metadata to help the injection |
+
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 ## Example
 

@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.skip.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [skip](./authorization.authorize.skip.md)
 
-## authorize.skip variable
+## authorize.skip() function
 
 Skip authorization
 
@@ -20,4 +20,8 @@ Skip authorization
 ```typescript
 skip: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

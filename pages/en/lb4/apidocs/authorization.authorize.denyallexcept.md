@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.denyallexcept.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [denyAllExcept](./authorization.authorize.denyallexcept.md)
 
-## authorize.denyAllExcept variable
+## authorize.denyAllExcept() function
 
 Deny all but the given roles
 
@@ -20,4 +20,15 @@ Deny all but the given roles
 ```typescript
 denyAllExcept: (...roles: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  roles | string\[\] |  |
+
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

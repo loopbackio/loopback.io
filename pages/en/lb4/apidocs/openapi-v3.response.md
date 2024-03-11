@@ -19,10 +19,10 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.response.html
 export declare namespace response 
 ```
 
-## Variables
+## Functions
 
-|  Variable | Description |
+|  Function | Description |
 |  --- | --- |
-|  [file](./openapi-v3.response.file.md) | Decorate the response as a file |
+|  [file(mediaTypes)](./openapi-v3.response.file.md) | Decorate the response as a file |
 
 

@@ -11,11 +11,23 @@ permalink: /doc/en/lb4/apidocs.testlab.inject.html
 
 [Home](./index.md) &gt; [@loopback/testlab](./testlab.md) &gt; [inject](./testlab.inject.md)
 
-## inject variable
+## inject() function
 
 **Signature:**
 
 ```typescript
 inject: (dispatchFunc: ShotListener, options: ShotRequestOptions) => Promise<ResponseObject>
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  dispatchFunc | ShotListener |  |
+|  options | ShotRequestOptions |  |
+
+**Returns:**
+
+Promise&lt;ResponseObject&gt;
+
 

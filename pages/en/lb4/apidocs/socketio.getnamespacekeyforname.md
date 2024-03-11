@@ -11,11 +11,22 @@ permalink: /doc/en/lb4/apidocs.socketio.getnamespacekeyforname.html
 
 [Home](./index.md) &gt; [@loopback/socketio](./socketio.md) &gt; [getNamespaceKeyForName](./socketio.getnamespacekeyforname.md)
 
-## getNamespaceKeyForName variable
+## getNamespaceKeyForName() function
 
 **Signature:**
 
 ```typescript
 getNamespaceKeyForName: (name: string) => string
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  name | string |  |
+
+**Returns:**
+
+string
+
 

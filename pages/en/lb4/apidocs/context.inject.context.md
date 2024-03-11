@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.inject.context.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [inject](./context.inject.md) &gt; [context](./context.inject.context.md)
 
-## inject.context variable
+## inject.context() function
 
 Inject the context object.
 
@@ -20,6 +20,9 @@ Inject the context object.
 ```typescript
 context: () => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
 
 ## Example
 

@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.response.file.html
 
 [Home](./index.md) &gt; [@loopback/openapi-v3](./openapi-v3.md) &gt; [response](./openapi-v3.response.md) &gt; [file](./openapi-v3.response.file.md)
 
-## response.file variable
+## response.file() function
 
 Decorate the response as a file
 
@@ -20,6 +20,16 @@ Decorate the response as a file
 ```typescript
 file: (...mediaTypes: string[]) => MethodDecorator
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  mediaTypes | string\[\] | A list of media types for the file response. It's default to <code>['application/octet-stream']</code>. |
+
+**Returns:**
+
+MethodDecorator
 
 ## Example
 

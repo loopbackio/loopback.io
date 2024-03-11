@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.denyunauthenticated.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [denyUnauthenticated](./authorization.authorize.denyunauthenticated.md)
 
-## authorize.denyUnauthenticated variable
+## authorize.denyUnauthenticated() function
 
 Deny unauthenticated users
 
@@ -20,4 +20,8 @@ Deny unauthenticated users
 ```typescript
 denyUnauthenticated: () => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 

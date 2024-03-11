@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.openapi-v3.requestbody.file.html
 
 [Home](./index.md) &gt; [@loopback/openapi-v3](./openapi-v3.md) &gt; [requestBody](./openapi-v3.requestbody.md) &gt; [file](./openapi-v3.requestbody.file.md)
 
-## requestBody.file variable
+## requestBody.file() function
 
 Define a requestBody of `file` type. This is used to support multipart/form-data based file upload. Use `@requestBody` for other content types.
 
@@ -25,6 +25,16 @@ file: (properties?: {
         required?: boolean;
     }) => (target: object, member: string, index: number) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  properties | { description?: string; required?: boolean; } | _(Optional)_ Optional description and required flag |
+
+**Returns:**
+
+(target: object, member: string, index: number) =&gt; void
 
 ## Example
 

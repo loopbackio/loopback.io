@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.context.config.view.html
 
 [Home](./index.md) &gt; [@loopback/context](./context.md) &gt; [config](./context.config.md) &gt; [view](./context.config.view.md)
 
-## config.view variable
+## config.view() function
 
 `@inject.view` decorator to inject a config context view to allow dynamic changes in configuration
 
@@ -20,4 +20,16 @@ permalink: /doc/en/lb4/apidocs.context.config.view.html
 ```typescript
 view: (propertyPath?: string | ConfigInjectionMetadata, metadata?: ConfigInjectionMetadata) => (target: Object, member: string | undefined, methodDescriptorOrParameterIndex?: number | TypedPropertyDescriptor<any> | undefined) => void
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  propertyPath | string \| [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | _(Optional)_ Optional property path of the config object |
+|  metadata | [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | _(Optional)_ Injection metadata |
+
+**Returns:**
+
+(target: Object, member: string \| undefined, methodDescriptorOrParameterIndex?: number \| TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; void
+
 

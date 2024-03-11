@@ -11,7 +11,7 @@ permalink: /doc/en/lb4/apidocs.authorization.authorize.scope.html
 
 [Home](./index.md) &gt; [@loopback/authorization](./authorization.md) &gt; [authorize](./authorization.authorize.md) &gt; [scope](./authorization.authorize.scope.md)
 
-## authorize.scope variable
+## authorize.scope() function
 
 Shortcut to specify access scopes
 
@@ -20,4 +20,15 @@ Shortcut to specify access scopes
 ```typescript
 scope: (...scopes: string[]) => (target: any, method?: string | undefined, methodDescriptor?: TypedPropertyDescriptor<any> | undefined) => any
 ```
+
+## Parameters
+
+|  Parameter | Type | Description |
+|  --- | --- | --- |
+|  scopes | string\[\] |  |
+
+**Returns:**
+
+(target: any, method?: string \| undefined, methodDescriptor?: TypedPropertyDescriptor&lt;any&gt; \| undefined) =&gt; any
+
 
