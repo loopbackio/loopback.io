@@ -550,6 +550,8 @@ CustomerRepository.find({
 PostgreSQL supports the following PostgreSQL-specific operators:
 
 - [`contains`](#operator-contains)
+- [`containedBy`](#operator-containedby)
+- [`containsAny`](#operator-containsany)
 - [`match`](#operator-match)
 
 Please note extended operators are disabled by default, you must enable
@@ -592,6 +594,88 @@ const posts = await postRepository.find({
   where: {
     {
       categories: {'contains': ['AA']},
+    }
+  }
+});
+```
+
+### Operator `containedBy`
+
+Inverse of the `contains` operator, the `containedBy` operator allow you to query array properties and pick only
+rows where the all the items in the stored value are contained by the query.
+
+The operator is implemented using PostgreSQL [array operator
+`<@`](https://www.postgresql.org/docs/current/functions-array.html).
+
+**Note** The fields you are querying must be setup to use the postgresql array data type - see [Defining models](#defining-models) above.
+
+Assuming a model such as this:
+
+```ts
+@model({
+  settings: {
+    allowExtendedOperators: true,
+  }
+})
+class Post {
+  @property({
+    type: ['string'],
+    postgresql: {
+      dataType: 'varchar[]',
+    },
+  })
+  categories?: string[];
+}
+```
+
+You can query the tags fields as follows:
+
+```ts
+const posts = await postRepository.find({
+  where: {
+    {
+      categories: {'containedBy': ['AA']},
+    }
+  }
+});
+```
+
+### Operator `containsAnyOf`
+
+The `containsAnyOf` operator allow you to query array properties and pick only
+rows where the any of the items in the stored value matches any of the items in the query.
+
+The operator is implemented using PostgreSQL [array overlap operator
+`&&`](https://www.postgresql.org/docs/current/functions-array.html).
+
+**Note** The fields you are querying must be setup to use the postgresql array data type - see [Defining models](#defining-models) above.
+
+Assuming a model such as this:
+
+```ts
+@model({
+  settings: {
+    allowExtendedOperators: true,
+  }
+})
+class Post {
+  @property({
+    type: ['string'],
+    postgresql: {
+      dataType: 'varchar[]',
+    },
+  })
+  categories?: string[];
+}
+```
+
+You can query the tags fields as follows:
+
+```ts
+const posts = await postRepository.find({
+  where: {
+    {
+      categories: {'containsAnyOf': ['AA']},
     }
   }
 });
