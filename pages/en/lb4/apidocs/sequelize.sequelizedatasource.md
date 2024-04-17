@@ -34,6 +34,7 @@ export declare class SequelizeDataSource implements LifeCycleObserver
 |  --- | --- | --- | --- |
 |  [config](./sequelize.sequelizedatasource.config.md) |  | [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md) |  |
 |  [name](./sequelize.sequelizedatasource.name.md) |  | string |  |
+|  [parseJsonColumns](./sequelize.sequelizedatasource.parsejsoncolumns.md) | <code>readonly</code> | boolean | Gets the flag indicating whether to parse JSON columns. If the <code>parseJsonColumns</code> property is set in the configuration, its value will be returned. Otherwise, it returns <code>true</code> if the dialect is MySQL, <code>false</code> otherwise. |
 |  [sequelize](./sequelize.sequelizedatasource.sequelize.md) |  | Sequelize |  |
 |  [sequelizeConfig](./sequelize.sequelizedatasource.sequelizeconfig.md) |  | SequelizeOptions |  |
 |  [settings](./sequelize.sequelizedatasource.settings.md) |  | {} |  |

@@ -21,6 +21,7 @@ export type SequelizeDataSourceConfig = {
     user?: string;
     connector?: SupportedLoopbackConnectors;
     url?: string;
+    parseJsonColumns?: boolean;
     sequelizeOptions?: SequelizeOptions;
 } & AnyObject;
 ```
