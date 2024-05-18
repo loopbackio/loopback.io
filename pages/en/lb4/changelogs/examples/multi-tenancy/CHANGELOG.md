@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-multi-tenancy.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-multi-tenancy@0.16.0...@loopback/example-multi-tenancy@0.16.1) (2024-04-09)
+
+**Note:** Version bump only for package @loopback/example-multi-tenancy
+
+
+
+
+
 # [0.16.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-multi-tenancy@0.15.5...@loopback/example-multi-tenancy@0.16.0) (2024-03-04)
 
 
