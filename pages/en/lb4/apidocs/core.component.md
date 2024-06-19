@@ -27,6 +27,7 @@ export interface Component
 |  --- | --- | --- | --- |
 |  [bindings?](./core.component.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | _(Optional)_ An array of bindings to be aded to the application context. |
 |  [classes?](./core.component.classes.md) |  | [ClassMap](./core.classmap.md) | _(Optional)_ A map of classes to be bound to the application context. |
+|  [components?](./core.component.components.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Component](./core.component.md)<!-- -->&gt;\[\] | _(Optional)_ An array of component classes |
 |  [controllers?](./core.component.controllers.md) |  | [ControllerClass](./core.controllerclass.md)<!-- -->\[\] | _(Optional)_ An array of controller classes |
 |  [lifeCycleObservers?](./core.component.lifecycleobservers.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\] | _(Optional)_ |
 |  [providers?](./core.component.providers.md) |  | [ProviderMap](./core.providermap.md) | _(Optional)_ A map of providers to be bound to the application context |
