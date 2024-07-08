@@ -16,7 +16,7 @@
     "sitemap-transform": "node sitemap.js"
   },
   "engines": {
-    "node": ">=20.15.0"
+    "node": ">=20.15.1"
   },
   "repository": {
     "type": "git",
