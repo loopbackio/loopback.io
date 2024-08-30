@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.authentication-passport.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-passport@7.0.3...@loopback/authentication-passport@7.0.4) (2024-07-09)
+
+**Note:** Version bump only for package @loopback/authentication-passport
+
+
+
+
+
 ## [7.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-passport@7.0.2...@loopback/authentication-passport@7.0.3) (2024-06-10)
 
 **Note:** Version bump only for package @loopback/authentication-passport

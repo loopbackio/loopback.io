@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.core.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.1](https://github.com/loopbackio/loopback-next/compare/@loopback/core@6.1.0...@loopback/core@6.1.1) (2024-07-09)
+
+**Note:** Version bump only for package @loopback/core
+
+
+
+
+
 # [6.1.0](https://github.com/loopbackio/loopback-next/compare/@loopback/core@6.0.2...@loopback/core@6.1.0) (2024-06-10)
 
 
