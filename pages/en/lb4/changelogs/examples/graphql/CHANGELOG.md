@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-graphql.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.10.4...@loopback/example-graphql@0.10.5) (2024-08-14)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
 ## [0.10.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.10.3...@loopback/example-graphql@0.10.4) (2024-07-09)
 
 **Note:** Version bump only for package @loopback/example-graphql

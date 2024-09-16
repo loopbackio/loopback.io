@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.build.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.6](https://github.com/loopbackio/loopback-next/compare/@loopback/build@11.0.5...@loopback/build@11.0.6) (2024-09-12)
+
+**Note:** Version bump only for package @loopback/build
+
+
+
+
+
 ## [11.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/build@11.0.4...@loopback/build@11.0.5) (2024-08-14)
 
 **Note:** Version bump only for package @loopback/build
