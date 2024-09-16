@@ -16,14 +16,15 @@ implements [Module LTS policy](https://github.com/CloudNativeJS/ModuleLTS).
 The project maintains:
 
 - A _Current_ version where most of the development occurs.
-- An _Active LTS_ (Long-Term Support) version that does not add new features but gets bug fixes.
+- An _Active LTS_ (Long-Term Support) version that does not add
+  new features but gets bug fixes.
 - One or more _Maintenance LTS_ versions that receive only critical bug fixes.
 
 Below is the LTS schedule on the LoopBack versions:
 
 Framework | Status | Published | Active LTS Start | Maintenance LTS Start | EOL
 -- | -- | -- | -- | -- | --
-LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2024 _(minimum)_
+LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2026 _(minimum)_
 LoopBack 3 | End-of-Life | Dec 2016 | Oct 2018 | Dec 2019 | Dec 2020 [(\*)](#lb3)
 LoopBack 2 | End-of-Life | Jul 2014 | Dec 2016 | Oct 2018 | Apr 2019
 
@@ -66,7 +67,10 @@ security fixes, and documentation updates will be permitted.
 
 Specifically, adding support for new major Node.js versions is not permitted.
 
+<!-- markdownlint-disable MD033 -->
 <a id="lb3"></a>
+<!-- markdownlint-enable MD033 -->
+
 ## Information for LoopBack 3 users
 
 LoopBack version 3 reached end of life at the end of 2020. We understand some
