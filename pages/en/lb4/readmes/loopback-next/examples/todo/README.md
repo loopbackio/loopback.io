@@ -77,7 +77,7 @@ continue with this tutorial!
 ### Need help?
 
 Check out our
-[Slack](https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw)
+[Slack](https://join.slack.com/t/loopbackio/shared_invite/zt-2s5ttd53m-yaYSDEpU5LSv9APk0KKVng)
 and ask for help with this tutorial.
 
 ### Bugs/Feedback
