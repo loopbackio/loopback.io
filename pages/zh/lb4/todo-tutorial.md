@@ -78,7 +78,7 @@ npm i -g @loopback/cli
 ### 需要帮助?
 
 查看我们的
-[Slack](https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw)
+[Slack](https://join.slack.com/t/loopbackio/shared_invite/zt-2s5ttd53m-yaYSDEpU5LSv9APk0KKVng)
 来寻找关于本教程的帮助。
 
 ### 错误/反馈

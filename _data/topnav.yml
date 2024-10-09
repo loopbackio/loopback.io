@@ -33,7 +33,7 @@ topnav_dropdowns:
         - title: Developer Forum
           external_url: https://groups.google.com/forum/#!forum/loopbackjs
         - title: LoopBack on Slack
-          external_url: https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw
+          external_url: https://join.slack.com/t/loopbackio/shared_invite/zt-2s5ttd53m-yaYSDEpU5LSv9APk0KKVng
         - title: LoopBack on Stack Overflow
           external_url: https://stackoverflow.com/questions/tagged/strongloop+or+loopback4+or+loopbackjs
         - title: StrongLoop Blog - LoopBack
