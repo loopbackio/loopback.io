@@ -101,7 +101,7 @@ npm install loopback-connector-esv6 --save --save-exact
     "number_of_shards": 2,
     "number_of_replicas": 1
   },
-  "mappingType": "basedata", // not required for verison: 7, will be ignored
+  "mappingType": "basedata", // not required for version: 7, will be ignored
   "mappingProperties": {
     "docType": {
       "type": "keyword",
