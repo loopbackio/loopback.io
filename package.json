@@ -29,7 +29,7 @@
     "ibm-watson": "^9.1.0",
     "markdownlint-cli": "^0.42.0",
     "retry": "^0.13.1",
-    "swagger-ui-dist": "^5.18.1",
+    "swagger-ui-dist": "^5.18.2",
     "xml2js": "^0.6.2"
   },
   "license": "MIT",
