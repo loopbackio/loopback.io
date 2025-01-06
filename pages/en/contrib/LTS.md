@@ -20,13 +20,8 @@ The project maintains:
   new features but gets bug fixes.
 - One or more _Maintenance LTS_ versions that receive only critical bug fixes.
 
-Below is the LTS schedule on the LoopBack versions:
+For LTS schedule on the LoopBack versions, see [LoopBack 4 README page](https://github.com/loopbackio/loopback-next?tab=readme-ov-file#long-term-support).
 
-Framework | Status | Published | Active LTS Start | Maintenance LTS Start | EOL
--- | -- | -- | -- | -- | --
-LoopBack 4 | Current | Oct 2018 | -- | -- | Apr 2026 _(minimum)_
-LoopBack 3 | End-of-Life | Dec 2016 | Oct 2018 | Dec 2019 | Dec 2020 [(\*)](#lb3)
-LoopBack 2 | End-of-Life | Jul 2014 | Dec 2016 | Oct 2018 | Apr 2019
 
 ## Active LTS
 
