@@ -24,7 +24,7 @@ jobs:
           node-version: 18
 
       - name: Set up Ruby 3.2
-        uses: ruby/setup-ruby@f2f42b7848feff522ffa488a5236ba0a73bccbdd # v1.219.0
+        uses: ruby/setup-ruby@28d088d34a0b0b7ba0823b7952c77004560a3a6f # v1.220.0
         with:
           ruby-version: 3.2
 
