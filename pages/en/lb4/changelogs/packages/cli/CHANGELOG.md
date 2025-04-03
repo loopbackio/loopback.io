@@ -13,6 +13,41 @@ permalink: /doc/en/lb4/changelog.cli.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.1...@loopback/cli@6.2.2) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+## [6.2.1](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.0...@loopback/cli@6.2.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* fix lint error ([ea02d61](https://github.com/loopbackio/loopback-next/commit/ea02d61ec521fdd15b764a7513fcdfd3794ead4a))
+
+
+
+
+
+# [6.2.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.1.2...@loopback/cli@6.2.0) (2024-12-12)
+
+
+### Bug Fixes
+
+* update geopoint data in tests ([c2441cb](https://github.com/loopbackio/loopback-next/commit/c2441cbd77f8db55db6757f20576a5bde11b5c78))
+
+
+### Features
+
+* **cli:** add EditorConfig files to project template ([b6d82f9](https://github.com/loopbackio/loopback-next/commit/b6d82f950cb441061de895d4cdf3a0b92c859bec))
+
+
+
+
+
 ## [6.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.1.1...@loopback/cli@6.1.2) (2024-11-18)
 
 

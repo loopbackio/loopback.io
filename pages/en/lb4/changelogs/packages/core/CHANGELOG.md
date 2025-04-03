@@ -13,6 +13,33 @@ permalink: /doc/en/lb4/changelog.core.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.8](https://github.com/loopbackio/loopback-next/compare/@loopback/core@6.1.7...@loopback/core@6.1.8) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/core
+
+
+
+
+
+## [6.1.7](https://github.com/loopbackio/loopback-next/compare/@loopback/core@6.1.6...@loopback/core@6.1.7) (2025-01-15)
+
+
+### Bug Fixes
+
+* fix lint error ([ea02d61](https://github.com/loopbackio/loopback-next/commit/ea02d61ec521fdd15b764a7513fcdfd3794ead4a))
+
+
+
+
+
+## [6.1.6](https://github.com/loopbackio/loopback-next/compare/@loopback/core@6.1.5...@loopback/core@6.1.6) (2024-12-12)
+
+**Note:** Version bump only for package @loopback/core
+
+
+
+
+
 ## [6.1.5](https://github.com/loopbackio/loopback-next/compare/@loopback/core@6.1.4...@loopback/core@6.1.5) (2024-11-18)
 
 **Note:** Version bump only for package @loopback/core

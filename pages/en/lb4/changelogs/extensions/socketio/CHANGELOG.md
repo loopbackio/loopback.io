@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.socketio.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.11](https://github.com/loopbackio/loopback-next/compare/@loopback/socketio@0.8.10...@loopback/socketio@0.8.11) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/socketio
+
+
+
+
+
+## [0.8.10](https://github.com/loopbackio/loopback-next/compare/@loopback/socketio@0.8.9...@loopback/socketio@0.8.10) (2025-01-15)
+
+**Note:** Version bump only for package @loopback/socketio
+
+
+
+
+
+## [0.8.9](https://github.com/loopbackio/loopback-next/compare/@loopback/socketio@0.8.8...@loopback/socketio@0.8.9) (2024-12-12)
+
+**Note:** Version bump only for package @loopback/socketio
+
+
+
+
+
 ## [0.8.8](https://github.com/loopbackio/loopback-next/compare/@loopback/socketio@0.8.7...@loopback/socketio@0.8.8) (2024-11-18)
 
 

@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.context-explorer.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.11](https://github.com/loopbackio/loopback-next/compare/@loopback/context-explorer@0.11.10...@loopback/context-explorer@0.11.11) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/context-explorer
+
+
+
+
+
+## [0.11.10](https://github.com/loopbackio/loopback-next/compare/@loopback/context-explorer@0.11.9...@loopback/context-explorer@0.11.10) (2025-01-15)
+
+**Note:** Version bump only for package @loopback/context-explorer
+
+
+
+
+
+## [0.11.9](https://github.com/loopbackio/loopback-next/compare/@loopback/context-explorer@0.11.8...@loopback/context-explorer@0.11.9) (2024-12-12)
+
+**Note:** Version bump only for package @loopback/context-explorer
+
+
+
+
+
 ## [0.11.8](https://github.com/loopbackio/loopback-next/compare/@loopback/context-explorer@0.11.7...@loopback/context-explorer@0.11.8) (2024-11-18)
 
 **Note:** Version bump only for package @loopback/context-explorer

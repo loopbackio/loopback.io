@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.cron.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.11](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.10...@loopback/cron@0.12.11) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.12.10](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.9...@loopback/cron@0.12.10) (2025-01-15)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.12.9](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.8...@loopback/cron@0.12.9) (2024-12-12)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
 ## [0.12.8](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.7...@loopback/cron@0.12.8) (2024-11-18)
 
 **Note:** Version bump only for package @loopback/cron

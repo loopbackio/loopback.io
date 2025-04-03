@@ -13,6 +13,33 @@ permalink: /doc/en/lb4/changelog.example-binding-resolution.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-binding-resolution@0.11.1...@loopback/example-binding-resolution@0.11.2) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/example-binding-resolution
+
+
+
+
+
+## [0.11.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-binding-resolution@0.11.0...@loopback/example-binding-resolution@0.11.1) (2025-01-15)
+
+**Note:** Version bump only for package @loopback/example-binding-resolution
+
+
+
+
+
+# [0.11.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-binding-resolution@0.10.8...@loopback/example-binding-resolution@0.11.0) (2024-12-12)
+
+
+### Features
+
+* **cli:** add EditorConfig files to project template ([b6d82f9](https://github.com/loopbackio/loopback-next/commit/b6d82f950cb441061de895d4cdf3a0b92c859bec))
+
+
+
+
+
 ## [0.10.8](https://github.com/loopbackio/loopback-next/compare/@loopback/example-binding-resolution@0.10.7...@loopback/example-binding-resolution@0.10.8) (2024-11-18)
 
 **Note:** Version bump only for package @loopback/example-binding-resolution

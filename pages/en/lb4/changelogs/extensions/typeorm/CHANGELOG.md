@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.typeorm.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.11](https://github.com/loopbackio/loopback-next/compare/@loopback/typeorm@0.10.10...@loopback/typeorm@0.10.11) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/typeorm
+
+
+
+
+
+## [0.10.10](https://github.com/loopbackio/loopback-next/compare/@loopback/typeorm@0.10.9...@loopback/typeorm@0.10.10) (2025-01-15)
+
+**Note:** Version bump only for package @loopback/typeorm
+
+
+
+
+
+## [0.10.9](https://github.com/loopbackio/loopback-next/compare/@loopback/typeorm@0.10.8...@loopback/typeorm@0.10.9) (2024-12-12)
+
+**Note:** Version bump only for package @loopback/typeorm
+
+
+
+
+
 ## [0.10.8](https://github.com/loopbackio/loopback-next/compare/@loopback/typeorm@0.10.7...@loopback/typeorm@0.10.8) (2024-11-18)
 
 **Note:** Version bump only for package @loopback/typeorm

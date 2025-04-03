@@ -13,6 +13,30 @@ permalink: /doc/en/lb4/changelog.authentication-jwt.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.11](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.10...@loopback/authentication-jwt@0.15.11) (2025-02-13)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.15.10](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.9...@loopback/authentication-jwt@0.15.10) (2025-01-15)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.15.9](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.8...@loopback/authentication-jwt@0.15.9) (2024-12-12)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
 ## [0.15.8](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.7...@loopback/authentication-jwt@0.15.8) (2024-11-18)
 
 **Note:** Version bump only for package @loopback/authentication-jwt
