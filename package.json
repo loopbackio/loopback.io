@@ -26,14 +26,13 @@
     "@loopback/docs": "latest",
     "chalk": "^5.4.1",
     "fs-extra": "^11.3.0",
-    "ibm-watson": "^10.0.0",
     "markdownlint-cli": "^0.45.0",
     "retry": "^0.13.1",
     "swagger-ui-dist": "^5.25.2",
     "xml2js": "^0.6.2"
   },
   "license": "MIT",
-  "author": "IBM Corp.",
+  "author": "IBM Corp. and LoopBack contributors",
   "dependencies": {
     "js-yaml": "^4.1.0"
   }
