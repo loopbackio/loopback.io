@@ -28,7 +28,7 @@
     "fs-extra": "^11.3.0",
     "markdownlint-cli": "^0.45.0",
     "retry": "^0.13.1",
-    "swagger-ui-dist": "^5.26.1",
+    "swagger-ui-dist": "^5.26.2",
     "xml2js": "^0.6.2"
   },
   "license": "MIT",
