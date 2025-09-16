@@ -1,8 +1,13 @@
 # loopback-connector-soap
 
+<a href="https://loopback.io"><img src="https://raw.githubusercontent.com/loopbackio/loopback.io/gh-pages/images/branding/logo/blue/loopback.jpg" alt="LoopBack4 logo" width="400"/></a>
+
 [![CI](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/loopbackio/loopback-connector-soap/actions/workflows/continuous-integration.yml)
-[![Build Status](https://app.travis-ci.com/loopbackio/loopback-connector-soap.svg?branch=master)](https://app.travis-ci.com/loopbackio/loopback-connector-soap)
 [![Coverage Status](https://coveralls.io/repos/github/loopbackio/loopback-connector-soap/badge.svg?branch=master)](https://coveralls.io/github/loopbackio/loopback-connector-soap?branch=master)
+
+[![Twitter](https://img.shields.io/twitter/follow/strongloop.svg?style=social&label=Follow%20%40strongloop)](https://twitter.com/strongloop)
+[![LinkedIn](https://img.shields.io/badge/Follow%20us%20on%20LinkedIn-white?logo=linkedin&color=0077B5&logoColor=white)](https://www.linkedin.com/groups/5046525/)
+[![Slack](https://img.shields.io/badge/slack-Join%20workspace-%234A154B?logo=slack)](https://join.slack.com/t/loopbackio/shared_invite/zt-8lbow73r-SKAKz61Vdao~_rGf91pcsw)
 
 The SOAP connector enables LoopBack applications to interact with
 [SOAP](http://www.w3.org/TR/soap)-based web services described using
