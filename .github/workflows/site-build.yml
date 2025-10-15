@@ -26,7 +26,7 @@ jobs:
       - name: Set up Ruby 3.2
         uses: ruby/setup-ruby@ab177d40ee5483edb974554986f56b33477e21d0 # v1.265.0
         with:
-          ruby-version: 3.2
+          ruby-version: 3.4.7
 
       - name: Install and Build 🔧
         run: |
