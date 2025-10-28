@@ -23,9 +23,39 @@ setMetadata(metadata: ApplicationMetadata): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [ApplicationMetadata](./core.applicationmetadata.md) | Application metadata |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+metadata
+
+
+</td><td>
+
+[ApplicationMetadata](./core.applicationmetadata.md)
+
+
+</td><td>
+
+Application metadata
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

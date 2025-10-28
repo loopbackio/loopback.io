@@ -23,10 +23,55 @@ export declare function globalInterceptor(group?: string, ...specs: BindingSpec[
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  group | string | _(Optional)_ Group for ordering the interceptor |
-|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] | Extra binding specs |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+group
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Group for ordering the interceptor
+
+
+</td></tr>
+<tr><td>
+
+specs
+
+
+</td><td>
+
+[BindingSpec](./context.bindingspec.md)<!-- -->\[\]
+
+
+</td><td>
+
+Extra binding specs
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

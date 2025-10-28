@@ -23,10 +23,55 @@ static create<V>(key: string, propertyPath?: string): BindingKey<V>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | string | The binding key. When propertyPath is not provided, the key is allowed to contain propertyPath as encoded via <code>BindingKey#toString()</code> |
-|  propertyPath | string | _(Optional)_ Optional path to a deep property of the bound value. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The binding key. When propertyPath is not provided, the key is allowed to contain propertyPath as encoded via `BindingKey#toString()`
+
+
+</td></tr>
+<tr><td>
+
+propertyPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optional path to a deep property of the bound value.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

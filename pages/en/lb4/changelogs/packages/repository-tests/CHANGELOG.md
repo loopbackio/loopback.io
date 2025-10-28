@@ -13,6 +13,94 @@ permalink: /doc/en/lb4/changelog.repository-tests.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.5](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.25.4...@loopback/repository-tests@0.25.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
+
+## [0.25.4](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.25.3...@loopback/repository-tests@0.25.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
+
+## [0.25.3](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.25.2...@loopback/repository-tests@0.25.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
+
+## [0.25.2](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.25.1...@loopback/repository-tests@0.25.2) (2025-06-12)
+
+
+### Bug Fixes
+
+* update peerDependencies versions ([c72cbad](https://github.com/loopbackio/loopback-next/commit/c72cbaded5b71585d45ab834dbcb839fd4ff1087))
+
+
+
+
+
+## [0.25.1](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.25.0...@loopback/repository-tests@0.25.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* update @loopback/core to latest major version ([e2d2288](https://github.com/loopbackio/loopback-next/commit/e2d22886dbbb4be91ee6407ff4c6257c48698e89))
+
+
+
+
+
+# [0.25.0](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.24.14...@loopback/repository-tests@0.25.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.24.14](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.24.13...@loopback/repository-tests@0.24.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
+
+## [0.24.13](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.24.12...@loopback/repository-tests@0.24.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
+
+## [0.24.12](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.24.11...@loopback/repository-tests@0.24.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/repository-tests
+
+
+
+
+
 ## [0.24.11](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-tests@0.24.10...@loopback/repository-tests@0.24.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/repository-tests

@@ -23,8 +23,36 @@ constructor(userRepository: UserRepository);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  userRepository | [UserRepository](./authentication-jwt.userrepository.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+userRepository
+
+
+</td><td>
+
+[UserRepository](./authentication-jwt.userrepository.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

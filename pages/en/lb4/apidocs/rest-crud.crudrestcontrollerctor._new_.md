@@ -21,9 +21,37 @@ new (repository: EntityCrudRepository<T, IdType, Relations>): CrudRestController
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  repository | EntityCrudRepository&lt;T, IdType, Relations&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+repository
+
+
+</td><td>
+
+EntityCrudRepository&lt;T, IdType, Relations&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

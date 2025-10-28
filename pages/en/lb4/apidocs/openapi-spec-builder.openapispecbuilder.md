@@ -24,16 +24,98 @@ export declare class OpenApiSpecBuilder extends BuilderBase<OpenAPIObject>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./openapi-spec-builder.openapispecbuilder._constructor_.md) |  | Constructs a new instance of the <code>OpenApiSpecBuilder</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./openapi-spec-builder.openapispecbuilder._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `OpenApiSpecBuilder` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [withComponents(spec)](./openapi-spec-builder.openapispecbuilder.withcomponents.md) |  | Define a new ComponentsObject. |
-|  [withOperation(verb, path, spec)](./openapi-spec-builder.openapispecbuilder.withoperation.md) |  | Define a new OperationObject at the given path and verb (method). |
-|  [withOperationReturningString(verb, path, operationName)](./openapi-spec-builder.openapispecbuilder.withoperationreturningstring.md) |  | Define a new operation that returns a string response. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[withComponents(spec)](./openapi-spec-builder.openapispecbuilder.withcomponents.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a new ComponentsObject.
+
+
+</td></tr>
+<tr><td>
+
+[withOperation(verb, path, spec)](./openapi-spec-builder.openapispecbuilder.withoperation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a new OperationObject at the given path and verb (method).
+
+
+</td></tr>
+<tr><td>
+
+[withOperationReturningString(verb, path, operationName)](./openapi-spec-builder.openapispecbuilder.withoperationreturningstring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a new operation that returns a string response.
+
+
+</td></tr>
+</tbody></table>
 
 

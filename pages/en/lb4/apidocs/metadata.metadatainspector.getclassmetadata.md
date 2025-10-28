@@ -23,11 +23,71 @@ static getClassMetadata<T>(key: MetadataKey<T, ClassDecorator>, target: Function
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ClassDecorator&gt; | Metadata key |
-|  target | Function | Class that contains the metadata |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ClassDecorator&gt;
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+Class that contains the metadata
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InspectionOptions](./metadata.inspectionoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for inspection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

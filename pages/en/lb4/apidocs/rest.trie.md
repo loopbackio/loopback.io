@@ -23,16 +23,108 @@ export declare class Trie<T>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [root](./rest.trie.root.md) | <code>readonly</code> | [Node](./rest.node.md)<!-- -->&lt;T&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[root](./rest.trie.root.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Node](./rest.node.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create(routeTemplate, value)](./rest.trie.create.md) |  | Create a node for a given path template |
-|  [list()](./rest.trie.list.md) |  | List all nodes with value of the trie |
-|  [match(path)](./rest.trie.match.md) |  | Match a route path against the trie |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create(routeTemplate, value)](./rest.trie.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a node for a given path template
+
+
+</td></tr>
+<tr><td>
+
+[list()](./rest.trie.list.md)
+
+
+</td><td>
+
+
+</td><td>
+
+List all nodes with value of the trie
+
+
+</td></tr>
+<tr><td>
+
+[match(path)](./rest.trie.match.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Match a route path against the trie
+
+
+</td></tr>
+</tbody></table>
 
 

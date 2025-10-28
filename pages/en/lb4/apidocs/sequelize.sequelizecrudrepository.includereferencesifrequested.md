@@ -25,11 +25,71 @@ protected includeReferencesIfRequested(parentEntities: Model<T, T>[], parentEnti
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parentEntities | Model&lt;T, T&gt;\[\] | source table data |
-|  parentEntityClass | typeof Entity | loopback entity class for the parent entity |
-|  inclusionFilters | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parentEntities
+
+
+</td><td>
+
+Model&lt;T, T&gt;\[\]
+
+
+</td><td>
+
+source table data
+
+
+</td></tr>
+<tr><td>
+
+parentEntityClass
+
+
+</td><td>
+
+typeof Entity
+
+
+</td><td>
+
+loopback entity class for the parent entity
+
+
+</td></tr>
+<tr><td>
+
+inclusionFilters
+
+
+</td><td>
+
+[InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

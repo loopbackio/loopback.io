@@ -23,10 +23,70 @@ constructor(key: string, spec: T, options?: DecoratorOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | string | Metadata key |
-|  spec | T | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | _(Optional)_ Options for the decorator. Default to <code>{allowInheritance: true}</code> if not provided |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Metadata object from the decorator function
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[DecoratorOptions](./metadata.decoratoroptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the decorator. Default to `{allowInheritance: true}` if not provided
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -22,8 +22,44 @@ export interface HttpsOptions extends ListenOptions, HttpsServerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [protocol](./testlab.httpsoptions.protocol.md) |  | 'https' |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[protocol](./testlab.httpsoptions.protocol.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'https'
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

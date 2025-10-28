@@ -23,10 +23,55 @@ protected notifyObservers(event: ContextEvent, observers?: Set<ContextEventObser
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  event | [ContextEvent](./context.contextevent.md) | Context event |
-|  observers | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | _(Optional)_ Current set of context observers |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+event
+
+
+</td><td>
+
+[ContextEvent](./context.contextevent.md)
+
+
+</td><td>
+
+Context event
+
+
+</td></tr>
+<tr><td>
+
+observers
+
+
+</td><td>
+
+Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined
+
+
+</td><td>
+
+_(Optional)_ Current set of context observers
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,43 @@ find<ValueType = BoundValue>(pattern?: string | RegExp | BindingFilter): Readonl
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  pattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | <p>_(Optional)_ A filter function, a regexp or a wildcard pattern with optional <code>*</code> and <code>?</code>. Find returns such bindings where the key matches the provided pattern.</p><p>For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code></p><p>For a filter function: - return <code>true</code> to include the binding in the results - return <code>false</code> to exclude it.</p> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+pattern
+
+
+</td><td>
+
+string \| RegExp \| [BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+_(Optional)_ A filter function, a regexp or a wildcard pattern with optional `*` and `?`<!-- -->. Find returns such bindings where the key matches the provided pattern.
+
+For a wildcard: - `*` matches zero or more characters except `.` and `:` - `?` matches exactly one character except `.` and `:`
+
+For a filter function: - return `true` to include the binding in the results - return `false` to exclude it.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

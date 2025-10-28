@@ -23,10 +23,80 @@ export interface RestEndpoint
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./openapi-v3.restendpoint.path.md) |  | string |  |
-|  [spec?](./openapi-v3.restendpoint.spec.md) |  | OperationObject | _(Optional)_ |
-|  [verb](./openapi-v3.restendpoint.verb.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[path](./openapi-v3.restendpoint.path.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[spec?](./openapi-v3.restendpoint.spec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[verb](./openapi-v3.restendpoint.verb.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

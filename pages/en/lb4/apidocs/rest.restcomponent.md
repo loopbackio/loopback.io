@@ -22,16 +22,114 @@ export declare class RestComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(app, config)](./rest.restcomponent._constructor_.md) |  | Constructs a new instance of the <code>RestComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(app, config)](./rest.restcomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RestComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings](./rest.restcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | Add built-in body parsers |
-|  [providers](./rest.restcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
-|  [servers](./rest.restcomponent.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings](./rest.restcomponent.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->\[\]
+
+
+</td><td>
+
+Add built-in body parsers
+
+
+</td></tr>
+<tr><td>
+
+[providers](./rest.restcomponent.providers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ProviderMap](./core.providermap.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[servers](./rest.restcomponent.servers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

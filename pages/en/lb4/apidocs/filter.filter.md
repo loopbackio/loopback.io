@@ -23,14 +23,162 @@ export interface Filter<MT extends object = AnyObject>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [fields?](./filter.filter.fields.md) |  | [Fields](./filter.fields.md)<!-- -->&lt;MT&gt; | _(Optional)_ To include/exclude fields |
-|  [include?](./filter.filter.include.md) |  | [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\] | _(Optional)_ To include related objects |
-|  [limit?](./filter.filter.limit.md) |  | number | _(Optional)_ Maximum number of entities |
-|  [offset?](./filter.filter.offset.md) |  | number | _(Optional)_ Offset N number of entities. An alias for <code>skip</code> |
-|  [order?](./filter.filter.order.md) |  | string\[\] | <p>_(Optional)_ Sorting order for matched entities. Each item should be formatted as <code>fieldName ASC</code> or <code>fieldName DESC</code>. For example: <code>['f1 ASC', 'f2 DESC', 'f3 ASC']</code>.</p><p>We might want to use <code>Order</code> in the future. Keep it as <code>string[]</code> for now for compatibility with LoopBack 3.x.</p> |
-|  [skip?](./filter.filter.skip.md) |  | number | _(Optional)_ Skip N number of entities |
-|  [where?](./filter.filter.where.md) |  | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | _(Optional)_ The matching criteria |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[fields?](./filter.filter.fields.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Fields](./filter.fields.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+_(Optional)_ To include/exclude fields
+
+
+</td></tr>
+<tr><td>
+
+[include?](./filter.filter.include.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_ To include related objects
+
+
+</td></tr>
+<tr><td>
+
+[limit?](./filter.filter.limit.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Maximum number of entities
+
+
+</td></tr>
+<tr><td>
+
+[offset?](./filter.filter.offset.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Offset N number of entities. An alias for `skip`
+
+
+</td></tr>
+<tr><td>
+
+[order?](./filter.filter.order.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Sorting order for matched entities. Each item should be formatted as `fieldName ASC` or `fieldName DESC`<!-- -->. For example: `['f1 ASC', 'f2 DESC', 'f3 ASC']`<!-- -->.
+
+We might want to use `Order` in the future. Keep it as `string[]` for now for compatibility with LoopBack 3.x.
+
+
+</td></tr>
+<tr><td>
+
+[skip?](./filter.filter.skip.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Skip N number of entities
+
+
+</td></tr>
+<tr><td>
+
+[where?](./filter.filter.where.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+_(Optional)_ The matching criteria
+
+
+</td></tr>
+</tbody></table>
 
 

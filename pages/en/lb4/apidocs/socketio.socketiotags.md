@@ -21,8 +21,26 @@ export declare namespace SocketIoTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [SOCKET\_IO](./socketio.socketiotags.socket_io.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SOCKET\_IO](./socketio.socketiotags.socket_io.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

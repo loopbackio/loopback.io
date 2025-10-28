@@ -24,8 +24,44 @@ export interface HttpsOptions extends BaseHttpOptions, https.ServerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [protocol](./http-server.httpsoptions.protocol.md) |  | 'https' |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[protocol](./http-server.httpsoptions.protocol.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'https'
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

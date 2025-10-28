@@ -23,8 +23,44 @@ export interface Session
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [profile](./rest.session.profile.md) |  | [SessionUserProfile](./rest.sessionuserprofile.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[profile](./rest.session.profile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[SessionUserProfile](./rest.sessionuserprofile.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

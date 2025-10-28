@@ -22,9 +22,63 @@ export interface ModelCrudRestApiConfig extends ModelApiConfig
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [basePath](./rest-crud.modelcrudrestapiconfig.basepath.md) |  | string |  |
-|  [readonly?](./rest-crud.modelcrudrestapiconfig.readonly.md) |  | boolean | _(Optional)_ If true, the generated controller only has find and count APIs |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[basePath](./rest-crud.modelcrudrestapiconfig.basepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[readonly?](./rest-crud.modelcrudrestapiconfig.readonly.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If true, the generated controller only has find and count APIs
+
+
+</td></tr>
+</tbody></table>
 
 

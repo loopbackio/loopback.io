@@ -23,9 +23,39 @@ export declare function hasInjections(cls: Constructor<unknown>): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  cls | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | Class with possible <code>@inject</code> decorations |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+cls
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+Class with possible `@inject` decorations
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ withOperationName(name: string): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the controller method implementing this operation. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the controller method implementing this operation.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

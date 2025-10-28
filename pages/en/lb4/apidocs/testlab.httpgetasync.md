@@ -23,10 +23,53 @@ export declare function httpGetAsync(urlString: string, agent?: http.Agent): Pro
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  urlString | string |  |
-|  agent | http.Agent | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+urlString
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+agent
+
+
+</td><td>
+
+http.Agent
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

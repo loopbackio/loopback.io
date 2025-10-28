@@ -24,15 +24,99 @@ export declare class GraphQLResolutionContext extends Context
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parent, resolverClass, resolverData)](./graphql.graphqlresolutioncontext._constructor_.md) |  | Constructs a new instance of the <code>GraphQLResolutionContext</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parent, resolverClass, resolverData)](./graphql.graphqlresolutioncontext._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `GraphQLResolutionContext` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [resolverClass](./graphql.graphqlresolutioncontext.resolverclass.md) | <code>readonly</code> | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
-|  [resolverData](./graphql.graphqlresolutioncontext.resolverdata.md) | <code>readonly</code> | ResolverData&lt;unknown&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[resolverClass](./graphql.graphqlresolutioncontext.resolverclass.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[resolverData](./graphql.graphqlresolutioncontext.resolverdata.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+ResolverData&lt;object&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

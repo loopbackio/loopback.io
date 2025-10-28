@@ -23,9 +23,39 @@ include(...i: (string | string[] | Inclusion)[]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  i | (string \| string\[\] \| [Inclusion](./filter.inclusion.md)<!-- -->)\[\] | A relation name, an array of relation names, or an <code>Inclusion</code> object for the relation/scope definitions |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+i
+
+
+</td><td>
+
+(string \| string\[\] \| [Inclusion](./filter.inclusion.md)<!-- -->)\[\]
+
+
+</td><td>
+
+A relation name, an array of relation names, or an `Inclusion` object for the relation/scope definitions
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

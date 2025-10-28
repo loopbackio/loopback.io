@@ -23,9 +23,39 @@ export declare function filterByServiceInterface(serviceInterface: ServiceInterf
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Service class matching the one used by <code>binding.toClass()</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+serviceInterface
+
+
+</td><td>
+
+[ServiceInterface](./core.serviceinterface.md)
+
+
+</td><td>
+
+Service class matching the one used by `binding.toClass()`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,37 @@ export declare function isFilter<MT extends object>(candidate: any): candidate i
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  candidate | any |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+candidate
+
+
+</td><td>
+
+any
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

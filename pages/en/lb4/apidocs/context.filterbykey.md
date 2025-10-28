@@ -23,9 +23,39 @@ export declare function filterByKey(keyPattern?: string | RegExp | BindingFilter
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  keyPattern | string \| RegExp \| [BindingFilter](./context.bindingfilter.md) | _(Optional)_ Binding key/wildcard, regexp, or a filter function |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyPattern
+
+
+</td><td>
+
+string \| RegExp \| [BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+_(Optional)_ Binding key/wildcard, regexp, or a filter function
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,11 +23,71 @@ redirect(fromPath: string, toPathOrUrl: string, statusCode?: number): Binding;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  fromPath | string | URL path of the redirect endpoint |
-|  toPathOrUrl | string | Location (URL path or full URL) where to redirect to. If your server is configured with a custom <code>basePath</code>, then the base path is prepended to the target location. |
-|  statusCode | number | _(Optional)_ HTTP status code to respond with, defaults to 303 (See Other). |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+fromPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+URL path of the redirect endpoint
+
+
+</td></tr>
+<tr><td>
+
+toPathOrUrl
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Location (URL path or full URL) where to redirect to. If your server is configured with a custom `basePath`<!-- -->, then the base path is prepended to the target location.
+
+
+</td></tr>
+<tr><td>
+
+statusCode
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ HTTP status code to respond with, defaults to 303 (See Other).
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,19 +23,107 @@ OpenApiSpecBuilder utilizes [Test Data Builder pattern](http://www.natpryce.com/
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [BuilderBase](./openapi-spec-builder.builderbase.md) |  |
-|  [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md) | A builder for creating ComponentsObject specifications. |
-|  [OpenApiSpecBuilder](./openapi-spec-builder.openapispecbuilder.md) | A builder for creating OpenApiSpec documents. |
-|  [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md) | A builder for creating OperationObject specifications. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BuilderBase](./openapi-spec-builder.builderbase.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md)
+
+
+</td><td>
+
+A builder for creating ComponentsObject specifications.
+
+
+</td></tr>
+<tr><td>
+
+[OpenApiSpecBuilder](./openapi-spec-builder.openapispecbuilder.md)
+
+
+</td><td>
+
+A builder for creating OpenApiSpec documents.
+
+
+</td></tr>
+<tr><td>
+
+[OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md)
+
+
+</td><td>
+
+A builder for creating OperationObject specifications.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [aComponentsSpec()](./openapi-spec-builder.acomponentsspec.md) | Create a new instance of ComponentsSpecBuilder. |
-|  [anOpenApiSpec()](./openapi-spec-builder.anopenapispec.md) | Create a new instance of OpenApiSpecBuilder. |
-|  [anOperationSpec()](./openapi-spec-builder.anoperationspec.md) | Create a new instance of OperationSpecBuilder. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[aComponentsSpec()](./openapi-spec-builder.acomponentsspec.md)
+
+
+</td><td>
+
+Create a new instance of ComponentsSpecBuilder.
+
+
+</td></tr>
+<tr><td>
+
+[anOpenApiSpec()](./openapi-spec-builder.anopenapispec.md)
+
+
+</td><td>
+
+Create a new instance of OpenApiSpecBuilder.
+
+
+</td></tr>
+<tr><td>
+
+[anOperationSpec()](./openapi-spec-builder.anoperationspec.md)
+
+
+</td><td>
+
+Create a new instance of OperationSpecBuilder.
+
+
+</td></tr>
+</tbody></table>
 
 

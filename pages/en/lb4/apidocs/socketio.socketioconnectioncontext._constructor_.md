@@ -23,9 +23,50 @@ constructor(socket: Socket, parent: Context);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  socket | Socket |  |
-|  parent | [Context](./context.context.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+socket
+
+
+</td><td>
+
+Socket
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+parent
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

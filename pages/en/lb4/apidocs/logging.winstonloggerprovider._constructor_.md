@@ -26,10 +26,66 @@ constructor(
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  transports | Getter&lt;Transport\[\]&gt; |  |
-|  formats | Getter&lt;Format\[\]&gt; |  |
-|  options | LoggerOptions | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+transports
+
+
+</td><td>
+
+Getter&lt;Transport\[\]&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+formats
+
+
+</td><td>
+
+Getter&lt;Format\[\]&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+LoggerOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

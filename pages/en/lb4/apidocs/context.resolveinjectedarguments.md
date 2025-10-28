@@ -25,13 +25,103 @@ export declare function resolveInjectedArguments(target: object, method: string,
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | object | The class for constructor injection or prototype for method injection |
-|  method | string | The method name. If set to '', the constructor will be used. |
-|  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
-|  nonInjectedArgs | any\[\] | _(Optional)_ Optional array of args for non-injected parameters |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+The class for constructor injection or prototype for method injection
+
+
+</td></tr>
+<tr><td>
+
+method
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The method name. If set to '', the constructor will be used.
+
+
+</td></tr>
+<tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+The context containing values for `@inject` resolution
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ Optional session for binding and dependency resolution
+
+
+</td></tr>
+<tr><td>
+
+nonInjectedArgs
+
+
+</td><td>
+
+any\[\]
+
+
+</td><td>
+
+_(Optional)_ Optional array of args for non-injected parameters
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

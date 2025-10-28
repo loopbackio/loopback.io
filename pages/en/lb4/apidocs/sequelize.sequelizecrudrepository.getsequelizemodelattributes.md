@@ -25,9 +25,39 @@ protected getSequelizeModelAttributes(definition: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  definition | { \[name: string\]: PropertyDefinition; } | property definition received from loopback entityClass eg. <code>{ id: { type: &quot;Number&quot;, id: true } }</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+definition
+
+
+</td><td>
+
+{ \[name: string\]: PropertyDefinition; }
+
+
+</td><td>
+
+property definition received from loopback entityClass eg. `{ id: { type: "Number", id: true } }`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

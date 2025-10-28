@@ -24,8 +24,46 @@ export interface BindingTagFilter extends BindingFilter
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindingTagPattern](./context.bindingtagfilter.bindingtagpattern.md) |  | [BindingTag](./context.bindingtag.md) \| RegExp | A special property on the filter function to provide access to the binding tag pattern which can be utilized to optimize the matching of bindings by tag in a context. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindingTagPattern](./context.bindingtagfilter.bindingtagpattern.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingTag](./context.bindingtag.md) \| RegExp
+
+
+</td><td>
+
+A special property on the filter function to provide access to the binding tag pattern which can be utilized to optimize the matching of bindings by tag in a context.
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ static parseKeyWithPath<T>(keyWithPath: BindingAddress<T>): BindingKey<T>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | The key with an optional path, e.g. "application.instance" or "config\#rest.port". |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyWithPath
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+The key with an optional path, e.g. "application.instance" or "config\#rest.port".
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,16 +23,114 @@ export declare namespace RestMiddlewareGroups
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [API\_SPEC](./rest.restmiddlewaregroups.api_spec.md) | Server OpenAPI specs |
-|  [AUTHENTICATION](./rest.restmiddlewaregroups.authentication.md) | Perform authentication |
-|  [CORS](./rest.restmiddlewaregroups.cors.md) | Enforce CORS |
-|  [DEFAULT](./rest.restmiddlewaregroups.default.md) |  |
-|  [FIND\_ROUTE](./rest.restmiddlewaregroups.find_route.md) | Find the route that can serve the request |
-|  [INVOKE\_METHOD](./rest.restmiddlewaregroups.invoke_method.md) | Invoke the target controller method or handler function |
-|  [MIDDLEWARE](./rest.restmiddlewaregroups.middleware.md) | Default middleware group |
-|  [PARSE\_PARAMS](./rest.restmiddlewaregroups.parse_params.md) | Parse the http request to extract parameter values for the operation |
-|  [SEND\_RESPONSE](./rest.restmiddlewaregroups.send_response.md) | Invoke downstream middleware to get the result or catch errors so that it can produce the http response |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[API\_SPEC](./rest.restmiddlewaregroups.api_spec.md)
+
+
+</td><td>
+
+Server OpenAPI specs
+
+
+</td></tr>
+<tr><td>
+
+[AUTHENTICATION](./rest.restmiddlewaregroups.authentication.md)
+
+
+</td><td>
+
+Perform authentication
+
+
+</td></tr>
+<tr><td>
+
+[CORS](./rest.restmiddlewaregroups.cors.md)
+
+
+</td><td>
+
+Enforce CORS
+
+
+</td></tr>
+<tr><td>
+
+[DEFAULT](./rest.restmiddlewaregroups.default.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[FIND\_ROUTE](./rest.restmiddlewaregroups.find_route.md)
+
+
+</td><td>
+
+Find the route that can serve the request
+
+
+</td></tr>
+<tr><td>
+
+[INVOKE\_METHOD](./rest.restmiddlewaregroups.invoke_method.md)
+
+
+</td><td>
+
+Invoke the target controller method or handler function
+
+
+</td></tr>
+<tr><td>
+
+[MIDDLEWARE](./rest.restmiddlewaregroups.middleware.md)
+
+
+</td><td>
+
+Default middleware group
+
+
+</td></tr>
+<tr><td>
+
+[PARSE\_PARAMS](./rest.restmiddlewaregroups.parse_params.md)
+
+
+</td><td>
+
+Parse the http request to extract parameter values for the operation
+
+
+</td></tr>
+<tr><td>
+
+[SEND\_RESPONSE](./rest.restmiddlewaregroups.send_response.md)
+
+
+</td><td>
+
+Invoke downstream middleware to get the result or catch errors so that it can produce the http response
+
+
+</td></tr>
+</tbody></table>
 
 

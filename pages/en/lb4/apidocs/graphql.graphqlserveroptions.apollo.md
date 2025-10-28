@@ -18,6 +18,6 @@ ApolloServerExpress related configuration
 **Signature:**
 
 ```typescript
-apollo?: ApolloServerExpressConfig;
+apollo?: Partial<ApolloServerOptionsWithStaticSchema<TContext>>;
 ```
 

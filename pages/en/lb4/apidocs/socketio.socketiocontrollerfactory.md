@@ -23,28 +23,216 @@ export declare class SocketIoControllerFactory
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parentCtx, controllerClass, socket)](./socketio.socketiocontrollerfactory._constructor_.md) |  | Constructs a new instance of the <code>SocketIoControllerFactory</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parentCtx, controllerClass, socket)](./socketio.socketiocontrollerfactory._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoControllerFactory` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [connCtx](./socketio.socketiocontrollerfactory.connctx.md) | <code>readonly</code> | [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connCtx](./socketio.socketiocontrollerfactory.connctx.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[SocketIoConnectionContext](./socketio.socketioconnectioncontext.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [connect()](./socketio.socketiocontrollerfactory.connect.md) |  |  |
-|  [create()](./socketio.socketiocontrollerfactory.create.md) |  |  |
-|  [getAllMethodMetadataForKey(metadataAccessor)](./socketio.socketiocontrollerfactory.getallmethodmetadataforkey.md) | <code>protected</code> |  |
-|  [getCallback(methodName)](./socketio.socketiocontrollerfactory.getcallback.md) |  |  |
-|  [getDecoratedMethodsForConnect()](./socketio.socketiocontrollerfactory.getdecoratedmethodsforconnect.md) |  |  |
-|  [getDecorateSubscribeMethods()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethods.md) | <code>protected</code> |  |
-|  [getDecorateSubscribeMethodsByEventName()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethodsbyeventname.md) |  |  |
-|  [registerSubscribeMethods()](./socketio.socketiocontrollerfactory.registersubscribemethods.md) | <code>protected</code> |  |
-|  [setup()](./socketio.socketiocontrollerfactory.setup.md) |  | Set up the controller for the given socket |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./socketio.socketiocontrollerfactory.connect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[create()](./socketio.socketiocontrollerfactory.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getAllMethodMetadataForKey(metadataAccessor)](./socketio.socketiocontrollerfactory.getallmethodmetadataforkey.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getCallback(methodName)](./socketio.socketiocontrollerfactory.getcallback.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getDecoratedMethodsForConnect()](./socketio.socketiocontrollerfactory.getdecoratedmethodsforconnect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getDecorateSubscribeMethods()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethods.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getDecorateSubscribeMethodsByEventName()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethodsbyeventname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[registerSubscribeMethods()](./socketio.socketiocontrollerfactory.registersubscribemethods.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[setup()](./socketio.socketiocontrollerfactory.setup.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set up the controller for the given socket
+
+
+</td></tr>
+</tbody></table>
 
 

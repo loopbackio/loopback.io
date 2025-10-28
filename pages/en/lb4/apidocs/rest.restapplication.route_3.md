@@ -23,12 +23,79 @@ route(verb: string, path: string, spec: OperationObject, handler: Function): Bin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string |  |
-|  path | string |  |
-|  spec | OperationObject |  |
-|  handler | Function |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+handler
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

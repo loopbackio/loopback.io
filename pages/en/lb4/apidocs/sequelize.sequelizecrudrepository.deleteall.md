@@ -21,10 +21,55 @@ deleteAll(where?: Where<T> | undefined, options?: AnyObject | undefined): Promis
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; \| undefined | _(Optional)_ |
-|  options | AnyObject \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+where
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;T&gt; \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+AnyObject \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

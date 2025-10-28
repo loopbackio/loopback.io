@@ -22,8 +22,36 @@ export declare class AuthorizeMethodDecoratorFactory extends MethodDecoratorFact
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./authorization.authorizemethoddecoratorfactory.mergewithown.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./authorization.authorizemethoddecoratorfactory.mergewithown.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

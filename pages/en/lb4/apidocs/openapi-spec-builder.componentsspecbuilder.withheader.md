@@ -23,10 +23,55 @@ withHeader(name: string, header: HeaderObject | ReferenceObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the header |
-|  header | HeaderObject \| ReferenceObject | Specification of the header |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the header
+
+
+</td></tr>
+<tr><td>
+
+header
+
+
+</td><td>
+
+HeaderObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the header
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

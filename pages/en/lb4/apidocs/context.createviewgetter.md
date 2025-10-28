@@ -23,11 +23,71 @@ export declare function createViewGetter<T = unknown>(ctx: Context, bindingFilte
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctx | [Context](./context.context.md) | Context object |
-|  bindingFilter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Resolution session |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+bindingFilter
+
+
+</td><td>
+
+[BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+A function to match bindings
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ Resolution session
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

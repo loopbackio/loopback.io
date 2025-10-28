@@ -21,11 +21,69 @@ findById(id: ID, filter?: FilterWithRequiredExcludingWhere<T>, options?: AnyObje
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  id | ID |  |
-|  filter | FilterWithRequiredExcludingWhere&lt;T&gt; | _(Optional)_ |
-|  options | AnyObject | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+id
+
+
+</td><td>
+
+ID
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+filter
+
+
+</td><td>
+
+FilterWithRequiredExcludingWhere&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+AnyObject
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

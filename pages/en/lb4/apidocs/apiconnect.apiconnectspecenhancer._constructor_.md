@@ -23,9 +23,52 @@ constructor(options: ApiConnectSpecOptions, appMetadata?: ApplicationMetadata);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ApiConnectSpecOptions](./apiconnect.apiconnectspecoptions.md) |  |
-|  appMetadata | [ApplicationMetadata](./core.applicationmetadata.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ApiConnectSpecOptions](./apiconnect.apiconnectspecoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+appMetadata
+
+
+</td><td>
+
+[ApplicationMetadata](./core.applicationmetadata.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

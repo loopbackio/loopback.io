@@ -38,25 +38,209 @@ app.bind(CoreBindings.SEQUENCE).toClass(MySequence);
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(findRoute, parseParams, invoke, send, reject)](./rest.defaultsequence._constructor_.md) |  | Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(findRoute, parseParams, invoke, send, reject)](./rest.defaultsequence._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [findRoute](./rest.defaultsequence.findroute.md) | <code>protected</code> | [FindRoute](./rest.findroute.md) |  |
-|  [invoke](./rest.defaultsequence.invoke.md) | <code>protected</code> | [InvokeMethod](./rest.invokemethod.md) |  |
-|  [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md) | <code>protected</code> | InvokeMiddleware | Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE. |
-|  [parseParams](./rest.defaultsequence.parseparams.md) | <code>protected</code> | [ParseParams](./rest.parseparams.md) |  |
-|  [reject](./rest.defaultsequence.reject.md) |  | [Reject](./rest.reject.md) |  |
-|  [send](./rest.defaultsequence.send.md) |  | [Send](./rest.send.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[findRoute](./rest.defaultsequence.findroute.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[FindRoute](./rest.findroute.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invoke](./rest.defaultsequence.invoke.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[InvokeMethod](./rest.invokemethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invokeMiddleware](./rest.defaultsequence.invokemiddleware.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+InvokeMiddleware
+
+
+</td><td>
+
+Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE.
+
+
+</td></tr>
+<tr><td>
+
+[parseParams](./rest.defaultsequence.parseparams.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[ParseParams](./rest.parseparams.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[reject](./rest.defaultsequence.reject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Reject](./rest.reject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[send](./rest.defaultsequence.send.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Send](./rest.send.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [handle(context)](./rest.defaultsequence.handle.md) |  | <p>Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.</p><p>Default sequence executes these steps - Executes middleware for CORS, OpenAPI spec endpoints - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error.</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(context)](./rest.defaultsequence.handle.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.
+
+Default sequence executes these steps - Executes middleware for CORS, OpenAPI spec endpoints - Finds the appropriate controller method, swagger spec and args for invocation - Parses HTTP request to get API argument list - Invokes the API which is defined in the Application Controller - Writes the result from API into the HTTP response - Error is caught and logged using 'logError' if any of the above steps in the sequence fails with an error.
+
+
+</td></tr>
+</tbody></table>
 
 

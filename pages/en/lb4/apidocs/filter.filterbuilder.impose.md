@@ -23,9 +23,39 @@ impose(constraint: Filter<MT> | Where<MT>): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  constraint | [Filter](./filter.filter.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt; | a constraint object to merge with own filter object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+constraint
+
+
+</td><td>
+
+[Filter](./filter.filter.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+a constraint object to merge with own filter object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,28 +24,262 @@ export declare class InvocationContext extends Context
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parent, target, methodName, args, source)](./context.invocationcontext._constructor_.md) |  | Construct a new instance of <code>InvocationContext</code> |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parent, target, methodName, args, source)](./context.invocationcontext._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Construct a new instance of `InvocationContext`
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [args](./context.invocationcontext.args.md) | <code>readonly</code> | [InvocationArgs](./context.invocationargs.md) |  |
-|  [description](./context.invocationcontext.description.md) | <code>readonly</code> | string | Description of the invocation |
-|  [methodName](./context.invocationcontext.methodname.md) | <code>readonly</code> | string |  |
-|  [source?](./context.invocationcontext.source.md) | <code>readonly</code> | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | _(Optional)_ |
-|  [target](./context.invocationcontext.target.md) | <code>readonly</code> | object |  |
-|  [targetClass](./context.invocationcontext.targetclass.md) | <code>readonly</code> | Function | The target class, such as <code>OrderController</code> |
-|  [targetName](./context.invocationcontext.targetname.md) | <code>readonly</code> | string | The target name, such as <code>OrderController.prototype.cancelOrder</code> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[args](./context.invocationcontext.args.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[InvocationArgs](./context.invocationargs.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[description](./context.invocationcontext.description.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Description of the invocation
+
+
+</td></tr>
+<tr><td>
+
+[methodName](./context.invocationcontext.methodname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[source?](./context.invocationcontext.source.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[target](./context.invocationcontext.target.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[targetClass](./context.invocationcontext.targetclass.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+The target class, such as `OrderController`
+
+
+</td></tr>
+<tr><td>
+
+[targetName](./context.invocationcontext.targetname.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The target name, such as `OrderController.prototype.cancelOrder`
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [assertMethodExists()](./context.invocationcontext.assertmethodexists.md) |  | Assert the method exists on the target. An error will be thrown if otherwise. |
-|  [invokeTargetMethod(options)](./context.invocationcontext.invoketargetmethod.md) |  | Invoke the target method with the given context |
-|  [toString()](./context.invocationcontext.tostring.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[assertMethodExists()](./context.invocationcontext.assertmethodexists.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Assert the method exists on the target. An error will be thrown if otherwise.
+
+
+</td></tr>
+<tr><td>
+
+[invokeTargetMethod(options)](./context.invocationcontext.invoketargetmethod.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Invoke the target method with the given context
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./context.invocationcontext.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

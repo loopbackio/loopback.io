@@ -23,10 +23,55 @@ authenticate(request: Request, options?: AuthenticateOptions): Promise<UserProfi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request | The incoming request. |
-|  options | AuthenticateOptions | _(Optional)_ Options passed through to strategy.authenticate. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+The incoming request.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+AuthenticateOptions
+
+
+</td><td>
+
+_(Optional)_ Options passed through to strategy.authenticate.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

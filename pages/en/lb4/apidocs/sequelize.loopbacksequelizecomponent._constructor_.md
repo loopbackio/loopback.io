@@ -23,9 +23,52 @@ constructor(application: Application, options?: LoopbackSequelizeComponentOption
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  application | [Application](./core.application.md) |  |
-|  options | [LoopbackSequelizeComponentOptions](./sequelize.loopbacksequelizecomponentoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+application
+
+
+</td><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[LoopbackSequelizeComponentOptions](./sequelize.loopbacksequelizecomponentoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

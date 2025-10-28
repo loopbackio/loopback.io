@@ -17,32 +17,130 @@ A component that reports metrics of Node.js, the LoopBack framework, and your ap
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [MetricsComponent](./metrics.metricscomponent.md) | A component providing metrics for Prometheus |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MetricsComponent](./metrics.metricscomponent.md)
+
+
+</td><td>
+
+A component providing metrics for Prometheus
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [MetricsOptions](./metrics.metricsoptions.md) | Options for metrics component |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MetricsOptions](./metrics.metricsoptions.md)
+
+
+</td><td>
+
+Options for metrics component
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [MetricsBindings](./metrics.metricsbindings.md) | Binding keys used by this component. |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MetricsBindings](./metrics.metricsbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_METRICS\_OPTIONS](./metrics.default_metrics_options.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_METRICS\_OPTIONS](./metrics.default_metrics_options.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [MetricsConfig](./metrics.metricsconfig.md) | Configuration for metrics component with optional properties |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MetricsConfig](./metrics.metricsconfig.md)
+
+
+</td><td>
+
+Configuration for metrics component with optional properties
+
+
+</td></tr>
+</tbody></table>
 
 

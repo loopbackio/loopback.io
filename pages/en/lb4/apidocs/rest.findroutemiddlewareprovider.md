@@ -22,8 +22,34 @@ export declare class FindRouteMiddlewareProvider implements Provider<Middleware>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [value()](./rest.findroutemiddlewareprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[value()](./rest.findroutemiddlewareprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

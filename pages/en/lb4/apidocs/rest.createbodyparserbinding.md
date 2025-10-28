@@ -23,10 +23,55 @@ export declare function createBodyParserBinding(parserClass: Constructor<BodyPar
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parserClass | [Constructor](./context.constructor.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | Body parser class |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt; | _(Optional)_ Optional binding address |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parserClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt;
+
+
+</td><td>
+
+Body parser class
+
+
+</td></tr>
+<tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[BodyParser](./rest.bodyparser.md)<!-- -->&gt;
+
+
+</td><td>
+
+_(Optional)_ Optional binding address
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

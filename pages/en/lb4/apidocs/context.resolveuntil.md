@@ -23,11 +23,71 @@ export declare function resolveUntil<T, V>(source: Iterator<T>, resolver: (sourc
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  source | Iterator&lt;T&gt; | The iterator of source values |
-|  resolver | (sourceVal: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V \| undefined&gt; | The resolve function that maps the source value to a result |
-|  evaluator | (sourceVal: T, targetVal: V \| undefined) =&gt; boolean | The evaluate function that decides when to stop |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+source
+
+
+</td><td>
+
+Iterator&lt;T&gt;
+
+
+</td><td>
+
+The iterator of source values
+
+
+</td></tr>
+<tr><td>
+
+resolver
+
+
+</td><td>
+
+(sourceVal: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V \| undefined&gt;
+
+
+</td><td>
+
+The resolve function that maps the source value to a result
+
+
+</td></tr>
+<tr><td>
+
+evaluator
+
+
+</td><td>
+
+(sourceVal: T, targetVal: V \| undefined) =&gt; boolean
+
+
+</td><td>
+
+The evaluate function that decides when to stop
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

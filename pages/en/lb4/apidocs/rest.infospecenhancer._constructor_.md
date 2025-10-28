@@ -23,8 +23,38 @@ constructor(pkg?: ApplicationMetadata | undefined);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  pkg | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+pkg
+
+
+</td><td>
+
+[ApplicationMetadata](./core.applicationmetadata.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -17,24 +17,124 @@ permalink: /doc/en/lb4/apidocs.pooling.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [PoolingService](./pooling.poolingservice.md) | A singleton service to maintain a pool of resources. This pool service can be bound to different keys to represent multiple pools. Each binding is a singleton so that the state stays the same for injections into multiple instances for other artifacts. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PoolingService](./pooling.poolingservice.md)
+
+
+</td><td>
+
+A singleton service to maintain a pool of resources. This pool service can be bound to different keys to represent multiple pools. Each binding is a singleton so that the state stays the same for injections into multiple instances for other artifacts.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [createPooledBindingFactory(bindingAddress)](./pooling.createpooledbindingfactory.md) | Create a function to return a pooled binding factory |
-|  [getPooledValue(poolingService, requestCtx)](./pooling.getpooledvalue.md) | Acquire a resource from the pooling service or pool |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createPooledBindingFactory(bindingAddress)](./pooling.createpooledbindingfactory.md)
+
+
+</td><td>
+
+Create a function to return a pooled binding factory
+
+
+</td></tr>
+<tr><td>
+
+[getPooledValue(poolingService, requestCtx)](./pooling.getpooledvalue.md)
+
+
+</td><td>
+
+Acquire a resource from the pooling service or pool
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [Poolable](./pooling.poolable.md) | Life cycle methods that a poolable resource can optionally implement so that they can be triggered by the pooling service |
-|  [PooledValue](./pooling.pooledvalue.md) | Pooled resource instance |
-|  [PoolFactory](./pooling.poolfactory.md) | Factory for the pooling service |
-|  [PoolingServiceOptions](./pooling.poolingserviceoptions.md) | Options to configure a resource pool |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Poolable](./pooling.poolable.md)
+
+
+</td><td>
+
+Life cycle methods that a poolable resource can optionally implement so that they can be triggered by the pooling service
+
+
+</td></tr>
+<tr><td>
+
+[PooledValue](./pooling.pooledvalue.md)
+
+
+</td><td>
+
+Pooled resource instance
+
+
+</td></tr>
+<tr><td>
+
+[PoolFactory](./pooling.poolfactory.md)
+
+
+</td><td>
+
+Factory for the pooling service
+
+
+</td></tr>
+<tr><td>
+
+[PoolingServiceOptions](./pooling.poolingserviceoptions.md)
+
+
+</td><td>
+
+Options to configure a resource pool
+
+
+</td></tr>
+</tbody></table>
 
 

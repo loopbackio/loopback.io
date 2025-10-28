@@ -23,8 +23,36 @@ constructor(context: Context);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

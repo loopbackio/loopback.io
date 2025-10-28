@@ -25,9 +25,39 @@ onStop(fn: () => ValueOrPromise<void>): Binding<LifeCycleObserver>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  fn | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt; | The function to invoke, it can be synchronous (returning <code>void</code>) or asynchronous (returning <code>Promise&lt;void&gt;</code>). |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+fn
+
+
+</td><td>
+
+() =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
+
+
+</td><td>
+
+The function to invoke, it can be synchronous (returning `void`<!-- -->) or asynchronous (returning `Promise<void>`<!-- -->).
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

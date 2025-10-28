@@ -13,6 +13,105 @@ permalink: /doc/en/lb4/changelog.authentication-jwt.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.6](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.16.5...@loopback/authentication-jwt@0.16.6) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.16.5](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.16.4...@loopback/authentication-jwt@0.16.5) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.16.4](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.16.3...@loopback/authentication-jwt@0.16.4) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.16.3](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.16.2...@loopback/authentication-jwt@0.16.3) (2025-06-13)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.16.2](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.16.1...@loopback/authentication-jwt@0.16.2) (2025-06-12)
+
+
+### Bug Fixes
+
+* update peerDependencies versions ([c72cbad](https://github.com/loopbackio/loopback-next/commit/c72cbaded5b71585d45ab834dbcb839fd4ff1087))
+
+
+
+
+
+## [0.16.1](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.16.0...@loopback/authentication-jwt@0.16.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* update @loopback/core to latest major version ([e2d2288](https://github.com/loopbackio/loopback-next/commit/e2d22886dbbb4be91ee6407ff4c6257c48698e89))
+
+
+
+
+
+# [0.16.0](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.14...@loopback/authentication-jwt@0.16.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.15.14](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.13...@loopback/authentication-jwt@0.15.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
+## [0.15.13](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.12...@loopback/authentication-jwt@0.15.13) (2025-04-17)
+
+
+### Bug Fixes
+
+* remove @types/bcryptjs ([2cb41eb](https://github.com/loopbackio/loopback-next/commit/2cb41eb382c6fab5d70792901f40e9846d1ee53e))
+
+
+
+
+
+## [0.15.12](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.11...@loopback/authentication-jwt@0.15.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/authentication-jwt
+
+
+
+
+
 ## [0.15.11](https://github.com/loopbackio/loopback-next/compare/@loopback/authentication-jwt@0.15.10...@loopback/authentication-jwt@0.15.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/authentication-jwt

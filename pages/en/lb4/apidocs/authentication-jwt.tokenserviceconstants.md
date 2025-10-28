@@ -21,9 +21,35 @@ export declare namespace TokenServiceConstants
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [TOKEN\_EXPIRES\_IN\_VALUE](./authentication-jwt.tokenserviceconstants.token_expires_in_value.md) |  |
-|  [TOKEN\_SECRET\_VALUE](./authentication-jwt.tokenserviceconstants.token_secret_value.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[TOKEN\_EXPIRES\_IN\_VALUE](./authentication-jwt.tokenserviceconstants.token_expires_in_value.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[TOKEN\_SECRET\_VALUE](./authentication-jwt.tokenserviceconstants.token_secret_value.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

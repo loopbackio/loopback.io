@@ -31,24 +31,183 @@ context.bind('authentication.actions.authenticate').toProvider(AuthenticateActio
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(getStrategies, setCurrentUser, setRedirectUrl, setRedirectStatus, options)](./authentication.authenticateactionprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticateActionProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(getStrategies, setCurrentUser, setRedirectUrl, setRedirectStatus, options)](./authentication.authenticateactionprovider._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AuthenticateActionProvider` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [getStrategies](./authentication.authenticateactionprovider.getstrategies.md) | <code>readonly</code> | Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
-|  [setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md) | <code>readonly</code> | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
-|  [setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md) | <code>readonly</code> | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
-|  [setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md) | <code>readonly</code> | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getStrategies](./authentication.authenticateactionprovider.getstrategies.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[setCurrentUser](./authentication.authenticateactionprovider.setcurrentuser.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[setRedirectStatus](./authentication.authenticateactionprovider.setredirectstatus.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Setter](./context.setter.md)<!-- -->&lt;number&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[setRedirectUrl](./authentication.authenticateactionprovider.setredirecturl.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Setter](./context.setter.md)<!-- -->&lt;string&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [action(request)](./authentication.authenticateactionprovider.action.md) |  | The implementation of authenticate() sequence action. |
-|  [value()](./authentication.authenticateactionprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action(request)](./authentication.authenticateactionprovider.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The implementation of authenticate() sequence action.
+
+
+</td></tr>
+<tr><td>
+
+[value()](./authentication.authenticateactionprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

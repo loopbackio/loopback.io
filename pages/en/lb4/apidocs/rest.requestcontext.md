@@ -26,25 +26,217 @@ export declare class RequestContext extends MiddlewareContext implements Handler
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(request, response, parent, serverConfig, name)](./rest.requestcontext._constructor_.md) |  | Constructs a new instance of the <code>RequestContext</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(request, response, parent, serverConfig, name)](./rest.requestcontext._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RequestContext` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [basePath](./rest.requestcontext.basepath.md) | <code>readonly</code> | string | Get the effective base path of the incoming request. This base path combines <code>baseUrl</code> provided by Express when LB4 handler is mounted on a non-root path, with the <code>basePath</code> value configured at LB4 side. |
-|  [request](./rest.requestcontext.request.md) | <code>readonly</code> | Request |  |
-|  [requestedBaseUrl](./rest.requestcontext.requestedbaseurl.md) | <code>readonly</code> | string | <p>Get the base URL used by the client to make the request. This URL contains the protocol, hostname, port and base path. The path of the invoked route and query string is not included.</p><p>Please note these values may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx are rewriting them.</p> |
-|  [requestedProtocol](./rest.requestcontext.requestedprotocol.md) | <code>readonly</code> | string | Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols. |
-|  [response](./rest.requestcontext.response.md) | <code>readonly</code> | Response |  |
-|  [serverConfig](./rest.requestcontext.serverconfig.md) | <code>readonly</code> | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[basePath](./rest.requestcontext.basepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Get the effective base path of the incoming request. This base path combines `baseUrl` provided by Express when LB4 handler is mounted on a non-root path, with the `basePath` value configured at LB4 side.
+
+
+</td></tr>
+<tr><td>
+
+[request](./rest.requestcontext.request.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[requestedBaseUrl](./rest.requestcontext.requestedbaseurl.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Get the base URL used by the client to make the request. This URL contains the protocol, hostname, port and base path. The path of the invoked route and query string is not included.
+
+Please note these values may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx are rewriting them.
+
+
+</td></tr>
+<tr><td>
+
+[requestedProtocol](./rest.requestcontext.requestedprotocol.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols.
+
+
+</td></tr>
+<tr><td>
+
+[response](./rest.requestcontext.response.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Response
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[serverConfig](./rest.requestcontext.serverconfig.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [setupBindings()](./rest.requestcontext.setupbindings.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[setupBindings()](./rest.requestcontext.setupbindings.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

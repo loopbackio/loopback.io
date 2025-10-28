@@ -23,10 +23,55 @@ constructor(_parent?: Context | string, name?: string);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_parent | [Context](./context.context.md) \| string | _(Optional)_ The optional parent context |
-|  name | string | _(Optional)_ Name of the context. If not provided, a unique identifier will be generated as the name. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+\_parent
+
+
+</td><td>
+
+[Context](./context.context.md) \| string
+
+
+</td><td>
+
+_(Optional)_ The optional parent context
+
+
+</td></tr>
+<tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Name of the context. If not provided, a unique identifier will be generated as the name.
+
+
+</td></tr>
+</tbody></table>
 
 ## Example
 

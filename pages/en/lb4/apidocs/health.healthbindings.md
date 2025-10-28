@@ -23,10 +23,44 @@ export declare namespace HealthBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./health.healthbindings.component.md) |  |
-|  [CONFIG](./health.healthbindings.config.md) |  |
-|  [HEALTH\_CHECKER](./health.healthbindings.health_checker.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./health.healthbindings.component.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CONFIG](./health.healthbindings.config.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[HEALTH\_CHECKER](./health.healthbindings.health_checker.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

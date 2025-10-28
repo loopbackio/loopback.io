@@ -13,6 +13,85 @@ permalink: /doc/en/lb4/changelog.metadata.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@8.0.3...@loopback/metadata@8.0.4) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+## [8.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@8.0.2...@loopback/metadata@8.0.3) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+## [8.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@8.0.1...@loopback/metadata@8.0.2) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+## [8.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@8.0.0...@loopback/metadata@8.0.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+# [8.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@7.0.14...@loopback/metadata@8.0.0) (2025-06-10)
+
+
+### Bug Fixes
+
+* **docs:** fix typos in documentation ([13ea0d0](https://github.com/loopbackio/loopback-next/commit/13ea0d001836c81cfb4ba6776c45b10a89cda3da))
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [7.0.14](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@7.0.13...@loopback/metadata@7.0.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+## [7.0.13](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@7.0.12...@loopback/metadata@7.0.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
+## [7.0.12](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@7.0.11...@loopback/metadata@7.0.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/metadata
+
+
+
+
+
 ## [7.0.11](https://github.com/loopbackio/loopback-next/compare/@loopback/metadata@7.0.10...@loopback/metadata@7.0.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/metadata

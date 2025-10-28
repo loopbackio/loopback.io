@@ -47,9 +47,39 @@ export interface UserService<U, C>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [convertToUserProfile(user)](./authentication.userservice.converttouserprofile.md) | Convert the user returned by <code>verifyCredentials()</code> to a common user profile that describes a user in your application |
-|  [verifyCredentials(credentials)](./authentication.userservice.verifycredentials.md) | Verify the identity of a user, construct a corresponding user profile using the user information and return the user profile. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertToUserProfile(user)](./authentication.userservice.converttouserprofile.md)
+
+
+</td><td>
+
+Convert the user returned by `verifyCredentials()` to a common user profile that describes a user in your application
+
+
+</td></tr>
+<tr><td>
+
+[verifyCredentials(credentials)](./authentication.userservice.verifycredentials.md)
+
+
+</td><td>
+
+Verify the identity of a user, construct a corresponding user profile using the user information and return the user profile.
+
+
+</td></tr>
+</tbody></table>
 
 

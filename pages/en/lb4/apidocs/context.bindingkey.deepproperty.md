@@ -23,9 +23,39 @@ deepProperty<PropertyValueType>(propertyPath: string): BindingKey<PropertyValueT
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  propertyPath | string | A dot-separated path to a (deep) property, e.g. "server.port". |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+propertyPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A dot-separated path to a (deep) property, e.g. "server.port".
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

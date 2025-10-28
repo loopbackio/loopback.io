@@ -21,13 +21,91 @@ export declare namespace inject
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [binding(bindingKey, metadata)](./context.inject.binding.md) | Inject the binding object for the given key. This is useful if a binding needs to be set up beyond just a constant value allowed by <code>@inject.setter</code>. The injected binding is found or created based on the <code>metadata.bindingCreation</code> option. See <code>BindingCreationPolicy</code> for more details. |
-|  [context()](./context.inject.context.md) | Inject the context object. |
-|  [getter(bindingSelector, metadata)](./context.inject.getter.md) | <p>Inject a function for getting the actual bound value.</p><p>This is useful when implementing Actions, where the action is instantiated for Sequence constructor, but some of action's dependencies become bound only after other actions have been executed by the sequence.</p><p>See also <code>Getter&lt;T&gt;</code>.</p> |
-|  [setter(bindingKey, metadata)](./context.inject.setter.md) | <p>Inject a function for setting (binding) the given key to a given value. (Only static/constant values are supported, it's not possible to bind a key to a class or a provider.)</p><p>This is useful e.g. when implementing Actions that are contributing new Elements.</p><p>See also <code>Setter&lt;T&gt;</code>.</p> |
-|  [tag(bindingTag, metadata)](./context.inject.tag.md) | Inject an array of values by a tag pattern string or regexp |
-|  [view(bindingFilter, metadata)](./context.inject.view.md) | Inject matching bound values by the filter function |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[binding(bindingKey, metadata)](./context.inject.binding.md)
+
+
+</td><td>
+
+Inject the binding object for the given key. This is useful if a binding needs to be set up beyond just a constant value allowed by `@inject.setter`<!-- -->. The injected binding is found or created based on the `metadata.bindingCreation` option. See `BindingCreationPolicy` for more details.
+
+
+</td></tr>
+<tr><td>
+
+[context()](./context.inject.context.md)
+
+
+</td><td>
+
+Inject the context object.
+
+
+</td></tr>
+<tr><td>
+
+[getter(bindingSelector, metadata)](./context.inject.getter.md)
+
+
+</td><td>
+
+Inject a function for getting the actual bound value.
+
+This is useful when implementing Actions, where the action is instantiated for Sequence constructor, but some of action's dependencies become bound only after other actions have been executed by the sequence.
+
+See also `Getter<T>`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[setter(bindingKey, metadata)](./context.inject.setter.md)
+
+
+</td><td>
+
+Inject a function for setting (binding) the given key to a given value. (Only static/constant values are supported, it's not possible to bind a key to a class or a provider.)
+
+This is useful e.g. when implementing Actions that are contributing new Elements.
+
+See also `Setter<T>`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[tag(bindingTag, metadata)](./context.inject.tag.md)
+
+
+</td><td>
+
+Inject an array of values by a tag pattern string or regexp
+
+
+</td></tr>
+<tr><td>
+
+[view(bindingFilter, metadata)](./context.inject.view.md)
+
+
+</td><td>
+
+Inject matching bound values by the filter function
+
+
+</td></tr>
+</tbody></table>
 
 

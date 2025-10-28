@@ -23,10 +23,55 @@ export declare function createServiceBinding<S>(cls: ServiceOrProviderClass<S>, 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  cls | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt; | Service class or provider |
-|  options | [ServiceOptions](./core.serviceoptions.md) | _(Optional)_ Service options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+cls
+
+
+</td><td>
+
+[ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt;
+
+
+</td><td>
+
+Service class or provider
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ServiceOptions](./core.serviceoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Service options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

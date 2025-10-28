@@ -23,18 +23,136 @@ export interface RouteEntry
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./rest.routeentry.path.md) | <code>readonly</code> | string | http path |
-|  [spec](./rest.routeentry.spec.md) | <code>readonly</code> | OperationObject | OpenAPI operation spec |
-|  [verb](./rest.routeentry.verb.md) | <code>readonly</code> | string | http verb |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[path](./rest.routeentry.path.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+http path
+
+
+</td></tr>
+<tr><td>
+
+[spec](./rest.routeentry.spec.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+OpenAPI operation spec
+
+
+</td></tr>
+<tr><td>
+
+[verb](./rest.routeentry.verb.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+http verb
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [describe()](./rest.routeentry.describe.md) |  |
-|  [invokeHandler(requestContext, args)](./rest.routeentry.invokehandler.md) | A handler to invoke the resolved controller method |
-|  [updateBindings(requestContext)](./rest.routeentry.updatebindings.md) | Update bindings for the request context |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describe()](./rest.routeentry.describe.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invokeHandler(requestContext, args)](./rest.routeentry.invokehandler.md)
+
+
+</td><td>
+
+A handler to invoke the resolved controller method
+
+
+</td></tr>
+<tr><td>
+
+[updateBindings(requestContext)](./rest.routeentry.updatebindings.md)
+
+
+</td><td>
+
+Update bindings for the request context
+
+
+</td></tr>
+</tbody></table>
 
 

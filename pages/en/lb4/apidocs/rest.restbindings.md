@@ -23,41 +23,349 @@ export declare namespace RestBindings
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [Http](./rest.restbindings.http.md) | Request-specific bindings |
-|  [Operation](./rest.restbindings.operation.md) |  |
-|  [SequenceActions](./rest.restbindings.sequenceactions.md) | Bindings for potential actions that could be used in a sequence |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Http](./rest.restbindings.http.md)
+
+
+</td><td>
+
+Request-specific bindings
+
+
+</td></tr>
+<tr><td>
+
+[Operation](./rest.restbindings.operation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SequenceActions](./rest.restbindings.sequenceactions.md)
+
+
+</td><td>
+
+Bindings for potential actions that could be used in a sequence
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [AJV\_FACTORY](./rest.restbindings.ajv_factory.md) | Binding key for AJV |
-|  [API\_SPEC](./rest.restbindings.api_spec.md) | Binding key for setting and injecting an OpenAPI spec |
-|  [BASE\_PATH](./rest.restbindings.base_path.md) | Internal binding key for basePath |
-|  [CONFIG](./rest.restbindings.config.md) | Binding key for setting and injecting RestComponentConfig |
-|  [ERROR\_WRITER\_OPTIONS](./rest.restbindings.error_writer_options.md) | <p>Binding key for setting and injecting Reject action's error handling options.</p><p>See https://github.com/loopbackio/strong-error-handler\#options for the list of available options. Please note that the flag <code>log</code> is not used by <code>@loopback/rest</code>.</p> |
-|  [HANDLER](./rest.restbindings.handler.md) | Internal binding key for http-handler |
-|  [HOST](./rest.restbindings.host.md) | Binding key for setting and injecting the host name of RestServer |
-|  [HTTPS\_OPTIONS](./rest.restbindings.https_options.md) | Binding key for HTTPS options |
-|  [INVOKE\_MIDDLEWARE\_SERVICE](./rest.restbindings.invoke_middleware_service.md) | Binding key for setting and injecting a <code>invokeMiddleware</code> function for middleware based sequence |
-|  [OPERATION\_SPEC\_CURRENT](./rest.restbindings.operation_spec_current.md) | Binding key for setting and injecting an OpenAPI operation spec |
-|  [PATH](./rest.restbindings.path.md) | Binding key for setting and injecting the socket path of the RestServer |
-|  [PORT](./rest.restbindings.port.md) | Binding key for setting and injecting the port number of RestServer |
-|  [PROTOCOL](./rest.restbindings.protocol.md) | Binding key for setting and injecting the protocol of RestServer |
-|  [REQUEST\_BODY\_PARSER\_JSON](./rest.restbindings.request_body_parser_json.md) | Binding key for request json body parser |
-|  [REQUEST\_BODY\_PARSER\_OPTIONS](./rest.restbindings.request_body_parser_options.md) | Binding key for request body parser options |
-|  [REQUEST\_BODY\_PARSER\_RAW](./rest.restbindings.request_body_parser_raw.md) | Binding key for request raw body parser |
-|  [REQUEST\_BODY\_PARSER\_STREAM](./rest.restbindings.request_body_parser_stream.md) | Binding key for request raw body parser |
-|  [REQUEST\_BODY\_PARSER\_TEXT](./rest.restbindings.request_body_parser_text.md) | Binding key for request text body parser |
-|  [REQUEST\_BODY\_PARSER\_URLENCODED](./rest.restbindings.request_body_parser_urlencoded.md) | Binding key for request urlencoded body parser |
-|  [REQUEST\_BODY\_PARSER](./rest.restbindings.request_body_parser.md) | Binding key for request body parser |
-|  [ROUTER\_OPTIONS](./rest.restbindings.router_options.md) |  |
-|  [ROUTER](./rest.restbindings.router.md) | Internal binding key for rest router |
-|  [ROUTES](./rest.restbindings.routes.md) | Namespace for REST routes |
-|  [SEQUENCE](./rest.restbindings.sequence.md) | Binding key for setting and injecting a Sequence |
-|  [SERVER](./rest.restbindings.server.md) | Binding key for the server itself |
-|  [URL](./rest.restbindings.url.md) | Binding key for setting and injecting the URL of RestServer |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AJV\_FACTORY](./rest.restbindings.ajv_factory.md)
+
+
+</td><td>
+
+Binding key for AJV
+
+
+</td></tr>
+<tr><td>
+
+[API\_SPEC](./rest.restbindings.api_spec.md)
+
+
+</td><td>
+
+Binding key for setting and injecting an OpenAPI spec
+
+
+</td></tr>
+<tr><td>
+
+[BASE\_PATH](./rest.restbindings.base_path.md)
+
+
+</td><td>
+
+Internal binding key for basePath
+
+
+</td></tr>
+<tr><td>
+
+[CONFIG](./rest.restbindings.config.md)
+
+
+</td><td>
+
+Binding key for setting and injecting RestComponentConfig
+
+
+</td></tr>
+<tr><td>
+
+[ERROR\_WRITER\_OPTIONS](./rest.restbindings.error_writer_options.md)
+
+
+</td><td>
+
+Binding key for setting and injecting Reject action's error handling options.
+
+See https://github.com/loopbackio/strong-error-handler\#options for the list of available options. Please note that the flag `log` is not used by `@loopback/rest`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[HANDLER](./rest.restbindings.handler.md)
+
+
+</td><td>
+
+Internal binding key for http-handler
+
+
+</td></tr>
+<tr><td>
+
+[HOST](./rest.restbindings.host.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the host name of RestServer
+
+
+</td></tr>
+<tr><td>
+
+[HTTPS\_OPTIONS](./rest.restbindings.https_options.md)
+
+
+</td><td>
+
+Binding key for HTTPS options
+
+
+</td></tr>
+<tr><td>
+
+[INVOKE\_MIDDLEWARE\_SERVICE](./rest.restbindings.invoke_middleware_service.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a `invokeMiddleware` function for middleware based sequence
+
+
+</td></tr>
+<tr><td>
+
+[OPERATION\_SPEC\_CURRENT](./rest.restbindings.operation_spec_current.md)
+
+
+</td><td>
+
+Binding key for setting and injecting an OpenAPI operation spec
+
+
+</td></tr>
+<tr><td>
+
+[PATH](./rest.restbindings.path.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the socket path of the RestServer
+
+
+</td></tr>
+<tr><td>
+
+[PORT](./rest.restbindings.port.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the port number of RestServer
+
+
+</td></tr>
+<tr><td>
+
+[PROTOCOL](./rest.restbindings.protocol.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the protocol of RestServer
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_JSON](./rest.restbindings.request_body_parser_json.md)
+
+
+</td><td>
+
+Binding key for request json body parser
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_OPTIONS](./rest.restbindings.request_body_parser_options.md)
+
+
+</td><td>
+
+Binding key for request body parser options
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_RAW](./rest.restbindings.request_body_parser_raw.md)
+
+
+</td><td>
+
+Binding key for request raw body parser
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_STREAM](./rest.restbindings.request_body_parser_stream.md)
+
+
+</td><td>
+
+Binding key for request raw body parser
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_TEXT](./rest.restbindings.request_body_parser_text.md)
+
+
+</td><td>
+
+Binding key for request text body parser
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_URLENCODED](./rest.restbindings.request_body_parser_urlencoded.md)
+
+
+</td><td>
+
+Binding key for request urlencoded body parser
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER](./rest.restbindings.request_body_parser.md)
+
+
+</td><td>
+
+Binding key for request body parser
+
+
+</td></tr>
+<tr><td>
+
+[ROUTER\_OPTIONS](./rest.restbindings.router_options.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ROUTER](./rest.restbindings.router.md)
+
+
+</td><td>
+
+Internal binding key for rest router
+
+
+</td></tr>
+<tr><td>
+
+[ROUTES](./rest.restbindings.routes.md)
+
+
+</td><td>
+
+Namespace for REST routes
+
+
+</td></tr>
+<tr><td>
+
+[SEQUENCE](./rest.restbindings.sequence.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a Sequence
+
+
+</td></tr>
+<tr><td>
+
+[SERVER](./rest.restbindings.server.md)
+
+
+</td><td>
+
+Binding key for the server itself
+
+
+</td></tr>
+<tr><td>
+
+[URL](./rest.restbindings.url.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the URL of RestServer
+
+
+</td></tr>
+</tbody></table>
 
 

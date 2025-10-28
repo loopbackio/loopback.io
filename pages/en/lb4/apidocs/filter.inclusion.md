@@ -27,10 +27,82 @@ export interface Inclusion
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [relation](./filter.inclusion.relation.md) |  | string |  |
-|  [scope?](./filter.inclusion.scope.md) |  | [Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; } | _(Optional)_ |
-|  [targetType?](./filter.inclusion.targettype.md) |  | string | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[relation](./filter.inclusion.relation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[scope?](./filter.inclusion.scope.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Filter](./filter.filter.md)<!-- -->&lt;AnyObject&gt; &amp; { totalLimit?: number; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[targetType?](./filter.inclusion.targettype.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ protected debug(...args: unknown[]): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  args | unknown\[\] | Arguments for the debug |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+
+</td><td>
+
+unknown\[\]
+
+
+</td><td>
+
+Arguments for the debug
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

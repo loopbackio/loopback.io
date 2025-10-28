@@ -21,9 +21,37 @@ protected toEntities(models: Model<T, T>[]): T[];
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  models | Model&lt;T, T&gt;\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+models
+
+
+</td><td>
+
+Model&lt;T, T&gt;\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

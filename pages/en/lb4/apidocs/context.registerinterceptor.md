@@ -23,11 +23,71 @@ export declare function registerInterceptor(ctx: Context, interceptor: Intercept
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctx | [Context](./context.context.md) | Context object |
-|  interceptor | [Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | An interceptor function or provider class |
-|  options | [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | _(Optional)_ Options for the interceptor binding |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+interceptor
+
+
+</td><td>
+
+[Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt;
+
+
+</td><td>
+
+An interceptor function or provider class
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InterceptorBindingOptions](./context.interceptorbindingoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the interceptor binding
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

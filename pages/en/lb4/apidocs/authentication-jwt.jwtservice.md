@@ -22,15 +22,80 @@ export declare class JWTService implements TokenService
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(jwtSecret, jwtExpiresIn)](./authentication-jwt.jwtservice._constructor_.md) |  | Constructs a new instance of the <code>JWTService</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(jwtSecret, jwtExpiresIn)](./authentication-jwt.jwtservice._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `JWTService` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [generateToken(userProfile)](./authentication-jwt.jwtservice.generatetoken.md) |  |  |
-|  [verifyToken(token)](./authentication-jwt.jwtservice.verifytoken.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[generateToken(userProfile)](./authentication-jwt.jwtservice.generatetoken.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[verifyToken(token)](./authentication-jwt.jwtservice.verifytoken.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

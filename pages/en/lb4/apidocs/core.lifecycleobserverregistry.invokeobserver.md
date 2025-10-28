@@ -23,10 +23,55 @@ protected invokeObserver(observer: LifeCycleObserver, event: keyof LifeCycleObse
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  observer | [LifeCycleObserver](./core.lifecycleobserver.md) | A life cycle observer |
-|  event | keyof [LifeCycleObserver](./core.lifecycleobserver.md) | Event name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+observer
+
+
+</td><td>
+
+[LifeCycleObserver](./core.lifecycleobserver.md)
+
+
+</td><td>
+
+A life cycle observer
+
+
+</td></tr>
+<tr><td>
+
+event
+
+
+</td><td>
+
+keyof [LifeCycleObserver](./core.lifecycleobserver.md)
+
+
+</td><td>
+
+Event name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -21,16 +21,116 @@ export declare namespace CoreTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./core.coretags.component.md) | Binding tag for components |
-|  [CONTROLLER](./core.coretags.controller.md) | Binding tag for controllers |
-|  [EXTENSION\_FOR](./core.coretags.extension_for.md) | Binding tag for extensions to specify name of the extension point that an extension contributes to. |
-|  [EXTENSION\_POINT](./core.coretags.extension_point.md) | Binding tag for an extension point to specify name of the extension point |
-|  [LIFE\_CYCLE\_OBSERVER\_GROUP](./core.coretags.life_cycle_observer_group.md) | Binding tag for group name of life cycle observers |
-|  [LIFE\_CYCLE\_OBSERVER](./core.coretags.life_cycle_observer.md) | Binding tag for life cycle observers |
-|  [SERVER](./core.coretags.server.md) | Binding tag for servers |
-|  [SERVICE\_INTERFACE](./core.coretags.service_interface.md) | Binding tag for the service interface |
-|  [SERVICE](./core.coretags.service.md) | Binding tag for services |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./core.coretags.component.md)
+
+
+</td><td>
+
+Binding tag for components
+
+
+</td></tr>
+<tr><td>
+
+[CONTROLLER](./core.coretags.controller.md)
+
+
+</td><td>
+
+Binding tag for controllers
+
+
+</td></tr>
+<tr><td>
+
+[EXTENSION\_FOR](./core.coretags.extension_for.md)
+
+
+</td><td>
+
+Binding tag for extensions to specify name of the extension point that an extension contributes to.
+
+
+</td></tr>
+<tr><td>
+
+[EXTENSION\_POINT](./core.coretags.extension_point.md)
+
+
+</td><td>
+
+Binding tag for an extension point to specify name of the extension point
+
+
+</td></tr>
+<tr><td>
+
+[LIFE\_CYCLE\_OBSERVER\_GROUP](./core.coretags.life_cycle_observer_group.md)
+
+
+</td><td>
+
+Binding tag for group name of life cycle observers
+
+
+</td></tr>
+<tr><td>
+
+[LIFE\_CYCLE\_OBSERVER](./core.coretags.life_cycle_observer.md)
+
+
+</td><td>
+
+Binding tag for life cycle observers
+
+
+</td></tr>
+<tr><td>
+
+[SERVER](./core.coretags.server.md)
+
+
+</td><td>
+
+Binding tag for servers
+
+
+</td></tr>
+<tr><td>
+
+[SERVICE\_INTERFACE](./core.coretags.service_interface.md)
+
+
+</td><td>
+
+Binding tag for the service interface
+
+
+</td></tr>
+<tr><td>
+
+[SERVICE](./core.coretags.service.md)
+
+
+</td><td>
+
+Binding tag for services
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -22,8 +22,36 @@ export declare class LoopbackSequelizeComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(application, options)](./sequelize.loopbacksequelizecomponent._constructor_.md) |  | Constructs a new instance of the <code>LoopbackSequelizeComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(application, options)](./sequelize.loopbacksequelizecomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `LoopbackSequelizeComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 

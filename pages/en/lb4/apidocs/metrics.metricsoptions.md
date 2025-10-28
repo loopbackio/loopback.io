@@ -23,12 +23,122 @@ export interface MetricsOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultLabels?](./metrics.metricsoptions.defaultlabels.md) |  | { \[labelName: string\]: string; } | _(Optional)_ |
-|  [defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md) |  | { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration | _(Optional)_ |
-|  [endpoint?](./metrics.metricsoptions.endpoint.md) |  | { disabled?: boolean; basePath?: string; } | _(Optional)_ |
-|  [openApiSpec?](./metrics.metricsoptions.openapispec.md) |  | boolean | _(Optional)_ |
-|  [pushGateway?](./metrics.metricsoptions.pushgateway.md) |  | { disabled?: boolean; url: string; interval?: number; jobName?: string; groupingKey?: { \[key: string\]: string; }; replaceAll?: boolean; } | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultLabels?](./metrics.metricsoptions.defaultlabels.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[labelName: string\]: string; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[endpoint?](./metrics.metricsoptions.endpoint.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ disabled?: boolean; basePath?: string; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[openApiSpec?](./metrics.metricsoptions.openapispec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[pushGateway?](./metrics.metricsoptions.pushgateway.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ disabled?: boolean; url: string; interval?: number; jobName?: string; groupingKey?: { \[key: string\]: string; }; replaceAll?: boolean; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -30,22 +30,148 @@ Supported phases: `configure`<!-- -->, `discover`<!-- -->, `load`
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(app, projectRoot, socketioControllerConfig, socketioServer)](./socketio.socketiobooter._constructor_.md) |  | Constructs a new instance of the <code>SocketIoBooter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(app, projectRoot, socketioControllerConfig, socketioServer)](./socketio.socketiobooter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoBooter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [app](./socketio.socketiobooter.app.md) |  | [Application](./core.application.md) |  |
-|  [socketioControllerConfig](./socketio.socketiobooter.socketiocontrollerconfig.md) |  | ArtifactOptions |  |
-|  [socketioServer](./socketio.socketiobooter.socketioserver.md) | <code>protected</code> | [SocketIoServer](./socketio.socketioserver.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[app](./socketio.socketiobooter.app.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[socketioControllerConfig](./socketio.socketiobooter.socketiocontrollerconfig.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ArtifactOptions
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[socketioServer](./socketio.socketiobooter.socketioserver.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[SocketIoServer](./socketio.socketioserver.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [load()](./socketio.socketiobooter.load.md) |  | Uses super method to get a list of Artifact classes. Boot each class by binding it to the application using <code>app.controller(controller);</code>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[load()](./socketio.socketiobooter.load.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Uses super method to get a list of Artifact classes. Boot each class by binding it to the application using `app.controller(controller);`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 

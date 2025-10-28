@@ -23,39 +23,245 @@ Utilities:
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ClassDecoratorFactory](./metadata.classdecoratorfactory.md) | Factory for class decorators |
-|  [DecoratorFactory](./metadata.decoratorfactory.md) | Base factory class for decorator functions |
-|  [MetadataAccessor](./metadata.metadataaccessor.md) | A strongly-typed metadata accessor via reflection |
-|  [MetadataInspector](./metadata.metadatainspector.md) | Inspector for metadata applied by decorators |
-|  [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md) | Factory for method decorators |
-|  [MethodMultiDecoratorFactory](./metadata.methodmultidecoratorfactory.md) | Factory for an append-array of method-level decorators The <code>@response</code> metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow: |
-|  [MethodParameterDecoratorFactory](./metadata.methodparameterdecoratorfactory.md) | Factory for method level parameter decorator. |
-|  [NamespacedReflect](./metadata.namespacedreflect.md) |  |
-|  [ParameterDecoratorFactory](./metadata.parameterdecoratorfactory.md) | Factory for parameter decorators |
-|  [PropertyDecoratorFactory](./metadata.propertydecoratorfactory.md) | Factory for property decorators |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ClassDecoratorFactory](./metadata.classdecoratorfactory.md)
+
+
+</td><td>
+
+Factory for class decorators
+
+
+</td></tr>
+<tr><td>
+
+[DecoratorFactory](./metadata.decoratorfactory.md)
+
+
+</td><td>
+
+Base factory class for decorator functions
+
+
+</td></tr>
+<tr><td>
+
+[MetadataAccessor](./metadata.metadataaccessor.md)
+
+
+</td><td>
+
+A strongly-typed metadata accessor via reflection
+
+
+</td></tr>
+<tr><td>
+
+[MetadataInspector](./metadata.metadatainspector.md)
+
+
+</td><td>
+
+Inspector for metadata applied by decorators
+
+
+</td></tr>
+<tr><td>
+
+[MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)
+
+
+</td><td>
+
+Factory for method decorators
+
+
+</td></tr>
+<tr><td>
+
+[MethodMultiDecoratorFactory](./metadata.methodmultidecoratorfactory.md)
+
+
+</td><td>
+
+Factory for an append-array of method-level decorators The `@response` metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow:
+
+
+</td></tr>
+<tr><td>
+
+[MethodParameterDecoratorFactory](./metadata.methodparameterdecoratorfactory.md)
+
+
+</td><td>
+
+Factory for method level parameter decorator.
+
+
+</td></tr>
+<tr><td>
+
+[NamespacedReflect](./metadata.namespacedreflect.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ParameterDecoratorFactory](./metadata.parameterdecoratorfactory.md)
+
+
+</td><td>
+
+Factory for parameter decorators
+
+
+</td></tr>
+<tr><td>
+
+[PropertyDecoratorFactory](./metadata.propertydecoratorfactory.md)
+
+
+</td><td>
+
+Factory for property decorators
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [DecoratorOptions](./metadata.decoratoroptions.md) | Options for a decorator |
-|  [DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md) | Design time metadata for a method. |
-|  [InspectionOptions](./metadata.inspectionoptions.md) | Options for inspection |
-|  [MetadataMap](./metadata.metadatamap.md) | An object mapping keys to corresponding metadata |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DecoratorOptions](./metadata.decoratoroptions.md)
+
+
+</td><td>
+
+Options for a decorator
+
+
+</td></tr>
+<tr><td>
+
+[DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md)
+
+
+</td><td>
+
+Design time metadata for a method.
+
+
+</td></tr>
+<tr><td>
+
+[InspectionOptions](./metadata.inspectionoptions.md)
+
+
+</td><td>
+
+Options for inspection
+
+
+</td></tr>
+<tr><td>
+
+[MetadataMap](./metadata.metadatamap.md)
+
+
+</td><td>
+
+An object mapping keys to corresponding metadata
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [Reflector](./metadata.reflector.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Reflector](./metadata.reflector.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [DecoratorType](./metadata.decoratortype.md) | Decorator function types |
-|  [MetadataKey](./metadata.metadatakey.md) | Key for metadata access via reflection |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DecoratorType](./metadata.decoratortype.md)
+
+
+</td><td>
+
+Decorator function types
+
+
+</td></tr>
+<tr><td>
+
+[MetadataKey](./metadata.metadatakey.md)
+
+
+</td><td>
+
+Key for metadata access via reflection
+
+
+</td></tr>
+</tbody></table>
 
 

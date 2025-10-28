@@ -23,9 +23,39 @@ export declare function isArrayType(type: string | Function | PropertyType): boo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  type | string \| Function \| PropertyType | Type as string or wrapper |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+type
+
+
+</td><td>
+
+string \| Function \| PropertyType
+
+
+</td><td>
+
+Type as string or wrapper
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

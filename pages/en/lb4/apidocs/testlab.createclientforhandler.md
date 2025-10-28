@@ -23,9 +23,37 @@ export declare function createClientForHandler(handler: (req: http.IncomingMessa
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handler | (req: http.IncomingMessage, res: http.ServerResponse) =&gt; void |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handler
+
+
+</td><td>
+
+(req: http.IncomingMessage, res: http.ServerResponse) =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

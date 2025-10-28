@@ -18,6 +18,6 @@ Binding key for the GraphQL resolver data - which is bound per request
 **Signature:**
 
 ```typescript
-RESOLVER_DATA: BindingKey<ResolverData<unknown>>
+RESOLVER_DATA: BindingKey<ResolverData<object>>
 ```
 

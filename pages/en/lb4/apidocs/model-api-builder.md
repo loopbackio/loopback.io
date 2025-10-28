@@ -21,21 +21,91 @@ Provides a contract for extensions that contribute builders for repositories and
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ModelApiBuilder](./model-api-builder.modelapibuilder.md) | Interface for extensions contributing custom API flavors. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ModelApiBuilder](./model-api-builder.modelapibuilder.md)
+
+
+</td><td>
+
+Interface for extensions contributing custom API flavors.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [asModelApiBuilder](./model-api-builder.asmodelapibuilder.md) | A binding template for model API extensions |
-|  [MODEL\_API\_BUILDER\_PLUGINS](./model-api-builder.model_api_builder_plugins.md) | Extension Point name for Model API builders. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asModelApiBuilder](./model-api-builder.asmodelapibuilder.md)
+
+
+</td><td>
+
+A binding template for model API extensions
+
+
+</td></tr>
+<tr><td>
+
+[MODEL\_API\_BUILDER\_PLUGINS](./model-api-builder.model_api_builder_plugins.md)
+
+
+</td><td>
+
+Extension Point name for Model API builders.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [ModelApiConfig](./model-api-builder.modelapiconfig.md) | Configuration settings for individual model files. This type describes content of <code>public-models/{model-name}.config.json</code> files. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ModelApiConfig](./model-api-builder.modelapiconfig.md)
+
+
+</td><td>
+
+Configuration settings for individual model files. This type describes content of `public-models/{model-name}.config.json` files.
+
+
+</td></tr>
+</tbody></table>
 
 

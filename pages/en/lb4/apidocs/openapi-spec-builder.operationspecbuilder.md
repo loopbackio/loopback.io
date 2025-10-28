@@ -24,21 +24,164 @@ export declare class OperationSpecBuilder extends BuilderBase<OperationObject>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./openapi-spec-builder.operationspecbuilder._constructor_.md) |  | Constructs a new instance of the <code>OperationSpecBuilder</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./openapi-spec-builder.operationspecbuilder._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `OperationSpecBuilder` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [withControllerName(name)](./openapi-spec-builder.operationspecbuilder.withcontrollername.md) |  | Define the controller name (controller name). |
-|  [withOperationId(operationId)](./openapi-spec-builder.operationspecbuilder.withoperationid.md) |  | Define the operationId |
-|  [withOperationName(name)](./openapi-spec-builder.operationspecbuilder.withoperationname.md) |  | Define the operation name (controller method name). |
-|  [withParameter(parameterSpecs)](./openapi-spec-builder.operationspecbuilder.withparameter.md) |  | Describe one more parameters accepted by the operation. Note that parameters are positional in OpenAPI Spec, therefore the first call of <code>withParameter</code> defines the first parameter, the second call defines the second parameter, etc. |
-|  [withRequestBody(requestBodySpec)](./openapi-spec-builder.operationspecbuilder.withrequestbody.md) |  |  |
-|  [withResponse(status, responseSpec)](./openapi-spec-builder.operationspecbuilder.withresponse.md) |  | Describe a response for a given HTTP status code. |
-|  [withStringResponse(status)](./openapi-spec-builder.operationspecbuilder.withstringresponse.md) |  |  |
-|  [withTags(tags)](./openapi-spec-builder.operationspecbuilder.withtags.md) |  | Describe tags associated with the operation |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[withControllerName(name)](./openapi-spec-builder.operationspecbuilder.withcontrollername.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define the controller name (controller name).
+
+
+</td></tr>
+<tr><td>
+
+[withOperationId(operationId)](./openapi-spec-builder.operationspecbuilder.withoperationid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define the operationId
+
+
+</td></tr>
+<tr><td>
+
+[withOperationName(name)](./openapi-spec-builder.operationspecbuilder.withoperationname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define the operation name (controller method name).
+
+
+</td></tr>
+<tr><td>
+
+[withParameter(parameterSpecs)](./openapi-spec-builder.operationspecbuilder.withparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Describe one more parameters accepted by the operation. Note that parameters are positional in OpenAPI Spec, therefore the first call of `withParameter` defines the first parameter, the second call defines the second parameter, etc.
+
+
+</td></tr>
+<tr><td>
+
+[withRequestBody(requestBodySpec)](./openapi-spec-builder.operationspecbuilder.withrequestbody.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[withResponse(status, responseSpec)](./openapi-spec-builder.operationspecbuilder.withresponse.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Describe a response for a given HTTP status code.
+
+
+</td></tr>
+<tr><td>
+
+[withStringResponse(status)](./openapi-spec-builder.operationspecbuilder.withstringresponse.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[withTags(tags)](./openapi-spec-builder.operationspecbuilder.withtags.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Describe tags associated with the operation
+
+
+</td></tr>
+</tbody></table>
 
 

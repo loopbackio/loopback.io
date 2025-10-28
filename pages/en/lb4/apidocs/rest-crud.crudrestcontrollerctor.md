@@ -23,8 +23,26 @@ export interface CrudRestControllerCtor<T extends Entity, IdType, IdName extends
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [(new)(repository)](./rest-crud.crudrestcontrollerctor._new_.md) |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(new)(repository)](./rest-crud.crudrestcontrollerctor._new_.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

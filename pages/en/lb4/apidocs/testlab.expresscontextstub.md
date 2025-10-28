@@ -22,11 +22,95 @@ export interface ExpressContextStub extends HandlerContextStub
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [app](./testlab.expresscontextstub.app.md) |  | express.Application |  |
-|  [request](./testlab.expresscontextstub.request.md) |  | express.Request |  |
-|  [response](./testlab.expresscontextstub.response.md) |  | express.Response |  |
-|  [result](./testlab.expresscontextstub.result.md) |  | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[app](./testlab.expresscontextstub.app.md)
+
+
+</td><td>
+
+
+</td><td>
+
+express.Application
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[request](./testlab.expresscontextstub.request.md)
+
+
+</td><td>
+
+
+</td><td>
+
+express.Request
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[response](./testlab.expresscontextstub.response.md)
+
+
+</td><td>
+
+
+</td><td>
+
+express.Response
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[result](./testlab.expresscontextstub.result.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

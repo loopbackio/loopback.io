@@ -41,8 +41,26 @@ const value = ctx.getAsync('provider_key');
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [value()](./context.provider.value.md) |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[value()](./context.provider.value.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

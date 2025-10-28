@@ -23,11 +23,71 @@ expressMiddleware<CFG>(middlewareFactory: ExpressMiddlewareFactory<CFG>, middlew
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  middlewareFactory | ExpressMiddlewareFactory&lt;CFG&gt; | Middleware module name or factory function |
-|  middlewareConfig | CFG | _(Optional)_ Middleware config |
-|  options | MiddlewareBindingOptions | _(Optional)_ Options for registration |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+middlewareFactory
+
+
+</td><td>
+
+ExpressMiddlewareFactory&lt;CFG&gt;
+
+
+</td><td>
+
+Middleware module name or factory function
+
+
+</td></tr>
+<tr><td>
+
+middlewareConfig
+
+
+</td><td>
+
+CFG
+
+
+</td><td>
+
+_(Optional)_ Middleware config
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+MiddlewareBindingOptions
+
+
+</td><td>
+
+_(Optional)_ Options for registration
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

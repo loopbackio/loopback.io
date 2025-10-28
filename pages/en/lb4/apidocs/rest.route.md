@@ -22,23 +22,157 @@ export declare class Route extends BaseRoute
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(verb, path, spec, \_handler)](./rest.route._constructor_.md) |  | Constructs a new instance of the <code>Route</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(verb, path, spec, \_handler)](./rest.route._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `Route` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_handler](./rest.route._handler.md) | <p><code>protected</code></p><p><code>readonly</code></p> | Function |  |
-|  [spec](./rest.route.spec.md) | <code>readonly</code> | OperationObject |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_handler](./rest.route._handler.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[spec](./rest.route.spec.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [describe()](./rest.route.describe.md) |  |  |
-|  [invokeHandler(requestContext, args)](./rest.route.invokehandler.md) |  |  |
-|  [updateBindings(requestContext)](./rest.route.updatebindings.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describe()](./rest.route.describe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invokeHandler(requestContext, args)](./rest.route.invokehandler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[updateBindings(requestContext)](./rest.route.updatebindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

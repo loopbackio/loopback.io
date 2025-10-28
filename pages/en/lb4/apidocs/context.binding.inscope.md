@@ -23,9 +23,39 @@ inScope(scope: BindingScope): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  scope | [BindingScope](./context.bindingscope.md) | Binding scope |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+scope
+
+
+</td><td>
+
+[BindingScope](./context.bindingscope.md)
+
+
+</td><td>
+
+Binding scope
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

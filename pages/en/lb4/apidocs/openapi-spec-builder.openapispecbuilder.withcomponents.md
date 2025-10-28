@@ -23,9 +23,39 @@ withComponents(spec: ComponentsObject | ComponentsSpecBuilder): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | ComponentsObject \| [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md) | Specification of the components. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+ComponentsObject \| [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md)
+
+
+</td><td>
+
+Specification of the components.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

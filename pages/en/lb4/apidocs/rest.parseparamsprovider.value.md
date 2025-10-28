@@ -21,11 +21,65 @@ static value(requestBodyParser: RequestBodyParser, validationOptions: Validation
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) |  |
-|  validationOptions | [ValidationOptions](./rest.validationoptions.md) \| undefined |  |
-|  ajvFactory | [AjvFactory](./rest.ajvfactory.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+requestBodyParser
+
+
+</td><td>
+
+[RequestBodyParser](./rest.requestbodyparser.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+validationOptions
+
+
+</td><td>
+
+[ValidationOptions](./rest.validationoptions.md) \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+ajvFactory
+
+
+</td><td>
+
+[AjvFactory](./rest.ajvfactory.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

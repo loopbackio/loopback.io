@@ -21,20 +21,112 @@ export declare class RequestBodyParser
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parsers, ctx)](./rest.requestbodyparser._constructor_.md) |  | Constructs a new instance of the <code>RequestBodyParser</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parsers, ctx)](./rest.requestbodyparser._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RequestBodyParser` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parsers](./rest.requestbodyparser.parsers.md) | <code>readonly</code> | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parsers](./rest.requestbodyparser.parsers.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[BodyParser](./rest.bodyparser.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [loadRequestBodyIfNeeded(operationSpec, request)](./rest.requestbodyparser.loadrequestbodyifneeded.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[loadRequestBodyIfNeeded(operationSpec, request)](./rest.requestbodyparser.loadrequestbodyifneeded.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

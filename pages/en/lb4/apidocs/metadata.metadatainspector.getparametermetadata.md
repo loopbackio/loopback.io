@@ -23,13 +23,103 @@ static getParameterMetadata<T>(key: MetadataKey<T, ParameterDecorator>, target: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt; | Metadata key |
-|  target | Object | Class for static methods or prototype for instance methods |
-|  methodName | string | Method name. If not present, default to '' to use the constructor |
-|  index | number | Index of the parameter, starting with 0 |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt;
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class for static methods or prototype for instance methods
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Method name. If not present, default to '' to use the constructor
+
+
+</td></tr>
+<tr><td>
+
+index
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Index of the parameter, starting with 0
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InspectionOptions](./metadata.inspectionoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for inspection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

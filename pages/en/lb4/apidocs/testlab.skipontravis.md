@@ -25,11 +25,71 @@ export declare function skipOnTravis<ARGS extends unknown[], RETVAL>(verb: TestD
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt; &amp; { skip: [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt;; } | The function to invoke to define the test case or the test suite, e.g. <code>it</code> or <code>describe</code>. |
-|  name | string | The test name (the first argument of <code>verb</code> function). |
-|  args | ARGS | Additional arguments (framework specific), typically a function implementing the test. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+[TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt; &amp; { skip: [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt;; }
+
+
+</td><td>
+
+The function to invoke to define the test case or the test suite, e.g. `it` or `describe`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The test name (the first argument of `verb` function).
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+ARGS
+
+
+</td><td>
+
+Additional arguments (framework specific), typically a function implementing the test.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

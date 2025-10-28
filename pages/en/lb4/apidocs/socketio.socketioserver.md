@@ -24,29 +24,258 @@ export declare class SocketIoServer extends Context
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(app, options)](./socketio.socketioserver._constructor_.md) |  | Constructs a new instance of the <code>SocketIoServer</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(app, options)](./socketio.socketioserver._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoServer` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [app](./socketio.socketioserver.app.md) |  | [Application](./core.application.md) |  |
-|  [config](./socketio.socketioserver.config.md) | <code>readonly</code> | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) |  |
-|  [listening](./socketio.socketioserver.listening.md) | <code>readonly</code> | boolean |  |
-|  [options](./socketio.socketioserver.options.md) | <code>protected</code> | [SocketIoServerOptions](./socketio.socketioserveroptions.md) |  |
-|  [url](./socketio.socketioserver.url.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[app](./socketio.socketioserver.app.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[config](./socketio.socketioserver.config.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[listening](./socketio.socketioserver.listening.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[options](./socketio.socketioserver.options.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[SocketIoServerOptions](./socketio.socketioserveroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[url](./socketio.socketioserver.url.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [controller(controllerClass)](./socketio.socketioserver.controller.md) |  | Register a socket.io controller |
-|  [discoverAndRegister()](./socketio.socketioserver.discoverandregister.md) |  | Discover all socket.io controllers and register routes |
-|  [route(controllerClass, meta)](./socketio.socketioserver.route.md) |  | Register a socketio controller |
-|  [start()](./socketio.socketioserver.start.md) |  | Start the socketio server |
-|  [stop()](./socketio.socketioserver.stop.md) |  | Stop the socketio server |
-|  [use(fn)](./socketio.socketioserver.use.md) |  | Register a sock.io middleware function |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[controller(controllerClass)](./socketio.socketioserver.controller.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a socket.io controller
+
+
+</td></tr>
+<tr><td>
+
+[discoverAndRegister()](./socketio.socketioserver.discoverandregister.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Discover all socket.io controllers and register routes
+
+
+</td></tr>
+<tr><td>
+
+[route(controllerClass, meta)](./socketio.socketioserver.route.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a socketio controller
+
+
+</td></tr>
+<tr><td>
+
+[start()](./socketio.socketioserver.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Start the socketio server
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./socketio.socketioserver.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Stop the socketio server
+
+
+</td></tr>
+<tr><td>
+
+[use(fn)](./socketio.socketioserver.use.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a sock.io middleware function
+
+
+</td></tr>
+</tbody></table>
 
 

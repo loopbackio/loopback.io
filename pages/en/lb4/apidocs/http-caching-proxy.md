@@ -31,14 +31,52 @@ A filesystem-backed caching HTTP proxy offers a neat solution that combines cach
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [HttpCachingProxy](./http-caching-proxy.httpcachingproxy.md) | The HTTP proxy implementation. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HttpCachingProxy](./http-caching-proxy.httpcachingproxy.md)
+
+
+</td><td>
+
+The HTTP proxy implementation.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ProxyOptions](./http-caching-proxy.proxyoptions.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ProxyOptions](./http-caching-proxy.proxyoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,10 +23,55 @@ run(task: (resource: T) => ValueOrPromise<void>, requestCtx?: Context): Promise<
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  task | (resource: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt; | A function that accepts a resource and returns a Promise. |
-|  requestCtx | [Context](./context.context.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+task
+
+
+</td><td>
+
+(resource: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
+
+
+</td><td>
+
+A function that accepts a resource and returns a Promise.
+
+
+</td></tr>
+<tr><td>
+
+requestCtx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

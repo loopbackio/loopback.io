@@ -23,9 +23,39 @@ export declare function composeInterceptors<C extends Context = Context>(...inte
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  interceptors | [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | A list of interceptor functions or binding keys |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+interceptors
+
+
+</td><td>
+
+[GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\]
+
+
+</td><td>
+
+A list of interceptor functions or binding keys
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

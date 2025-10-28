@@ -27,9 +27,39 @@ export class LDAPUserIdentityService implements UserIdentityService<!-- -->&lt;<
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [findOrCreateUser(userIdentity)](./authentication.useridentityservice.findorcreateuser.md) | find or create a local user using a profile from an external source |
-|  [linkExternalProfile(userId, userIdentity)](./authentication.useridentityservice.linkexternalprofile.md) | link an external profile with an existing local user id. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[findOrCreateUser(userIdentity)](./authentication.useridentityservice.findorcreateuser.md)
+
+
+</td><td>
+
+find or create a local user using a profile from an external source
+
+
+</td></tr>
+<tr><td>
+
+[linkExternalProfile(userId, userIdentity)](./authentication.useridentityservice.linkexternalprofile.md)
+
+
+</td><td>
+
+link an external profile with an existing local user id.
+
+
+</td></tr>
+</tbody></table>
 
 

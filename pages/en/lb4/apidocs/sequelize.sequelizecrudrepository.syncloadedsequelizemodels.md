@@ -23,9 +23,39 @@ syncLoadedSequelizeModels(options?: SyncOptions): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | SyncOptions | _(Optional)_ Sequelize Sync Options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+SyncOptions
+
+
+</td><td>
+
+_(Optional)_ Sequelize Sync Options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

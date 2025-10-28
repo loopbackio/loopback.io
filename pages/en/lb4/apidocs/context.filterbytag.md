@@ -23,9 +23,39 @@ export declare function filterByTag(tagPattern: BindingTag | RegExp): BindingTag
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tagPattern | [BindingTag](./context.bindingtag.md) \| RegExp | Binding tag name, regexp, or object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+tagPattern
+
+
+</td><td>
+
+[BindingTag](./context.bindingtag.md) \| RegExp
+
+
+</td><td>
+
+Binding tag name, regexp, or object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

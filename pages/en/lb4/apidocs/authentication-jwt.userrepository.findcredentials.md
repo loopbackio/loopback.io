@@ -21,9 +21,37 @@ findCredentials(userId: typeof User.prototype.id): Promise<UserCredentials | und
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  userId | typeof [User.prototype.id](./authentication-jwt.user.id.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+userId
+
+
+</td><td>
+
+typeof [User.prototype.id](./authentication-jwt.user.id.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -21,10 +21,44 @@ namespace Operation
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [PARAMS](./rest.restbindings.operation.params.md) |  |
-|  [RETURN\_VALUE](./rest.restbindings.operation.return_value.md) |  |
-|  [ROUTE](./rest.restbindings.operation.route.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PARAMS](./rest.restbindings.operation.params.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RETURN\_VALUE](./rest.restbindings.operation.return_value.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ROUTE](./rest.restbindings.operation.route.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

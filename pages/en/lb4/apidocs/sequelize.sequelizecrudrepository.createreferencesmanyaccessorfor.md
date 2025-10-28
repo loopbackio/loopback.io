@@ -23,10 +23,53 @@ protected createReferencesManyAccessorFor<Target extends Entity, TargetId>(relat
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  relationName | string | Name of the relation defined on the source model |
-|  targetRepoGetter | Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+relationName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the relation defined on the source model
+
+
+</td></tr>
+<tr><td>
+
+targetRepoGetter
+
+
+</td><td>
+
+Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -13,6 +13,80 @@ permalink: /doc/en/lb4/changelog.mock-oauth2-provider.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.10.3...@loopback/mock-oauth2-provider@0.10.4) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.10.3](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.10.2...@loopback/mock-oauth2-provider@0.10.3) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.10.2](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.10.1...@loopback/mock-oauth2-provider@0.10.2) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.10.1](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.10.0...@loopback/mock-oauth2-provider@0.10.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+# [0.10.0](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.9.14...@loopback/mock-oauth2-provider@0.10.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.9.14](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.9.13...@loopback/mock-oauth2-provider@0.9.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.9.13](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.9.12...@loopback/mock-oauth2-provider@0.9.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
+## [0.9.12](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.9.11...@loopback/mock-oauth2-provider@0.9.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/mock-oauth2-provider
+
+
+
+
+
 ## [0.9.11](https://github.com/loopbackio/loopback-next/compare/@loopback/mock-oauth2-provider@0.9.10...@loopback/mock-oauth2-provider@0.9.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/mock-oauth2-provider

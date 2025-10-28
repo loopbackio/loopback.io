@@ -46,55 +46,686 @@ const server = await app.get('servers.foo');
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(app, config)](./rest.restserver._constructor_.md) |  | Creates an instance of RestServer. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(app, config)](./rest.restserver._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Creates an instance of RestServer.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_expressApp?](./rest.restserver._expressapp.md) | <code>protected</code> | express.Application | _(Optional)_ |
-|  [\_httpHandler](./rest.restserver._httphandler.md) | <code>protected</code> | [HttpHandler](./rest.httphandler.md) |  |
-|  [\_httpServer](./rest.restserver._httpserver.md) | <code>protected</code> | [HttpServer](./http-server.httpserver.md) \| undefined |  |
-|  [\_requestHandler](./rest.restserver._requesthandler.md) | <code>protected</code> | [HttpRequestListener](./rest.httprequestlistener.md) |  |
-|  [config](./rest.restserver.config.md) | <code>readonly</code> | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  [httpHandler](./rest.restserver.httphandler.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [HttpHandler](./rest.httphandler.md) |  |
-|  [httpServer](./rest.restserver.httpserver.md) | <code>readonly</code> | [HttpServer](./http-server.httpserver.md) \| undefined |  |
-|  [listening](./rest.restserver.listening.md) | <code>readonly</code> | boolean |  |
-|  [OASEnhancer](./rest.restserver.oasenhancer.md) | <code>readonly</code> | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) |  |
-|  [oasEnhancerService](./rest.restserver.oasenhancerservice.md) | <code>protected</code> | [OASEnhancerService](./openapi-v3.oasenhancerservice.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
-|  [requestHandler](./rest.restserver.requesthandler.md) | <code>readonly</code> | [HttpRequestListener](./rest.httprequestlistener.md) |  |
-|  [rootUrl](./rest.restserver.rooturl.md) | <code>readonly</code> | string \| undefined | The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the <code>basePath</code>. |
-|  [url](./rest.restserver.url.md) | <code>readonly</code> | string \| undefined | The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if <code>basePath</code> is set to '/api'. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_expressApp?](./rest.restserver._expressapp.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+express.Application
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[\_httpHandler](./rest.restserver._httphandler.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[HttpHandler](./rest.httphandler.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_httpServer](./rest.restserver._httpserver.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[HttpServer](./http-server.httpserver.md) \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_requestHandler](./rest.restserver._requesthandler.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[HttpRequestListener](./rest.httprequestlistener.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[config](./rest.restserver.config.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[httpHandler](./rest.restserver.httphandler.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[HttpHandler](./rest.httphandler.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[httpServer](./rest.restserver.httpserver.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpServer](./http-server.httpserver.md) \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[listening](./rest.restserver.listening.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[OASEnhancer](./rest.restserver.oasenhancer.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[OASEnhancerService](./openapi-v3.oasenhancerservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[oasEnhancerService](./rest.restserver.oasenhancerservice.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[OASEnhancerService](./openapi-v3.oasenhancerservice.md)
+
+
+</td><td>
+
+Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence.
+
+
+</td></tr>
+<tr><td>
+
+[requestHandler](./rest.restserver.requesthandler.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpRequestListener](./rest.httprequestlistener.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[rootUrl](./rest.restserver.rooturl.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The root url for the server without the basePath. For example, the value will be 'http://localhost:3000' regardless of the `basePath`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[url](./rest.restserver.url.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+The base url for the server, including the basePath if set. For example, the value will be 'http://localhost:3000/api' if `basePath` is set to '/api'.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\_applyExpressSettings()](./rest.restserver._applyexpresssettings.md) | <code>protected</code> | Apply express settings. |
-|  [\_handleHttpRequest(request, response)](./rest.restserver._handlehttprequest.md) | <code>protected</code> |  |
-|  [\_setupHandlerIfNeeded()](./rest.restserver._setuphandlerifneeded.md) | <code>protected</code> |  |
-|  [\_setupOASEnhancerIfNeeded()](./rest.restserver._setupoasenhancerifneeded.md) | <code>protected</code> |  |
-|  [\_setupOpenApiSpecEndpoints()](./rest.restserver._setupopenapispecendpoints.md) | <code>protected</code> | Mount /openapi.json, /openapi.yaml for specs and /swagger-ui, /explorer to redirect to externally hosted API explorer |
-|  [\_setupRequestHandlerIfNeeded()](./rest.restserver._setuprequesthandlerifneeded.md) | <code>protected</code> |  |
-|  [\_unexpectedErrorHandler()](./rest.restserver._unexpectederrorhandler.md) | <code>protected</code> | Get an Express handler for unexpected errors |
-|  [addOpenApiSpecEndpoint(path, form, router)](./rest.restserver.addopenapispecendpoint.md) |  | Add a new non-controller endpoint hosting a form of the OpenAPI spec. |
-|  [api(spec)](./rest.restserver.api.md) |  | <p>Set the OpenAPI specification that defines the REST API schema for this server. All routes, parameter definitions and return types will be defined in this way.</p><p>Note that this will override any routes defined via decorators at the controller level (this function takes precedent).</p> |
-|  [basePath(path)](./rest.restserver.basepath.md) |  | Configure the <code>basePath</code> for the rest server |
-|  [bodyParser(bodyParserClass, address)](./rest.restserver.bodyparser.md) |  | Bind a body parser to the server context |
-|  [controller(controllerCtor)](./rest.restserver.controller.md) |  | Register a controller class with this server. |
-|  [exportOpenApiSpec(outFile, log)](./rest.restserver.exportopenapispec.md) |  | Export the OpenAPI spec to the given json or yaml file |
-|  [getApiSpec(requestContext)](./rest.restserver.getapispec.md) |  | <p>Get the OpenAPI specification describing the REST API provided by this application.</p><p>This method merges operations (HTTP endpoints) from the following sources: - <code>app.api(spec)</code> - <code>app.controller(MyController)</code> - <code>app.route(route)</code> - <code>app.route('get', '/greet', operationSpec, MyController, 'greet')</code></p><p>If the optional <code>requestContext</code> is provided, then the <code>servers</code> list in the returned spec will be updated to work in that context. Specifically: 1. if <code>config.openApi.setServersFromRequest</code> is enabled, the servers list will be replaced with the context base url 2. Any <code>servers</code> entries with a path of <code>/</code> will have that path replaced with <code>requestContext.basePath</code></p> |
-|  [handler(handlerFn)](./rest.restserver.handler.md) |  | Configure a custom sequence function for handling incoming requests. |
-|  [mountExpressRouter(basePath, router, spec)](./rest.restserver.mountexpressrouter.md) |  | Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack. |
-|  [redirect(fromPath, toPathOrUrl, statusCode)](./rest.restserver.redirect.md) |  | Register a route redirecting callers to a different URL. |
-|  [route(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.restserver.route.md) |  | Register a new Controller-based route. |
-|  [route(verb, path, spec, handler)](./rest.restserver.route_1.md) |  | Register a new route invoking a handler function. |
-|  [route(route)](./rest.restserver.route_2.md) |  | Register a new generic route. |
-|  [sequence(sequenceClass)](./rest.restserver.sequence.md) |  | Configure a custom sequence class for handling incoming requests. |
-|  [start()](./rest.restserver.start.md) |  | Start this REST API's HTTP/HTTPS server. |
-|  [static(path, rootDir, options)](./rest.restserver.static.md) |  | Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static |
-|  [stop()](./rest.restserver.stop.md) |  | Stop this REST API's HTTP/HTTPS server. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_applyExpressSettings()](./rest.restserver._applyexpresssettings.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Apply express settings.
+
+
+</td></tr>
+<tr><td>
+
+[\_handleHttpRequest(request, response)](./rest.restserver._handlehttprequest.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_setupHandlerIfNeeded()](./rest.restserver._setuphandlerifneeded.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_setupOASEnhancerIfNeeded()](./rest.restserver._setupoasenhancerifneeded.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_setupOpenApiSpecEndpoints()](./rest.restserver._setupopenapispecendpoints.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Mount /openapi.json, /openapi.yaml for specs and /swagger-ui, /explorer to redirect to externally hosted API explorer
+
+
+</td></tr>
+<tr><td>
+
+[\_setupRequestHandlerIfNeeded()](./rest.restserver._setuprequesthandlerifneeded.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_unexpectedErrorHandler()](./rest.restserver._unexpectederrorhandler.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get an Express handler for unexpected errors
+
+
+</td></tr>
+<tr><td>
+
+[addOpenApiSpecEndpoint(path, form, router)](./rest.restserver.addopenapispecendpoint.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a new non-controller endpoint hosting a form of the OpenAPI spec.
+
+
+</td></tr>
+<tr><td>
+
+[api(spec)](./rest.restserver.api.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set the OpenAPI specification that defines the REST API schema for this server. All routes, parameter definitions and return types will be defined in this way.
+
+Note that this will override any routes defined via decorators at the controller level (this function takes precedent).
+
+
+</td></tr>
+<tr><td>
+
+[basePath(path)](./rest.restserver.basepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Configure the `basePath` for the rest server
+
+
+</td></tr>
+<tr><td>
+
+[bodyParser(bodyParserClass, address)](./rest.restserver.bodyparser.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bind a body parser to the server context
+
+
+</td></tr>
+<tr><td>
+
+[controller(controllerCtor)](./rest.restserver.controller.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a controller class with this server.
+
+
+</td></tr>
+<tr><td>
+
+[exportOpenApiSpec(outFile, log)](./rest.restserver.exportopenapispec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Export the OpenAPI spec to the given json or yaml file
+
+
+</td></tr>
+<tr><td>
+
+[getApiSpec(requestContext)](./rest.restserver.getapispec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the OpenAPI specification describing the REST API provided by this application.
+
+This method merges operations (HTTP endpoints) from the following sources: - `app.api(spec)` - `app.controller(MyController)` - `app.route(route)` - `app.route('get', '/greet', operationSpec, MyController, 'greet')`
+
+If the optional `requestContext` is provided, then the `servers` list in the returned spec will be updated to work in that context. Specifically: 1. if `config.openApi.setServersFromRequest` is enabled, the servers list will be replaced with the context base url 2. Any `servers` entries with a path of `/` will have that path replaced with `requestContext.basePath`
+
+
+</td></tr>
+<tr><td>
+
+[handler(handlerFn)](./rest.restserver.handler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Configure a custom sequence function for handling incoming requests.
+
+
+</td></tr>
+<tr><td>
+
+[mountExpressRouter(basePath, router, spec)](./rest.restserver.mountexpressrouter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack.
+
+
+</td></tr>
+<tr><td>
+
+[redirect(fromPath, toPathOrUrl, statusCode)](./rest.restserver.redirect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a route redirecting callers to a different URL.
+
+
+</td></tr>
+<tr><td>
+
+[route(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.restserver.route.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new Controller-based route.
+
+
+</td></tr>
+<tr><td>
+
+[route(verb, path, spec, handler)](./rest.restserver.route_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new route invoking a handler function.
+
+
+</td></tr>
+<tr><td>
+
+[route(route)](./rest.restserver.route_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new generic route.
+
+
+</td></tr>
+<tr><td>
+
+[sequence(sequenceClass)](./rest.restserver.sequence.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Configure a custom sequence class for handling incoming requests.
+
+
+</td></tr>
+<tr><td>
+
+[start()](./rest.restserver.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Start this REST API's HTTP/HTTPS server.
+
+
+</td></tr>
+<tr><td>
+
+[static(path, rootDir, options)](./rest.restserver.static.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./rest.restserver.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Stop this REST API's HTTP/HTTPS server.
+
+
+</td></tr>
+</tbody></table>
 
 

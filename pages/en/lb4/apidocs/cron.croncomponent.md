@@ -24,21 +24,124 @@ export declare class CronComponent implements Component, LifeCycleObserver
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(getJobs)](./cron.croncomponent._constructor_.md) |  | Constructs a new instance of the <code>CronComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(getJobs)](./cron.croncomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `CronComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [getJobs](./cron.croncomponent.getjobs.md) | <code>readonly</code> | Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getJobs](./cron.croncomponent.getjobs.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [start()](./cron.croncomponent.start.md) |  |  |
-|  [stop()](./cron.croncomponent.stop.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[start()](./cron.croncomponent.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./cron.croncomponent.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

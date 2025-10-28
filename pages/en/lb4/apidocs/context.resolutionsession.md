@@ -23,29 +23,326 @@ export declare class ResolutionSession
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindingStack](./context.resolutionsession.bindingstack.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;\[\] | Getter for bindings on the stack |
-|  [currentBinding](./context.resolutionsession.currentbinding.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; \| undefined | Getter for the current binding |
-|  [currentInjection](./context.resolutionsession.currentinjection.md) | <code>readonly</code> | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; \| undefined | Getter for the current injection |
-|  [injectionStack](./context.resolutionsession.injectionstack.md) | <code>readonly</code> | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;\[\] | Getter for injections on the stack |
-|  [stack](./context.resolutionsession.stack.md) | <code>readonly</code> | [ResolutionElement](./context.resolutionelement.md)<!-- -->\[\] | A stack of bindings for the current resolution session. It's used to track the path of dependency resolution and detect circular dependencies. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindingStack](./context.resolutionsession.bindingstack.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;\[\]
+
+
+</td><td>
+
+Getter for bindings on the stack
+
+
+</td></tr>
+<tr><td>
+
+[currentBinding](./context.resolutionsession.currentbinding.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; \| undefined
+
+
+</td><td>
+
+Getter for the current binding
+
+
+</td></tr>
+<tr><td>
+
+[currentInjection](./context.resolutionsession.currentinjection.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; \| undefined
+
+
+</td><td>
+
+Getter for the current injection
+
+
+</td></tr>
+<tr><td>
+
+[injectionStack](./context.resolutionsession.injectionstack.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;\[\]
+
+
+</td><td>
+
+Getter for injections on the stack
+
+
+</td></tr>
+<tr><td>
+
+[stack](./context.resolutionsession.stack.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ResolutionElement](./context.resolutionelement.md)<!-- -->\[\]
+
+
+</td><td>
+
+A stack of bindings for the current resolution session. It's used to track the path of dependency resolution and detect circular dependencies.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [describeInjection(injection)](./context.resolutionsession.describeinjection.md) | <code>static</code> | Describe the injection for debugging purpose |
-|  [fork(session)](./context.resolutionsession.fork.md) | <code>static</code> | Fork the current session so that a new one with the same stack can be used in parallel or future resolutions, such as multiple method arguments, multiple properties, or a getter function |
-|  [getBindingPath()](./context.resolutionsession.getbindingpath.md) |  | Get the binding path as <code>bindingA --&gt; bindingB --&gt; bindingC</code>. |
-|  [getInjectionPath()](./context.resolutionsession.getinjectionpath.md) |  | Get the injection path as <code>injectionA --&gt; injectionB --&gt; injectionC</code>. |
-|  [getResolutionPath()](./context.resolutionsession.getresolutionpath.md) |  | Get the resolution path including bindings and injections, for example: <code>bindingA --&gt; @ClassA[0] --&gt; bindingB --&gt; @ClassB.prototype.prop1 --&gt; bindingC</code>. |
-|  [popBinding()](./context.resolutionsession.popbinding.md) |  | Exit the resolution of a binding |
-|  [popInjection()](./context.resolutionsession.popinjection.md) |  | Pop the last injection |
-|  [pushBinding(binding)](./context.resolutionsession.pushbinding.md) |  | Enter the resolution of the given binding. If |
-|  [pushInjection(injection)](./context.resolutionsession.pushinjection.md) |  | Push the injection onto the session |
-|  [runWithBinding(action, binding, session)](./context.resolutionsession.runwithbinding.md) | <code>static</code> | Run the given action with the given binding and session |
-|  [runWithInjection(action, injection, session)](./context.resolutionsession.runwithinjection.md) | <code>static</code> | Run the given action with the given injection and session |
-|  [toString()](./context.resolutionsession.tostring.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describeInjection(injection)](./context.resolutionsession.describeinjection.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Describe the injection for debugging purpose
+
+
+</td></tr>
+<tr><td>
+
+[fork(session)](./context.resolutionsession.fork.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Fork the current session so that a new one with the same stack can be used in parallel or future resolutions, such as multiple method arguments, multiple properties, or a getter function
+
+
+</td></tr>
+<tr><td>
+
+[getBindingPath()](./context.resolutionsession.getbindingpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the binding path as `bindingA --> bindingB --> bindingC`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[getInjectionPath()](./context.resolutionsession.getinjectionpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the injection path as `injectionA --> injectionB --> injectionC`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[getResolutionPath()](./context.resolutionsession.getresolutionpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the resolution path including bindings and injections, for example: `bindingA --> @ClassA[0] --> bindingB --> @ClassB.prototype.prop1 --> bindingC`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[popBinding()](./context.resolutionsession.popbinding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Exit the resolution of a binding
+
+
+</td></tr>
+<tr><td>
+
+[popInjection()](./context.resolutionsession.popinjection.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Pop the last injection
+
+
+</td></tr>
+<tr><td>
+
+[pushBinding(binding)](./context.resolutionsession.pushbinding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Enter the resolution of the given binding. If
+
+
+</td></tr>
+<tr><td>
+
+[pushInjection(injection)](./context.resolutionsession.pushinjection.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Push the injection onto the session
+
+
+</td></tr>
+<tr><td>
+
+[runWithBinding(action, binding, session)](./context.resolutionsession.runwithbinding.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Run the given action with the given binding and session
+
+
+</td></tr>
+<tr><td>
+
+[runWithInjection(action, injection, session)](./context.resolutionsession.runwithinjection.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Run the given action with the given injection and session
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./context.resolutionsession.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

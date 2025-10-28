@@ -23,10 +23,55 @@ view: (propertyPath?: string | ConfigInjectionMetadata, metadata?: ConfigInjecti
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  propertyPath | string \| [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | _(Optional)_ Optional property path of the config object |
-|  metadata | [ConfigInjectionMetadata](./context.configinjectionmetadata.md) | _(Optional)_ Injection metadata |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+propertyPath
+
+
+</td><td>
+
+string \| [ConfigInjectionMetadata](./context.configinjectionmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Optional property path of the config object
+
+
+</td></tr>
+<tr><td>
+
+metadata
+
+
+</td><td>
+
+[ConfigInjectionMetadata](./context.configinjectionmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Injection metadata
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

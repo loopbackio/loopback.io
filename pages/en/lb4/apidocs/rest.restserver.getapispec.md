@@ -27,9 +27,39 @@ getApiSpec(requestContext?: RequestContext): Promise<OpenApiSpec>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  requestContext | [RequestContext](./rest.requestcontext.md) | _(Optional)_ Optional context to update the <code>servers</code> list in the returned spec |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+requestContext
+
+
+</td><td>
+
+[RequestContext](./rest.requestcontext.md)
+
+
+</td><td>
+
+_(Optional)_ Optional context to update the `servers` list in the returned spec
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

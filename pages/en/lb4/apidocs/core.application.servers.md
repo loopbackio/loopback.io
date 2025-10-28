@@ -23,9 +23,39 @@ servers<T extends Server>(ctors: Constructor<T>[]): Binding[];
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctors | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt;\[\] | An array of Server constructors. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctors
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;T&gt;\[\]
+
+
+</td><td>
+
+An array of Server constructors.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

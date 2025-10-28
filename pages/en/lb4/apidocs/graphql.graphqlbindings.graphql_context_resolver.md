@@ -18,6 +18,8 @@ Binding key for the GraphQL context resolver
 **Signature:**
 
 ```typescript
-GRAPHQL_CONTEXT_RESOLVER: BindingKey<ContextFunction<ExpressContext>>
+GRAPHQL_CONTEXT_RESOLVER: BindingKey<import("@apollo/server").ContextFunction<[import("@apollo/server/dist/esm/express4").ExpressContextFunctionArgument], {
+        [key: string]: unknown;
+    }> | undefined>
 ```
 

@@ -23,11 +23,71 @@ mountExpressRouter(basePath: string, router: ExpressRequestHandler, spec?: Route
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  basePath | string | Path where to mount the router at, e.g. <code>/</code> or <code>/api</code>. |
-|  router | ExpressRequestHandler | The Express router to handle the requests. |
-|  spec | [RouterSpec](./rest.routerspec.md) | _(Optional)_ A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend <code>basePath</code> to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+basePath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path where to mount the router at, e.g. `/` or `/api`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+router
+
+
+</td><td>
+
+ExpressRequestHandler
+
+
+</td><td>
+
+The Express router to handle the requests.
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+[RouterSpec](./rest.routerspec.md)
+
+
+</td><td>
+
+_(Optional)_ A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend `basePath` to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -17,30 +17,150 @@ permalink: /doc/en/lb4/apidocs.context-explorer.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ContextBinding](./context-explorer.contextbinding.md) | A wrapper class for context, binding, and its level in the chain |
-|  [ContextExplorerComponent](./context-explorer.contextexplorercomponent.md) | A component providing a self-hosted API Explorer. |
-|  [ContextGraph](./context-explorer.contextgraph.md) | A graph for context hierarchy |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ContextBinding](./context-explorer.contextbinding.md)
+
+
+</td><td>
+
+A wrapper class for context, binding, and its level in the chain
+
+
+</td></tr>
+<tr><td>
+
+[ContextExplorerComponent](./context-explorer.contextexplorercomponent.md)
+
+
+</td><td>
+
+A component providing a self-hosted API Explorer.
+
+
+</td></tr>
+<tr><td>
+
+[ContextGraph](./context-explorer.contextgraph.md)
+
+
+</td><td>
+
+A graph for context hierarchy
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [renderGraph(graph, options)](./context-explorer.rendergraph.md) | Render a graphviz dot string |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[renderGraph(graph, options)](./context-explorer.rendergraph.md)
+
+
+</td><td>
+
+Render a graphviz dot string
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [ContextExplorerBindings](./context-explorer.contextexplorerbindings.md) | Binding keys used by this component. |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ContextExplorerBindings](./context-explorer.contextexplorerbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [BindingNodeFilter](./context-explorer.bindingnodefilter.md) | A filter function to control if a binding is to be rendered |
-|  [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md) | Options to configure Context Explorer |
-|  [ContextGraphOptions](./context-explorer.contextgraphoptions.md) | Options for ContextGraph |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BindingNodeFilter](./context-explorer.bindingnodefilter.md)
+
+
+</td><td>
+
+A filter function to control if a binding is to be rendered
+
+
+</td></tr>
+<tr><td>
+
+[ContextExplorerConfig](./context-explorer.contextexplorerconfig.md)
+
+
+</td><td>
+
+Options to configure Context Explorer
+
+
+</td></tr>
+<tr><td>
+
+[ContextGraphOptions](./context-explorer.contextgraphoptions.md)
+
+
+</td><td>
+
+Options for ContextGraph
+
+
+</td></tr>
+</tbody></table>
 
 

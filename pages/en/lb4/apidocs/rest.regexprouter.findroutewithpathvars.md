@@ -21,10 +21,51 @@ protected findRouteWithPathVars(verb: string, path: string): ResolvedRoute | und
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string |  |
-|  path | string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

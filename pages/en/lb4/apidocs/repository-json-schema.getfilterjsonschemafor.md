@@ -25,10 +25,55 @@ export declare function getFilterJsonSchemaFor(modelCtor: typeof Model, options?
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  modelCtor | typeof Model | The model constructor to build the filter schema for. |
-|  options | [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) | _(Optional)_ Options to build the filter schema. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+modelCtor
+
+
+</td><td>
+
+typeof Model
+
+
+</td><td>
+
+The model constructor to build the filter schema for.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options to build the filter schema.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

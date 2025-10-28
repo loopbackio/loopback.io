@@ -36,39 +36,376 @@ const where = whereBuilder
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(w)](./filter.wherebuilder._constructor_.md) |  | Constructs a new instance of the <code>WhereBuilder</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(w)](./filter.wherebuilder._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `WhereBuilder` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [where](./filter.wherebuilder.where.md) |  | [Where](./filter.where.md)<!-- -->&lt;MT&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[where](./filter.wherebuilder.where.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [and(w)](./filter.wherebuilder.and.md) |  | Add an <code>and</code> clause. |
-|  [between(key, val1, val2)](./filter.wherebuilder.between.md) |  | Add a <code>between</code> condition |
-|  [build()](./filter.wherebuilder.build.md) |  | Get the where object |
-|  [cast(clause)](./filter.wherebuilder.cast.md) |  |  |
-|  [eq(key, val)](./filter.wherebuilder.eq.md) |  | Add an <code>=</code> condition |
-|  [exists(key, val)](./filter.wherebuilder.exists.md) |  | Add a <code>exists</code> condition |
-|  [gt(key, val)](./filter.wherebuilder.gt.md) |  | Add a <code>&gt;</code> condition |
-|  [gte(key, val)](./filter.wherebuilder.gte.md) |  | Add a <code>&gt;=</code> condition |
-|  [ilike(key, val)](./filter.wherebuilder.ilike.md) |  | Add a <code>ilike</code> condition |
-|  [impose(where)](./filter.wherebuilder.impose.md) |  | Add a where object. For conflicting keys with the existing where object, create an <code>and</code> clause. |
-|  [inq(key, val)](./filter.wherebuilder.inq.md) |  | Add a <code>inq</code> condition |
-|  [like(key, val)](./filter.wherebuilder.like.md) |  | Add a <code>like</code> condition |
-|  [lt(key, val)](./filter.wherebuilder.lt.md) |  | Add a <code>&lt;</code> condition |
-|  [lte(key, val)](./filter.wherebuilder.lte.md) |  | Add a <code>&lt;=</code> condition |
-|  [neq(key, val)](./filter.wherebuilder.neq.md) |  | Add a <code>!=</code> condition |
-|  [nilike(key, val)](./filter.wherebuilder.nilike.md) |  | Add a <code>nilike</code> condition |
-|  [nin(key, val)](./filter.wherebuilder.nin.md) |  | Add a <code>nin</code> condition |
-|  [nlike(key, val)](./filter.wherebuilder.nlike.md) |  | Add a <code>nlike</code> condition |
-|  [or(w)](./filter.wherebuilder.or.md) |  | Add an <code>or</code> clause. |
-|  [regexp(key, val)](./filter.wherebuilder.regexp.md) |  | Add a <code>regexp</code> condition |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[and(w)](./filter.wherebuilder.and.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add an `and` clause.
+
+
+</td></tr>
+<tr><td>
+
+[between(key, val1, val2)](./filter.wherebuilder.between.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `between` condition
+
+
+</td></tr>
+<tr><td>
+
+[build()](./filter.wherebuilder.build.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the where object
+
+
+</td></tr>
+<tr><td>
+
+[cast(clause)](./filter.wherebuilder.cast.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[eq(key, val)](./filter.wherebuilder.eq.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add an `=` condition
+
+
+</td></tr>
+<tr><td>
+
+[exists(key, val)](./filter.wherebuilder.exists.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `exists` condition
+
+
+</td></tr>
+<tr><td>
+
+[gt(key, val)](./filter.wherebuilder.gt.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `>` condition
+
+
+</td></tr>
+<tr><td>
+
+[gte(key, val)](./filter.wherebuilder.gte.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `>=` condition
+
+
+</td></tr>
+<tr><td>
+
+[ilike(key, val)](./filter.wherebuilder.ilike.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `ilike` condition
+
+
+</td></tr>
+<tr><td>
+
+[impose(where)](./filter.wherebuilder.impose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a where object. For conflicting keys with the existing where object, create an `and` clause.
+
+
+</td></tr>
+<tr><td>
+
+[inq(key, val)](./filter.wherebuilder.inq.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `inq` condition
+
+
+</td></tr>
+<tr><td>
+
+[like(key, val)](./filter.wherebuilder.like.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `like` condition
+
+
+</td></tr>
+<tr><td>
+
+[lt(key, val)](./filter.wherebuilder.lt.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `<` condition
+
+
+</td></tr>
+<tr><td>
+
+[lte(key, val)](./filter.wherebuilder.lte.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `<=` condition
+
+
+</td></tr>
+<tr><td>
+
+[neq(key, val)](./filter.wherebuilder.neq.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `!=` condition
+
+
+</td></tr>
+<tr><td>
+
+[nilike(key, val)](./filter.wherebuilder.nilike.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `nilike` condition
+
+
+</td></tr>
+<tr><td>
+
+[nin(key, val)](./filter.wherebuilder.nin.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `nin` condition
+
+
+</td></tr>
+<tr><td>
+
+[nlike(key, val)](./filter.wherebuilder.nlike.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `nlike` condition
+
+
+</td></tr>
+<tr><td>
+
+[or(w)](./filter.wherebuilder.or.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add an `or` clause.
+
+
+</td></tr>
+<tr><td>
+
+[regexp(key, val)](./filter.wherebuilder.regexp.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a `regexp` condition
+
+
+</td></tr>
+</tbody></table>
 
 

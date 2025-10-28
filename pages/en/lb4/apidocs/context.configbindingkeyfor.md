@@ -23,10 +23,55 @@ export declare function configBindingKeyFor<ConfigValueType = unknown>(key: Bind
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | Binding key for the target binding |
-|  propertyPath | string | _(Optional)_ Property path for the configuration |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)
+
+
+</td><td>
+
+Binding key for the target binding
+
+
+</td></tr>
+<tr><td>
+
+propertyPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Property path for the configuration
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,28 +23,273 @@ export declare class HttpServer
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(requestListener, serverOptions)](./http-server.httpserver._constructor_.md) |  | Constructs a new instance of the <code>HttpServer</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(requestListener, serverOptions)](./http-server.httpserver._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `HttpServer` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [address](./http-server.httpserver.address.md) | <code>readonly</code> | string \| AddressInfo \| undefined | Address of the HTTP / HTTPS server |
-|  [host](./http-server.httpserver.host.md) | <code>readonly</code> | string \| undefined | Host of the HTTP / HTTPS server |
-|  [listening](./http-server.httpserver.listening.md) | <code>readonly</code> | boolean | State of the HTTP / HTTPS server |
-|  [port](./http-server.httpserver.port.md) | <code>readonly</code> | number | Port number of the HTTP / HTTPS server |
-|  [protocol](./http-server.httpserver.protocol.md) | <code>readonly</code> | [HttpProtocol](./http-server.httpprotocol.md) | Protocol of the HTTP / HTTPS server |
-|  [server](./http-server.httpserver.server.md) | <code>readonly</code> | http.Server \| https.Server |  |
-|  [serverOptions](./http-server.httpserver.serveroptions.md) | <code>readonly</code> | [HttpServerOptions](./http-server.httpserveroptions.md) |  |
-|  [url](./http-server.httpserver.url.md) | <code>readonly</code> | string | URL of the HTTP / HTTPS server |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[address](./http-server.httpserver.address.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| AddressInfo \| undefined
+
+
+</td><td>
+
+Address of the HTTP / HTTPS server
+
+
+</td></tr>
+<tr><td>
+
+[host](./http-server.httpserver.host.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+Host of the HTTP / HTTPS server
+
+
+</td></tr>
+<tr><td>
+
+[listening](./http-server.httpserver.listening.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+State of the HTTP / HTTPS server
+
+
+</td></tr>
+<tr><td>
+
+[port](./http-server.httpserver.port.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Port number of the HTTP / HTTPS server
+
+
+</td></tr>
+<tr><td>
+
+[protocol](./http-server.httpserver.protocol.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpProtocol](./http-server.httpprotocol.md)
+
+
+</td><td>
+
+Protocol of the HTTP / HTTPS server
+
+
+</td></tr>
+<tr><td>
+
+[server](./http-server.httpserver.server.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+http.Server \| https.Server
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[serverOptions](./http-server.httpserver.serveroptions.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpServerOptions](./http-server.httpserveroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[url](./http-server.httpserver.url.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+URL of the HTTP / HTTPS server
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [start()](./http-server.httpserver.start.md) |  | Starts the HTTP / HTTPS server |
-|  [stop()](./http-server.httpserver.stop.md) |  | Stops the HTTP / HTTPS server |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[start()](./http-server.httpserver.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Starts the HTTP / HTTPS server
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./http-server.httpserver.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Stops the HTTP / HTTPS server
+
+
+</td></tr>
+</tbody></table>
 
 

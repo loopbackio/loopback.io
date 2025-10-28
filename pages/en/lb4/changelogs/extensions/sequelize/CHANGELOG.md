@@ -13,6 +13,97 @@ permalink: /doc/en/lb4/changelog.sequelize.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.8.0...@loopback/sequelize@0.8.1) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/sequelize
+
+
+
+
+
+# [0.8.0](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.7.3...@loopback/sequelize@0.8.0) (2025-08-11)
+
+
+### Features
+
+* **sequelize:** mssql dialect support ([482f956](https://github.com/loopbackio/loopback-next/commit/482f9567ba815dfa54fc7b86e498b61bcf935a1f))
+
+
+
+
+
+## [0.7.3](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.7.2...@loopback/sequelize@0.7.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/sequelize
+
+
+
+
+
+## [0.7.2](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.7.1...@loopback/sequelize@0.7.2) (2025-06-12)
+
+
+### Bug Fixes
+
+* update peerDependencies versions ([c72cbad](https://github.com/loopbackio/loopback-next/commit/c72cbaded5b71585d45ab834dbcb839fd4ff1087))
+
+
+
+
+
+## [0.7.1](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.7.0...@loopback/sequelize@0.7.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* update @loopback/core to latest major version ([e2d2288](https://github.com/loopbackio/loopback-next/commit/e2d22886dbbb4be91ee6407ff4c6257c48698e89))
+
+
+
+
+
+# [0.7.0](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.6.14...@loopback/sequelize@0.7.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.6.14](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.6.13...@loopback/sequelize@0.6.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/sequelize
+
+
+
+
+
+## [0.6.13](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.6.12...@loopback/sequelize@0.6.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/sequelize
+
+
+
+
+
+## [0.6.12](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.6.11...@loopback/sequelize@0.6.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/sequelize
+
+
+
+
+
 ## [0.6.11](https://github.com/loopbackio/loopback-next/compare/@loopback/sequelize@0.6.10...@loopback/sequelize@0.6.11) (2025-02-13)
 
 

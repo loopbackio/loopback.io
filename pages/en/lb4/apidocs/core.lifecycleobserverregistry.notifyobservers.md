@@ -23,11 +23,67 @@ protected notifyObservers(observers: LifeCycleObserver[], bindings: Readonly<Bin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  observers | [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->\[\] |  |
-|  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\] |  |
-|  event | keyof [LifeCycleObserver](./core.lifecycleobserver.md) | Event name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+observers
+
+
+</td><td>
+
+[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+bindings
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+event
+
+
+</td><td>
+
+keyof [LifeCycleObserver](./core.lifecycleobserver.md)
+
+
+</td><td>
+
+Event name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,12 +23,94 @@ constructor(getStrategies: Getter<AuthenticationStrategy | AuthenticationStrateg
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  getStrategies | Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt; |  |
-|  setCurrentUser | [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt; |  |
-|  setRedirectUrl | [Setter](./context.setter.md)<!-- -->&lt;string&gt; |  |
-|  setRedirectStatus | [Setter](./context.setter.md)<!-- -->&lt;number&gt; |  |
-|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+getStrategies
+
+
+</td><td>
+
+Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+setCurrentUser
+
+
+</td><td>
+
+[Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+setRedirectUrl
+
+
+</td><td>
+
+[Setter](./context.setter.md)<!-- -->&lt;string&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+setRedirectStatus
+
+
+</td><td>
+
+[Setter](./context.setter.md)<!-- -->&lt;number&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[AuthenticationOptions](./authentication.authenticationoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

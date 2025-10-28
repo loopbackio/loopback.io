@@ -23,11 +23,71 @@ export declare function sortBindingsByPhase<T = unknown>(bindings: Readonly<Bind
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindings | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | An array of bindings |
-|  phaseTagName | string | _(Optional)_ Tag name for phase, for example, we can use the value <code>'a'</code> of tag <code>order</code> as the phase name for <code>binding.tag({order: 'a'})</code>. |
-|  orderOfPhases | (string \| symbol)\[\] | _(Optional)_ An array of phase names as the predefined order |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindings
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
+
+
+</td><td>
+
+An array of bindings
+
+
+</td></tr>
+<tr><td>
+
+phaseTagName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Tag name for phase, for example, we can use the value `'a'` of tag `order` as the phase name for `binding.tag({order: 'a'})`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+orderOfPhases
+
+
+</td><td>
+
+(string \| symbol)\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of phase names as the predefined order
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

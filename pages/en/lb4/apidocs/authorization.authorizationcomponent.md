@@ -22,8 +22,44 @@ export declare class AuthorizationComponent implements Component
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings](./authorization.authorizationcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings](./authorization.authorizationcomponent.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

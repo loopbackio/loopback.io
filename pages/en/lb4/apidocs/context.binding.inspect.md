@@ -23,9 +23,39 @@ inspect(options?: BindingInspectOptions): JSONObject;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [BindingInspectOptions](./context.bindinginspectoptions.md) | _(Optional)_ Options to control what information should be included |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[BindingInspectOptions](./context.bindinginspectoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options to control what information should be included
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

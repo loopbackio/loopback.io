@@ -23,12 +23,87 @@ static getPropertyMetadata<T>(key: MetadataKey<T, PropertyDecorator>, target: Ob
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt; | Metadata key |
-|  target | Object | Class for static properties or prototype for instance properties |
-|  propertyName | string | Property name |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt;
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class for static properties or prototype for instance properties
+
+
+</td></tr>
+<tr><td>
+
+propertyName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Property name
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InspectionOptions](./metadata.inspectionoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for inspection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,55 @@ export declare function getAuthenticationMetadataForStrategy(metadata: Authentic
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadata | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] | Array of authentication metadata objects |
-|  strategyName | string | Name of the authentication strategy |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+metadata
+
+
+</td><td>
+
+[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\]
+
+
+</td><td>
+
+Array of authentication metadata objects
+
+
+</td></tr>
+<tr><td>
+
+strategyName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the authentication strategy
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

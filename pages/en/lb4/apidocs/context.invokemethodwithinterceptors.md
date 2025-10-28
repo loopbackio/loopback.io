@@ -23,13 +23,103 @@ export declare function invokeMethodWithInterceptors(context: Context, target: o
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) | Context object |
-|  target | object | Target class (for static methods) or object (for instance methods) |
-|  methodName | string | Method name |
-|  args | [InvocationArgs](./context.invocationargs.md) | An array of argument values |
-|  options | [InvocationOptions](./context.invocationoptions.md) | _(Optional)_ Options for the invocation |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+Target class (for static methods) or object (for instance methods)
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Method name
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+[InvocationArgs](./context.invocationargs.md)
+
+
+</td><td>
+
+An array of argument values
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InvocationOptions](./context.invocationoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the invocation
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

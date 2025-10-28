@@ -24,66 +24,821 @@ export declare class Context extends EventEmitter
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(\_parent, name)](./context.context._constructor_.md) |  | Create a new context. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(\_parent, name)](./context.context._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a new context.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_debug](./context.context._debug.md) | <code>protected</code> | Debugger | A debug function which can be overridden by subclasses. |
-|  [\_parent?](./context.context._parent.md) | <code>protected</code> | [Context](./context.context.md) | _(Optional)_ Parent context |
-|  [configResolver](./context.context.configresolver.md) | <code>protected</code> | [ConfigurationResolver](./context.configurationresolver.md) | Configuration resolver |
-|  [name](./context.context.name.md) | <code>readonly</code> | string | Name of the context |
-|  [registry](./context.context.registry.md) | <p><code>protected</code></p><p><code>readonly</code></p> | Map&lt;string, [Binding](./context.binding.md)<!-- -->&gt; | Key to binding map as the internal registry |
-|  [scope](./context.context.scope.md) |  | [BindingScope](./context.bindingscope.md) | Scope for binding resolution |
-|  [subscriptionManager](./context.context.subscriptionmanager.md) | <code>readonly</code> | [ContextSubscriptionManager](./context.contextsubscriptionmanager.md) | Manager for observer subscriptions |
-|  [tagIndexer](./context.context.tagindexer.md) | <p><code>protected</code></p><p><code>readonly</code></p> | ContextTagIndexer | Indexer for bindings by tag |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_debug](./context.context._debug.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Debugger
+
+
+</td><td>
+
+A debug function which can be overridden by subclasses.
+
+
+</td></tr>
+<tr><td>
+
+[\_parent?](./context.context._parent.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+_(Optional)_ Parent context
+
+
+</td></tr>
+<tr><td>
+
+[configResolver](./context.context.configresolver.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[ConfigurationResolver](./context.configurationresolver.md)
+
+
+</td><td>
+
+Configuration resolver
+
+
+</td></tr>
+<tr><td>
+
+[name](./context.context.name.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the context
+
+
+</td></tr>
+<tr><td>
+
+[registry](./context.context.registry.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+Map&lt;string, [Binding](./context.binding.md)<!-- -->&gt;
+
+
+</td><td>
+
+Key to binding map as the internal registry
+
+
+</td></tr>
+<tr><td>
+
+[scope](./context.context.scope.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingScope](./context.bindingscope.md)
+
+
+</td><td>
+
+Scope for binding resolution
+
+
+</td></tr>
+<tr><td>
+
+[subscriptionManager](./context.context.subscriptionmanager.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ContextSubscriptionManager](./context.contextsubscriptionmanager.md)
+
+
+</td><td>
+
+Manager for observer subscriptions
+
+
+</td></tr>
+<tr><td>
+
+[tagIndexer](./context.context.tagindexer.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+ContextTagIndexer
+
+
+</td><td>
+
+Indexer for bindings by tag
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\_findByTagIndex(tag)](./context.context._findbytagindex.md) | <code>protected</code> | Find bindings by tag leveraging indexes |
-|  [\_mergeWithParent(childList, parentList)](./context.context._mergewithparent.md) | <code>protected</code> |  |
-|  [add(binding)](./context.context.add.md) |  | Add a binding to the context. If a locked binding already exists with the same key, an error will be thrown. |
-|  [bind(key)](./context.context.bind.md) |  | Create a binding with the given key in the context. If a locked binding already exists with the same key, an error will be thrown. |
-|  [close()](./context.context.close.md) |  | Close the context: clear observers, stop notifications, and remove event listeners from its parent context. |
-|  [configure(key)](./context.context.configure.md) |  | <p>Create a corresponding binding for configuration of the target bound by the given key in the context.</p><p>For example, <code>ctx.configure('controllers.MyController').to({x: 1})</code> will create binding <code>controllers.MyController:$config</code> with value <code>{x: 1}</code>.</p> |
-|  [contains(key)](./context.context.contains.md) |  | Check if a binding exists with the given key in the local context without delegating to the parent context |
-|  [createView(filter, comparator, options)](./context.context.createview.md) |  | Create a view of the context chain with the given binding filter |
-|  [debug(args)](./context.context.debug.md) | <code>protected</code> | Wrap the debug statement so that it always print out the context name as the prefix |
-|  [emitError(err)](./context.context.emiterror.md) |  | Emit an <code>error</code> event |
-|  [emitEvent(type, event)](./context.context.emitevent.md) |  | A strongly-typed method to emit context events |
-|  [find(pattern)](./context.context.find.md) |  | Find bindings using a key pattern or filter function |
-|  [findByTag(tagFilter)](./context.context.findbytag.md) |  | Find bindings using the tag filter. If the filter matches one of the binding tags, the binding is included. |
-|  [findOrCreateBinding(key, policy)](./context.context.findorcreatebinding.md) |  | Find or create a binding for the given key |
-|  [get(keyWithPath, session)](./context.context.get.md) |  | Get the value bound to the given key, throw an error when no value is bound for the given key. |
-|  [get(keyWithPath, options)](./context.context.get_1.md) |  | Get the value bound to the given key, optionally return a (deep) property of the bound value. |
-|  [getBinding(key)](./context.context.getbinding.md) |  | Look up a binding by key in the context and its ancestors. If no matching binding is found, an error will be thrown. |
-|  [getBinding(key, options)](./context.context.getbinding_1.md) |  | Look up a binding by key in the context and its ancestors. If no matching binding is found and <code>options.optional</code> is not set to true, an error will be thrown. |
-|  [getConfig(key, propertyPath, resolutionOptions)](./context.context.getconfig.md) |  | Resolve configuration for the binding by key |
-|  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.context.getconfigasvalueorpromise.md) |  | Get the value or promise of configuration for a given binding by key |
-|  [getConfigSync(key, propertyPath, resolutionOptions)](./context.context.getconfigsync.md) |  | Resolve configuration synchronously for the binding by key |
-|  [getDebugNamespace()](./context.context.getdebugnamespace.md) | <code>protected</code> | Get the debug namespace for the context class. Subclasses can override this method to supply its own namespace. |
-|  [getOwnerContext(keyOrBinding)](./context.context.getownercontext.md) |  | Get the owning context for a binding or its key |
-|  [getResolutionContext(binding)](./context.context.getresolutioncontext.md) |  | Locate the resolution context for the given binding. Only bindings in the resolution context and its ancestors are visible as dependencies to resolve the given binding |
-|  [getScopedContext(scope)](./context.context.getscopedcontext.md) |  | Get the context matching the scope |
-|  [getSync(keyWithPath, session)](./context.context.getsync.md) |  | <p>Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.</p><p>This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code.</p> |
-|  [getSync(keyWithPath, options)](./context.context.getsync_1.md) |  | <p>Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.</p><p>This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code.</p> |
-|  [inspect(options)](./context.context.inspect.md) |  | Inspect the context and dump out a JSON object representing the context hierarchy |
-|  [isBound(key)](./context.context.isbound.md) |  | Check if a key is bound in the context or its ancestors |
-|  [isSubscribed(observer)](./context.context.issubscribed.md) |  | Check if an observer is subscribed to this context |
-|  [isVisibleTo(ctx)](./context.context.isvisibleto.md) |  | Check if this context is visible (same or ancestor) to the given one |
-|  [on(eventName, listener)](./context.context.on.md) |  | The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed. |
-|  [on(event, listener)](./context.context.on_1.md) |  |  |
-|  [once(eventName, listener)](./context.context.once.md) |  | The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed. |
-|  [once(event, listener)](./context.context.once_1.md) |  |  |
-|  [setupConfigurationResolverIfNeeded()](./context.context.setupconfigurationresolverifneeded.md) | <code>protected</code> | Set up the configuration resolver if needed |
-|  [subscribe(observer)](./context.context.subscribe.md) |  | Add a context event observer to the context |
-|  [toJSON()](./context.context.tojson.md) |  | Create a plain JSON object for the context |
-|  [unbind(key)](./context.context.unbind.md) |  | Unbind a binding from the context. No parent contexts will be checked. |
-|  [unsubscribe(observer)](./context.context.unsubscribe.md) |  | Remove the context event observer from the context |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_findByTagIndex(tag)](./context.context._findbytagindex.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Find bindings by tag leveraging indexes
+
+
+</td></tr>
+<tr><td>
+
+[\_mergeWithParent(childList, parentList)](./context.context._mergewithparent.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[add(binding)](./context.context.add.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a binding to the context. If a locked binding already exists with the same key, an error will be thrown.
+
+
+</td></tr>
+<tr><td>
+
+[bind(key)](./context.context.bind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a binding with the given key in the context. If a locked binding already exists with the same key, an error will be thrown.
+
+
+</td></tr>
+<tr><td>
+
+[close()](./context.context.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Close the context: clear observers, stop notifications, and remove event listeners from its parent context.
+
+
+</td></tr>
+<tr><td>
+
+[configure(key)](./context.context.configure.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a corresponding binding for configuration of the target bound by the given key in the context.
+
+For example, `ctx.configure('controllers.MyController').to({x: 1})` will create binding `controllers.MyController:$config` with value `{x: 1}`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[contains(key)](./context.context.contains.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Check if a binding exists with the given key in the local context without delegating to the parent context
+
+
+</td></tr>
+<tr><td>
+
+[createView(filter, comparator, options)](./context.context.createview.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a view of the context chain with the given binding filter
+
+
+</td></tr>
+<tr><td>
+
+[debug(args)](./context.context.debug.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Wrap the debug statement so that it always print out the context name as the prefix
+
+
+</td></tr>
+<tr><td>
+
+[emitError(err)](./context.context.emiterror.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Emit an `error` event
+
+
+</td></tr>
+<tr><td>
+
+[emitEvent(type, event)](./context.context.emitevent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+A strongly-typed method to emit context events
+
+
+</td></tr>
+<tr><td>
+
+[find(pattern)](./context.context.find.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Find bindings using a key pattern or filter function
+
+
+</td></tr>
+<tr><td>
+
+[findByTag(tagFilter)](./context.context.findbytag.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Find bindings using the tag filter. If the filter matches one of the binding tags, the binding is included.
+
+
+</td></tr>
+<tr><td>
+
+[findOrCreateBinding(key, policy)](./context.context.findorcreatebinding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Find or create a binding for the given key
+
+
+</td></tr>
+<tr><td>
+
+[get(keyWithPath, session)](./context.context.get.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the value bound to the given key, throw an error when no value is bound for the given key.
+
+
+</td></tr>
+<tr><td>
+
+[get(keyWithPath, options)](./context.context.get_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the value bound to the given key, optionally return a (deep) property of the bound value.
+
+
+</td></tr>
+<tr><td>
+
+[getBinding(key)](./context.context.getbinding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Look up a binding by key in the context and its ancestors. If no matching binding is found, an error will be thrown.
+
+
+</td></tr>
+<tr><td>
+
+[getBinding(key, options)](./context.context.getbinding_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Look up a binding by key in the context and its ancestors. If no matching binding is found and `options.optional` is not set to true, an error will be thrown.
+
+
+</td></tr>
+<tr><td>
+
+[getConfig(key, propertyPath, resolutionOptions)](./context.context.getconfig.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Resolve configuration for the binding by key
+
+
+</td></tr>
+<tr><td>
+
+[getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.context.getconfigasvalueorpromise.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the value or promise of configuration for a given binding by key
+
+
+</td></tr>
+<tr><td>
+
+[getConfigSync(key, propertyPath, resolutionOptions)](./context.context.getconfigsync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Resolve configuration synchronously for the binding by key
+
+
+</td></tr>
+<tr><td>
+
+[getDebugNamespace()](./context.context.getdebugnamespace.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get the debug namespace for the context class. Subclasses can override this method to supply its own namespace.
+
+
+</td></tr>
+<tr><td>
+
+[getOwnerContext(keyOrBinding)](./context.context.getownercontext.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the owning context for a binding or its key
+
+
+</td></tr>
+<tr><td>
+
+[getResolutionContext(binding)](./context.context.getresolutioncontext.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Locate the resolution context for the given binding. Only bindings in the resolution context and its ancestors are visible as dependencies to resolve the given binding
+
+
+</td></tr>
+<tr><td>
+
+[getScopedContext(scope)](./context.context.getscopedcontext.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the context matching the scope
+
+
+</td></tr>
+<tr><td>
+
+[getSync(keyWithPath, session)](./context.context.getsync.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.
+
+This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code.
+
+
+</td></tr>
+<tr><td>
+
+[getSync(keyWithPath, options)](./context.context.getsync_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the synchronous value bound to the given key, optionally return a (deep) property of the bound value.
+
+This method throws an error if the bound value requires async computation (returns a promise). You should never rely on sync bindings in production code.
+
+
+</td></tr>
+<tr><td>
+
+[inspect(options)](./context.context.inspect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Inspect the context and dump out a JSON object representing the context hierarchy
+
+
+</td></tr>
+<tr><td>
+
+[isBound(key)](./context.context.isbound.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Check if a key is bound in the context or its ancestors
+
+
+</td></tr>
+<tr><td>
+
+[isSubscribed(observer)](./context.context.issubscribed.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Check if an observer is subscribed to this context
+
+
+</td></tr>
+<tr><td>
+
+[isVisibleTo(ctx)](./context.context.isvisibleto.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Check if this context is visible (same or ancestor) to the given one
+
+
+</td></tr>
+<tr><td>
+
+[on(eventName, listener)](./context.context.on.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed.
+
+
+</td></tr>
+<tr><td>
+
+[on(event, listener)](./context.context.on_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[once(eventName, listener)](./context.context.once.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "bind" event is emitted when a new binding is added to the context. The "unbind" event is emitted when an existing binding is removed.
+
+
+</td></tr>
+<tr><td>
+
+[once(event, listener)](./context.context.once_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[setupConfigurationResolverIfNeeded()](./context.context.setupconfigurationresolverifneeded.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Set up the configuration resolver if needed
+
+
+</td></tr>
+<tr><td>
+
+[subscribe(observer)](./context.context.subscribe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a context event observer to the context
+
+
+</td></tr>
+<tr><td>
+
+[toJSON()](./context.context.tojson.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a plain JSON object for the context
+
+
+</td></tr>
+<tr><td>
+
+[unbind(key)](./context.context.unbind.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Unbind a binding from the context. No parent contexts will be checked.
+
+
+</td></tr>
+<tr><td>
+
+[unsubscribe(observer)](./context.context.unsubscribe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Remove the context event observer from the context
+
+
+</td></tr>
+</tbody></table>
 
 

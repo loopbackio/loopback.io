@@ -23,9 +23,39 @@ find(filter?: Filter<T>): Promise<(T & Relations)[]>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filter | [Filter](./filter.filter.md)<!-- -->&lt;T&gt; | _(Optional)_ Filter |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filter
+
+
+</td><td>
+
+[Filter](./filter.filter.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_ Filter
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

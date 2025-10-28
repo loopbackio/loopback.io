@@ -24,13 +24,141 @@ export interface ExtractorOptions extends ApiDocsOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md) |  | boolean | _(Optional)_ A flag to control if <code>apiReport</code> should be enabled |
-|  [config?](./tsdocs.extractoroptions.config.md) |  | IConfigFile | _(Optional)_ Configuration for api-extractor |
-|  [ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md) |  | boolean | _(Optional)_ A flag to control if errors should be ignored |
-|  [mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md) |  | string | _(Optional)_ mainEntryPointFilePath |
-|  [tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md) |  | string | _(Optional)_ Path for tsconfig |
-|  [typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md) |  | string | _(Optional)_ Custom TypeScript compiler dir |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag to control if `apiReport` should be enabled
+
+
+</td></tr>
+<tr><td>
+
+[config?](./tsdocs.extractoroptions.config.md)
+
+
+</td><td>
+
+
+</td><td>
+
+IConfigFile
+
+
+</td><td>
+
+_(Optional)_ Configuration for api-extractor
+
+
+</td></tr>
+<tr><td>
+
+[ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag to control if errors should be ignored
+
+
+</td></tr>
+<tr><td>
+
+[mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ mainEntryPointFilePath
+
+
+</td></tr>
+<tr><td>
+
+[tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Path for tsconfig
+
+
+</td></tr>
+<tr><td>
+
+[typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Custom TypeScript compiler dir
+
+
+</td></tr>
+</tbody></table>
 
 

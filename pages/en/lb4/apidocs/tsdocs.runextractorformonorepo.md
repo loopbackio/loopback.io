@@ -23,9 +23,39 @@ export declare function runExtractorForMonorepo(options?: ExtractorOptions): Pro
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ExtractorOptions](./tsdocs.extractoroptions.md) | _(Optional)_ Options for running api-extractor |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ExtractorOptions](./tsdocs.extractoroptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for running api-extractor
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

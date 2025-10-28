@@ -25,12 +25,87 @@ protected mergeWithInherited(inheritedMetadata: M, target: Object, member?: stri
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  inheritedMetadata | M | Metadata inherited from the base classes |
-|  target | Object | Decoration target |
-|  member | string \| symbol | _(Optional)_ Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional parameter index or method descriptor |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+inheritedMetadata
+
+
+</td><td>
+
+M
+
+
+</td><td>
+
+Metadata inherited from the base classes
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Decoration target
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+_(Optional)_ Optional property or method
+
+
+</td></tr>
+<tr><td>
+
+descriptorOrIndex
+
+
+</td><td>
+
+TypedPropertyDescriptor&lt;any&gt; \| number
+
+
+</td><td>
+
+_(Optional)_ Optional parameter index or method descriptor
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

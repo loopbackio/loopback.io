@@ -23,10 +23,55 @@ export declare function invokeBodyParserMiddleware(handle: BodyParserMiddleware,
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handle | [BodyParserMiddleware](./rest.bodyparsermiddleware.md) | The express middleware handler |
-|  request | Request | Http request |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handle
+
+
+</td><td>
+
+[BodyParserMiddleware](./rest.bodyparsermiddleware.md)
+
+
+</td><td>
+
+The express middleware handler
+
+
+</td></tr>
+<tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+Http request
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

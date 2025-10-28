@@ -17,34 +17,154 @@ permalink: /doc/en/lb4/apidocs.logging.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [LoggingComponent](./logging.loggingcomponent.md) | A component providing logging facilities |
-|  [WinstonLoggerProvider](./logging.winstonloggerprovider.md) | A provider class that creates WinstonLogger instances |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoggingComponent](./logging.loggingcomponent.md)
+
+
+</td><td>
+
+A component providing logging facilities
+
+
+</td></tr>
+<tr><td>
+
+[WinstonLoggerProvider](./logging.winstonloggerprovider.md)
+
+
+</td><td>
+
+A provider class that creates WinstonLogger instances
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [logInvocation()](./logging.loginvocation.md) | <code>@logInvocation</code> decorator for method invocations. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[logInvocation()](./logging.loginvocation.md)
+
+
+</td><td>
+
+`@logInvocation` decorator for method invocations.
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [LoggingBindings](./logging.loggingbindings.md) | Binding keys used by this component. |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoggingBindings](./logging.loggingbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [WINSTON\_FORMAT](./logging.winston_format.md) | An extension point for winston formats |
-|  [WINSTON\_TRANSPORT](./logging.winston_transport.md) | An extension point for winston transports |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[WINSTON\_FORMAT](./logging.winston_format.md)
+
+
+</td><td>
+
+An extension point for winston formats
+
+
+</td></tr>
+<tr><td>
+
+[WINSTON\_TRANSPORT](./logging.winston_transport.md)
+
+
+</td><td>
+
+An extension point for winston transports
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [LoggingComponentConfig](./logging.loggingcomponentconfig.md) | Configuration for LoggingComponent |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoggingComponentConfig](./logging.loggingcomponentconfig.md)
+
+
+</td><td>
+
+Configuration for LoggingComponent
+
+
+</td></tr>
+</tbody></table>
 
 

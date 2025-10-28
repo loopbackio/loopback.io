@@ -21,10 +21,51 @@ protected _handleHttpRequest(request: Request, response: Response): Promise<void
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request |  |
-|  response | Response |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+response
+
+
+</td><td>
+
+Response
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

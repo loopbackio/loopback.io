@@ -25,10 +25,55 @@ getSync<ValueType>(keyWithPath: BindingAddress<ValueType>, options?: ResolutionO
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  options | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ Options for resolution. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyWithPath
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt;
+
+
+</td><td>
+
+The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ResolutionOptions](./context.resolutionoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for resolution.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

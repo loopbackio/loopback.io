@@ -23,9 +23,39 @@ getEnhancerByName<T extends OASEnhancer = OASEnhancer>(name: string): Promise<T 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the enhancer you want to find |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the enhancer you want to find
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

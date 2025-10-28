@@ -21,12 +21,124 @@ export interface ProxyOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [cachePath](./http-caching-proxy.proxyoptions.cachepath.md) |  | string | Directory where to keep the cached snapshots. |
-|  [logError?](./http-caching-proxy.proxyoptions.logerror.md) |  | boolean | _(Optional)_ A flag if the error should be logged |
-|  [port?](./http-caching-proxy.proxyoptions.port.md) |  | number | _(Optional)_ The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port) |
-|  [timeout?](./http-caching-proxy.proxyoptions.timeout.md) |  | number | _(Optional)_ Timeout to connect to the target service |
-|  [ttl?](./http-caching-proxy.proxyoptions.ttl.md) |  | number | <p>_(Optional)_ How long to keep snapshots before making a new request to the backend. The value is in milliseconds.</p><p>Default: one day</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[cachePath](./http-caching-proxy.proxyoptions.cachepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Directory where to keep the cached snapshots.
+
+
+</td></tr>
+<tr><td>
+
+[logError?](./http-caching-proxy.proxyoptions.logerror.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag if the error should be logged
+
+
+</td></tr>
+<tr><td>
+
+[port?](./http-caching-proxy.proxyoptions.port.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port)
+
+
+</td></tr>
+<tr><td>
+
+[timeout?](./http-caching-proxy.proxyoptions.timeout.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Timeout to connect to the target service
+
+
+</td></tr>
+<tr><td>
+
+[ttl?](./http-caching-proxy.proxyoptions.ttl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ How long to keep snapshots before making a new request to the backend. The value is in milliseconds.
+
+Default: one day
+
+
+</td></tr>
+</tbody></table>
 
 

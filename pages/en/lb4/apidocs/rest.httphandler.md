@@ -21,32 +21,294 @@ export declare class HttpHandler
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(\_rootContext, \_serverConfig, \_routes)](./rest.httphandler._constructor_.md) |  | Constructs a new instance of the <code>HttpHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(\_rootContext, \_serverConfig, \_routes)](./rest.httphandler._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `HttpHandler` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_openApiComponents](./rest.httphandler._openapicomponents.md) | <code>protected</code> | ComponentsObject | Shared OpenAPI spec objects as <code>components</code> |
-|  [\_rootContext](./rest.httphandler._rootcontext.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [Context](./context.context.md) |  |
-|  [\_routes](./rest.httphandler._routes.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [RoutingTable](./rest.routingtable.md) |  |
-|  [\_serverConfig](./rest.httphandler._serverconfig.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  [handleRequest](./rest.httphandler.handlerequest.md) |  | (request: Request, response: Response) =&gt; Promise&lt;void&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_openApiComponents](./rest.httphandler._openapicomponents.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+ComponentsObject
+
+
+</td><td>
+
+Shared OpenAPI spec objects as `components`
+
+
+</td></tr>
+<tr><td>
+
+[\_rootContext](./rest.httphandler._rootcontext.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_routes](./rest.httphandler._routes.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[RoutingTable](./rest.routingtable.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_serverConfig](./rest.httphandler._serverconfig.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[handleRequest](./rest.httphandler.handlerequest.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(request: Request, response: Response) =&gt; Promise&lt;void&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [\_handleRequest(request, response)](./rest.httphandler._handlerequest.md) | <code>protected</code> |  |
-|  [describeApiPaths()](./rest.httphandler.describeapipaths.md) |  |  |
-|  [findRoute(request)](./rest.httphandler.findroute.md) |  |  |
-|  [getApiComponents()](./rest.httphandler.getapicomponents.md) |  |  |
-|  [getApiDefinitions()](./rest.httphandler.getapidefinitions.md) |  |  |
-|  [registerApiComponents(defs)](./rest.httphandler.registerapicomponents.md) |  | Merge components into the OpenApi spec |
-|  [registerApiDefinitions(defs)](./rest.httphandler.registerapidefinitions.md) |  |  |
-|  [registerController(spec, controllerCtor, controllerFactory)](./rest.httphandler.registercontroller.md) |  |  |
-|  [registerRoute(route)](./rest.httphandler.registerroute.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_handleRequest(request, response)](./rest.httphandler._handlerequest.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[describeApiPaths()](./rest.httphandler.describeapipaths.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[findRoute(request)](./rest.httphandler.findroute.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getApiComponents()](./rest.httphandler.getapicomponents.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getApiDefinitions()](./rest.httphandler.getapidefinitions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[registerApiComponents(defs)](./rest.httphandler.registerapicomponents.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Merge components into the OpenApi spec
+
+
+</td></tr>
+<tr><td>
+
+[registerApiDefinitions(defs)](./rest.httphandler.registerapidefinitions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[registerController(spec, controllerCtor, controllerFactory)](./rest.httphandler.registercontroller.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[registerRoute(route)](./rest.httphandler.registerroute.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

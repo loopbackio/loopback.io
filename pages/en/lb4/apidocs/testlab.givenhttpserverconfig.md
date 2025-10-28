@@ -23,9 +23,39 @@ export declare function givenHttpServerConfig<T extends HttpOptions | HttpsOptio
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  customConfig | T | _(Optional)_ Additional configuration options to apply. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+customConfig
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+_(Optional)_ Additional configuration options to apply.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

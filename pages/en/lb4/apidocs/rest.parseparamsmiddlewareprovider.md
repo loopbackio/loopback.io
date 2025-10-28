@@ -22,8 +22,34 @@ export declare class ParseParamsMiddlewareProvider implements Provider<Middlewar
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [value()](./rest.parseparamsmiddlewareprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[value()](./rest.parseparamsmiddlewareprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

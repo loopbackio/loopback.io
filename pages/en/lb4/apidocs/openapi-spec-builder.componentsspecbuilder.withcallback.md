@@ -23,10 +23,55 @@ withCallback(name: string, callback: CallbackObject | ReferenceObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the callback |
-|  callback | CallbackObject \| ReferenceObject | Specification of the callback |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the callback
+
+
+</td></tr>
+<tr><td>
+
+callback
+
+
+</td><td>
+
+CallbackObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the callback
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

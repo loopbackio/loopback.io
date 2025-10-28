@@ -24,32 +24,289 @@ export declare class SequelizeDataSource implements LifeCycleObserver
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(config)](./sequelize.sequelizedatasource._constructor_.md) |  | Constructs a new instance of the <code>SequelizeDataSource</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(config)](./sequelize.sequelizedatasource._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SequelizeDataSource` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [config](./sequelize.sequelizedatasource.config.md) |  | [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md) |  |
-|  [name](./sequelize.sequelizedatasource.name.md) |  | string |  |
-|  [parseJsonColumns](./sequelize.sequelizedatasource.parsejsoncolumns.md) | <code>readonly</code> | boolean | Gets the flag indicating whether to parse JSON columns. If the <code>parseJsonColumns</code> property is set in the configuration, its value will be returned. Otherwise, it returns <code>true</code> if the dialect is MySQL, <code>false</code> otherwise. |
-|  [sequelize](./sequelize.sequelizedatasource.sequelize.md) |  | Sequelize |  |
-|  [sequelizeConfig](./sequelize.sequelizedatasource.sequelizeconfig.md) |  | SequelizeOptions |  |
-|  [settings](./sequelize.sequelizedatasource.settings.md) |  | {} |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[config](./sequelize.sequelizedatasource.config.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[name](./sequelize.sequelizedatasource.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[parseJsonColumns](./sequelize.sequelizedatasource.parsejsoncolumns.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Gets the flag indicating whether to parse JSON columns. If the `parseJsonColumns` property is set in the configuration, its value will be returned. Otherwise, it returns `true` if the dialect is MySQL, `false` otherwise.
+
+
+</td></tr>
+<tr><td>
+
+[sequelize](./sequelize.sequelizedatasource.sequelize.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Sequelize
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[sequelizeConfig](./sequelize.sequelizedatasource.sequelizeconfig.md)
+
+
+</td><td>
+
+
+</td><td>
+
+SequelizeOptions
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[settings](./sequelize.sequelizedatasource.settings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{}
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [automigrate()](./sequelize.sequelizedatasource.automigrate.md) |  |  |
-|  [autoupdate()](./sequelize.sequelizedatasource.autoupdate.md) |  |  |
-|  [beginTransaction(options)](./sequelize.sequelizedatasource.begintransaction.md) |  | Begin a new transaction. |
-|  [execute(command, parameters, options)](./sequelize.sequelizedatasource.execute.md) |  | <p>Execute a SQL command.</p><p>\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.</p> |
-|  [getPoolOptions()](./sequelize.sequelizedatasource.getpooloptions.md) |  |  |
-|  [init()](./sequelize.sequelizedatasource.init.md) |  |  |
-|  [start(\_injectedArgs)](./sequelize.sequelizedatasource.start.md) |  |  |
-|  [stop()](./sequelize.sequelizedatasource.stop.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[automigrate()](./sequelize.sequelizedatasource.automigrate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[autoupdate()](./sequelize.sequelizedatasource.autoupdate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[beginTransaction(options)](./sequelize.sequelizedatasource.begintransaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Begin a new transaction.
+
+
+</td></tr>
+<tr><td>
+
+[execute(command, parameters, options)](./sequelize.sequelizedatasource.execute.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Execute a SQL command.
+
+\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.
+
+
+</td></tr>
+<tr><td>
+
+[getPoolOptions()](./sequelize.sequelizedatasource.getpooloptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[init()](./sequelize.sequelizedatasource.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[start(\_injectedArgs)](./sequelize.sequelizedatasource.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./sequelize.sequelizedatasource.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

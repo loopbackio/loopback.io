@@ -21,11 +21,65 @@ get(target: T, propertyName: PropertyKey, receiver: unknown): any;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | T |  |
-|  propertyName | PropertyKey |  |
-|  receiver | unknown |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+propertyName
+
+
+</td><td>
+
+PropertyKey
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+receiver
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

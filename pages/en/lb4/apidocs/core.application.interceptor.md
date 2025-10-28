@@ -23,10 +23,55 @@ interceptor(interceptor: Interceptor | Constructor<Provider<Interceptor>>, nameO
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  interceptor | [Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt; | An interceptor function or provider class |
-|  nameOrOptions | string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md) | _(Optional)_ Binding name or options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+interceptor
+
+
+</td><td>
+
+[Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt;
+
+
+</td><td>
+
+An interceptor function or provider class
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Binding name or options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -25,10 +25,55 @@ export declare function getJsonSchemaRef<T extends object>(modelCtor: Function &
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  modelCtor | Function &amp; { prototype: T; } | The model constructor (e.g. <code>Product</code>) |
-|  options | [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt; | _(Optional)_ Additional options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+modelCtor
+
+
+</td><td>
+
+Function &amp; { prototype: T; }
+
+
+</td><td>
+
+The model constructor (e.g. `Product`<!-- -->)
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_ Additional options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

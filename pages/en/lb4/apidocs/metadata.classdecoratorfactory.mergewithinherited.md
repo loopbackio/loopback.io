@@ -21,12 +21,83 @@ protected mergeWithInherited(inheritedMetadata: T, target: Object, member?: stri
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  inheritedMetadata | T |  |
-|  target | Object |  |
-|  member | string | _(Optional)_ |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+inheritedMetadata
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+descriptorOrIndex
+
+
+</td><td>
+
+TypedPropertyDescriptor&lt;any&gt; \| number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

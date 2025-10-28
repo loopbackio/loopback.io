@@ -23,9 +23,39 @@ protected inherit(inheritedMetadata: T | undefined | null): T;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  inheritedMetadata | T \| undefined \| null | Metadata from base classes for the member |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+inheritedMetadata
+
+
+</td><td>
+
+T \| undefined \| null
+
+
+</td><td>
+
+Metadata from base classes for the member
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

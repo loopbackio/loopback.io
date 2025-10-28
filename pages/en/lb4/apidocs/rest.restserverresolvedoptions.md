@@ -21,18 +21,224 @@ export interface RestServerResolvedOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiExplorer](./rest.restserverresolvedoptions.apiexplorer.md) |  | [ApiExplorerOptions](./rest.apiexploreroptions.md) |  |
-|  [basePath?](./rest.restserverresolvedoptions.basepath.md) |  | string | _(Optional)_ Base path for API/static routes |
-|  [cors](./rest.restserverresolvedoptions.cors.md) |  | cors.CorsOptions |  |
-|  [expressSettings](./rest.restserverresolvedoptions.expresssettings.md) |  | { \[name: string\]: any; } |  |
-|  [listenOnStart?](./rest.restserverresolvedoptions.listenonstart.md) |  | boolean | _(Optional)_ Set this flag to <code>false</code> to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to <code>true</code>. |
-|  [openApiSpec](./rest.restserverresolvedoptions.openapispec.md) |  | [OpenApiSpecOptions](./rest.openapispecoptions.md) |  |
-|  [path?](./rest.restserverresolvedoptions.path.md) |  | string | _(Optional)_ |
-|  [port](./rest.restserverresolvedoptions.port.md) |  | number |  |
-|  [requestBodyParser?](./rest.restserverresolvedoptions.requestbodyparser.md) |  | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | _(Optional)_ |
-|  [router](./rest.restserverresolvedoptions.router.md) |  | [RestRouterOptions](./rest.restrouteroptions.md) |  |
-|  [sequence?](./rest.restserverresolvedoptions.sequence.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiExplorer](./rest.restserverresolvedoptions.apiexplorer.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ApiExplorerOptions](./rest.apiexploreroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[basePath?](./rest.restserverresolvedoptions.basepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Base path for API/static routes
+
+
+</td></tr>
+<tr><td>
+
+[cors](./rest.restserverresolvedoptions.cors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+cors.CorsOptions
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[expressSettings](./rest.restserverresolvedoptions.expresssettings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[name: string\]: any; }
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[listenOnStart?](./rest.restserverresolvedoptions.listenonstart.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Set this flag to `false` to not listen on connections when the REST server is started. It's useful to mount a LoopBack REST server as a route to the facade Express application. If not set, the value is default to `true`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[openApiSpec](./rest.restserverresolvedoptions.openapispec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[OpenApiSpecOptions](./rest.openapispecoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[path?](./rest.restserverresolvedoptions.path.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[port](./rest.restserverresolvedoptions.port.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[requestBodyParser?](./rest.restserverresolvedoptions.requestbodyparser.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[RequestBodyParserOptions](./rest.requestbodyparseroptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[router](./rest.restserverresolvedoptions.router.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[RestRouterOptions](./rest.restrouteroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[sequence?](./rest.restserverresolvedoptions.sequence.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

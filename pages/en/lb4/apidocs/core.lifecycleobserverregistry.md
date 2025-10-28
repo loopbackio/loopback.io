@@ -24,31 +24,292 @@ export declare class LifeCycleObserverRegistry implements LifeCycleObserver
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, observersView, options)](./core.lifecycleobserverregistry._constructor_.md) |  | Constructs a new instance of the <code>LifeCycleObserverRegistry</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context, observersView, options)](./core.lifecycleobserverregistry._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `LifeCycleObserverRegistry` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./core.lifecycleobserverregistry.context.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [Context](./context.context.md) |  |
-|  [observersView](./core.lifecycleobserverregistry.observersview.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt; |  |
-|  [options](./core.lifecycleobserverregistry.options.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./core.lifecycleobserverregistry.context.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[observersView](./core.lifecycleobserverregistry.observersview.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[options](./core.lifecycleobserverregistry.options.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[LifeCycleObserverOptions](./core.lifecycleobserveroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getObserverGroup(binding)](./core.lifecycleobserverregistry.getobservergroup.md) | <code>protected</code> | Get the group for a given life cycle observer binding |
-|  [getObserverGroupsByOrder()](./core.lifecycleobserverregistry.getobservergroupsbyorder.md) |  | Get observer groups ordered by the group |
-|  [init()](./core.lifecycleobserverregistry.init.md) |  | Notify all life cycle observers by group of <code>init</code> |
-|  [invokeObserver(observer, event)](./core.lifecycleobserverregistry.invokeobserver.md) | <code>protected</code> | Invoke an observer for the given event |
-|  [notifyGroups(events, groups, reverse)](./core.lifecycleobserverregistry.notifygroups.md) | <code>protected</code> | Emit events to the observer groups |
-|  [notifyObservers(observers, bindings, event)](./core.lifecycleobserverregistry.notifyobservers.md) | <code>protected</code> | Notify an observer group of the given event |
-|  [setOrderedGroups(groups)](./core.lifecycleobserverregistry.setorderedgroups.md) |  |  |
-|  [sortObserverBindingsByGroup(bindings)](./core.lifecycleobserverregistry.sortobserverbindingsbygroup.md) | <code>protected</code> | Sort the life cycle observer bindings so that we can start/stop them in the right order. By default, we can start other observers before servers and stop them in the reverse order |
-|  [start()](./core.lifecycleobserverregistry.start.md) |  | Notify all life cycle observers by group of <code>start</code> |
-|  [stop()](./core.lifecycleobserverregistry.stop.md) |  | Notify all life cycle observers by group of <code>stop</code> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getObserverGroup(binding)](./core.lifecycleobserverregistry.getobservergroup.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get the group for a given life cycle observer binding
+
+
+</td></tr>
+<tr><td>
+
+[getObserverGroupsByOrder()](./core.lifecycleobserverregistry.getobservergroupsbyorder.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get observer groups ordered by the group
+
+
+</td></tr>
+<tr><td>
+
+[init()](./core.lifecycleobserverregistry.init.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Notify all life cycle observers by group of `init`
+
+
+</td></tr>
+<tr><td>
+
+[invokeObserver(observer, event)](./core.lifecycleobserverregistry.invokeobserver.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Invoke an observer for the given event
+
+
+</td></tr>
+<tr><td>
+
+[notifyGroups(events, groups, reverse)](./core.lifecycleobserverregistry.notifygroups.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Emit events to the observer groups
+
+
+</td></tr>
+<tr><td>
+
+[notifyObservers(observers, bindings, event)](./core.lifecycleobserverregistry.notifyobservers.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Notify an observer group of the given event
+
+
+</td></tr>
+<tr><td>
+
+[setOrderedGroups(groups)](./core.lifecycleobserverregistry.setorderedgroups.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[sortObserverBindingsByGroup(bindings)](./core.lifecycleobserverregistry.sortobserverbindingsbygroup.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Sort the life cycle observer bindings so that we can start/stop them in the right order. By default, we can start other observers before servers and stop them in the reverse order
+
+
+</td></tr>
+<tr><td>
+
+[start()](./core.lifecycleobserverregistry.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Notify all life cycle observers by group of `start`
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./core.lifecycleobserverregistry.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Notify all life cycle observers by group of `stop`
+
+
+</td></tr>
+</tbody></table>
 
 

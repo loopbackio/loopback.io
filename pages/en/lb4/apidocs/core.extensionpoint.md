@@ -23,10 +23,53 @@ export declare function extensionPoint(name: string, ...specs: BindingSpec[]): C
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | Name of the extension point |
-|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the extension point
+
+
+</td></tr>
+<tr><td>
+
+specs
+
+
+</td><td>
+
+[BindingSpec](./context.bindingspec.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

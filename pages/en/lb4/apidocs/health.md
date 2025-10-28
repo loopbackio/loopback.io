@@ -17,30 +17,148 @@ A component to report health status using [@cloudnative/health](https://github.c
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [HealthComponent](./health.healthcomponent.md) | A component providing health status |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HealthComponent](./health.healthcomponent.md)
+
+
+</td><td>
+
+A component providing health status
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [HealthBindings](./health.healthbindings.md) | Binding keys used by this component. |
-|  [HealthTags](./health.healthtags.md) | Binding tags for health related services |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HealthBindings](./health.healthbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+<tr><td>
+
+[HealthTags](./health.healthtags.md)
+
+
+</td><td>
+
+Binding tags for health related services
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_HEALTH\_OPTIONS](./health.default_health_options.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_HEALTH\_OPTIONS](./health.default_health_options.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [HealthConfig](./health.healthconfig.md) | Configuration for health component with optional properties |
-|  [HealthOptions](./health.healthoptions.md) | Options for health component |
-|  [LiveCheck](./health.livecheck.md) | Functions for liveness check |
-|  [ReadyCheck](./health.readycheck.md) | Functions for readiness check |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HealthConfig](./health.healthconfig.md)
+
+
+</td><td>
+
+Configuration for health component with optional properties
+
+
+</td></tr>
+<tr><td>
+
+[HealthOptions](./health.healthoptions.md)
+
+
+</td><td>
+
+Options for health component
+
+
+</td></tr>
+<tr><td>
+
+[LiveCheck](./health.livecheck.md)
+
+
+</td><td>
+
+Functions for liveness check
+
+
+</td></tr>
+<tr><td>
+
+[ReadyCheck](./health.readycheck.md)
+
+
+</td><td>
+
+Functions for readiness check
+
+
+</td></tr>
+</tbody></table>
 
 

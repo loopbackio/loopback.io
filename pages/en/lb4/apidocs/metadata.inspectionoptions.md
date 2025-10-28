@@ -23,8 +23,48 @@ export interface InspectionOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [ownMetadataOnly?](./metadata.inspectionoptions.ownmetadataonly.md) |  | boolean | <p>_(Optional)_ Only inspect own metadata of a given target. The prototype chain will not be checked. The implementation uses <code>Reflect.getOwnMetadata()</code> if the flag is set to <code>true</code>. Otherwise, it uses <code>Reflect.getMetadata()</code>.</p><p>The flag is <code>false</code> by default for <code>MetadataInspector</code>.</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ownMetadataOnly?](./metadata.inspectionoptions.ownmetadataonly.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Only inspect own metadata of a given target. The prototype chain will not be checked. The implementation uses `Reflect.getOwnMetadata()` if the flag is set to `true`<!-- -->. Otherwise, it uses `Reflect.getMetadata()`<!-- -->.
+
+The flag is `false` by default for `MetadataInspector`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 

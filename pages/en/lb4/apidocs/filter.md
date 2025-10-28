@@ -21,41 +21,277 @@ This lightweight module provides strongly-typed typings and filter builders to i
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [FilterBuilder](./filter.filterbuilder.md) | A builder for Filter. It provides fleunt APIs to add clauses such as <code>fields</code>, <code>order</code>, <code>where</code>, <code>limit</code>, <code>offset</code>, and <code>include</code>. |
-|  [WhereBuilder](./filter.wherebuilder.md) | A builder for Where object. It provides fluent APIs to add clauses such as <code>and</code>, <code>or</code>, and other operators. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[FilterBuilder](./filter.filterbuilder.md)
+
+
+</td><td>
+
+A builder for Filter. It provides fleunt APIs to add clauses such as `fields`<!-- -->, `order`<!-- -->, `where`<!-- -->, `limit`<!-- -->, `offset`<!-- -->, and `include`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[WhereBuilder](./filter.wherebuilder.md)
+
+
+</td><td>
+
+A builder for Where object. It provides fluent APIs to add clauses such as `and`<!-- -->, `or`<!-- -->, and other operators.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [filterTemplate(strings, keys)](./filter.filtertemplate.md) |  |
-|  [isFilter(candidate)](./filter.isfilter.md) | TypeGuard for Filter |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[filterTemplate(strings, keys)](./filter.filtertemplate.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[isFilter(candidate)](./filter.isfilter.md)
+
+
+</td><td>
+
+TypeGuard for Filter
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [AndClause](./filter.andclause.md) | And clause |
-|  [Filter](./filter.filter.md) | Query filter object |
-|  [Inclusion](./filter.inclusion.md) | <p>Inclusion of related items</p><p>Note: scope means filter on related items</p><p>Example: <code>{relation: 'aRelationName', scope: {&lt;AFilterObject&gt;}}</code></p> |
-|  [OrClause](./filter.orclause.md) | Or clause |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AndClause](./filter.andclause.md)
+
+
+</td><td>
+
+And clause
+
+
+</td></tr>
+<tr><td>
+
+[Filter](./filter.filter.md)
+
+
+</td><td>
+
+Query filter object
+
+
+</td></tr>
+<tr><td>
+
+[Inclusion](./filter.inclusion.md)
+
+
+</td><td>
+
+Inclusion of related items
+
+Note: scope means filter on related items
+
+Example: `{relation: 'aRelationName', scope: {<AFilterObject>}}`
+
+
+</td></tr>
+<tr><td>
+
+[OrClause](./filter.orclause.md)
+
+
+</td><td>
+
+Or clause
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Condition](./filter.condition.md) | Condition clause |
-|  [Direction](./filter.direction.md) | Order by direction |
-|  [Fields](./filter.fields.md) | <p>Selection of fields</p><p>Example: <code>{afieldname: true}</code></p> |
-|  [FilterExcludingWhere](./filter.filterexcludingwhere.md) | Filter without <code>where</code> property |
-|  [InclusionFilter](./filter.inclusionfilter.md) | Inclusion filter type e.g. 'property', {<!-- -->relation: 'property'<!-- -->} |
-|  [KeyOf](./filter.keyof.md) | Key types of a given model, excluding operators |
-|  [Operators](./filter.operators.md) | Operators for where clauses |
-|  [Order](./filter.order.md) | <p>Order by</p><p>Example: <code>{afieldname: 'ASC'}</code></p> |
-|  [PredicateComparison](./filter.predicatecomparison.md) | Matching predicate comparison |
-|  [ShortHandEqualType](./filter.shorthandequaltype.md) | Value types for <code>{propertyName: value}</code> |
-|  [Where](./filter.where.md) | Where clause |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Condition](./filter.condition.md)
+
+
+</td><td>
+
+Condition clause
+
+
+</td></tr>
+<tr><td>
+
+[Direction](./filter.direction.md)
+
+
+</td><td>
+
+Order by direction
+
+
+</td></tr>
+<tr><td>
+
+[Fields](./filter.fields.md)
+
+
+</td><td>
+
+Selection of fields
+
+Example: `{afieldname: true}`
+
+
+</td></tr>
+<tr><td>
+
+[FilterExcludingWhere](./filter.filterexcludingwhere.md)
+
+
+</td><td>
+
+Filter without `where` property
+
+
+</td></tr>
+<tr><td>
+
+[InclusionFilter](./filter.inclusionfilter.md)
+
+
+</td><td>
+
+Inclusion filter type e.g. 'property', {<!-- -->relation: 'property'<!-- -->}
+
+
+</td></tr>
+<tr><td>
+
+[KeyOf](./filter.keyof.md)
+
+
+</td><td>
+
+Key types of a given model, excluding operators
+
+
+</td></tr>
+<tr><td>
+
+[Operators](./filter.operators.md)
+
+
+</td><td>
+
+Operators for where clauses
+
+
+</td></tr>
+<tr><td>
+
+[Order](./filter.order.md)
+
+
+</td><td>
+
+Order by
+
+Example: `{afieldname: 'ASC'}`
+
+
+</td></tr>
+<tr><td>
+
+[PredicateComparison](./filter.predicatecomparison.md)
+
+
+</td><td>
+
+Matching predicate comparison
+
+
+</td></tr>
+<tr><td>
+
+[ShortHandEqualType](./filter.shorthandequaltype.md)
+
+
+</td><td>
+
+Value types for `{propertyName: value}`
+
+
+</td></tr>
+<tr><td>
+
+[Where](./filter.where.md)
+
+
+</td><td>
+
+Where clause
+
+
+</td></tr>
+</tbody></table>
 
 

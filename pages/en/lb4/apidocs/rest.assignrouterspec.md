@@ -21,10 +21,51 @@ export declare function assignRouterSpec(target: RouterSpec, additions: RouterSp
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | [RouterSpec](./rest.routerspec.md) |  |
-|  additions | [RouterSpec](./rest.routerspec.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+[RouterSpec](./rest.routerspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+additions
+
+
+</td><td>
+
+[RouterSpec](./rest.routerspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -37,28 +37,224 @@ const filter = filterBuilder
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(f)](./filter.filterbuilder._constructor_.md) |  | Constructs a new instance of the <code>FilterBuilder</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(f)](./filter.filterbuilder._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `FilterBuilder` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [filter](./filter.filterbuilder.filter.md) |  | [Filter](./filter.filter.md)<!-- -->&lt;MT&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[filter](./filter.filterbuilder.filter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Filter](./filter.filter.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [build()](./filter.filterbuilder.build.md) |  | Return the filter object |
-|  [fields(f)](./filter.filterbuilder.fields.md) |  | Describe what fields to be included/excluded |
-|  [impose(constraint)](./filter.filterbuilder.impose.md) |  | Add a Filter or Where constraint object. If it is a filter object, create an <code>and</code> clause for conflicting keys with its where object. For any other properties, throw an error. If it's not a Filter, coerce it to a filter, and carry out the same logic. |
-|  [include(i)](./filter.filterbuilder.include.md) |  | Declare <code>include</code> |
-|  [limit(limit)](./filter.filterbuilder.limit.md) |  | Set <code>limit</code> |
-|  [offset(offset)](./filter.filterbuilder.offset.md) |  | Set <code>offset</code> |
-|  [order(o)](./filter.filterbuilder.order.md) |  | Describe the sorting order |
-|  [skip(skip)](./filter.filterbuilder.skip.md) |  | Alias to <code>offset</code> |
-|  [where(w)](./filter.filterbuilder.where.md) |  | Declare a where clause |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[build()](./filter.filterbuilder.build.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Return the filter object
+
+
+</td></tr>
+<tr><td>
+
+[fields(f)](./filter.filterbuilder.fields.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Describe what fields to be included/excluded
+
+
+</td></tr>
+<tr><td>
+
+[impose(constraint)](./filter.filterbuilder.impose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a Filter or Where constraint object. If it is a filter object, create an `and` clause for conflicting keys with its where object. For any other properties, throw an error. If it's not a Filter, coerce it to a filter, and carry out the same logic.
+
+
+</td></tr>
+<tr><td>
+
+[include(i)](./filter.filterbuilder.include.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Declare `include`
+
+
+</td></tr>
+<tr><td>
+
+[limit(limit)](./filter.filterbuilder.limit.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set `limit`
+
+
+</td></tr>
+<tr><td>
+
+[offset(offset)](./filter.filterbuilder.offset.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set `offset`
+
+
+</td></tr>
+<tr><td>
+
+[order(o)](./filter.filterbuilder.order.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Describe the sorting order
+
+
+</td></tr>
+<tr><td>
+
+[skip(skip)](./filter.filterbuilder.skip.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Alias to `offset`
+
+
+</td></tr>
+<tr><td>
+
+[where(w)](./filter.filterbuilder.where.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Declare a where clause
+
+
+</td></tr>
+</tbody></table>
 
 

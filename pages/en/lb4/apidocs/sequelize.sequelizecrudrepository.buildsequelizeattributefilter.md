@@ -23,9 +23,39 @@ protected buildSequelizeAttributeFilter(fields?: Fields): FindAttributeOptions |
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  fields | [Fields](./filter.fields.md) | _(Optional)_ Loopback styles <code>fields</code> options. eg. <code>[&quot;name&quot;, &quot;age&quot;]</code>, <code>{ id: false }</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+fields
+
+
+</td><td>
+
+[Fields](./filter.fields.md)
+
+
+</td><td>
+
+_(Optional)_ Loopback styles `fields` options. eg. `["name", "age"]`<!-- -->, `{ id: false }`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

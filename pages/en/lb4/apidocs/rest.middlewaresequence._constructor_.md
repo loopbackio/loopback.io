@@ -23,10 +23,68 @@ constructor(context: Context, invokeMiddleware: InvokeMiddleware, options?: Invo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) |  |
-|  invokeMiddleware | InvokeMiddleware | invoker for registered middleware in a chain. To be injected via RestBindings.INVOKE\_MIDDLEWARE\_SERVICE. |
-|  options | InvokeMiddlewareOptions | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+invokeMiddleware
+
+
+</td><td>
+
+InvokeMiddleware
+
+
+</td><td>
+
+invoker for registered middleware in a chain. To be injected via RestBindings.INVOKE\_MIDDLEWARE\_SERVICE.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+InvokeMiddlewareOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

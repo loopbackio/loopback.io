@@ -21,10 +21,51 @@ static value(context: Context, handler: HttpHandler): FindRoute;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) |  |
-|  handler | [HttpHandler](./rest.httphandler.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+handler
+
+
+</td><td>
+
+[HttpHandler](./rest.httphandler.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

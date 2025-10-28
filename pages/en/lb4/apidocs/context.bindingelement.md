@@ -23,9 +23,61 @@ export interface BindingElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [type](./context.bindingelement.type.md) |  | 'binding' |  |
-|  [value](./context.bindingelement.value.md) |  | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[type](./context.bindingelement.type.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'binding'
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[value](./context.bindingelement.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

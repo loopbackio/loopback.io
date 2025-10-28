@@ -23,9 +23,37 @@ enforce(request: AuthorizationRequest): Promise<AuthorizationDecision>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | [AuthorizationRequest](./authorization.authorizationrequest.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+[AuthorizationRequest](./authorization.authorizationrequest.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

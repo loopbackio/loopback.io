@@ -22,8 +22,44 @@ export declare class AuthenticationComponent implements Component
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [providers](./authentication.authenticationcomponent.providers.md) |  | { \[x: string\]: typeof [AuthenticateActionProvider](./authentication.authenticateactionprovider.md) \| typeof [AuthenticationMiddlewareProvider](./authentication.authenticationmiddlewareprovider.md) \| typeof [AuthMetadataProvider](./authentication.authmetadataprovider.md) \| typeof [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md)<!-- -->; } |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[providers](./authentication.authenticationcomponent.providers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[x: string\]: typeof [AuthenticateActionProvider](./authentication.authenticateactionprovider.md) \| typeof [AuthenticationMiddlewareProvider](./authentication.authenticationmiddlewareprovider.md) \| typeof [AuthMetadataProvider](./authentication.authmetadataprovider.md) \| typeof [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md)<!-- -->; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

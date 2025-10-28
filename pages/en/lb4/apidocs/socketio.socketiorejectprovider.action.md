@@ -21,10 +21,51 @@ action(done: Function, error: Error): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  done | Function |  |
-|  error | Error |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+done
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+error
+
+
+</td><td>
+
+Error
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

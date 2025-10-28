@@ -24,25 +24,190 @@ export declare abstract class BaseRoute implements RouteEntry
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(verb, path, spec)](./rest.baseroute._constructor_.md) |  | Construct a new route |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(verb, path, spec)](./rest.baseroute._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Construct a new route
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./rest.baseroute.path.md) | <code>readonly</code> | string |  |
-|  [spec](./rest.baseroute.spec.md) | <code>readonly</code> | OperationObject |  |
-|  [verb](./rest.baseroute.verb.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[path](./rest.baseroute.path.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[spec](./rest.baseroute.spec.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[verb](./rest.baseroute.verb.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [describe()](./rest.baseroute.describe.md) |  |  |
-|  [invokeHandler(requestContext, args)](./rest.baseroute.invokehandler.md) | <code>abstract</code> |  |
-|  [toString()](./rest.baseroute.tostring.md) |  |  |
-|  [updateBindings(requestContext)](./rest.baseroute.updatebindings.md) | <code>abstract</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describe()](./rest.baseroute.describe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invokeHandler(requestContext, args)](./rest.baseroute.invokehandler.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./rest.baseroute.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[updateBindings(requestContext)](./rest.baseroute.updatebindings.md)
+
+
+</td><td>
+
+`abstract`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

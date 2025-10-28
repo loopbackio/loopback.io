@@ -23,10 +23,51 @@ invokeHandler(requestContext: Context, args: OperationArgs): Promise<OperationRe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  requestContext | [Context](./context.context.md) |  |
-|  args | [OperationArgs](./rest.operationargs.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+requestContext
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+[OperationArgs](./rest.operationargs.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

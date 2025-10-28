@@ -23,12 +23,87 @@ static getAllParameterMetadata<T>(key: MetadataKey<T, ParameterDecorator>, targe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt; | Metadata key |
-|  target | Object | Class for static methods or prototype for instance methods |
-|  methodName | string | _(Optional)_ Method name. If not present, default to '' to use the constructor |
-|  options | [InspectionOptions](./metadata.inspectionoptions.md) | _(Optional)_ Options for inspection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, ParameterDecorator&gt;
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class for static methods or prototype for instance methods
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Method name. If not present, default to '' to use the constructor
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InspectionOptions](./metadata.inspectionoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for inspection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

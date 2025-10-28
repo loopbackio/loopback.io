@@ -23,10 +23,66 @@ constructor(_rootContext: Context, _serverConfig: RestServerResolvedConfig, _rou
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_rootContext | [Context](./context.context.md) |  |
-|  \_serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  \_routes | [RoutingTable](./rest.routingtable.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+\_rootContext
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+\_serverConfig
+
+
+</td><td>
+
+[RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+\_routes
+
+
+</td><td>
+
+[RoutingTable](./rest.routingtable.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

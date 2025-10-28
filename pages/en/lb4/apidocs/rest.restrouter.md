@@ -21,10 +21,50 @@ export interface RestRouter
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [add(route)](./rest.restrouter.add.md) | Add a route to the router |
-|  [find(request)](./rest.restrouter.find.md) | Find a matching route for the given http request |
-|  [list()](./rest.restrouter.list.md) | List all routes |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[add(route)](./rest.restrouter.add.md)
+
+
+</td><td>
+
+Add a route to the router
+
+
+</td></tr>
+<tr><td>
+
+[find(request)](./rest.restrouter.find.md)
+
+
+</td><td>
+
+Find a matching route for the given http request
+
+
+</td></tr>
+<tr><td>
+
+[list()](./rest.restrouter.list.md)
+
+
+</td><td>
+
+List all routes
+
+
+</td></tr>
+</tbody></table>
 
 

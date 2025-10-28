@@ -23,9 +23,39 @@ parse(request: Request): Promise<RequestBody>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request | http request |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+http request
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

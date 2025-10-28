@@ -23,11 +23,71 @@ createView<T = unknown>(filter: BindingFilter, comparator?: BindingComparator, o
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filter | [BindingFilter](./context.bindingfilter.md) | A function to match bindings |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) | _(Optional)_ A function to sort matched bindings |
-|  options | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt; | _(Optional)_ Resolution options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filter
+
+
+</td><td>
+
+[BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+A function to match bindings
+
+
+</td></tr>
+<tr><td>
+
+comparator
+
+
+</td><td>
+
+[BindingComparator](./context.bindingcomparator.md)
+
+
+</td><td>
+
+_(Optional)_ A function to sort matched bindings
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
+
+
+</td><td>
+
+_(Optional)_ Resolution options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

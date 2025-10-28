@@ -23,8 +23,28 @@ export interface SequenceHandler
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [handle(context)](./rest.sequencehandler.handle.md) | Handle the request by running the configured sequence of actions. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(context)](./rest.sequencehandler.handle.md)
+
+
+</td><td>
+
+Handle the request by running the configured sequence of actions.
+
+
+</td></tr>
+</tbody></table>
 
 

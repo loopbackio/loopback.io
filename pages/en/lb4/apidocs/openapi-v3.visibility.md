@@ -25,9 +25,37 @@ export declare function visibility(visibilityType: OperationVisibility): (target
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  visibilityType | [OperationVisibility](./openapi-v3.operationvisibility.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+visibilityType
+
+
+</td><td>
+
+[OperationVisibility](./openapi-v3.operationvisibility.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

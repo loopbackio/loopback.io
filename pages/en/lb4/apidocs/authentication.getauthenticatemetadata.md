@@ -23,10 +23,55 @@ export declare function getAuthenticateMetadata(targetClass: Constructor<{}>, me
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  targetClass | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; | Target controller |
-|  methodName | string | Target method |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+targetClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;
+
+
+</td><td>
+
+Target controller
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Target method
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

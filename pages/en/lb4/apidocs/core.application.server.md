@@ -23,10 +23,53 @@ server<T extends Server>(ctor: Constructor<T>, nameOrOptions?: string | BindingF
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; |  |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Optional override for name or options. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctor
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Optional override for name or options.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

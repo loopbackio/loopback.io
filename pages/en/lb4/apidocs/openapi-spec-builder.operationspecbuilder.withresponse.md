@@ -23,10 +23,55 @@ withResponse(status: number | 'default', responseSpec: ResponseObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  status | number \| 'default' | HTTP status code or string "default" |
-|  responseSpec | ResponseObject | Specification of the response |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+status
+
+
+</td><td>
+
+number \| 'default'
+
+
+</td><td>
+
+HTTP status code or string "default"
+
+
+</td></tr>
+<tr><td>
+
+responseSpec
+
+
+</td><td>
+
+ResponseObject
+
+
+</td><td>
+
+Specification of the response
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

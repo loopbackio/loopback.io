@@ -23,12 +23,118 @@ export interface HttpServerResolvedOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [basePath?](./socketio.httpserverresolvedoptions.basepath.md) |  | string | _(Optional)_ |
-|  [cors](./socketio.httpserverresolvedoptions.cors.md) |  | cors.CorsOptions |  |
-|  [host?](./socketio.httpserverresolvedoptions.host.md) |  | string | _(Optional)_ |
-|  [path?](./socketio.httpserverresolvedoptions.path.md) |  | string | _(Optional)_ |
-|  [port](./socketio.httpserverresolvedoptions.port.md) |  | number |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[basePath?](./socketio.httpserverresolvedoptions.basepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[cors](./socketio.httpserverresolvedoptions.cors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+cors.CorsOptions
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[host?](./socketio.httpserverresolvedoptions.host.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[path?](./socketio.httpserverresolvedoptions.path.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[port](./socketio.httpserverresolvedoptions.port.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

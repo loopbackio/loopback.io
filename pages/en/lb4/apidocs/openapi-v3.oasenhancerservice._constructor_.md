@@ -25,9 +25,52 @@ constructor(
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  getEnhancers | Getter&lt;[OASEnhancer](./openapi-v3.oasenhancer.md)<!-- -->\[\]&gt; |  |
-|  options | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+getEnhancers
+
+
+</td><td>
+
+Getter&lt;[OASEnhancer](./openapi-v3.oasenhancer.md)<!-- -->\[\]&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

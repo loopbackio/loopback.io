@@ -23,10 +23,78 @@ export interface SessionUserProfile
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [email](./rest.sessionuserprofile.email.md) |  | string |  |
-|  [provider](./rest.sessionuserprofile.provider.md) |  | string |  |
-|  [token](./rest.sessionuserprofile.token.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[email](./rest.sessionuserprofile.email.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[provider](./rest.sessionuserprofile.provider.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[token](./rest.sessionuserprofile.token.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

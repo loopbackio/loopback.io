@@ -23,11 +23,71 @@ export declare function tryCatchFinally<T>(action: () => ValueOrPromise<T>, erro
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  action | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | A function that returns a promise or a value |
-|  errorAction | (err: unknown) =&gt; T \| never | _(Optional)_ A function to be called once the action is rejected (synchronously or asynchronously). It must either return a new value or throw an error. |
-|  finalAction | () =&gt; void | _(Optional)_ A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+action
+
+
+</td><td>
+
+() =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+A function that returns a promise or a value
+
+
+</td></tr>
+<tr><td>
+
+errorAction
+
+
+</td><td>
+
+(err: unknown) =&gt; T \| never
+
+
+</td><td>
+
+_(Optional)_ A function to be called once the action is rejected (synchronously or asynchronously). It must either return a new value or throw an error.
+
+
+</td></tr>
+<tr><td>
+
+finalAction
+
+
+</td><td>
+
+() =&gt; void
+
+
+</td><td>
+
+_(Optional)_ A function to be called once the action is fulfilled or rejected (synchronously or asynchronously)
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

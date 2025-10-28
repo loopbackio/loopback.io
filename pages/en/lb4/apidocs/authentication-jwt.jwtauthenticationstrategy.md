@@ -22,22 +22,139 @@ export declare class JWTAuthenticationStrategy implements AuthenticationStrategy
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(tokenService)](./authentication-jwt.jwtauthenticationstrategy._constructor_.md) |  | Constructs a new instance of the <code>JWTAuthenticationStrategy</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(tokenService)](./authentication-jwt.jwtauthenticationstrategy._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `JWTAuthenticationStrategy` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./authentication-jwt.jwtauthenticationstrategy.name.md) |  | string |  |
-|  [tokenService](./authentication-jwt.jwtauthenticationstrategy.tokenservice.md) |  | [TokenService](./authentication.tokenservice.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./authentication-jwt.jwtauthenticationstrategy.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[tokenService](./authentication-jwt.jwtauthenticationstrategy.tokenservice.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[TokenService](./authentication.tokenservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [authenticate(request)](./authentication-jwt.jwtauthenticationstrategy.authenticate.md) |  |  |
-|  [extractCredentials(request)](./authentication-jwt.jwtauthenticationstrategy.extractcredentials.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authenticate(request)](./authentication-jwt.jwtauthenticationstrategy.authenticate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[extractCredentials(request)](./authentication-jwt.jwtauthenticationstrategy.extractcredentials.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

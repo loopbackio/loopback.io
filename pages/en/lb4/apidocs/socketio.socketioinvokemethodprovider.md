@@ -22,15 +22,80 @@ export declare class SocketIoInvokeMethodProvider implements Provider<SocketIoIn
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./socketio.socketioinvokemethodprovider._constructor_.md) |  | Constructs a new instance of the <code>SocketIoInvokeMethodProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./socketio.socketioinvokemethodprovider._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoInvokeMethodProvider` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [action(context, controller, methodName, args)](./socketio.socketioinvokemethodprovider.action.md) |  |  |
-|  [value()](./socketio.socketioinvokemethodprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action(context, controller, methodName, args)](./socketio.socketioinvokemethodprovider.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[value()](./socketio.socketioinvokemethodprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

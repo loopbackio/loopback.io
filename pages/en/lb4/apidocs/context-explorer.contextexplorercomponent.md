@@ -24,8 +24,36 @@ export declare class ContextExplorerComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(application, explorerConfig)](./context-explorer.contextexplorercomponent._constructor_.md) |  | Constructs a new instance of the <code>ContextExplorerComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(application, explorerConfig)](./context-explorer.contextexplorercomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ContextExplorerComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 

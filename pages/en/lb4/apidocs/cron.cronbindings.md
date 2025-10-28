@@ -23,9 +23,39 @@ export declare namespace CronBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./cron.cronbindings.component.md) | Binding key for <code>CronComponent</code> |
-|  [CRON\_JOB\_NAMESPACE](./cron.cronbindings.cron_job_namespace.md) | Namespace for cron jobs |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./cron.cronbindings.component.md)
+
+
+</td><td>
+
+Binding key for `CronComponent`
+
+
+</td></tr>
+<tr><td>
+
+[CRON\_JOB\_NAMESPACE](./cron.cronbindings.cron_job_namespace.md)
+
+
+</td><td>
+
+Namespace for cron jobs
+
+
+</td></tr>
+</tbody></table>
 
 

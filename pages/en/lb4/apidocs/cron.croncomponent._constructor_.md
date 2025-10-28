@@ -23,8 +23,36 @@ constructor(getJobs: Getter<CronJob[]>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  getJobs | Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+getJobs
+
+
+</td><td>
+
+Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

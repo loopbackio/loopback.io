@@ -23,9 +23,39 @@ supports(mediaType: string): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  mediaType | string | Media type |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+mediaType
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Media type
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

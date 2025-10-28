@@ -21,36 +21,212 @@ Common types/interfaces for LoopBack 4 security including authentication and aut
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [DefaultSubject](./security.defaultsubject.md) | Default implementation of <code>Subject</code> |
-|  [Permission](./security.permission.md) | <p><code>Permission</code> defines an action/access against a protected resource. It's the <code>what</code> for security.</p><p>There are three levels of permissions</p><p>- Resource level (Order, User) - Instance level (Order-0001, User-1001) - Property level (User-0001.email)</p> |
-|  [TypedPrincipal](./security.typedprincipal.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DefaultSubject](./security.defaultsubject.md)
+
+
+</td><td>
+
+Default implementation of `Subject`
+
+
+</td></tr>
+<tr><td>
+
+[Permission](./security.permission.md)
+
+
+</td><td>
+
+`Permission` defines an action/access against a protected resource. It's the `what` for security.
+
+There are three levels of permissions
+
+- Resource level (Order, User) - Instance level (Order-0001, User-1001) - Property level (User-0001.email)
+
+
+</td></tr>
+<tr><td>
+
+[TypedPrincipal](./security.typedprincipal.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ClientApplication](./security.clientapplication.md) |  |
-|  [Credential](./security.credential.md) | Security attributes used to authenticate the subject. Such credentials include passwords, Kerberos tickets, and public key certificates. |
-|  [Organization](./security.organization.md) |  |
-|  [Principal](./security.principal.md) | Represent a user, an application, or a device |
-|  [Role](./security.role.md) |  |
-|  [Scope](./security.scope.md) | oAuth 2.0 scope |
-|  [Subject](./security.subject.md) | <p><code>Subject</code> represents both security state and operations for a single request. It's the <code>who</code> for security.</p><p>Such operations include: - authentication (login) - authorization (access control) - session access - logout</p> |
-|  [Team](./security.team.md) |  |
-|  [UserProfile](./security.userprofile.md) | The minimum set of attributes that describe a user. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ClientApplication](./security.clientapplication.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Credential](./security.credential.md)
+
+
+</td><td>
+
+Security attributes used to authenticate the subject. Such credentials include passwords, Kerberos tickets, and public key certificates.
+
+
+</td></tr>
+<tr><td>
+
+[Organization](./security.organization.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Principal](./security.principal.md)
+
+
+</td><td>
+
+Represent a user, an application, or a device
+
+
+</td></tr>
+<tr><td>
+
+[Role](./security.role.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Scope](./security.scope.md)
+
+
+</td><td>
+
+oAuth 2.0 scope
+
+
+</td></tr>
+<tr><td>
+
+[Subject](./security.subject.md)
+
+
+</td><td>
+
+`Subject` represents both security state and operations for a single request. It's the `who` for security.
+
+Such operations include: - authentication (login) - authorization (access control) - session access - logout
+
+
+</td></tr>
+<tr><td>
+
+[Team](./security.team.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserProfile](./security.userprofile.md)
+
+
+</td><td>
+
+The minimum set of attributes that describe a user.
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [SecurityBindings](./security.securitybindings.md) | Binding keys for security related metadata |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SecurityBindings](./security.securitybindings.md)
+
+
+</td><td>
+
+Binding keys for security related metadata
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [securityId](./security.securityid.md) | A symbol for stringified id of security related objects |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[securityId](./security.securityid.md)
+
+
+</td><td>
+
+A symbol for stringified id of security related objects
+
+
+</td></tr>
+</tbody></table>
 
 

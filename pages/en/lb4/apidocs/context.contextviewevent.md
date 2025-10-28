@@ -24,8 +24,46 @@ export interface ContextViewEvent<T> extends ContextEvent
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [cachedValue?](./context.contextviewevent.cachedvalue.md) |  | T | _(Optional)_ Optional cached value for an <code>unbind</code> event |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[cachedValue?](./context.contextviewevent.cachedvalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+_(Optional)_ Optional cached value for an `unbind` event
+
+
+</td></tr>
+</tbody></table>
 
 

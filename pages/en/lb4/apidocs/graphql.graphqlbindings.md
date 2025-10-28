@@ -23,16 +23,125 @@ export declare namespace GraphQLBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./graphql.graphqlbindings.component.md) | Binding key for the GraphQL component |
-|  [CONFIG](./graphql.graphqlbindings.config.md) | Binding key for setting and injecting GraphQLServerConfig |
-|  [GRAPHQL\_AUTH\_CHECKER](./graphql.graphqlbindings.graphql_auth_checker.md) | Binding key for the GraphQL auth checker |
-|  [GRAPHQL\_CONTEXT\_RESOLVER](./graphql.graphqlbindings.graphql_context_resolver.md) | Binding key for the GraphQL context resolver |
-|  [GRAPHQL\_SERVER](./graphql.graphqlbindings.graphql_server.md) | Binding key for the GraphQL server |
-|  [PUB\_SUB\_ENGINE](./graphql.graphqlbindings.pub_sub_engine.md) | Binding key for the GraphQL pub/sub engine |
-|  [RESOLVER\_CLASS](./graphql.graphqlbindings.resolver_class.md) | Binding key for the current resolver class |
-|  [RESOLVER\_DATA](./graphql.graphqlbindings.resolver_data.md) | Binding key for the GraphQL resolver data - which is bound per request |
-|  [RESOLVERS](./graphql.graphqlbindings.resolvers.md) | Binding key namespace for resolvers |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./graphql.graphqlbindings.component.md)
+
+
+</td><td>
+
+Binding key for the GraphQL component
+
+
+</td></tr>
+<tr><td>
+
+[CONFIG](./graphql.graphqlbindings.config.md)
+
+
+</td><td>
+
+Binding key for setting and injecting GraphQLServerConfig
+
+
+</td></tr>
+<tr><td>
+
+[GRAPHQL\_AUTH\_CHECKER](./graphql.graphqlbindings.graphql_auth_checker.md)
+
+
+</td><td>
+
+Binding key for the GraphQL auth checker
+
+
+</td></tr>
+<tr><td>
+
+[GRAPHQL\_CONTEXT\_RESOLVER](./graphql.graphqlbindings.graphql_context_resolver.md)
+
+
+</td><td>
+
+Binding key for the GraphQL context resolver
+
+
+</td></tr>
+<tr><td>
+
+[GRAPHQL\_SERVER](./graphql.graphqlbindings.graphql_server.md)
+
+
+</td><td>
+
+Binding key for the GraphQL server
+
+
+</td></tr>
+<tr><td>
+
+[GRAPHQL\_WS\_CONTEXT\_RESOLVER](./graphql.graphqlbindings.graphql_ws_context_resolver.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[PUB\_SUB\_ENGINE](./graphql.graphqlbindings.pub_sub_engine.md)
+
+
+</td><td>
+
+Binding key for the GraphQL pub/sub engine
+
+
+</td></tr>
+<tr><td>
+
+[RESOLVER\_CLASS](./graphql.graphqlbindings.resolver_class.md)
+
+
+</td><td>
+
+Binding key for the current resolver class
+
+
+</td></tr>
+<tr><td>
+
+[RESOLVER\_DATA](./graphql.graphqlbindings.resolver_data.md)
+
+
+</td><td>
+
+Binding key for the GraphQL resolver data - which is bound per request
+
+
+</td></tr>
+<tr><td>
+
+[RESOLVERS](./graphql.graphqlbindings.resolvers.md)
+
+
+</td><td>
+
+Binding key namespace for resolvers
+
+
+</td></tr>
+</tbody></table>
 
 

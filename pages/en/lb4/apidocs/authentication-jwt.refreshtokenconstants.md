@@ -23,10 +23,50 @@ export declare namespace RefreshTokenConstants
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [REFRESH\_EXPIRES\_IN\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_expires_in_value.md) | The default expiration time for refresh token. |
-|  [REFRESH\_ISSUER\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_issuer_value.md) | The default issuer used when generating refresh token. |
-|  [REFRESH\_SECRET\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_secret_value.md) | The default secret used when generating refresh token. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[REFRESH\_EXPIRES\_IN\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_expires_in_value.md)
+
+
+</td><td>
+
+The default expiration time for refresh token.
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_ISSUER\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_issuer_value.md)
+
+
+</td><td>
+
+The default issuer used when generating refresh token.
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_SECRET\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_secret_value.md)
+
+
+</td><td>
+
+The default secret used when generating refresh token.
+
+
+</td></tr>
+</tbody></table>
 
 

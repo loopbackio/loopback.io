@@ -29,9 +29,37 @@ function subscribe(...messageTypes: (string | RegExp)[]): MethodDecorator;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  messageTypes | (string \| RegExp)\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+messageTypes
+
+
+</td><td>
+
+(string \| RegExp)\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

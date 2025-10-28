@@ -23,9 +23,39 @@ registerApiComponents(defs: ComponentsObject): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  defs | ComponentsObject | Components |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+defs
+
+
+</td><td>
+
+ComponentsObject
+
+
+</td><td>
+
+Components
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ export declare function isPromiseLike<T>(value: T | PromiseLike<T> | undefined):
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | T \| PromiseLike&lt;T&gt; \| undefined | The value to check. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+T \| PromiseLike&lt;T&gt; \| undefined
+
+
+</td><td>
+
+The value to check.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

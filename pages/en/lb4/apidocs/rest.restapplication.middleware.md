@@ -23,10 +23,55 @@ middleware(middleware: Middleware | Constructor<Provider<Middleware>>, options?:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  middleware | Middleware \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;Middleware&gt;&gt; | Middleware function or provider class |
-|  options | MiddlewareBindingOptions | _(Optional)_ Middleware binding options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+middleware
+
+
+</td><td>
+
+Middleware \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;Middleware&gt;&gt;
+
+
+</td><td>
+
+Middleware function or provider class
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+MiddlewareBindingOptions
+
+
+</td><td>
+
+_(Optional)_ Middleware binding options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

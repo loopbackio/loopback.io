@@ -21,20 +21,140 @@ export declare namespace SocketIoBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [CONFIG](./socketio.socketiobindings.config.md) |  |
-|  [CONTROLLERS\_NAMESPACE](./socketio.socketiobindings.controllers_namespace.md) |  |
-|  [HOST](./socketio.socketiobindings.host.md) | Binding key for setting and injecting the host name of Http Server |
-|  [INVOKE\_METHOD](./socketio.socketiobindings.invoke_method.md) |  |
-|  [IO](./socketio.socketiobindings.io.md) |  |
-|  [MESSAGE](./socketio.socketiobindings.message.md) |  |
-|  [PORT](./socketio.socketiobindings.port.md) | Binding key for setting and injecting the port number of Http Server |
-|  [REJECT\_METHOD](./socketio.socketiobindings.reject_method.md) |  |
-|  [REQUEST\_LISTENER](./socketio.socketiobindings.request_listener.md) |  |
-|  [SEND\_METHOD](./socketio.socketiobindings.send_method.md) |  |
-|  [SEQUENCE](./socketio.socketiobindings.sequence.md) |  |
-|  [SERVER](./socketio.socketiobindings.server.md) | Binding key for the server itself |
-|  [SOCKET](./socketio.socketiobindings.socket.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CONFIG](./socketio.socketiobindings.config.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CONTROLLERS\_NAMESPACE](./socketio.socketiobindings.controllers_namespace.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[HOST](./socketio.socketiobindings.host.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the host name of Http Server
+
+
+</td></tr>
+<tr><td>
+
+[INVOKE\_METHOD](./socketio.socketiobindings.invoke_method.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[IO](./socketio.socketiobindings.io.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MESSAGE](./socketio.socketiobindings.message.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[PORT](./socketio.socketiobindings.port.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the port number of Http Server
+
+
+</td></tr>
+<tr><td>
+
+[REJECT\_METHOD](./socketio.socketiobindings.reject_method.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_LISTENER](./socketio.socketiobindings.request_listener.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SEND\_METHOD](./socketio.socketiobindings.send_method.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SEQUENCE](./socketio.socketiobindings.sequence.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SERVER](./socketio.socketiobindings.server.md)
+
+
+</td><td>
+
+Binding key for the server itself
+
+
+</td></tr>
+<tr><td>
+
+[SOCKET](./socketio.socketiobindings.socket.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

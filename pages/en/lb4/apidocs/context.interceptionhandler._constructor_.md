@@ -23,10 +23,70 @@ constructor(context?: Context, session?: ResolutionSession | undefined, source?:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) | _(Optional)_ |
-|  session | [ResolutionSession](./context.resolutionsession.md) \| undefined | _(Optional)_ |
-|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+source
+
+
+</td><td>
+
+[InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

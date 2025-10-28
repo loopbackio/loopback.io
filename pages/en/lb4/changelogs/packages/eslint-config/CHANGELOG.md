@@ -13,6 +13,32 @@ permalink: /doc/en/lb4/changelog.eslint-config.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/eslint-config@16.0.0...@loopback/eslint-config@16.0.1) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/eslint-config
+
+
+
+
+
+# [16.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/eslint-config@15.0.5...@loopback/eslint-config@16.0.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
 ## [15.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/eslint-config@15.0.4...@loopback/eslint-config@15.0.5) (2025-01-15)
 
 **Note:** Version bump only for package @loopback/eslint-config

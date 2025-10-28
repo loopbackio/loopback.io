@@ -23,10 +23,55 @@ acquire?(resource: T, requestCtx: Context): ValueOrPromise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resource | T | Resource instance |
-|  requestCtx | [Context](./context.context.md) | Request context |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+resource
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Resource instance
+
+
+</td></tr>
+<tr><td>
+
+requestCtx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Request context
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

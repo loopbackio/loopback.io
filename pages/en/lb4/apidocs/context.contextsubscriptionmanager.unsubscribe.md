@@ -23,9 +23,39 @@ unsubscribe(observer: ContextEventObserver): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  observer | [ContextEventObserver](./context.contexteventobserver.md) | Context event observer |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+observer
+
+
+</td><td>
+
+[ContextEventObserver](./context.contexteventobserver.md)
+
+
+</td><td>
+
+Context event observer
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

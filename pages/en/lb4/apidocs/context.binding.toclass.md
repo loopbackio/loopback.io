@@ -23,9 +23,39 @@ toClass<C extends T & object>(ctor: Constructor<C>): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;C&gt; | The class constructor to call. Any constructor arguments must be annotated with <code>@inject</code> so that we can resolve them from the context. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctor
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;C&gt;
+
+
+</td><td>
+
+The class constructor to call. Any constructor arguments must be annotated with `@inject` so that we can resolve them from the context.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

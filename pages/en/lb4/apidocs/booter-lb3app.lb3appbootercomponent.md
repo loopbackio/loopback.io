@@ -22,8 +22,44 @@ export declare class Lb3AppBooterComponent implements Component
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [booters](./booter-lb3app.lb3appbootercomponent.booters.md) |  | (typeof Lb3AppBooter)\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[booters](./booter-lb3app.lb3appbootercomponent.booters.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(typeof Lb3AppBooter)\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

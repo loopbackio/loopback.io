@@ -23,9 +23,37 @@ vote: (...voters: (Authorizer | BindingAddress<Authorizer>)[]) => (target: any, 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  voters | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+voters
+
+
+</td><td>
+
+([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

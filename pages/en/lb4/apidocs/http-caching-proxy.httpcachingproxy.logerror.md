@@ -21,10 +21,51 @@ logError(request: IncomingMessage, error: Error): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | IncomingMessage |  |
-|  error | Error |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+IncomingMessage
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+error
+
+
+</td><td>
+
+Error
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

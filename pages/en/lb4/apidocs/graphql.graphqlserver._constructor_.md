@@ -23,9 +23,54 @@ constructor(options?: GraphQLServerOptions, parent?: Context);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [GraphQLServerOptions](./graphql.graphqlserveroptions.md) | _(Optional)_ |
-|  parent | [Context](./context.context.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[GraphQLServerOptions](./graphql.graphqlserveroptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+parent
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -17,56 +17,350 @@ permalink: /doc/en/lb4/apidocs.authentication-jwt.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [JWTAuthenticationComponent](./authentication-jwt.jwtauthenticationcomponent.md) |  |
-|  [JWTAuthenticationStrategy](./authentication-jwt.jwtauthenticationstrategy.md) |  |
-|  [JWTService](./authentication-jwt.jwtservice.md) |  |
-|  [MyUserService](./authentication-jwt.myuserservice.md) |  |
-|  [RefreshToken](./authentication-jwt.refreshtoken.md) |  |
-|  [RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md) |  |
-|  [RefreshtokenService](./authentication-jwt.refreshtokenservice.md) |  |
-|  [SecuritySpecEnhancer](./authentication-jwt.securityspecenhancer.md) | A spec enhancer to add bearer token OpenAPI security entry to <code>spec.component.securitySchemes</code> |
-|  [User](./authentication-jwt.user.md) |  |
-|  [UserCredentials](./authentication-jwt.usercredentials.md) |  |
-|  [UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md) |  |
-|  [UserRepository](./authentication-jwt.userrepository.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[JWTAuthenticationComponent](./authentication-jwt.jwtauthenticationcomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[JWTAuthenticationStrategy](./authentication-jwt.jwtauthenticationstrategy.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[JWTService](./authentication-jwt.jwtservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MyUserService](./authentication-jwt.myuserservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RefreshToken](./authentication-jwt.refreshtoken.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RefreshtokenService](./authentication-jwt.refreshtokenservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SecuritySpecEnhancer](./authentication-jwt.securityspecenhancer.md)
+
+
+</td><td>
+
+A spec enhancer to add bearer token OpenAPI security entry to `spec.component.securitySchemes`
+
+
+</td></tr>
+<tr><td>
+
+[User](./authentication-jwt.user.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserCredentials](./authentication-jwt.usercredentials.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserRepository](./authentication-jwt.userrepository.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md) |  |
-|  [RefreshTokenService](./authentication-jwt.refreshtokenservice.md) | The token refresh service. An access token expires in limited time. Therefore token refresh service is needed to keep replacing the old access token with a new one periodically. |
-|  [UserCredentialsRelations](./authentication-jwt.usercredentialsrelations.md) |  |
-|  [UserRelations](./authentication-jwt.userrelations.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RefreshTokenService](./authentication-jwt.refreshtokenservice.md)
+
+
+</td><td>
+
+The token refresh service. An access token expires in limited time. Therefore token refresh service is needed to keep replacing the old access token with a new one periodically.
+
+
+</td></tr>
+<tr><td>
+
+[UserCredentialsRelations](./authentication-jwt.usercredentialsrelations.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserRelations](./authentication-jwt.userrelations.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [RefreshTokenConstants](./authentication-jwt.refreshtokenconstants.md) | Constant values used when generating refresh token. |
-|  [RefreshTokenServiceBindings](./authentication-jwt.refreshtokenservicebindings.md) | Bindings related to token refresh service. The omitted explanation can be found in namespace <code>RefreshTokenConstants</code>. |
-|  [TokenServiceBindings](./authentication-jwt.tokenservicebindings.md) |  |
-|  [TokenServiceConstants](./authentication-jwt.tokenserviceconstants.md) |  |
-|  [UserServiceBindings](./authentication-jwt.userservicebindings.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RefreshTokenConstants](./authentication-jwt.refreshtokenconstants.md)
+
+
+</td><td>
+
+Constant values used when generating refresh token.
+
+
+</td></tr>
+<tr><td>
+
+[RefreshTokenServiceBindings](./authentication-jwt.refreshtokenservicebindings.md)
+
+
+</td><td>
+
+Bindings related to token refresh service. The omitted explanation can be found in namespace `RefreshTokenConstants`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[TokenServiceBindings](./authentication-jwt.tokenservicebindings.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[TokenServiceConstants](./authentication-jwt.tokenserviceconstants.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserServiceBindings](./authentication-jwt.userservicebindings.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [OPERATION\_SECURITY\_SPEC](./authentication-jwt.operation_security_spec.md) |  |
-|  [SECURITY\_SCHEME\_SPEC](./authentication-jwt.security_scheme_spec.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[OPERATION\_SECURITY\_SPEC](./authentication-jwt.operation_security_spec.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SECURITY\_SCHEME\_SPEC](./authentication-jwt.security_scheme_spec.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Credentials](./authentication-jwt.credentials.md) | A pre-defined type for user credentials. It assumes a user logs in using the email and password. You can modify it if your app has different credential fields |
-|  [RefereshTokenWithRelations](./authentication-jwt.refereshtokenwithrelations.md) |  |
-|  [SecuritySchemeObjects](./authentication-jwt.securityschemeobjects.md) |  |
-|  [TokenObject](./authentication-jwt.tokenobject.md) | Describes the token object that returned by the refresh token service functions. |
-|  [UserCredentialsWithRelations](./authentication-jwt.usercredentialswithrelations.md) |  |
-|  [UserWithRelations](./authentication-jwt.userwithrelations.md) |  |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Credentials](./authentication-jwt.credentials.md)
+
+
+</td><td>
+
+A pre-defined type for user credentials. It assumes a user logs in using the email and password. You can modify it if your app has different credential fields
+
+
+</td></tr>
+<tr><td>
+
+[RefereshTokenWithRelations](./authentication-jwt.refereshtokenwithrelations.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SecuritySchemeObjects](./authentication-jwt.securityschemeobjects.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[TokenObject](./authentication-jwt.tokenobject.md)
+
+
+</td><td>
+
+Describes the token object that returned by the refresh token service functions.
+
+
+</td></tr>
+<tr><td>
+
+[UserCredentialsWithRelations](./authentication-jwt.usercredentialswithrelations.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[UserWithRelations](./authentication-jwt.userwithrelations.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

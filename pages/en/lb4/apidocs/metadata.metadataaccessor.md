@@ -23,15 +23,94 @@ export declare class MetadataAccessor<T, D extends DecoratorType = DecoratorType
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [key](./metadata.metadataaccessor.key.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[key](./metadata.metadataaccessor.key.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create(key)](./metadata.metadataaccessor.create.md) | <code>static</code> | Create a strongly-typed metadata accessor |
-|  [toString()](./metadata.metadataaccessor.tostring.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create(key)](./metadata.metadataaccessor.create.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a strongly-typed metadata accessor
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./metadata.metadataaccessor.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

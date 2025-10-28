@@ -17,34 +17,150 @@ permalink: /doc/en/lb4/apidocs.sequelize.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [LoopbackSequelizeComponent](./sequelize.loopbacksequelizecomponent.md) |  |
-|  [SequelizeCrudRepository](./sequelize.sequelizecrudrepository.md) | Sequelize implementation of CRUD repository to be used with default loopback entities and SequelizeDataSource for SQL Databases |
-|  [SequelizeDataSource](./sequelize.sequelizedatasource.md) | Sequelize DataSource Class |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoopbackSequelizeComponent](./sequelize.loopbacksequelizecomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SequelizeCrudRepository](./sequelize.sequelizecrudrepository.md)
+
+
+</td><td>
+
+Sequelize implementation of CRUD repository to be used with default loopback entities and SequelizeDataSource for SQL Databases
+
+
+</td></tr>
+<tr><td>
+
+[SequelizeDataSource](./sequelize.sequelizedatasource.md)
+
+
+</td><td>
+
+Sequelize DataSource Class
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [LoopbackSequelizeComponentOptions](./sequelize.loopbacksequelizecomponentoptions.md) | Interface defining the component's options object |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoopbackSequelizeComponentOptions](./sequelize.loopbacksequelizecomponentoptions.md)
+
+
+</td><td>
+
+Interface defining the component's options object
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [LoopbackSequelizeComponentBindings](./sequelize.loopbacksequelizecomponentbindings.md) | Binding keys used by this component. |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoopbackSequelizeComponentBindings](./sequelize.loopbacksequelizecomponentbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_LOOPBACK\_SEQUELIZE\_OPTIONS](./sequelize.default_loopback_sequelize_options.md) | Default options for the component |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_LOOPBACK\_SEQUELIZE\_OPTIONS](./sequelize.default_loopback_sequelize_options.md)
+
+
+</td><td>
+
+Default options for the component
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md) |  |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

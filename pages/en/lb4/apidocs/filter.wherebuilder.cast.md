@@ -28,9 +28,39 @@ cast(clause: AndClause<MT> | OrClause<MT> | Condition<MT>): Where<MT>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  clause | [AndClause](./filter.andclause.md)<!-- -->&lt;MT&gt; \| [OrClause](./filter.orclause.md)<!-- -->&lt;MT&gt; \| [Condition](./filter.condition.md)<!-- -->&lt;MT&gt; | And/Or/Condition clause |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+clause
+
+
+</td><td>
+
+[AndClause](./filter.andclause.md)<!-- -->&lt;MT&gt; \| [OrClause](./filter.orclause.md)<!-- -->&lt;MT&gt; \| [Condition](./filter.condition.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+And/Or/Condition clause
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

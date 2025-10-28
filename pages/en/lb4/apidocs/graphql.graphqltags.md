@@ -23,10 +23,50 @@ export declare namespace GraphQLTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [GRAPHQL](./graphql.graphqltags.graphql.md) | GraphQL |
-|  [MIDDLEWARE](./graphql.graphqltags.middleware.md) | Tag for GraphQL middleware bindings |
-|  [RESOLVER](./graphql.graphqltags.resolver.md) | Tag for GraphQL resolver bindings |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GRAPHQL](./graphql.graphqltags.graphql.md)
+
+
+</td><td>
+
+GraphQL
+
+
+</td></tr>
+<tr><td>
+
+[MIDDLEWARE](./graphql.graphqltags.middleware.md)
+
+
+</td><td>
+
+Tag for GraphQL middleware bindings
+
+
+</td></tr>
+<tr><td>
+
+[RESOLVER](./graphql.graphqltags.resolver.md)
+
+
+</td><td>
+
+Tag for GraphQL resolver bindings
+
+
+</td></tr>
+</tbody></table>
 
 

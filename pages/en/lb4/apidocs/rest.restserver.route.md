@@ -23,14 +23,119 @@ route<I extends object>(verb: string, path: string, spec: OperationObject, contr
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | HTTP verb of the endpoint |
-|  path | string | URL path of the endpoint |
-|  spec | OperationObject | The OpenAPI spec describing the endpoint (operation) |
-|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;I&gt; | Controller constructor |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;I&gt; | A factory function to create controller instance |
-|  methodName | string | The name of the controller method |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+HTTP verb of the endpoint
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+URL path of the endpoint
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+The OpenAPI spec describing the endpoint (operation)
+
+
+</td></tr>
+<tr><td>
+
+controllerCtor
+
+
+</td><td>
+
+[ControllerClass](./rest.controllerclass.md)<!-- -->&lt;I&gt;
+
+
+</td><td>
+
+Controller constructor
+
+
+</td></tr>
+<tr><td>
+
+controllerFactory
+
+
+</td><td>
+
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;I&gt;
+
+
+</td><td>
+
+A factory function to create controller instance
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the controller method
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

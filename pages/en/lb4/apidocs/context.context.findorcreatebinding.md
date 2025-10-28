@@ -23,10 +23,55 @@ findOrCreateBinding<T>(key: BindingAddress<T>, policy?: BindingCreationPolicy): 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding address |
-|  policy | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | _(Optional)_ Binding creation policy |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Binding address
+
+
+</td></tr>
+<tr><td>
+
+policy
+
+
+</td><td>
+
+[BindingCreationPolicy](./context.bindingcreationpolicy.md)
+
+
+</td><td>
+
+_(Optional)_ Binding creation policy
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

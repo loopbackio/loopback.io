@@ -23,13 +23,118 @@ constructor(verb: string, path: string, spec: OperationObject, controllerCtor: C
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | http verb |
-|  path | string | http request path |
-|  spec | OperationObject | OpenAPI operation spec |
-|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | _(Optional)_ A factory function to create a controller instance |
-|  methodName | string | _(Optional)_ Controller method name, default to <code>x-operation-name</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+http verb
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+http request path
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+OpenAPI operation spec
+
+
+</td></tr>
+<tr><td>
+
+controllerCtor
+
+
+</td><td>
+
+[ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Controller class
+
+
+</td></tr>
+<tr><td>
+
+controllerFactory
+
+
+</td><td>
+
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_ A factory function to create a controller instance
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Controller method name, default to `x-operation-name`
+
+
+</td></tr>
+</tbody></table>
 
 

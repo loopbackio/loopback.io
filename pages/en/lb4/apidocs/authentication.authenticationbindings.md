@@ -23,17 +23,117 @@ export declare namespace AuthenticationBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [AUTH\_ACTION](./authentication.authenticationbindings.auth_action.md) | Key used to inject the authentication function into the sequence. |
-|  [AUTHENTICATION\_MIDDLEWARE](./authentication.authenticationbindings.authentication_middleware.md) | Binding key for AUTHENTICATION\_MIDDLEWARE |
-|  [AUTHENTICATION\_REDIRECT\_STATUS](./authentication.authenticationbindings.authentication_redirect_status.md) |  |
-|  [AUTHENTICATION\_REDIRECT\_URL](./authentication.authenticationbindings.authentication_redirect_url.md) |  |
-|  [AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME](./authentication.authenticationbindings.authentication_strategy_extension_point_name.md) |  |
-|  [COMPONENT](./authentication.authenticationbindings.component.md) |  |
-|  [CURRENT\_USER](./authentication.authenticationbindings.current_user.md) |  |
-|  [METADATA](./authentication.authenticationbindings.metadata.md) | Key used to inject authentication metadata, which is used to determine whether a request requires authentication or not. |
-|  [STRATEGY](./authentication.authenticationbindings.strategy.md) | Key used to bind an authentication strategy or multiple strategies to the context for the authentication function to use. |
-|  [USER\_PROFILE\_FACTORY](./authentication.authenticationbindings.user_profile_factory.md) | Key used to bind a user profile factory to the context for any consumer to use when they need to convert a user object into a slimmer user profile object |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AUTH\_ACTION](./authentication.authenticationbindings.auth_action.md)
+
+
+</td><td>
+
+Key used to inject the authentication function into the sequence.
+
+
+</td></tr>
+<tr><td>
+
+[AUTHENTICATION\_MIDDLEWARE](./authentication.authenticationbindings.authentication_middleware.md)
+
+
+</td><td>
+
+Binding key for AUTHENTICATION\_MIDDLEWARE
+
+
+</td></tr>
+<tr><td>
+
+[AUTHENTICATION\_REDIRECT\_STATUS](./authentication.authenticationbindings.authentication_redirect_status.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AUTHENTICATION\_REDIRECT\_URL](./authentication.authenticationbindings.authentication_redirect_url.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME](./authentication.authenticationbindings.authentication_strategy_extension_point_name.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[COMPONENT](./authentication.authenticationbindings.component.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CURRENT\_USER](./authentication.authenticationbindings.current_user.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[METADATA](./authentication.authenticationbindings.metadata.md)
+
+
+</td><td>
+
+Key used to inject authentication metadata, which is used to determine whether a request requires authentication or not.
+
+
+</td></tr>
+<tr><td>
+
+[STRATEGY](./authentication.authenticationbindings.strategy.md)
+
+
+</td><td>
+
+Key used to bind an authentication strategy or multiple strategies to the context for the authentication function to use.
+
+
+</td></tr>
+<tr><td>
+
+[USER\_PROFILE\_FACTORY](./authentication.authenticationbindings.user_profile_factory.md)
+
+
+</td><td>
+
+Key used to bind a user profile factory to the context for any consumer to use when they need to convert a user object into a slimmer user profile object
+
+
+</td></tr>
+</tbody></table>
 
 

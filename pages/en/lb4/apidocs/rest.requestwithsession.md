@@ -24,8 +24,44 @@ export interface RequestWithSession extends Request
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [session](./rest.requestwithsession.session.md) |  | [Session](./rest.session.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[session](./rest.requestwithsession.session.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Session](./rest.session.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,37 @@ use(fn: SockIOMiddleware): Server<import("socket.io").DefaultEventsMap, import("
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  fn | [SockIOMiddleware](./socketio.sockiomiddleware.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+fn
+
+
+</td><td>
+
+[SockIOMiddleware](./socketio.sockiomiddleware.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

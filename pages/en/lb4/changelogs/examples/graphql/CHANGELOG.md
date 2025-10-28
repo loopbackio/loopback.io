@@ -13,6 +13,93 @@ permalink: /doc/en/lb4/changelog.example-graphql.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.12.4...@loopback/example-graphql@0.12.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+## [0.12.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.12.3...@loopback/example-graphql@0.12.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+## [0.12.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.12.2...@loopback/example-graphql@0.12.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+## [0.12.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.12.1...@loopback/example-graphql@0.12.2) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+## [0.12.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.12.0...@loopback/example-graphql@0.12.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+# [0.12.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.11.5...@loopback/example-graphql@0.12.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### Features
+
+* **graphql:** migrate to apollo server 4 ([d1a92a0](https://github.com/loopbackio/loopback-next/commit/d1a92a07323f38eebad3bac0087f735abd2c3c4c))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.11.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.11.4...@loopback/example-graphql@0.11.5) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+## [0.11.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.11.3...@loopback/example-graphql@0.11.4) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
+## [0.11.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.11.2...@loopback/example-graphql@0.11.3) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/example-graphql
+
+
+
+
+
 ## [0.11.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-graphql@0.11.1...@loopback/example-graphql@0.11.2) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/example-graphql

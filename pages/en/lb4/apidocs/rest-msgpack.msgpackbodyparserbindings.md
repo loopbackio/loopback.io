@@ -21,8 +21,26 @@ export declare namespace MsgPackBodyParserBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [BODY\_PARSER](./rest-msgpack.msgpackbodyparserbindings.body_parser.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BODY\_PARSER](./rest-msgpack.msgpackbodyparserbindings.body_parser.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

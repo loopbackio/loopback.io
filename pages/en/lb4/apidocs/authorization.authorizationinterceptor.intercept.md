@@ -21,10 +21,51 @@ intercept(invocationCtx: InvocationContext, next: Next): Promise<NonVoid>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  invocationCtx | [InvocationContext](./context.invocationcontext.md) |  |
-|  next | [Next](./context.next.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+invocationCtx
+
+
+</td><td>
+
+[InvocationContext](./context.invocationcontext.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+next
+
+
+</td><td>
+
+[Next](./context.next.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

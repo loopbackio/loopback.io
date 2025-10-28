@@ -23,11 +23,71 @@ export declare function operation(verb: string, path: string, spec?: OperationOb
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | HTTP verb, e.g. <code>GET</code> or <code>POST</code>. |
-|  path | string | The URL path of this operation, e.g. <code>/product/{id}</code> |
-|  spec | OperationObject | _(Optional)_ The OpenAPI specification describing parameters and responses of this operation. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+HTTP verb, e.g. `GET` or `POST`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The URL path of this operation, e.g. `/product/{id}`
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+_(Optional)_ The OpenAPI specification describing parameters and responses of this operation.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

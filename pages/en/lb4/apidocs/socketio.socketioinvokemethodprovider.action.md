@@ -21,12 +21,79 @@ action(context: Context, controller: ControllerClass, methodName: string, args: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) |  |
-|  controller | [ControllerClass](./core.controllerclass.md) |  |
-|  methodName | string |  |
-|  args | unknown\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+controller
+
+
+</td><td>
+
+[ControllerClass](./core.controllerclass.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+unknown\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

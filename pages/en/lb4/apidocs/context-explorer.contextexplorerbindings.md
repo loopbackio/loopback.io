@@ -23,8 +23,28 @@ export declare namespace ContextExplorerBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./context-explorer.contextexplorerbindings.component.md) | Binding key for ContextExplorerComponent |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./context-explorer.contextexplorerbindings.component.md)
+
+
+</td><td>
+
+Binding key for ContextExplorerComponent
+
+
+</td></tr>
+</tbody></table>
 
 

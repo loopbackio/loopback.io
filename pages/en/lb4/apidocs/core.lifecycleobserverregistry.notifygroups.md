@@ -23,11 +23,71 @@ protected notifyGroups(events: (keyof LifeCycleObserver)[], groups: LifeCycleObs
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  events | (keyof [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->)\[\] | Event names |
-|  groups | [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\] | Observer groups |
-|  reverse | boolean | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+events
+
+
+</td><td>
+
+(keyof [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->)\[\]
+
+
+</td><td>
+
+Event names
+
+
+</td></tr>
+<tr><td>
+
+groups
+
+
+</td><td>
+
+[LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\]
+
+
+</td><td>
+
+Observer groups
+
+
+</td></tr>
+<tr><td>
+
+reverse
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

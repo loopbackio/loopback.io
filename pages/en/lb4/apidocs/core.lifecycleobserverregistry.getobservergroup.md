@@ -23,9 +23,39 @@ protected getObserverGroup(binding: Readonly<Binding<LifeCycleObserver>>): strin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt; | Life cycle observer binding |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+binding
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;
+
+
+</td><td>
+
+Life cycle observer binding
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

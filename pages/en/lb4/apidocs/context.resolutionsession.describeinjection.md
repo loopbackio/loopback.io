@@ -23,9 +23,39 @@ static describeInjection(injection: Readonly<Injection>): InjectionDescriptor;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+injection
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
+
+
+</td><td>
+
+Injection object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

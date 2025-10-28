@@ -21,10 +21,53 @@ exists(id: ID, _options?: AnyObject): Promise<boolean>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  id | ID |  |
-|  \_options | AnyObject | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+id
+
+
+</td><td>
+
+ID
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+\_options
+
+
+</td><td>
+
+AnyObject
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

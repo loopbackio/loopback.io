@@ -21,8 +21,28 @@ export declare namespace authenticate
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [skip()](./authentication.authenticate.skip.md) | <code>@authenticate.skip()</code> - a sugar decorator to skip authentication |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[skip()](./authentication.authenticate.skip.md)
+
+
+</td><td>
+
+`@authenticate.skip()` - a sugar decorator to skip authentication
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ export declare namespace HealthTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [LIVE\_CHECK](./health.healthtags.live_check.md) | Binding tag for liveness check functions |
-|  [READY\_CHECK](./health.healthtags.ready_check.md) | Binding tag for readiness check functions |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LIVE\_CHECK](./health.healthtags.live_check.md)
+
+
+</td><td>
+
+Binding tag for liveness check functions
+
+
+</td></tr>
+<tr><td>
+
+[READY\_CHECK](./health.healthtags.ready_check.md)
+
+
+</td><td>
+
+Binding tag for readiness check functions
+
+
+</td></tr>
+</tbody></table>
 
 

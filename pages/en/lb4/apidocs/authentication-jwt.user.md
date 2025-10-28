@@ -22,20 +22,188 @@ export declare class User extends Entity
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(data)](./authentication-jwt.user._constructor_.md) |  | Constructs a new instance of the <code>User</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(data)](./authentication-jwt.user._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `User` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [email](./authentication-jwt.user.email.md) |  | string |  |
-|  [emailVerified?](./authentication-jwt.user.emailverified.md) |  | boolean | _(Optional)_ |
-|  [id](./authentication-jwt.user.id.md) |  | string |  |
-|  [realm?](./authentication-jwt.user.realm.md) |  | string | _(Optional)_ |
-|  [userCredentials](./authentication-jwt.user.usercredentials.md) |  | [UserCredentials](./authentication-jwt.usercredentials.md) |  |
-|  [username?](./authentication-jwt.user.username.md) |  | string | _(Optional)_ |
-|  [verificationToken?](./authentication-jwt.user.verificationtoken.md) |  | string | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[email](./authentication-jwt.user.email.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[emailVerified?](./authentication-jwt.user.emailverified.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[id](./authentication-jwt.user.id.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[realm?](./authentication-jwt.user.realm.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[userCredentials](./authentication-jwt.user.usercredentials.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[UserCredentials](./authentication-jwt.usercredentials.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[username?](./authentication-jwt.user.username.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[verificationToken?](./authentication-jwt.user.verificationtoken.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

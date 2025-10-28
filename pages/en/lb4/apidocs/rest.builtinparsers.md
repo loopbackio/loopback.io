@@ -21,14 +21,80 @@ export declare namespace builtinParsers
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [json](./rest.builtinparsers.json.md) |  |
-|  [mapping](./rest.builtinparsers.mapping.md) |  |
-|  [names](./rest.builtinparsers.names.md) |  |
-|  [raw](./rest.builtinparsers.raw.md) |  |
-|  [stream](./rest.builtinparsers.stream.md) |  |
-|  [text](./rest.builtinparsers.text.md) |  |
-|  [urlencoded](./rest.builtinparsers.urlencoded.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[json](./rest.builtinparsers.json.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mapping](./rest.builtinparsers.mapping.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[names](./rest.builtinparsers.names.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[raw](./rest.builtinparsers.raw.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stream](./rest.builtinparsers.stream.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[text](./rest.builtinparsers.text.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[urlencoded](./rest.builtinparsers.urlencoded.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

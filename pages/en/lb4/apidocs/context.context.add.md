@@ -23,9 +23,39 @@ add(binding: Binding<unknown>): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt; | The configured binding to be added |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+binding
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+The configured binding to be added
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

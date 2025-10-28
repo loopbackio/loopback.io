@@ -25,9 +25,39 @@ protected buildSequelizeOrder(order?: string[] | string): Order | undefined;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  order | string\[\] \| string | _(Optional)_ Sorting order in loopback style filter. eg. <code>title ASC</code>, <code>[&quot;id DESC&quot;, &quot;age ASC&quot;]</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+order
+
+
+</td><td>
+
+string\[\] \| string
+
+
+</td><td>
+
+_(Optional)_ Sorting order in loopback style filter. eg. `title ASC`<!-- -->, `["id DESC", "age ASC"]`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

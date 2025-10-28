@@ -23,12 +23,87 @@ export declare function validateRequestBody(body: RequestBody, requestBodySpec?:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  body | [RequestBody](./rest.requestbody.md) | The request body parsed from an HTTP request. |
-|  requestBodySpec | RequestBodyObject | _(Optional)_ The OpenAPI requestBody specification defined in <code>@requestBody()</code>. |
-|  globalSchemas | SchemasObject | _(Optional)_ The referenced schemas generated from <code>OpenAPISpec.components.schemas</code>. |
-|  options | [ValidationOptions](./rest.validationoptions.md) | _(Optional)_ Request body validation options for AJV |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+body
+
+
+</td><td>
+
+[RequestBody](./rest.requestbody.md)
+
+
+</td><td>
+
+The request body parsed from an HTTP request.
+
+
+</td></tr>
+<tr><td>
+
+requestBodySpec
+
+
+</td><td>
+
+RequestBodyObject
+
+
+</td><td>
+
+_(Optional)_ The OpenAPI requestBody specification defined in `@requestBody()`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+globalSchemas
+
+
+</td><td>
+
+SchemasObject
+
+
+</td><td>
+
+_(Optional)_ The referenced schemas generated from `OpenAPISpec.components.schemas`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ValidationOptions](./rest.validationoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Request body validation options for AJV
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

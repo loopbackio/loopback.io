@@ -23,13 +23,79 @@ export declare namespace LoggingBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./logging.loggingbindings.component.md) |  |
-|  [FLUENT\_SENDER](./logging.loggingbindings.fluent_sender.md) |  |
-|  [WINSTON\_HTTP\_ACCESS\_LOGGER](./logging.loggingbindings.winston_http_access_logger.md) | Binding key for http access logger with winston |
-|  [WINSTON\_INVOCATION\_LOGGER](./logging.loggingbindings.winston_invocation_logger.md) | Binding key for method invocation logger with winston |
-|  [WINSTON\_LOGGER](./logging.loggingbindings.winston_logger.md) | Binding key for winston logger |
-|  [WINSTON\_TRANSPORT\_FLUENT](./logging.loggingbindings.winston_transport_fluent.md) | Binding key for winston transport backed by fluent |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./logging.loggingbindings.component.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[FLUENT\_SENDER](./logging.loggingbindings.fluent_sender.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[WINSTON\_HTTP\_ACCESS\_LOGGER](./logging.loggingbindings.winston_http_access_logger.md)
+
+
+</td><td>
+
+Binding key for http access logger with winston
+
+
+</td></tr>
+<tr><td>
+
+[WINSTON\_INVOCATION\_LOGGER](./logging.loggingbindings.winston_invocation_logger.md)
+
+
+</td><td>
+
+Binding key for method invocation logger with winston
+
+
+</td></tr>
+<tr><td>
+
+[WINSTON\_LOGGER](./logging.loggingbindings.winston_logger.md)
+
+
+</td><td>
+
+Binding key for winston logger
+
+
+</td></tr>
+<tr><td>
+
+[WINSTON\_TRANSPORT\_FLUENT](./logging.loggingbindings.winston_transport_fluent.md)
+
+
+</td><td>
+
+Binding key for winston transport backed by fluent
+
+
+</td></tr>
+</tbody></table>
 
 

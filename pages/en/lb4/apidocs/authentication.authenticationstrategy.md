@@ -25,14 +25,72 @@ export interface AuthenticationStrategy
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./authentication.authenticationstrategy.name.md) |  | string | The 'name' property is a unique identifier for the authentication strategy ( for example : 'basic', 'jwt', etc) |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./authentication.authenticationstrategy.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The 'name' property is a unique identifier for the authentication strategy ( for example : 'basic', 'jwt', etc)
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [authenticate(request)](./authentication.authenticationstrategy.authenticate.md) | The 'authenticate' method takes in a given request and returns a user profile which is an instance of 'UserProfile'. (A user profile is a minimal subset of a user object) If the user credentials are valid, this method should return a 'UserProfile' instance. If the user credentials are invalid, this method should throw an error If the user credentials are missing, this method should throw an error, or return 'undefined' and let the authentication action deal with it. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authenticate(request)](./authentication.authenticationstrategy.authenticate.md)
+
+
+</td><td>
+
+The 'authenticate' method takes in a given request and returns a user profile which is an instance of 'UserProfile'. (A user profile is a minimal subset of a user object) If the user credentials are valid, this method should return a 'UserProfile' instance. If the user credentials are invalid, this method should throw an error If the user credentials are missing, this method should throw an error, or return 'undefined' and let the authentication action deal with it.
+
+
+</td></tr>
+</tbody></table>
 
 

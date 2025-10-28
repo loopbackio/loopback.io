@@ -24,21 +24,131 @@ export declare class InfoSpecEnhancer implements OASEnhancer
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(pkg)](./rest.infospecenhancer._constructor_.md) |  | Constructs a new instance of the <code>InfoSpecEnhancer</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(pkg)](./rest.infospecenhancer._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `InfoSpecEnhancer` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./rest.infospecenhancer.name.md) |  | string |  |
-|  [pkg?](./rest.infospecenhancer.pkg.md) | <code>readonly</code> | [ApplicationMetadata](./core.applicationmetadata.md) \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./rest.infospecenhancer.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[pkg?](./rest.infospecenhancer.pkg.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ApplicationMetadata](./core.applicationmetadata.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [modifySpec(spec)](./rest.infospecenhancer.modifyspec.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[modifySpec(spec)](./rest.infospecenhancer.modifyspec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

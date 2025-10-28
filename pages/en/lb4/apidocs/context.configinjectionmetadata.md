@@ -24,9 +24,65 @@ export interface ConfigInjectionMetadata extends InjectionMetadata
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [fromBinding?](./context.configinjectionmetadata.frombinding.md) |  | [BindingAddress](./context.bindingaddress.md) | _(Optional)_ Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used. |
-|  [propertyPath?](./context.configinjectionmetadata.propertypath.md) |  | string | _(Optional)_ Property path to retrieve the configuration of the target binding, for example, <code>rest.host</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[fromBinding?](./context.configinjectionmetadata.frombinding.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)
+
+
+</td><td>
+
+_(Optional)_ Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used.
+
+
+</td></tr>
+<tr><td>
+
+[propertyPath?](./context.configinjectionmetadata.propertypath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Property path to retrieve the configuration of the target binding, for example, `rest.host`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 

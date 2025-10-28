@@ -17,64 +17,398 @@ permalink: /doc/en/lb4/apidocs.socketio.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [DefaultSocketIoSequence](./socketio.defaultsocketiosequence.md) |  |
-|  [SocketIoApplication](./socketio.socketioapplication.md) |  |
-|  [SocketIoBooter](./socketio.socketiobooter.md) | A class that extends  to boot the  artifact type. |
-|  [SocketIoComponent](./socketio.socketiocomponent.md) |  |
-|  [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md) | Request context for a socket.io request |
-|  [SocketIoControllerFactory](./socketio.socketiocontrollerfactory.md) | A factory to instantiate socket.io controllers |
-|  [SocketIoInvokeMethodProvider](./socketio.socketioinvokemethodprovider.md) |  |
-|  [SocketIoRejectProvider](./socketio.socketiorejectprovider.md) |  |
-|  [SocketIoSendProvider](./socketio.socketiosendprovider.md) |  |
-|  [SocketIoServer](./socketio.socketioserver.md) | A socketio server |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DefaultSocketIoSequence](./socketio.defaultsocketiosequence.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoApplication](./socketio.socketioapplication.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoBooter](./socketio.socketiobooter.md)
+
+
+</td><td>
+
+A class that extends  to boot the  artifact type.
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoComponent](./socketio.socketiocomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoConnectionContext](./socketio.socketioconnectioncontext.md)
+
+
+</td><td>
+
+Request context for a socket.io request
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoControllerFactory](./socketio.socketiocontrollerfactory.md)
+
+
+</td><td>
+
+A factory to instantiate socket.io controllers
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoInvokeMethodProvider](./socketio.socketioinvokemethodprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoRejectProvider](./socketio.socketiorejectprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoSendProvider](./socketio.socketiosendprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoServer](./socketio.socketioserver.md)
+
+
+</td><td>
+
+A socketio server
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [getNamespaceKeyForName(name)](./socketio.getnamespacekeyforname.md) |  |
-|  [getSocketIoMetadata(controllerClass)](./socketio.getsocketiometadata.md) |  |
-|  [socketio(spec)](./socketio.socketio.md) | Decorate a socketio controller class to specify the namespace. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getNamespaceKeyForName(name)](./socketio.getnamespacekeyforname.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getSocketIoMetadata(controllerClass)](./socketio.getsocketiometadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[socketio(spec)](./socketio.socketio.md)
+
+
+</td><td>
+
+Decorate a socketio controller class to specify the namespace.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) | Valid configuration for the HttpServer constructor. |
-|  [SocketIoMetadata](./socketio.socketiometadata.md) | Metadata for SocketIo |
-|  [SocketIoSequence](./socketio.socketiosequence.md) |  |
-|  [SocketIoServerOptions](./socketio.socketioserveroptions.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md)
+
+
+</td><td>
+
+Valid configuration for the HttpServer constructor.
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoMetadata](./socketio.socketiometadata.md)
+
+
+</td><td>
+
+Metadata for SocketIo
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoSequence](./socketio.socketiosequence.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoServerOptions](./socketio.socketioserveroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [socketio](./socketio.socketio.md) |  |
-|  [SocketIoBindings](./socketio.socketiobindings.md) |  |
-|  [SocketIoTags](./socketio.socketiotags.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[socketio](./socketio.socketio.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoBindings](./socketio.socketiobindings.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoTags](./socketio.socketiotags.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [ERR\_NO\_MULTI\_SERVER](./socketio.err_no_multi_server.md) |  |
-|  [SOCKET\_IO\_CONNECT\_METADATA](./socketio.socket_io_connect_metadata.md) |  |
-|  [SOCKET\_IO\_METADATA](./socketio.socket_io_metadata.md) |  |
-|  [SOCKET\_IO\_SUBSCRIBE\_METADATA](./socketio.socket_io_subscribe_metadata.md) |  |
-|  [SocketIoControllerDefaults](./socketio.socketiocontrollerdefaults.md) | Default ArtifactOptions for SocketIoControllerBooter. |
-|  [socketIoControllers](./socketio.socketiocontrollers.md) | A binding filter to match socket.io controllers |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ERR\_NO\_MULTI\_SERVER](./socketio.err_no_multi_server.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SOCKET\_IO\_CONNECT\_METADATA](./socketio.socket_io_connect_metadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SOCKET\_IO\_METADATA](./socketio.socket_io_metadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SOCKET\_IO\_SUBSCRIBE\_METADATA](./socketio.socket_io_subscribe_metadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoControllerDefaults](./socketio.socketiocontrollerdefaults.md)
+
+
+</td><td>
+
+Default ArtifactOptions for SocketIoControllerBooter.
+
+
+</td></tr>
+<tr><td>
+
+[socketIoControllers](./socketio.socketiocontrollers.md)
+
+
+</td><td>
+
+A binding filter to match socket.io controllers
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [SocketIoDoneFunction](./socketio.socketiodonefunction.md) |  |
-|  [SocketIoInvokeMethod](./socketio.socketioinvokemethod.md) |  |
-|  [SocketIoOptions](./socketio.socketiooptions.md) |  |
-|  [SocketIoRejectMethod](./socketio.socketiorejectmethod.md) |  |
-|  [SocketIoSendMethod](./socketio.socketiosendmethod.md) |  |
-|  [SockIOMiddleware](./socketio.sockiomiddleware.md) |  |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SocketIoDoneFunction](./socketio.socketiodonefunction.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoInvokeMethod](./socketio.socketioinvokemethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoOptions](./socketio.socketiooptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoRejectMethod](./socketio.socketiorejectmethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SocketIoSendMethod](./socketio.socketiosendmethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SockIOMiddleware](./socketio.sockiomiddleware.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

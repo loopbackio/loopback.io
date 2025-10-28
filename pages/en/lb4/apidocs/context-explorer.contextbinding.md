@@ -23,17 +23,137 @@ export declare class ContextBinding
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, binding, level)](./context-explorer.contextbinding._constructor_.md) |  | Constructs a new instance of the <code>ContextBinding</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context, binding, level)](./context-explorer.contextbinding._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ContextBinding` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [binding](./context-explorer.contextbinding.binding.md) | <code>readonly</code> | [JSONObject](./context.jsonobject.md) |  |
-|  [context](./context-explorer.contextbinding.context.md) | <code>readonly</code> | [JSONObject](./context.jsonobject.md) |  |
-|  [id](./context-explorer.contextbinding.id.md) | <code>readonly</code> | string |  |
-|  [level](./context-explorer.contextbinding.level.md) | <code>readonly</code> | number |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[binding](./context-explorer.contextbinding.binding.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[JSONObject](./context.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[context](./context-explorer.contextbinding.context.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[JSONObject](./context.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[id](./context-explorer.contextbinding.id.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[level](./context-explorer.contextbinding.level.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

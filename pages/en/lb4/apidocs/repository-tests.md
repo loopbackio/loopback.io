@@ -21,22 +21,100 @@ Test-suite factories to define standardized test suite capable of testing any co
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [crudRepositoryTestSuite(dataSourceOptions, repositoryClass, partialFeatures)](./repository-tests.crudrepositorytestsuite.md) |  |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[crudRepositoryTestSuite(dataSourceOptions, repositoryClass, partialFeatures)](./repository-tests.crudrepositorytestsuite.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [CrudFeatures](./repository-tests.crudfeatures.md) | List of flags describing behavior specific to different connectors and repository implementations. These flags are used by the test suite to tweak assertions and skip tests for scenarios not supported by some implementations. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CrudFeatures](./repository-tests.crudfeatures.md)
+
+
+</td><td>
+
+List of flags describing behavior specific to different connectors and repository implementations. These flags are used by the test suite to tweak assertions and skip tests for scenarios not supported by some implementations.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md) | A constructor of a class implementing CrudRepository interface, accepting the Entity class (constructor) and a dataSource instance. |
-|  [DataSourceOptions](./repository-tests.datasourceoptions.md) | DataSource configuration (connector name, connection string, etc.). |
-|  [TransactionalRepositoryCtor](./repository-tests.transactionalrepositoryctor.md) | A constructor of a class implementing TransactionalRepository interface, accepting the Entity class (constructor) and a dataSource instance. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md)
+
+
+</td><td>
+
+A constructor of a class implementing CrudRepository interface, accepting the Entity class (constructor) and a dataSource instance.
+
+
+</td></tr>
+<tr><td>
+
+[DataSourceOptions](./repository-tests.datasourceoptions.md)
+
+
+</td><td>
+
+DataSource configuration (connector name, connection string, etc.).
+
+
+</td></tr>
+<tr><td>
+
+[TransactionalRepositoryCtor](./repository-tests.transactionalrepositoryctor.md)
+
+
+</td><td>
+
+A constructor of a class implementing TransactionalRepository interface, accepting the Entity class (constructor) and a dataSource instance.
+
+
+</td></tr>
+</tbody></table>
 
 

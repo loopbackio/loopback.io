@@ -23,13 +23,141 @@ export interface AuthorizationMetadata
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [allowedRoles?](./authorization.authorizationmetadata.allowedroles.md) |  | string\[\] | _(Optional)_ Roles that are allowed access |
-|  [deniedRoles?](./authorization.authorizationmetadata.deniedroles.md) |  | string\[\] | _(Optional)_ Roles that are denied access |
-|  [resource?](./authorization.authorizationmetadata.resource.md) |  | string | _(Optional)_ Name of the resource, default to the method name |
-|  [scopes?](./authorization.authorizationmetadata.scopes.md) |  | string\[\] | _(Optional)_ Define the access scopes |
-|  [skip?](./authorization.authorizationmetadata.skip.md) |  | boolean | _(Optional)_ A flag to skip authorization |
-|  [voters?](./authorization.authorizationmetadata.voters.md) |  | ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\] | _(Optional)_ Voters that help make the authorization decision |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allowedRoles?](./authorization.authorizationmetadata.allowedroles.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Roles that are allowed access
+
+
+</td></tr>
+<tr><td>
+
+[deniedRoles?](./authorization.authorizationmetadata.deniedroles.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Roles that are denied access
+
+
+</td></tr>
+<tr><td>
+
+[resource?](./authorization.authorizationmetadata.resource.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Name of the resource, default to the method name
+
+
+</td></tr>
+<tr><td>
+
+[scopes?](./authorization.authorizationmetadata.scopes.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Define the access scopes
+
+
+</td></tr>
+<tr><td>
+
+[skip?](./authorization.authorizationmetadata.skip.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag to skip authorization
+
+
+</td></tr>
+<tr><td>
+
+[voters?](./authorization.authorizationmetadata.voters.md)
+
+
+</td><td>
+
+
+</td><td>
+
+([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\]
+
+
+</td><td>
+
+_(Optional)_ Voters that help make the authorization decision
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ sequence(sequenceClass: Constructor<SequenceHandler>): Binding<SequenceHandler>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  sequenceClass | [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt; | The sequence class to invoke for each incoming request. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+sequenceClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt;
+
+
+</td><td>
+
+The sequence class to invoke for each incoming request.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

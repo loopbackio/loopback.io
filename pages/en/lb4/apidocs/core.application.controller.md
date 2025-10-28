@@ -23,10 +23,55 @@ controller<T>(controllerCtor: ControllerClass<T>, nameOrOptions?: string | Bindi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  controllerCtor | [ControllerClass](./core.controllerclass.md)<!-- -->&lt;T&gt; | The controller class (constructor function). |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+controllerCtor
+
+
+</td><td>
+
+[ControllerClass](./core.controllerclass.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+The controller class (constructor function).
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

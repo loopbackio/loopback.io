@@ -21,10 +21,84 @@ export interface ApiExplorerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [disabled?](./rest.apiexploreroptions.disabled.md) |  | true | _(Optional)_ Set this flag to disable the built-in redirect to externally hosted API Explorer UI. |
-|  [httpUrl?](./rest.apiexploreroptions.httpurl.md) |  | string | _(Optional)_ URL for the API explorer served over <code>http</code> protocol to deal with mixed content security imposed by browsers as the spec is exposed over <code>http</code> by default. See https://github.com/loopbackio/loopback-next/issues/1603 |
-|  [url?](./rest.apiexploreroptions.url.md) |  | string | _(Optional)_ URL for the hosted API explorer UI default to https://loopback.io/api-explorer |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[disabled?](./rest.apiexploreroptions.disabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+true
+
+
+</td><td>
+
+_(Optional)_ Set this flag to disable the built-in redirect to externally hosted API Explorer UI.
+
+
+</td></tr>
+<tr><td>
+
+[httpUrl?](./rest.apiexploreroptions.httpurl.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ URL for the API explorer served over `http` protocol to deal with mixed content security imposed by browsers as the spec is exposed over `http` by default. See https://github.com/loopbackio/loopback-next/issues/1603
+
+
+</td></tr>
+<tr><td>
+
+[url?](./rest.apiexploreroptions.url.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ URL for the hosted API explorer UI default to https://loopback.io/api-explorer
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -30,21 +30,133 @@ export declare class AuthenticationStrategyProvider implements Provider<Authenti
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(authenticationStrategies, metadata)](./authentication.authenticationstrategyprovider._constructor_.md) |  | Constructs a new instance of the <code>AuthenticationStrategyProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(authenticationStrategies, metadata)](./authentication.authenticationstrategyprovider._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AuthenticationStrategyProvider` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [authenticationStrategies](./authentication.authenticationstrategyprovider.authenticationstrategies.md) | <code>protected</code> | Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt; |  |
-|  [metadata?](./authentication.authenticationstrategyprovider.metadata.md) | <code>protected</code> | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authenticationStrategies](./authentication.authenticationstrategyprovider.authenticationstrategies.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[metadata?](./authentication.authenticationstrategyprovider.metadata.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [value()](./authentication.authenticationstrategyprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[value()](./authentication.authenticationstrategyprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

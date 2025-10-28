@@ -26,9 +26,39 @@ registerApiDefinitions(defs: SchemasObject): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  defs | SchemasObject | Schemas |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+defs
+
+
+</td><td>
+
+SchemasObject
+
+
+</td><td>
+
+Schemas
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

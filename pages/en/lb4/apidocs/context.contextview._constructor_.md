@@ -23,11 +23,86 @@ constructor(context: Context, filter: BindingFilter, comparator?: BindingCompara
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) | Context object to watch |
-|  filter | [BindingFilter](./context.bindingfilter.md) | Binding filter to match bindings of interest |
-|  comparator | [BindingComparator](./context.bindingcomparator.md) \| undefined | _(Optional)_ Comparator to sort the matched bindings |
-|  resolutionOptions | Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object to watch
+
+
+</td></tr>
+<tr><td>
+
+filter
+
+
+</td><td>
+
+[BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+Binding filter to match bindings of interest
+
+
+</td></tr>
+<tr><td>
+
+comparator
+
+
+</td><td>
+
+[BindingComparator](./context.bindingcomparator.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_ Comparator to sort the matched bindings
+
+
+</td></tr>
+<tr><td>
+
+resolutionOptions
+
+
+</td><td>
+
+Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

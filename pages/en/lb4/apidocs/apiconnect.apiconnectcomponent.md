@@ -22,8 +22,44 @@ export declare class ApiConnectComponent implements Component
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings](./apiconnect.apiconnectcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings](./apiconnect.apiconnectcomponent.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

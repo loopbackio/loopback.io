@@ -23,9 +23,39 @@ export declare function createPooledBindingFactory<T extends object>(bindingAddr
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindingAddress | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding address |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindingAddress
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Binding address
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

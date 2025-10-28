@@ -23,10 +23,64 @@ constructor(context: JSONObject, binding: JSONObject, level: number);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [JSONObject](./context.jsonobject.md) |  |
-|  binding | [JSONObject](./context.jsonobject.md) |  |
-|  level | number |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[JSONObject](./context.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+binding
+
+
+</td><td>
+
+[JSONObject](./context.jsonobject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+level
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

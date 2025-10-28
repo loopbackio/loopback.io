@@ -23,9 +23,39 @@ apply(...templateFns: BindingTemplate<T>[]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  templateFns | [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;\[\] | One or more functions to configure the binding |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+templateFns
+
+
+</td><td>
+
+[BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;\[\]
+
+
+</td><td>
+
+One or more functions to configure the binding
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

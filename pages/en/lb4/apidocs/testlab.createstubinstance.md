@@ -27,9 +27,39 @@ export declare function createStubInstance<TType extends object>(constructor: si
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  constructor | sinon.StubbableType&lt;TType&gt; | Object or class to stub. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+constructor
+
+
+</td><td>
+
+sinon.StubbableType&lt;TType&gt;
+
+
+</td><td>
+
+Object or class to stub.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

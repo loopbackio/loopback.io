@@ -17,50 +17,328 @@ permalink: /doc/en/lb4/apidocs.graphql.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [GraphQLComponent](./graphql.graphqlcomponent.md) | Component for GraphQL |
-|  [GraphQLResolutionContext](./graphql.graphqlresolutioncontext.md) | Context for graphql resolver resolution |
-|  [GraphQLServer](./graphql.graphqlserver.md) | GraphQL Server |
-|  [LoopBackContainer](./graphql.loopbackcontainer.md) | Implementation of <code>ContainerType</code> to plug into <code>type-graphql</code> as the IoC container |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GraphQLComponent](./graphql.graphqlcomponent.md)
+
+
+</td><td>
+
+Component for GraphQL
+
+
+</td></tr>
+<tr><td>
+
+[GraphQLResolutionContext](./graphql.graphqlresolutioncontext.md)
+
+
+</td><td>
+
+Context for graphql resolver resolution
+
+
+</td></tr>
+<tr><td>
+
+[GraphQLServer](./graphql.graphqlserver.md)
+
+
+</td><td>
+
+GraphQL Server
+
+
+</td></tr>
+<tr><td>
+
+[LoopBackContainer](./graphql.loopbackcontainer.md)
+
+
+</td><td>
+
+Implementation of `ContainerType` to plug into `type-graphql` as the IoC container
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [registerResolver(ctx, resolverClass, nameOrOptions)](./graphql.registerresolver.md) | Register a GraphQL resolver class |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[registerResolver(ctx, resolverClass, nameOrOptions)](./graphql.registerresolver.md)
+
+
+</td><td>
+
+Register a GraphQL resolver class
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [GraphQLComponentOptions](./graphql.graphqlcomponentoptions.md) | Options for GraphQL component |
-|  [GraphQLServerOptions](./graphql.graphqlserveroptions.md) | Options for GraphQL server |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GraphQLComponentOptions](./graphql.graphqlcomponentoptions.md)
+
+
+</td><td>
+
+Options for GraphQL component
+
+
+</td></tr>
+<tr><td>
+
+[GraphQLServerOptions](./graphql.graphqlserveroptions.md)
+
+
+</td><td>
+
+Options for GraphQL server
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [GraphQLBindings](./graphql.graphqlbindings.md) | Namespace for GraphQL related bindings |
-|  [GraphQLTags](./graphql.graphqltags.md) | Namespace for GraphQL related tags |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GraphQLBindings](./graphql.graphqlbindings.md)
+
+
+</td><td>
+
+Namespace for GraphQL related bindings
+
+
+</td></tr>
+<tr><td>
+
+[GraphQLTags](./graphql.graphqltags.md)
+
+
+</td><td>
+
+Namespace for GraphQL related tags
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [arg](./graphql.arg.md) | Re-exporting type-graphql decorators as lower case versions for two purposes: - To be consistent with LoopBack's naming convention of decorators - Allow future possibility to add extra metadata in addition to type-graphql's behavior, for example, mapping to LoopBack model properties |
-|  [args](./graphql.args.md) |  |
-|  [argsType](./graphql.argstype.md) |  |
-|  [authorized](./graphql.authorized.md) |  |
-|  [field](./graphql.field.md) |  |
-|  [fieldResolver](./graphql.fieldresolver.md) |  |
-|  [inputType](./graphql.inputtype.md) |  |
-|  [mutation](./graphql.mutation.md) |  |
-|  [objectType](./graphql.objecttype.md) |  |
-|  [pubSub](./graphql.pubsub.md) |  |
-|  [query](./graphql.query.md) |  |
-|  [resolver](./graphql.resolver.md) |  |
-|  [root](./graphql.root.md) |  |
-|  [subscription](./graphql.subscription.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[arg](./graphql.arg.md)
+
+
+</td><td>
+
+Re-exporting type-graphql decorators as lower case versions for two purposes: - To be consistent with LoopBack's naming convention of decorators - Allow future possibility to add extra metadata in addition to type-graphql's behavior, for example, mapping to LoopBack model properties
+
+
+</td></tr>
+<tr><td>
+
+[args](./graphql.args.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[argsType](./graphql.argstype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[authorized](./graphql.authorized.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[field](./graphql.field.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[fieldResolver](./graphql.fieldresolver.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[inputType](./graphql.inputtype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mutation](./graphql.mutation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[objectType](./graphql.objecttype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[pubSub](./graphql.pubsub.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[query](./graphql.query.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[resolver](./graphql.resolver.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[root](./graphql.root.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[subscription](./graphql.subscription.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[GraphQLWsContextResolver](./graphql.graphqlwscontextresolver.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

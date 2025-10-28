@@ -23,9 +23,39 @@ protected setState(state: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  state | string | The new state |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+state
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The new state
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

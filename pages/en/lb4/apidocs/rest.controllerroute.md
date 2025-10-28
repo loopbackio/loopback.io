@@ -24,25 +24,201 @@ export declare class ControllerRoute<T extends object> extends BaseRoute
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.controllerroute._constructor_.md) |  | Construct a controller based route |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.controllerroute._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Construct a controller based route
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_controllerCtor](./rest.controllerroute._controllerctor.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
-|  [\_controllerFactory](./rest.controllerroute._controllerfactory.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; |  |
-|  [\_controllerName](./rest.controllerroute._controllername.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string |  |
-|  [\_methodName](./rest.controllerroute._methodname.md) | <p><code>protected</code></p><p><code>readonly</code></p> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_controllerCtor](./rest.controllerroute._controllerctor.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_controllerFactory](./rest.controllerroute._controllerfactory.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_controllerName](./rest.controllerroute._controllername.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[\_methodName](./rest.controllerroute._methodname.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [describe()](./rest.controllerroute.describe.md) |  |  |
-|  [invokeHandler(requestContext, args)](./rest.controllerroute.invokehandler.md) |  |  |
-|  [updateBindings(requestContext)](./rest.controllerroute.updatebindings.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describe()](./rest.controllerroute.describe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invokeHandler(requestContext, args)](./rest.controllerroute.invokehandler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[updateBindings(requestContext)](./rest.controllerroute.updatebindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

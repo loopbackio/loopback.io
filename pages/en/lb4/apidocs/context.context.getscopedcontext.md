@@ -23,9 +23,39 @@ getScopedContext(scope: BindingScope.APPLICATION | BindingScope.SERVER | Binding
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  scope | [BindingScope.APPLICATION](./context.bindingscope.md) \| [BindingScope.SERVER](./context.bindingscope.md) \| [BindingScope.REQUEST](./context.bindingscope.md) | Binding scope |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+scope
+
+
+</td><td>
+
+[BindingScope.APPLICATION](./context.bindingscope.md) \| [BindingScope.SERVER](./context.bindingscope.md) \| [BindingScope.REQUEST](./context.bindingscope.md)
+
+
+</td><td>
+
+Binding scope
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

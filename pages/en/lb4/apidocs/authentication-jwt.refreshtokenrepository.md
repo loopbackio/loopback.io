@@ -22,8 +22,36 @@ export declare class RefreshTokenRepository extends DefaultCrudRepository<Refres
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(dataSource)](./authentication-jwt.refreshtokenrepository._constructor_.md) |  | Constructs a new instance of the <code>RefreshTokenRepository</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(dataSource)](./authentication-jwt.refreshtokenrepository._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RefreshTokenRepository` class
+
+
+</td></tr>
+</tbody></table>
 
 

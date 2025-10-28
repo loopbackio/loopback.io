@@ -23,8 +23,38 @@ constructor(namespace?: string | undefined);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  namespace | string \| undefined | _(Optional)_ Namespace to bind this reflect context |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+namespace
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+_(Optional)_ Namespace to bind this reflect context
+
+
+</td></tr>
+</tbody></table>
 
 

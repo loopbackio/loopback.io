@@ -23,10 +23,55 @@ exportOpenApiSpec(outFile?: string, log?: (message?: any, ...optionalParams: any
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  outFile | string | _(Optional)_ File name for the spec. The extension of the file determines the format of the file. - <code>yaml</code> or <code>yml</code>: YAML - <code>json</code> or other: JSON If the outFile is not provided or its value is <code>''</code> or <code>'-'</code>, the spec is written to the console using the <code>log</code> function. |
-|  log | (message?: any, ...optionalParams: any\[\]) =&gt; void | _(Optional)_ Log function, default to <code>console.log</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+outFile
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ File name for the spec. The extension of the file determines the format of the file. - `yaml` or `yml`<!-- -->: YAML - `json` or other: JSON If the outFile is not provided or its value is `''` or `'-'`<!-- -->, the spec is written to the console using the `log` function.
+
+
+</td></tr>
+<tr><td>
+
+log
+
+
+</td><td>
+
+(message?: any, ...optionalParams: any\[\]) =&gt; void
+
+
+</td><td>
+
+_(Optional)_ Log function, default to `console.log`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

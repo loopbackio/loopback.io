@@ -21,25 +21,135 @@ A package used by LoopBack 4 for creating HTTP / HTTPS server.
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [HttpServer](./http-server.httpserver.md) | HTTP / HTTPS server used by LoopBack's RestServer |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HttpServer](./http-server.httpserver.md)
+
+
+</td><td>
+
+HTTP / HTTPS server used by LoopBack's RestServer
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [BaseHttpOptions](./http-server.basehttpoptions.md) | Base options that are common to http and https servers |
-|  [HttpOptions](./http-server.httpoptions.md) | HTTP server options |
-|  [HttpsOptions](./http-server.httpsoptions.md) | HTTPS server options |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BaseHttpOptions](./http-server.basehttpoptions.md)
+
+
+</td><td>
+
+Base options that are common to http and https servers
+
+
+</td></tr>
+<tr><td>
+
+[HttpOptions](./http-server.httpoptions.md)
+
+
+</td><td>
+
+HTTP server options
+
+
+</td></tr>
+<tr><td>
+
+[HttpsOptions](./http-server.httpsoptions.md)
+
+
+</td><td>
+
+HTTPS server options
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [HttpProtocol](./http-server.httpprotocol.md) | Supported protocols |
-|  [HttpServerOptions](./http-server.httpserveroptions.md) | Possible server options |
-|  [HttpServerProperties](./http-server.httpserverproperties.md) | The following are for configuring properties which are directly set on https://nodejs.org/api/http.html\#http\_class\_http\_server and https://nodejs.org/api/net.html\#net\_class\_net\_server |
-|  [RequestListener](./http-server.requestlistener.md) | Request listener function for http/https requests |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[HttpProtocol](./http-server.httpprotocol.md)
+
+
+</td><td>
+
+Supported protocols
+
+
+</td></tr>
+<tr><td>
+
+[HttpServerOptions](./http-server.httpserveroptions.md)
+
+
+</td><td>
+
+Possible server options
+
+
+</td></tr>
+<tr><td>
+
+[HttpServerProperties](./http-server.httpserverproperties.md)
+
+
+</td><td>
+
+The following are for configuring properties which are directly set on https://nodejs.org/api/http.html\#http\_class\_http\_server and https://nodejs.org/api/net.html\#net\_class\_net\_server
+
+
+</td></tr>
+<tr><td>
+
+[RequestListener](./http-server.requestlistener.md)
+
+
+</td><td>
+
+Request listener function for http/https requests
+
+
+</td></tr>
+</tbody></table>
 
 

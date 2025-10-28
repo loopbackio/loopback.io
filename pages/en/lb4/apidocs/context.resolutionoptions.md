@@ -23,10 +23,84 @@ export interface ResolutionOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [asProxyWithInterceptors?](./context.resolutionoptions.asproxywithinterceptors.md) |  | boolean | _(Optional)_ A boolean flag to control if a proxy should be created to apply interceptors for the resolved value. It's only honored for bindings backed by a class. |
-|  [optional?](./context.resolutionoptions.optional.md) |  | boolean | _(Optional)_ A boolean flag to indicate if the dependency is optional. If it's set to <code>true</code> and the binding is not bound in a context, the resolution will return <code>undefined</code> instead of throwing an error. |
-|  [session?](./context.resolutionoptions.session.md) |  | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ A session to track bindings and injections |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asProxyWithInterceptors?](./context.resolutionoptions.asproxywithinterceptors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A boolean flag to control if a proxy should be created to apply interceptors for the resolved value. It's only honored for bindings backed by a class.
+
+
+</td></tr>
+<tr><td>
+
+[optional?](./context.resolutionoptions.optional.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A boolean flag to indicate if the dependency is optional. If it's set to `true` and the binding is not bound in a context, the resolution will return `undefined` instead of throwing an error.
+
+
+</td></tr>
+<tr><td>
+
+[session?](./context.resolutionoptions.session.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ A session to track bindings and injections
+
+
+</td></tr>
+</tbody></table>
 
 

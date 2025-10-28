@@ -21,10 +21,78 @@ export interface HandlerContextStub
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [request](./testlab.handlercontextstub.request.md) |  | IncomingMessage |  |
-|  [response](./testlab.handlercontextstub.response.md) |  | ServerResponse |  |
-|  [result](./testlab.handlercontextstub.result.md) |  | Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[request](./testlab.handlercontextstub.request.md)
+
+
+</td><td>
+
+
+</td><td>
+
+IncomingMessage
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[response](./testlab.handlercontextstub.response.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ServerResponse
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[result](./testlab.handlercontextstub.result.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Promise&lt;[ObservedResponse](./testlab.observedresponse.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

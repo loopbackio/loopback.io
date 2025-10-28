@@ -27,10 +27,55 @@ getter: (bindingSelector: BindingSelector<unknown>, metadata?: InjectionMetadata
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindingSelector | [BindingSelector](./context.bindingselector.md)<!-- -->&lt;unknown&gt; | The binding key or filter we want to eventually get value(s) from. |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional metadata to help the injection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindingSelector
+
+
+</td><td>
+
+[BindingSelector](./context.bindingselector.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+The binding key or filter we want to eventually get value(s) from.
+
+
+</td></tr>
+<tr><td>
+
+metadata
+
+
+</td><td>
+
+[InjectionMetadata](./context.injectionmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Optional metadata to help the injection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

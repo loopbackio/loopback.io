@@ -24,14 +24,80 @@ export declare class ResolutionError extends Error
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(message, resolutionCtx)](./context.resolutionerror._constructor_.md) |  | Constructs a new instance of the <code>ResolutionError</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(message, resolutionCtx)](./context.resolutionerror._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ResolutionError` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [resolutionCtx](./context.resolutionerror.resolutionctx.md) | <code>readonly</code> | Partial&lt;[ResolutionContext](./context.resolutioncontext.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[resolutionCtx](./context.resolutionerror.resolutionctx.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Partial&lt;[ResolutionContext](./context.resolutioncontext.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

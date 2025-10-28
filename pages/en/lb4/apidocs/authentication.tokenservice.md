@@ -23,10 +23,50 @@ export interface TokenService
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [generateToken(userProfile)](./authentication.tokenservice.generatetoken.md) | Generates a token string based on a user profile |
-|  [revokeToken(token)?](./authentication.tokenservice.revoketoken.md) | _(Optional)_ Revokes a given token (if supported by token system) |
-|  [verifyToken(token)](./authentication.tokenservice.verifytoken.md) | Verifies the validity of a token string and returns a user profile |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[generateToken(userProfile)](./authentication.tokenservice.generatetoken.md)
+
+
+</td><td>
+
+Generates a token string based on a user profile
+
+
+</td></tr>
+<tr><td>
+
+[revokeToken(token)?](./authentication.tokenservice.revoketoken.md)
+
+
+</td><td>
+
+_(Optional)_ Revokes a given token (if supported by token system)
+
+
+</td></tr>
+<tr><td>
+
+[verifyToken(token)](./authentication.tokenservice.verifytoken.md)
+
+
+</td><td>
+
+Verifies the validity of a token string and returns a user profile
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,54 @@ constructor(parsers?: BodyParser[], ctx?: Context | undefined);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parsers | [BodyParser](./rest.bodyparser.md)<!-- -->\[\] | _(Optional)_ |
-|  ctx | [Context](./context.context.md) \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parsers
+
+
+</td><td>
+
+[BodyParser](./rest.bodyparser.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

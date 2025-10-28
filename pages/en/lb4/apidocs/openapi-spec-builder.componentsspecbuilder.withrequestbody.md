@@ -23,10 +23,55 @@ withRequestBody(name: string, requestBody: RequestBodyObject | ReferenceObject):
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the request body |
-|  requestBody | RequestBodyObject \| ReferenceObject | Specification of the request body |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the request body
+
+
+</td></tr>
+<tr><td>
+
+requestBody
+
+
+</td><td>
+
+RequestBodyObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the request body
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,37 @@ getServer<T extends Server>(target: Constructor<T> | string): Promise<T>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| string |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -22,24 +22,188 @@ export declare class DefaultSocketIoSequence implements SocketIoSequence
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, controller, invoke, send, reject)](./socketio.defaultsocketiosequence._constructor_.md) |  | Constructs a new instance of the <code>DefaultSocketIoSequence</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context, controller, invoke, send, reject)](./socketio.defaultsocketiosequence._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `DefaultSocketIoSequence` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./socketio.defaultsocketiosequence.context.md) | <code>protected</code> | [Context](./context.context.md) |  |
-|  [controller](./socketio.defaultsocketiosequence.controller.md) | <code>protected</code> | [ControllerClass](./core.controllerclass.md) |  |
-|  [invoke](./socketio.defaultsocketiosequence.invoke.md) | <code>protected</code> | [SocketIoInvokeMethod](./socketio.socketioinvokemethod.md) |  |
-|  [reject](./socketio.defaultsocketiosequence.reject.md) | <code>protected</code> | [SocketIoRejectMethod](./socketio.socketiorejectmethod.md) |  |
-|  [send](./socketio.defaultsocketiosequence.send.md) | <code>protected</code> | [SocketIoSendMethod](./socketio.socketiosendmethod.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./socketio.defaultsocketiosequence.context.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[controller](./socketio.defaultsocketiosequence.controller.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[ControllerClass](./core.controllerclass.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invoke](./socketio.defaultsocketiosequence.invoke.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[SocketIoInvokeMethod](./socketio.socketioinvokemethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[reject](./socketio.defaultsocketiosequence.reject.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[SocketIoRejectMethod](./socketio.socketiorejectmethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[send](./socketio.defaultsocketiosequence.send.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[SocketIoSendMethod](./socketio.socketiosendmethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [handle(methodName, args, done)](./socketio.defaultsocketiosequence.handle.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(methodName, args, done)](./socketio.defaultsocketiosequence.handle.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

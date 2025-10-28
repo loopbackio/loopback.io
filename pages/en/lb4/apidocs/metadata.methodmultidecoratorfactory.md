@@ -41,9 +41,50 @@ The factory creates and updates an array of items T\[\], and the getter provides
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [mergeWithInherited(inheritedMetadata, target, methodName)](./metadata.methodmultidecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodmultidecoratorfactory.mergewithown.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[mergeWithInherited(inheritedMetadata, target, methodName)](./metadata.methodmultidecoratorfactory.mergewithinherited.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodmultidecoratorfactory.mergewithown.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

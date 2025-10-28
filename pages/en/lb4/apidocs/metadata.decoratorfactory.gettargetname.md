@@ -23,11 +23,71 @@ static getTargetName(target: Object, member?: string | symbol, descriptorOrIndex
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | Class or prototype of a class |
-|  member | string \| symbol | _(Optional)_ Optional property/method name |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional method descriptor or parameter index |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class or prototype of a class
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+_(Optional)_ Optional property/method name
+
+
+</td></tr>
+<tr><td>
+
+descriptorOrIndex
+
+
+</td><td>
+
+TypedPropertyDescriptor&lt;any&gt; \| number
+
+
+</td><td>
+
+_(Optional)_ Optional method descriptor or parameter index
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

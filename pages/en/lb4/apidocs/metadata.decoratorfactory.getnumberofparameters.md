@@ -23,10 +23,55 @@ static getNumberOfParameters(target: Object, member?: string): number;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | Class or the prototype |
-|  member | string | _(Optional)_ Method name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class or the prototype
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Method name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

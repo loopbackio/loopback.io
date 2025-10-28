@@ -23,11 +23,71 @@ withOperation(verb: string, path: string, spec: OperationObject | OperationSpecB
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | The HTTP verb. |
-|  path | string | The path relative to basePath. |
-|  spec | OperationObject \| [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md) | Additional specification of the operation. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The HTTP verb.
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path relative to basePath.
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject \| [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md)
+
+
+</td><td>
+
+Additional specification of the operation.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

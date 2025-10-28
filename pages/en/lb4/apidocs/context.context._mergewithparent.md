@@ -21,10 +21,53 @@ protected _mergeWithParent<ValueType>(childList: Readonly<Binding<ValueType>>[],
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  childList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] |  |
-|  parentList | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\] | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+childList
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+parentList
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

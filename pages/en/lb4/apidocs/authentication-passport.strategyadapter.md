@@ -24,20 +24,114 @@ export declare class StrategyAdapter<U> implements AuthenticationStrategy
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(strategy, name, userProfileFactory)](./authentication-passport.strategyadapter._constructor_.md) |  | Constructs a new instance of the <code>StrategyAdapter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(strategy, name, userProfileFactory)](./authentication-passport.strategyadapter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `StrategyAdapter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./authentication-passport.strategyadapter.name.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./authentication-passport.strategyadapter.name.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [authenticate(request, options)](./authentication-passport.strategyadapter.authenticate.md) |  | The function to invoke the contained passport strategy. 1. Create an instance of the strategy 2. add success and failure state handlers 3. authenticate using the strategy |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authenticate(request, options)](./authentication-passport.strategyadapter.authenticate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The function to invoke the contained passport strategy. 1. Create an instance of the strategy 2. add success and failure state handlers 3. authenticate using the strategy
+
+
+</td></tr>
+</tbody></table>
 
 

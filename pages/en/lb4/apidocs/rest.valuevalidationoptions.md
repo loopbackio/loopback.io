@@ -24,9 +24,65 @@ export interface ValueValidationOptions extends ValidationOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name?](./rest.valuevalidationoptions.name.md) |  | string | _(Optional)_ Parameter name, as provided in <code>ParameterObject#name</code> property. |
-|  [source?](./rest.valuevalidationoptions.source.md) |  | string | _(Optional)_ Where the data comes from. It can be 'body', 'path', 'header', 'query', 'cookie', etc... |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name?](./rest.valuevalidationoptions.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Parameter name, as provided in `ParameterObject#name` property.
+
+
+</td></tr>
+<tr><td>
+
+[source?](./rest.valuevalidationoptions.source.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Where the data comes from. It can be 'body', 'path', 'header', 'query', 'cookie', etc...
+
+
+</td></tr>
+</tbody></table>
 
 

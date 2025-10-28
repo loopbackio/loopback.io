@@ -30,9 +30,39 @@ protected excludeHiddenProps(entity: T & Relations): T & Relations;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  entity | T &amp; Relations | normalized entity. You can use <code>entity.toJSON()</code>'s value |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+entity
+
+
+</td><td>
+
+T &amp; Relations
+
+
+</td><td>
+
+normalized entity. You can use `entity.toJSON()`<!-- -->'s value
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

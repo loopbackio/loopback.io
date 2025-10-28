@@ -23,8 +23,38 @@ constructor(f?: Filter<MT>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  f | [Filter](./filter.filter.md)<!-- -->&lt;MT&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+f
+
+
+</td><td>
+
+[Filter](./filter.filter.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

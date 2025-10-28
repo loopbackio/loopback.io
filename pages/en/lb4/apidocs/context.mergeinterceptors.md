@@ -27,10 +27,55 @@ export declare function mergeInterceptors(interceptorsFromSpec: InterceptorOrKey
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  interceptorsFromSpec | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | Interceptors from <code>@intercept</code> |
-|  existingInterceptors | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | Interceptors already applied for the method |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+interceptorsFromSpec
+
+
+</td><td>
+
+[InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
+
+
+</td><td>
+
+Interceptors from `@intercept`
+
+
+</td></tr>
+<tr><td>
+
+existingInterceptors
+
+
+</td><td>
+
+[InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
+
+
+</td><td>
+
+Interceptors already applied for the method
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

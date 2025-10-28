@@ -25,9 +25,37 @@ function provider(...specs: BindingSpec[]): (target: Constructor<unknown>) => vo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+specs
+
+
+</td><td>
+
+[BindingSpec](./context.bindingspec.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

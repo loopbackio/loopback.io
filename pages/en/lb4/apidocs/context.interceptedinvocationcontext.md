@@ -24,9 +24,50 @@ export declare class InterceptedInvocationContext extends InvocationContext
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getGlobalInterceptorBindingKeys()](./context.interceptedinvocationcontext.getglobalinterceptorbindingkeys.md) |  | Discover all binding keys for global interceptors (tagged by ContextTags.GLOBAL\_INTERCEPTOR) |
-|  [loadInterceptors()](./context.interceptedinvocationcontext.loadinterceptors.md) |  | Load all interceptors for the given invocation context. It adds interceptors from possibly three sources: 1. method level <code>@intercept</code> 2. class level <code>@intercept</code> 3. global interceptors discovered in the context |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getGlobalInterceptorBindingKeys()](./context.interceptedinvocationcontext.getglobalinterceptorbindingkeys.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Discover all binding keys for global interceptors (tagged by ContextTags.GLOBAL\_INTERCEPTOR)
+
+
+</td></tr>
+<tr><td>
+
+[loadInterceptors()](./context.interceptedinvocationcontext.loadinterceptors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Load all interceptors for the given invocation context. It adds interceptors from possibly three sources: 1. method level `@intercept` 2. class level `@intercept` 3. global interceptors discovered in the context
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,10 +23,55 @@ exists<K extends KeyOf<MT>>(key: K, val?: boolean): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | K | Property name |
-|  val | boolean | _(Optional)_ Exists or not |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+K
+
+
+</td><td>
+
+Property name
+
+
+</td></tr>
+<tr><td>
+
+val
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Exists or not
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

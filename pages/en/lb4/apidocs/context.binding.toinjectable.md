@@ -25,9 +25,39 @@ toInjectable(ctor: DynamicValueProviderClass<T> | Constructor<T | Provider<T>>):
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctor | [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; | A class decorated with <code>@injectable</code>. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctor
+
+
+</td><td>
+
+[DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt;
+
+
+</td><td>
+
+A class decorated with `@injectable`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

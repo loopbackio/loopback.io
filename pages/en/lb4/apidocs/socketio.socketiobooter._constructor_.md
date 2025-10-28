@@ -23,11 +23,78 @@ constructor(app: Application, projectRoot: string, socketioControllerConfig: Art
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  app | [Application](./core.application.md) |  |
-|  projectRoot | string |  |
-|  socketioControllerConfig | ArtifactOptions |  |
-|  socketioServer | [SocketIoServer](./socketio.socketioserver.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+app
+
+
+</td><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+projectRoot
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+socketioControllerConfig
+
+
+</td><td>
+
+ArtifactOptions
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+socketioServer
+
+
+</td><td>
+
+[SocketIoServer](./socketio.socketioserver.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

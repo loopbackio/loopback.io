@@ -23,10 +23,55 @@ service<S>(cls: ServiceOrProviderClass<S>, nameOrOptions?: string | ServiceOptio
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  cls | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt; | The service or provider class |
-|  nameOrOptions | string \| [ServiceOptions](./core.serviceoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+cls
+
+
+</td><td>
+
+[ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt;
+
+
+</td><td>
+
+The service or provider class
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [ServiceOptions](./core.serviceoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

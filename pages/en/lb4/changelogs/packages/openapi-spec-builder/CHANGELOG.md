@@ -13,6 +13,80 @@ permalink: /doc/en/lb4/changelog.openapi-spec-builder.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@8.0.3...@loopback/openapi-spec-builder@8.0.4) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+## [8.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@8.0.2...@loopback/openapi-spec-builder@8.0.3) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+## [8.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@8.0.1...@loopback/openapi-spec-builder@8.0.2) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+## [8.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@8.0.0...@loopback/openapi-spec-builder@8.0.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+# [8.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@7.0.13...@loopback/openapi-spec-builder@8.0.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [7.0.13](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@7.0.12...@loopback/openapi-spec-builder@7.0.13) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+## [7.0.12](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@7.0.11...@loopback/openapi-spec-builder@7.0.12) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
+## [7.0.11](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@7.0.10...@loopback/openapi-spec-builder@7.0.11) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/openapi-spec-builder
+
+
+
+
+
 ## [7.0.10](https://github.com/loopbackio/loopback-next/compare/@loopback/openapi-spec-builder@7.0.9...@loopback/openapi-spec-builder@7.0.10) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/openapi-spec-builder

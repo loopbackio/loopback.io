@@ -21,9 +21,35 @@ export declare namespace MockTestOauth2SocialApp
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [startMock](./mock-oauth2-provider.mocktestoauth2socialapp.startmock.md) |  |
-|  [stopMock](./mock-oauth2-provider.mocktestoauth2socialapp.stopmock.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[startMock](./mock-oauth2-provider.mocktestoauth2socialapp.startmock.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stopMock](./mock-oauth2-provider.mocktestoauth2socialapp.stopmock.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

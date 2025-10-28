@@ -23,9 +23,39 @@ export interface RefreshTokenService
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [generateToken(userProfile, token)](./authentication-jwt.refreshtokenservice.generatetoken.md) | Generate a refresh token, bind it with the given user profile + access token, then store them in backend. |
-|  [refreshToken(refreshToken)](./authentication-jwt.refreshtokenservice.refreshtoken.md) | Refresh the access token bound with the given refresh token. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[generateToken(userProfile, token)](./authentication-jwt.refreshtokenservice.generatetoken.md)
+
+
+</td><td>
+
+Generate a refresh token, bind it with the given user profile + access token, then store them in backend.
+
+
+</td></tr>
+<tr><td>
+
+[refreshToken(refreshToken)](./authentication-jwt.refreshtokenservice.refreshtoken.md)
+
+
+</td><td>
+
+Refresh the access token bound with the given refresh token.
+
+
+</td></tr>
+</tbody></table>
 
 

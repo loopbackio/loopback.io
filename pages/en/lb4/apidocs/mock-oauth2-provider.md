@@ -17,26 +17,104 @@ permalink: /doc/en/lb4/apidocs.mock-oauth2-provider.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [UserRepository](./mock-oauth2-provider.userrepository.md) | Repository to store and access user objects |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[UserRepository](./mock-oauth2-provider.userrepository.md)
+
+
+</td><td>
+
+Repository to store and access user objects
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [MyUser](./mock-oauth2-provider.myuser.md) | A simple User model |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MyUser](./mock-oauth2-provider.myuser.md)
+
+
+</td><td>
+
+A simple User model
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [MockTestOauth2SocialApp](./mock-oauth2-provider.mocktestoauth2socialapp.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MockTestOauth2SocialApp](./mock-oauth2-provider.mocktestoauth2socialapp.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [userRepository](./mock-oauth2-provider.userrepository.md) | Sample data to mock existing registered users new users can be registered with the repository functions |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[userRepository](./mock-oauth2-provider.userrepository.md)
+
+
+</td><td>
+
+Sample data to mock existing registered users new users can be registered with the repository functions
+
+
+</td></tr>
+</tbody></table>
 
 

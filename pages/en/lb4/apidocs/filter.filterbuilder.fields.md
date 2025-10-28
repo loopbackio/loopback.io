@@ -23,9 +23,39 @@ fields(...f: (Fields<MT> | Extract<keyof MT, string>)[]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  f | ([Fields](./filter.fields.md)<!-- -->&lt;MT&gt; \| Extract&lt;keyof MT, string&gt;)\[\] | A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+f
+
+
+</td><td>
+
+([Fields](./filter.fields.md)<!-- -->&lt;MT&gt; \| Extract&lt;keyof MT, string&gt;)\[\]
+
+
+</td><td>
+
+A field name to be included, an array of field names to be included, or an Fields object for the inclusion/exclusion
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

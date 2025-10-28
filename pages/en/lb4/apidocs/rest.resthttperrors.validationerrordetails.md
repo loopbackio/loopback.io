@@ -23,11 +23,103 @@ interface ValidationErrorDetails
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [code](./rest.resthttperrors.validationerrordetails.code.md) |  | string | A single word code represents the error's type. |
-|  [info](./rest.resthttperrors.validationerrordetails.info.md) |  | object | Some additional details that the 3 attributes above don't cover. |
-|  [message](./rest.resthttperrors.validationerrordetails.message.md) |  | string | A human readable description of the error. |
-|  [path](./rest.resthttperrors.validationerrordetails.path.md) |  | string | A path to the invalid field. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[code](./rest.resthttperrors.validationerrordetails.code.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A single word code represents the error's type.
+
+
+</td></tr>
+<tr><td>
+
+[info](./rest.resthttperrors.validationerrordetails.info.md)
+
+
+</td><td>
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+Some additional details that the 3 attributes above don't cover.
+
+
+</td></tr>
+<tr><td>
+
+[message](./rest.resthttperrors.validationerrordetails.message.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A human readable description of the error.
+
+
+</td></tr>
+<tr><td>
+
+[path](./rest.resthttperrors.validationerrordetails.path.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A path to the invalid field.
+
+
+</td></tr>
+</tbody></table>
 
 

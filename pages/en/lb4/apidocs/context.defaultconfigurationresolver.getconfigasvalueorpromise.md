@@ -21,11 +21,69 @@ getConfigAsValueOrPromise<ConfigValueType>(key: BindingAddress<unknown>, propert
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;unknown&gt; |  |
-|  propertyPath | string | _(Optional)_ |
-|  resolutionOptions | [ResolutionOptions](./context.resolutionoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+propertyPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+resolutionOptions
+
+
+</td><td>
+
+[ResolutionOptions](./context.resolutionoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

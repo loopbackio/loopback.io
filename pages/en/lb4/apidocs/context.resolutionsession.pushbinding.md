@@ -23,9 +23,39 @@ pushBinding(binding: Readonly<Binding>): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | Binding |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+binding
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;
+
+
+</td><td>
+
+Binding
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

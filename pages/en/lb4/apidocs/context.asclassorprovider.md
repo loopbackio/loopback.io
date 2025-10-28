@@ -23,9 +23,39 @@ export declare function asClassOrProvider<T>(target: Constructor<T | Provider<T>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; | Target class, which can be an implementation of <code>Provider</code> or <code>DynamicValueProviderClass</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Target class, which can be an implementation of `Provider` or `DynamicValueProviderClass`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

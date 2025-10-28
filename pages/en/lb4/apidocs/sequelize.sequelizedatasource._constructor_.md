@@ -23,8 +23,36 @@ constructor(config: SequelizeDataSourceConfig);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  config | [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+config
+
+
+</td><td>
+
+[SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

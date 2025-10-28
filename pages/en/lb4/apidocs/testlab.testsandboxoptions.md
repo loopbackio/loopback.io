@@ -23,8 +23,48 @@ export interface TestSandboxOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [subdir](./testlab.testsandboxoptions.subdir.md) |  | boolean \| string | <p>The <code>subdir</code> controls if/how the sandbox creates a subdirectory under the root path. It has one of the following values:</p><p>- <code>true</code>: Creates a unique subdirectory. This will be the default behavior. - <code>false</code>: Uses the root path as the target directory without creating a subdirectory. - a string such as <code>sub-dir-1</code>: creates a subdirectory with the given value.</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[subdir](./testlab.testsandboxoptions.subdir.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean \| string
+
+
+</td><td>
+
+The `subdir` controls if/how the sandbox creates a subdirectory under the root path. It has one of the following values:
+
+- `true`<!-- -->: Creates a unique subdirectory. This will be the default behavior. - `false`<!-- -->: Uses the root path as the target directory without creating a subdirectory. - a string such as `sub-dir-1`<!-- -->: creates a subdirectory with the given value.
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ export declare function getContentType(req: Request): string | undefined;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  req | Request | Http request |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+req
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+Http request
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

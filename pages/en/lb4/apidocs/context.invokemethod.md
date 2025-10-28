@@ -23,13 +23,103 @@ export declare function invokeMethod(target: object, method: string, ctx: Contex
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | object | Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method |
-|  method | string | Name of the method |
-|  ctx | [Context](./context.context.md) | Context object |
-|  nonInjectedArgs | [InvocationArgs](./context.invocationargs.md) | _(Optional)_ Optional array of args for non-injected parameters |
-|  options | [InvocationOptions](./context.invocationoptions.md) | _(Optional)_ Options for the invocation |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method
+
+
+</td></tr>
+<tr><td>
+
+method
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the method
+
+
+</td></tr>
+<tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+nonInjectedArgs
+
+
+</td><td>
+
+[InvocationArgs](./context.invocationargs.md)
+
+
+</td><td>
+
+_(Optional)_ Optional array of args for non-injected parameters
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[InvocationOptions](./context.invocationoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the invocation
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

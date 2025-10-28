@@ -23,9 +23,39 @@ where(w: Where<MT>): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | Where object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+w
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+Where object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

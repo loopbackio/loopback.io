@@ -23,9 +23,39 @@ subscribe(observer: ContextEventObserver): Subscription;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  observer | [ContextEventObserver](./context.contexteventobserver.md) | Context observer instance or function |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+observer
+
+
+</td><td>
+
+[ContextEventObserver](./context.contexteventobserver.md)
+
+
+</td><td>
+
+Context observer instance or function
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

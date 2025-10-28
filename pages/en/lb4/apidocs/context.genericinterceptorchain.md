@@ -23,22 +23,144 @@ export declare class GenericInterceptorChain<C extends Context = Context>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, interceptors)](./context.genericinterceptorchain._constructor_.md) |  | Create an invocation chain with a list of interceptor functions or binding keys |
-|  [(constructor)(context, filter, comparator)](./context.genericinterceptorchain._constructor__1.md) |  | Create an invocation interceptor chain with a binding filter and comparator. The interceptors are discovered from the context using the binding filter and sorted by the comparator (if provided). |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context, interceptors)](./context.genericinterceptorchain._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create an invocation chain with a list of interceptor functions or binding keys
+
+
+</td></tr>
+<tr><td>
+
+[(constructor)(context, filter, comparator)](./context.genericinterceptorchain._constructor__1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create an invocation interceptor chain with a binding filter and comparator. The interceptors are discovered from the context using the binding filter and sorted by the comparator (if provided).
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [getInterceptors](./context.genericinterceptorchain.getinterceptors.md) | <code>protected</code> | () =&gt; [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\] | A getter for an array of interceptor functions or binding keys |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getInterceptors](./context.genericinterceptorchain.getinterceptors.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+() =&gt; [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\]
+
+
+</td><td>
+
+A getter for an array of interceptor functions or binding keys
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [asInterceptor()](./context.genericinterceptorchain.asinterceptor.md) |  | Use the interceptor chain as an interceptor |
-|  [invokeInterceptors(finalHandler)](./context.genericinterceptorchain.invokeinterceptors.md) |  | Invoke the interceptor chain |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asInterceptor()](./context.genericinterceptorchain.asinterceptor.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Use the interceptor chain as an interceptor
+
+
+</td></tr>
+<tr><td>
+
+[invokeInterceptors(finalHandler)](./context.genericinterceptorchain.invokeinterceptors.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Invoke the interceptor chain
+
+
+</td></tr>
+</tbody></table>
 
 

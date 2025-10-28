@@ -23,9 +23,54 @@ constructor(_router?: RestRouter, _externalRoutes?: ExternalExpressRoutes | unde
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  \_router | [RestRouter](./rest.restrouter.md) | _(Optional)_ |
-|  \_externalRoutes | ExternalExpressRoutes \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+\_router
+
+
+</td><td>
+
+[RestRouter](./rest.restrouter.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+\_externalRoutes
+
+
+</td><td>
+
+ExternalExpressRoutes \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

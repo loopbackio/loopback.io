@@ -23,9 +23,61 @@ export interface InjectionElement
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [type](./context.injectionelement.type.md) |  | 'injection' |  |
-|  [value](./context.injectionelement.value.md) |  | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[type](./context.injectionelement.type.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'injection'
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[value](./context.injectionelement.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

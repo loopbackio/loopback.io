@@ -23,15 +23,179 @@ export interface Component
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings?](./core.component.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | _(Optional)_ An array of bindings to be aded to the application context. |
-|  [classes?](./core.component.classes.md) |  | [ClassMap](./core.classmap.md) | _(Optional)_ A map of classes to be bound to the application context. |
-|  [components?](./core.component.components.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[Component](./core.component.md)<!-- -->&gt;\[\] | _(Optional)_ An array of component classes |
-|  [controllers?](./core.component.controllers.md) |  | [ControllerClass](./core.controllerclass.md)<!-- -->\[\] | _(Optional)_ An array of controller classes |
-|  [lifeCycleObservers?](./core.component.lifecycleobservers.md) |  | [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\] | _(Optional)_ |
-|  [providers?](./core.component.providers.md) |  | [ProviderMap](./core.providermap.md) | _(Optional)_ A map of providers to be bound to the application context |
-|  [servers?](./core.component.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } | _(Optional)_ A map of name/class pairs for servers |
-|  [services?](./core.component.services.md) |  | [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->\[\] | _(Optional)_ An array of service or provider classes |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings?](./core.component.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of bindings to be aded to the application context.
+
+
+</td></tr>
+<tr><td>
+
+[classes?](./core.component.classes.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ClassMap](./core.classmap.md)
+
+
+</td><td>
+
+_(Optional)_ A map of classes to be bound to the application context.
+
+
+</td></tr>
+<tr><td>
+
+[components?](./core.component.components.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;[Component](./core.component.md)<!-- -->&gt;\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of component classes
+
+
+</td></tr>
+<tr><td>
+
+[controllers?](./core.component.controllers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ControllerClass](./core.controllerclass.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of controller classes
+
+
+</td></tr>
+<tr><td>
+
+[lifeCycleObservers?](./core.component.lifecycleobservers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[providers?](./core.component.providers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ProviderMap](./core.providermap.md)
+
+
+</td><td>
+
+_(Optional)_ A map of providers to be bound to the application context
+
+
+</td></tr>
+<tr><td>
+
+[servers?](./core.component.servers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; }
+
+
+</td><td>
+
+_(Optional)_ A map of name/class pairs for servers
+
+
+</td></tr>
+<tr><td>
+
+[services?](./core.component.services.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of service or provider classes
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -21,38 +21,238 @@ Modules to easily convert LoopBack4 models that have been decorated with `@model
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [getFieldsJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfieldsjsonschemafor.md) | Build a JSON schema describing the format of the "fields" object used to include or exclude properties of model instances. |
-|  [getFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfilterjsonschemafor.md) | <p>Build a JSON schema describing the format of the "filter" object used to query model instances.</p><p>Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.</p> |
-|  [getJsonSchema(ctor, options)](./repository-json-schema.getjsonschema.md) | Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a cache. If not, one is generated and then cached. |
-|  [getJsonSchemaRef(modelCtor, options)](./repository-json-schema.getjsonschemaref.md) | Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema. |
-|  [getNavigationalPropertyForRelation(relMeta, targetRef)](./repository-json-schema.getnavigationalpropertyforrelation.md) | Checks and return navigational property definition for the relation |
-|  [getScopeFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getscopefilterjsonschemafor.md) | <p>Build a JSON schema describing the format of the "scope" object used to query model instances.</p><p>Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.</p> |
-|  [getWhereJsonSchemaFor(modelCtor, options)](./repository-json-schema.getwherejsonschemafor.md) | <p>Build a JSON schema describing the format of the "where" object used to filter model instances to query, update or delete.</p><p>Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.</p> |
-|  [isArrayType(type)](./repository-json-schema.isarraytype.md) | Determines whether a given string or constructor is array type or not |
-|  [metaToJsonProperty(meta)](./repository-json-schema.metatojsonproperty.md) | Converts property metadata into a JSON property definition |
-|  [modelToJsonSchema(ctor, jsonSchemaOptions)](./repository-json-schema.modeltojsonschema.md) | Converts a TypeScript class into a JSON Schema using TypeScript's reflection API |
-|  [stringTypeToWrapper(type)](./repository-json-schema.stringtypetowrapper.md) | Gets the wrapper function of primitives string, number, and boolean |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getFieldsJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfieldsjsonschemafor.md)
+
+
+</td><td>
+
+Build a JSON schema describing the format of the "fields" object used to include or exclude properties of model instances.
+
+
+</td></tr>
+<tr><td>
+
+[getFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfilterjsonschemafor.md)
+
+
+</td><td>
+
+Build a JSON schema describing the format of the "filter" object used to query model instances.
+
+Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.
+
+
+</td></tr>
+<tr><td>
+
+[getJsonSchema(ctor, options)](./repository-json-schema.getjsonschema.md)
+
+
+</td><td>
+
+Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a cache. If not, one is generated and then cached.
+
+
+</td></tr>
+<tr><td>
+
+[getJsonSchemaRef(modelCtor, options)](./repository-json-schema.getjsonschemaref.md)
+
+
+</td><td>
+
+Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema.
+
+
+</td></tr>
+<tr><td>
+
+[getNavigationalPropertyForRelation(relMeta, targetRef)](./repository-json-schema.getnavigationalpropertyforrelation.md)
+
+
+</td><td>
+
+Checks and return navigational property definition for the relation
+
+
+</td></tr>
+<tr><td>
+
+[getScopeFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getscopefilterjsonschemafor.md)
+
+
+</td><td>
+
+Build a JSON schema describing the format of the "scope" object used to query model instances.
+
+Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.
+
+
+</td></tr>
+<tr><td>
+
+[getWhereJsonSchemaFor(modelCtor, options)](./repository-json-schema.getwherejsonschemafor.md)
+
+
+</td><td>
+
+Build a JSON schema describing the format of the "where" object used to filter model instances to query, update or delete.
+
+Note we don't take the model properties into account yet and return a generic json schema allowing any "where" condition.
+
+
+</td></tr>
+<tr><td>
+
+[isArrayType(type)](./repository-json-schema.isarraytype.md)
+
+
+</td><td>
+
+Determines whether a given string or constructor is array type or not
+
+
+</td></tr>
+<tr><td>
+
+[metaToJsonProperty(meta)](./repository-json-schema.metatojsonproperty.md)
+
+
+</td><td>
+
+Converts property metadata into a JSON property definition
+
+
+</td></tr>
+<tr><td>
+
+[modelToJsonSchema(ctor, jsonSchemaOptions)](./repository-json-schema.modeltojsonschema.md)
+
+
+</td><td>
+
+Converts a TypeScript class into a JSON Schema using TypeScript's reflection API
+
+
+</td></tr>
+<tr><td>
+
+[stringTypeToWrapper(type)](./repository-json-schema.stringtypetowrapper.md)
+
+
+</td><td>
+
+Gets the wrapper function of primitives string, number, and boolean
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) |  |
-|  [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [AnyScopeFilterSchema](./repository-json-schema.anyscopefilterschema.md) |  |
-|  [JSON\_SCHEMA\_KEY](./repository-json-schema.json_schema_key.md) | Metadata key used to set or retrieve repository JSON Schema |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AnyScopeFilterSchema](./repository-json-schema.anyscopefilterschema.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[JSON\_SCHEMA\_KEY](./repository-json-schema.json_schema_key.md)
+
+
+</td><td>
+
+Metadata key used to set or retrieve repository JSON Schema
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Optional](./repository-json-schema.optional.md) | Optional: From <code>T</code> make a set of properties by key <code>K</code> become optional |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Optional](./repository-json-schema.optional.md)
+
+
+</td><td>
+
+Optional: From `T` make a set of properties by key `K` become optional
+
+
+</td></tr>
+</tbody></table>
 
 

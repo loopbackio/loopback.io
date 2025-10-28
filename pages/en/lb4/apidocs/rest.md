@@ -23,153 +23,1297 @@ A REST server for LoopBack 4 application instances, complete with:
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ControllerRoute](./rest.controllerroute.md) | A route backed by a controller |
-|  [DefaultSequence](./rest.defaultsequence.md) | The default implementation of SequenceHandler. |
-|  [FindRouteMiddlewareProvider](./rest.findroutemiddlewareprovider.md) |  |
-|  [FindRouteProvider](./rest.findrouteprovider.md) |  |
-|  [HttpHandler](./rest.httphandler.md) |  |
-|  [InfoSpecEnhancer](./rest.infospecenhancer.md) | An OpenAPI spec enhancer to populate <code>info</code> with application metadata (package.json). |
-|  [InvokeMethodMiddlewareProvider](./rest.invokemethodmiddlewareprovider.md) |  |
-|  [InvokeMethodProvider](./rest.invokemethodprovider.md) |  |
-|  [JsonBodyParser](./rest.jsonbodyparser.md) |  |
-|  [LogErrorProvider](./rest.logerrorprovider.md) |  |
-|  [MiddlewareSequence](./rest.middlewaresequence.md) | A sequence implementation using middleware chains |
-|  [ParseParamsMiddlewareProvider](./rest.parseparamsmiddlewareprovider.md) |  |
-|  [ParseParamsProvider](./rest.parseparamsprovider.md) | Provides the function for parsing args in requests at runtime. |
-|  [RawBodyParser](./rest.rawbodyparser.md) | Parsing the request body into Buffer |
-|  [RedirectRoute](./rest.redirectroute.md) |  |
-|  [RegExpRouter](./rest.regexprouter.md) | Router implementation based on regexp matching |
-|  [RejectProvider](./rest.rejectprovider.md) |  |
-|  [RequestBodyParser](./rest.requestbodyparser.md) |  |
-|  [RequestContext](./rest.requestcontext.md) | A per-request Context combining an IoC container with handler context (request, response, etc.). |
-|  [RestApplication](./rest.restapplication.md) | An implementation of the Application class that automatically provides an instance of a REST server. This application class is intended to be a single-server implementation. Any attempt to bind additional servers will throw an error. |
-|  [RestComponent](./rest.restcomponent.md) |  |
-|  [RestServer](./rest.restserver.md) | A REST API server for use with Loopback. Add this server to your application by importing the RestComponent. |
-|  [Route](./rest.route.md) |  |
-|  [RouteSource](./rest.routesource.md) |  |
-|  [RoutingTable](./rest.routingtable.md) | Routing table |
-|  [SendProvider](./rest.sendprovider.md) | Provides the function that populates the response object with the results of the operation. |
-|  [SendResponseMiddlewareProvider](./rest.sendresponsemiddlewareprovider.md) |  |
-|  [StreamBodyParser](./rest.streambodyparser.md) | A special body parser to retain request stream as is. It will be used by explicitly setting <code>x-parser</code> to <code>'stream'</code> in the request body spec. |
-|  [TextBodyParser](./rest.textbodyparser.md) |  |
-|  [Trie](./rest.trie.md) | An implementation of trie for routes. The key hierarchy is built with parts of the route path delimited by <code>/</code> |
-|  [TrieRouter](./rest.trierouter.md) | Router implementation based on trie |
-|  [UrlEncodedBodyParser](./rest.urlencodedbodyparser.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ControllerRoute](./rest.controllerroute.md)
+
+
+</td><td>
+
+A route backed by a controller
+
+
+</td></tr>
+<tr><td>
+
+[DefaultSequence](./rest.defaultsequence.md)
+
+
+</td><td>
+
+The default implementation of SequenceHandler.
+
+
+</td></tr>
+<tr><td>
+
+[FindRouteMiddlewareProvider](./rest.findroutemiddlewareprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[FindRouteProvider](./rest.findrouteprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[HttpHandler](./rest.httphandler.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[InfoSpecEnhancer](./rest.infospecenhancer.md)
+
+
+</td><td>
+
+An OpenAPI spec enhancer to populate `info` with application metadata (package.json).
+
+
+</td></tr>
+<tr><td>
+
+[InvokeMethodMiddlewareProvider](./rest.invokemethodmiddlewareprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[InvokeMethodProvider](./rest.invokemethodprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[JsonBodyParser](./rest.jsonbodyparser.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[LogErrorProvider](./rest.logerrorprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MiddlewareSequence](./rest.middlewaresequence.md)
+
+
+</td><td>
+
+A sequence implementation using middleware chains
+
+
+</td></tr>
+<tr><td>
+
+[ParseParamsMiddlewareProvider](./rest.parseparamsmiddlewareprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ParseParamsProvider](./rest.parseparamsprovider.md)
+
+
+</td><td>
+
+Provides the function for parsing args in requests at runtime.
+
+
+</td></tr>
+<tr><td>
+
+[RawBodyParser](./rest.rawbodyparser.md)
+
+
+</td><td>
+
+Parsing the request body into Buffer
+
+
+</td></tr>
+<tr><td>
+
+[RedirectRoute](./rest.redirectroute.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RegExpRouter](./rest.regexprouter.md)
+
+
+</td><td>
+
+Router implementation based on regexp matching
+
+
+</td></tr>
+<tr><td>
+
+[RejectProvider](./rest.rejectprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RequestBodyParser](./rest.requestbodyparser.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RequestContext](./rest.requestcontext.md)
+
+
+</td><td>
+
+A per-request Context combining an IoC container with handler context (request, response, etc.).
+
+
+</td></tr>
+<tr><td>
+
+[RestApplication](./rest.restapplication.md)
+
+
+</td><td>
+
+An implementation of the Application class that automatically provides an instance of a REST server. This application class is intended to be a single-server implementation. Any attempt to bind additional servers will throw an error.
+
+
+</td></tr>
+<tr><td>
+
+[RestComponent](./rest.restcomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestServer](./rest.restserver.md)
+
+
+</td><td>
+
+A REST API server for use with Loopback. Add this server to your application by importing the RestComponent.
+
+
+</td></tr>
+<tr><td>
+
+[Route](./rest.route.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RouteSource](./rest.routesource.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RoutingTable](./rest.routingtable.md)
+
+
+</td><td>
+
+Routing table
+
+
+</td></tr>
+<tr><td>
+
+[SendProvider](./rest.sendprovider.md)
+
+
+</td><td>
+
+Provides the function that populates the response object with the results of the operation.
+
+
+</td></tr>
+<tr><td>
+
+[SendResponseMiddlewareProvider](./rest.sendresponsemiddlewareprovider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[StreamBodyParser](./rest.streambodyparser.md)
+
+
+</td><td>
+
+A special body parser to retain request stream as is. It will be used by explicitly setting `x-parser` to `'stream'` in the request body spec.
+
+
+</td></tr>
+<tr><td>
+
+[TextBodyParser](./rest.textbodyparser.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Trie](./rest.trie.md)
+
+
+</td><td>
+
+An implementation of trie for routes. The key hierarchy is built with parts of the route path delimited by `/`
+
+
+</td></tr>
+<tr><td>
+
+[TrieRouter](./rest.trierouter.md)
+
+
+</td><td>
+
+Router implementation based on trie
+
+
+</td></tr>
+<tr><td>
+
+[UrlEncodedBodyParser](./rest.urlencodedbodyparser.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-|  Abstract Class | Description |
-|  --- | --- |
-|  [BaseRoute](./rest.baseroute.md) | Base implementation of RouteEntry |
+<table><thead><tr><th>
+
+Abstract Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BaseRoute](./rest.baseroute.md)
+
+
+</td><td>
+
+Base implementation of RouteEntry
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [assignRouterSpec(target, additions)](./rest.assignrouterspec.md) |  |
-|  [compareRoute(route1, route2)](./rest.compareroute.md) | Compare two routes by verb/path for sorting |
-|  [createBodyParserBinding(parserClass, key)](./rest.createbodyparserbinding.md) | Create a binding for the given body parser class |
-|  [createControllerFactoryForBinding(key)](./rest.createcontrollerfactoryforbinding.md) | Create a controller factory function for a given binding key |
-|  [createControllerFactoryForClass(controllerCtor)](./rest.createcontrollerfactoryforclass.md) | Create a controller factory function for a given class |
-|  [createControllerFactoryForInstance(controllerInst)](./rest.createcontrollerfactoryforinstance.md) | Create a controller factory function for a given instance |
-|  [createResolvedRoute(route, pathParams)](./rest.createresolvedroute.md) |  |
-|  [createRoutesForController(spec, controllerCtor, controllerFactory)](./rest.createroutesforcontroller.md) | Create routes for a controller with the given spec |
-|  [getContentType(req)](./rest.getcontenttype.md) | Get the content-type header value from the request |
-|  [getParserOptions(type, options)](./rest.getparseroptions.md) | Extract parser options based on the parser type |
-|  [getParserOptions(type, options)](./rest.getparseroptions_1.md) |  |
-|  [getParserOptions(type, options)](./rest.getparseroptions_2.md) |  |
-|  [getParserOptions(type, options)](./rest.getparseroptions_3.md) |  |
-|  [getPathVariables(path)](./rest.getpathvariables.md) | Get all path variables. For example, <code>/root/{foo}/bar</code> =<!-- -->&gt; <code>['foo']</code> |
-|  [invokeBodyParserMiddleware(handle, request)](./rest.invokebodyparsermiddleware.md) | Parse the request body asynchronously |
-|  [joinPath(basePath, path)](./rest.joinpath.md) |  |
-|  [normalizeParsingError(err)](./rest.normalizeparsingerror.md) | Normalize parsing errors as <code>4xx</code> |
-|  [parseJson(text, reviver, prohibitedKeys)](./rest.parsejson.md) | Parse a json string that rejects prohibited keys |
-|  [parseOperationArgs(request, route, requestBodyParser, options)](./rest.parseoperationargs.md) | Parses the request to derive arguments to be passed in for the Application controller method |
-|  [rebaseOpenApiSpec(spec, basePath)](./rest.rebaseopenapispec.md) |  |
-|  [sanitizeJsonParse(reviver, prohibitedKeys)](./rest.sanitizejsonparse.md) | Factory to create a reviver function for <code>JSON.parse</code> to sanitize keys |
-|  [toExpressPath(path)](./rest.toexpresspath.md) | Convert an OpenAPI path to Express (path-to-regexp) style |
-|  [validateApiPath(path)](./rest.validateapipath.md) | Validate the path to be compatible with OpenAPI path template. No parameter modifier, custom pattern, or unnamed parameter is allowed. |
-|  [validateRequestBody(body, requestBodySpec, globalSchemas, options)](./rest.validaterequestbody.md) | Check whether the request body is valid according to the provided OpenAPI schema. The JSON schema is generated from the OpenAPI schema which is typically defined by <code>@requestBody()</code>. The validation leverages AJV schema validator. |
-|  [validateValueAgainstSchema(value, schema, globalSchemas, options)](./rest.validatevalueagainstschema.md) | Validate the value against JSON schema. |
-|  [writeResultToResponse(response, result)](./rest.writeresulttoresponse.md) | Writes the result from Application controller method into the HTTP response |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[assignRouterSpec(target, additions)](./rest.assignrouterspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[compareRoute(route1, route2)](./rest.compareroute.md)
+
+
+</td><td>
+
+Compare two routes by verb/path for sorting
+
+
+</td></tr>
+<tr><td>
+
+[createBodyParserBinding(parserClass, key)](./rest.createbodyparserbinding.md)
+
+
+</td><td>
+
+Create a binding for the given body parser class
+
+
+</td></tr>
+<tr><td>
+
+[createControllerFactoryForBinding(key)](./rest.createcontrollerfactoryforbinding.md)
+
+
+</td><td>
+
+Create a controller factory function for a given binding key
+
+
+</td></tr>
+<tr><td>
+
+[createControllerFactoryForClass(controllerCtor)](./rest.createcontrollerfactoryforclass.md)
+
+
+</td><td>
+
+Create a controller factory function for a given class
+
+
+</td></tr>
+<tr><td>
+
+[createControllerFactoryForInstance(controllerInst)](./rest.createcontrollerfactoryforinstance.md)
+
+
+</td><td>
+
+Create a controller factory function for a given instance
+
+
+</td></tr>
+<tr><td>
+
+[createResolvedRoute(route, pathParams)](./rest.createresolvedroute.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createRoutesForController(spec, controllerCtor, controllerFactory)](./rest.createroutesforcontroller.md)
+
+
+</td><td>
+
+Create routes for a controller with the given spec
+
+
+</td></tr>
+<tr><td>
+
+[getContentType(req)](./rest.getcontenttype.md)
+
+
+</td><td>
+
+Get the content-type header value from the request
+
+
+</td></tr>
+<tr><td>
+
+[getParserOptions(type, options)](./rest.getparseroptions.md)
+
+
+</td><td>
+
+Extract parser options based on the parser type
+
+
+</td></tr>
+<tr><td>
+
+[getParserOptions(type, options)](./rest.getparseroptions_1.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getParserOptions(type, options)](./rest.getparseroptions_2.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getParserOptions(type, options)](./rest.getparseroptions_3.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getPathVariables(path)](./rest.getpathvariables.md)
+
+
+</td><td>
+
+Get all path variables. For example, `/root/{foo}/bar` =<!-- -->&gt; `['foo']`
+
+
+</td></tr>
+<tr><td>
+
+[invokeBodyParserMiddleware(handle, request)](./rest.invokebodyparsermiddleware.md)
+
+
+</td><td>
+
+Parse the request body asynchronously
+
+
+</td></tr>
+<tr><td>
+
+[joinPath(basePath, path)](./rest.joinpath.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[normalizeParsingError(err)](./rest.normalizeparsingerror.md)
+
+
+</td><td>
+
+Normalize parsing errors as `4xx`
+
+
+</td></tr>
+<tr><td>
+
+[parseJson(text, reviver, prohibitedKeys)](./rest.parsejson.md)
+
+
+</td><td>
+
+Parse a json string that rejects prohibited keys
+
+
+</td></tr>
+<tr><td>
+
+[parseOperationArgs(request, route, requestBodyParser, options)](./rest.parseoperationargs.md)
+
+
+</td><td>
+
+Parses the request to derive arguments to be passed in for the Application controller method
+
+
+</td></tr>
+<tr><td>
+
+[rebaseOpenApiSpec(spec, basePath)](./rest.rebaseopenapispec.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[sanitizeJsonParse(reviver, prohibitedKeys)](./rest.sanitizejsonparse.md)
+
+
+</td><td>
+
+Factory to create a reviver function for `JSON.parse` to sanitize keys
+
+
+</td></tr>
+<tr><td>
+
+[toExpressPath(path)](./rest.toexpresspath.md)
+
+
+</td><td>
+
+Convert an OpenAPI path to Express (path-to-regexp) style
+
+
+</td></tr>
+<tr><td>
+
+[validateApiPath(path)](./rest.validateapipath.md)
+
+
+</td><td>
+
+Validate the path to be compatible with OpenAPI path template. No parameter modifier, custom pattern, or unnamed parameter is allowed.
+
+
+</td></tr>
+<tr><td>
+
+[validateRequestBody(body, requestBodySpec, globalSchemas, options)](./rest.validaterequestbody.md)
+
+
+</td><td>
+
+Check whether the request body is valid according to the provided OpenAPI schema. The JSON schema is generated from the OpenAPI schema which is typically defined by `@requestBody()`<!-- -->. The validation leverages AJV schema validator.
+
+
+</td></tr>
+<tr><td>
+
+[validateValueAgainstSchema(value, schema, globalSchemas, options)](./rest.validatevalueagainstschema.md)
+
+
+</td><td>
+
+Validate the value against JSON schema.
+
+
+</td></tr>
+<tr><td>
+
+[writeResultToResponse(response, result)](./rest.writeresulttoresponse.md)
+
+
+</td><td>
+
+Writes the result from Application controller method into the HTTP response
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ApiExplorerOptions](./rest.apiexploreroptions.md) |  |
-|  [BodyParser](./rest.bodyparser.md) | Interface to be implemented by body parser extensions |
-|  [HttpServerLike](./rest.httpserverlike.md) |  |
-|  [Node](./rest.node.md) | A Node in the trie |
-|  [OpenApiSpecForm](./rest.openapispecform.md) | The form of OpenAPI specs to be served |
-|  [OpenApiSpecOptions](./rest.openapispecoptions.md) | Options to customize how OpenAPI specs are served |
-|  [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) | <p>Options for request body parsing See https://github.com/expressjs/body-parser/\#options</p><p>Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones.</p> |
-|  [RequestWithSession](./rest.requestwithsession.md) | extending express request type with a session field |
-|  [ResolvedNode](./rest.resolvednode.md) |  |
-|  [ResolvedRoute](./rest.resolvedroute.md) | A route with path parameters resolved |
-|  [RestRouter](./rest.restrouter.md) |  |
-|  [RestServerResolvedOptions](./rest.restserverresolvedoptions.md) |  |
-|  [RouteEntry](./rest.routeentry.md) | An entry in the routing table |
-|  [SequenceHandler](./rest.sequencehandler.md) | A sequence handler is a class implementing sequence of actions required to handle an incoming request. |
-|  [Session](./rest.session.md) | interface to set variables in user session |
-|  [SessionUserProfile](./rest.sessionuserprofile.md) | user profile to add in session |
-|  [ValidationOptions](./rest.validationoptions.md) | Options for request body validation using AJV |
-|  [ValueValidationOptions](./rest.valuevalidationoptions.md) | Options for any value validation using AJV |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApiExplorerOptions](./rest.apiexploreroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[BodyParser](./rest.bodyparser.md)
+
+
+</td><td>
+
+Interface to be implemented by body parser extensions
+
+
+</td></tr>
+<tr><td>
+
+[HttpServerLike](./rest.httpserverlike.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Node](./rest.node.md)
+
+
+</td><td>
+
+A Node in the trie
+
+
+</td></tr>
+<tr><td>
+
+[OpenApiSpecForm](./rest.openapispecform.md)
+
+
+</td><td>
+
+The form of OpenAPI specs to be served
+
+
+</td></tr>
+<tr><td>
+
+[OpenApiSpecOptions](./rest.openapispecoptions.md)
+
+
+</td><td>
+
+Options to customize how OpenAPI specs are served
+
+
+</td></tr>
+<tr><td>
+
+[RequestBodyParserOptions](./rest.requestbodyparseroptions.md)
+
+
+</td><td>
+
+Options for request body parsing See https://github.com/expressjs/body-parser/\#options
+
+Built-in parsers retrieve their own options from the request body parser options. The parser specific properties override common ones.
+
+
+</td></tr>
+<tr><td>
+
+[RequestWithSession](./rest.requestwithsession.md)
+
+
+</td><td>
+
+extending express request type with a session field
+
+
+</td></tr>
+<tr><td>
+
+[ResolvedNode](./rest.resolvednode.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ResolvedRoute](./rest.resolvedroute.md)
+
+
+</td><td>
+
+A route with path parameters resolved
+
+
+</td></tr>
+<tr><td>
+
+[RestRouter](./rest.restrouter.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestServerResolvedOptions](./rest.restserverresolvedoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RouteEntry](./rest.routeentry.md)
+
+
+</td><td>
+
+An entry in the routing table
+
+
+</td></tr>
+<tr><td>
+
+[SequenceHandler](./rest.sequencehandler.md)
+
+
+</td><td>
+
+A sequence handler is a class implementing sequence of actions required to handle an incoming request.
+
+
+</td></tr>
+<tr><td>
+
+[Session](./rest.session.md)
+
+
+</td><td>
+
+interface to set variables in user session
+
+
+</td></tr>
+<tr><td>
+
+[SessionUserProfile](./rest.sessionuserprofile.md)
+
+
+</td><td>
+
+user profile to add in session
+
+
+</td></tr>
+<tr><td>
+
+[ValidationOptions](./rest.validationoptions.md)
+
+
+</td><td>
+
+Options for request body validation using AJV
+
+
+</td></tr>
+<tr><td>
+
+[ValueValidationOptions](./rest.valuevalidationoptions.md)
+
+
+</td><td>
+
+Options for any value validation using AJV
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [builtinParsers](./rest.builtinparsers.md) |  |
-|  [RestBindings](./rest.restbindings.md) | RestServer-specific bindings |
-|  [RestHttpErrors](./rest.resthttperrors.md) |  |
-|  [RestMiddlewareGroups](./rest.restmiddlewaregroups.md) | Built-in middleware groups for the REST sequence |
-|  [RestTags](./rest.resttags.md) | Binding tags for RestServer |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[builtinParsers](./rest.builtinparsers.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestBindings](./rest.restbindings.md)
+
+
+</td><td>
+
+RestServer-specific bindings
+
+
+</td></tr>
+<tr><td>
+
+[RestHttpErrors](./rest.resthttperrors.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestMiddlewareGroups](./rest.restmiddlewaregroups.md)
+
+
+</td><td>
+
+Built-in middleware groups for the REST sequence
+
+
+</td></tr>
+<tr><td>
+
+[RestTags](./rest.resttags.md)
+
+
+</td><td>
+
+Binding tags for RestServer
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_LIMIT](./rest.default_limit.md) |  |
-|  [ERR\_NO\_MULTI\_SERVER](./rest.err_no_multi_server.md) |  |
-|  [REQUEST\_BODY\_PARSER\_TAG](./rest.request_body_parser_tag.md) | Binding tag for request body parser extensions |
-|  [SequenceActions](./rest.sequenceactions.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_LIMIT](./rest.default_limit.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ERR\_NO\_MULTI\_SERVER](./rest.err_no_multi_server.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST\_BODY\_PARSER\_TAG](./rest.request_body_parser_tag.md)
+
+
+</td><td>
+
+Binding tag for request body parser extensions
+
+
+</td></tr>
+<tr><td>
+
+[SequenceActions](./rest.sequenceactions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [AjvErrorOptions](./rest.ajverroroptions.md) | Options for AJV errors |
-|  [AjvFactory](./rest.ajvfactory.md) | Factory function for Ajv instances |
-|  [AjvFormat](./rest.ajvformat.md) | Ajv format definition with a name |
-|  [AjvKeyword](./rest.ajvkeyword.md) | Ajv keyword definition with a name |
-|  [BodyParserFunction](./rest.bodyparserfunction.md) | Plain function for body parsing |
-|  [BodyParserMiddleware](./rest.bodyparsermiddleware.md) | Express body parser function type |
-|  [ControllerClass](./rest.controllerclass.md) | Controller class |
-|  [ControllerFactory](./rest.controllerfactory.md) | A factory function to create controller instances synchronously or asynchronously |
-|  [ControllerInstance](./rest.controllerinstance.md) |  |
-|  [FindRoute](./rest.findroute.md) | Find a route matching the incoming request. Throw an error when no route was found. |
-|  [HttpRequestListener](./rest.httprequestlistener.md) |  |
-|  [InvokeMethod](./rest.invokemethod.md) | Invokes a method defined in the Application Controller |
-|  [LogError](./rest.logerror.md) | Log information about a failed request. |
-|  [NodeWithValue](./rest.nodewithvalue.md) |  |
-|  [OperationArgs](./rest.operationargs.md) |  |
-|  [OperationRetval](./rest.operationretval.md) | Return value of a controller method (a function implementing an operation). This is a type alias for "any", used to distinguish operation results from other "any" typed values. |
-|  [ParseParams](./rest.parseparams.md) | A function to parse OpenAPI operation parameters for a given route |
-|  [PathParameterValues](./rest.pathparametervalues.md) |  |
-|  [Reject](./rest.reject.md) | Reject the request with an error. |
-|  [RequestBody](./rest.requestbody.md) | Request body with metadata |
-|  [RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md) |  |
-|  [RestComponentConfig](./rest.restcomponentconfig.md) |  |
-|  [RestRouterOptions](./rest.restrouteroptions.md) |  |
-|  [RestServerConfig](./rest.restserverconfig.md) | Valid configuration for the RestServer constructor. |
-|  [RestServerOptions](./rest.restserveroptions.md) | RestServer options |
-|  [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  [RouterSpec](./rest.routerspec.md) |  |
-|  [SchemaValidatorCache](./rest.schemavalidatorcache.md) | Cache for AJV schema validators |
-|  [Send](./rest.send.md) | Send the operation response back to the client. |
-|  [SequenceFunction](./rest.sequencefunction.md) | A sequence function is a function implementing a custom sequence of actions to handle an incoming request. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AjvErrorOptions](./rest.ajverroroptions.md)
+
+
+</td><td>
+
+Options for AJV errors
+
+
+</td></tr>
+<tr><td>
+
+[AjvFactory](./rest.ajvfactory.md)
+
+
+</td><td>
+
+Factory function for Ajv instances
+
+
+</td></tr>
+<tr><td>
+
+[AjvFormat](./rest.ajvformat.md)
+
+
+</td><td>
+
+Ajv format definition with a name
+
+
+</td></tr>
+<tr><td>
+
+[AjvKeyword](./rest.ajvkeyword.md)
+
+
+</td><td>
+
+Ajv keyword definition with a name
+
+
+</td></tr>
+<tr><td>
+
+[BodyParserFunction](./rest.bodyparserfunction.md)
+
+
+</td><td>
+
+Plain function for body parsing
+
+
+</td></tr>
+<tr><td>
+
+[BodyParserMiddleware](./rest.bodyparsermiddleware.md)
+
+
+</td><td>
+
+Express body parser function type
+
+
+</td></tr>
+<tr><td>
+
+[ControllerClass](./rest.controllerclass.md)
+
+
+</td><td>
+
+Controller class
+
+
+</td></tr>
+<tr><td>
+
+[ControllerFactory](./rest.controllerfactory.md)
+
+
+</td><td>
+
+A factory function to create controller instances synchronously or asynchronously
+
+
+</td></tr>
+<tr><td>
+
+[ControllerInstance](./rest.controllerinstance.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[FindRoute](./rest.findroute.md)
+
+
+</td><td>
+
+Find a route matching the incoming request. Throw an error when no route was found.
+
+
+</td></tr>
+<tr><td>
+
+[HttpRequestListener](./rest.httprequestlistener.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[InvokeMethod](./rest.invokemethod.md)
+
+
+</td><td>
+
+Invokes a method defined in the Application Controller
+
+
+</td></tr>
+<tr><td>
+
+[LogError](./rest.logerror.md)
+
+
+</td><td>
+
+Log information about a failed request.
+
+
+</td></tr>
+<tr><td>
+
+[NodeWithValue](./rest.nodewithvalue.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[OperationArgs](./rest.operationargs.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[OperationRetval](./rest.operationretval.md)
+
+
+</td><td>
+
+Return value of a controller method (a function implementing an operation). This is a type alias for "any", used to distinguish operation results from other "any" typed values.
+
+
+</td></tr>
+<tr><td>
+
+[ParseParams](./rest.parseparams.md)
+
+
+</td><td>
+
+A function to parse OpenAPI operation parameters for a given route
+
+
+</td></tr>
+<tr><td>
+
+[PathParameterValues](./rest.pathparametervalues.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[Reject](./rest.reject.md)
+
+
+</td><td>
+
+Reject the request with an error.
+
+
+</td></tr>
+<tr><td>
+
+[RequestBody](./rest.requestbody.md)
+
+
+</td><td>
+
+Request body with metadata
+
+
+</td></tr>
+<tr><td>
+
+[RequestBodyValidationOptions](./rest.requestbodyvalidationoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestComponentConfig](./rest.restcomponentconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestRouterOptions](./rest.restrouteroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestServerConfig](./rest.restserverconfig.md)
+
+
+</td><td>
+
+Valid configuration for the RestServer constructor.
+
+
+</td></tr>
+<tr><td>
+
+[RestServerOptions](./rest.restserveroptions.md)
+
+
+</td><td>
+
+RestServer options
+
+
+</td></tr>
+<tr><td>
+
+[RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RouterSpec](./rest.routerspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[SchemaValidatorCache](./rest.schemavalidatorcache.md)
+
+
+</td><td>
+
+Cache for AJV schema validators
+
+
+</td></tr>
+<tr><td>
+
+[Send](./rest.send.md)
+
+
+</td><td>
+
+Send the operation response back to the client.
+
+
+</td></tr>
+<tr><td>
+
+[SequenceFunction](./rest.sequencefunction.md)
+
+
+</td><td>
+
+A sequence function is a function implementing a custom sequence of actions to handle an incoming request.
+
+
+</td></tr>
+</tbody></table>
 
 

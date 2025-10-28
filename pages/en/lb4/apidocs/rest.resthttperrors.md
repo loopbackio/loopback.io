@@ -21,24 +21,112 @@ export declare namespace RestHttpErrors
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [invalidData(data, name, extraProperties)](./rest.resthttperrors.invaliddata.md) |  |
-|  [invalidParamLocation(location)](./rest.resthttperrors.invalidparamlocation.md) |  |
-|  [invalidRequestBody(details)](./rest.resthttperrors.invalidrequestbody.md) |  |
-|  [missingRequired(name)](./rest.resthttperrors.missingrequired.md) |  |
-|  [unsupportedMediaType(contentType, allowedTypes)](./rest.resthttperrors.unsupportedmediatype.md) |  |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[invalidData(data, name, extraProperties)](./rest.resthttperrors.invaliddata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invalidParamLocation(location)](./rest.resthttperrors.invalidparamlocation.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invalidRequestBody(details)](./rest.resthttperrors.invalidrequestbody.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[missingRequired(name)](./rest.resthttperrors.missingrequired.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[unsupportedMediaType(contentType, allowedTypes)](./rest.resthttperrors.unsupportedmediatype.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md) | An invalid request body error contains a <code>details</code> property as the machine-readable error. Each entry in <code>error.details</code> contains 4 attributes: <code>path</code>, <code>code</code>, <code>info</code> and <code>message</code>. <code>ValidationErrorDetails</code> defines the type of each entry, which is an object. The type of <code>error.details</code> is <code>ValidationErrorDetails[]</code>. |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)
+
+
+</td><td>
+
+An invalid request body error contains a `details` property as the machine-readable error. Each entry in `error.details` contains 4 attributes: `path`<!-- -->, `code`<!-- -->, `info` and `message`<!-- -->. `ValidationErrorDetails` defines the type of each entry, which is an object. The type of `error.details` is `ValidationErrorDetails[]`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [INVALID\_REQUEST\_BODY\_MESSAGE](./rest.resthttperrors.invalid_request_body_message.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[INVALID\_REQUEST\_BODY\_MESSAGE](./rest.resthttperrors.invalid_request_body_message.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

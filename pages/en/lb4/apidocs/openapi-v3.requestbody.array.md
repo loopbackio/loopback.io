@@ -26,10 +26,55 @@ array: (itemSpec: SchemaObject | ReferenceObject, properties?: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  itemSpec | SchemaObject \| ReferenceObject | the full item object |
-|  properties | { description?: string; required?: boolean; } | _(Optional)_ The requestBody properties other than <code>content</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+itemSpec
+
+
+</td><td>
+
+SchemaObject \| ReferenceObject
+
+
+</td><td>
+
+the full item object
+
+
+</td></tr>
+<tr><td>
+
+properties
+
+
+</td><td>
+
+{ description?: string; required?: boolean; }
+
+
+</td><td>
+
+_(Optional)_ The requestBody properties other than `content`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

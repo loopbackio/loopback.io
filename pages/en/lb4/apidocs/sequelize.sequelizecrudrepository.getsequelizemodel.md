@@ -25,9 +25,39 @@ getSequelizeModel(entityClass?: typeof Entity & {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  entityClass | typeof Entity &amp; { prototype: T; } | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+entityClass
+
+
+</td><td>
+
+typeof Entity &amp; { prototype: T; }
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

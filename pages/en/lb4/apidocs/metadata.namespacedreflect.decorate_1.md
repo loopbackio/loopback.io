@@ -21,10 +21,51 @@ decorate(decorators: ClassDecorator[], target: Object): PropertyDescriptor | Fun
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  decorators | ClassDecorator\[\] |  |
-|  target | Object |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+decorators
+
+
+</td><td>
+
+ClassDecorator\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ handler(handlerFn: SequenceFunction): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  handlerFn | [SequenceFunction](./rest.sequencefunction.md) | The handler to invoke for each incoming request. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+handlerFn
+
+
+</td><td>
+
+[SequenceFunction](./rest.sequencefunction.md)
+
+
+</td><td>
+
+The handler to invoke for each incoming request.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

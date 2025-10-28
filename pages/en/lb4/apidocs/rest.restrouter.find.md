@@ -23,9 +23,39 @@ find(request: Request): ResolvedRoute | undefined;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request | Http request |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+Http request
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,55 @@ constructor(rootPath: string, options?: TestSandboxOptions);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rootPath | string | Root path of the TestSandbox. If relative it will be resolved against the current directory. |
-|  options | [TestSandboxOptions](./testlab.testsandboxoptions.md) | _(Optional)_ Options to control if/how the sandbox creates a subdirectory for the sandbox. If not provided, the sandbox will automatically creates a unique temporary subdirectory. This allows sandboxes with the same root path can be used in parallel during testing. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rootPath
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Root path of the TestSandbox. If relative it will be resolved against the current directory.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[TestSandboxOptions](./testlab.testsandboxoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options to control if/how the sandbox creates a subdirectory for the sandbox. If not provided, the sandbox will automatically creates a unique temporary subdirectory. This allows sandboxes with the same root path can be used in parallel during testing.
+
+
+</td></tr>
+</tbody></table>
 
 ## Example
 

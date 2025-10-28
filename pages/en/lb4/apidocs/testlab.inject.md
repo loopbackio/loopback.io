@@ -21,10 +21,51 @@ inject: (dispatchFunc: ShotListener, options: ShotRequestOptions) => Promise<Res
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dispatchFunc | ShotListener |  |
-|  options | ShotRequestOptions |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dispatchFunc
+
+
+</td><td>
+
+ShotListener
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+ShotRequestOptions
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

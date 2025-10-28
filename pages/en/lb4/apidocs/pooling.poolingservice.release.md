@@ -23,9 +23,39 @@ release(resource: T): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resource | T | Resource instance to be returned back to the pool |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+resource
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Resource instance to be returned back to the pool
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

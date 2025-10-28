@@ -23,13 +23,135 @@ export interface Injection<ValueType = BoundValue>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindingSelector](./context.injection.bindingselector.md) |  | [BindingSelector](./context.bindingselector.md)<!-- -->&lt;ValueType&gt; |  |
-|  [member?](./context.injection.member.md) |  | string | _(Optional)_ |
-|  [metadata](./context.injection.metadata.md) |  | [InjectionMetadata](./context.injectionmetadata.md) |  |
-|  [methodDescriptorOrParameterIndex?](./context.injection.methoddescriptororparameterindex.md) |  | TypedPropertyDescriptor&lt;ValueType&gt; \| number | _(Optional)_ |
-|  [resolve?](./context.injection.resolve.md) |  | [ResolverFunction](./context.resolverfunction.md) | _(Optional)_ |
-|  [target](./context.injection.target.md) |  | Object |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindingSelector](./context.injection.bindingselector.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingSelector](./context.bindingselector.md)<!-- -->&lt;ValueType&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[member?](./context.injection.member.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[metadata](./context.injection.metadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[InjectionMetadata](./context.injectionmetadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[methodDescriptorOrParameterIndex?](./context.injection.methoddescriptororparameterindex.md)
+
+
+</td><td>
+
+
+</td><td>
+
+TypedPropertyDescriptor&lt;ValueType&gt; \| number
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[resolve?](./context.injection.resolve.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ResolverFunction](./context.resolverfunction.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[target](./context.injection.target.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

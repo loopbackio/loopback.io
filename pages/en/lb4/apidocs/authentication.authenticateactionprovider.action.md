@@ -23,9 +23,39 @@ action(request: Request): Promise<UserProfile | undefined>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request | The incoming request provided by the REST layer |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+The incoming request provided by the REST layer
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

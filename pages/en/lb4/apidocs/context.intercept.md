@@ -23,9 +23,39 @@ export declare function intercept(...interceptorOrKeys: InterceptorOrKey[]): (ta
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  interceptorOrKeys | [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\] | One or more interceptors or binding keys that are resolved to be interceptors |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+interceptorOrKeys
+
+
+</td><td>
+
+[InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
+
+
+</td><td>
+
+One or more interceptors or binding keys that are resolved to be interceptors
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

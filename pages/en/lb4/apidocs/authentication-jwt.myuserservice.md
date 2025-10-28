@@ -22,22 +22,134 @@ export declare class MyUserService implements UserService<User, Credentials>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(userRepository)](./authentication-jwt.myuserservice._constructor_.md) |  | Constructs a new instance of the <code>MyUserService</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(userRepository)](./authentication-jwt.myuserservice._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `MyUserService` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [userRepository](./authentication-jwt.myuserservice.userrepository.md) |  | [UserRepository](./authentication-jwt.userrepository.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[userRepository](./authentication-jwt.myuserservice.userrepository.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[UserRepository](./authentication-jwt.userrepository.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [convertToUserProfile(user)](./authentication-jwt.myuserservice.converttouserprofile.md) |  |  |
-|  [findUserById(id)](./authentication-jwt.myuserservice.finduserbyid.md) |  |  |
-|  [verifyCredentials(credentials)](./authentication-jwt.myuserservice.verifycredentials.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[convertToUserProfile(user)](./authentication-jwt.myuserservice.converttouserprofile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[findUserById(id)](./authentication-jwt.myuserservice.finduserbyid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[verifyCredentials(credentials)](./authentication-jwt.myuserservice.verifycredentials.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

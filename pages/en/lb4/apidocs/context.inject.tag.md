@@ -23,10 +23,55 @@ tag: (bindingTag: BindingTag | RegExp, metadata?: InjectionMetadata) => (target:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindingTag | [BindingTag](./context.bindingtag.md) \| RegExp | Tag name, regex or object |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional metadata to help the injection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindingTag
+
+
+</td><td>
+
+[BindingTag](./context.bindingtag.md) \| RegExp
+
+
+</td><td>
+
+Tag name, regex or object
+
+
+</td></tr>
+<tr><td>
+
+metadata
+
+
+</td><td>
+
+[InjectionMetadata](./context.injectionmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Optional metadata to help the injection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

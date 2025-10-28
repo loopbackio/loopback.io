@@ -25,9 +25,39 @@ api(spec: OpenApiSpec): Binding;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | [OpenApiSpec](./openapi-v3.openapispec.md) | The OpenAPI specification, as an object. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+[OpenApiSpec](./openapi-v3.openapispec.md)
+
+
+</td><td>
+
+The OpenAPI specification, as an object.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

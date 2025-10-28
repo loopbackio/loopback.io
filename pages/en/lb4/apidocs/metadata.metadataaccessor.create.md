@@ -23,9 +23,39 @@ static create<V, DT extends DecoratorType>(key: string): MetadataAccessor<V, DT>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | string | The metadata key |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The metadata key
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,9 +24,39 @@ export interface PoolFactory<T> extends Factory<T>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [acquire(resource, requestCtx)?](./pooling.poolfactory.acquire.md) | _(Optional)_ To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource. |
-|  [release(resource)?](./pooling.poolfactory.release.md) | _(Optional)_ To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[acquire(resource, requestCtx)?](./pooling.poolfactory.acquire.md)
+
+
+</td><td>
+
+_(Optional)_ To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource.
+
+
+</td></tr>
+<tr><td>
+
+[release(resource)?](./pooling.poolfactory.release.md)
+
+
+</td><td>
+
+_(Optional)_ To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned.
+
+
+</td></tr>
+</tbody></table>
 
 

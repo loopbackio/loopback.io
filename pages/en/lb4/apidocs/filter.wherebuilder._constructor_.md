@@ -23,8 +23,38 @@ constructor(w?: Where<MT>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  w | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+w
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

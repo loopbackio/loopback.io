@@ -23,12 +23,102 @@ constructor(parent: Context, target: object, methodName: string, args: Invocatio
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parent | [Context](./context.context.md) | Parent context, such as the RequestContext |
-|  target | object | Target class (for static methods) or prototype/object (for instance methods) |
-|  methodName | string | Method name |
-|  args | [InvocationArgs](./context.invocationargs.md) | An array of arguments |
-|  source | [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parent
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Parent context, such as the RequestContext
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+object
+
+
+</td><td>
+
+Target class (for static methods) or prototype/object (for instance methods)
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Method name
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+[InvocationArgs](./context.invocationargs.md)
+
+
+</td><td>
+
+An array of arguments
+
+
+</td></tr>
+<tr><td>
+
+source
+
+
+</td><td>
+
+[InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

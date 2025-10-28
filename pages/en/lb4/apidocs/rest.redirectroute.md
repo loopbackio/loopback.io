@@ -22,30 +22,285 @@ export declare class RedirectRoute implements RouteEntry, ResolvedRoute
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(sourcePath, targetLocation, statusCode)](./rest.redirectroute._constructor_.md) |  | Constructs a new instance of the <code>RedirectRoute</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(sourcePath, targetLocation, statusCode)](./rest.redirectroute._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RedirectRoute` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./rest.redirectroute.path.md) | <code>readonly</code> | string |  |
-|  [pathParams](./rest.redirectroute.pathparams.md) | <code>readonly</code> | [PathParameterValues](./rest.pathparametervalues.md) |  |
-|  [schemas](./rest.redirectroute.schemas.md) | <code>readonly</code> | SchemasObject |  |
-|  [sourcePath](./rest.redirectroute.sourcepath.md) | <code>readonly</code> | string |  |
-|  [spec](./rest.redirectroute.spec.md) | <code>readonly</code> | OperationObject |  |
-|  [statusCode](./rest.redirectroute.statuscode.md) | <code>readonly</code> | number |  |
-|  [targetLocation](./rest.redirectroute.targetlocation.md) | <code>readonly</code> | string |  |
-|  [verb](./rest.redirectroute.verb.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[path](./rest.redirectroute.path.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[pathParams](./rest.redirectroute.pathparams.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PathParameterValues](./rest.pathparametervalues.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[schemas](./rest.redirectroute.schemas.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+SchemasObject
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[sourcePath](./rest.redirectroute.sourcepath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[spec](./rest.redirectroute.spec.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[statusCode](./rest.redirectroute.statuscode.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[targetLocation](./rest.redirectroute.targetlocation.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[verb](./rest.redirectroute.verb.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [describe()](./rest.redirectroute.describe.md) |  |  |
-|  [invokeHandler({ response }, args)](./rest.redirectroute.invokehandler.md) |  |  |
-|  [isRedirectRoute(obj)](./rest.redirectroute.isredirectroute.md) | <code>static</code> | type guard type checker for this class |
-|  [updateBindings(requestContext)](./rest.redirectroute.updatebindings.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describe()](./rest.redirectroute.describe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[invokeHandler({ response }, args)](./rest.redirectroute.invokehandler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[isRedirectRoute(obj)](./rest.redirectroute.isredirectroute.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+type guard type checker for this class
+
+
+</td></tr>
+<tr><td>
+
+[updateBindings(requestContext)](./rest.redirectroute.updatebindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

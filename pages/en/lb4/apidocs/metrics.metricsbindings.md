@@ -23,8 +23,26 @@ export declare namespace MetricsBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./metrics.metricsbindings.component.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./metrics.metricsbindings.component.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

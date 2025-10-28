@@ -23,11 +23,71 @@ hasMetadata(metadataKey: string, target: Object, propertyKey?: string): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  metadataKey | string | Key |
-|  target | Object | Target |
-|  propertyKey | string | _(Optional)_ Optional property key |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+metadataKey
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Key
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Target
+
+
+</td></tr>
+<tr><td>
+
+propertyKey
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optional property key
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

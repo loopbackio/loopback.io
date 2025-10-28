@@ -22,8 +22,44 @@ export declare class CrudRestComponent implements Component
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings](./rest-crud.crudrestcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings](./rest-crud.crudrestcomponent.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

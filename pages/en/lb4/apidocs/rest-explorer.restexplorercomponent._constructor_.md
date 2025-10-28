@@ -23,9 +23,52 @@ constructor(application: RestApplication, restExplorerConfig?: RestExplorerConfi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  application | [RestApplication](./rest.restapplication.md) |  |
-|  restExplorerConfig | [RestExplorerConfig](./rest-explorer.restexplorerconfig.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+application
+
+
+</td><td>
+
+[RestApplication](./rest.restapplication.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+restExplorerConfig
+
+
+</td><td>
+
+[RestExplorerConfig](./rest-explorer.restexplorerconfig.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

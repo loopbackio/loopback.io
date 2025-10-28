@@ -21,9 +21,50 @@ export declare enum OperationVisibility
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  DOCUMENTED | <code>&quot;documented&quot;</code> |  |
-|  UNDOCUMENTED | <code>&quot;undocumented&quot;</code> |  |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+DOCUMENTED
+
+
+</td><td>
+
+`"documented"`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+UNDOCUMENTED
+
+
+</td><td>
+
+`"undocumented"`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

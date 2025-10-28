@@ -22,8 +22,36 @@ export declare class UserCredentialsRepository extends DefaultCrudRepository<Use
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(dataSource)](./authentication-jwt.usercredentialsrepository._constructor_.md) |  | Constructs a new instance of the <code>UserCredentialsRepository</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(dataSource)](./authentication-jwt.usercredentialsrepository._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `UserCredentialsRepository` class
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,8 +23,26 @@ export declare namespace LoopbackSequelizeComponentBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./sequelize.loopbacksequelizecomponentbindings.component.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./sequelize.loopbacksequelizecomponentbindings.component.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

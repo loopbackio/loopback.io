@@ -23,10 +23,55 @@ export declare function getDeepProperty<OUT = BoundValue, IN = BoundValue>(value
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | IN | Value of the source object |
-|  path | string | Path to the property |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+IN
+
+
+</td><td>
+
+Value of the source object
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Path to the property
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

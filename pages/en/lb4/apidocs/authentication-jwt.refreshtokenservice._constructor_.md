@@ -23,13 +23,106 @@ constructor(refreshSecret: string, refreshExpiresIn: string, refreshIssure: stri
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  refreshSecret | string |  |
-|  refreshExpiresIn | string |  |
-|  refreshIssure | string |  |
-|  refreshTokenRepository | [RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md) |  |
-|  userService | [MyUserService](./authentication-jwt.myuserservice.md) |  |
-|  jwtService | [TokenService](./authentication.tokenservice.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+refreshSecret
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+refreshExpiresIn
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+refreshIssure
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+refreshTokenRepository
+
+
+</td><td>
+
+[RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+userService
+
+
+</td><td>
+
+[MyUserService](./authentication-jwt.myuserservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+jwtService
+
+
+</td><td>
+
+[TokenService](./authentication.tokenservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

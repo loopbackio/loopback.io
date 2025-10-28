@@ -17,15 +17,59 @@ permalink: /doc/en/lb4/apidocs.rest-msgpack.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [MsgPackBodyParser](./rest-msgpack.msgpackbodyparser.md) |  |
-|  [MsgPackBodyParserComponent](./rest-msgpack.msgpackbodyparsercomponent.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MsgPackBodyParser](./rest-msgpack.msgpackbodyparser.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MsgPackBodyParserComponent](./rest-msgpack.msgpackbodyparsercomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [MsgPackBodyParserBindings](./rest-msgpack.msgpackbodyparserbindings.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MsgPackBodyParserBindings](./rest-msgpack.msgpackbodyparserbindings.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

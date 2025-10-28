@@ -23,9 +23,37 @@ export declare function createControllerFactoryForInstance<T extends object>(con
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  controllerInst | T |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+controllerInst
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

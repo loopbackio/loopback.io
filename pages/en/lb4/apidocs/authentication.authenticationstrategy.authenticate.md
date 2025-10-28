@@ -23,9 +23,39 @@ authenticate(request: Request): Promise<UserProfile | RedirectRoute | undefined>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request | Express request object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+Express request object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

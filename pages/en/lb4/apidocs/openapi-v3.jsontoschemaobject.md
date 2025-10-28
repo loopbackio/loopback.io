@@ -23,10 +23,55 @@ export declare function jsonToSchemaObject(json: JsonSchema, visited?: Map<JsonS
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  json | JsonSchema | JSON Schema to convert from |
-|  visited | Map&lt;JsonSchema, SchemaObject \| [SchemaRef](./openapi-v3.schemaref.md)<!-- -->&gt; | _(Optional)_ A map to keep track of mapped json schemas to handle circular references |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+json
+
+
+</td><td>
+
+JsonSchema
+
+
+</td><td>
+
+JSON Schema to convert from
+
+
+</td></tr>
+<tr><td>
+
+visited
+
+
+</td><td>
+
+Map&lt;JsonSchema, SchemaObject \| [SchemaRef](./openapi-v3.schemaref.md)<!-- -->&gt;
+
+
+</td><td>
+
+_(Optional)_ A map to keep track of mapped json schemas to handle circular references
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

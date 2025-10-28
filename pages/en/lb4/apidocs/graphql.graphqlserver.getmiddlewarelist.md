@@ -18,10 +18,10 @@ Get a list of middleware
 **Signature:**
 
 ```typescript
-getMiddlewareList(): Promise<Middleware<unknown>[]>;
+getMiddlewareList(): Promise<Middleware<object>[]>;
 ```
 **Returns:**
 
-Promise&lt;Middleware&lt;unknown&gt;\[\]&gt;
+Promise&lt;Middleware&lt;object&gt;\[\]&gt;
 
 

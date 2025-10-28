@@ -23,10 +23,55 @@ export declare function tryWithFinally<T>(action: () => ValueOrPromise<T>, final
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  action | () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt; | A function that returns a promise or a value |
-|  finalAction | () =&gt; void | A function to be called once the action is fulfilled or rejected (synchronously or asynchronously) |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+action
+
+
+</td><td>
+
+() =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+A function that returns a promise or a value
+
+
+</td></tr>
+<tr><td>
+
+finalAction
+
+
+</td><td>
+
+() =&gt; void
+
+
+</td><td>
+
+A function to be called once the action is fulfilled or rejected (synchronously or asynchronously)
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

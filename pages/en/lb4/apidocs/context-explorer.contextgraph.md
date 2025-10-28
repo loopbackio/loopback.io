@@ -23,17 +23,116 @@ export declare class ContextGraph
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(ctx, options)](./context-explorer.contextgraph._constructor_.md) |  | Constructs a new instance of the <code>ContextGraph</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(ctx, options)](./context-explorer.contextgraph._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ContextGraph` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [build()](./context-explorer.contextgraph.build.md) |  | Build a direct graph |
-|  [render()](./context-explorer.contextgraph.render.md) |  | Render the context graph in graphviz dot format |
-|  [renderBinding(parent, { binding, id })](./context-explorer.contextgraph.renderbinding.md) | <code>protected</code> | Render a binding object |
-|  [renderConfig(parent, { binding, level, id })](./context-explorer.contextgraph.renderconfig.md) | <code>protected</code> | Create an edge for a binding to its configuration |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[build()](./context-explorer.contextgraph.build.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Build a direct graph
+
+
+</td></tr>
+<tr><td>
+
+[render()](./context-explorer.contextgraph.render.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Render the context graph in graphviz dot format
+
+
+</td></tr>
+<tr><td>
+
+[renderBinding(parent, { binding, id })](./context-explorer.contextgraph.renderbinding.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Render a binding object
+
+
+</td></tr>
+<tr><td>
+
+[renderConfig(parent, { binding, level, id })](./context-explorer.contextgraph.renderconfig.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Create an edge for a binding to its configuration
+
+
+</td></tr>
+</tbody></table>
 
 

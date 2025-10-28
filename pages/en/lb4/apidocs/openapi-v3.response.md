@@ -21,8 +21,28 @@ export declare namespace response
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [file(mediaTypes)](./openapi-v3.response.file.md) | Decorate the response as a file |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[file(mediaTypes)](./openapi-v3.response.file.md)
+
+
+</td><td>
+
+Decorate the response as a file
+
+
+</td></tr>
+</tbody></table>
 
 

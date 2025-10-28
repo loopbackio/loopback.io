@@ -23,9 +23,39 @@ controller(controllerCtor: ControllerClass<ControllerInstance>): Binding;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;[ControllerInstance](./rest.controllerinstance.md)<!-- -->&gt; | The controller class (constructor function). |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+controllerCtor
+
+
+</td><td>
+
+[ControllerClass](./rest.controllerclass.md)<!-- -->&lt;[ControllerInstance](./rest.controllerinstance.md)<!-- -->&gt;
+
+
+</td><td>
+
+The controller class (constructor function).
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

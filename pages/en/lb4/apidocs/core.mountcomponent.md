@@ -23,10 +23,55 @@ export declare function mountComponent(app: Application, component: Component): 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  app | [Application](./core.application.md) | Application |
-|  component | [Component](./core.component.md) | Component instance |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+app
+
+
+</td><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+Application
+
+
+</td></tr>
+<tr><td>
+
+component
+
+
+</td><td>
+
+[Component](./core.component.md)
+
+
+</td><td>
+
+Component instance
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

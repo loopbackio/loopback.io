@@ -21,10 +21,55 @@ count(where?: Where<T>, options?: AnyObject): Promise<Count>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;T&gt; | _(Optional)_ |
-|  options | AnyObject | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+where
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+AnyObject
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

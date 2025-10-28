@@ -23,11 +23,71 @@ export declare function assertTargetType(injection: Readonly<Injection>, expecte
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection information |
-|  expectedType | Function | Expected type |
-|  expectedTypeName | string | _(Optional)_ Name of the expected type to be used in the error |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+injection
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
+
+
+</td><td>
+
+Injection information
+
+
+</td></tr>
+<tr><td>
+
+expectedType
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+Expected type
+
+
+</td></tr>
+<tr><td>
+
+expectedTypeName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Name of the expected type to be used in the error
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,21 +24,183 @@ export declare class DefaultSubject implements Subject
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [authorities](./security.defaultsubject.authorities.md) | <code>readonly</code> | Set&lt;[Permission](./security.permission.md)<!-- -->&gt; |  |
-|  [credentials](./security.defaultsubject.credentials.md) | <code>readonly</code> | Set&lt;[Credential](./security.credential.md)<!-- -->&gt; |  |
-|  [principals](./security.defaultsubject.principals.md) | <code>readonly</code> | Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt; |  |
-|  [user](./security.defaultsubject.user.md) | <code>readonly</code> | [UserProfile](./security.userprofile.md) \| undefined |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authorities](./security.defaultsubject.authorities.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Set&lt;[Permission](./security.permission.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[credentials](./security.defaultsubject.credentials.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Set&lt;[Credential](./security.credential.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[principals](./security.defaultsubject.principals.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[user](./security.defaultsubject.user.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[UserProfile](./security.userprofile.md) \| undefined
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addApplication(app)](./security.defaultsubject.addapplication.md) |  |  |
-|  [addAuthority(authorities)](./security.defaultsubject.addauthority.md) |  |  |
-|  [addCredential(credentials)](./security.defaultsubject.addcredential.md) |  |  |
-|  [addUser(users)](./security.defaultsubject.adduser.md) |  |  |
-|  [getPrincipal(type)](./security.defaultsubject.getprincipal.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addApplication(app)](./security.defaultsubject.addapplication.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[addAuthority(authorities)](./security.defaultsubject.addauthority.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[addCredential(credentials)](./security.defaultsubject.addcredential.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[addUser(users)](./security.defaultsubject.adduser.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getPrincipal(type)](./security.defaultsubject.getprincipal.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

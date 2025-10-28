@@ -23,10 +23,55 @@ writeJsonFile(dest: string, data: unknown): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dest | string | Destination filename, optionally including a relative path. |
-|  data | unknown | The data to write. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dest
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Destination filename, optionally including a relative path.
+
+
+</td></tr>
+<tr><td>
+
+data
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+The data to write.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

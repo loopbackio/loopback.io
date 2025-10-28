@@ -23,9 +23,39 @@ export declare function extensionFor(...extensionPointNames: string[]): BindingT
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  extensionPointNames | string\[\] | Names of the extension point |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+extensionPointNames
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+Names of the extension point
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -21,10 +21,51 @@ export declare function getParserOptions(type: 'raw', options: RequestBodyParser
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  type | 'raw' |  |
-|  options | [RequestBodyParserOptions](./rest.requestbodyparseroptions.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+type
+
+
+</td><td>
+
+'raw'
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[RequestBodyParserOptions](./rest.requestbodyparseroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

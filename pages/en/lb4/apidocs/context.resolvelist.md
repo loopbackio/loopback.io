@@ -23,10 +23,55 @@ export declare function resolveList<T, V>(list: T[], resolver: (val: T, index: n
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  list | T\[\] | The original array containing the source entries |
-|  resolver | (val: T, index: number, values: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+list
+
+
+</td><td>
+
+T\[\]
+
+
+</td><td>
+
+The original array containing the source entries
+
+
+</td></tr>
+<tr><td>
+
+resolver
+
+
+</td><td>
+
+(val: T, index: number, values: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
+
+
+</td><td>
+
+A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

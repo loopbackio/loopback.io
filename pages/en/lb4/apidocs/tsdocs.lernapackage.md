@@ -23,12 +23,122 @@ export interface LernaPackage
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [location](./tsdocs.lernapackage.location.md) |  | string | Location of the package |
-|  [manifestLocation](./tsdocs.lernapackage.manifestlocation.md) |  | string | Location of <code>package.json</code> |
-|  [name](./tsdocs.lernapackage.name.md) |  | string | Package name |
-|  [private](./tsdocs.lernapackage.private.md) |  | boolean | Is it a private package? |
-|  [rootPath](./tsdocs.lernapackage.rootpath.md) |  | string | Root directory of the monorepo |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[location](./tsdocs.lernapackage.location.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Location of the package
+
+
+</td></tr>
+<tr><td>
+
+[manifestLocation](./tsdocs.lernapackage.manifestlocation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Location of `package.json`
+
+
+</td></tr>
+<tr><td>
+
+[name](./tsdocs.lernapackage.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Package name
+
+
+</td></tr>
+<tr><td>
+
+[private](./tsdocs.lernapackage.private.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Is it a private package?
+
+
+</td></tr>
+<tr><td>
+
+[rootPath](./tsdocs.lernapackage.rootpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Root directory of the monorepo
+
+
+</td></tr>
+</tbody></table>
 
 

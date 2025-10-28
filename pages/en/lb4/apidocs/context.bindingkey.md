@@ -21,23 +21,237 @@ export declare class BindingKey<ValueType>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md) | <code>static</code> | string | Name space for configuration binding keys |
-|  [key](./context.bindingkey.key.md) | <code>readonly</code> | string |  |
-|  [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md) | <p><code>static</code></p><p><code>readonly</code></p> | (not declared) |  |
-|  [propertyPath?](./context.bindingkey.propertypath.md) | <code>readonly</code> | string \| undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name space for configuration binding keys
+
+
+</td></tr>
+<tr><td>
+
+[key](./context.bindingkey.key.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[propertyPath?](./context.bindingkey.propertypath.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [buildKeyForConfig(key)](./context.bindingkey.buildkeyforconfig.md) | <code>static</code> | Build a binding key for the configuration of the given binding. The format is <code>&lt;key&gt;:$config</code> |
-|  [create(key, propertyPath)](./context.bindingkey.create.md) | <code>static</code> | Create a new key for a binding bound to a value of type <code>ValueType</code>. |
-|  [deepProperty(propertyPath)](./context.bindingkey.deepproperty.md) |  | Get a binding address for retrieving a deep property of the object bound to the current binding key. |
-|  [generate(namespace)](./context.bindingkey.generate.md) | <code>static</code> | <p>Generate a universally unique binding key.</p><p>Please note the format of they generated key is not specified, you must not rely on any specific formatting (e.g. UUID style).</p> |
-|  [parseKeyWithPath(keyWithPath)](./context.bindingkey.parsekeywithpath.md) | <code>static</code> | Parse a string containing both the binding key and the path to the deeply nested property to retrieve. |
-|  [toString()](./context.bindingkey.tostring.md) |  |  |
-|  [validate(key)](./context.bindingkey.validate.md) | <code>static</code> | Validate the binding key format. Please note that <code>#</code> is reserved. Returns a string representation of the binding key. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildKeyForConfig(key)](./context.bindingkey.buildkeyforconfig.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Build a binding key for the configuration of the given binding. The format is `<key>:$config`
+
+
+</td></tr>
+<tr><td>
+
+[create(key, propertyPath)](./context.bindingkey.create.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a new key for a binding bound to a value of type `ValueType`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[deepProperty(propertyPath)](./context.bindingkey.deepproperty.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get a binding address for retrieving a deep property of the object bound to the current binding key.
+
+
+</td></tr>
+<tr><td>
+
+[generate(namespace)](./context.bindingkey.generate.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Generate a universally unique binding key.
+
+Please note the format of they generated key is not specified, you must not rely on any specific formatting (e.g. UUID style).
+
+
+</td></tr>
+<tr><td>
+
+[parseKeyWithPath(keyWithPath)](./context.bindingkey.parsekeywithpath.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Parse a string containing both the binding key and the path to the deeply nested property to retrieve.
+
+
+</td></tr>
+<tr><td>
+
+[toString()](./context.bindingkey.tostring.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[validate(key)](./context.bindingkey.validate.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Validate the binding key format. Please note that `#` is reserved. Returns a string representation of the binding key.
+
+
+</td></tr>
+</tbody></table>
 
 

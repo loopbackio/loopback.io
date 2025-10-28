@@ -17,21 +17,87 @@ permalink: /doc/en/lb4/apidocs.apiconnect.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [ApiConnectComponent](./apiconnect.apiconnectcomponent.md) |  |
-|  [ApiConnectSpecEnhancer](./apiconnect.apiconnectspecenhancer.md) | An OpenAPI spec enhancer to add <code>x-ibm-configuration</code> extension required by API Connect |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApiConnectComponent](./apiconnect.apiconnectcomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ApiConnectSpecEnhancer](./apiconnect.apiconnectspecenhancer.md)
+
+
+</td><td>
+
+An OpenAPI spec enhancer to add `x-ibm-configuration` extension required by API Connect
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [ApiConnectBindings](./apiconnect.apiconnectbindings.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApiConnectBindings](./apiconnect.apiconnectbindings.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [ApiConnectSpecOptions](./apiconnect.apiconnectspecoptions.md) | Configuration for IBM API Connect extensions to the OpenAPI spec |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApiConnectSpecOptions](./apiconnect.apiconnectspecoptions.md)
+
+
+</td><td>
+
+Configuration for IBM API Connect extensions to the OpenAPI spec
+
+
+</td></tr>
+</tbody></table>
 
 

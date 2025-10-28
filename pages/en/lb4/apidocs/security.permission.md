@@ -31,12 +31,122 @@ export declare class Permission
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\[securityId\]](./security.permission._securityid_.md) | <code>readonly</code> | string |  |
-|  [action](./security.permission.action.md) |  | string | Action or access of a protected resources, such as <code>read</code>, <code>create</code>, <code>update</code>, or <code>delete</code> |
-|  [resourceId?](./security.permission.resourceid.md) |  | string | _(Optional)_ Identity of a protected resource instance, such as <code>order-0001</code> or <code>customer-101</code> |
-|  [resourceProperty?](./security.permission.resourceproperty.md) |  | string | _(Optional)_ Property of a protected resource type/instance, such as <code>email</code> |
-|  [resourceType](./security.permission.resourcetype.md) |  | string | Type of protected resource, such as <code>Order</code> or <code>Customer</code> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\[securityId\]](./security.permission._securityid_.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[action](./security.permission.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Action or access of a protected resources, such as `read`<!-- -->, `create`<!-- -->, `update`<!-- -->, or `delete`
+
+
+</td></tr>
+<tr><td>
+
+[resourceId?](./security.permission.resourceid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Identity of a protected resource instance, such as `order-0001` or `customer-101`
+
+
+</td></tr>
+<tr><td>
+
+[resourceProperty?](./security.permission.resourceproperty.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Property of a protected resource type/instance, such as `email`
+
+
+</td></tr>
+<tr><td>
+
+[resourceType](./security.permission.resourcetype.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Type of protected resource, such as `Order` or `Customer`
+
+
+</td></tr>
+</tbody></table>
 
 

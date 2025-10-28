@@ -23,9 +23,37 @@ allow: (...roles: string[]) => (target: any, method?: string | undefined, method
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  roles | string\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+roles
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

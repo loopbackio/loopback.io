@@ -21,68 +21,476 @@ For examples of how to leverage `@loopback/core` to build composable and extensi
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [Application](./core.application.md) | Application is the container for various types of artifacts, such as components, servers, controllers, repositories, datasources, connectors, and models. |
-|  [LifeCycleObserverRegistry](./core.lifecycleobserverregistry.md) | A context-based registry for life cycle observers |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+Application is the container for various types of artifacts, such as components, servers, controllers, repositories, datasources, connectors, and models.
+
+
+</td></tr>
+<tr><td>
+
+[LifeCycleObserverRegistry](./core.lifecycleobserverregistry.md)
+
+
+</td><td>
+
+A context-based registry for life cycle observers
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [addExtension(context, extensionPointName, extensionClass, options)](./core.addextension.md) | Register an extension for the given extension point to the context |
-|  [asLifeCycleObserver(binding)](./core.aslifecycleobserver.md) | A <code>BindingTemplate</code> function to configure the binding as life cycle observer by tagging it with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. |
-|  [asService(serviceInterface)](./core.asservice.md) | Create a binding template for a service interface |
-|  [createServiceBinding(cls, options)](./core.createservicebinding.md) | Create a service binding from a class or provider |
-|  [extensionFilter(extensionPointNames)](./core.extensionfilter.md) | A factory function to create binding filter for extensions of a named extension point |
-|  [extensionFor(extensionPointNames)](./core.extensionfor.md) | A factory function to create binding template for extensions of the given extension point |
-|  [extensionPoint(name, specs)](./core.extensionpoint.md) | Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used. |
-|  [extensions(extensionPointName, metadata)](./core.extensions.md) | Shortcut to inject extensions for the given extension point. |
-|  [filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md) | Create a binding filter by service class |
-|  [isLifeCycleObserver(obj)](./core.islifecycleobserver.md) | Test if an object implements LifeCycleObserver |
-|  [isLifeCycleObserverClass(ctor)](./core.islifecycleobserverclass.md) | Test if a class implements LifeCycleObserver |
-|  [lifeCycleObserver(group, specs)](./core.lifecycleobserver.md) | Sugar decorator to mark a class as life cycle observer |
-|  [mountComponent(app, component)](./core.mountcomponent.md) | Mount a component to an Application. |
-|  [service(serviceInterface, metadata)](./core.service.md) | <code>@service</code> injects a service instance that matches the class or interface. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addExtension(context, extensionPointName, extensionClass, options)](./core.addextension.md)
+
+
+</td><td>
+
+Register an extension for the given extension point to the context
+
+
+</td></tr>
+<tr><td>
+
+[asLifeCycleObserver(binding)](./core.aslifecycleobserver.md)
+
+
+</td><td>
+
+A `BindingTemplate` function to configure the binding as life cycle observer by tagging it with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[asService(serviceInterface)](./core.asservice.md)
+
+
+</td><td>
+
+Create a binding template for a service interface
+
+
+</td></tr>
+<tr><td>
+
+[createServiceBinding(cls, options)](./core.createservicebinding.md)
+
+
+</td><td>
+
+Create a service binding from a class or provider
+
+
+</td></tr>
+<tr><td>
+
+[extensionFilter(extensionPointNames)](./core.extensionfilter.md)
+
+
+</td><td>
+
+A factory function to create binding filter for extensions of a named extension point
+
+
+</td></tr>
+<tr><td>
+
+[extensionFor(extensionPointNames)](./core.extensionfor.md)
+
+
+</td><td>
+
+A factory function to create binding template for extensions of the given extension point
+
+
+</td></tr>
+<tr><td>
+
+[extensionPoint(name, specs)](./core.extensionpoint.md)
+
+
+</td><td>
+
+Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used.
+
+
+</td></tr>
+<tr><td>
+
+[extensions(extensionPointName, metadata)](./core.extensions.md)
+
+
+</td><td>
+
+Shortcut to inject extensions for the given extension point.
+
+
+</td></tr>
+<tr><td>
+
+[filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md)
+
+
+</td><td>
+
+Create a binding filter by service class
+
+
+</td></tr>
+<tr><td>
+
+[isLifeCycleObserver(obj)](./core.islifecycleobserver.md)
+
+
+</td><td>
+
+Test if an object implements LifeCycleObserver
+
+
+</td></tr>
+<tr><td>
+
+[isLifeCycleObserverClass(ctor)](./core.islifecycleobserverclass.md)
+
+
+</td><td>
+
+Test if a class implements LifeCycleObserver
+
+
+</td></tr>
+<tr><td>
+
+[lifeCycleObserver(group, specs)](./core.lifecycleobserver.md)
+
+
+</td><td>
+
+Sugar decorator to mark a class as life cycle observer
+
+
+</td></tr>
+<tr><td>
+
+[mountComponent(app, component)](./core.mountcomponent.md)
+
+
+</td><td>
+
+Mount a component to an Application.
+
+
+</td></tr>
+<tr><td>
+
+[service(serviceInterface, metadata)](./core.service.md)
+
+
+</td><td>
+
+`@service` injects a service instance that matches the class or interface.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ApplicationConfig](./core.applicationconfig.md) | Configuration for application |
-|  [ApplicationMetadata](./core.applicationmetadata.md) | Type description for <code>package.json</code> |
-|  [ClassMap](./core.classmap.md) | A map of classes to be bound to a context |
-|  [Component](./core.component.md) | A component declares a set of artifacts so that they can be contributed to an application as a group |
-|  [LifeCycleObserver](./core.lifecycleobserver.md) | Observers to handle life cycle init/start/stop events |
-|  [ProviderMap](./core.providermap.md) | A map of provider classes to be bound to a context |
-|  [Server](./core.server.md) | Defines the requirements to implement a Server for LoopBack applications: start() : Promise<void> stop() : Promise<void> It is recommended that each Server implementation creates its own child Context, which inherits from the parent Application context. This way, any Server-specific bindings will remain local to the Server instance, and will avoid polluting its parent module scope. |
-|  [ServiceOptions](./core.serviceoptions.md) | Options to register a service binding |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ApplicationConfig](./core.applicationconfig.md)
+
+
+</td><td>
+
+Configuration for application
+
+
+</td></tr>
+<tr><td>
+
+[ApplicationMetadata](./core.applicationmetadata.md)
+
+
+</td><td>
+
+Type description for `package.json`
+
+
+</td></tr>
+<tr><td>
+
+[ClassMap](./core.classmap.md)
+
+
+</td><td>
+
+A map of classes to be bound to a context
+
+
+</td></tr>
+<tr><td>
+
+[Component](./core.component.md)
+
+
+</td><td>
+
+A component declares a set of artifacts so that they can be contributed to an application as a group
+
+
+</td></tr>
+<tr><td>
+
+[LifeCycleObserver](./core.lifecycleobserver.md)
+
+
+</td><td>
+
+Observers to handle life cycle init/start/stop events
+
+
+</td></tr>
+<tr><td>
+
+[ProviderMap](./core.providermap.md)
+
+
+</td><td>
+
+A map of provider classes to be bound to a context
+
+
+</td></tr>
+<tr><td>
+
+[Server](./core.server.md)
+
+
+</td><td>
+
+Defines the requirements to implement a Server for LoopBack applications: start() : Promise<void> stop() : Promise<void> It is recommended that each Server implementation creates its own child Context, which inherits from the parent Application context. This way, any Server-specific bindings will remain local to the Server instance, and will avoid polluting its parent module scope.
+
+
+</td></tr>
+<tr><td>
+
+[ServiceOptions](./core.serviceoptions.md)
+
+
+</td><td>
+
+Options to register a service binding
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [CoreBindings](./core.corebindings.md) | Namespace for core binding keys |
-|  [CoreTags](./core.coretags.md) |  |
-|  [extensions](./core.extensions.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CoreBindings](./core.corebindings.md)
+
+
+</td><td>
+
+Namespace for core binding keys
+
+
+</td></tr>
+<tr><td>
+
+[CoreTags](./core.coretags.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[extensions](./core.extensions.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DEFAULT\_ORDERED\_GROUPS](./core.default_ordered_groups.md) |  |
-|  [lifeCycleObserverFilter](./core.lifecycleobserverfilter.md) | Find all life cycle observer bindings. By default, a binding tagged with <code>CoreTags.LIFE_CYCLE_OBSERVER</code>. It's used as <code>BindingFilter</code>. |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DEFAULT\_ORDERED\_GROUPS](./core.default_ordered_groups.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[lifeCycleObserverFilter](./core.lifecycleobserverfilter.md)
+
+
+</td><td>
+
+Find all life cycle observer bindings. By default, a binding tagged with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->. It's used as `BindingFilter`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [ControllerClass](./core.controllerclass.md) |  |
-|  [LifeCycleObserverGroup](./core.lifecycleobservergroup.md) | A group of life cycle observers |
-|  [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md) |  |
-|  [MixinTarget](./core.mixintarget.md) | A replacement for <code>typeof Target</code> to be used in mixin class definitions. This is a workaround for TypeScript limitation described in - https://github.com/microsoft/TypeScript/issues/17293 - https://github.com/microsoft/TypeScript/issues/17744 - https://github.com/microsoft/TypeScript/issues/36060 |
-|  [ServiceInterface](./core.serviceinterface.md) | Representing an interface for services. In TypeScript, the <code>interface</code> does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface. |
-|  [ServiceOrProviderClass](./core.serviceorproviderclass.md) |  |
-|  [ShutdownOptions](./core.shutdownoptions.md) | Options to set up application shutdown |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ControllerClass](./core.controllerclass.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[LifeCycleObserverGroup](./core.lifecycleobservergroup.md)
+
+
+</td><td>
+
+A group of life cycle observers
+
+
+</td></tr>
+<tr><td>
+
+[LifeCycleObserverOptions](./core.lifecycleobserveroptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[MixinTarget](./core.mixintarget.md)
+
+
+</td><td>
+
+A replacement for `typeof Target` to be used in mixin class definitions. This is a workaround for TypeScript limitation described in - https://github.com/microsoft/TypeScript/issues/17293 - https://github.com/microsoft/TypeScript/issues/17744 - https://github.com/microsoft/TypeScript/issues/36060
+
+
+</td></tr>
+<tr><td>
+
+[ServiceInterface](./core.serviceinterface.md)
+
+
+</td><td>
+
+Representing an interface for services. In TypeScript, the `interface` does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface.
+
+
+</td></tr>
+<tr><td>
+
+[ServiceOrProviderClass](./core.serviceorproviderclass.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ShutdownOptions](./core.shutdownoptions.md)
+
+
+</td><td>
+
+Options to set up application shutdown
+
+
+</td></tr>
+</tbody></table>
 
 

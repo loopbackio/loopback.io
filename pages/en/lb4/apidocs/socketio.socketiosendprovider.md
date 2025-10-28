@@ -22,9 +22,46 @@ export declare class SocketIoSendProvider implements Provider<SocketIoSendMethod
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [action(done, result)](./socketio.socketiosendprovider.action.md) |  |  |
-|  [value()](./socketio.socketiosendprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action(done, result)](./socketio.socketiosendprovider.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[value()](./socketio.socketiosendprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

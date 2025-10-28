@@ -23,10 +23,53 @@ protected renderBinding(parent: ICluster, { binding, id }: ContextBinding): INod
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parent | ICluster | Parent subgraph |
-|  { binding, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parent
+
+
+</td><td>
+
+ICluster
+
+
+</td><td>
+
+Parent subgraph
+
+
+</td></tr>
+<tr><td>
+
+{ binding, id }
+
+
+</td><td>
+
+[ContextBinding](./context-explorer.contextbinding.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

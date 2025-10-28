@@ -23,9 +23,39 @@ export declare function isDynamicValueProviderClass<T = unknown>(factory: unknow
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  factory | unknown | A factory function or a dynamic value provider class |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+factory
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+A factory function or a dynamic value provider class
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

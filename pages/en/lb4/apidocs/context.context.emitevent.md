@@ -23,10 +23,55 @@ emitEvent<T extends ContextEvent>(type: string, event: T): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  type | string | Event type |
-|  event | T | Context event |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+type
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Event type
+
+
+</td></tr>
+<tr><td>
+
+event
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Context event
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

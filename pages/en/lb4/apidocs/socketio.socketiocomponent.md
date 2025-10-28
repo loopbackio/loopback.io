@@ -22,17 +22,131 @@ export declare class SocketIoComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(app)](./socketio.socketiocomponent._constructor_.md) |  | Constructs a new instance of the <code>SocketIoComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(app)](./socketio.socketiocomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings](./socketio.socketiocomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->\[\] | Add built-in body parsers |
-|  [booters](./socketio.socketiocomponent.booters.md) |  | (typeof [SocketIoBooter](./socketio.socketiobooter.md)<!-- -->)\[\] |  |
-|  [providers](./socketio.socketiocomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
-|  [servers](./socketio.socketiocomponent.servers.md) |  | { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; } |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings](./socketio.socketiocomponent.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->\[\]
+
+
+</td><td>
+
+Add built-in body parsers
+
+
+</td></tr>
+<tr><td>
+
+[booters](./socketio.socketiocomponent.booters.md)
+
+
+</td><td>
+
+
+</td><td>
+
+(typeof [SocketIoBooter](./socketio.socketiobooter.md)<!-- -->)\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[providers](./socketio.socketiocomponent.providers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ProviderMap](./core.providermap.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[servers](./socketio.socketiocomponent.servers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

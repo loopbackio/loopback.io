@@ -24,22 +24,182 @@ export declare class ComponentsSpecBuilder extends BuilderBase<ComponentsObject>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)()](./openapi-spec-builder.componentsspecbuilder._constructor_.md) |  | Constructs a new instance of the <code>ComponentsSpecBuilder</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./openapi-spec-builder.componentsspecbuilder._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ComponentsSpecBuilder` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [withCallback(name, callback)](./openapi-spec-builder.componentsspecbuilder.withcallback.md) |  | Define a component callback. |
-|  [withExample(name, example)](./openapi-spec-builder.componentsspecbuilder.withexample.md) |  | Define a component example. |
-|  [withHeader(name, header)](./openapi-spec-builder.componentsspecbuilder.withheader.md) |  | Define a component header. |
-|  [withLink(name, link)](./openapi-spec-builder.componentsspecbuilder.withlink.md) |  | Define a component link. |
-|  [withParameter(name, parameter)](./openapi-spec-builder.componentsspecbuilder.withparameter.md) |  | Define a component parameter. |
-|  [withRequestBody(name, requestBody)](./openapi-spec-builder.componentsspecbuilder.withrequestbody.md) |  | Define a component request body. |
-|  [withResponse(name, response)](./openapi-spec-builder.componentsspecbuilder.withresponse.md) |  | Define a component response. |
-|  [withSchema(name, schema)](./openapi-spec-builder.componentsspecbuilder.withschema.md) |  | Define a component schema. |
-|  [withSecurityScheme(name, securityScheme)](./openapi-spec-builder.componentsspecbuilder.withsecurityscheme.md) |  | Define a component security scheme. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[withCallback(name, callback)](./openapi-spec-builder.componentsspecbuilder.withcallback.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component callback.
+
+
+</td></tr>
+<tr><td>
+
+[withExample(name, example)](./openapi-spec-builder.componentsspecbuilder.withexample.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component example.
+
+
+</td></tr>
+<tr><td>
+
+[withHeader(name, header)](./openapi-spec-builder.componentsspecbuilder.withheader.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component header.
+
+
+</td></tr>
+<tr><td>
+
+[withLink(name, link)](./openapi-spec-builder.componentsspecbuilder.withlink.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component link.
+
+
+</td></tr>
+<tr><td>
+
+[withParameter(name, parameter)](./openapi-spec-builder.componentsspecbuilder.withparameter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component parameter.
+
+
+</td></tr>
+<tr><td>
+
+[withRequestBody(name, requestBody)](./openapi-spec-builder.componentsspecbuilder.withrequestbody.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component request body.
+
+
+</td></tr>
+<tr><td>
+
+[withResponse(name, response)](./openapi-spec-builder.componentsspecbuilder.withresponse.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component response.
+
+
+</td></tr>
+<tr><td>
+
+[withSchema(name, schema)](./openapi-spec-builder.componentsspecbuilder.withschema.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component schema.
+
+
+</td></tr>
+<tr><td>
+
+[withSecurityScheme(name, securityScheme)](./openapi-spec-builder.componentsspecbuilder.withsecurityscheme.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Define a component security scheme.
+
+
+</td></tr>
+</tbody></table>
 
 

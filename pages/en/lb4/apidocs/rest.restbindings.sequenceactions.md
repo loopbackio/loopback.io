@@ -23,14 +23,94 @@ namespace SequenceActions
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [FIND\_ROUTE](./rest.restbindings.sequenceactions.find_route.md) | Binding key for setting and injecting a route finding function |
-|  [INVOKE\_METHOD](./rest.restbindings.sequenceactions.invoke_method.md) | Binding key for setting and injecting a controller route invoking function |
-|  [INVOKE\_MIDDLEWARE](./rest.restbindings.sequenceactions.invoke_middleware.md) | Binding key for setting and injecting <code>invokeMiddleware</code> function |
-|  [LOG\_ERROR](./rest.restbindings.sequenceactions.log_error.md) | Binding key for setting and injecting an error logging function |
-|  [PARSE\_PARAMS](./rest.restbindings.sequenceactions.parse_params.md) | Binding key for setting and injecting a parameter parsing function |
-|  [REJECT](./rest.restbindings.sequenceactions.reject.md) | Binding key for setting and injecting a bad response writing function |
-|  [SEND](./rest.restbindings.sequenceactions.send.md) | Binding key for setting and injecting a response writing function |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[FIND\_ROUTE](./rest.restbindings.sequenceactions.find_route.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a route finding function
+
+
+</td></tr>
+<tr><td>
+
+[INVOKE\_METHOD](./rest.restbindings.sequenceactions.invoke_method.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a controller route invoking function
+
+
+</td></tr>
+<tr><td>
+
+[INVOKE\_MIDDLEWARE](./rest.restbindings.sequenceactions.invoke_middleware.md)
+
+
+</td><td>
+
+Binding key for setting and injecting `invokeMiddleware` function
+
+
+</td></tr>
+<tr><td>
+
+[LOG\_ERROR](./rest.restbindings.sequenceactions.log_error.md)
+
+
+</td><td>
+
+Binding key for setting and injecting an error logging function
+
+
+</td></tr>
+<tr><td>
+
+[PARSE\_PARAMS](./rest.restbindings.sequenceactions.parse_params.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a parameter parsing function
+
+
+</td></tr>
+<tr><td>
+
+[REJECT](./rest.restbindings.sequenceactions.reject.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a bad response writing function
+
+
+</td></tr>
+<tr><td>
+
+[SEND](./rest.restbindings.sequenceactions.send.md)
+
+
+</td><td>
+
+Binding key for setting and injecting a response writing function
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ export declare function inspectInjections(binding: Readonly<Binding<unknown>>): 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+binding
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt;
+
+
+</td><td>
+
+Binding object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

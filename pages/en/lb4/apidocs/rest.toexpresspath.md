@@ -23,9 +23,39 @@ export declare function toExpressPath(path: string): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string | OpenAPI path with optional variables as <code>{var}</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+OpenAPI path with optional variables as `{var}`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

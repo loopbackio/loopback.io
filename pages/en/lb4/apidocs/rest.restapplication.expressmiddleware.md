@@ -23,11 +23,71 @@ expressMiddleware(key: BindingAddress, middleware: ExpressRequestHandler | Expre
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | Middleware binding key |
-|  middleware | ExpressRequestHandler \| ExpressRequestHandler\[\] | Express middleware handler function(s) |
-|  options | MiddlewareBindingOptions | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)
+
+
+</td><td>
+
+Middleware binding key
+
+
+</td></tr>
+<tr><td>
+
+middleware
+
+
+</td><td>
+
+ExpressRequestHandler \| ExpressRequestHandler\[\]
+
+
+</td><td>
+
+Express middleware handler function(s)
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+MiddlewareBindingOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

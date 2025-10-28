@@ -23,9 +23,39 @@ export declare function getPackagesWithTsDocs(rootDir?: string): Promise<LernaPa
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  rootDir | string | _(Optional)_ Root directory to find the monorepo |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+rootDir
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Root directory to find the monorepo
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

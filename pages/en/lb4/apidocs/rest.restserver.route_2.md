@@ -23,9 +23,39 @@ route(route: RouteEntry): Binding;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  route | [RouteEntry](./rest.routeentry.md) | The route to add. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+route
+
+
+</td><td>
+
+[RouteEntry](./rest.routeentry.md)
+
+
+</td><td>
+
+The route to add.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

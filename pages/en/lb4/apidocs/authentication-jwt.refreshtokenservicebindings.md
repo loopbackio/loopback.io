@@ -23,13 +23,75 @@ export declare namespace RefreshTokenServiceBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DATASOURCE\_NAME](./authentication-jwt.refreshtokenservicebindings.datasource_name.md) | The backend datasource for refresh token's persistency. |
-|  [REFRESH\_EXPIRES\_IN](./authentication-jwt.refreshtokenservicebindings.refresh_expires_in.md) |  |
-|  [REFRESH\_ISSUER](./authentication-jwt.refreshtokenservicebindings.refresh_issuer.md) |  |
-|  [REFRESH\_REPOSITORY](./authentication-jwt.refreshtokenservicebindings.refresh_repository.md) | Key for the repository that stores the refresh token and its bound user information |
-|  [REFRESH\_SECRET](./authentication-jwt.refreshtokenservicebindings.refresh_secret.md) |  |
-|  [REFRESH\_TOKEN\_SERVICE](./authentication-jwt.refreshtokenservicebindings.refresh_token_service.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DATASOURCE\_NAME](./authentication-jwt.refreshtokenservicebindings.datasource_name.md)
+
+
+</td><td>
+
+The backend datasource for refresh token's persistency.
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_EXPIRES\_IN](./authentication-jwt.refreshtokenservicebindings.refresh_expires_in.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_ISSUER](./authentication-jwt.refreshtokenservicebindings.refresh_issuer.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_REPOSITORY](./authentication-jwt.refreshtokenservicebindings.refresh_repository.md)
+
+
+</td><td>
+
+Key for the repository that stores the refresh token and its bound user information
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_SECRET](./authentication-jwt.refreshtokenservicebindings.refresh_secret.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[REFRESH\_TOKEN\_SERVICE](./authentication-jwt.refreshtokenservicebindings.refresh_token_service.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

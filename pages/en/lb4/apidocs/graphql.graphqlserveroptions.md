@@ -18,17 +18,147 @@ Options for GraphQL server
 **Signature:**
 
 ```typescript
-export interface GraphQLServerOptions extends HttpOptions 
+export interface GraphQLServerOptions<TContext extends BaseContext = BaseContext> extends HttpOptions 
 ```
 **Extends:** [HttpOptions](./http-server.httpoptions.md)
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apollo?](./graphql.graphqlserveroptions.apollo.md) |  | ApolloServerExpressConfig | _(Optional)_ ApolloServerExpress related configuration |
-|  [asMiddlewareOnly?](./graphql.graphqlserveroptions.asmiddlewareonly.md) |  | boolean | _(Optional)_ Use as a middleware for RestServer instead of a standalone server |
-|  [expressSettings?](./graphql.graphqlserveroptions.expresssettings.md) |  | Record&lt;string, unknown&gt; | _(Optional)_ Express settings |
-|  [middlewareOptions?](./graphql.graphqlserveroptions.middlewareoptions.md) |  | GetMiddlewareOptions | _(Optional)_ Middleware options for GraphQL |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apollo?](./graphql.graphqlserveroptions.apollo.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Partial&lt;ApolloServerOptionsWithStaticSchema&lt;TContext&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ ApolloServerExpress related configuration
+
+
+</td></tr>
+<tr><td>
+
+[asMiddlewareOnly?](./graphql.graphqlserveroptions.asmiddlewareonly.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Use as a middleware for RestServer instead of a standalone server
+
+
+</td></tr>
+<tr><td>
+
+[expressSettings?](./graphql.graphqlserveroptions.expresssettings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, unknown&gt;
+
+
+</td><td>
+
+_(Optional)_ Express settings
+
+
+</td></tr>
+<tr><td>
+
+[graphQLPath?](./graphql.graphqlserveroptions.graphqlpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[middlewareOptions?](./graphql.graphqlserveroptions.middlewareoptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, unknown&gt;
+
+
+</td><td>
+
+_(Optional)_ Middleware options for GraphQL
+
+
+</td></tr>
+<tr><td>
+
+[validate?](./graphql.graphqlserveroptions.validate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

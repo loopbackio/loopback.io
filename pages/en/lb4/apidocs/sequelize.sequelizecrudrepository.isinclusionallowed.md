@@ -23,9 +23,39 @@ protected isInclusionAllowed(include: InclusionFilter): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  include | [InclusionFilter](./filter.inclusionfilter.md) | LoopBack Inclusion filter |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+include
+
+
+</td><td>
+
+[InclusionFilter](./filter.inclusionfilter.md)
+
+
+</td><td>
+
+LoopBack Inclusion filter
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

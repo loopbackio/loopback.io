@@ -23,9 +23,39 @@ protected buildSequelizeWhere<MT extends T>(where?: Where<MT>): WhereOptions<MT>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | _(Optional)_ loopback style <code>where</code> condition |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+where
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+_(Optional)_ loopback style `where` condition
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

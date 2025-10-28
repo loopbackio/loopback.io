@@ -23,9 +23,39 @@ isVisibleTo(ctx: Context): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctx | [Context](./context.context.md) | Another context object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Another context object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

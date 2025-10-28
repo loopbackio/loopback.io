@@ -22,9 +22,46 @@ export declare class SocketIoRejectProvider implements Provider<SocketIoRejectMe
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [action(done, error)](./socketio.socketiorejectprovider.action.md) |  |  |
-|  [value()](./socketio.socketiorejectprovider.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action(done, error)](./socketio.socketiorejectprovider.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[value()](./socketio.socketiorejectprovider.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,10 +23,50 @@ namespace Http
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [CONTEXT](./rest.restbindings.http.context.md) | Binding key for setting and injecting the http request context |
-|  [REQUEST](./rest.restbindings.http.request.md) | Binding key for setting and injecting the http request |
-|  [RESPONSE](./rest.restbindings.http.response.md) | Binding key for setting and injecting the http response |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CONTEXT](./rest.restbindings.http.context.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the http request context
+
+
+</td></tr>
+<tr><td>
+
+[REQUEST](./rest.restbindings.http.request.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the http request
+
+
+</td></tr>
+<tr><td>
+
+[RESPONSE](./rest.restbindings.http.response.md)
+
+
+</td><td>
+
+Binding key for setting and injecting the http response
+
+
+</td></tr>
+</tbody></table>
 
 

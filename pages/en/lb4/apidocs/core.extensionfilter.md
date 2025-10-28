@@ -23,9 +23,39 @@ export declare function extensionFilter(...extensionPointNames: string[]): Bindi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  extensionPointNames | string\[\] | A list of names of extension points |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+extensionPointNames
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+A list of names of extension points
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

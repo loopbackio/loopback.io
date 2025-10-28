@@ -23,10 +23,55 @@ once(eventName: 'changed', listener: BindingEventListener): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventName | 'changed' | The name of the event - always <code>changed</code>. |
-|  listener | [BindingEventListener](./context.bindingeventlistener.md) | The listener function to call when the event is emitted. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventName
+
+
+</td><td>
+
+'changed'
+
+
+</td><td>
+
+The name of the event - always `changed`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+listener
+
+
+</td><td>
+
+[BindingEventListener](./context.bindingeventlistener.md)
+
+
+</td><td>
+
+The listener function to call when the event is emitted.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

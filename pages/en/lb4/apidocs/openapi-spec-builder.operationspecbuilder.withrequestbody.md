@@ -21,9 +21,37 @@ withRequestBody(requestBodySpec: RequestBodyObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  requestBodySpec | RequestBodyObject |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+requestBodySpec
+
+
+</td><td>
+
+RequestBodyObject
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

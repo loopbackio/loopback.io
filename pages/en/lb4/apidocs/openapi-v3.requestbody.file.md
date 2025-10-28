@@ -28,9 +28,39 @@ file: (properties?: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  properties | { description?: string; required?: boolean; } | _(Optional)_ Optional description and required flag |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+properties
+
+
+</td><td>
+
+{ description?: string; required?: boolean; }
+
+
+</td><td>
+
+_(Optional)_ Optional description and required flag
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

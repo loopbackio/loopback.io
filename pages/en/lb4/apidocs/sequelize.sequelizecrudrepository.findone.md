@@ -21,10 +21,55 @@ findOne(filter?: FilterWithRequired<T>, options?: AnyObject): Promise<(T & Relat
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filter | FilterWithRequired&lt;T&gt; | _(Optional)_ |
-|  options | AnyObject | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filter
+
+
+</td><td>
+
+FilterWithRequired&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+AnyObject
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

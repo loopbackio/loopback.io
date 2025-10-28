@@ -23,11 +23,65 @@ observe(event: ContextEventType, binding: Readonly<Binding<unknown>>, context: C
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  event | [ContextEventType](./context.contexteventtype.md) |  |
-|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; |  |
-|  context | [Context](./context.context.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+event
+
+
+</td><td>
+
+[ContextEventType](./context.contexteventtype.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+binding
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

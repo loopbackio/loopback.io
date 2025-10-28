@@ -23,9 +23,39 @@ mkdir(dir: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dir | string | Name of directory to create (relative to TestSandbox path) |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dir
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of directory to create (relative to TestSandbox path)
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

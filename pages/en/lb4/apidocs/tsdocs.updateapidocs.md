@@ -23,9 +23,39 @@ export declare function updateApiDocs(options?: ApiDocsOptions): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ApiDocsOptions](./tsdocs.apidocsoptions.md) | _(Optional)_ Options for api docs |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ApiDocsOptions](./tsdocs.apidocsoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for api docs
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

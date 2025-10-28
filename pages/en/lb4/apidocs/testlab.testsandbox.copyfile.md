@@ -23,11 +23,71 @@ copyFile(src: string, dest?: string, transform?: (content: string) => string): P
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  src | string | Absolute path of file to be copied to the TestSandbox |
-|  dest | string | _(Optional)_ Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified. |
-|  transform | (content: string) =&gt; string | _(Optional)_ Optional. A function to transform the file content. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+src
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Absolute path of file to be copied to the TestSandbox
+
+
+</td></tr>
+<tr><td>
+
+dest
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified.
+
+
+</td></tr>
+<tr><td>
+
+transform
+
+
+</td><td>
+
+(content: string) =&gt; string
+
+
+</td><td>
+
+_(Optional)_ Optional. A function to transform the file content.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

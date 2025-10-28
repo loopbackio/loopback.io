@@ -21,59 +21,329 @@ To read on key building blocks read through [LoopBack authorization docs](https:
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [AuthorizationComponent](./authorization.authorizationcomponent.md) |  |
-|  [AuthorizationError](./authorization.authorizationerror.md) | The custom error class that describes the error thrown by the authorization module. Should be extracted to the common layer shared by authentication and authorization. |
-|  [AuthorizationInterceptor](./authorization.authorizationinterceptor.md) |  |
-|  [AuthorizeMethodDecoratorFactory](./authorization.authorizemethoddecoratorfactory.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AuthorizationComponent](./authorization.authorizationcomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizationError](./authorization.authorizationerror.md)
+
+
+</td><td>
+
+The custom error class that describes the error thrown by the authorization module. Should be extracted to the common layer shared by authentication and authorization.
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizationInterceptor](./authorization.authorizationinterceptor.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizeMethodDecoratorFactory](./authorization.authorizemethoddecoratorfactory.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-|  Enumeration | Description |
-|  --- | --- |
-|  [AuthorizationDecision](./authorization.authorizationdecision.md) | Decisions for authorization |
+<table><thead><tr><th>
+
+Enumeration
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AuthorizationDecision](./authorization.authorizationdecision.md)
+
+
+</td><td>
+
+Decisions for authorization
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [authorize(spec)](./authorization.authorize.md) | Decorator <code>@authorize</code> to mark methods that require authorization |
-|  [getAuthorizationMetadata(target, methodName)](./authorization.getauthorizationmetadata.md) | Fetch authorization metadata stored by <code>@authorize</code> decorator. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authorize(spec)](./authorization.authorize.md)
+
+
+</td><td>
+
+Decorator `@authorize` to mark methods that require authorization
+
+
+</td></tr>
+<tr><td>
+
+[getAuthorizationMetadata(target, methodName)](./authorization.getauthorizationmetadata.md)
+
+
+</td><td>
+
+Fetch authorization metadata stored by `@authorize` decorator.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [AuthorizationContext](./authorization.authorizationcontext.md) | Request context for authorization |
-|  [AuthorizationMetadata](./authorization.authorizationmetadata.md) | Authorization metadata supplied via <code>@authorize</code> decorator |
-|  [AuthorizationOptions](./authorization.authorizationoptions.md) |  |
-|  [AuthorizationRequest](./authorization.authorizationrequest.md) | Inspired by https://github.com/casbin/node-casbin |
-|  [Enforcer](./authorization.enforcer.md) | An enforcer of authorization policies |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AuthorizationContext](./authorization.authorizationcontext.md)
+
+
+</td><td>
+
+Request context for authorization
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizationMetadata](./authorization.authorizationmetadata.md)
+
+
+</td><td>
+
+Authorization metadata supplied via `@authorize` decorator
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizationOptions](./authorization.authorizationoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizationRequest](./authorization.authorizationrequest.md)
+
+
+</td><td>
+
+Inspired by https://github.com/casbin/node-casbin
+
+
+</td></tr>
+<tr><td>
+
+[Enforcer](./authorization.enforcer.md)
+
+
+</td><td>
+
+An enforcer of authorization policies
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [AuthorizationBindings](./authorization.authorizationbindings.md) | Binding keys used by authorization component. |
-|  [AuthorizationTags](./authorization.authorizationtags.md) | Binding tags used by authorization component |
-|  [authorize](./authorization.authorize.md) |  |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AuthorizationBindings](./authorization.authorizationbindings.md)
+
+
+</td><td>
+
+Binding keys used by authorization component.
+
+
+</td></tr>
+<tr><td>
+
+[AuthorizationTags](./authorization.authorizationtags.md)
+
+
+</td><td>
+
+Binding tags used by authorization component
+
+
+</td></tr>
+<tr><td>
+
+[authorize](./authorization.authorize.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [ANONYMOUS](./authorization.anonymous.md) |  |
-|  [AUTHENTICATED](./authorization.authenticated.md) |  |
-|  [AUTHORIZATION\_CLASS\_KEY](./authorization.authorization_class_key.md) |  |
-|  [AUTHORIZATION\_METHOD\_KEY](./authorization.authorization_method_key.md) |  |
-|  [EVERYONE](./authorization.everyone.md) | Built-in roles |
-|  [UNAUTHENTICATED](./authorization.unauthenticated.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ANONYMOUS](./authorization.anonymous.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AUTHENTICATED](./authorization.authenticated.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AUTHORIZATION\_CLASS\_KEY](./authorization.authorization_class_key.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AUTHORIZATION\_METHOD\_KEY](./authorization.authorization_method_key.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[EVERYONE](./authorization.everyone.md)
+
+
+</td><td>
+
+Built-in roles
+
+
+</td></tr>
+<tr><td>
+
+[UNAUTHENTICATED](./authorization.unauthenticated.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Authorizer](./authorization.authorizer.md) | A function to decide if access to the target should be allowed or denied |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Authorizer](./authorization.authorizer.md)
+
+
+</td><td>
+
+A function to decide if access to the target should be allowed or denied
+
+
+</td></tr>
+</tbody></table>
 
 

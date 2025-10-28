@@ -23,9 +23,65 @@ export interface SocketIoMetadata
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name?](./socketio.socketiometadata.name.md) |  | string | _(Optional)_ |
-|  [namespace?](./socketio.socketiometadata.namespace.md) |  | string \| RegExp | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name?](./socketio.socketiometadata.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[namespace?](./socketio.socketiometadata.namespace.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| RegExp
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

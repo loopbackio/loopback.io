@@ -23,9 +23,39 @@ generateToken(userProfile: UserProfile): Promise<string>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  userProfile | [UserProfile](./security.userprofile.md) | A UserProfile for which a token should be generated. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+userProfile
+
+
+</td><td>
+
+[UserProfile](./security.userprofile.md)
+
+
+</td><td>
+
+A UserProfile for which a token should be generated.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

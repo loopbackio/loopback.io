@@ -22,15 +22,80 @@ export declare class AuthorizationInterceptor implements Provider<Interceptor>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./authorization.authorizationinterceptor._constructor_.md) |  | Constructs a new instance of the <code>AuthorizationInterceptor</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./authorization.authorizationinterceptor._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `AuthorizationInterceptor` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [intercept(invocationCtx, next)](./authorization.authorizationinterceptor.intercept.md) |  |  |
-|  [value()](./authorization.authorizationinterceptor.value.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[intercept(invocationCtx, next)](./authorization.authorizationinterceptor.intercept.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[value()](./authorization.authorizationinterceptor.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

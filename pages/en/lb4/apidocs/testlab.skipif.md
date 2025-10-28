@@ -25,12 +25,87 @@ export declare function skipIf<ARGS extends unknown[], RETVAL>(skip: boolean, ve
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  skip | boolean | Should the test case/suite be skipped? |
-|  verb | [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt; &amp; { skip: [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt;; } | The function to invoke to define the test case or the test suite, e.g. <code>it</code> or <code>describe</code>. |
-|  name | string | The test name (the first argument of <code>verb</code> function). |
-|  args | ARGS | Additional arguments (framework specific), typically a function implementing the test. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+skip
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Should the test case/suite be skipped?
+
+
+</td></tr>
+<tr><td>
+
+verb
+
+
+</td><td>
+
+[TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt; &amp; { skip: [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt;; }
+
+
+</td><td>
+
+The function to invoke to define the test case or the test suite, e.g. `it` or `describe`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The test name (the first argument of `verb` function).
+
+
+</td></tr>
+<tr><td>
+
+args
+
+
+</td><td>
+
+ARGS
+
+
+</td><td>
+
+Additional arguments (framework specific), typically a function implementing the test.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,8 +24,36 @@ export declare class RestExplorerComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(application, restExplorerConfig)](./rest-explorer.restexplorercomponent._constructor_.md) |  | Constructs a new instance of the <code>RestExplorerComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(application, restExplorerConfig)](./rest-explorer.restexplorercomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RestExplorerComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 

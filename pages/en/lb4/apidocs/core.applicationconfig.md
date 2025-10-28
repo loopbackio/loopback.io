@@ -23,9 +23,65 @@ export interface ApplicationConfig
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name?](./core.applicationconfig.name.md) |  | string | _(Optional)_ Name of the application context |
-|  [shutdown?](./core.applicationconfig.shutdown.md) |  | [ShutdownOptions](./core.shutdownoptions.md) | _(Optional)_ Configuration for signals that shut down the application |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name?](./core.applicationconfig.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Name of the application context
+
+
+</td></tr>
+<tr><td>
+
+[shutdown?](./core.applicationconfig.shutdown.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ShutdownOptions](./core.shutdownoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Configuration for signals that shut down the application
+
+
+</td></tr>
+</tbody></table>
 
 

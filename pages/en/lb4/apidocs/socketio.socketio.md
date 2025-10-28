@@ -21,19 +21,83 @@ export declare namespace socketio
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [connect()](./socketio.socketio.connect.md) | Decorate a controller method for <code>connect</code> |
-|  [disconnect()](./socketio.socketio.disconnect.md) | Decorate a controller method for <code>disconnect</code> |
-|  [io()](./socketio.socketio.io.md) |  |
-|  [namespace(name)](./socketio.socketio.namespace.md) |  |
-|  [socket()](./socketio.socketio.socket.md) |  |
-|  [subscribe(messageTypes)](./socketio.socketio.subscribe.md) | <p>Decorate a method to subscribe to socketio events. For example,</p>
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[connect()](./socketio.socketio.connect.md)
+
+
+</td><td>
+
+Decorate a controller method for `connect`
+
+
+</td></tr>
+<tr><td>
+
+[disconnect()](./socketio.socketio.disconnect.md)
+
+
+</td><td>
+
+Decorate a controller method for `disconnect`
+
+
+</td></tr>
+<tr><td>
+
+[io()](./socketio.socketio.io.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[namespace(name)](./socketio.socketio.namespace.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[socket()](./socketio.socketio.socket.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[subscribe(messageTypes)](./socketio.socketio.subscribe.md)
+
+
+</td><td>
+
+Decorate a method to subscribe to socketio events. For example,
+
 ```ts
 @socketio.subscribe('chat message')
 async function onChat(msg: string) {
 }
 ```
- |
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,8 +23,36 @@ constructor(dataSource: juggler.DataSource);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dataSource | juggler.DataSource |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dataSource
+
+
+</td><td>
+
+juggler.DataSource
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

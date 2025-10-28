@@ -26,10 +26,55 @@ export declare function renderGraph(graph: string, options?: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  graph | string | A graph in dot format |
-|  options | { engine?: string; format?: string; } | _(Optional)_ Options for the rendering |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+graph
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+A graph in dot format
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+{ engine?: string; format?: string; }
+
+
+</td><td>
+
+_(Optional)_ Options for the rendering
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

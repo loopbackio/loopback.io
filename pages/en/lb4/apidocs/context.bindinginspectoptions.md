@@ -23,8 +23,46 @@ export interface BindingInspectOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [includeInjections?](./context.bindinginspectoptions.includeinjections.md) |  | boolean | _(Optional)_ The flag to control if injections should be inspected |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[includeInjections?](./context.bindinginspectoptions.includeinjections.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ The flag to control if injections should be inspected
+
+
+</td></tr>
+</tbody></table>
 
 

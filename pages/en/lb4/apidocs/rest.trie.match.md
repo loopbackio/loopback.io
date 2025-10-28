@@ -25,9 +25,39 @@ match(path: string): (ResolvedNode<T> & {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string | The route path, such as <code>/customers/c01</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The route path, such as `/customers/c01`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,12 +23,87 @@ export declare function createProxyWithInterceptors<T extends object>(target: T,
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | T | Target class or object |
-|  context | [Context](./context.context.md) | _(Optional)_ Context object |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Resolution session |
-|  source | [InvocationSource](./context.invocationsource.md) | _(Optional)_ Invocation source |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Target class or object
+
+
+</td></tr>
+<tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+_(Optional)_ Context object
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ Resolution session
+
+
+</td></tr>
+<tr><td>
+
+source
+
+
+</td><td>
+
+[InvocationSource](./context.invocationsource.md)
+
+
+</td><td>
+
+_(Optional)_ Invocation source
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

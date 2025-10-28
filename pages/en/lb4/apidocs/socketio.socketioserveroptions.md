@@ -21,9 +21,65 @@ export interface SocketIoServerOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [httpServerOptions?](./socketio.socketioserveroptions.httpserveroptions.md) |  | [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md) | _(Optional)_ |
-|  [socketIoOptions?](./socketio.socketioserveroptions.socketiooptions.md) |  | ServerOptions | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[httpServerOptions?](./socketio.socketioserveroptions.httpserveroptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[socketIoOptions?](./socketio.socketioserveroptions.socketiooptions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ServerOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

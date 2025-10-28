@@ -24,8 +24,36 @@ export declare class HealthComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(application, healthConfig)](./health.healthcomponent._constructor_.md) |  | Constructs a new instance of the <code>HealthComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(application, healthConfig)](./health.healthcomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `HealthComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 

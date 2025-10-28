@@ -23,10 +23,55 @@ export declare function describeInjectedArguments(target: Object, method?: strin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | The target class for constructor or static methods, or the prototype for instance methods |
-|  method | string | _(Optional)_ Method name, undefined for constructor |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+The target class for constructor or static methods, or the prototype for instance methods
+
+
+</td></tr>
+<tr><td>
+
+method
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Method name, undefined for constructor
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

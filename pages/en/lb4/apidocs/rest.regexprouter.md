@@ -24,16 +24,98 @@ export declare class RegExpRouter extends BaseRouter
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./rest.regexprouter._constructor_.md) |  | Constructs a new instance of the <code>RegExpRouter</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./rest.regexprouter._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RegExpRouter` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [addRouteWithPathVars(route)](./rest.regexprouter.addroutewithpathvars.md) | <code>protected</code> |  |
-|  [findRouteWithPathVars(verb, path)](./rest.regexprouter.findroutewithpathvars.md) | <code>protected</code> |  |
-|  [listRoutesWithPathVars()](./rest.regexprouter.listrouteswithpathvars.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addRouteWithPathVars(route)](./rest.regexprouter.addroutewithpathvars.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[findRouteWithPathVars(verb, path)](./rest.regexprouter.findroutewithpathvars.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[listRoutesWithPathVars()](./rest.regexprouter.listrouteswithpathvars.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

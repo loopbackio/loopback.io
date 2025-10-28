@@ -25,9 +25,39 @@ export declare function api(spec: Partial<ControllerSpec>): ClassDecorator;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | Partial&lt;[ControllerSpec](./openapi-v3.controllerspec.md)<!-- -->&gt; | OpenAPI specification describing the endpoints handled by this controller |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+Partial&lt;[ControllerSpec](./openapi-v3.controllerspec.md)<!-- -->&gt;
+
+
+</td><td>
+
+OpenAPI specification describing the endpoints handled by this controller
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

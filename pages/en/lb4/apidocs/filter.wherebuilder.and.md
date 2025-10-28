@@ -23,9 +23,39 @@ and(...w: (Where<MT> | Where<MT>[])[]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  w | ([Where](./filter.where.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\])\[\] | One or more where objects |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+w
+
+
+</td><td>
+
+([Where](./filter.where.md)<!-- -->&lt;MT&gt; \| [Where](./filter.where.md)<!-- -->&lt;MT&gt;\[\])\[\]
+
+
+</td><td>
+
+One or more where objects
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,12 +23,122 @@ export interface AuthorizationContext
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [invocationContext](./authorization.authorizationcontext.invocationcontext.md) |  | [InvocationContext](./context.invocationcontext.md) | Context for the invocation |
-|  [principals](./authorization.authorizationcontext.principals.md) |  | [Principal](./security.principal.md)<!-- -->\[\] | An array of principals identified for the request - it should come from authentication |
-|  [resource](./authorization.authorizationcontext.resource.md) |  | string | An name for the target resource to be accessed, such as <code>OrderController.prototype.cancelOrder</code> |
-|  [roles](./authorization.authorizationcontext.roles.md) |  | [Role](./security.role.md)<!-- -->\[\] | An array of roles for principals |
-|  [scopes](./authorization.authorizationcontext.scopes.md) |  | string\[\] | An array of scopes representing granted permissions - usually come from access tokens |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[invocationContext](./authorization.authorizationcontext.invocationcontext.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[InvocationContext](./context.invocationcontext.md)
+
+
+</td><td>
+
+Context for the invocation
+
+
+</td></tr>
+<tr><td>
+
+[principals](./authorization.authorizationcontext.principals.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Principal](./security.principal.md)<!-- -->\[\]
+
+
+</td><td>
+
+An array of principals identified for the request - it should come from authentication
+
+
+</td></tr>
+<tr><td>
+
+[resource](./authorization.authorizationcontext.resource.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+An name for the target resource to be accessed, such as `OrderController.prototype.cancelOrder`
+
+
+</td></tr>
+<tr><td>
+
+[roles](./authorization.authorizationcontext.roles.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Role](./security.role.md)<!-- -->\[\]
+
+
+</td><td>
+
+An array of roles for principals
+
+
+</td></tr>
+<tr><td>
+
+[scopes](./authorization.authorizationcontext.scopes.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+An array of scopes representing granted permissions - usually come from access tokens
+
+
+</td></tr>
+</tbody></table>
 
 

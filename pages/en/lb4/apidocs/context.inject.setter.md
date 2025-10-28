@@ -27,10 +27,55 @@ setter: (bindingKey: BindingAddress, metadata?: InjectBindingMetadata) => (targe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindingKey | [BindingAddress](./context.bindingaddress.md) | The key of the value we want to set. |
-|  metadata | [InjectBindingMetadata](./context.injectbindingmetadata.md) | _(Optional)_ Optional metadata to help the injection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindingKey
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)
+
+
+</td><td>
+
+The key of the value we want to set.
+
+
+</td></tr>
+<tr><td>
+
+metadata
+
+
+</td><td>
+
+[InjectBindingMetadata](./context.injectbindingmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Optional metadata to help the injection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

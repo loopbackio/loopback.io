@@ -25,10 +25,55 @@ getBinding<ValueType>(key: BindingAddress<ValueType>, options?: {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | Binding key |
-|  options | { optional?: boolean; } | _(Optional)_ Options to control if the binding is optional. If <code>options.optional</code> is set to true, the method will return <code>undefined</code> instead of throwing an error if the binding key is not found. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt;
+
+
+</td><td>
+
+Binding key
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+{ optional?: boolean; }
+
+
+</td><td>
+
+_(Optional)_ Options to control if the binding is optional. If `options.optional` is set to true, the method will return `undefined` instead of throwing an error if the binding key is not found.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

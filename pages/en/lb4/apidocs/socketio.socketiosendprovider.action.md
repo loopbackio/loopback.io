@@ -21,10 +21,51 @@ action(done: Function, result: unknown): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  done | Function |  |
-|  result | unknown |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+done
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+result
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

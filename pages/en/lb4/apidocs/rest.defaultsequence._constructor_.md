@@ -23,12 +23,102 @@ constructor(findRoute: FindRoute, parseParams: ParseParams, invoke: InvokeMethod
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  findRoute | [FindRoute](./rest.findroute.md) | Finds the appropriate controller method, spec and args for invocation (injected via SequenceActions.FIND\_ROUTE). |
-|  parseParams | [ParseParams](./rest.parseparams.md) | The parameter parsing function (injected via SequenceActions.PARSE\_PARAMS). |
-|  invoke | [InvokeMethod](./rest.invokemethod.md) | Invokes the method specified by the route (injected via SequenceActions.INVOKE\_METHOD). |
-|  send | [Send](./rest.send.md) | The action to merge the invoke result with the response (injected via SequenceActions.SEND) |
-|  reject | [Reject](./rest.reject.md) | The action to take if the invoke returns a rejected promise result (injected via SequenceActions.REJECT). |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+findRoute
+
+
+</td><td>
+
+[FindRoute](./rest.findroute.md)
+
+
+</td><td>
+
+Finds the appropriate controller method, spec and args for invocation (injected via SequenceActions.FIND\_ROUTE).
+
+
+</td></tr>
+<tr><td>
+
+parseParams
+
+
+</td><td>
+
+[ParseParams](./rest.parseparams.md)
+
+
+</td><td>
+
+The parameter parsing function (injected via SequenceActions.PARSE\_PARAMS).
+
+
+</td></tr>
+<tr><td>
+
+invoke
+
+
+</td><td>
+
+[InvokeMethod](./rest.invokemethod.md)
+
+
+</td><td>
+
+Invokes the method specified by the route (injected via SequenceActions.INVOKE\_METHOD).
+
+
+</td></tr>
+<tr><td>
+
+send
+
+
+</td><td>
+
+[Send](./rest.send.md)
+
+
+</td><td>
+
+The action to merge the invoke result with the response (injected via SequenceActions.SEND)
+
+
+</td></tr>
+<tr><td>
+
+reject
+
+
+</td><td>
+
+[Reject](./rest.reject.md)
+
+
+</td><td>
+
+The action to take if the invoke returns a rejected promise result (injected via SequenceActions.REJECT).
+
+
+</td></tr>
+</tbody></table>
 
 

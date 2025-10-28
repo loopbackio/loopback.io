@@ -21,9 +21,37 @@ modifySpec(spec: OpenApiSpec): OpenApiSpec;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | [OpenApiSpec](./openapi-v3.openapispec.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+[OpenApiSpec](./openapi-v3.openapispec.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

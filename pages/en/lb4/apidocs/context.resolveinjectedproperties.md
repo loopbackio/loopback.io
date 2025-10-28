@@ -25,11 +25,71 @@ export declare function resolveInjectedProperties(constructor: Function, ctx: Co
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  constructor | Function | The class for which properties should be resolved. |
-|  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+constructor
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+The class for which properties should be resolved.
+
+
+</td></tr>
+<tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+The context containing values for `@inject` resolution
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ Optional session for binding and dependency resolution
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

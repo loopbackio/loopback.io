@@ -23,9 +23,39 @@ inspect(options?: ContextInspectOptions): JSONObject;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [ContextInspectOptions](./context.contextinspectoptions.md) | _(Optional)_ Options for inspect |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[ContextInspectOptions](./context.contextinspectoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for inspect
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,12 +23,87 @@ route(verb: string, path: string, spec: OperationObject, handler: Function): Bin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | HTTP verb of the endpoint |
-|  path | string | URL path of the endpoint |
-|  spec | OperationObject | The OpenAPI spec describing the endpoint (operation) |
-|  handler | Function | The function to invoke with the request parameters described in the spec. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+HTTP verb of the endpoint
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+URL path of the endpoint
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+The OpenAPI spec describing the endpoint (operation)
+
+
+</td></tr>
+<tr><td>
+
+handler
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+The function to invoke with the request parameters described in the spec.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

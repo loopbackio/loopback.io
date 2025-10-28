@@ -23,9 +23,39 @@ getTarget(spec: T): any;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | T | Metadata spec |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Metadata spec
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

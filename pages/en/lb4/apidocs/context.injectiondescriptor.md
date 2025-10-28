@@ -21,10 +21,78 @@ export interface InjectionDescriptor
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindingSelector](./context.injectiondescriptor.bindingselector.md) |  | [BindingSelector](./context.bindingselector.md) |  |
-|  [metadata](./context.injectiondescriptor.metadata.md) |  | [InjectionMetadata](./context.injectionmetadata.md) |  |
-|  [targetName](./context.injectiondescriptor.targetname.md) |  | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindingSelector](./context.injectiondescriptor.bindingselector.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingSelector](./context.bindingselector.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[metadata](./context.injectiondescriptor.metadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[InjectionMetadata](./context.injectionmetadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[targetName](./context.injectiondescriptor.targetname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

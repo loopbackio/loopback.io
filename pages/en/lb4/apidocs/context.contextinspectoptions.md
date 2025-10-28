@@ -24,8 +24,46 @@ export interface ContextInspectOptions extends BindingInspectOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [includeParent?](./context.contextinspectoptions.includeparent.md) |  | boolean | _(Optional)_ The flag to control if parent context should be inspected |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[includeParent?](./context.contextinspectoptions.includeparent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ The flag to control if parent context should be inspected
+
+
+</td></tr>
+</tbody></table>
 
 

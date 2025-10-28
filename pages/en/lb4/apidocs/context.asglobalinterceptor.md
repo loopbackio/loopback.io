@@ -23,9 +23,39 @@ export declare function asGlobalInterceptor(group?: string): BindingTemplate;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  group | string | _(Optional)_ Group for ordering the interceptor |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+group
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Group for ordering the interceptor
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

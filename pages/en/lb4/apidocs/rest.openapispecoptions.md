@@ -23,12 +23,122 @@ export interface OpenApiSpecOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [consolidate?](./rest.openapispecoptions.consolidate.md) |  | boolean | _(Optional)_ Set this flag to <code>false</code> to disable OAS schema consolidation. If not set, the value defaults to <code>true</code>. |
-|  [disabled?](./rest.openapispecoptions.disabled.md) |  | true | _(Optional)_ Set this flag to disable the endpoint for OpenAPI spec |
-|  [endpointMapping?](./rest.openapispecoptions.endpointmapping.md) |  | { \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; } | _(Optional)_ Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> } |
-|  [servers?](./rest.openapispecoptions.servers.md) |  | ServerObject\[\] | _(Optional)_ Configure servers for OpenAPI spec |
-|  [setServersFromRequest?](./rest.openapispecoptions.setserversfromrequest.md) |  | boolean | _(Optional)_ A flag to force <code>servers</code> to be set from the http request for the OpenAPI spec |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[consolidate?](./rest.openapispecoptions.consolidate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Set this flag to `false` to disable OAS schema consolidation. If not set, the value defaults to `true`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[disabled?](./rest.openapispecoptions.disabled.md)
+
+
+</td><td>
+
+
+</td><td>
+
+true
+
+
+</td><td>
+
+_(Optional)_ Set this flag to disable the endpoint for OpenAPI spec
+
+
+</td></tr>
+<tr><td>
+
+[endpointMapping?](./rest.openapispecoptions.endpointmapping.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; }
+
+
+</td><td>
+
+_(Optional)_ Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> }
+
+
+</td></tr>
+<tr><td>
+
+[servers?](./rest.openapispecoptions.servers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ServerObject\[\]
+
+
+</td><td>
+
+_(Optional)_ Configure servers for OpenAPI spec
+
+
+</td></tr>
+<tr><td>
+
+[setServersFromRequest?](./rest.openapispecoptions.setserversfromrequest.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag to force `servers` to be set from the http request for the OpenAPI spec
+
+
+</td></tr>
+</tbody></table>
 
 

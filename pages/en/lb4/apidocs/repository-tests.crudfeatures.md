@@ -23,13 +23,153 @@ export interface CrudFeatures
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [emptyValue](./repository-tests.crudfeatures.emptyvalue.md) |  | undefined \| null | <p>The value used by the database to store properties set to <code>undefined</code>. Typically, SQL databases store both <code>undefined</code> and <code>null</code> as <code>null</code>.</p><p>Default: <code>undefined</code></p> |
-|  [freeFormProperties](./repository-tests.crudfeatures.freeformproperties.md) |  | boolean | <p>Does the database (or the connector) require a fixed schema, or can it support additional (free-form) properties? SQL databases typically don't support free-form properties.</p><p>Default: <code>true</code></p> |
-|  [hasRevisionToken](./repository-tests.crudfeatures.hasrevisiontoken.md) |  | boolean | <p>Does the connector have the revision token for replacement operations? (Cloudant)</p><p>Default: <code>false</code></p> |
-|  [idType](./repository-tests.crudfeatures.idtype.md) |  | 'string' \| 'number' | <p>What type is used for auto-generated primary keys? - SQL databases typically use auto-incremented numbers, - NoSQL databases tend to use GUID/UUID strings.</p><p>Default: <code>'string'</code>.</p> |
-|  [supportsInclusionResolvers](./repository-tests.crudfeatures.supportsinclusionresolvers.md) |  | boolean | <p>Does the repository provide <code>inclusionResolvers</code> object where resolvers can be registered?</p><p>Default: <code>true</code></p> |
-|  [supportsTransactions](./repository-tests.crudfeatures.supportstransactions.md) |  | boolean | <p>Does the connector support using transactions for performing CRUD operations atomically and being able to commit or rollback the changes? SQL databases usually support transactions</p><p>Default: <code>false</code></p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[emptyValue](./repository-tests.crudfeatures.emptyvalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+undefined \| null
+
+
+</td><td>
+
+The value used by the database to store properties set to `undefined`<!-- -->. Typically, SQL databases store both `undefined` and `null` as `null`<!-- -->.
+
+Default: `undefined`
+
+
+</td></tr>
+<tr><td>
+
+[freeFormProperties](./repository-tests.crudfeatures.freeformproperties.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Does the database (or the connector) require a fixed schema, or can it support additional (free-form) properties? SQL databases typically don't support free-form properties.
+
+Default: `true`
+
+
+</td></tr>
+<tr><td>
+
+[hasRevisionToken](./repository-tests.crudfeatures.hasrevisiontoken.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Does the connector have the revision token for replacement operations? (Cloudant)
+
+Default: `false`
+
+
+</td></tr>
+<tr><td>
+
+[idType](./repository-tests.crudfeatures.idtype.md)
+
+
+</td><td>
+
+
+</td><td>
+
+'string' \| 'number'
+
+
+</td><td>
+
+What type is used for auto-generated primary keys? - SQL databases typically use auto-incremented numbers, - NoSQL databases tend to use GUID/UUID strings.
+
+Default: `'string'`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[supportsInclusionResolvers](./repository-tests.crudfeatures.supportsinclusionresolvers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Does the repository provide `inclusionResolvers` object where resolvers can be registered?
+
+Default: `true`
+
+
+</td></tr>
+<tr><td>
+
+[supportsTransactions](./repository-tests.crudfeatures.supportstransactions.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Does the connector support using transactions for performing CRUD operations atomically and being able to commit or rollback the changes? SQL databases usually support transactions
+
+Default: `false`
+
+
+</td></tr>
+</tbody></table>
 
 

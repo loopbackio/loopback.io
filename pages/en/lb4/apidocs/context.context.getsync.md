@@ -25,10 +25,55 @@ getSync<ValueType>(keyWithPath: BindingAddress<ValueType>, session?: ResolutionS
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt; | The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve. |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Session for resolution (accepted for backward compatibility) |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyWithPath
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt;
+
+
+</td><td>
+
+The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve.
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ Session for resolution (accepted for backward compatibility)
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

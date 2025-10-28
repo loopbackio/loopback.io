@@ -23,9 +23,39 @@ toAlias(keyWithPath: BindingAddress<T>): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  keyWithPath | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Target binding key with optional path, such as <code>servers.RestServer.options#apiExplorer</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyWithPath
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Target binding key with optional path, such as `servers.RestServer.options#apiExplorer`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

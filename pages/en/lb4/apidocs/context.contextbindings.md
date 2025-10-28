@@ -23,9 +23,39 @@ export declare namespace ContextBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [CONFIGURATION\_RESOLVER](./context.contextbindings.configuration_resolver.md) | Binding key for ConfigurationResolver |
-|  [GLOBAL\_INTERCEPTOR\_ORDERED\_GROUPS](./context.contextbindings.global_interceptor_ordered_groups.md) | Binding key for ordered groups of global interceptors |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CONFIGURATION\_RESOLVER](./context.contextbindings.configuration_resolver.md)
+
+
+</td><td>
+
+Binding key for ConfigurationResolver
+
+
+</td></tr>
+<tr><td>
+
+[GLOBAL\_INTERCEPTOR\_ORDERED\_GROUPS](./context.contextbindings.global_interceptor_ordered_groups.md)
+
+
+</td><td>
+
+Binding key for ordered groups of global interceptors
+
+
+</td></tr>
+</tbody></table>
 
 

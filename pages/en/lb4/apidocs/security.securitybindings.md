@@ -23,9 +23,39 @@ export declare namespace SecurityBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [SUBJECT](./security.securitybindings.subject.md) | Binding key for subject |
-|  [USER](./security.securitybindings.user.md) | Binding key for current user profile |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SUBJECT](./security.securitybindings.subject.md)
+
+
+</td><td>
+
+Binding key for subject
+
+
+</td></tr>
+<tr><td>
+
+[USER](./security.securitybindings.user.md)
+
+
+</td><td>
+
+Binding key for current user profile
+
+
+</td></tr>
+</tbody></table>
 
 

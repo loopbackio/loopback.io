@@ -23,9 +23,37 @@ export declare function metaToJsonProperty(meta: PropertyDefinition): JsonSchema
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  meta | PropertyDefinition |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+meta
+
+
+</td><td>
+
+PropertyDefinition
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

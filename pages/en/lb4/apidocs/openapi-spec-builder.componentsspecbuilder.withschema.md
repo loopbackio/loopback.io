@@ -23,10 +23,55 @@ withSchema(name: string, schema: SchemaObject | ReferenceObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the schema |
-|  schema | SchemaObject \| ReferenceObject | Specification of the schema |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the schema
+
+
+</td></tr>
+<tr><td>
+
+schema
+
+
+</td><td>
+
+SchemaObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the schema
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

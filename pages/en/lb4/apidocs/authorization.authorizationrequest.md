@@ -23,11 +23,103 @@ export interface AuthorizationRequest
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [action](./authorization.authorizationrequest.action.md) |  | string | The operation that the requestor performs on the resource. |
-|  [domain?](./authorization.authorizationrequest.domain.md) |  | string | _(Optional)_ The domain (realm/tenant) |
-|  [object](./authorization.authorizationrequest.object.md) |  | string | The resource that is going to be accessed. |
-|  [subject](./authorization.authorizationrequest.subject.md) |  | string | The requestor that wants to access a resource. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action](./authorization.authorizationrequest.action.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The operation that the requestor performs on the resource.
+
+
+</td></tr>
+<tr><td>
+
+[domain?](./authorization.authorizationrequest.domain.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The domain (realm/tenant)
+
+
+</td></tr>
+<tr><td>
+
+[object](./authorization.authorizationrequest.object.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The resource that is going to be accessed.
+
+
+</td></tr>
+<tr><td>
+
+[subject](./authorization.authorizationrequest.subject.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The requestor that wants to access a resource.
+
+
+</td></tr>
+</tbody></table>
 
 

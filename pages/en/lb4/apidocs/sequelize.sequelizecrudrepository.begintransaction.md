@@ -21,9 +21,39 @@ beginTransaction(options?: TransactionOptions | TransactionOptions['isolationLev
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | TransactionOptions \| TransactionOptions\['isolationLevel'\] | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+TransactionOptions \| TransactionOptions\['isolationLevel'\]
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

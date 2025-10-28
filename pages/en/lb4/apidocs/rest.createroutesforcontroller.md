@@ -23,11 +23,71 @@ export declare function createRoutesForController<T extends object>(spec: Contro
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | [ControllerSpec](./openapi-v3.controllerspec.md) | Controller spec |
-|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; | Controller class |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | _(Optional)_ Controller factory |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+[ControllerSpec](./openapi-v3.controllerspec.md)
+
+
+</td><td>
+
+Controller spec
+
+
+</td></tr>
+<tr><td>
+
+controllerCtor
+
+
+</td><td>
+
+[ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Controller class
+
+
+</td></tr>
+<tr><td>
+
+controllerFactory
+
+
+</td><td>
+
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_ Controller factory
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

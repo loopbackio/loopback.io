@@ -21,9 +21,37 @@ updateBindings(requestContext: RequestContext): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  requestContext | [RequestContext](./rest.requestcontext.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+requestContext
+
+
+</td><td>
+
+[RequestContext](./rest.requestcontext.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -21,24 +21,118 @@ Allows LoopBack 4 applications to quickly expose models via REST API without hav
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CrudRestApiBuilder](./rest-crud.crudrestapibuilder.md) |  |
-|  [CrudRestComponent](./rest-crud.crudrestcomponent.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CrudRestApiBuilder](./rest-crud.crudrestapibuilder.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CrudRestComponent](./rest-crud.crudrestcomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md) | Create (define) a CRUD Controller class for the given model. |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md)
+
+
+</td><td>
+
+Create (define) a CRUD Controller class for the given model.
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [CrudRestController](./rest-crud.crudrestcontroller.md) | This interface describes prototype members of the controller class returned by <code>defineCrudRestController</code>. |
-|  [CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md) | Constructor of the controller class returned by <code>defineCrudRestController</code>. |
-|  [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md) | Options to configure different aspects of a CRUD REST Controller. |
-|  [ModelCrudRestApiConfig](./rest-crud.modelcrudrestapiconfig.md) |  |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CrudRestController](./rest-crud.crudrestcontroller.md)
+
+
+</td><td>
+
+This interface describes prototype members of the controller class returned by `defineCrudRestController`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md)
+
+
+</td><td>
+
+Constructor of the controller class returned by `defineCrudRestController`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md)
+
+
+</td><td>
+
+Options to configure different aspects of a CRUD REST Controller.
+
+
+</td></tr>
+<tr><td>
+
+[ModelCrudRestApiConfig](./rest-crud.modelcrudrestapiconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

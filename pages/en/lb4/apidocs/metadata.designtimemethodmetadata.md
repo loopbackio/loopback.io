@@ -45,10 +45,84 @@ The `myMethod` above has design-time metadata as follows:
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [parameterTypes](./metadata.designtimemethodmetadata.parametertypes.md) |  | Function\[\] | An array of parameter types. |
-|  [returnType](./metadata.designtimemethodmetadata.returntype.md) |  | Function \| undefined | Return type, may be <code>undefined</code> (e.g. for constructors). |
-|  [type](./metadata.designtimemethodmetadata.type.md) |  | Function \| undefined | Type of the method itself. It is <code>Function</code> for methods, <code>undefined</code> for the constructor. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parameterTypes](./metadata.designtimemethodmetadata.parametertypes.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Function\[\]
+
+
+</td><td>
+
+An array of parameter types.
+
+
+</td></tr>
+<tr><td>
+
+[returnType](./metadata.designtimemethodmetadata.returntype.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Function \| undefined
+
+
+</td><td>
+
+Return type, may be `undefined` (e.g. for constructors).
+
+
+</td></tr>
+<tr><td>
+
+[type](./metadata.designtimemethodmetadata.type.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Function \| undefined
+
+
+</td><td>
+
+Type of the method itself. It is `Function` for methods, `undefined` for the constructor.
+
+
+</td></tr>
+</tbody></table>
 
 

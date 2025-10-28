@@ -23,11 +23,71 @@ between<K extends KeyOf<MT>>(key: K, val1: MT[K], val2: MT[K]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | K | Property name |
-|  val1 | MT\[K\] | Property value lower bound |
-|  val2 | MT\[K\] | Property value upper bound |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+K
+
+
+</td><td>
+
+Property name
+
+
+</td></tr>
+<tr><td>
+
+val1
+
+
+</td><td>
+
+MT\[K\]
+
+
+</td><td>
+
+Property value lower bound
+
+
+</td></tr>
+<tr><td>
+
+val2
+
+
+</td><td>
+
+MT\[K\]
+
+
+</td><td>
+
+Property value upper bound
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

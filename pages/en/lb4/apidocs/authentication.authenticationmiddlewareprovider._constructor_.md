@@ -23,8 +23,36 @@ constructor(authenticate: AuthenticateFn);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  authenticate | [AuthenticateFn](./authentication.authenticatefn.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+authenticate
+
+
+</td><td>
+
+[AuthenticateFn](./authentication.authenticatefn.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

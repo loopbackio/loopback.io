@@ -23,10 +23,55 @@ static getDesignTypeForProperty(target: Object, propertyName: string): Function 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | Class or prototype |
-|  propertyName | string | Property name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class or prototype
+
+
+</td></tr>
+<tr><td>
+
+propertyName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Property name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

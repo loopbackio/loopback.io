@@ -23,17 +23,110 @@ export declare class RoutingTable
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(\_router, \_externalRoutes)](./rest.routingtable._constructor_.md) |  | Constructs a new instance of the <code>RoutingTable</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(\_router, \_externalRoutes)](./rest.routingtable._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `RoutingTable` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [describeApiPaths()](./rest.routingtable.describeapipaths.md) |  |  |
-|  [find(request)](./rest.routingtable.find.md) |  | Map a request to a route |
-|  [registerController(spec, controllerCtor, controllerFactory)](./rest.routingtable.registercontroller.md) |  | Register a controller as the route |
-|  [registerRoute(route)](./rest.routingtable.registerroute.md) |  | Register a route |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[describeApiPaths()](./rest.routingtable.describeapipaths.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[find(request)](./rest.routingtable.find.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Map a request to a route
+
+
+</td></tr>
+<tr><td>
+
+[registerController(spec, controllerCtor, controllerFactory)](./rest.routingtable.registercontroller.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a controller as the route
+
+
+</td></tr>
+<tr><td>
+
+[registerRoute(route)](./rest.routingtable.registerroute.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a route
+
+
+</td></tr>
+</tbody></table>
 
 

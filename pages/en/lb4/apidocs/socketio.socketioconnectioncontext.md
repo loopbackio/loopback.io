@@ -24,14 +24,80 @@ export declare class SocketIoConnectionContext extends Context
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(socket, parent)](./socketio.socketioconnectioncontext._constructor_.md) |  | Constructs a new instance of the <code>SocketIoConnectionContext</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(socket, parent)](./socketio.socketioconnectioncontext._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoConnectionContext` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [socket](./socketio.socketioconnectioncontext.socket.md) | <code>readonly</code> | Socket |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[socket](./socketio.socketioconnectioncontext.socket.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Socket
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -25,9 +25,39 @@ export declare function getWhereSchemaFor(modelCtor: typeof Model): SchemaObject
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  modelCtor | typeof Model | The model constructor to build the filter schema for. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+modelCtor
+
+
+</td><td>
+
+typeof Model
+
+
+</td><td>
+
+The model constructor to build the filter schema for.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

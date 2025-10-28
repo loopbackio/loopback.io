@@ -23,10 +23,55 @@ withResponse(name: string, response: ResponseObject | ReferenceObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the response |
-|  response | ResponseObject \| ReferenceObject | Specification of the response |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the response
+
+
+</td></tr>
+<tr><td>
+
+response
+
+
+</td><td>
+
+ResponseObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the response
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

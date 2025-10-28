@@ -23,9 +23,65 @@ export interface AuthenticationOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultMetadata?](./authentication.authenticationoptions.defaultmetadata.md) |  | [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] | _(Optional)_ Default authentication metadata if a method or class is not decorated with <code>@authenticate</code>. If not set, no default authentication will be enforced for those methods without authentication metadata. |
-|  [failOnError?](./authentication.authenticationoptions.failonerror.md) |  | boolean | _(Optional)_ This flag allows an authentication strategy to abort the authentication by throwing an error if <code>failOnError</code> is set to <code>true</code>. By default, the authentication process continues to the next one even when a strategy throws an error. If one of other strategies succeed, the error will be discarded. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultMetadata?](./authentication.authenticationoptions.defaultmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\]
+
+
+</td><td>
+
+_(Optional)_ Default authentication metadata if a method or class is not decorated with `@authenticate`<!-- -->. If not set, no default authentication will be enforced for those methods without authentication metadata.
+
+
+</td></tr>
+<tr><td>
+
+[failOnError?](./authentication.authenticationoptions.failonerror.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ This flag allows an authentication strategy to abort the authentication by throwing an error if `failOnError` is set to `true`<!-- -->. By default, the authentication process continues to the next one even when a strategy throws an error. If one of other strategies succeed, the error will be discarded.
+
+
+</td></tr>
+</tbody></table>
 
 

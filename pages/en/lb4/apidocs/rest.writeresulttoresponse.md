@@ -23,10 +23,55 @@ export declare function writeResultToResponse(response: Response, result: Operat
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  response | Response | HTTP Response |
-|  result | [OperationRetval](./rest.operationretval.md) | Result from the API to write into HTTP Response |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+response
+
+
+</td><td>
+
+Response
+
+
+</td><td>
+
+HTTP Response
+
+
+</td></tr>
+<tr><td>
+
+result
+
+
+</td><td>
+
+[OperationRetval](./rest.operationretval.md)
+
+
+</td><td>
+
+Result from the API to write into HTTP Response
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

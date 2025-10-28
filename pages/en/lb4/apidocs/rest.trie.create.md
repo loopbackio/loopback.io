@@ -23,10 +23,53 @@ create(routeTemplate: string, value: T): Node<T>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  routeTemplate | string |  |
-|  value | T | Value of the route |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+routeTemplate
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+value
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Value of the route
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,15 +24,88 @@ export declare class StreamBodyParser implements BodyParser
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./rest.streambodyparser.name.md) |  | symbol |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./rest.streambodyparser.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+symbol
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [parse(request)](./rest.streambodyparser.parse.md) |  |  |
-|  [supports(mediaType)](./rest.streambodyparser.supports.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parse(request)](./rest.streambodyparser.parse.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[supports(mediaType)](./rest.streambodyparser.supports.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

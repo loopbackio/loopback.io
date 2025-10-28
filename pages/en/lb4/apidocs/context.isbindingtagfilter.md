@@ -23,9 +23,39 @@ export declare function isBindingTagFilter(filter?: BindingFilter): filter is Bi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  filter | [BindingFilter](./context.bindingfilter.md) | _(Optional)_ A BindingFilter function |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+filter
+
+
+</td><td>
+
+[BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+_(Optional)_ A BindingFilter function
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

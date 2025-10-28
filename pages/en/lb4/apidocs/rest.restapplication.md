@@ -26,38 +26,371 @@ export declare class RestApplication extends Application implements HttpServerLi
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(parent)](./rest.restapplication._constructor_.md) |  | Create a REST application with the given parent context |
-|  [(constructor)(config, parent)](./rest.restapplication._constructor__1.md) |  | Create a REST application with the given configuration and parent context |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(parent)](./rest.restapplication._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a REST application with the given parent context
+
+
+</td></tr>
+<tr><td>
+
+[(constructor)(config, parent)](./rest.restapplication._constructor__1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a REST application with the given configuration and parent context
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [requestHandler](./rest.restapplication.requesthandler.md) | <code>readonly</code> | [HttpRequestListener](./rest.httprequestlistener.md) | Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence. |
-|  [restServer](./rest.restapplication.restserver.md) | <code>readonly</code> | [RestServer](./rest.restserver.md) | The main REST server instance providing REST API for this application. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[requestHandler](./rest.restapplication.requesthandler.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpRequestListener](./rest.httprequestlistener.md)
+
+
+</td><td>
+
+Handle incoming HTTP(S) request by invoking the corresponding Controller method via the configured Sequence.
+
+
+</td></tr>
+<tr><td>
+
+[restServer](./rest.restapplication.restserver.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[RestServer](./rest.restserver.md)
+
+
+</td><td>
+
+The main REST server instance providing REST API for this application.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [api(spec)](./rest.restapplication.api.md) |  | <p>Set the OpenAPI specification that defines the REST API schema for this application. All routes, parameter definitions and return types will be defined in this way.</p><p>Note that this will override any routes defined via decorators at the controller level (this function takes precedent).</p> |
-|  [basePath(path)](./rest.restapplication.basepath.md) |  | Configure the <code>basePath</code> for the rest server |
-|  [bodyParser(bodyParserClass, address)](./rest.restapplication.bodyparser.md) |  | Bind a body parser to the server context |
-|  [exportOpenApiSpec(outFile, log)](./rest.restapplication.exportopenapispec.md) |  | Export the OpenAPI spec to the given json or yaml file |
-|  [expressMiddleware(key, middleware, options)](./rest.restapplication.expressmiddleware.md) |  | Bind an Express middleware to this server context |
-|  [expressMiddleware(middlewareFactory, middlewareConfig, options)](./rest.restapplication.expressmiddleware_1.md) |  | Bind an Express middleware to this server context |
-|  [handler(handlerFn)](./rest.restapplication.handler.md) |  |  |
-|  [middleware(middleware, options)](./rest.restapplication.middleware.md) |  | Register a middleware function or provider class |
-|  [mountExpressRouter(basePath, router, spec)](./rest.restapplication.mountexpressrouter.md) |  | Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack. |
-|  [redirect(fromPath, toPathOrUrl, statusCode)](./rest.restapplication.redirect.md) |  | Register a route redirecting callers to a different URL. |
-|  [route(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.restapplication.route.md) |  | Register a new Controller-based route. |
-|  [route(verb, path, spec, handler)](./rest.restapplication.route_1.md) |  | Register a new route invoking a handler function. |
-|  [route(route)](./rest.restapplication.route_2.md) |  | Register a new route. |
-|  [route(verb, path, spec, handler)](./rest.restapplication.route_3.md) |  | Register a new route. |
-|  [sequence(sequence)](./rest.restapplication.sequence.md) |  |  |
-|  [server(server, name)](./rest.restapplication.server.md) |  |  |
-|  [static(path, rootDir, options)](./rest.restapplication.static.md) |  | Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[api(spec)](./rest.restapplication.api.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Set the OpenAPI specification that defines the REST API schema for this application. All routes, parameter definitions and return types will be defined in this way.
+
+Note that this will override any routes defined via decorators at the controller level (this function takes precedent).
+
+
+</td></tr>
+<tr><td>
+
+[basePath(path)](./rest.restapplication.basepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Configure the `basePath` for the rest server
+
+
+</td></tr>
+<tr><td>
+
+[bodyParser(bodyParserClass, address)](./rest.restapplication.bodyparser.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bind a body parser to the server context
+
+
+</td></tr>
+<tr><td>
+
+[exportOpenApiSpec(outFile, log)](./rest.restapplication.exportopenapispec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Export the OpenAPI spec to the given json or yaml file
+
+
+</td></tr>
+<tr><td>
+
+[expressMiddleware(key, middleware, options)](./rest.restapplication.expressmiddleware.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bind an Express middleware to this server context
+
+
+</td></tr>
+<tr><td>
+
+[expressMiddleware(middlewareFactory, middlewareConfig, options)](./rest.restapplication.expressmiddleware_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Bind an Express middleware to this server context
+
+
+</td></tr>
+<tr><td>
+
+[handler(handlerFn)](./rest.restapplication.handler.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[middleware(middleware, options)](./rest.restapplication.middleware.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a middleware function or provider class
+
+
+</td></tr>
+<tr><td>
+
+[mountExpressRouter(basePath, router, spec)](./rest.restapplication.mountexpressrouter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Mount an Express router to expose additional REST endpoints handled via legacy Express-based stack.
+
+
+</td></tr>
+<tr><td>
+
+[redirect(fromPath, toPathOrUrl, statusCode)](./rest.restapplication.redirect.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a route redirecting callers to a different URL.
+
+
+</td></tr>
+<tr><td>
+
+[route(verb, path, spec, controllerCtor, controllerFactory, methodName)](./rest.restapplication.route.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new Controller-based route.
+
+
+</td></tr>
+<tr><td>
+
+[route(verb, path, spec, handler)](./rest.restapplication.route_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new route invoking a handler function.
+
+
+</td></tr>
+<tr><td>
+
+[route(route)](./rest.restapplication.route_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new route.
+
+
+</td></tr>
+<tr><td>
+
+[route(verb, path, spec, handler)](./rest.restapplication.route_3.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a new route.
+
+
+</td></tr>
+<tr><td>
+
+[sequence(sequence)](./rest.restapplication.sequence.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[server(server, name)](./rest.restapplication.server.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[static(path, rootDir, options)](./rest.restapplication.static.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Mount static assets to the REST server. See https://expressjs.com/en/4x/api.html\#express.static
+
+
+</td></tr>
+</tbody></table>
 
 

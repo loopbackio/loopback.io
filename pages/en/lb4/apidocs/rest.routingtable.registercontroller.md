@@ -23,11 +23,67 @@ registerController<T extends object>(spec: ControllerSpec, controllerCtor: Contr
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | [ControllerSpec](./openapi-v3.controllerspec.md) |  |
-|  controllerCtor | [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt; |  |
-|  controllerFactory | [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+[ControllerSpec](./openapi-v3.controllerspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+controllerCtor
+
+
+</td><td>
+
+[ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+controllerFactory
+
+
+</td><td>
+
+[ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

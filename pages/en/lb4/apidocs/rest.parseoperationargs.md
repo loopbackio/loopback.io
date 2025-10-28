@@ -23,12 +23,87 @@ export declare function parseOperationArgs(request: Request, route: ResolvedRout
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request | Incoming HTTP request |
-|  route | [ResolvedRoute](./rest.resolvedroute.md) | Resolved Route |
-|  requestBodyParser | [RequestBodyParser](./rest.requestbodyparser.md) | _(Optional)_ |
-|  options | [ValidationOptions](./rest.validationoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+Incoming HTTP request
+
+
+</td></tr>
+<tr><td>
+
+route
+
+
+</td><td>
+
+[ResolvedRoute](./rest.resolvedroute.md)
+
+
+</td><td>
+
+Resolved Route
+
+
+</td></tr>
+<tr><td>
+
+requestBodyParser
+
+
+</td><td>
+
+[RequestBodyParser](./rest.requestbodyparser.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ValidationOptions](./rest.validationoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

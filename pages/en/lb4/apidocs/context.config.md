@@ -21,9 +21,39 @@ export declare namespace config
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [getter(propertyPath, metadata)](./context.config.getter.md) | <code>@inject.getter</code> decorator to inject a config getter function |
-|  [view(propertyPath, metadata)](./context.config.view.md) | <code>@inject.view</code> decorator to inject a config context view to allow dynamic changes in configuration |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getter(propertyPath, metadata)](./context.config.getter.md)
+
+
+</td><td>
+
+`@inject.getter` decorator to inject a config getter function
+
+
+</td></tr>
+<tr><td>
+
+[view(propertyPath, metadata)](./context.config.view.md)
+
+
+</td><td>
+
+`@inject.view` decorator to inject a config context view to allow dynamic changes in configuration
+
+
+</td></tr>
+</tbody></table>
 
 

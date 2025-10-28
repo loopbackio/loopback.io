@@ -21,18 +21,138 @@ export declare namespace authorize
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [allow(roles)](./authorization.authorize.allow.md) | Shortcut to configure allowed roles |
-|  [allowAll()](./authorization.authorize.allowall.md) | Allows all |
-|  [allowAllExcept(roles)](./authorization.authorize.allowallexcept.md) | Allow all but the given roles |
-|  [allowAuthenticated()](./authorization.authorize.allowauthenticated.md) | Allow authenticated users |
-|  [deny(roles)](./authorization.authorize.deny.md) | Shortcut to configure denied roles |
-|  [denyAll()](./authorization.authorize.denyall.md) | Deny all |
-|  [denyAllExcept(roles)](./authorization.authorize.denyallexcept.md) | Deny all but the given roles |
-|  [denyUnauthenticated()](./authorization.authorize.denyunauthenticated.md) | Deny unauthenticated users |
-|  [scope(scopes)](./authorization.authorize.scope.md) | Shortcut to specify access scopes |
-|  [skip()](./authorization.authorize.skip.md) | Skip authorization |
-|  [vote(voters)](./authorization.authorize.vote.md) | Shortcut to configure voters |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[allow(roles)](./authorization.authorize.allow.md)
+
+
+</td><td>
+
+Shortcut to configure allowed roles
+
+
+</td></tr>
+<tr><td>
+
+[allowAll()](./authorization.authorize.allowall.md)
+
+
+</td><td>
+
+Allows all
+
+
+</td></tr>
+<tr><td>
+
+[allowAllExcept(roles)](./authorization.authorize.allowallexcept.md)
+
+
+</td><td>
+
+Allow all but the given roles
+
+
+</td></tr>
+<tr><td>
+
+[allowAuthenticated()](./authorization.authorize.allowauthenticated.md)
+
+
+</td><td>
+
+Allow authenticated users
+
+
+</td></tr>
+<tr><td>
+
+[deny(roles)](./authorization.authorize.deny.md)
+
+
+</td><td>
+
+Shortcut to configure denied roles
+
+
+</td></tr>
+<tr><td>
+
+[denyAll()](./authorization.authorize.denyall.md)
+
+
+</td><td>
+
+Deny all
+
+
+</td></tr>
+<tr><td>
+
+[denyAllExcept(roles)](./authorization.authorize.denyallexcept.md)
+
+
+</td><td>
+
+Deny all but the given roles
+
+
+</td></tr>
+<tr><td>
+
+[denyUnauthenticated()](./authorization.authorize.denyunauthenticated.md)
+
+
+</td><td>
+
+Deny unauthenticated users
+
+
+</td></tr>
+<tr><td>
+
+[scope(scopes)](./authorization.authorize.scope.md)
+
+
+</td><td>
+
+Shortcut to specify access scopes
+
+
+</td></tr>
+<tr><td>
+
+[skip()](./authorization.authorize.skip.md)
+
+
+</td><td>
+
+Skip authorization
+
+
+</td></tr>
+<tr><td>
+
+[vote(voters)](./authorization.authorize.vote.md)
+
+
+</td><td>
+
+Shortcut to configure voters
+
+
+</td></tr>
+</tbody></table>
 
 

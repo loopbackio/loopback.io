@@ -23,14 +23,72 @@ export interface Subscription
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [closed](./context.subscription.closed.md) |  | boolean | Is the subscription closed? |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[closed](./context.subscription.closed.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Is the subscription closed?
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [unsubscribe()](./context.subscription.unsubscribe.md) | unsubscribe |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[unsubscribe()](./context.subscription.unsubscribe.md)
+
+
+</td><td>
+
+unsubscribe
+
+
+</td></tr>
+</tbody></table>
 
 

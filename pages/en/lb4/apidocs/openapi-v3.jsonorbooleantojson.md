@@ -23,9 +23,39 @@ export declare function jsonOrBooleanToJSON(jsonOrBool: boolean | JsonSchema): J
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  jsonOrBool | boolean \| JsonSchema | converts boolean values into their representative JSON Schemas |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonOrBool
+
+
+</td><td>
+
+boolean \| JsonSchema
+
+
+</td><td>
+
+converts boolean values into their representative JSON Schemas
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,8 +23,36 @@ constructor(list: Record<string, MyUser>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  list | Record&lt;string, [MyUser](./mock-oauth2-provider.myuser.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+list
+
+
+</td><td>
+
+Record&lt;string, [MyUser](./mock-oauth2-provider.myuser.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,10 +23,64 @@ constructor(parentCtx: Context, controllerClass: Constructor<object>, socket: So
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parentCtx | [Context](./context.context.md) |  |
-|  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; |  |
-|  socket | Socket |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parentCtx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+controllerClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;object&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+socket
+
+
+</td><td>
+
+Socket
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,11 +23,71 @@ array: (name: string, source: ParameterLocation, itemSpec: SchemaObject | Refere
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | Parameter name |
-|  source | ParameterLocation | Source of the parameter value |
-|  itemSpec | SchemaObject \| ReferenceObject | Item type for the array or the full item object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Parameter name
+
+
+</td></tr>
+<tr><td>
+
+source
+
+
+</td><td>
+
+ParameterLocation
+
+
+</td><td>
+
+Source of the parameter value
+
+
+</td></tr>
+<tr><td>
+
+itemSpec
+
+
+</td><td>
+
+SchemaObject \| ReferenceObject
+
+
+</td><td>
+
+Item type for the array or the full item object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

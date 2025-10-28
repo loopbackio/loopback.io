@@ -24,11 +24,78 @@ export declare class ClassDecoratorFactory<T> extends DecoratorFactory<T, T, Cla
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create()](./metadata.classdecoratorfactory.create.md) |  |  |
-|  [createDecorator(key, spec, options)](./metadata.classdecoratorfactory.createdecorator.md) | <code>static</code> | Create a class decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
-|  [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithown.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create()](./metadata.classdecoratorfactory.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createDecorator(key, spec, options)](./metadata.classdecoratorfactory.createdecorator.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a class decorator function
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithinherited.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithown.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

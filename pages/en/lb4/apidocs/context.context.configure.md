@@ -25,9 +25,39 @@ configure<ConfigValueType = BoundValue>(key?: BindingAddress): Binding<ConfigVal
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | _(Optional)_ The key for the binding to be configured |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)
+
+
+</td><td>
+
+_(Optional)_ The key for the binding to be configured
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

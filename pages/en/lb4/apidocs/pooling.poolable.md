@@ -24,9 +24,39 @@ export interface Poolable extends LifeCycleObserver
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [acquire(requestCtx)?](./pooling.poolable.acquire.md) | _(Optional)_ To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource. |
-|  [release()?](./pooling.poolable.release.md) | _(Optional)_ To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[acquire(requestCtx)?](./pooling.poolable.acquire.md)
+
+
+</td><td>
+
+_(Optional)_ To be called right after the resource is acquired from the pool. If it fails, the resource will be destroyed from the pool. The method should be used to set up the acquired resource.
+
+
+</td></tr>
+<tr><td>
+
+[release()?](./pooling.poolable.release.md)
+
+
+</td><td>
+
+_(Optional)_ To be called right before the resource is released to the pool. If it fails, the resource will be destroyed from the pool. This method should be used to clean up the resource to be returned.
+
+
+</td></tr>
+</tbody></table>
 
 

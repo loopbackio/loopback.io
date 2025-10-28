@@ -21,24 +21,196 @@ export declare class NamespacedReflect
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(namespace)](./metadata.namespacedreflect._constructor_.md) |  | Constructs a new instance of the <code>NamespacedReflect</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(namespace)](./metadata.namespacedreflect._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `NamespacedReflect` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [decorate(decorators, target, targetKey, descriptor)](./metadata.namespacedreflect.decorate.md) |  |  |
-|  [decorate(decorators, target)](./metadata.namespacedreflect.decorate_1.md) |  |  |
-|  [defineMetadata(metadataKey, metadataValue, target, propertyKey)](./metadata.namespacedreflect.definemetadata.md) |  | define metadata for a target class or it's property/method |
-|  [deleteMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.deletemetadata.md) |  |  |
-|  [getMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.getmetadata.md) |  | lookup metadata from a target object and its prototype chain |
-|  [getMetadataKeys(target, propertyKey)](./metadata.namespacedreflect.getmetadatakeys.md) |  |  |
-|  [getOwnMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.getownmetadata.md) |  | get own metadata for a target object or it's property/method |
-|  [getOwnMetadataKeys(target, propertyKey)](./metadata.namespacedreflect.getownmetadatakeys.md) |  |  |
-|  [hasMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.hasmetadata.md) |  | Check if the target has corresponding metadata |
-|  [hasOwnMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.hasownmetadata.md) |  |  |
-|  [metadata(metadataKey, metadataValue)](./metadata.namespacedreflect.metadata.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[decorate(decorators, target, targetKey, descriptor)](./metadata.namespacedreflect.decorate.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[decorate(decorators, target)](./metadata.namespacedreflect.decorate_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[defineMetadata(metadataKey, metadataValue, target, propertyKey)](./metadata.namespacedreflect.definemetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+define metadata for a target class or it's property/method
+
+
+</td></tr>
+<tr><td>
+
+[deleteMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.deletemetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.getmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+lookup metadata from a target object and its prototype chain
+
+
+</td></tr>
+<tr><td>
+
+[getMetadataKeys(target, propertyKey)](./metadata.namespacedreflect.getmetadatakeys.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getOwnMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.getownmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+get own metadata for a target object or it's property/method
+
+
+</td></tr>
+<tr><td>
+
+[getOwnMetadataKeys(target, propertyKey)](./metadata.namespacedreflect.getownmetadatakeys.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[hasMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.hasmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Check if the target has corresponding metadata
+
+
+</td></tr>
+<tr><td>
+
+[hasOwnMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.hasownmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[metadata(metadataKey, metadataValue)](./metadata.namespacedreflect.metadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

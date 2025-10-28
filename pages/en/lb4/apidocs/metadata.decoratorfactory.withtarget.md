@@ -23,10 +23,55 @@ withTarget(spec: T, target: Object): T;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  spec | T | Metadata spec |
-|  target | Object | Target of the decoration. It is a class or the prototype of a class. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+spec
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Metadata spec
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Target of the decoration. It is a class or the prototype of a class.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

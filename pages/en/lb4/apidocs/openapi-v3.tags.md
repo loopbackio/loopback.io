@@ -23,9 +23,39 @@ export declare function tags(...tagNames: string[]): (target: any, method?: stri
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tagNames | string\[\] | A list of tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+tagNames
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+A list of tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

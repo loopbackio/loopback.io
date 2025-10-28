@@ -23,25 +23,184 @@ export declare class TestSandbox
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(rootPath, options)](./testlab.testsandbox._constructor_.md) |  | Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox. |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(rootPath, options)](./testlab.testsandbox._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox.
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [path](./testlab.testsandbox.path.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[path](./testlab.testsandbox.path.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [copyFile(src, dest, transform)](./testlab.testsandbox.copyfile.md) |  | Copies a file from src to the TestSandbox. If copying a <code>.js</code> file which has an accompanying <code>.js.map</code> file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file. |
-|  [delete()](./testlab.testsandbox.delete.md) |  | Deletes the TestSandbox. |
-|  [mkdir(dir)](./testlab.testsandbox.mkdir.md) |  | Makes a directory in the TestSandbox |
-|  [reset()](./testlab.testsandbox.reset.md) |  | Resets the TestSandbox. (Remove all files in it). |
-|  [writeJsonFile(dest, data)](./testlab.testsandbox.writejsonfile.md) |  | Creates a new file and writes the given data serialized as JSON. |
-|  [writeTextFile(dest, data)](./testlab.testsandbox.writetextfile.md) |  | Creates a new file and writes the given data as a UTF-8-encoded text. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[copyFile(src, dest, transform)](./testlab.testsandbox.copyfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Copies a file from src to the TestSandbox. If copying a `.js` file which has an accompanying `.js.map` file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file.
+
+
+</td></tr>
+<tr><td>
+
+[delete()](./testlab.testsandbox.delete.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Deletes the TestSandbox.
+
+
+</td></tr>
+<tr><td>
+
+[mkdir(dir)](./testlab.testsandbox.mkdir.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Makes a directory in the TestSandbox
+
+
+</td></tr>
+<tr><td>
+
+[reset()](./testlab.testsandbox.reset.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Resets the TestSandbox. (Remove all files in it).
+
+
+</td></tr>
+<tr><td>
+
+[writeJsonFile(dest, data)](./testlab.testsandbox.writejsonfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Creates a new file and writes the given data serialized as JSON.
+
+
+</td></tr>
+<tr><td>
+
+[writeTextFile(dest, data)](./testlab.testsandbox.writetextfile.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Creates a new file and writes the given data as a UTF-8-encoded text.
+
+
+</td></tr>
+</tbody></table>
 
 

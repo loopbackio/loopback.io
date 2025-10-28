@@ -24,11 +24,78 @@ export declare class PropertyDecoratorFactory<T> extends DecoratorFactory<T, Met
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create()](./metadata.propertydecoratorfactory.create.md) |  |  |
-|  [createDecorator(key, spec, options)](./metadata.propertydecoratorfactory.createdecorator.md) | <code>static</code> | Create a property decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, propertyName, descriptorOrIndex)](./metadata.propertydecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
-|  [mergeWithOwn(ownMetadata, target, propertyName, descriptorOrParameterIndex)](./metadata.propertydecoratorfactory.mergewithown.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create()](./metadata.propertydecoratorfactory.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createDecorator(key, spec, options)](./metadata.propertydecoratorfactory.createdecorator.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a property decorator function
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithInherited(inheritedMetadata, target, propertyName, descriptorOrIndex)](./metadata.propertydecoratorfactory.mergewithinherited.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithOwn(ownMetadata, target, propertyName, descriptorOrParameterIndex)](./metadata.propertydecoratorfactory.mergewithown.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

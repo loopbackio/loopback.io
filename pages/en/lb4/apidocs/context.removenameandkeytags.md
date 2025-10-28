@@ -23,9 +23,37 @@ export declare function removeNameAndKeyTags(binding: Binding<unknown>): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+binding
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

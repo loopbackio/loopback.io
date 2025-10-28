@@ -25,8 +25,27 @@ export declare namespace bind
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [provider](./context.bind.provider.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[provider](./context.bind.provider.md)
+
+
+</td><td>
+
+
+
+</td></tr>
+</tbody></table>
 
 

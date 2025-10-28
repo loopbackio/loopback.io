@@ -23,9 +23,39 @@ export declare function asService(serviceInterface: ServiceInterface): BindingTe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  serviceInterface | [ServiceInterface](./core.serviceinterface.md) | Service interface |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+serviceInterface
+
+
+</td><td>
+
+[ServiceInterface](./core.serviceinterface.md)
+
+
+</td><td>
+
+Service interface
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

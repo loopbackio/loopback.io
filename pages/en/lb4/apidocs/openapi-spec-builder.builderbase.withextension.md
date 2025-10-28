@@ -23,10 +23,55 @@ withExtension(key: string, value: any): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | string | The property name starting with "x-". |
-|  value | any | The property value. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The property name starting with "x-".
+
+
+</td></tr>
+<tr><td>
+
+value
+
+
+</td><td>
+
+any
+
+
+</td><td>
+
+The property value.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

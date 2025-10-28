@@ -23,10 +23,55 @@ once(eventName: 'bind' | 'unbind', listener: ContextEventListener): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventName | 'bind' \| 'unbind' | The name of the event - always <code>bind</code> or <code>unbind</code>. |
-|  listener | [ContextEventListener](./context.contexteventlistener.md) | The listener function to call when the event is emitted. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventName
+
+
+</td><td>
+
+'bind' \| 'unbind'
+
+
+</td><td>
+
+The name of the event - always `bind` or `unbind`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+listener
+
+
+</td><td>
+
+[ContextEventListener](./context.contexteventlistener.md)
+
+
+</td><td>
+
+The listener function to call when the event is emitted.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

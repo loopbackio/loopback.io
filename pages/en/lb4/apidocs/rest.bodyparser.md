@@ -23,15 +23,83 @@ export interface BodyParser
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./rest.bodyparser.name.md) |  | string \| symbol | Name of the parser |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./rest.bodyparser.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+Name of the parser
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [parse(request)](./rest.bodyparser.parse.md) | Parse the request body |
-|  [supports(mediaType)](./rest.bodyparser.supports.md) | Indicate if the given media type is supported |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parse(request)](./rest.bodyparser.parse.md)
+
+
+</td><td>
+
+Parse the request body
+
+
+</td></tr>
+<tr><td>
+
+[supports(mediaType)](./rest.bodyparser.supports.md)
+
+
+</td><td>
+
+Indicate if the given media type is supported
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ export declare function isProviderClass<T>(cls: unknown): cls is Constructor<Pro
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  cls | unknown | A class |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+cls
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+A class
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,84 @@ export interface AuthenticationMetadata
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [options?](./authentication.authenticationmetadata.options.md) |  | { \[name: string\]: any; } | _(Optional)_ Options for the authentication strategy |
-|  [skip?](./authentication.authenticationmetadata.skip.md) |  | boolean | _(Optional)_ A flag to skip authentication |
-|  [strategy](./authentication.authenticationmetadata.strategy.md) |  | string | Name of the authentication strategy |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[options?](./authentication.authenticationmetadata.options.md)
+
+
+</td><td>
+
+
+</td><td>
+
+{ \[name: string\]: any; }
+
+
+</td><td>
+
+_(Optional)_ Options for the authentication strategy
+
+
+</td></tr>
+<tr><td>
+
+[skip?](./authentication.authenticationmetadata.skip.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag to skip authentication
+
+
+</td></tr>
+<tr><td>
+
+[strategy](./authentication.authenticationmetadata.strategy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the authentication strategy
+
+
+</td></tr>
+</tbody></table>
 
 

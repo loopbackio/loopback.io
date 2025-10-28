@@ -23,8 +23,36 @@ constructor(tokenService: TokenService);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tokenService | [TokenService](./authentication.tokenservice.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+tokenService
+
+
+</td><td>
+
+[TokenService](./authentication.tokenservice.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

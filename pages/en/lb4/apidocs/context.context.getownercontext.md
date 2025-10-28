@@ -23,9 +23,39 @@ getOwnerContext(keyOrBinding: BindingAddress | Readonly<Binding<unknown>>): Cont
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  keyOrBinding | [BindingAddress](./context.bindingaddress.md) \| Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt; | Binding object or key |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyOrBinding
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md) \| Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt;
+
+
+</td><td>
+
+Binding object or key
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

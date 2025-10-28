@@ -24,8 +24,36 @@ export declare class MetricsComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(application, metricsConfig)](./metrics.metricscomponent._constructor_.md) |  | Constructs a new instance of the <code>MetricsComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(application, metricsConfig)](./metrics.metricscomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `MetricsComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 

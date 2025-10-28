@@ -13,6 +13,88 @@ permalink: /doc/en/lb4/changelog.example-references-many.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@9.0.4...@loopback/example-references-many@9.0.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+## [9.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@9.0.3...@loopback/example-references-many@9.0.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+## [9.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@9.0.2...@loopback/example-references-many@9.0.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+## [9.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@9.0.1...@loopback/example-references-many@9.0.2) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+## [9.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@9.0.0...@loopback/example-references-many@9.0.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+# [9.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@8.1.5...@loopback/example-references-many@9.0.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [8.1.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@8.1.4...@loopback/example-references-many@8.1.5) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+## [8.1.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@8.1.3...@loopback/example-references-many@8.1.4) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
+## [8.1.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@8.1.2...@loopback/example-references-many@8.1.3) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/example-references-many
+
+
+
+
+
 ## [8.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-references-many@8.1.1...@loopback/example-references-many@8.1.2) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/example-references-many

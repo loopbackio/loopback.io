@@ -23,10 +23,70 @@ export declare enum BindingCreationPolicy
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  ALWAYS\_CREATE | <code>&quot;Always&quot;</code> | Always create a binding with the key for the context |
-|  CREATE\_IF\_NOT\_BOUND | <code>&quot;IfNotBound&quot;</code> | Create a binding if the key is not bound in the context. Otherwise, return the existing binding. |
-|  NEVER\_CREATE | <code>&quot;Never&quot;</code> | Never create a binding for the context. If the key is not bound in the context, throw an error. |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ALWAYS\_CREATE
+
+
+</td><td>
+
+`"Always"`
+
+
+</td><td>
+
+Always create a binding with the key for the context
+
+
+</td></tr>
+<tr><td>
+
+CREATE\_IF\_NOT\_BOUND
+
+
+</td><td>
+
+`"IfNotBound"`
+
+
+</td><td>
+
+Create a binding if the key is not bound in the context. Otherwise, return the existing binding.
+
+
+</td></tr>
+<tr><td>
+
+NEVER\_CREATE
+
+
+</td><td>
+
+`"Never"`
+
+
+</td><td>
+
+Never create a binding for the context. If the key is not bound in the context, throw an error.
+
+
+</td></tr>
+</tbody></table>
 
 

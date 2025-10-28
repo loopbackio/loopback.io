@@ -21,10 +21,53 @@ static value(logError: LogError, errorWriterOptions?: ErrorWriterOptions): Rejec
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  logError | [LogError](./rest.logerror.md) |  |
-|  errorWriterOptions | ErrorWriterOptions | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+logError
+
+
+</td><td>
+
+[LogError](./rest.logerror.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+errorWriterOptions
+
+
+</td><td>
+
+ErrorWriterOptions
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

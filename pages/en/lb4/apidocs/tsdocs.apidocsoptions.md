@@ -23,14 +23,160 @@ export interface ApiDocsOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [apiDocsExtractionPath?](./tsdocs.apidocsoptions.apidocsextractionpath.md) |  | string | _(Optional)_ Path to tsdocs reports/models |
-|  [apiDocsGenerationPath?](./tsdocs.apidocsoptions.apidocsgenerationpath.md) |  | string | _(Optional)_ Path to target directory to generate apidocs |
-|  [dryRun?](./tsdocs.apidocsoptions.dryrun.md) |  | boolean | _(Optional)_ To have a dry-run without generating api reports/doc models |
-|  [generateDefaultPackageDoc?](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md) |  | boolean | _(Optional)_ A flag to generate default package documentation |
-|  [lernaPackages?](./tsdocs.apidocsoptions.lernapackages.md) |  | Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt; | _(Optional)_ Package metadata |
-|  [rootDir?](./tsdocs.apidocsoptions.rootdir.md) |  | string | _(Optional)_ Root directory for the lerna-managed monorepo, default to current dir |
-|  [silent?](./tsdocs.apidocsoptions.silent.md) |  | boolean | _(Optional)_ If <code>true</code>, do not print messages to console |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiDocsExtractionPath?](./tsdocs.apidocsoptions.apidocsextractionpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Path to tsdocs reports/models
+
+
+</td></tr>
+<tr><td>
+
+[apiDocsGenerationPath?](./tsdocs.apidocsoptions.apidocsgenerationpath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Path to target directory to generate apidocs
+
+
+</td></tr>
+<tr><td>
+
+[dryRun?](./tsdocs.apidocsoptions.dryrun.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ To have a dry-run without generating api reports/doc models
+
+
+</td></tr>
+<tr><td>
+
+[generateDefaultPackageDoc?](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ A flag to generate default package documentation
+
+
+</td></tr>
+<tr><td>
+
+[lernaPackages?](./tsdocs.apidocsoptions.lernapackages.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt;
+
+
+</td><td>
+
+_(Optional)_ Package metadata
+
+
+</td></tr>
+<tr><td>
+
+[rootDir?](./tsdocs.apidocsoptions.rootdir.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Root directory for the lerna-managed monorepo, default to current dir
+
+
+</td></tr>
+<tr><td>
+
+[silent?](./tsdocs.apidocsoptions.silent.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ If `true`<!-- -->, do not print messages to console
+
+
+</td></tr>
+</tbody></table>
 
 

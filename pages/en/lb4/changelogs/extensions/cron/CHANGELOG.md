@@ -13,6 +13,88 @@ permalink: /doc/en/lb4/changelog.cron.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.4](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.13.3...@loopback/cron@0.13.4) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.13.3](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.13.2...@loopback/cron@0.13.3) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.13.2](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.13.1...@loopback/cron@0.13.2) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.13.1](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.13.0...@loopback/cron@0.13.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* update @loopback/core to latest major version ([e2d2288](https://github.com/loopbackio/loopback-next/commit/e2d22886dbbb4be91ee6407ff4c6257c48698e89))
+
+
+
+
+
+# [0.13.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.14...@loopback/cron@0.13.0) (2025-06-10)
+
+
+### Bug Fixes
+
+* **docs:** fix typos in documentation ([13ea0d0](https://github.com/loopbackio/loopback-next/commit/13ea0d001836c81cfb4ba6776c45b10a89cda3da))
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.12.14](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.13...@loopback/cron@0.12.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.12.13](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.12...@loopback/cron@0.12.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
+## [0.12.12](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.11...@loopback/cron@0.12.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/cron
+
+
+
+
+
 ## [0.12.11](https://github.com/loopbackio/loopback-next/compare/@loopback/cron@0.12.10...@loopback/cron@0.12.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/cron

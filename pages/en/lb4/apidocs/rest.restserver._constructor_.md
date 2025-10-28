@@ -23,9 +23,54 @@ constructor(app: Application, config?: RestServerConfig);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  app | [Application](./core.application.md) | The application instance (injected via CoreBindings.APPLICATION\_INSTANCE). |
-|  config | [RestServerConfig](./rest.restserverconfig.md) | _(Optional)_ The configuration options (injected via RestBindings.CONFIG). |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+app
+
+
+</td><td>
+
+[Application](./core.application.md)
+
+
+</td><td>
+
+The application instance (injected via CoreBindings.APPLICATION\_INSTANCE).
+
+
+</td></tr>
+<tr><td>
+
+config
+
+
+</td><td>
+
+[RestServerConfig](./rest.restserverconfig.md)
+
+
+</td><td>
+
+_(Optional)_ The configuration options (injected via RestBindings.CONFIG).
+
+
+</td></tr>
+</tbody></table>
 
 

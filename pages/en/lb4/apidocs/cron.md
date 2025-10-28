@@ -17,35 +17,167 @@ permalink: /doc/en/lb4/apidocs.cron.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [CronComponent](./cron.croncomponent.md) | The CronComponent manages cron jobs. It serves as an extension point for cron jobs. |
-|  [CronJob](./cron.cronjob.md) | Cron job with an optional name |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CronComponent](./cron.croncomponent.md)
+
+
+</td><td>
+
+The CronComponent manages cron jobs. It serves as an extension point for cron jobs.
+
+
+</td></tr>
+<tr><td>
+
+[CronJob](./cron.cronjob.md)
+
+
+</td><td>
+
+Cron job with an optional name
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [asCronJob(binding)](./cron.ascronjob.md) | A <code>BindingTemplate</code> function to configure the binding as a cron job. |
-|  [cronJob(specs)](./cron.cronjob.md) | <code>@cronJob</code> decorates a cron job provider class |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asCronJob(binding)](./cron.ascronjob.md)
+
+
+</td><td>
+
+A `BindingTemplate` function to configure the binding as a cron job.
+
+
+</td></tr>
+<tr><td>
+
+[cronJob(specs)](./cron.cronjob.md)
+
+
+</td><td>
+
+`@cronJob` decorates a cron job provider class
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [CronBindings](./cron.cronbindings.md) | Binding keys used by this component. |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CronBindings](./cron.cronbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [CRON\_JOB\_SCHEDULER](./cron.cron_job_scheduler.md) | Name of the cron job extension point |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CRON\_JOB\_SCHEDULER](./cron.cron_job_scheduler.md)
+
+
+</td><td>
+
+Name of the cron job extension point
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [CronJobConfig](./cron.cronjobconfig.md) | Configuration for a cron job. |
-|  [CronJobOptions](./cron.cronjoboptions.md) | <p>Options for a cron job. It adds an optional <code>name</code> to cron parameters.</p><p>[cron configuration](https://github.com/kelektiv/node-cron#api)</p> |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CronJobConfig](./cron.cronjobconfig.md)
+
+
+</td><td>
+
+Configuration for a cron job.
+
+
+</td></tr>
+<tr><td>
+
+[CronJobOptions](./cron.cronjoboptions.md)
+
+
+</td><td>
+
+Options for a cron job. It adds an optional `name` to cron parameters.
+
+[cron configuration](https://github.com/kelektiv/node-cron#api)
+
+
+</td></tr>
+</tbody></table>
 
 

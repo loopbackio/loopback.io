@@ -23,10 +23,90 @@ export interface ResolutionContext<T = unknown>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [binding](./context.resolutioncontext.binding.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt; | The binding to be resolved |
-|  [context](./context.resolutioncontext.context.md) | <code>readonly</code> | [Context](./context.context.md) | The context for resolution |
-|  [options](./context.resolutioncontext.options.md) | <code>readonly</code> | [ResolutionOptions](./context.resolutionoptions.md) | The options used for resolution |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[binding](./context.resolutioncontext.binding.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;
+
+
+</td><td>
+
+The binding to be resolved
+
+
+</td></tr>
+<tr><td>
+
+[context](./context.resolutioncontext.context.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+The context for resolution
+
+
+</td></tr>
+<tr><td>
+
+[options](./context.resolutioncontext.options.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[ResolutionOptions](./context.resolutionoptions.md)
+
+
+</td><td>
+
+The options used for resolution
+
+
+</td></tr>
+</tbody></table>
 
 

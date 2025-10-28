@@ -23,9 +23,39 @@ static configure<V = unknown>(key: BindingAddress): Binding<V>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md) | Key for the binding to be configured |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)
+
+
+</td><td>
+
+Key for the binding to be configured
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

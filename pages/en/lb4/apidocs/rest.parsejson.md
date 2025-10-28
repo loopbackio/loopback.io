@@ -23,11 +23,71 @@ export declare function parseJson(text: string, reviver?: (key: any, value: any)
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  text | string | JSON string |
-|  reviver | (key: any, value: any) =&gt; any | _(Optional)_ Optional reviver function for <code>JSON.parse</code> |
-|  prohibitedKeys | string\[\] | _(Optional)_ An array of keys to be rejected |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+text
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+JSON string
+
+
+</td></tr>
+<tr><td>
+
+reviver
+
+
+</td><td>
+
+(key: any, value: any) =&gt; any
+
+
+</td><td>
+
+_(Optional)_ Optional reviver function for `JSON.parse`
+
+
+</td></tr>
+<tr><td>
+
+prohibitedKeys
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of keys to be rejected
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

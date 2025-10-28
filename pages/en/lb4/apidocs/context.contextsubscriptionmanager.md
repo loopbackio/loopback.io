@@ -24,27 +24,232 @@ export declare class ContextSubscriptionManager extends EventEmitter
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context)](./context.contextsubscriptionmanager._constructor_.md) |  | Constructs a new instance of the <code>ContextSubscriptionManager</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context)](./context.contextsubscriptionmanager._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `ContextSubscriptionManager` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_observers](./context.contextsubscriptionmanager._observers.md) | <code>protected</code> | Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined | A list of registered context observers. The Set will be created when the first observer is added. |
-|  [\_parentContextEventListener?](./context.contextsubscriptionmanager._parentcontexteventlistener.md) | <code>protected</code> | [ContextEventListener](./context.contexteventlistener.md) | _(Optional)_ A listener to watch parent context events |
-|  [context](./context.contextsubscriptionmanager.context.md) | <p><code>protected</code></p><p><code>readonly</code></p> | [Context](./context.context.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_observers](./context.contextsubscriptionmanager._observers.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined
+
+
+</td><td>
+
+A list of registered context observers. The Set will be created when the first observer is added.
+
+
+</td></tr>
+<tr><td>
+
+[\_parentContextEventListener?](./context.contextsubscriptionmanager._parentcontexteventlistener.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+[ContextEventListener](./context.contexteventlistener.md)
+
+
+</td><td>
+
+_(Optional)_ A listener to watch parent context events
+
+
+</td></tr>
+<tr><td>
+
+[context](./context.contextsubscriptionmanager.context.md)
+
+
+</td><td>
+
+`protected`
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [close()](./context.contextsubscriptionmanager.close.md) |  | Close the context: clear observers, stop notifications, and remove event listeners from its parent context. |
-|  [isSubscribed(observer)](./context.contextsubscriptionmanager.issubscribed.md) |  | Check if an observer is subscribed to this context |
-|  [notifyObservers(event, observers)](./context.contextsubscriptionmanager.notifyobservers.md) | <code>protected</code> | Publish an event to the registered observers. Please note the notification is queued and performed asynchronously so that we allow fluent APIs such as <code>ctx.bind('key').to(...).tag(...);</code> and give observers the fully populated binding. |
-|  [subscribe(observer)](./context.contextsubscriptionmanager.subscribe.md) |  | Add a context event observer to the context |
-|  [unsubscribe(observer)](./context.contextsubscriptionmanager.unsubscribe.md) |  | Remove the context event observer from the context |
-|  [waitUntilPendingNotificationsDone(timeout)](./context.contextsubscriptionmanager.waituntilpendingnotificationsdone.md) |  | <p>Wait until observers are notified for all of currently pending notification events.</p><p>This method is for test only to perform assertions after observers are notified for relevant events.</p> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[close()](./context.contextsubscriptionmanager.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Close the context: clear observers, stop notifications, and remove event listeners from its parent context.
+
+
+</td></tr>
+<tr><td>
+
+[isSubscribed(observer)](./context.contextsubscriptionmanager.issubscribed.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Check if an observer is subscribed to this context
+
+
+</td></tr>
+<tr><td>
+
+[notifyObservers(event, observers)](./context.contextsubscriptionmanager.notifyobservers.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Publish an event to the registered observers. Please note the notification is queued and performed asynchronously so that we allow fluent APIs such as `ctx.bind('key').to(...).tag(...);` and give observers the fully populated binding.
+
+
+</td></tr>
+<tr><td>
+
+[subscribe(observer)](./context.contextsubscriptionmanager.subscribe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a context event observer to the context
+
+
+</td></tr>
+<tr><td>
+
+[unsubscribe(observer)](./context.contextsubscriptionmanager.unsubscribe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Remove the context event observer from the context
+
+
+</td></tr>
+<tr><td>
+
+[waitUntilPendingNotificationsDone(timeout)](./context.contextsubscriptionmanager.waituntilpendingnotificationsdone.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Wait until observers are notified for all of currently pending notification events.
+
+This method is for test only to perform assertions after observers are notified for relevant events.
+
+
+</td></tr>
+</tbody></table>
 
 

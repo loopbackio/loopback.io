@@ -24,10 +24,84 @@ export interface InterceptorBindingOptions extends BindingFromClassOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [global?](./context.interceptorbindingoptions.global.md) |  | boolean | _(Optional)_ Global or local interceptor |
-|  [group?](./context.interceptorbindingoptions.group.md) |  | string | _(Optional)_ Group name for a global interceptor |
-|  [source?](./context.interceptorbindingoptions.source.md) |  | string \| string\[\] | _(Optional)_ Source filter for a global interceptor |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[global?](./context.interceptorbindingoptions.global.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Global or local interceptor
+
+
+</td></tr>
+<tr><td>
+
+[group?](./context.interceptorbindingoptions.group.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Group name for a global interceptor
+
+
+</td></tr>
+<tr><td>
+
+[source?](./context.interceptorbindingoptions.source.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string \| string\[\]
+
+
+</td><td>
+
+_(Optional)_ Source filter for a global interceptor
+
+
+</td></tr>
+</tbody></table>
 
 

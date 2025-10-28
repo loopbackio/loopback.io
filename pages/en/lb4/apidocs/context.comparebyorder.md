@@ -23,11 +23,71 @@ export declare function compareByOrder(a: string | symbol | undefined | null, b:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  a | string \| symbol \| undefined \| null | First value |
-|  b | string \| symbol \| undefined \| null | Second value |
-|  order | (string \| symbol)\[\] | _(Optional)_ An array of values as the predefined order |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+a
+
+
+</td><td>
+
+string \| symbol \| undefined \| null
+
+
+</td><td>
+
+First value
+
+
+</td></tr>
+<tr><td>
+
+b
+
+
+</td><td>
+
+string \| symbol \| undefined \| null
+
+
+</td><td>
+
+Second value
+
+
+</td></tr>
+<tr><td>
+
+order
+
+
+</td><td>
+
+(string \| symbol)\[\]
+
+
+</td><td>
+
+_(Optional)_ An array of values as the predefined order
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

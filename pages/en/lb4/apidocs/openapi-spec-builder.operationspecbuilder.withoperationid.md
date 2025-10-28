@@ -23,9 +23,39 @@ withOperationId(operationId: string): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  operationId | string | Operation id |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+operationId
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Operation id
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -21,10 +21,51 @@ loadRequestBodyIfNeeded(operationSpec: OperationObject, request: Request): Promi
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  operationSpec | OperationObject |  |
-|  request | Request |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+operationSpec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

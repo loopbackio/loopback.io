@@ -23,9 +23,39 @@ file: (...mediaTypes: string[]) => MethodDecorator
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  mediaTypes | string\[\] | A list of media types for the file response. It's default to <code>['application/octet-stream']</code>. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+mediaTypes
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+A list of media types for the file response. It's default to `['application/octet-stream']`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

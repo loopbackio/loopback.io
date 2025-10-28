@@ -23,9 +23,39 @@ offset(offset: number): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  offset | number | Offset of the number of records to be returned |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+offset
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Offset of the number of records to be returned
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

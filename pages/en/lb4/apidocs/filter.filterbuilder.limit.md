@@ -23,9 +23,39 @@ limit(limit: number): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  limit | number | Maximum number of records to be returned |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+limit
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Maximum number of records to be returned
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

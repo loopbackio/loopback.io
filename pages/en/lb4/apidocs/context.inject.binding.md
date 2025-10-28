@@ -23,10 +23,55 @@ binding: (bindingKey?: string | BindingKey<unknown>, metadata?: InjectBindingMet
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindingKey | string \| [BindingKey](./context.bindingkey.md)<!-- -->&lt;unknown&gt; | _(Optional)_ Binding key |
-|  metadata | [InjectBindingMetadata](./context.injectbindingmetadata.md) | _(Optional)_ Metadata for the injection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindingKey
+
+
+</td><td>
+
+string \| [BindingKey](./context.bindingkey.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+_(Optional)_ Binding key
+
+
+</td></tr>
+<tr><td>
+
+metadata
+
+
+</td><td>
+
+[InjectBindingMetadata](./context.injectbindingmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Metadata for the injection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

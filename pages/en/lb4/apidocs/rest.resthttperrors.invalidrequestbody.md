@@ -23,9 +23,37 @@ function invalidRequestBody(details: ValidationErrorDetails[]): HttpErrors.HttpE
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  details | [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)<!-- -->\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+details
+
+
+</td><td>
+
+[ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)<!-- -->\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

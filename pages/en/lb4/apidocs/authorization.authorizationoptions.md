@@ -21,11 +21,105 @@ export interface AuthorizationOptions
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [defaultDecision?](./authorization.authorizationoptions.defaultdecision.md) |  | [AuthorizationDecision.DENY](./authorization.authorizationdecision.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.md) | _(Optional)_ Default decision if all authorizers vote for ABSTAIN If not set, default to <code>AuthorizationDecision.DENY</code> |
-|  [defaultMetadata?](./authorization.authorizationoptions.defaultmetadata.md) |  | [AuthorizationMetadata](./authorization.authorizationmetadata.md) | _(Optional)_ Default authorization metadata if a method is not decorated with <code>@authorize</code>. If not set, no authorization will be enforced for those methods that are not associated with authorization metadata. |
-|  [defaultStatusCodeForDeny?](./authorization.authorizationoptions.defaultstatuscodefordeny.md) |  | number | _(Optional)_ Default HTTP status code when the final decision is <code>AuthorizationDecision.DENY</code>. If not set, default to 403 |
-|  [precedence?](./authorization.authorizationoptions.precedence.md) |  | [AuthorizationDecision.DENY](./authorization.authorizationdecision.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.md) | <p>_(Optional)_ Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to <code>AuthorizationDecision.DENY</code>.</p><p>Once a vote matches the <code>precedence</code>, it becomes the final decision. The rest of votes will be skipped.</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defaultDecision?](./authorization.authorizationoptions.defaultdecision.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AuthorizationDecision.DENY](./authorization.authorizationdecision.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.md)
+
+
+</td><td>
+
+_(Optional)_ Default decision if all authorizers vote for ABSTAIN If not set, default to `AuthorizationDecision.DENY`
+
+
+</td></tr>
+<tr><td>
+
+[defaultMetadata?](./authorization.authorizationoptions.defaultmetadata.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AuthorizationMetadata](./authorization.authorizationmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Default authorization metadata if a method is not decorated with `@authorize`<!-- -->. If not set, no authorization will be enforced for those methods that are not associated with authorization metadata.
+
+
+</td></tr>
+<tr><td>
+
+[defaultStatusCodeForDeny?](./authorization.authorizationoptions.defaultstatuscodefordeny.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Default HTTP status code when the final decision is `AuthorizationDecision.DENY`<!-- -->. If not set, default to 403
+
+
+</td></tr>
+<tr><td>
+
+[precedence?](./authorization.authorizationoptions.precedence.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[AuthorizationDecision.DENY](./authorization.authorizationdecision.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.md)
+
+
+</td><td>
+
+_(Optional)_ Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to `AuthorizationDecision.DENY`<!-- -->.
+
+Once a vote matches the `precedence`<!-- -->, it becomes the final decision. The rest of votes will be skipped.
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -22,21 +22,131 @@ export declare class UserRepository extends DefaultCrudRepository<User, typeof U
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(dataSource, userCredentialsRepositoryGetter)](./authentication-jwt.userrepository._constructor_.md) |  | Constructs a new instance of the <code>UserRepository</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(dataSource, userCredentialsRepositoryGetter)](./authentication-jwt.userrepository._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `UserRepository` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [userCredentials](./authentication-jwt.userrepository.usercredentials.md) | <code>readonly</code> | HasOneRepositoryFactory&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->&gt; |  |
-|  [userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md) | <code>protected</code> | Getter&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[userCredentials](./authentication-jwt.userrepository.usercredentials.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+HasOneRepositoryFactory&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Getter&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [findCredentials(userId)](./authentication-jwt.userrepository.findcredentials.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[findCredentials(userId)](./authentication-jwt.userrepository.findcredentials.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

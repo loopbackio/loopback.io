@@ -25,9 +25,39 @@ export declare function deprecated(isDeprecated?: boolean): (target: any, method
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  isDeprecated | boolean | _(Optional)_ whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+isDeprecated
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

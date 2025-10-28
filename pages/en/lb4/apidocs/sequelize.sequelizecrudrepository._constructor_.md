@@ -25,9 +25,50 @@ constructor(entityClass: typeof Entity & {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  entityClass | typeof Entity &amp; { prototype: T; } |  |
-|  dataSource | [SequelizeDataSource](./sequelize.sequelizedatasource.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+entityClass
+
+
+</td><td>
+
+typeof Entity &amp; { prototype: T; }
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+dataSource
+
+
+</td><td>
+
+[SequelizeDataSource](./sequelize.sequelizedatasource.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

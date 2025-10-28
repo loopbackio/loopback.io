@@ -22,20 +22,114 @@ export declare class SocketIoApplication extends Application
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(config)](./socketio.socketioapplication._constructor_.md) |  | Constructs a new instance of the <code>SocketIoApplication</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(config)](./socketio.socketioapplication._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SocketIoApplication` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [socketServer](./socketio.socketioapplication.socketserver.md) | <code>readonly</code> | [SocketIoServer](./socketio.socketioserver.md) | The main Socket server instance providing Socket connections for this application. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[socketServer](./socketio.socketioapplication.socketserver.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[SocketIoServer](./socketio.socketioserver.md)
+
+
+</td><td>
+
+The main Socket server instance providing Socket connections for this application.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [server(server, name)](./socketio.socketioapplication.server.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[server(server, name)](./socketio.socketioapplication.server.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

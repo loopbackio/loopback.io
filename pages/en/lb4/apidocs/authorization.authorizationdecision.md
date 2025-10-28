@@ -23,10 +23,70 @@ export declare enum AuthorizationDecision
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  ABSTAIN | <code>&quot;Abstain&quot;</code> | No decision |
-|  ALLOW | <code>&quot;Allow&quot;</code> | Access allowed |
-|  DENY | <code>&quot;Deny&quot;</code> | Access denied |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ABSTAIN
+
+
+</td><td>
+
+`"Abstain"`
+
+
+</td><td>
+
+No decision
+
+
+</td></tr>
+<tr><td>
+
+ALLOW
+
+
+</td><td>
+
+`"Allow"`
+
+
+</td><td>
+
+Access allowed
+
+
+</td></tr>
+<tr><td>
+
+DENY
+
+
+</td><td>
+
+`"Deny"`
+
+
+</td><td>
+
+Access denied
+
+
+</td></tr>
+</tbody></table>
 
 

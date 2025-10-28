@@ -23,9 +23,39 @@ export declare function getControllerSpec(constructor: Function): ControllerSpec
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  constructor | Function | Controller class |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+constructor
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+Controller class
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,14 +23,70 @@ export interface ModelApiBuilder
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [pattern](./model-api-builder.modelapibuilder.pattern.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[pattern](./model-api-builder.modelapibuilder.pattern.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [build(application, modelClass, config)](./model-api-builder.modelapibuilder.build.md) |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[build(application, modelClass, config)](./model-api-builder.modelapibuilder.build.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

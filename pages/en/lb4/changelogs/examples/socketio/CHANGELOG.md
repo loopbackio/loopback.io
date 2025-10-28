@@ -13,6 +13,93 @@ permalink: /doc/en/lb4/changelog.example-socketio.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.11.4...@loopback/example-socketio@0.11.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+## [0.11.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.11.3...@loopback/example-socketio@0.11.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+## [0.11.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.11.2...@loopback/example-socketio@0.11.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+## [0.11.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.11.1...@loopback/example-socketio@0.11.2) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+## [0.11.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.11.0...@loopback/example-socketio@0.11.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+# [0.11.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.10.5...@loopback/example-socketio@0.11.0) (2025-06-10)
+
+
+### Bug Fixes
+
+* **docs:** fix typos in documentation ([13ea0d0](https://github.com/loopbackio/loopback-next/commit/13ea0d001836c81cfb4ba6776c45b10a89cda3da))
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.10.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.10.4...@loopback/example-socketio@0.10.5) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+## [0.10.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.10.3...@loopback/example-socketio@0.10.4) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
+## [0.10.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.10.2...@loopback/example-socketio@0.10.3) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/example-socketio
+
+
+
+
+
 ## [0.10.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-socketio@0.10.1...@loopback/example-socketio@0.10.2) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/example-socketio

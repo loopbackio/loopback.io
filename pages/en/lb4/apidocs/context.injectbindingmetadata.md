@@ -24,8 +24,46 @@ export interface InjectBindingMetadata extends InjectionMetadata
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindingCreation?](./context.injectbindingmetadata.bindingcreation.md) |  | [BindingCreationPolicy](./context.bindingcreationpolicy.md) | _(Optional)_ Controls how the underlying binding is resolved/created |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindingCreation?](./context.injectbindingmetadata.bindingcreation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingCreationPolicy](./context.bindingcreationpolicy.md)
+
+
+</td><td>
+
+_(Optional)_ Controls how the underlying binding is resolved/created
+
+
+</td></tr>
+</tbody></table>
 
 

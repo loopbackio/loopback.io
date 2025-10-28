@@ -23,12 +23,87 @@ export declare function addExtension(context: Context, extensionPointName: strin
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) | Context object |
-|  extensionPointName | string | Name of the extension point |
-|  extensionClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; | Class or a provider for an extension |
-|  options | [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Options Options for the creation of binding from class |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+extensionPointName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the extension point
+
+
+</td></tr>
+<tr><td>
+
+extensionClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+Class or a provider for an extension
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[BindingFromClassOptions](./context.bindingfromclassoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options Options for the creation of binding from class
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -25,10 +25,55 @@ protected buildSequelizeIncludeFilter(inclusionFilters?: Array<InclusionFilter &
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  inclusionFilters | Array&lt;[InclusionFilter](./filter.inclusionfilter.md) &amp; { required?: boolean; }&gt; | _(Optional)_ loopback style <code>where</code> condition |
-|  sourceModel | ModelStatic&lt;Model&lt;T&gt;&gt; | _(Optional)_ sequelize model instance |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+inclusionFilters
+
+
+</td><td>
+
+Array&lt;[InclusionFilter](./filter.inclusionfilter.md) &amp; { required?: boolean; }&gt;
+
+
+</td><td>
+
+_(Optional)_ loopback style `where` condition
+
+
+</td></tr>
+<tr><td>
+
+sourceModel
+
+
+</td><td>
+
+ModelStatic&lt;Model&lt;T&gt;&gt;
+
+
+</td><td>
+
+_(Optional)_ sequelize model instance
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,55 @@ withSecurityScheme(name: string, securityScheme: SecuritySchemeObject | Referenc
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the security scheme |
-|  securityScheme | SecuritySchemeObject \| ReferenceObject | Specification of the security scheme |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the security scheme
+
+
+</td></tr>
+<tr><td>
+
+securityScheme
+
+
+</td><td>
+
+SecuritySchemeObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the security scheme
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

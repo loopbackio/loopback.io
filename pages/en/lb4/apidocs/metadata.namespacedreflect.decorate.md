@@ -21,12 +21,83 @@ decorate(decorators: (PropertyDecorator | MethodDecorator)[], target: Object, ta
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  decorators | (PropertyDecorator \| MethodDecorator)\[\] |  |
-|  target | Object |  |
-|  targetKey | string \| symbol | _(Optional)_ |
-|  descriptor | PropertyDescriptor | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+decorators
+
+
+</td><td>
+
+(PropertyDecorator \| MethodDecorator)\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+targetKey
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+descriptor
+
+
+</td><td>
+
+PropertyDescriptor
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

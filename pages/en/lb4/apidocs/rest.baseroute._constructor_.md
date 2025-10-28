@@ -23,10 +23,70 @@ constructor(verb: string, path: string, spec: OperationObject);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | http verb |
-|  path | string | http request path pattern |
-|  spec | OperationObject | OpenAPI operation spec |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+http verb
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+http request path pattern
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+OpenAPI operation spec
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,12 +23,92 @@ constructor(context: Context, controller: ControllerClass, invoke: SocketIoInvok
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) |  |
-|  controller | [ControllerClass](./core.controllerclass.md) |  |
-|  invoke | [SocketIoInvokeMethod](./socketio.socketioinvokemethod.md) |  |
-|  send | [SocketIoSendMethod](./socketio.socketiosendmethod.md) |  |
-|  reject | [SocketIoRejectMethod](./socketio.socketiorejectmethod.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+controller
+
+
+</td><td>
+
+[ControllerClass](./core.controllerclass.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+invoke
+
+
+</td><td>
+
+[SocketIoInvokeMethod](./socketio.socketioinvokemethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+send
+
+
+</td><td>
+
+[SocketIoSendMethod](./socketio.socketiosendmethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+reject
+
+
+</td><td>
+
+[SocketIoRejectMethod](./socketio.socketiorejectmethod.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

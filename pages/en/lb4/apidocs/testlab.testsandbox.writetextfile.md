@@ -23,10 +23,55 @@ writeTextFile(dest: string, data: string): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dest | string | Destination filename, optionally including a relative path. |
-|  data | string | The text to write. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dest
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Destination filename, optionally including a relative path.
+
+
+</td></tr>
+<tr><td>
+
+data
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The text to write.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

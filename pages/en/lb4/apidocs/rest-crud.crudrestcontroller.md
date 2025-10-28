@@ -23,14 +23,74 @@ export interface CrudRestController<T extends Entity, IdType, IdName extends key
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [repository](./rest-crud.crudrestcontroller.repository.md) | <code>readonly</code> | EntityCrudRepository&lt;T, IdType&gt; | The backing repository used to access &amp; modify model data. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[repository](./rest-crud.crudrestcontroller.repository.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+EntityCrudRepository&lt;T, IdType&gt;
+
+
+</td><td>
+
+The backing repository used to access &amp; modify model data.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [find(filter)](./rest-crud.crudrestcontroller.find.md) | Implementation of the endpoint <code>GET /</code>. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[find(filter)](./rest-crud.crudrestcontroller.find.md)
+
+
+</td><td>
+
+Implementation of the endpoint `GET /`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 

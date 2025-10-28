@@ -21,10 +21,51 @@ export declare function filterTemplate(strings: TemplateStringsArray, ...keys: a
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  strings | TemplateStringsArray |  |
-|  keys | any\[\] |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+strings
+
+
+</td><td>
+
+TemplateStringsArray
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+keys
+
+
+</td><td>
+
+any\[\]
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,11 +23,71 @@ static runWithBinding(action: ResolutionAction, binding: Readonly<Binding>, sess
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
-|  binding | Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt; | The current binding |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ The current resolution session |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+action
+
+
+</td><td>
+
+[ResolutionAction](./context.resolutionaction.md)
+
+
+</td><td>
+
+A function to do some work with the resolution session
+
+
+</td></tr>
+<tr><td>
+
+binding
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;
+
+
+</td><td>
+
+The current binding
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ The current resolution session
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ export declare function createUnexpectedHttpErrorLogger(expectedStatusCode?: num
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  expectedStatusCode | number | _(Optional)_ HTTP status code that is expected |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+expectedStatusCode
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ HTTP status code that is expected
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,55 @@ regexp<K extends KeyOf<MT>>(key: K, val: string | RegExp): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | K | Property name |
-|  val | string \| RegExp | Regexp condition |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+K
+
+
+</td><td>
+
+Property name
+
+
+</td></tr>
+<tr><td>
+
+val
+
+
+</td><td>
+
+string \| RegExp
+
+
+</td><td>
+
+Regexp condition
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

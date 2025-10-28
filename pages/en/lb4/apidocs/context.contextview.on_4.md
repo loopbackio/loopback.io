@@ -23,10 +23,55 @@ on(eventName: 'close', listener: () => void): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventName | 'close' | The name of the event - always <code>close</code>. |
-|  listener | () =&gt; void | The listener function to call when the event is emitted. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventName
+
+
+</td><td>
+
+'close'
+
+
+</td><td>
+
+The name of the event - always `close`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+listener
+
+
+</td><td>
+
+() =&gt; void
+
+
+</td><td>
+
+The listener function to call when the event is emitted.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

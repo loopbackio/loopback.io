@@ -21,9 +21,39 @@ export declare namespace OASEnhancerBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oasenhancerbindings.oas_enhancer_extension_point_name.md) | Name/id of the OAS enhancer extension point |
-|  [OAS\_ENHANCER\_SERVICE](./openapi-v3.oasenhancerbindings.oas_enhancer_service.md) | Strongly-typed binding key for SpecService |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oasenhancerbindings.oas_enhancer_extension_point_name.md)
+
+
+</td><td>
+
+Name/id of the OAS enhancer extension point
+
+
+</td></tr>
+<tr><td>
+
+[OAS\_ENHANCER\_SERVICE](./openapi-v3.oasenhancerbindings.oas_enhancer_service.md)
+
+
+</td><td>
+
+Strongly-typed binding key for SpecService
+
+
+</td></tr>
+</tbody></table>
 
 

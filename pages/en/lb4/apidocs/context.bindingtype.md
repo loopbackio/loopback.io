@@ -23,12 +23,102 @@ export declare enum BindingType
 
 ## Enumeration Members
 
-|  Member | Value | Description |
-|  --- | --- | --- |
-|  ALIAS | <code>&quot;Alias&quot;</code> | A alias to another binding key with optional path |
-|  CLASS | <code>&quot;Class&quot;</code> | A class to be instantiated as the value |
-|  CONSTANT | <code>&quot;Constant&quot;</code> | A fixed value |
-|  DYNAMIC\_VALUE | <code>&quot;DynamicValue&quot;</code> | A function to get the value |
-|  PROVIDER | <code>&quot;Provider&quot;</code> | A provider class with <code>value()</code> function to get the value |
+<table><thead><tr><th>
+
+Member
+
+
+</th><th>
+
+Value
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ALIAS
+
+
+</td><td>
+
+`"Alias"`
+
+
+</td><td>
+
+A alias to another binding key with optional path
+
+
+</td></tr>
+<tr><td>
+
+CLASS
+
+
+</td><td>
+
+`"Class"`
+
+
+</td><td>
+
+A class to be instantiated as the value
+
+
+</td></tr>
+<tr><td>
+
+CONSTANT
+
+
+</td><td>
+
+`"Constant"`
+
+
+</td><td>
+
+A fixed value
+
+
+</td></tr>
+<tr><td>
+
+DYNAMIC\_VALUE
+
+
+</td><td>
+
+`"DynamicValue"`
+
+
+</td><td>
+
+A function to get the value
+
+
+</td></tr>
+<tr><td>
+
+PROVIDER
+
+
+</td><td>
+
+`"Provider"`
+
+
+</td><td>
+
+A provider class with `value()` function to get the value
+
+
+</td></tr>
+</tbody></table>
 
 

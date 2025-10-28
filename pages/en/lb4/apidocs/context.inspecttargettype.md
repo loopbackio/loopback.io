@@ -23,9 +23,39 @@ export declare function inspectTargetType(injection: Readonly<Injection>): Funct
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection information |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+injection
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
+
+
+</td><td>
+
+Injection information
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

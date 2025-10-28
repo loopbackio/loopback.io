@@ -23,10 +23,55 @@ export declare function registerAuthenticationStrategy(context: Context, strateg
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [Context](./context.context.md) | Context object |
-|  strategyClass | [Constructor](./context.constructor.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt; | Class for the authentication strategy |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+strategyClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt;
+
+
+</td><td>
+
+Class for the authentication strategy
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

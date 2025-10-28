@@ -18,6 +18,6 @@ Middleware options for GraphQL
 **Signature:**
 
 ```typescript
-middlewareOptions?: GetMiddlewareOptions;
+middlewareOptions?: Record<string, unknown>;
 ```
 

@@ -23,9 +23,39 @@ protected getSequelizeOperator(key: keyof typeof operatorTranslations): symbol;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | keyof typeof operatorTranslations | Name of the operator used in loopback eg. lt |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+keyof typeof operatorTranslations
+
+
+</td><td>
+
+Name of the operator used in loopback eg. lt
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

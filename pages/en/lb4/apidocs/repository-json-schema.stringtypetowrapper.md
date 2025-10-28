@@ -23,9 +23,39 @@ export declare function stringTypeToWrapper(type: string | Function): Function;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  type | string \| Function | Name of type |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+type
+
+
+</td><td>
+
+string \| Function
+
+
+</td><td>
+
+Name of type
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

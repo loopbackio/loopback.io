@@ -25,11 +25,71 @@ execute(command: Command, parameters?: NamedParameters | PositionalParameters, o
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  command | Command | A parameterized SQL command or query. |
-|  parameters | NamedParameters \| PositionalParameters | _(Optional)_ List of parameter values to use. |
-|  options | Options | _(Optional)_ Additional options, for example <code>transaction</code>. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+command
+
+
+</td><td>
+
+Command
+
+
+</td><td>
+
+A parameterized SQL command or query.
+
+
+</td></tr>
+<tr><td>
+
+parameters
+
+
+</td><td>
+
+NamedParameters \| PositionalParameters
+
+
+</td><td>
+
+_(Optional)_ List of parameter values to use.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+Options
+
+
+</td><td>
+
+_(Optional)_ Additional options, for example `transaction`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

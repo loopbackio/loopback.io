@@ -22,21 +22,122 @@ export declare class MsgPackBodyParser extends RawBodyParser
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./rest-msgpack.msgpackbodyparser._constructor_.md) |  | Constructs a new instance of the <code>MsgPackBodyParser</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./rest-msgpack.msgpackbodyparser._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `MsgPackBodyParser` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [name](./rest-msgpack.msgpackbodyparser.name.md) |  | symbol |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./rest-msgpack.msgpackbodyparser.name.md)
+
+
+</td><td>
+
+
+</td><td>
+
+symbol
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [parse(request)](./rest-msgpack.msgpackbodyparser.parse.md) |  |  |
-|  [supports(mediaType)](./rest-msgpack.msgpackbodyparser.supports.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[parse(request)](./rest-msgpack.msgpackbodyparser.parse.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[supports(mediaType)](./rest-msgpack.msgpackbodyparser.supports.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

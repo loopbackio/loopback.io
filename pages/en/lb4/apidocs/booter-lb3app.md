@@ -17,8 +17,26 @@ permalink: /doc/en/lb4/apidocs.booter-lb3app.html
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [Lb3AppBooterComponent](./booter-lb3app.lb3appbootercomponent.md) |  |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Lb3AppBooterComponent](./booter-lb3app.lb3appbootercomponent.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

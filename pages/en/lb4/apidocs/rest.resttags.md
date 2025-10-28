@@ -23,16 +23,110 @@ export declare namespace RestTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [ACTION\_MIDDLEWARE\_CHAIN](./rest.resttags.action_middleware_chain.md) | Legacy middleware chain for action-based REST sequence |
-|  [AJV\_FORMAT](./rest.resttags.ajv_format.md) |  |
-|  [AJV\_KEYWORD](./rest.resttags.ajv_keyword.md) |  |
-|  [CONTROLLER\_BINDING](./rest.resttags.controller_binding.md) | Binding tag for controller route bindings to represent the controller binding key |
-|  [CONTROLLER\_ROUTE](./rest.resttags.controller_route.md) | Binding tag to identify controller based REST routes |
-|  [REST\_MIDDLEWARE\_CHAIN](./rest.resttags.rest_middleware_chain.md) |  |
-|  [REST\_ROUTE](./rest.resttags.rest_route.md) | Binding tag to identify REST routes |
-|  [ROUTE\_PATH](./rest.resttags.route_path.md) | Binding tag for the REST route path |
-|  [ROUTE\_VERB](./rest.resttags.route_verb.md) | Binding tag for the REST route verb |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ACTION\_MIDDLEWARE\_CHAIN](./rest.resttags.action_middleware_chain.md)
+
+
+</td><td>
+
+Legacy middleware chain for action-based REST sequence
+
+
+</td></tr>
+<tr><td>
+
+[AJV\_FORMAT](./rest.resttags.ajv_format.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[AJV\_KEYWORD](./rest.resttags.ajv_keyword.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CONTROLLER\_BINDING](./rest.resttags.controller_binding.md)
+
+
+</td><td>
+
+Binding tag for controller route bindings to represent the controller binding key
+
+
+</td></tr>
+<tr><td>
+
+[CONTROLLER\_ROUTE](./rest.resttags.controller_route.md)
+
+
+</td><td>
+
+Binding tag to identify controller based REST routes
+
+
+</td></tr>
+<tr><td>
+
+[REST\_MIDDLEWARE\_CHAIN](./rest.resttags.rest_middleware_chain.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[REST\_ROUTE](./rest.resttags.rest_route.md)
+
+
+</td><td>
+
+Binding tag to identify REST routes
+
+
+</td></tr>
+<tr><td>
+
+[ROUTE\_PATH](./rest.resttags.route_path.md)
+
+
+</td><td>
+
+Binding tag for the REST route path
+
+
+</td></tr>
+<tr><td>
+
+[ROUTE\_VERB](./rest.resttags.route_verb.md)
+
+
+</td><td>
+
+Binding tag for the REST route verb
+
+
+</td></tr>
+</tbody></table>
 
 

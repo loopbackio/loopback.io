@@ -23,12 +23,94 @@ constructor(request: Request, response: Response, parent: Context, serverConfig:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | Request |  |
-|  response | Response |  |
-|  parent | [Context](./context.context.md) |  |
-|  serverConfig | [RestServerResolvedConfig](./rest.restserverresolvedconfig.md) |  |
-|  name | string | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+Request
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+response
+
+
+</td><td>
+
+Response
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+parent
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+serverConfig
+
+
+</td><td>
+
+[RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

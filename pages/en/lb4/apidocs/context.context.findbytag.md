@@ -23,9 +23,39 @@ findByTag<ValueType = BoundValue>(tagFilter: BindingTag | RegExp): Readonly<Bind
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tagFilter | [BindingTag](./context.bindingtag.md) \| RegExp | A filter for tags. It can be in one of the following forms: - A regular expression, such as <code>/controller/</code> - A wildcard pattern string with optional <code>*</code> and <code>?</code>, such as <code>'con*'</code> For a wildcard: - <code>*</code> matches zero or more characters except <code>.</code> and <code>:</code> - <code>?</code> matches exactly one character except <code>.</code> and <code>:</code> - An object containing tag name/value pairs, such as <code>{name: 'my-controller'}</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+tagFilter
+
+
+</td><td>
+
+[BindingTag](./context.bindingtag.md) \| RegExp
+
+
+</td><td>
+
+A filter for tags. It can be in one of the following forms: - A regular expression, such as `/controller/` - A wildcard pattern string with optional `*` and `?`<!-- -->, such as `'con*'` For a wildcard: - `*` matches zero or more characters except `.` and `:` - `?` matches exactly one character except `.` and `:` - An object containing tag name/value pairs, such as `{name: 'my-controller'}`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

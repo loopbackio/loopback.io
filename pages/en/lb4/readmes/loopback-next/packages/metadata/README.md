@@ -134,7 +134,7 @@ const arrayOfSpecs = MetadataInspector.getMethodMetadata<object>(
 
 Typescript
 [applies decorators in reverse order](https://www.typescriptlang.org/docs/handbook/decorators.html)
-per class, from the parent down. The metadata array resurned by `getOwnMetadata`
+per class, from the parent down. The metadata array returned by `getOwnMetadata`
 will be in this order:
 
 ```ts
@@ -328,7 +328,6 @@ By default, the decorator factories allow inheritance with the following rules:
 1.  If the metadata is an object, we merge the `spec` argument from the
     decorator function into the inherited value from base classes. For metadata
     of array and other primitive types, the `spec` argument is used if provided.
-
     - We can override `inherit` method of the decorator factory to customize how
       to resolve `spec` against the inherited metadata. For example:
 
@@ -344,7 +343,6 @@ protected inherit(inheritedMetadata: T | undefined | null): T {
     better than keeping metadata at method/property level as it's not easy to
     inspect a class to find static/instance methods and properties with
     decorations. The metadata for a class is illustrated below:
-
     - MyClass (the constructor function itself)
 
 ```ts

@@ -13,6 +13,94 @@ permalink: /doc/en/lb4/changelog.apiconnect.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.5](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.14.4...@loopback/apiconnect@0.14.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
+
+## [0.14.4](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.14.3...@loopback/apiconnect@0.14.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
+
+## [0.14.3](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.14.2...@loopback/apiconnect@0.14.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
+
+## [0.14.2](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.14.1...@loopback/apiconnect@0.14.2) (2025-06-12)
+
+
+### Bug Fixes
+
+* update peerDependencies versions ([c72cbad](https://github.com/loopbackio/loopback-next/commit/c72cbaded5b71585d45ab834dbcb839fd4ff1087))
+
+
+
+
+
+## [0.14.1](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.14.0...@loopback/apiconnect@0.14.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* update @loopback/core to latest major version ([e2d2288](https://github.com/loopbackio/loopback-next/commit/e2d22886dbbb4be91ee6407ff4c6257c48698e89))
+
+
+
+
+
+# [0.14.0](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.13.14...@loopback/apiconnect@0.14.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.13.14](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.13.13...@loopback/apiconnect@0.13.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
+
+## [0.13.13](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.13.12...@loopback/apiconnect@0.13.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
+
+## [0.13.12](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.13.11...@loopback/apiconnect@0.13.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/apiconnect
+
+
+
+
+
 ## [0.13.11](https://github.com/loopbackio/loopback-next/compare/@loopback/apiconnect@0.13.10...@loopback/apiconnect@0.13.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/apiconnect

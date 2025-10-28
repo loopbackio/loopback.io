@@ -23,11 +23,71 @@ export declare function registerResolver(ctx: Context, resolverClass: Constructo
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctx | [Context](./context.context.md) | Context object |
-|  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;object&gt; | Resolver class |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Resolver name or binding options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+Context object
+
+
+</td></tr>
+<tr><td>
+
+resolverClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;object&gt;
+
+
+</td><td>
+
+Resolver class
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Resolver name or binding options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

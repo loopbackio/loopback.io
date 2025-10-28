@@ -23,9 +23,39 @@ export declare function isBindingAddress(bindingSelector: BindingSelector): bind
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  bindingSelector | [BindingSelector](./context.bindingselector.md) | Binding key or filter function |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+bindingSelector
+
+
+</td><td>
+
+[BindingSelector](./context.bindingselector.md)
+
+
+</td><td>
+
+Binding key or filter function
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

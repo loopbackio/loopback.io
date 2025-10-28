@@ -23,10 +23,55 @@ component<T extends Component = Component>(componentCtor: Constructor<T>, nameOr
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  componentCtor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The component class to add. |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Optional component name or options, default to the class name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+componentCtor
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+The component class to add.
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Optional component name or options, default to the class name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

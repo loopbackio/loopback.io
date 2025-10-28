@@ -23,18 +23,98 @@ export declare namespace param
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [array(name, source, itemSpec)](./openapi-v3.param.array.md) | Define a parameter of <code>array</code> type. |
-|  [filter(modelCtor, options)](./openapi-v3.param.filter.md) | Sugar decorator for <code>filter</code> query parameter |
-|  [where(modelCtor, name)](./openapi-v3.param.where.md) | Sugar decorator for <code>where</code> query parameter |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[array(name, source, itemSpec)](./openapi-v3.param.array.md)
+
+
+</td><td>
+
+Define a parameter of `array` type.
+
+
+</td></tr>
+<tr><td>
+
+[filter(modelCtor, options)](./openapi-v3.param.filter.md)
+
+
+</td><td>
+
+Sugar decorator for `filter` query parameter
+
+
+</td></tr>
+<tr><td>
+
+[where(modelCtor, name)](./openapi-v3.param.where.md)
+
+
+</td><td>
+
+Sugar decorator for `where` query parameter
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [header](./openapi-v3.param.header.md) | Header parameter decorator |
-|  [path](./openapi-v3.param.path.md) | Path parameter decorator |
-|  [query](./openapi-v3.param.query.md) | Query parameter decorator |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[header](./openapi-v3.param.header.md)
+
+
+</td><td>
+
+Header parameter decorator
+
+
+</td></tr>
+<tr><td>
+
+[path](./openapi-v3.param.path.md)
+
+
+</td><td>
+
+Path parameter decorator
+
+
+</td></tr>
+<tr><td>
+
+[query](./openapi-v3.param.query.md)
+
+
+</td><td>
+
+Query parameter decorator
+
+
+</td></tr>
+</tbody></table>
 
 

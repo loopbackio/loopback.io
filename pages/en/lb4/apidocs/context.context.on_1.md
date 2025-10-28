@@ -21,10 +21,51 @@ on(event: string | symbol, listener: (...args: any[]) => void): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  event | string \| symbol |  |
-|  listener | (...args: any\[\]) =&gt; void |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+event
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+listener
+
+
+</td><td>
+
+(...args: any\[\]) =&gt; void
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

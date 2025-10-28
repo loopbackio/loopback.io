@@ -25,9 +25,39 @@ static generate<T>(namespace?: string): BindingKey<T>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  namespace | string | _(Optional)_ Namespace for the binding |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+namespace
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Namespace for the binding
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -24,9 +24,65 @@ export interface InjectionMetadata extends Omit<ResolutionOptions, 'session'>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindingComparator?](./context.injectionmetadata.bindingcomparator.md) |  | [BindingComparator](./context.bindingcomparator.md) | _(Optional)_ Optional comparator for matched bindings |
-|  [decorator?](./context.injectionmetadata.decorator.md) |  | string | _(Optional)_ Name of the decorator function, such as <code>@inject</code> or <code>@inject.setter</code>. It's usually set by the decorator implementation. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindingComparator?](./context.injectionmetadata.bindingcomparator.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[BindingComparator](./context.bindingcomparator.md)
+
+
+</td><td>
+
+_(Optional)_ Optional comparator for matched bindings
+
+
+</td></tr>
+<tr><td>
+
+[decorator?](./context.injectionmetadata.decorator.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Name of the decorator function, such as `@inject` or `@inject.setter`<!-- -->. It's usually set by the decorator implementation.
+
+
+</td></tr>
+</tbody></table>
 
 

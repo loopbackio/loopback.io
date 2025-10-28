@@ -13,6 +13,96 @@ permalink: /doc/en/lb4/changelog.example-webpack.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.13.4...@loopback/example-webpack@0.13.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
+## [0.13.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.13.3...@loopback/example-webpack@0.13.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
+## [0.13.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.13.2...@loopback/example-webpack@0.13.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
+## [0.13.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.13.1...@loopback/example-webpack@0.13.2) (2025-06-13)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
+## [0.13.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.13.0...@loopback/example-webpack@0.13.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
+# [0.13.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.12.5...@loopback/example-webpack@0.13.0) (2025-06-10)
+
+
+### Bug Fixes
+
+* **docs:** fix typos in documentation ([13ea0d0](https://github.com/loopbackio/loopback-next/commit/13ea0d001836c81cfb4ba6776c45b10a89cda3da))
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [0.12.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.12.4...@loopback/example-webpack@0.12.5) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
+## [0.12.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.12.3...@loopback/example-webpack@0.12.4) (2025-04-17)
+
+
+### Bug Fixes
+
+* fix test in webpack example ([41f974c](https://github.com/loopbackio/loopback-next/commit/41f974c2b982bc1d8d2b93e8a656e1029d36aa3a))
+
+
+
+
+
+## [0.12.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.12.2...@loopback/example-webpack@0.12.3) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/example-webpack
+
+
+
+
+
 ## [0.12.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-webpack@0.12.1...@loopback/example-webpack@0.12.2) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/example-webpack

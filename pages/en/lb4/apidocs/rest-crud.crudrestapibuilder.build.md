@@ -23,11 +23,65 @@ build(application: ApplicationWithRepositories, modelClass: typeof Model & {
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  application | ApplicationWithRepositories |  |
-|  modelClass | typeof Model &amp; { prototype: Model; } |  |
-|  cfg | [ModelApiConfig](./model-api-builder.modelapiconfig.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+application
+
+
+</td><td>
+
+ApplicationWithRepositories
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+modelClass
+
+
+</td><td>
+
+typeof Model &amp; { prototype: Model; }
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+cfg
+
+
+</td><td>
+
+[ModelApiConfig](./model-api-builder.modelapiconfig.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

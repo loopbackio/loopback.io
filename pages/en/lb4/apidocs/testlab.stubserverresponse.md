@@ -21,10 +21,51 @@ export declare function stubServerResponse(request: IncomingMessage, onEnd: Shot
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  request | IncomingMessage |  |
-|  onEnd | [ShotCallback](./testlab.shotcallback.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+request
+
+
+</td><td>
+
+IncomingMessage
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+onEnd
+
+
+</td><td>
+
+[ShotCallback](./testlab.shotcallback.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,8 +23,38 @@ constructor(data?: Partial<RefreshToken>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  data | Partial&lt;[RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+data
+
+
+</td><td>
+
+Partial&lt;[RefreshToken](./authentication-jwt.refreshtoken.md)<!-- -->&gt;
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

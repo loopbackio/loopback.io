@@ -24,8 +24,50 @@ export interface BaseHttpOptions extends ListenOptions, Partial<HttpServerProper
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [gracePeriodForClose?](./http-server.basehttpoptions.graceperiodforclose.md) |  | number | <p>_(Optional)_ The <code>gracePeriodForClose</code> property controls how to stop the server gracefully. Its value is the number of milliseconds to wait before in-flight requests finish when the server is being stopped. With this setting, we also reject new requests from existing keep-alive connections in addition to stopping accepting new connections.</p><p>Defaults to Infinity (don't force-close). If you want to immediately destroy all sockets set its value to <code>0</code>.</p><p>See [stoppable](https://www.npmjs.com/package/stoppable)</p> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[gracePeriodForClose?](./http-server.basehttpoptions.graceperiodforclose.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ The `gracePeriodForClose` property controls how to stop the server gracefully. Its value is the number of milliseconds to wait before in-flight requests finish when the server is being stopped. With this setting, we also reject new requests from existing keep-alive connections in addition to stopping accepting new connections.
+
+Defaults to Infinity (don't force-close). If you want to immediately destroy all sockets set its value to `0`<!-- -->.
+
+See [stoppable](https://www.npmjs.com/package/stoppable)
+
+
+</td></tr>
+</tbody></table>
 
 

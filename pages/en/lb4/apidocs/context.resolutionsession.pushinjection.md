@@ -23,9 +23,39 @@ pushInjection(injection: Readonly<Injection>): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; | Injection The current injection |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+injection
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
+
+
+</td><td>
+
+Injection The current injection
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

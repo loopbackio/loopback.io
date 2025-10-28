@@ -23,11 +23,69 @@ static runWithInjection(action: ResolutionAction, injection: Readonly<Injection>
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  action | [ResolutionAction](./context.resolutionaction.md) | A function to do some work with the resolution session |
-|  injection | Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt; |  |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ The current resolution session |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+action
+
+
+</td><td>
+
+[ResolutionAction](./context.resolutionaction.md)
+
+
+</td><td>
+
+A function to do some work with the resolution session
+
+
+</td></tr>
+<tr><td>
+
+injection
+
+
+</td><td>
+
+Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ The current resolution session
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

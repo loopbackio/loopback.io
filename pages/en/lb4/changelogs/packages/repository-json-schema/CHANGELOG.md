@@ -13,6 +13,99 @@ permalink: /doc/en/lb4/changelog.repository-json-schema.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@9.0.4...@loopback/repository-json-schema@9.0.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
+## [9.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@9.0.3...@loopback/repository-json-schema@9.0.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
+## [9.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@9.0.2...@loopback/repository-json-schema@9.0.3) (2025-07-15)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
+## [9.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@9.0.1...@loopback/repository-json-schema@9.0.2) (2025-06-12)
+
+
+### Bug Fixes
+
+* update peerDependencies versions ([c72cbad](https://github.com/loopbackio/loopback-next/commit/c72cbaded5b71585d45ab834dbcb839fd4ff1087))
+
+
+
+
+
+## [9.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@9.0.0...@loopback/repository-json-schema@9.0.1) (2025-06-12)
+
+
+### Bug Fixes
+
+* update @loopback/core to latest major version ([e2d2288](https://github.com/loopbackio/loopback-next/commit/e2d22886dbbb4be91ee6407ff4c6257c48698e89))
+
+
+
+
+
+# [9.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@8.0.14...@loopback/repository-json-schema@9.0.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### Features
+
+* show index information in openapi specs ([a5caa61](https://github.com/loopbackio/loopback-next/commit/a5caa61c060df2f3860074c4e533a5c6e90eabc7))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [8.0.14](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@8.0.13...@loopback/repository-json-schema@8.0.14) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
+## [8.0.13](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@8.0.12...@loopback/repository-json-schema@8.0.13) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
+## [8.0.12](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@8.0.11...@loopback/repository-json-schema@8.0.12) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/repository-json-schema
+
+
+
+
+
 ## [8.0.11](https://github.com/loopbackio/loopback-next/compare/@loopback/repository-json-schema@8.0.10...@loopback/repository-json-schema@8.0.11) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/repository-json-schema

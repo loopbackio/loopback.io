@@ -26,28 +26,246 @@ export declare class GraphQLServer extends Context implements Server
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options, parent)](./graphql.graphqlserver._constructor_.md) |  | Constructs a new instance of the <code>GraphQLServer</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options, parent)](./graphql.graphqlserver._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `GraphQLServer` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [expressApp](./graphql.graphqlserver.expressapp.md) | <code>readonly</code> | express.Application |  |
-|  [httpServer?](./graphql.graphqlserver.httpserver.md) | <code>readonly</code> | [HttpServer](./http-server.httpserver.md) | _(Optional)_ |
-|  [listening](./graphql.graphqlserver.listening.md) | <code>readonly</code> | boolean | Is the GraphQL listening |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[expressApp](./graphql.graphqlserver.expressapp.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+express.Application
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[httpServer?](./graphql.graphqlserver.httpserver.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[HttpServer](./http-server.httpserver.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[listening](./graphql.graphqlserver.listening.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Is the GraphQL listening
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [exportGraphQLSchema(outFile, log)](./graphql.graphqlserver.exportgraphqlschema.md) |  |  |
-|  [getMiddlewareList()](./graphql.graphqlserver.getmiddlewarelist.md) |  | Get a list of middleware |
-|  [getResolverClasses()](./graphql.graphqlserver.getresolverclasses.md) |  | Get a list of resolver classes |
-|  [middleware(middleware)](./graphql.graphqlserver.middleware.md) |  | Register a GraphQL middleware |
-|  [resolver(resolverClass, nameOrOptions)](./graphql.graphqlserver.resolver.md) |  | Register a GraphQL resolver class |
-|  [start()](./graphql.graphqlserver.start.md) |  |  |
-|  [stop()](./graphql.graphqlserver.stop.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[exportGraphQLSchema(outFile, log)](./graphql.graphqlserver.exportgraphqlschema.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getMiddlewareList()](./graphql.graphqlserver.getmiddlewarelist.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get a list of middleware
+
+
+</td></tr>
+<tr><td>
+
+[getResolverClasses()](./graphql.graphqlserver.getresolverclasses.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get a list of resolver classes
+
+
+</td></tr>
+<tr><td>
+
+[getSchema()](./graphql.graphqlserver.getschema.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[middleware(middleware)](./graphql.graphqlserver.middleware.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a GraphQL middleware
+
+
+</td></tr>
+<tr><td>
+
+[resolver(resolverClass, nameOrOptions)](./graphql.graphqlserver.resolver.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register a GraphQL resolver class
+
+
+</td></tr>
+<tr><td>
+
+[start()](./graphql.graphqlserver.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./graphql.graphqlserver.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

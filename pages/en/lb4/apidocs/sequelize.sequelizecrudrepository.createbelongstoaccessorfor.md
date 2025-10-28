@@ -25,10 +25,53 @@ protected createBelongsToAccessorFor<Target extends Entity, TargetId>(relationNa
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  relationName | string | Name of the relation defined on the source model |
-|  targetRepositoryGetter | Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt;; } |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+relationName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Name of the relation defined on the source model
+
+
+</td></tr>
+<tr><td>
+
+targetRepositoryGetter
+
+
+</td><td>
+
+Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt; \| { \[repoType: string\]: Getter&lt;EntityCrudRepository&lt;Target, TargetId&gt;&gt;; }
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

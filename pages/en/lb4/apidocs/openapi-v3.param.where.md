@@ -23,10 +23,55 @@ function where(modelCtor: typeof Model, name?: string): (target: object, member:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  modelCtor | typeof Model | Model class |
-|  name | string | _(Optional)_ Custom name for the parameter, default to <code>where</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+modelCtor
+
+
+</td><td>
+
+typeof Model
+
+
+</td><td>
+
+Model class
+
+
+</td></tr>
+<tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Custom name for the parameter, default to `where`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

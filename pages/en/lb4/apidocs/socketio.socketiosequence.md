@@ -21,8 +21,26 @@ export interface SocketIoSequence
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [handle(methodName, args, done)](./socketio.socketiosequence.handle.md) |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(methodName, args, done)](./socketio.socketiosequence.handle.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -24,20 +24,112 @@ export declare class DefaultConfigurationResolver implements ConfigurationResolv
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context)](./context.defaultconfigurationresolver._constructor_.md) |  | Constructs a new instance of the <code>DefaultConfigurationResolver</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context)](./context.defaultconfigurationresolver._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `DefaultConfigurationResolver` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./context.defaultconfigurationresolver.context.md) | <code>readonly</code> | [Context](./context.context.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./context.defaultconfigurationresolver.context.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.defaultconfigurationresolver.getconfigasvalueorpromise.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.defaultconfigurationresolver.getconfigasvalueorpromise.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

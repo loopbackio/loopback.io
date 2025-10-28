@@ -21,10 +21,51 @@ export declare function createResolvedRoute(route: RouteEntry, pathParams: PathP
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  route | [RouteEntry](./rest.routeentry.md) |  |
-|  pathParams | [PathParameterValues](./rest.pathparametervalues.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+route
+
+
+</td><td>
+
+[RouteEntry](./rest.routeentry.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+pathParams
+
+
+</td><td>
+
+[PathParameterValues](./rest.pathparametervalues.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

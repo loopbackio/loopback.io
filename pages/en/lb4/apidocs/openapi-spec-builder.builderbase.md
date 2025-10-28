@@ -21,21 +21,128 @@ export declare class BuilderBase<T extends ISpecificationExtension>
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(initialSpec)](./openapi-spec-builder.builderbase._constructor_.md) |  | Constructs a new instance of the <code>BuilderBase</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(initialSpec)](./openapi-spec-builder.builderbase._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `BuilderBase` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_spec](./openapi-spec-builder.builderbase._spec.md) | <code>protected</code> | T |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_spec](./openapi-spec-builder.builderbase._spec.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [build()](./openapi-spec-builder.builderbase.build.md) |  | Build the spec object. |
-|  [withExtension(key, value)](./openapi-spec-builder.builderbase.withextension.md) |  | Add a custom (extension) property to the spec object. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[build()](./openapi-spec-builder.builderbase.build.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Build the spec object.
+
+
+</td></tr>
+<tr><td>
+
+[withExtension(key, value)](./openapi-spec-builder.builderbase.withextension.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Add a custom (extension) property to the spec object.
+
+
+</td></tr>
+</tbody></table>
 
 

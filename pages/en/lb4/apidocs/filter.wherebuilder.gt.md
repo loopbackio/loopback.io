@@ -23,10 +23,55 @@ gt<K extends KeyOf<MT>>(key: K, val: MT[K]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | K | Property name |
-|  val | MT\[K\] | Property value |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+K
+
+
+</td><td>
+
+Property name
+
+
+</td></tr>
+<tr><td>
+
+val
+
+
+</td><td>
+
+MT\[K\]
+
+
+</td><td>
+
+Property value
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

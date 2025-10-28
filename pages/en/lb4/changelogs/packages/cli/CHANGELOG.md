@@ -13,6 +13,114 @@ permalink: /doc/en/lb4/changelog.cli.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.6](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@7.0.5...@loopback/cli@7.0.6) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+## [7.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@7.0.4...@loopback/cli@7.0.5) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+## [7.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@7.0.3...@loopback/cli@7.0.4) (2025-07-15)
+
+
+### Bug Fixes
+
+* [#10494](https://github.com/loopbackio/loopback-next/issues/10494) - lb4 controller fails with controllerType as BASIC ([ff4dd06](https://github.com/loopbackio/loopback-next/commit/ff4dd06b519e8970a690f8a3134f1df0369c1eaa))
+* copyright updates ([98340ed](https://github.com/loopbackio/loopback-next/commit/98340edeeb69b14a31c9793d718eae1c73eb7a6a))
+* undo copyright updates ([fe2acbf](https://github.com/loopbackio/loopback-next/commit/fe2acbff93c9b8408bec814d4050a12d7aa2d972))
+
+
+
+
+
+## [7.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@7.0.2...@loopback/cli@7.0.3) (2025-06-13)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+## [7.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@7.0.1...@loopback/cli@7.0.2) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+## [7.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@7.0.0...@loopback/cli@7.0.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+# [7.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.5...@loopback/cli@7.0.0) (2025-06-10)
+
+
+### Bug Fixes
+
+* iterate through content object properties ([0e8336c](https://github.com/loopbackio/loopback-next/commit/0e8336c64a2fc705c1fe7645e1a32c19a3ac79fb))
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [6.2.5](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.4...@loopback/cli@6.2.5) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/cli
+
+
+
+
+
+## [6.2.4](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.3...@loopback/cli@6.2.4) (2025-04-17)
+
+
+### Bug Fixes
+
+* fix release issue in cli.js ([84775d8](https://github.com/loopbackio/loopback-next/commit/84775d867006bb2c100d7dfd7c46eb8076e659ce))
+* revert terminal-link version ([5cf0a6f](https://github.com/loopbackio/loopback-next/commit/5cf0a6fd9270d4c59fe6816028c897b92ff8d37d))
+
+
+
+
+
+## [6.2.3](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.2...@loopback/cli@6.2.3) (2025-03-19)
+
+
+### Bug Fixes
+
+* remove import for model for same model relation ([875dc19](https://github.com/loopbackio/loopback-next/commit/875dc197261ac65a52ed2e47c4183b4e27a5cdaf))
+* revert latest-version to use v5 ([1f991b1](https://github.com/loopbackio/loopback-next/commit/1f991b101993af7fdc419c471cb01d1197ee0221))
+
+
+
+
+
 ## [6.2.2](https://github.com/loopbackio/loopback-next/compare/@loopback/cli@6.2.1...@loopback/cli@6.2.2) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/cli

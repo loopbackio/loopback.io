@@ -18,14 +18,44 @@ Register a GraphQL middleware
 **Signature:**
 
 ```typescript
-middleware<T = unknown>(middleware: Middleware<T>): Binding<Middleware<T>>;
+middleware<T extends object = object>(middleware: Middleware<T>): Binding<Middleware<T>>;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  middleware | Middleware&lt;T&gt; | GraphQL middleware |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+middleware
+
+
+</td><td>
+
+Middleware&lt;T&gt;
+
+
+</td><td>
+
+GraphQL middleware
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

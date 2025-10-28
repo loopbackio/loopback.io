@@ -23,11 +23,71 @@ withOperationReturningString(verb: string, path: string, operationName?: string)
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string | The HTTP verb. |
-|  path | string | The path relative to basePath. |
-|  operationName | string | _(Optional)_ The name of the controller method implementing this operation (<code>x-operation-name</code> field). |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The HTTP verb.
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The path relative to basePath.
+
+
+</td></tr>
+<tr><td>
+
+operationName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The name of the controller method implementing this operation (`x-operation-name` field).
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

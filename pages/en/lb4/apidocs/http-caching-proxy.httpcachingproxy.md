@@ -23,22 +23,140 @@ export declare class HttpCachingProxy
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(options)](./http-caching-proxy.httpcachingproxy._constructor_.md) |  | Constructs a new instance of the <code>HttpCachingProxy</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./http-caching-proxy.httpcachingproxy._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `HttpCachingProxy` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [url](./http-caching-proxy.httpcachingproxy.url.md) |  | string | URL where the proxy is listening on. Provide this value to your HTTP client as the proxy configuration. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[url](./http-caching-proxy.httpcachingproxy.url.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+URL where the proxy is listening on. Provide this value to your HTTP client as the proxy configuration.
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [logError(request, error)](./http-caching-proxy.httpcachingproxy.logerror.md) |  |  |
-|  [start()](./http-caching-proxy.httpcachingproxy.start.md) |  | Start listening. |
-|  [stop()](./http-caching-proxy.httpcachingproxy.stop.md) |  | Stop listening. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[logError(request, error)](./http-caching-proxy.httpcachingproxy.logerror.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[start()](./http-caching-proxy.httpcachingproxy.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Start listening.
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./http-caching-proxy.httpcachingproxy.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Stop listening.
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,11 +23,71 @@ protected decorate(target: Object, member?: string | symbol, descriptorOrIndex?:
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | Decorator target |
-|  member | string \| symbol | _(Optional)_ Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional method descriptor or parameter index |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Decorator target
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+_(Optional)_ Optional property or method
+
+
+</td></tr>
+<tr><td>
+
+descriptorOrIndex
+
+
+</td><td>
+
+TypedPropertyDescriptor&lt;any&gt; \| number
+
+
+</td><td>
+
+_(Optional)_ Optional method descriptor or parameter index
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

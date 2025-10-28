@@ -23,9 +23,39 @@ handle(context: RequestContext): Promise<void>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  context | [RequestContext](./rest.requestcontext.md) | The request context: HTTP request and response objects, per-request IoC container and more. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+context
+
+
+</td><td>
+
+[RequestContext](./rest.requestcontext.md)
+
+
+</td><td>
+
+The request context: HTTP request and response objects, per-request IoC container and more.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ static validate<T>(key: BindingAddress<T>): string;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt; | Binding key, such as <code>a</code>, <code>a.b</code>, <code>a:b</code>, or <code>a/b</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Binding key, such as `a`<!-- -->, `a.b`<!-- -->, `a:b`<!-- -->, or `a/b`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

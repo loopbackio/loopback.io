@@ -23,24 +23,253 @@ export declare class MetadataInspector
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [DesignTimeReflector](./metadata.metadatainspector.designtimereflector.md) | <p><code>static</code></p><p><code>readonly</code></p> | [NamespacedReflect](./metadata.namespacedreflect.md) | Expose the reflector for TypeScript design-time metadata |
-|  [Reflector](./metadata.metadatainspector.reflector.md) | <p><code>static</code></p><p><code>readonly</code></p> | [NamespacedReflect](./metadata.namespacedreflect.md) | Expose Reflector, which is a wrapper of <code>Reflect</code> and it uses <code>loopback</code> as the namespace prefix for all metadata keys |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DesignTimeReflector](./metadata.metadatainspector.designtimereflector.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+[NamespacedReflect](./metadata.namespacedreflect.md)
+
+
+</td><td>
+
+Expose the reflector for TypeScript design-time metadata
+
+
+</td></tr>
+<tr><td>
+
+[Reflector](./metadata.metadatainspector.reflector.md)
+
+
+</td><td>
+
+`static`
+
+`readonly`
+
+
+</td><td>
+
+[NamespacedReflect](./metadata.namespacedreflect.md)
+
+
+</td><td>
+
+Expose Reflector, which is a wrapper of `Reflect` and it uses `loopback` as the namespace prefix for all metadata keys
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [defineMetadata(key, value, target, member)](./metadata.metadatainspector.definemetadata.md) | <code>static</code> | Define metadata for the given target |
-|  [getAllMethodMetadata(key, target, options)](./metadata.metadatainspector.getallmethodmetadata.md) | <code>static</code> | Get the metadata associated with the given key for all methods of the target class or prototype |
-|  [getAllParameterMetadata(key, target, methodName, options)](./metadata.metadatainspector.getallparametermetadata.md) | <code>static</code> | Get the metadata associated with the given key for all parameters of a given method |
-|  [getAllPropertyMetadata(key, target, options)](./metadata.metadatainspector.getallpropertymetadata.md) | <code>static</code> | Get the metadata associated with the given key for all properties of the target class or prototype |
-|  [getClassMetadata(key, target, options)](./metadata.metadatainspector.getclassmetadata.md) | <code>static</code> | Get the metadata associated with the given key for a given class |
-|  [getDesignTypeForMethod(target, methodName)](./metadata.metadatainspector.getdesigntypeformethod.md) | <code>static</code> | Get TypeScript design time type for a method. |
-|  [getDesignTypeForProperty(target, propertyName)](./metadata.metadatainspector.getdesigntypeforproperty.md) | <code>static</code> | Get TypeScript design time type for a property |
-|  [getMethodMetadata(key, target, methodName, options)](./metadata.metadatainspector.getmethodmetadata.md) | <code>static</code> | Get the metadata associated with the given key for a given method of the target class or prototype |
-|  [getParameterMetadata(key, target, methodName, index, options)](./metadata.metadatainspector.getparametermetadata.md) | <code>static</code> | Get the metadata associated with the given key for a parameter of a given method by index |
-|  [getPropertyMetadata(key, target, propertyName, options)](./metadata.metadatainspector.getpropertymetadata.md) | <code>static</code> | Get the metadata associated with the given key for a given property of the target class or prototype |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[defineMetadata(key, value, target, member)](./metadata.metadatainspector.definemetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Define metadata for the given target
+
+
+</td></tr>
+<tr><td>
+
+[getAllMethodMetadata(key, target, options)](./metadata.metadatainspector.getallmethodmetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for all methods of the target class or prototype
+
+
+</td></tr>
+<tr><td>
+
+[getAllParameterMetadata(key, target, methodName, options)](./metadata.metadatainspector.getallparametermetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for all parameters of a given method
+
+
+</td></tr>
+<tr><td>
+
+[getAllPropertyMetadata(key, target, options)](./metadata.metadatainspector.getallpropertymetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for all properties of the target class or prototype
+
+
+</td></tr>
+<tr><td>
+
+[getClassMetadata(key, target, options)](./metadata.metadatainspector.getclassmetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for a given class
+
+
+</td></tr>
+<tr><td>
+
+[getDesignTypeForMethod(target, methodName)](./metadata.metadatainspector.getdesigntypeformethod.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get TypeScript design time type for a method.
+
+
+</td></tr>
+<tr><td>
+
+[getDesignTypeForProperty(target, propertyName)](./metadata.metadatainspector.getdesigntypeforproperty.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get TypeScript design time type for a property
+
+
+</td></tr>
+<tr><td>
+
+[getMethodMetadata(key, target, methodName, options)](./metadata.metadatainspector.getmethodmetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for a given method of the target class or prototype
+
+
+</td></tr>
+<tr><td>
+
+[getParameterMetadata(key, target, methodName, index, options)](./metadata.metadatainspector.getparametermetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for a parameter of a given method by index
+
+
+</td></tr>
+<tr><td>
+
+[getPropertyMetadata(key, target, propertyName, options)](./metadata.metadatainspector.getpropertymetadata.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Get the metadata associated with the given key for a given property of the target class or prototype
+
+
+</td></tr>
+</tbody></table>
 
 

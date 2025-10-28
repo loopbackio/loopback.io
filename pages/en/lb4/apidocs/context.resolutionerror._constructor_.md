@@ -23,9 +23,50 @@ constructor(message: string, resolutionCtx: Partial<ResolutionContext>);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  message | string |  |
-|  resolutionCtx | Partial&lt;[ResolutionContext](./context.resolutioncontext.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+message
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+resolutionCtx
+
+
+</td><td>
+
+Partial&lt;[ResolutionContext](./context.resolutioncontext.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,10 +23,55 @@ on(eventName: 'refresh', listener: <V>(result: V[]) => void): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  eventName | 'refresh' | The name of the event - always <code>refresh</code>. |
-|  listener | &lt;V&gt;(result: V\[\]) =&gt; void | The listener function to call when the event is emitted. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventName
+
+
+</td><td>
+
+'refresh'
+
+
+</td><td>
+
+The name of the event - always `refresh`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+listener
+
+
+</td><td>
+
+&lt;V&gt;(result: V\[\]) =&gt; void
+
+
+</td><td>
+
+The listener function to call when the event is emitted.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

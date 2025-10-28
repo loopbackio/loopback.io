@@ -21,20 +21,80 @@ The component should be loaded in the constructor of your custom Application cla
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [RestExplorerComponent](./rest-explorer.restexplorercomponent.md) | A component providing a self-hosted API Explorer. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RestExplorerComponent](./rest-explorer.restexplorercomponent.md)
+
+
+</td><td>
+
+A component providing a self-hosted API Explorer.
+
+
+</td></tr>
+</tbody></table>
 
 ## Namespaces
 
-|  Namespace | Description |
-|  --- | --- |
-|  [RestExplorerBindings](./rest-explorer.restexplorerbindings.md) | Binding keys used by this component. |
+<table><thead><tr><th>
+
+Namespace
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RestExplorerBindings](./rest-explorer.restexplorerbindings.md)
+
+
+</td><td>
+
+Binding keys used by this component.
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [RestExplorerConfig](./rest-explorer.restexplorerconfig.md) | Options to configure API Explorer UI |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RestExplorerConfig](./rest-explorer.restexplorerconfig.md)
+
+
+</td><td>
+
+Options to configure API Explorer UI
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -22,16 +22,118 @@ export declare class TypedPrincipal implements Principal
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(principal, type)](./security.typedprincipal._constructor_.md) |  | Constructs a new instance of the <code>TypedPrincipal</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(principal, type)](./security.typedprincipal._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `TypedPrincipal` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\[securityId\]](./security.typedprincipal._securityid_.md) | <code>readonly</code> | string |  |
-|  [principal](./security.typedprincipal.principal.md) | <code>readonly</code> | [Principal](./security.principal.md) |  |
-|  [type](./security.typedprincipal.type.md) | <code>readonly</code> | string |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\[securityId\]](./security.typedprincipal._securityid_.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[principal](./security.typedprincipal.principal.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Principal](./security.principal.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[type](./security.typedprincipal.type.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

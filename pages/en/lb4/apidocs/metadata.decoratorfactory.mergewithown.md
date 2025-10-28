@@ -25,12 +25,87 @@ protected mergeWithOwn(ownMetadata: M, target: Object, member?: string | symbol,
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ownMetadata | M | Own Metadata exists locally on the target |
-|  target | Object | Decoration target |
-|  member | string \| symbol | _(Optional)_ Optional property or method |
-|  descriptorOrIndex | TypedPropertyDescriptor&lt;any&gt; \| number | _(Optional)_ Optional parameter index or method descriptor |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ownMetadata
+
+
+</td><td>
+
+M
+
+
+</td><td>
+
+Own Metadata exists locally on the target
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Decoration target
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string \| symbol
+
+
+</td><td>
+
+_(Optional)_ Optional property or method
+
+
+</td></tr>
+<tr><td>
+
+descriptorOrIndex
+
+
+</td><td>
+
+TypedPropertyDescriptor&lt;any&gt; \| number
+
+
+</td><td>
+
+_(Optional)_ Optional parameter index or method descriptor
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

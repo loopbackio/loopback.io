@@ -23,9 +23,39 @@ export declare function describeInjectedProperties(target: Object): MetadataMap<
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | The target class for static properties or prototype for instance properties. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+The target class for static properties or prototype for instance properties.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

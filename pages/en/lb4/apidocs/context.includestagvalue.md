@@ -23,9 +23,39 @@ export declare function includesTagValue(...itemValues: unknown[]): TagValueMatc
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  itemValues | unknown\[\] | A list of tag item value |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+itemValues
+
+
+</td><td>
+
+unknown\[\]
+
+
+</td><td>
+
+A list of tag item value
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

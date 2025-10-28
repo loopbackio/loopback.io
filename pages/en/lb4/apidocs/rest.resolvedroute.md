@@ -24,9 +24,67 @@ export interface ResolvedRoute extends RouteEntry
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [pathParams](./rest.resolvedroute.pathparams.md) | <code>readonly</code> | [PathParameterValues](./rest.pathparametervalues.md) |  |
-|  [schemas](./rest.resolvedroute.schemas.md) | <code>readonly</code> | SchemasObject | Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/loopbackio/loopback-next/issues/435 |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[pathParams](./rest.resolvedroute.pathparams.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[PathParameterValues](./rest.pathparametervalues.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[schemas](./rest.resolvedroute.schemas.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+SchemasObject
+
+
+</td><td>
+
+Server/application wide schemas shared by multiple routes, e.g. model schemas. This is a temporary workaround for missing support for $ref references, see https://github.com/loopbackio/loopback-next/issues/435
+
+
+</td></tr>
+</tbody></table>
 
 

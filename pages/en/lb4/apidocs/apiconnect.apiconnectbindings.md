@@ -21,8 +21,28 @@ export declare namespace ApiConnectBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [API\_CONNECT\_SPEC\_ENHANCER](./apiconnect.apiconnectbindings.api_connect_spec_enhancer.md) | Strongly-typed binding key for ApiConnectSpecEnhancer |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[API\_CONNECT\_SPEC\_ENHANCER](./apiconnect.apiconnectbindings.api_connect_spec_enhancer.md)
+
+
+</td><td>
+
+Strongly-typed binding key for ApiConnectSpecEnhancer
+
+
+</td></tr>
+</tbody></table>
 
 

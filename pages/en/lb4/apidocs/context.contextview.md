@@ -30,45 +30,495 @@ export declare class ContextView<T = unknown> extends EventEmitter implements Co
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, filter, comparator, resolutionOptions)](./context.contextview._constructor_.md) |  | Create a context view |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context, filter, comparator, resolutionOptions)](./context.contextview._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Create a context view
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [\_cachedBindings](./context.contextview._cachedbindings.md) | <code>protected</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] \| undefined | An array of cached bindings that matches the binding filter |
-|  [\_cachedValues](./context.contextview._cachedvalues.md) | <code>protected</code> | Map&lt;Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;, T&gt; \| undefined | A map of cached values by binding |
-|  [bindings](./context.contextview.bindings.md) | <code>readonly</code> | Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] | Get the list of matched bindings. If they are not cached, it tries to find them from the context. |
-|  [comparator?](./context.contextview.comparator.md) | <code>readonly</code> | [BindingComparator](./context.bindingcomparator.md) \| undefined | _(Optional)_ |
-|  [context](./context.contextview.context.md) | <code>readonly</code> | [Context](./context.context.md) |  |
-|  [filter](./context.contextview.filter.md) | <code>readonly</code> | [BindingFilter](./context.bindingfilter.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[\_cachedBindings](./context.contextview._cachedbindings.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] \| undefined
+
+
+</td><td>
+
+An array of cached bindings that matches the binding filter
+
+
+</td></tr>
+<tr><td>
+
+[\_cachedValues](./context.contextview._cachedvalues.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Map&lt;Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;, T&gt; \| undefined
+
+
+</td><td>
+
+A map of cached values by binding
+
+
+</td></tr>
+<tr><td>
+
+[bindings](./context.contextview.bindings.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
+
+
+</td><td>
+
+Get the list of matched bindings. If they are not cached, it tries to find them from the context.
+
+
+</td></tr>
+<tr><td>
+
+[comparator?](./context.contextview.comparator.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[BindingComparator](./context.bindingcomparator.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+<tr><td>
+
+[context](./context.contextview.context.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[filter](./context.contextview.filter.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[BindingFilter](./context.bindingfilter.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [asGetter(session)](./context.contextview.asgetter.md) |  | As a <code>Getter</code> function |
-|  [close()](./context.contextview.close.md) |  | Stop listening events from the context |
-|  [findBindings()](./context.contextview.findbindings.md) | <code>protected</code> | Find matching bindings and refresh the cache |
-|  [observe(event, binding, context)](./context.contextview.observe.md) |  | Listen on <code>bind</code> or <code>unbind</code> and invalidate the cache |
-|  [on(eventName, listener)](./context.contextview.on.md) |  | The "bind" event is emitted when a new binding is added to the view. |
-|  [on(eventName, listener)](./context.contextview.on_1.md) |  | The "unbind" event is emitted a new binding is removed from the view. |
-|  [on(eventName, listener)](./context.contextview.on_2.md) |  | The "refresh" event is emitted when the view is refreshed as bindings are added/removed. |
-|  [on(eventName, listener)](./context.contextview.on_3.md) |  | The "resolve" event is emitted when the cached values are resolved and updated. |
-|  [on(eventName, listener)](./context.contextview.on_4.md) |  | The "close" event is emitted when the view is closed (stopped observing context events) |
-|  [on(event, listener)](./context.contextview.on_5.md) |  |  |
-|  [once(eventName, listener)](./context.contextview.once.md) |  | The "bind" event is emitted when a new binding is added to the view. |
-|  [once(eventName, listener)](./context.contextview.once_1.md) |  | The "unbind" event is emitted a new binding is removed from the view. |
-|  [once(eventName, listener)](./context.contextview.once_2.md) |  | The "refresh" event is emitted when the view is refreshed as bindings are added/removed. |
-|  [once(eventName, listener)](./context.contextview.once_3.md) |  | The "resolve" event is emitted when the cached values are resolved and updated. |
-|  [once(eventName, listener)](./context.contextview.once_4.md) |  | The "close" event is emitted when the view is closed (stopped observing context events) |
-|  [once(event, listener)](./context.contextview.once_5.md) |  |  |
-|  [open()](./context.contextview.open.md) |  | Start listening events from the context |
-|  [refresh()](./context.contextview.refresh.md) |  | Refresh the view by invalidating its cache |
-|  [resolve(session)](./context.contextview.resolve.md) |  | Resolve values for the matching bindings |
-|  [singleValue(session)](./context.contextview.singlevalue.md) |  | Get the single value |
-|  [values(session)](./context.contextview.values.md) |  | Get the list of resolved values. If they are not cached, it tries to find and resolve them. |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asGetter(session)](./context.contextview.asgetter.md)
+
+
+</td><td>
+
+
+</td><td>
+
+As a `Getter` function
+
+
+</td></tr>
+<tr><td>
+
+[close()](./context.contextview.close.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Stop listening events from the context
+
+
+</td></tr>
+<tr><td>
+
+[findBindings()](./context.contextview.findbindings.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Find matching bindings and refresh the cache
+
+
+</td></tr>
+<tr><td>
+
+[observe(event, binding, context)](./context.contextview.observe.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Listen on `bind` or `unbind` and invalidate the cache
+
+
+</td></tr>
+<tr><td>
+
+[on(eventName, listener)](./context.contextview.on.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "bind" event is emitted when a new binding is added to the view.
+
+
+</td></tr>
+<tr><td>
+
+[on(eventName, listener)](./context.contextview.on_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "unbind" event is emitted a new binding is removed from the view.
+
+
+</td></tr>
+<tr><td>
+
+[on(eventName, listener)](./context.contextview.on_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "refresh" event is emitted when the view is refreshed as bindings are added/removed.
+
+
+</td></tr>
+<tr><td>
+
+[on(eventName, listener)](./context.contextview.on_3.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "resolve" event is emitted when the cached values are resolved and updated.
+
+
+</td></tr>
+<tr><td>
+
+[on(eventName, listener)](./context.contextview.on_4.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "close" event is emitted when the view is closed (stopped observing context events)
+
+
+</td></tr>
+<tr><td>
+
+[on(event, listener)](./context.contextview.on_5.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[once(eventName, listener)](./context.contextview.once.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "bind" event is emitted when a new binding is added to the view.
+
+
+</td></tr>
+<tr><td>
+
+[once(eventName, listener)](./context.contextview.once_1.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "unbind" event is emitted a new binding is removed from the view.
+
+
+</td></tr>
+<tr><td>
+
+[once(eventName, listener)](./context.contextview.once_2.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "refresh" event is emitted when the view is refreshed as bindings are added/removed.
+
+
+</td></tr>
+<tr><td>
+
+[once(eventName, listener)](./context.contextview.once_3.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "resolve" event is emitted when the cached values are resolved and updated.
+
+
+</td></tr>
+<tr><td>
+
+[once(eventName, listener)](./context.contextview.once_4.md)
+
+
+</td><td>
+
+
+</td><td>
+
+The "close" event is emitted when the view is closed (stopped observing context events)
+
+
+</td></tr>
+<tr><td>
+
+[once(event, listener)](./context.contextview.once_5.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[open()](./context.contextview.open.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Start listening events from the context
+
+
+</td></tr>
+<tr><td>
+
+[refresh()](./context.contextview.refresh.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Refresh the view by invalidating its cache
+
+
+</td></tr>
+<tr><td>
+
+[resolve(session)](./context.contextview.resolve.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Resolve values for the matching bindings
+
+
+</td></tr>
+<tr><td>
+
+[singleValue(session)](./context.contextview.singlevalue.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the single value
+
+
+</td></tr>
+<tr><td>
+
+[values(session)](./context.contextview.values.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get the list of resolved values. If they are not cached, it tries to find and resolve them.
+
+
+</td></tr>
+</tbody></table>
 
 

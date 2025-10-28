@@ -23,9 +23,39 @@ export declare function asLifeCycleObserver<T = unknown>(binding: Binding<T>): B
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  binding | [Binding](./context.binding.md)<!-- -->&lt;T&gt; | Binding object |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+binding
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+Binding object
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

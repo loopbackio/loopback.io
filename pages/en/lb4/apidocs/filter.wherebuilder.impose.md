@@ -23,9 +23,39 @@ impose(where: Where<MT>): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  where | [Where](./filter.where.md)<!-- -->&lt;MT&gt; | Where filter |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+where
+
+
+</td><td>
+
+[Where](./filter.where.md)<!-- -->&lt;MT&gt;
+
+
+</td><td>
+
+Where filter
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

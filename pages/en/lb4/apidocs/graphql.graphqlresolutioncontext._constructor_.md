@@ -18,15 +18,69 @@ Constructs a new instance of the `GraphQLResolutionContext` class
 **Signature:**
 
 ```typescript
-constructor(parent: Context, resolverClass: Constructor<unknown>, resolverData: ResolverData<unknown>);
+constructor(parent: Context, resolverClass: Constructor<unknown>, resolverData: ResolverData<object>);
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parent | [Context](./context.context.md) |  |
-|  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
-|  resolverData | ResolverData&lt;unknown&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parent
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+resolverClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+resolverData
+
+
+</td><td>
+
+ResolverData&lt;object&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

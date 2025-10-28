@@ -23,12 +23,124 @@ export interface Node<T>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [children](./rest.node.children.md) | <code>readonly</code> | { \[key: string\]: [Node](./rest.node.md)<!-- -->&lt;T&gt;; } | Children of the node |
-|  [key](./rest.node.key.md) |  | string | Key of the node |
-|  [names?](./rest.node.names.md) |  | string\[\] | _(Optional)_ Names of the node if it contains named parameters |
-|  [regexp?](./rest.node.regexp.md) |  | RegExp | _(Optional)_ Regular expression for the template |
-|  [value?](./rest.node.value.md) |  | T | _(Optional)_ Value of the node |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[children](./rest.node.children.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+{ \[key: string\]: [Node](./rest.node.md)<!-- -->&lt;T&gt;; }
+
+
+</td><td>
+
+Children of the node
+
+
+</td></tr>
+<tr><td>
+
+[key](./rest.node.key.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Key of the node
+
+
+</td></tr>
+<tr><td>
+
+[names?](./rest.node.names.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string\[\]
+
+
+</td><td>
+
+_(Optional)_ Names of the node if it contains named parameters
+
+
+</td></tr>
+<tr><td>
+
+[regexp?](./rest.node.regexp.md)
+
+
+</td><td>
+
+
+</td><td>
+
+RegExp
+
+
+</td><td>
+
+_(Optional)_ Regular expression for the template
+
+
+</td></tr>
+<tr><td>
+
+[value?](./rest.node.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+_(Optional)_ Value of the node
+
+
+</td></tr>
+</tbody></table>
 
 

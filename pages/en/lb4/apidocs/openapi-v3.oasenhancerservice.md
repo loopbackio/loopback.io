@@ -25,23 +25,163 @@ export declare class OASEnhancerService
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(getEnhancers, options)](./openapi-v3.oasenhancerservice._constructor_.md) |  | Constructs a new instance of the <code>OASEnhancerService</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(getEnhancers, options)](./openapi-v3.oasenhancerservice._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `OASEnhancerService` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [options?](./openapi-v3.oasenhancerservice.options.md) | <code>readonly</code> | [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined | _(Optional)_ An extension point should be able to receive its options via dependency injection. |
-|  [spec](./openapi-v3.oasenhancerservice.spec.md) |  | [OpenApiSpec](./openapi-v3.openapispec.md) | Getter for <code>_spec</code> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[options?](./openapi-v3.oasenhancerservice.options.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined
+
+
+</td><td>
+
+_(Optional)_ An extension point should be able to receive its options via dependency injection.
+
+
+</td></tr>
+<tr><td>
+
+[spec](./openapi-v3.oasenhancerservice.spec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[OpenApiSpec](./openapi-v3.openapispec.md)
+
+
+</td><td>
+
+Getter for `_spec`
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [applyAllEnhancers(options)](./openapi-v3.oasenhancerservice.applyallenhancers.md) |  | Generate OpenAPI spec by applying ALL registered enhancers TBD: load enhancers by group names |
-|  [applyEnhancerByName(name)](./openapi-v3.oasenhancerservice.applyenhancerbyname.md) |  | Apply a given enhancer's merge function. Return the latest \_spec. |
-|  [getEnhancerByName(name)](./openapi-v3.oasenhancerservice.getenhancerbyname.md) |  | Find an enhancer by its name |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[applyAllEnhancers(options)](./openapi-v3.oasenhancerservice.applyallenhancers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Generate OpenAPI spec by applying ALL registered enhancers TBD: load enhancers by group names
+
+
+</td></tr>
+<tr><td>
+
+[applyEnhancerByName(name)](./openapi-v3.oasenhancerservice.applyenhancerbyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Apply a given enhancer's merge function. Return the latest \_spec.
+
+
+</td></tr>
+<tr><td>
+
+[getEnhancerByName(name)](./openapi-v3.oasenhancerservice.getenhancerbyname.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Find an enhancer by its name
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -16,15 +16,56 @@ permalink: /doc/en/lb4/apidocs.graphql.loopbackcontainer.get.html
 **Signature:**
 
 ```typescript
-get(resolverClass: Constructor<unknown>, resolverData: ResolverData<unknown>): unknown;
+get(resolverClass: Constructor<unknown>, resolverData: ResolverData<object>): unknown;
 ```
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt; |  |
-|  resolverData | ResolverData&lt;unknown&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+resolverClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+resolverData
+
+
+</td><td>
+
+ResolverData&lt;object&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

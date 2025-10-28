@@ -21,9 +21,37 @@ protected addRouteWithPathVars(route: RouteEntry): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  route | [RouteEntry](./rest.routeentry.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+route
+
+
+</td><td>
+
+[RouteEntry](./rest.routeentry.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

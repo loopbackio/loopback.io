@@ -23,12 +23,87 @@ export declare function validateValueAgainstSchema(value: any, schema: SchemaObj
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  value | any | The data value. |
-|  schema | SchemaObject \| ReferenceObject | The JSON schema used to perform the validation. |
-|  globalSchemas | SchemasObject | _(Optional)_ Schema references. |
-|  options | [ValueValidationOptions](./rest.valuevalidationoptions.md) | _(Optional)_ Value validation options. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+value
+
+
+</td><td>
+
+any
+
+
+</td><td>
+
+The data value.
+
+
+</td></tr>
+<tr><td>
+
+schema
+
+
+</td><td>
+
+SchemaObject \| ReferenceObject
+
+
+</td><td>
+
+The JSON schema used to perform the validation.
+
+
+</td></tr>
+<tr><td>
+
+globalSchemas
+
+
+</td><td>
+
+SchemasObject
+
+
+</td><td>
+
+_(Optional)_ Schema references.
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[ValueValidationOptions](./rest.valuevalidationoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Value validation options.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

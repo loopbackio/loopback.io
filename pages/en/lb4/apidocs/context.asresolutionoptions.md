@@ -23,9 +23,39 @@ export declare function asResolutionOptions(optionsOrSession?: ResolutionOptions
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  optionsOrSession | [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md) | _(Optional)_ resolution options or session |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+optionsOrSession
+
+
+</td><td>
+
+[ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md)
+
+
+</td><td>
+
+_(Optional)_ resolution options or session
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

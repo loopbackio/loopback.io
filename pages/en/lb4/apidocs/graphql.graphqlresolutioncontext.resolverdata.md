@@ -16,6 +16,6 @@ permalink: /doc/en/lb4/apidocs.graphql.graphqlresolutioncontext.resolverdata.htm
 **Signature:**
 
 ```typescript
-readonly resolverData: ResolverData<unknown>;
+readonly resolverData: ResolverData<object>;
 ```
 

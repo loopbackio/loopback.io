@@ -21,11 +21,53 @@ export declare namespace UserServiceBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [DATASOURCE\_NAME](./authentication-jwt.userservicebindings.datasource_name.md) |  |
-|  [USER\_CREDENTIALS\_REPOSITORY](./authentication-jwt.userservicebindings.user_credentials_repository.md) |  |
-|  [USER\_REPOSITORY](./authentication-jwt.userservicebindings.user_repository.md) |  |
-|  [USER\_SERVICE](./authentication-jwt.userservicebindings.user_service.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DATASOURCE\_NAME](./authentication-jwt.userservicebindings.datasource_name.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[USER\_CREDENTIALS\_REPOSITORY](./authentication-jwt.userservicebindings.user_credentials_repository.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[USER\_REPOSITORY](./authentication-jwt.userservicebindings.user_repository.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[USER\_SERVICE](./authentication-jwt.userservicebindings.user_service.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,39 @@ protected _findByTagIndex<ValueType = BoundValue>(tag: BindingTag | RegExp): Rea
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  tag | [BindingTag](./context.bindingtag.md) \| RegExp | Tag name pattern or name/value pairs |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+tag
+
+
+</td><td>
+
+[BindingTag](./context.bindingtag.md) \| RegExp
+
+
+</td><td>
+
+Tag name pattern or name/value pairs
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

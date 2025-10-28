@@ -23,9 +23,39 @@ verifyCredentials(credentials: C): Promise<U>;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  credentials | C | Credentials for basic auth or configurations for 3rd party. Example see the |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+credentials
+
+
+</td><td>
+
+C
+
+
+</td><td>
+
+Credentials for basic auth or configurations for 3rd party. Example see the
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

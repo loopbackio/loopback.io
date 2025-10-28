@@ -23,10 +23,55 @@ export declare function resolveMap<T, V>(map: MapObject<T>, resolver: (val: T, k
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  map | [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt; | The original object containing the source entries |
-|  resolver | (val: T, key: string, values: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt; | A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+map
+
+
+</td><td>
+
+[MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+The original object containing the source entries
+
+
+</td></tr>
+<tr><td>
+
+resolver
+
+
+</td><td>
+
+(val: T, key: string, values: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
+
+
+</td><td>
+
+A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

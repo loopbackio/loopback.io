@@ -25,12 +25,87 @@ export declare function instantiateClass<T extends object>(ctor: Constructor<T>,
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  ctor | [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; | The class constructor to call. |
-|  ctx | [Context](./context.context.md) | The context containing values for <code>@inject</code> resolution |
-|  session | [ResolutionSession](./context.resolutionsession.md) | _(Optional)_ Optional session for binding and dependency resolution |
-|  nonInjectedArgs | any\[\] | _(Optional)_ Optional array of args for non-injected parameters |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ctor
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;T&gt;
+
+
+</td><td>
+
+The class constructor to call.
+
+
+</td></tr>
+<tr><td>
+
+ctx
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+The context containing values for `@inject` resolution
+
+
+</td></tr>
+<tr><td>
+
+session
+
+
+</td><td>
+
+[ResolutionSession](./context.resolutionsession.md)
+
+
+</td><td>
+
+_(Optional)_ Optional session for binding and dependency resolution
+
+
+</td></tr>
+<tr><td>
+
+nonInjectedArgs
+
+
+</td><td>
+
+any\[\]
+
+
+</td><td>
+
+_(Optional)_ Optional array of args for non-injected parameters
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ protected assertNotInProcess(op: string): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  op | string | The operation name, such as 'boot', 'start', or 'stop' |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+op
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The operation name, such as 'boot', 'start', or 'stop'
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

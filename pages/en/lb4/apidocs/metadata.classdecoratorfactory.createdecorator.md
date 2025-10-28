@@ -23,11 +23,71 @@ static createDecorator<S>(key: MetadataKey<S, ClassDecorator>, spec: S, options?
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, ClassDecorator&gt; | Metadata key |
-|  spec | S | Metadata object from the decorator function |
-|  options | [DecoratorOptions](./metadata.decoratoroptions.md) | _(Optional)_ Options for the decorator |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, ClassDecorator&gt;
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+S
+
+
+</td><td>
+
+Metadata object from the decorator function
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[DecoratorOptions](./metadata.decoratoroptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the decorator
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

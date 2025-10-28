@@ -23,10 +23,55 @@ export declare function patch(path: string, spec?: OperationObject): MethodDecor
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  path | string | The URL path of this operation, e.g. <code>/product/{id}</code> |
-|  spec | OperationObject | _(Optional)_ The OpenAPI specification describing parameters and responses of this operation. |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The URL path of this operation, e.g. `/product/{id}`
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+_(Optional)_ The OpenAPI specification describing parameters and responses of this operation.
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

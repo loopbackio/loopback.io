@@ -13,6 +13,93 @@ permalink: /doc/en/lb4/changelog.example-validation-app.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@7.0.4...@loopback/example-validation-app@7.0.5) (2025-09-10)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
+## [7.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@7.0.3...@loopback/example-validation-app@7.0.4) (2025-08-11)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
+## [7.0.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@7.0.2...@loopback/example-validation-app@7.0.3) (2025-07-15)
+
+
+### Bug Fixes
+
+* adding tests and comments illustrating the discriminator bug issue ([82a33cc](https://github.com/loopbackio/loopback-next/commit/82a33cc840266c1707f73a1b3e71a0224e456f26))
+* illustrate the discriminator bug and fix in loopback rest request-body-validator ([9fa3593](https://github.com/loopbackio/loopback-next/commit/9fa35934b067ae804e3cd19c06b9d290571da798))
+* removal of comments and implementation of bug fix ([f0da7dd](https://github.com/loopbackio/loopback-next/commit/f0da7dd6fdf119a4ce0e083997c4d5bdad3a0b9c))
+
+
+
+
+
+## [7.0.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@7.0.1...@loopback/example-validation-app@7.0.2) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
+## [7.0.1](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@7.0.0...@loopback/example-validation-app@7.0.1) (2025-06-12)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
+# [7.0.0](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@6.1.5...@loopback/example-validation-app@7.0.0) (2025-06-10)
+
+
+### chore
+
+* drop Node.js 18 support ([88a3fe9](https://github.com/loopbackio/loopback-next/commit/88a3fe98f8ca217271eb028697278355ec7c9478))
+
+
+### BREAKING CHANGES
+
+* drop Node.js 18 support
+
+Signed-off-by: dhmlau <dhmlau@ca.ibm.com>
+
+
+
+
+
+## [6.1.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@6.1.4...@loopback/example-validation-app@6.1.5) (2025-05-13)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
+## [6.1.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@6.1.3...@loopback/example-validation-app@6.1.4) (2025-04-17)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
+## [6.1.3](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@6.1.2...@loopback/example-validation-app@6.1.3) (2025-03-19)
+
+**Note:** Version bump only for package @loopback/example-validation-app
+
+
+
+
+
 ## [6.1.2](https://github.com/loopbackio/loopback-next/compare/@loopback/example-validation-app@6.1.1...@loopback/example-validation-app@6.1.2) (2025-02-13)
 
 **Note:** Version bump only for package @loopback/example-validation-app

@@ -23,9 +23,39 @@ export declare function asBindingTemplate<T = unknown>(scopeAndTags: BindingScop
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  scopeAndTags | [BindingScopeAndTags](./context.bindingscopeandtags.md) | Binding scope and tags |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+scopeAndTags
+
+
+</td><td>
+
+[BindingScopeAndTags](./context.bindingscopeandtags.md)
+
+
+</td><td>
+
+Binding scope and tags
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

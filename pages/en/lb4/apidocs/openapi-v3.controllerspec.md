@@ -21,10 +21,84 @@ export interface ControllerSpec
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [basePath?](./openapi-v3.controllerspec.basepath.md) |  | string | _(Optional)_ The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/). |
-|  [components?](./openapi-v3.controllerspec.components.md) |  | ComponentsObject | _(Optional)_ OpenAPI components.schemas generated from model metadata |
-|  [paths](./openapi-v3.controllerspec.paths.md) |  | PathObject | The available paths and operations for the API. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[basePath?](./openapi-v3.controllerspec.basepath.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/).
+
+
+</td></tr>
+<tr><td>
+
+[components?](./openapi-v3.controllerspec.components.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ComponentsObject
+
+
+</td><td>
+
+_(Optional)_ OpenAPI components.schemas generated from model metadata
+
+
+</td></tr>
+<tr><td>
+
+[paths](./openapi-v3.controllerspec.paths.md)
+
+
+</td><td>
+
+
+</td><td>
+
+PathObject
+
+
+</td><td>
+
+The available paths and operations for the API.
+
+
+</td></tr>
+</tbody></table>
 
 

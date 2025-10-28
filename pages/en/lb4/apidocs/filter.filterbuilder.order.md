@@ -23,9 +23,39 @@ order(...o: (string | string[] | Order<MT>)[]): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  o | (string \| string\[\] \| [Order](./filter.order.md)<!-- -->&lt;MT&gt;)\[\] | A field name with optional direction, an array of field names, or an Order object for the field/direction pairs |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+o
+
+
+</td><td>
+
+(string \| string\[\] \| [Order](./filter.order.md)<!-- -->&lt;MT&gt;)\[\]
+
+
+</td><td>
+
+A field name with optional direction, an array of field names, or an Order object for the field/direction pairs
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

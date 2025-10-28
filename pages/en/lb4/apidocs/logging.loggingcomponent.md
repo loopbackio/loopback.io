@@ -24,15 +24,95 @@ export declare class LoggingComponent implements Component
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(loggingConfig)](./logging.loggingcomponent._constructor_.md) |  | Constructs a new instance of the <code>LoggingComponent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(loggingConfig)](./logging.loggingcomponent._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `LoggingComponent` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [bindings](./logging.loggingcomponent.bindings.md) |  | [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;\[\] |  |
-|  [providers](./logging.loggingcomponent.providers.md) |  | [ProviderMap](./core.providermap.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[bindings](./logging.loggingcomponent.bindings.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;\[\]
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[providers](./logging.loggingcomponent.providers.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ProviderMap](./core.providermap.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,18 +23,132 @@ export declare namespace ContextTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [CLASS](./context.contexttags.class.md) |  |
-|  [CONFIGURATION\_FOR](./context.contexttags.configuration_for.md) | Binding tag to associate a configuration binding with the target binding key |
-|  [DYNAMIC\_VALUE\_PROVIDER](./context.contexttags.dynamic_value_provider.md) |  |
-|  [GLOBAL\_INTERCEPTOR\_GROUP](./context.contexttags.global_interceptor_group.md) | Binding tag for group name of global interceptors |
-|  [GLOBAL\_INTERCEPTOR\_SOURCE](./context.contexttags.global_interceptor_source.md) | Binding tag for global interceptors to specify sources of invocations that the interceptor should apply. The tag value can be a string or string\[\], such as <code>'route'</code> or <code>['route', 'proxy']</code>. |
-|  [GLOBAL\_INTERCEPTOR](./context.contexttags.global_interceptor.md) | Binding tag for global interceptors |
-|  [KEY](./context.contexttags.key.md) | Binding key for the artifact |
-|  [NAME](./context.contexttags.name.md) | Name of the artifact |
-|  [NAMESPACE](./context.contexttags.namespace.md) | Namespace of the artifact |
-|  [PROVIDER](./context.contexttags.provider.md) |  |
-|  [TYPE](./context.contexttags.type.md) | Type of the artifact |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CLASS](./context.contexttags.class.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[CONFIGURATION\_FOR](./context.contexttags.configuration_for.md)
+
+
+</td><td>
+
+Binding tag to associate a configuration binding with the target binding key
+
+
+</td></tr>
+<tr><td>
+
+[DYNAMIC\_VALUE\_PROVIDER](./context.contexttags.dynamic_value_provider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[GLOBAL\_INTERCEPTOR\_GROUP](./context.contexttags.global_interceptor_group.md)
+
+
+</td><td>
+
+Binding tag for group name of global interceptors
+
+
+</td></tr>
+<tr><td>
+
+[GLOBAL\_INTERCEPTOR\_SOURCE](./context.contexttags.global_interceptor_source.md)
+
+
+</td><td>
+
+Binding tag for global interceptors to specify sources of invocations that the interceptor should apply. The tag value can be a string or string\[\], such as `'route'` or `['route', 'proxy']`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[GLOBAL\_INTERCEPTOR](./context.contexttags.global_interceptor.md)
+
+
+</td><td>
+
+Binding tag for global interceptors
+
+
+</td></tr>
+<tr><td>
+
+[KEY](./context.contexttags.key.md)
+
+
+</td><td>
+
+Binding key for the artifact
+
+
+</td></tr>
+<tr><td>
+
+[NAME](./context.contexttags.name.md)
+
+
+</td><td>
+
+Name of the artifact
+
+
+</td></tr>
+<tr><td>
+
+[NAMESPACE](./context.contexttags.namespace.md)
+
+
+</td><td>
+
+Namespace of the artifact
+
+
+</td></tr>
+<tr><td>
+
+[PROVIDER](./context.contexttags.provider.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[TYPE](./context.contexttags.type.md)
+
+
+</td><td>
+
+Type of the artifact
+
+
+</td></tr>
+</tbody></table>
 
 

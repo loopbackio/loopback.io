@@ -21,11 +21,65 @@ export declare function crudRepositoryTestSuite(dataSourceOptions: DataSourceOpt
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  dataSourceOptions | [DataSourceOptions](./repository-tests.datasourceoptions.md) |  |
-|  repositoryClass | [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md) |  |
-|  partialFeatures | Partial&lt;[CrudFeatures](./repository-tests.crudfeatures.md)<!-- -->&gt; |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dataSourceOptions
+
+
+</td><td>
+
+[DataSourceOptions](./repository-tests.datasourceoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+repositoryClass
+
+
+</td><td>
+
+[CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+partialFeatures
+
+
+</td><td>
+
+Partial&lt;[CrudFeatures](./repository-tests.crudfeatures.md)<!-- -->&gt;
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,9 +23,39 @@ convertToUserProfile(user: U): UserProfile;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  user | U | The user returned from <code>verifyCredentials()</code> |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+user
+
+
+</td><td>
+
+U
+
+
+</td><td>
+
+The user returned from `verifyCredentials()`
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

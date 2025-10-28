@@ -24,64 +24,775 @@ export declare class SequelizeCrudRepository<T extends Entity, ID, Relations ext
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(entityClass, dataSource)](./sequelize.sequelizecrudrepository._constructor_.md) |  | Constructs a new instance of the <code>SequelizeCrudRepository</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(entityClass, dataSource)](./sequelize.sequelizecrudrepository._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `SequelizeCrudRepository` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [dataSource](./sequelize.sequelizecrudrepository.datasource.md) |  | [SequelizeDataSource](./sequelize.sequelizedatasource.md) |  |
-|  [DB\_SPECIFIC\_SETTINGS\_KEYS](./sequelize.sequelizecrudrepository.db_specific_settings_keys.md) | <code>readonly</code> | readonly \["postgresql", "mysql", "sqlite3"\] | <p>Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float <code>{ type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }, }</code></p><p>This array of keys is used while building model definition for sequelize.</p> |
-|  [DEFAULT\_ORDER\_STYLE](./sequelize.sequelizecrudrepository.default_order_style.md) | <code>readonly</code> | (not declared) | Default <code>order</code> filter style if only column name is specified |
-|  [defaultFnRegistry](./sequelize.sequelizecrudrepository.defaultfnregistry.md) | <code>protected</code> | Record&lt;string, unknown&gt; | <p>The alias registry for <code>defaultFn</code> option used in model property definition.</p><p>See: https://loopback.io/doc/en/lb4/Model.html\#property-decorator</p> |
-|  [entityClass](./sequelize.sequelizecrudrepository.entityclass.md) |  | typeof Entity &amp; { prototype: T; } |  |
-|  [inclusionResolvers](./sequelize.sequelizecrudrepository.inclusionresolvers.md) | <code>readonly</code> | Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt; |  |
-|  [NANO\_ID\_LENGTH](./sequelize.sequelizecrudrepository.nano_id_length.md) |  | number | Length of the <code>nanoid</code> generated for defaultFn's <code>shortid</code> and <code>nanoid</code> aliases. |
-|  [sequelizeModel](./sequelize.sequelizecrudrepository.sequelizemodel.md) |  | ModelStatic&lt;Model&lt;T&gt;&gt; | Sequelize Model Instance created from the model definition received from the <code>entityClass</code> |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dataSource](./sequelize.sequelizecrudrepository.datasource.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[SequelizeDataSource](./sequelize.sequelizedatasource.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[DB\_SPECIFIC\_SETTINGS\_KEYS](./sequelize.sequelizecrudrepository.db_specific_settings_keys.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+readonly \["postgresql", "mysql", "sqlite3"\]
+
+
+</td><td>
+
+Object keys used in models for set database specific settings. Example: In model property definition one can use postgresql dataType as float `{ type: 'number', postgresql: { dataType: 'float', precision: 20, scale: 4, }, }`
+
+This array of keys is used while building model definition for sequelize.
+
+
+</td></tr>
+<tr><td>
+
+[DEFAULT\_ORDER\_STYLE](./sequelize.sequelizecrudrepository.default_order_style.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+(not declared)
+
+
+</td><td>
+
+Default `order` filter style if only column name is specified
+
+
+</td></tr>
+<tr><td>
+
+[defaultFnRegistry](./sequelize.sequelizecrudrepository.defaultfnregistry.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Record&lt;string, unknown&gt;
+
+
+</td><td>
+
+The alias registry for `defaultFn` option used in model property definition.
+
+See: https://loopback.io/doc/en/lb4/Model.html\#property-decorator
+
+
+</td></tr>
+<tr><td>
+
+[entityClass](./sequelize.sequelizecrudrepository.entityclass.md)
+
+
+</td><td>
+
+
+</td><td>
+
+typeof Entity &amp; { prototype: T; }
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[inclusionResolvers](./sequelize.sequelizecrudrepository.inclusionresolvers.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Map&lt;string, InclusionResolver&lt;T, Entity&gt;&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[NANO\_ID\_LENGTH](./sequelize.sequelizecrudrepository.nano_id_length.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+Length of the `nanoid` generated for defaultFn's `shortid` and `nanoid` aliases.
+
+
+</td></tr>
+<tr><td>
+
+[sequelizeModel](./sequelize.sequelizecrudrepository.sequelizemodel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+ModelStatic&lt;Model&lt;T&gt;&gt;
+
+
+</td><td>
+
+Sequelize Model Instance created from the model definition received from the `entityClass`
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [beginTransaction(options)](./sequelize.sequelizecrudrepository.begintransaction.md) |  |  |
-|  [buildSequelizeAttributeFilter(fields)](./sequelize.sequelizecrudrepository.buildsequelizeattributefilter.md) | <code>protected</code> | Get Sequelize <code>attributes</code> filter value from <code>fields</code> of loopback. |
-|  [buildSequelizeIncludeFilter(inclusionFilters, sourceModel)](./sequelize.sequelizecrudrepository.buildsequelizeincludefilter.md) | <code>protected</code> | Build Sequelize compatible <code>include</code> filter |
-|  [buildSequelizeOrder(order)](./sequelize.sequelizecrudrepository.buildsequelizeorder.md) | <code>protected</code> | <p>Get Sequelize Order filter value from loopback style order value.</p><p>It also supports passing associations in the order array to sort by nested models. Example: <code>[&quot;user email ASC&quot;]</code>.</p> |
-|  [buildSequelizeWhere(where)](./sequelize.sequelizecrudrepository.buildsequelizewhere.md) | <code>protected</code> | Build Sequelize compatible where condition object |
-|  [count(where, options)](./sequelize.sequelizecrudrepository.count.md) |  |  |
-|  [create(entity, options)](./sequelize.sequelizecrudrepository.create.md) |  |  |
-|  [createAll(entities, options)](./sequelize.sequelizecrudrepository.createall.md) |  |  |
-|  [createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./sequelize.sequelizecrudrepository.createbelongstoaccessorfor.md) | <code>protected</code> | Function to create a belongs to accessor |
-|  [createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./sequelize.sequelizecrudrepository.createhasmanyrepositoryfactoryfor.md) | <code>protected</code> | Function to create a constrained relation repository factory |
-|  [createHasManyThroughRepositoryFactoryFor(relationName, targetRepositoryGetter, throughRepositoryGetter)](./sequelize.sequelizecrudrepository.createhasmanythroughrepositoryfactoryfor.md) | <code>protected</code> | Function to create a constrained hasManyThrough relation repository factory |
-|  [createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./sequelize.sequelizecrudrepository.createhasonerepositoryfactoryfor.md) | <code>protected</code> | Function to create a constrained hasOne relation repository factory |
-|  [createReferencesManyAccessorFor(relationName, targetRepoGetter)](./sequelize.sequelizecrudrepository.createreferencesmanyaccessorfor.md) | <code>protected</code> | Function to create a references many accessor |
-|  [delete(entity, options)](./sequelize.sequelizecrudrepository.delete.md) |  |  |
-|  [deleteAll(where, options)](./sequelize.sequelizecrudrepository.deleteall.md) |  |  |
-|  [deleteById(id, options)](./sequelize.sequelizecrudrepository.deletebyid.md) |  |  |
-|  [excludeHiddenProps(entity)](./sequelize.sequelizecrudrepository.excludehiddenprops.md) | <code>protected</code> | Remove hidden properties specified in model from response body. (See: https://github.com/sourcefuse/loopback4-sequelize/issues/3) |
-|  [execute(command, parameters, options)](./sequelize.sequelizecrudrepository.execute.md) |  | <p>Execute a SQL command.</p><p>\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.</p> |
-|  [exists(id, \_options)](./sequelize.sequelizecrudrepository.exists.md) |  |  |
-|  [find(filter, options)](./sequelize.sequelizecrudrepository.find.md) |  |  |
-|  [findById(id, filter, options)](./sequelize.sequelizecrudrepository.findbyid.md) |  |  |
-|  [findOne(filter, options)](./sequelize.sequelizecrudrepository.findone.md) |  |  |
-|  [getDefaultFnRegistry()](./sequelize.sequelizecrudrepository.getdefaultfnregistry.md) | <code>protected</code> |  |
-|  [getSequelizeModel(entityClass)](./sequelize.sequelizecrudrepository.getsequelizemodel.md) |  | Get Sequelize Model |
-|  [getSequelizeModelAttributes(definition)](./sequelize.sequelizecrudrepository.getsequelizemodelattributes.md) | <code>protected</code> | Get Sequelize Model Attributes |
-|  [getSequelizeOperator(key)](./sequelize.sequelizecrudrepository.getsequelizeoperator.md) | <code>protected</code> | Get Sequelize Operator |
-|  [getTableName(entityClass)](./sequelize.sequelizecrudrepository.gettablename.md) |  | <p>This function retrieves the table name associated with a given entity class. Different loopback connectors have different conventions for picking up table names, unless the name is specified in the  decorator.</p><p>The function follows the following cases to determine the table name: - It checks if the name property is specified in the  decorator and uses it. (this takes precedence over all other cases) - If the dialect of the dataSource is PostgreSQL, it uses the lowercased version of the model class name. - If the dialect is MySQL or any other dialect, it uses the default model class name.</p> |
-|  [includeReferencesIfRequested(parentEntities, parentEntityClass, inclusionFilters)](./sequelize.sequelizecrudrepository.includereferencesifrequested.md) | <code>protected</code> | <p>Include related entities of <code>@referencesMany</code> relation</p><p>referencesMany relation is NOT handled by <code>sequelizeModel.findAll</code> as it doesn't have any direct alternative to it, so to include relation data of referencesMany, we're manually fetching related data requested</p> |
-|  [isInclusionAllowed(include)](./sequelize.sequelizecrudrepository.isinclusionallowed.md) | <code>protected</code> | Checks if the resolver of the inclusion relation is registered in the inclusionResolver of the current repository |
-|  [registerInclusionResolver(relationName, resolver)](./sequelize.sequelizecrudrepository.registerinclusionresolver.md) |  | Register an inclusion resolver for the related model name. |
-|  [replaceById(id, data, options)](./sequelize.sequelizecrudrepository.replacebyid.md) |  |  |
-|  [save(entity, options)](./sequelize.sequelizecrudrepository.save.md) |  |  |
-|  [syncLoadedSequelizeModels(options)](./sequelize.sequelizecrudrepository.syncloadedsequelizemodels.md) |  | Run CREATE TABLE query for the all sequelize models, Useful for quick testing |
-|  [syncSequelizeModel(options)](./sequelize.sequelizecrudrepository.syncsequelizemodel.md) |  | Run CREATE TABLE query for the target sequelize model, Useful for quick testing |
-|  [toEntities(models)](./sequelize.sequelizecrudrepository.toentities.md) | <code>protected</code> |  |
-|  [update(entity, options)](./sequelize.sequelizecrudrepository.update.md) |  |  |
-|  [updateAll(data, where, options)](./sequelize.sequelizecrudrepository.updateall.md) |  |  |
-|  [updateById(id, data, options)](./sequelize.sequelizecrudrepository.updatebyid.md) |  |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[beginTransaction(options)](./sequelize.sequelizecrudrepository.begintransaction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[buildSequelizeAttributeFilter(fields)](./sequelize.sequelizecrudrepository.buildsequelizeattributefilter.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get Sequelize `attributes` filter value from `fields` of loopback.
+
+
+</td></tr>
+<tr><td>
+
+[buildSequelizeIncludeFilter(inclusionFilters, sourceModel)](./sequelize.sequelizecrudrepository.buildsequelizeincludefilter.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Build Sequelize compatible `include` filter
+
+
+</td></tr>
+<tr><td>
+
+[buildSequelizeOrder(order)](./sequelize.sequelizecrudrepository.buildsequelizeorder.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get Sequelize Order filter value from loopback style order value.
+
+It also supports passing associations in the order array to sort by nested models. Example: `["user email ASC"]`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[buildSequelizeWhere(where)](./sequelize.sequelizecrudrepository.buildsequelizewhere.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Build Sequelize compatible where condition object
+
+
+</td></tr>
+<tr><td>
+
+[count(where, options)](./sequelize.sequelizecrudrepository.count.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[create(entity, options)](./sequelize.sequelizecrudrepository.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createAll(entities, options)](./sequelize.sequelizecrudrepository.createall.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createBelongsToAccessorFor(relationName, targetRepositoryGetter)](./sequelize.sequelizecrudrepository.createbelongstoaccessorfor.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Function to create a belongs to accessor
+
+
+</td></tr>
+<tr><td>
+
+[createHasManyRepositoryFactoryFor(relationName, targetRepositoryGetter)](./sequelize.sequelizecrudrepository.createhasmanyrepositoryfactoryfor.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Function to create a constrained relation repository factory
+
+
+</td></tr>
+<tr><td>
+
+[createHasManyThroughRepositoryFactoryFor(relationName, targetRepositoryGetter, throughRepositoryGetter)](./sequelize.sequelizecrudrepository.createhasmanythroughrepositoryfactoryfor.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Function to create a constrained hasManyThrough relation repository factory
+
+
+</td></tr>
+<tr><td>
+
+[createHasOneRepositoryFactoryFor(relationName, targetRepositoryGetter)](./sequelize.sequelizecrudrepository.createhasonerepositoryfactoryfor.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Function to create a constrained hasOne relation repository factory
+
+
+</td></tr>
+<tr><td>
+
+[createReferencesManyAccessorFor(relationName, targetRepoGetter)](./sequelize.sequelizecrudrepository.createreferencesmanyaccessorfor.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Function to create a references many accessor
+
+
+</td></tr>
+<tr><td>
+
+[delete(entity, options)](./sequelize.sequelizecrudrepository.delete.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[deleteAll(where, options)](./sequelize.sequelizecrudrepository.deleteall.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[deleteById(id, options)](./sequelize.sequelizecrudrepository.deletebyid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[excludeHiddenProps(entity)](./sequelize.sequelizecrudrepository.excludehiddenprops.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Remove hidden properties specified in model from response body. (See: https://github.com/sourcefuse/loopback4-sequelize/issues/3)
+
+
+</td></tr>
+<tr><td>
+
+[execute(command, parameters, options)](./sequelize.sequelizecrudrepository.execute.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Execute a SQL command.
+
+\*\*WARNING:\*\* In general, it is always better to perform database actions through repository methods. Directly executing SQL may lead to unexpected results, corrupted data, security vulnerabilities and other issues.
+
+
+</td></tr>
+<tr><td>
+
+[exists(id, \_options)](./sequelize.sequelizecrudrepository.exists.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[find(filter, options)](./sequelize.sequelizecrudrepository.find.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[findById(id, filter, options)](./sequelize.sequelizecrudrepository.findbyid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[findOne(filter, options)](./sequelize.sequelizecrudrepository.findone.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getDefaultFnRegistry()](./sequelize.sequelizecrudrepository.getdefaultfnregistry.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[getSequelizeModel(entityClass)](./sequelize.sequelizecrudrepository.getsequelizemodel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Get Sequelize Model
+
+
+</td></tr>
+<tr><td>
+
+[getSequelizeModelAttributes(definition)](./sequelize.sequelizecrudrepository.getsequelizemodelattributes.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get Sequelize Model Attributes
+
+
+</td></tr>
+<tr><td>
+
+[getSequelizeOperator(key)](./sequelize.sequelizecrudrepository.getsequelizeoperator.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Get Sequelize Operator
+
+
+</td></tr>
+<tr><td>
+
+[getTableName(entityClass)](./sequelize.sequelizecrudrepository.gettablename.md)
+
+
+</td><td>
+
+
+</td><td>
+
+This function retrieves the table name associated with a given entity class. Different loopback connectors have different conventions for picking up table names, unless the name is specified in the  decorator.
+
+The function follows the following cases to determine the table name: - It checks if the name property is specified in the  decorator and uses it. (this takes precedence over all other cases) - If the dialect of the dataSource is PostgreSQL, it uses the lowercased version of the model class name. - If the dialect is MySQL or any other dialect, it uses the default model class name.
+
+
+</td></tr>
+<tr><td>
+
+[includeReferencesIfRequested(parentEntities, parentEntityClass, inclusionFilters)](./sequelize.sequelizecrudrepository.includereferencesifrequested.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Include related entities of `@referencesMany` relation
+
+referencesMany relation is NOT handled by `sequelizeModel.findAll` as it doesn't have any direct alternative to it, so to include relation data of referencesMany, we're manually fetching related data requested
+
+
+</td></tr>
+<tr><td>
+
+[isInclusionAllowed(include)](./sequelize.sequelizecrudrepository.isinclusionallowed.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+Checks if the resolver of the inclusion relation is registered in the inclusionResolver of the current repository
+
+
+</td></tr>
+<tr><td>
+
+[registerInclusionResolver(relationName, resolver)](./sequelize.sequelizecrudrepository.registerinclusionresolver.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Register an inclusion resolver for the related model name.
+
+
+</td></tr>
+<tr><td>
+
+[replaceById(id, data, options)](./sequelize.sequelizecrudrepository.replacebyid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[save(entity, options)](./sequelize.sequelizecrudrepository.save.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[syncLoadedSequelizeModels(options)](./sequelize.sequelizecrudrepository.syncloadedsequelizemodels.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Run CREATE TABLE query for the all sequelize models, Useful for quick testing
+
+
+</td></tr>
+<tr><td>
+
+[syncSequelizeModel(options)](./sequelize.sequelizecrudrepository.syncsequelizemodel.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Run CREATE TABLE query for the target sequelize model, Useful for quick testing
+
+
+</td></tr>
+<tr><td>
+
+[toEntities(models)](./sequelize.sequelizecrudrepository.toentities.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[update(entity, options)](./sequelize.sequelizecrudrepository.update.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[updateAll(data, where, options)](./sequelize.sequelizecrudrepository.updateall.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[updateById(id, data, options)](./sequelize.sequelizecrudrepository.updatebyid.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

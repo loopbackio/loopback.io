@@ -24,11 +24,78 @@ export declare class MethodDecoratorFactory<T> extends DecoratorFactory<T, Metad
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create()](./metadata.methoddecoratorfactory.create.md) |  |  |
-|  [createDecorator(key, spec, options)](./metadata.methoddecoratorfactory.createdecorator.md) | <code>static</code> | Create a method decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithown.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create()](./metadata.methoddecoratorfactory.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createDecorator(key, spec, options)](./metadata.methoddecoratorfactory.createdecorator.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a method decorator function
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithinherited.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithown.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

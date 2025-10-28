@@ -25,8 +25,28 @@ export interface ConfigurationResolver
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.configurationresolver.getconfigasvalueorpromise.md) | Resolve config for the binding key |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.configurationresolver.getconfigasvalueorpromise.md)
+
+
+</td><td>
+
+Resolve config for the binding key
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,9 +23,54 @@ constructor(config?: ApplicationConfig, parent?: Context);
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  config | [ApplicationConfig](./core.applicationconfig.md) | _(Optional)_ Application configuration |
-|  parent | [Context](./context.context.md) | _(Optional)_ Parent context |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+config
+
+
+</td><td>
+
+[ApplicationConfig](./core.applicationconfig.md)
+
+
+</td><td>
+
+_(Optional)_ Application configuration
+
+
+</td></tr>
+<tr><td>
+
+parent
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+_(Optional)_ Parent context
+
+
+</td></tr>
+</tbody></table>
 
 

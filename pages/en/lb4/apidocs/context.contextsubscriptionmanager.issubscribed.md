@@ -23,9 +23,39 @@ isSubscribed(observer: ContextObserver): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  observer | [ContextObserver](./context.contextobserver.md) | Context observer |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+observer
+
+
+</td><td>
+
+[ContextObserver](./context.contextobserver.md)
+
+
+</td><td>
+
+Context observer
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

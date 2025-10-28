@@ -23,10 +23,55 @@ withExample(name: string, example: ExampleObject | ReferenceObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the example |
-|  example | ExampleObject \| ReferenceObject | Specification of the example |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the example
+
+
+</td></tr>
+<tr><td>
+
+example
+
+
+</td><td>
+
+ExampleObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the example
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

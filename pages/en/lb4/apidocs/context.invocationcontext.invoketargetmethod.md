@@ -23,9 +23,39 @@ invokeTargetMethod(options?: InvocationOptions): any;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  options | [InvocationOptions](./context.invocationoptions.md) | _(Optional)_ Options for the invocation |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+
+</td><td>
+
+[InvocationOptions](./context.invocationoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Options for the invocation
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

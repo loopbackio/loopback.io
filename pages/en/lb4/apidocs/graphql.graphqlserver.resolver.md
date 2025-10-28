@@ -23,10 +23,55 @@ resolver(resolverClass: Constructor<ResolverInterface<object>>, nameOrOptions?: 
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  resolverClass | [Constructor](./context.constructor.md)<!-- -->&lt;ResolverInterface&lt;object&gt;&gt; | GraphQL resolver class |
-|  nameOrOptions | string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md) | _(Optional)_ Resolver name or binding options |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+resolverClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;ResolverInterface&lt;object&gt;&gt;
+
+
+</td><td>
+
+GraphQL resolver class
+
+
+</td></tr>
+<tr><td>
+
+nameOrOptions
+
+
+</td><td>
+
+string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Resolver name or binding options
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,55 @@ static getDesignTypeForMethod(target: Object, methodName: string): DesignTimeMet
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  target | Object | Class or prototype |
-|  methodName | string | Method name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Class or prototype
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Method name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

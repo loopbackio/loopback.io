@@ -30,26 +30,205 @@ The pool service observes life cycle events to start and stop.
 
 ## Constructors
 
-|  Constructor | Modifiers | Description |
-|  --- | --- | --- |
-|  [(constructor)(context, options)](./pooling.poolingservice._constructor_.md) |  | Constructs a new instance of the <code>PoolingService</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(context, options)](./pooling.poolingservice._constructor_.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Constructs a new instance of the `PoolingService` class
+
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [context](./pooling.poolingservice.context.md) | <code>readonly</code> | [Context](./context.context.md) |  |
-|  [pool](./pooling.poolingservice.pool.md) | <code>readonly</code> | Pool&lt;T&gt; | The resource pool |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./pooling.poolingservice.context.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+[Context](./context.context.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[pool](./pooling.poolingservice.pool.md)
+
+
+</td><td>
+
+`readonly`
+
+
+</td><td>
+
+Pool&lt;T&gt;
+
+
+</td><td>
+
+The resource pool
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [acquire(requestCtx)](./pooling.poolingservice.acquire.md) |  | Acquire a new instance |
-|  [destroy(resource)](./pooling.poolingservice.destroy.md) |  | Destroy a resource from the pool |
-|  [release(resource)](./pooling.poolingservice.release.md) |  | Release the resource back to the pool. |
-|  [run(task, requestCtx)](./pooling.poolingservice.run.md) |  | Run the task with an acquired resource from the pool. If task is completed successfully, the resource is returned to the pool. Otherwise, the resource is destroyed. |
-|  [start()](./pooling.poolingservice.start.md) |  | Start the pool |
-|  [stop()](./pooling.poolingservice.stop.md) |  | Stop the pool |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[acquire(requestCtx)](./pooling.poolingservice.acquire.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Acquire a new instance
+
+
+</td></tr>
+<tr><td>
+
+[destroy(resource)](./pooling.poolingservice.destroy.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Destroy a resource from the pool
+
+
+</td></tr>
+<tr><td>
+
+[release(resource)](./pooling.poolingservice.release.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Release the resource back to the pool.
+
+
+</td></tr>
+<tr><td>
+
+[run(task, requestCtx)](./pooling.poolingservice.run.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Run the task with an acquired resource from the pool. If task is completed successfully, the resource is returned to the pool. Otherwise, the resource is destroyed.
+
+
+</td></tr>
+<tr><td>
+
+[start()](./pooling.poolingservice.start.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Start the pool
+
+
+</td></tr>
+<tr><td>
+
+[stop()](./pooling.poolingservice.stop.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Stop the pool
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -23,10 +23,55 @@ withLink(name: string, link: LinkObject | ReferenceObject): this;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  name | string | The name of the link |
-|  link | LinkObject \| ReferenceObject | Specification of the link |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+name
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+The name of the link
+
+
+</td></tr>
+<tr><td>
+
+link
+
+
+</td><td>
+
+LinkObject \| ReferenceObject
+
+
+</td><td>
+
+Specification of the link
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

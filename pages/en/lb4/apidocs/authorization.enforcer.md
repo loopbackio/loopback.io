@@ -23,9 +23,39 @@ export interface Enforcer
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [buildRequest(authorizationContext)](./authorization.enforcer.buildrequest.md) | Extract the request from authorization context |
-|  [enforce(request)](./authorization.enforcer.enforce.md) | Decide if the request can be granted access |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[buildRequest(authorizationContext)](./authorization.enforcer.buildrequest.md)
+
+
+</td><td>
+
+Extract the request from authorization context
+
+
+</td></tr>
+<tr><td>
+
+[enforce(request)](./authorization.enforcer.enforce.md)
+
+
+</td><td>
+
+Decide if the request can be granted access
+
+
+</td></tr>
+</tbody></table>
 
 

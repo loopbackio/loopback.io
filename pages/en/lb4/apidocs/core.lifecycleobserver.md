@@ -23,10 +23,50 @@ export interface LifeCycleObserver
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [init(injectedArgs)?](./core.lifecycleobserver.init.md) | _(Optional)_ The method to be invoked during <code>init</code>. It will only be called at most once for a given application instance. |
-|  [start(injectedArgs)?](./core.lifecycleobserver.start.md) | _(Optional)_ The method to be invoked during <code>start</code> |
-|  [stop(injectedArgs)?](./core.lifecycleobserver.stop.md) | _(Optional)_ The method to be invoked during <code>stop</code> |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[init(injectedArgs)?](./core.lifecycleobserver.init.md)
+
+
+</td><td>
+
+_(Optional)_ The method to be invoked during `init`<!-- -->. It will only be called at most once for a given application instance.
+
+
+</td></tr>
+<tr><td>
+
+[start(injectedArgs)?](./core.lifecycleobserver.start.md)
+
+
+</td><td>
+
+_(Optional)_ The method to be invoked during `start`
+
+
+</td></tr>
+<tr><td>
+
+[stop(injectedArgs)?](./core.lifecycleobserver.stop.md)
+
+
+</td><td>
+
+_(Optional)_ The method to be invoked during `stop`
+
+
+</td></tr>
+</tbody></table>
 
 

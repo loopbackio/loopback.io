@@ -36,11 +36,78 @@ class MyController {
 
 ## Methods
 
-|  Method | Modifiers | Description |
-|  --- | --- | --- |
-|  [create()](./metadata.methodparameterdecoratorfactory.create.md) |  |  |
-|  [createDecorator(key, spec, options)](./metadata.methodparameterdecoratorfactory.createdecorator.md) | <code>static</code> | Create a method decorator function |
-|  [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithinherited.md) | <code>protected</code> |  |
-|  [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithown.md) | <code>protected</code> |  |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[create()](./metadata.methodparameterdecoratorfactory.create.md)
+
+
+</td><td>
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[createDecorator(key, spec, options)](./metadata.methodparameterdecoratorfactory.createdecorator.md)
+
+
+</td><td>
+
+`static`
+
+
+</td><td>
+
+Create a method decorator function
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithinherited.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodparameterdecoratorfactory.mergewithown.md)
+
+
+</td><td>
+
+`protected`
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

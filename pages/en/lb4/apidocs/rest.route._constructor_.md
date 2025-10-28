@@ -23,11 +23,78 @@ constructor(verb: string, path: string, spec: OperationObject, _handler: Functio
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  verb | string |  |
-|  path | string |  |
-|  spec | OperationObject |  |
-|  \_handler | Function |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verb
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+path
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+spec
+
+
+</td><td>
+
+OperationObject
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+\_handler
+
+
+</td><td>
+
+Function
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

@@ -26,12 +26,122 @@ export interface RequestBodyParserOptions extends Options
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [json?](./rest.requestbodyparseroptions.json.md) |  | OptionsJson | _(Optional)_ Options for json parser |
-|  [raw?](./rest.requestbodyparseroptions.raw.md) |  | Options | _(Optional)_ Options for raw parser |
-|  [text?](./rest.requestbodyparseroptions.text.md) |  | OptionsText | _(Optional)_ Options for text parser |
-|  [urlencoded?](./rest.requestbodyparseroptions.urlencoded.md) |  | OptionsUrlencoded | _(Optional)_ Options for urlencoded parser |
-|  [validation?](./rest.requestbodyparseroptions.validation.md) |  | [ValidationOptions](./rest.validationoptions.md) | _(Optional)_ Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as <code>json</code> or <code>text</code>. |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[json?](./rest.requestbodyparseroptions.json.md)
+
+
+</td><td>
+
+
+</td><td>
+
+OptionsJson
+
+
+</td><td>
+
+_(Optional)_ Options for json parser
+
+
+</td></tr>
+<tr><td>
+
+[raw?](./rest.requestbodyparseroptions.raw.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Options
+
+
+</td><td>
+
+_(Optional)_ Options for raw parser
+
+
+</td></tr>
+<tr><td>
+
+[text?](./rest.requestbodyparseroptions.text.md)
+
+
+</td><td>
+
+
+</td><td>
+
+OptionsText
+
+
+</td><td>
+
+_(Optional)_ Options for text parser
+
+
+</td></tr>
+<tr><td>
+
+[urlencoded?](./rest.requestbodyparseroptions.urlencoded.md)
+
+
+</td><td>
+
+
+</td><td>
+
+OptionsUrlencoded
+
+
+</td><td>
+
+_(Optional)_ Options for urlencoded parser
+
+
+</td></tr>
+<tr><td>
+
+[validation?](./rest.requestbodyparseroptions.validation.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ValidationOptions](./rest.validationoptions.md)
+
+
+</td><td>
+
+_(Optional)_ Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as `json` or `text`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 

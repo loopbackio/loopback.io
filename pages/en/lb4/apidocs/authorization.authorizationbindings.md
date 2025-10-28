@@ -23,9 +23,35 @@ export declare namespace AuthorizationBindings
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [COMPONENT](./authorization.authorizationbindings.component.md) |  |
-|  [METADATA](./authorization.authorizationbindings.metadata.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[COMPONENT](./authorization.authorizationbindings.component.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[METADATA](./authorization.authorizationbindings.metadata.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 

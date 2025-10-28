@@ -23,10 +23,66 @@ constructor(controllerClass: Constructor<{}>, methodName: string, options?: Auth
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  controllerClass | [Constructor](./context.constructor.md)<!-- -->&lt;{}&gt; |  |
-|  methodName | string |  |
-|  options | [AuthenticationOptions](./authentication.authenticationoptions.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+controllerClass
+
+
+</td><td>
+
+[Constructor](./context.constructor.md)<!-- -->&lt;{}&gt;
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+methodName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+options
+
+
+</td><td>
+
+[AuthenticationOptions](./authentication.authenticationoptions.md)
+
+
+</td><td>
+
+_(Optional)_
+
+
+</td></tr>
+</tbody></table>
 
 

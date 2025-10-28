@@ -23,9 +23,39 @@ emitError(err: unknown): void;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  err | unknown | Error |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+err
+
+
+</td><td>
+
+unknown
+
+
+</td><td>
+
+Error
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

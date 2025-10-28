@@ -23,9 +23,39 @@ export declare function shouldGenerateTsDocs(pkg: LernaPackage): boolean;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  pkg | [LernaPackage](./tsdocs.lernapackage.md) | Lerna package |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+pkg
+
+
+</td><td>
+
+[LernaPackage](./tsdocs.lernapackage.md)
+
+
+</td><td>
+
+Lerna package
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

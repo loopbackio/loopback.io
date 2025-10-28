@@ -23,8 +23,28 @@ export declare namespace AuthorizationTags
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [AUTHORIZER](./authorization.authorizationtags.authorizer.md) | A tag for authorizers |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AUTHORIZER](./authorization.authorizationtags.authorizer.md)
+
+
+</td><td>
+
+A tag for authorizers
+
+
+</td></tr>
+</tbody></table>
 
 

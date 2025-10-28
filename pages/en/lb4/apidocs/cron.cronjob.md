@@ -23,9 +23,39 @@ export declare function cronJob(...specs: BindingSpec[]): ClassDecorator;
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  specs | [BindingSpec](./context.bindingspec.md)<!-- -->\[\] | Extra binding specs |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+specs
+
+
+</td><td>
+
+[BindingSpec](./context.bindingspec.md)<!-- -->\[\]
+
+
+</td><td>
+
+Extra binding specs
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

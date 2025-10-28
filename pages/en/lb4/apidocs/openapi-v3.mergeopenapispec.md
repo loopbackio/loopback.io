@@ -25,10 +25,55 @@ export declare function mergeOpenAPISpec<C extends Partial<OpenApiSpec>, P exten
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  currentSpec | C | The original spec |
-|  patchSpec | P | The patch spec to be merged into the original spec |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+currentSpec
+
+
+</td><td>
+
+C
+
+
+</td><td>
+
+The original spec
+
+
+</td></tr>
+<tr><td>
+
+patchSpec
+
+
+</td><td>
+
+P
+
+
+</td><td>
+
+The patch spec to be merged into the original spec
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

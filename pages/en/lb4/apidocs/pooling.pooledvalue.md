@@ -23,15 +23,91 @@ export interface PooledValue<T>
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [pool](./pooling.pooledvalue.pool.md) |  | Pool&lt;T&gt; | The resource pool |
-|  [value](./pooling.pooledvalue.value.md) |  | T | Acquired value from the pool |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[pool](./pooling.pooledvalue.pool.md)
+
+
+</td><td>
+
+
+</td><td>
+
+Pool&lt;T&gt;
+
+
+</td><td>
+
+The resource pool
+
+
+</td></tr>
+<tr><td>
+
+[value](./pooling.pooledvalue.value.md)
+
+
+</td><td>
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Acquired value from the pool
+
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-|  Method | Description |
-|  --- | --- |
-|  [release()](./pooling.pooledvalue.release.md) | The function to release the acquired value back to the pool |
+<table><thead><tr><th>
+
+Method
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[release()](./pooling.pooledvalue.release.md)
+
+
+</td><td>
+
+The function to release the acquired value back to the pool
+
+
+</td></tr>
+</tbody></table>
 
 

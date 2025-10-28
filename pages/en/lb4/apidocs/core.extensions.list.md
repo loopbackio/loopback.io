@@ -23,10 +23,55 @@ function list(extensionPointName?: string, metadata?: InjectionMetadata): (targe
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  extensionPointName | string | _(Optional)_ Name of the extension point. If not supplied, we use the <code>name</code> tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different <code>extensionPointName</code> for different types of extensions. |
-|  metadata | [InjectionMetadata](./context.injectionmetadata.md) | _(Optional)_ Optional injection metadata |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+extensionPointName
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Name of the extension point. If not supplied, we use the `name` tag from the extension point binding or the class name of the extension point class. If a class needs to inject extensions from multiple extension points, use different `extensionPointName` for different types of extensions.
+
+
+</td></tr>
+<tr><td>
+
+metadata
+
+
+</td><td>
+
+[InjectionMetadata](./context.injectionmetadata.md)
+
+
+</td><td>
+
+_(Optional)_ Optional injection metadata
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

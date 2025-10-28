@@ -23,12 +23,87 @@ static defineMetadata<T>(key: MetadataKey<T, DecoratorType>, value: T, target: O
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  key | [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, [DecoratorType](./metadata.decoratortype.md)<!-- -->&gt; | Metadata key |
-|  value | T | Metadata value |
-|  target | Object | Target for the metadata |
-|  member | string | _(Optional)_ Optional property or method name |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+
+</td><td>
+
+[MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, [DecoratorType](./metadata.decoratortype.md)<!-- -->&gt;
+
+
+</td><td>
+
+Metadata key
+
+
+</td></tr>
+<tr><td>
+
+value
+
+
+</td><td>
+
+T
+
+
+</td><td>
+
+Metadata value
+
+
+</td></tr>
+<tr><td>
+
+target
+
+
+</td><td>
+
+Object
+
+
+</td><td>
+
+Target for the metadata
+
+
+</td></tr>
+<tr><td>
+
+member
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+_(Optional)_ Optional property or method name
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

@@ -23,10 +23,51 @@ protected renderConfig(parent: ICluster, { binding, level, id }: ContextBinding)
 
 ## Parameters
 
-|  Parameter | Type | Description |
-|  --- | --- | --- |
-|  parent | ICluster |  |
-|  { binding, level, id } | [ContextBinding](./context-explorer.contextbinding.md) |  |
+<table><thead><tr><th>
+
+Parameter
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+parent
+
+
+</td><td>
+
+ICluster
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+{ binding, level, id }
+
+
+</td><td>
+
+[ContextBinding](./context-explorer.contextbinding.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 **Returns:**
 

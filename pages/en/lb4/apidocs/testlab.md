@@ -23,73 +23,523 @@ Test utilities to help write LoopBack 4 tests:
 
 ## Classes
 
-|  Class | Description |
-|  --- | --- |
-|  [TestSandbox](./testlab.testsandbox.md) | TestSandbox class provides a convenient way to get a reference to a sandbox folder in which you can perform operations for testing purposes. |
+<table><thead><tr><th>
+
+Class
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[TestSandbox](./testlab.testsandbox.md)
+
+
+</td><td>
+
+TestSandbox class provides a convenient way to get a reference to a sandbox folder in which you can perform operations for testing purposes.
+
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-|  Function | Description |
-|  --- | --- |
-|  [createClientForHandler(handler)](./testlab.createclientforhandler.md) | Create a SuperTest client connected to an HTTP server listening on an ephemeral port and calling <code>handler</code> to handle incoming requests. |
-|  [createRestAppClient(app)](./testlab.createrestappclient.md) | Create a SuperTest client for a running RestApplication instance. It is the responsibility of the caller to ensure that the app is running and to stop the application after all tests are done. |
-|  [createStubInstance(constructor)](./testlab.createstubinstance.md) | <p>Creates a new object with the given functions as the prototype and stubs all implemented functions.</p><p>Note: The given constructor function is not invoked. See also the stub API.</p><p>This is a helper method replacing <code>sinon.createStubInstance</code> and working around the limitations of TypeScript and Sinon, where Sinon is not able to list private/protected members in the type definition of the stub instance and therefore the stub instance cannot be assigned to places expecting TType. See also - https://github.com/Microsoft/TypeScript/issues/13543 - https://github.com/DefinitelyTyped/DefinitelyTyped/issues/14811</p> |
-|  [createUnexpectedHttpErrorLogger(expectedStatusCode)](./testlab.createunexpectedhttperrorlogger.md) | Creates a Logger that logs an Error if the HTTP status code is not expected |
-|  [givenHttpServerConfig(customConfig)](./testlab.givenhttpserverconfig.md) | Create an HTTP-server configuration that works well in test environments. - Ask the operating system to assign a free (ephemeral) port. - Use IPv4 localhost <code>127.0.0.1</code> to avoid known IPv6 issues in Docker-based environments like Travis-CI. - Provide default TLS key &amp; cert when <code>protocol</code> is set to <code>https</code>. |
-|  [httpGetAsync(urlString, agent)](./testlab.httpgetasync.md) | Async wrapper for making HTTP GET requests |
-|  [httpsGetAsync(urlString, agent)](./testlab.httpsgetasync.md) | Async wrapper for making HTTPS GET requests |
-|  [inject(dispatchFunc, options)](./testlab.inject.md) |  |
-|  [skipIf(skip, verb, name, args)](./testlab.skipif.md) | Helper function for skipping tests when a certain condition is met. |
-|  [skipOnTravis(verb, name, args)](./testlab.skipontravis.md) | Helper function for skipping tests on Travis CI. |
-|  [stubExpressContext(requestOptions)](./testlab.stubexpresscontext.md) |  |
-|  [stubHandlerContext(requestOptions)](./testlab.stubhandlercontext.md) |  |
-|  [stubServerRequest(options)](./testlab.stubserverrequest.md) |  |
-|  [stubServerResponse(request, onEnd)](./testlab.stubserverresponse.md) |  |
-|  [toJSON(value)](./testlab.tojson.md) |  |
-|  [toJSON(value)](./testlab.tojson_9.md) |  |
-|  [toJSON(value)](./testlab.tojson_10.md) |  |
-|  [toJSON(value)](./testlab.tojson_11.md) |  |
-|  [toJSON(value)](./testlab.tojson_12.md) |  |
-|  [toJSON(value)](./testlab.tojson_13.md) |  |
-|  [toJSON(value)](./testlab.tojson_14.md) |  |
-|  [toJSON(value)](./testlab.tojson_1.md) |  |
-|  [toJSON(value)](./testlab.tojson_2.md) |  |
-|  [toJSON(value)](./testlab.tojson_3.md) | JSON encoding does not preserve properties that are undefined As a result, deepEqual checks fail because the expected model value contains these undefined property values, while the actual result returned by REST API does not. Use this function to convert a model instance into a data object as returned by REST API |
-|  [toJSON(value)](./testlab.tojson_4.md) |  |
-|  [toJSON(value)](./testlab.tojson_5.md) |  |
-|  [toJSON(value)](./testlab.tojson_6.md) |  |
-|  [toJSON(value)](./testlab.tojson_7.md) |  |
-|  [toJSON(value)](./testlab.tojson_8.md) |  |
-|  [validateApiSpec(spec)](./testlab.validateapispec.md) |  |
+<table><thead><tr><th>
+
+Function
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createClientForHandler(handler)](./testlab.createclientforhandler.md)
+
+
+</td><td>
+
+Create a SuperTest client connected to an HTTP server listening on an ephemeral port and calling `handler` to handle incoming requests.
+
+
+</td></tr>
+<tr><td>
+
+[createRestAppClient(app)](./testlab.createrestappclient.md)
+
+
+</td><td>
+
+Create a SuperTest client for a running RestApplication instance. It is the responsibility of the caller to ensure that the app is running and to stop the application after all tests are done.
+
+
+</td></tr>
+<tr><td>
+
+[createStubInstance(constructor)](./testlab.createstubinstance.md)
+
+
+</td><td>
+
+Creates a new object with the given functions as the prototype and stubs all implemented functions.
+
+Note: The given constructor function is not invoked. See also the stub API.
+
+This is a helper method replacing `sinon.createStubInstance` and working around the limitations of TypeScript and Sinon, where Sinon is not able to list private/protected members in the type definition of the stub instance and therefore the stub instance cannot be assigned to places expecting TType. See also - https://github.com/Microsoft/TypeScript/issues/13543 - https://github.com/DefinitelyTyped/DefinitelyTyped/issues/14811
+
+
+</td></tr>
+<tr><td>
+
+[createUnexpectedHttpErrorLogger(expectedStatusCode)](./testlab.createunexpectedhttperrorlogger.md)
+
+
+</td><td>
+
+Creates a Logger that logs an Error if the HTTP status code is not expected
+
+
+</td></tr>
+<tr><td>
+
+[givenHttpServerConfig(customConfig)](./testlab.givenhttpserverconfig.md)
+
+
+</td><td>
+
+Create an HTTP-server configuration that works well in test environments. - Ask the operating system to assign a free (ephemeral) port. - Use IPv4 localhost `127.0.0.1` to avoid known IPv6 issues in Docker-based environments like Travis-CI. - Provide default TLS key &amp; cert when `protocol` is set to `https`<!-- -->.
+
+
+</td></tr>
+<tr><td>
+
+[httpGetAsync(urlString, agent)](./testlab.httpgetasync.md)
+
+
+</td><td>
+
+Async wrapper for making HTTP GET requests
+
+
+</td></tr>
+<tr><td>
+
+[httpsGetAsync(urlString, agent)](./testlab.httpsgetasync.md)
+
+
+</td><td>
+
+Async wrapper for making HTTPS GET requests
+
+
+</td></tr>
+<tr><td>
+
+[inject(dispatchFunc, options)](./testlab.inject.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[skipIf(skip, verb, name, args)](./testlab.skipif.md)
+
+
+</td><td>
+
+Helper function for skipping tests when a certain condition is met.
+
+
+</td></tr>
+<tr><td>
+
+[skipOnTravis(verb, name, args)](./testlab.skipontravis.md)
+
+
+</td><td>
+
+Helper function for skipping tests on Travis CI.
+
+
+</td></tr>
+<tr><td>
+
+[stubExpressContext(requestOptions)](./testlab.stubexpresscontext.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stubHandlerContext(requestOptions)](./testlab.stubhandlercontext.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stubServerRequest(options)](./testlab.stubserverrequest.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[stubServerResponse(request, onEnd)](./testlab.stubserverresponse.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_9.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_10.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_11.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_12.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_13.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_14.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_1.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_2.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_3.md)
+
+
+</td><td>
+
+JSON encoding does not preserve properties that are undefined As a result, deepEqual checks fail because the expected model value contains these undefined property values, while the actual result returned by REST API does not. Use this function to convert a model instance into a data object as returned by REST API
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_4.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_5.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_6.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_7.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[toJSON(value)](./testlab.tojson_8.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[validateApiSpec(spec)](./testlab.validateapispec.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-|  Interface | Description |
-|  --- | --- |
-|  [ExpressContextStub](./testlab.expresscontextstub.md) |  |
-|  [HandlerContextStub](./testlab.handlercontextstub.md) |  |
-|  [HostPort](./testlab.hostport.md) | An object that requires host and port properties |
-|  [HttpOptions](./testlab.httpoptions.md) |  |
-|  [HttpsOptions](./testlab.httpsoptions.md) |  |
-|  [RestApplicationLike](./testlab.restapplicationlike.md) |  |
-|  [RestServerLike](./testlab.restserverlike.md) |  |
-|  [TestSandboxOptions](./testlab.testsandboxoptions.md) | Options for a test sandbox |
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ExpressContextStub](./testlab.expresscontextstub.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[HandlerContextStub](./testlab.handlercontextstub.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[HostPort](./testlab.hostport.md)
+
+
+</td><td>
+
+An object that requires host and port properties
+
+
+</td></tr>
+<tr><td>
+
+[HttpOptions](./testlab.httpoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[HttpsOptions](./testlab.httpsoptions.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestApplicationLike](./testlab.restapplicationlike.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[RestServerLike](./testlab.restserverlike.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[TestSandboxOptions](./testlab.testsandboxoptions.md)
+
+
+</td><td>
+
+Options for a test sandbox
+
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [expect](./testlab.expect.md) |  |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[expect](./testlab.expect.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-|  Type Alias | Description |
-|  --- | --- |
-|  [Client](./testlab.client.md) |  |
-|  [ObservedResponse](./testlab.observedresponse.md) |  |
-|  [ShotCallback](./testlab.shotcallback.md) |  |
-|  [ShotResponseCtor](./testlab.shotresponsector.md) |  |
-|  [StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md) |  |
-|  [TestDefinition](./testlab.testdefinition.md) | A function defining a new test case or a test suite, e.g. <code>it</code> or <code>describe</code>. |
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Client](./testlab.client.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ObservedResponse](./testlab.observedresponse.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ShotCallback](./testlab.shotcallback.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[ShotResponseCtor](./testlab.shotresponsector.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md)
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[TestDefinition](./testlab.testdefinition.md)
+
+
+</td><td>
+
+A function defining a new test case or a test suite, e.g. `it` or `describe`<!-- -->.
+
+
+</td></tr>
+</tbody></table>
 
 

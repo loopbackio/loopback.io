@@ -21,11 +21,95 @@ export interface ResponseDecoratorMetadataItem
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md) |  | string |  |
-|  [description](./openapi-v3.responsedecoratormetadataitem.description.md) |  | string |  |
-|  [responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md) |  | number |  |
-|  [responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md) |  | [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md) |  |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[description](./openapi-v3.responsedecoratormetadataitem.description.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+
+</td></tr>
+<tr><td>
+
+[responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md)
+
+
+</td><td>
+
+
+</td></tr>
+</tbody></table>
 
 
