@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-rpc-server.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-rpc-server@8.0.4...@loopback/example-rpc-server@8.0.5) (2025-10-15)
+
+**Note:** Version bump only for package @loopback/example-rpc-server
+
+
+
+
+
 ## [8.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/example-rpc-server@8.0.3...@loopback/example-rpc-server@8.0.4) (2025-09-10)
 
 **Note:** Version bump only for package @loopback/example-rpc-server

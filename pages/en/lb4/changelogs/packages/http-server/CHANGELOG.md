@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.http-server.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/http-server@7.0.4...@loopback/http-server@7.0.5) (2025-10-15)
+
+**Note:** Version bump only for package @loopback/http-server
+
+
+
+
+
 ## [7.0.4](https://github.com/loopbackio/loopback-next/compare/@loopback/http-server@7.0.3...@loopback/http-server@7.0.4) (2025-09-10)
 
 **Note:** Version bump only for package @loopback/http-server

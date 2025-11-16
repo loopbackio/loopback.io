@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.example-todo-list.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.6](https://github.com/loopbackio/loopback-next/compare/@loopback/example-todo-list@9.0.5...@loopback/example-todo-list@9.0.6) (2025-10-15)
+
+**Note:** Version bump only for package @loopback/example-todo-list
+
+
+
+
+
 ## [9.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/example-todo-list@9.0.4...@loopback/example-todo-list@9.0.5) (2025-09-10)
 
 **Note:** Version bump only for package @loopback/example-todo-list
