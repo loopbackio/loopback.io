@@ -13,6 +13,14 @@ permalink: /doc/en/lb4/changelog.http-caching-proxy.html
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.6](https://github.com/loopbackio/loopback-next/compare/@loopback/http-caching-proxy@7.0.5...@loopback/http-caching-proxy@7.0.6) (2025-11-11)
+
+**Note:** Version bump only for package @loopback/http-caching-proxy
+
+
+
+
+
 ## [7.0.5](https://github.com/loopbackio/loopback-next/compare/@loopback/http-caching-proxy@7.0.4...@loopback/http-caching-proxy@7.0.5) (2025-10-15)
 
 **Note:** Version bump only for package @loopback/http-caching-proxy
