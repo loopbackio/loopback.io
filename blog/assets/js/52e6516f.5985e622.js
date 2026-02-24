@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkloopback_blog=self.webpackChunkloopback_blog||[]).push([[3943],{536:l=>{l.exports=JSON.parse('{"label":"cloud native","permalink":"/blog/tags/cloud-native","allTagsPath":"/blog/tags","count":1}')}}]);
