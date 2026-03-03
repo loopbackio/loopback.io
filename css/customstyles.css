@@ -312,6 +312,11 @@ ul#results-container a: hover {
 }
 /* end search */
 
+/* Docsearch container z-index overwrite */
+.DocSearch-Container {
+    z-index: 1000 !important;
+}
+
 .filter-options {
     margin-bottom: 20px;
 }
