@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
+  {% if page.url contains '/lb4/' %}
+  <meta name="docsearch:version" content="lb4" />
+  {% elsif page.url contains '/lb3/' %}
+  <meta name="docsearch:version" content="lb3" />
+  {% elsif page.url contains '/lb2/' %}
+  <meta name="docsearch:version" content="lb2" />
+  {% endif %}
   <title>{{ page.title }} | {{ site.site_title }}</title>
   <link rel="stylesheet" href="{{base}}/css/syntax.css">
 

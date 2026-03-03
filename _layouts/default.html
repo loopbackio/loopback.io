@@ -21,10 +21,11 @@
         });
     </script>
     {% endif %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
+    <link rel="preconnect" href="https://JHHAZ68MS2.algolia.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@4"/>
 
     
-    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
 </head>
 <body>
 {% include topnav.html %}
@@ -45,13 +46,22 @@
 <!-- /.container -->
     </div>
     <script type="text/javascript">
+        const path = window.location.pathname;
+        let currentVersion = 'lb4';
+
+        if (path.includes('/lb3/')) {
+            currentVersion = 'lb3';
+        } else if (path.includes('/lb2/')) {
+            currentVersion = 'lb2';
+        }
         docsearch({
           appId: 'JHHAZ68MS2',
           apiKey: 'd5ea594dd98a77b9e4b27fb69776fa9f',
           indexName: 'loopback',
           container: '#algolia-docsearch',
           searchParameters: {
-            facetFilters: ['lang:en']
+            facetFilters: ['language:en'],
+            optionalFilters: [`version:${currentVersion}`]
           }
         });
       
