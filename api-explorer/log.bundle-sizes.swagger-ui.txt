@@ -1,5 +1,5 @@
 ramda: 367.12 KB (5.37%)
-lodash: 256.9 KB (3.76%)
+lodash: 256.63 KB (3.76%)
 ramda-adjunct: 255.04 KB (3.73%)
 autolinker: 203.32 KB (2.98%)
 @swagger-api/apidom-ns-openapi-3-0: 192.76 KB (2.82%)
