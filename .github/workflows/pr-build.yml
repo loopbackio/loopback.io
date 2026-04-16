@@ -21,7 +21,7 @@ jobs:
       - name: Use Node.js 22
         uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
         with:
-          node-version: 24.14.1
+          node-version: 24.15.0
 
       - name: Set up Ruby 3.2
         uses: ruby/setup-ruby@4c56a21280b36d862b5fc31348f463d60bdc55d5 # v1.301.0
