@@ -26,349 +26,349 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td markdown="1">
+<tbody><tr><td>
 
 [@loopback/apiconnect](./apiconnect.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/authentication](./authentication.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A LoopBack 4 component for authentication support.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/authentication-jwt](./authentication-jwt.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/authentication-passport](./authentication-passport.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 An adapter to plug in passport based strategies to the authentication system in [@loopback/authentication @3.x](./authentication.md)<!-- -->.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/authorization](./authorization.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A LoopBack 4 component for authorization support (Role based, Permission based, Vote based)
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/booter-lb3app](./booter-lb3app.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/context](./context.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/context-explorer](./context-explorer.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/core](./core.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 The core foundation for LoopBack 4. It can also serve as the platform to build large-scale Node.js applications and frameworks.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/cron](./cron.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/filter](./filter.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A set of utility typings and filter builders to aid in constructing LoopBack filters using the [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern)<!-- -->.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/graphql](./graphql.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/health](./health.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A component to report health status using [@cloudnative/health](https://github.com/CloudNativeJS/cloud-health)<!-- -->.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/http-caching-proxy](./http-caching-proxy.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A caching HTTP proxy for integration tests.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/http-server](./http-server.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 HTTP / HTTPS server endpoints for LoopBack 4 apps.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/logging](./logging.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/metadata](./metadata.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A package with utilities to help developers implement [TypeScript decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)<!-- -->, define/merge metadata, and inspect metadata.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/metrics](./metrics.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A component that reports metrics of Node.js, the LoopBack framework, and your application to Prometheus.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/mock-oauth2-provider](./mock-oauth2-provider.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/model-api-builder](./model-api-builder.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A packge with types and helpers for packages contributing Model API builders.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/openapi-spec-builder](./openapi-spec-builder.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A package to simplify creating OpenAPI specification documents in your tests using the builder pattern.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/openapi-v3](./openapi-v3.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 Decorators that describe LoopBack artifacts as OpenAPI 3.0.0 metadata and utilities that transfer LoopBack metadata to OpenAPI 3.0.0 specifications.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/pooling](./pooling.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/repository-json-schema](./repository-json-schema.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 Convert a TypeScript class/model to a JSON Schema for users, leveraging LoopBack4's decorators, metadata, and reflection system.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/repository-tests](./repository-tests.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A test suite verifying functionality of `@loopback/repository` in a connector -independent way.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/rest](./rest.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 The REST API package for loopback-next.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/rest-crud](./rest-crud.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 REST API controller implementing default CRUD semantics.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/rest-explorer](./rest-explorer.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A LoopBack 4 component for adding a self-hosted REST API Explorer.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/rest-msgpack](./rest-msgpack.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/security](./security.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 Common types/interfaces for LoopBack 4 security including authentication and authorization.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/sequelize](./sequelize.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/socketio](./socketio.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/testlab](./testlab.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 A collection of test utilities we use to write LoopBack tests.
 
 
 </td></tr>
-<tr><td markdown="1">
+<tr><td>
 
 [@loopback/tsdocs](./tsdocs.md)
 
 
-</td><td markdown="1">
+</td><td>
 
 The `@loopback/tsdocs` package is an internal module to generate [tsdoc](https://github.com/Microsoft/tsdoc) based API docs for `@loopback/*` packages within [loopback-next](https://github.com/loopbackio/loopback-next) monorepo managed by [Lerna](https://github.com/lerna/lerna)<!-- -->.
 
