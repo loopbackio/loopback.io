@@ -18,6 +18,7 @@
   "engines": {
     "node": ">=24.18.0"
   },
+  "packageManager": "npm",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/loopbackio/loopback.io.git"
