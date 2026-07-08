@@ -7,6 +7,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const yaml = require('js-yaml');
 const assert = require('assert');
+const {glob} = require('glob');
 
 const srcDocs = path.resolve(__dirname,'node_modules/@loopback/docs/site');
 const destDocs = path.resolve(__dirname, 'pages/en/lb4');
@@ -82,6 +83,22 @@ function copyFile(input) {
 
 // Most of the connector doc files are in the lb3 dir, copy them for lb4
 copyFile(connectorsReference);
+
+const fixApidocs = async () => {
+    const apidocsFiles = await glob(path.resolve(destDocs, 'apidocs/**/*.md'));
+    for (apidocsFile of apidocsFiles) {
+        try {
+            let contents = fs.readFileSync(apidocsFile, 'utf-8');
+            contents = contents.replaceAll('<td>', '<td markdown="1">');
+            fs.writeFileSync(apidocsFile, contents, 'utf-8');
+        } catch (err) {
+            console.error('failed to update apidocs index %s', err.stack);
+            process.exit(1);
+        }
+    }
+}
+
+fixApidocs();
 
 const fileToUpdate = path.resolve(destDocs, 'Testing-the-API.md');
 
