@@ -40,9 +40,9 @@
                           {% if folderitem.external_url %}
                             <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
                           {% elsif page.url contains folderitem.url and folderitem.title != 'LoopBack Overview' %}
-                            <li class="dropdownActive"><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                            <li class="dropdownActive"><a href="{{folderitem.url | prepend: site.baseurl}}">{{folderitem.title}}</a></li>
                           {% else %}
-                            <li><a href="{{folderitem.url }}">{{folderitem.title}}</a></li>
+                            <li><a href="{{folderitem.url | prepend: site.baseurl}}">{{folderitem.title}}</a></li>
                           {% endif %}
                         {% endfor %}
                     </ul>
