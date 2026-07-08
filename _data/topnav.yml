@@ -11,7 +11,7 @@ topnav_dropdowns:
     - title: View
       folderitems:
         - title: LoopBack Overview
-          url: /
+          url: /doc/
         - title: LoopBack 4
           url: /doc/en/lb4/
         - title: LoopBack 3.x

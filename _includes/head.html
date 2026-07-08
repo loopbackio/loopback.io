@@ -1,6 +1,4 @@
-{% if jekyll.environment == "production" %}
-  {% assign base = site.url %}
-{% endif %}
+{% assign base = site.baseurl | prepend: site.url %}
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
