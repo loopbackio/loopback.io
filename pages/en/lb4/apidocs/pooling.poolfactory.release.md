@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 resource
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 Resource instance
 

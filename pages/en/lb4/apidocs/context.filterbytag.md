@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 tagPattern
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingTag](./context.bindingtag.md) \| RegExp
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag name, regexp, or object
 

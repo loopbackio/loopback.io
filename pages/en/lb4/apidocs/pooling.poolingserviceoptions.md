@@ -44,39 +44,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [factory](./pooling.poolingserviceoptions.factory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [PoolFactory](./pooling.poolfactory.md)<!-- -->&lt;T&gt; \| ((ctx: [Context](./context.context.md)<!-- -->) =&gt; [PoolFactory](./pooling.poolfactory.md)<!-- -->&lt;T&gt;)
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory to create/destroy/validate resources for the pool or a function to create a factory for the given context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [poolOptions?](./pooling.poolingserviceoptions.pooloptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Options
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for the generic pool
 

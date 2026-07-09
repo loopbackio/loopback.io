@@ -39,15 +39,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(requestListener, serverOptions)](./http-server.httpserver._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `HttpServer` class
 
@@ -78,165 +78,165 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [address](./http-server.httpserver.address.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| AddressInfo \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 Address of the HTTP / HTTPS server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [host](./http-server.httpserver.host.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 Host of the HTTP / HTTPS server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [listening](./http-server.httpserver.listening.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 State of the HTTP / HTTPS server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [port](./http-server.httpserver.port.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 Port number of the HTTP / HTTPS server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [protocol](./http-server.httpserver.protocol.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [HttpProtocol](./http-server.httpprotocol.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Protocol of the HTTP / HTTPS server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [server](./http-server.httpserver.server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 http.Server \| https.Server
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [serverOptions](./http-server.httpserver.serveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [HttpServerOptions](./http-server.httpserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [url](./http-server.httpserver.url.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 URL of the HTTP / HTTPS server
 
@@ -262,29 +262,29 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [start()](./http-server.httpserver.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Starts the HTTP / HTTPS server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./http-server.httpserver.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Stops the HTTP / HTTPS server
 

@@ -43,17 +43,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 entityClass
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Entity &amp; { prototype: T; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The entity class for which the table name is being retrieved.
 

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 getJobs
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

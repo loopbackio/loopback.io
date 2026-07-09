@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [file(mediaTypes)](./openapi-v3.response.file.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate the response as a file
 

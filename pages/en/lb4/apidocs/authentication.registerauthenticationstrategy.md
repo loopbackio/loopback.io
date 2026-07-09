@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 strategyClass
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Class for the authentication strategy
 

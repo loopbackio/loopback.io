@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(context, observersView, options)](./core.lifecycleobserverregistry._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `LifeCycleObserverRegistry` class
 
@@ -79,66 +79,66 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [context](./core.lifecycleobserverregistry.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [observersView](./core.lifecycleobserverregistry.observersview.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [ContextView](./context.contextview.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [options](./core.lifecycleobserverregistry.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -162,149 +162,149 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getObserverGroup(binding)](./core.lifecycleobserverregistry.getobservergroup.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the group for a given life cycle observer binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getObserverGroupsByOrder()](./core.lifecycleobserverregistry.getobservergroupsbyorder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get observer groups ordered by the group
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [init()](./core.lifecycleobserverregistry.init.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Notify all life cycle observers by group of `init`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeObserver(observer, event)](./core.lifecycleobserverregistry.invokeobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Invoke an observer for the given event
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [notifyGroups(events, groups, reverse)](./core.lifecycleobserverregistry.notifygroups.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Emit events to the observer groups
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [notifyObservers(observers, bindings, event)](./core.lifecycleobserverregistry.notifyobservers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Notify an observer group of the given event
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setOrderedGroups(groups)](./core.lifecycleobserverregistry.setorderedgroups.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [sortObserverBindingsByGroup(bindings)](./core.lifecycleobserverregistry.sortobserverbindingsbygroup.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Sort the life cycle observer bindings so that we can start/stop them in the right order. By default, we can start other observers before servers and stop them in the reverse order
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start()](./core.lifecycleobserverregistry.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Notify all life cycle observers by group of `start`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./core.lifecycleobserverregistry.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Notify all life cycle observers by group of `stop`
 

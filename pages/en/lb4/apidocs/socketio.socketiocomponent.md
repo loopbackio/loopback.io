@@ -38,15 +38,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(app)](./socketio.socketiocomponent._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `SocketIoComponent` class
 
@@ -77,73 +77,73 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindings](./socketio.socketiocomponent.bindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Binding](./context.binding.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Add built-in body parsers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [booters](./socketio.socketiocomponent.booters.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (typeof [SocketIoBooter](./socketio.socketiobooter.md)<!-- -->)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [providers](./socketio.socketiocomponent.providers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ProviderMap](./core.providermap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [servers](./socketio.socketiocomponent.servers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; }
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Resolution session
 

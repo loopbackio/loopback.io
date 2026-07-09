@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindingFilter
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A binding filter function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [InjectionMetadata](./context.injectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

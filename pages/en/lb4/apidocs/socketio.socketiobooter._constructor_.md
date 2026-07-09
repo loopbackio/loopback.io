@@ -39,59 +39,59 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 app
 
 
-</td><td>
+</td><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 projectRoot
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 socketioControllerConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 ArtifactOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 socketioServer
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoServer](./socketio.socketioserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

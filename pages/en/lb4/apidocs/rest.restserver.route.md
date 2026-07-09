@@ -39,97 +39,97 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 verb
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 HTTP verb of the endpoint
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 path
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 URL path of the endpoint
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 OperationObject
 
 
-</td><td>
+</td><td markdown="1">
 
 The OpenAPI spec describing the endpoint (operation)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 controllerCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;I&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Controller constructor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 controllerFactory
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;I&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function to create controller instance
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 methodName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The name of the controller method
 

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 fn
 
 
-</td><td>
+</td><td markdown="1">
 
 [SockIOMiddleware](./socketio.sockiomiddleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

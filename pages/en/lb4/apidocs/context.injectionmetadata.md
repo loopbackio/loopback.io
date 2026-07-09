@@ -45,39 +45,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindingComparator?](./context.injectionmetadata.bindingcomparator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingComparator](./context.bindingcomparator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional comparator for matched bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [decorator?](./context.injectionmetadata.decorator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Name of the decorator function, such as `@inject` or `@inject.setter`<!-- -->. It's usually set by the decorator implementation.
 

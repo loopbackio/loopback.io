@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(socket, parent)](./socketio.socketioconnectioncontext._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `SocketIoConnectionContext` class
 
@@ -79,22 +79,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [socket](./socketio.socketioconnectioncontext.socket.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Socket
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

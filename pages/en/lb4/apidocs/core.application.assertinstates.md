@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 op
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The operation name, such as 'boot', 'start', or 'stop'
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 states
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Valid states
 

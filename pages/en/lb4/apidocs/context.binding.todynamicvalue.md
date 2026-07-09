@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 factory
 
 
-</td><td>
+</td><td markdown="1">
 
 [ValueFactory](./context.valuefactory.md)<!-- -->&lt;T&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

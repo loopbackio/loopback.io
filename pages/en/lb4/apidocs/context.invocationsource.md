@@ -44,43 +44,43 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [type](./context.invocationsource.type.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Type of the invoker, such as `proxy` and `route`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [value](./context.invocationsource.value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata for the source, such as `ResolutionSession`
 

@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 parent
 
 
-</td><td>
+</td><td markdown="1">
 
 ICluster
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 { binding, level, id }
 
 
-</td><td>
+</td><td markdown="1">
 
 [ContextBinding](./context-explorer.contextbinding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

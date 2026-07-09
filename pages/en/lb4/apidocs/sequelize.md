@@ -28,32 +28,32 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LoopbackSequelizeComponent](./sequelize.loopbacksequelizecomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SequelizeCrudRepository](./sequelize.sequelizecrudrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sequelize implementation of CRUD repository to be used with default loopback entities and SequelizeDataSource for SQL Databases
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SequelizeDataSource](./sequelize.sequelizedatasource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sequelize DataSource Class
 
@@ -74,12 +74,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LoopbackSequelizeComponentOptions](./sequelize.loopbacksequelizecomponentoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Interface defining the component's options object
 
@@ -100,12 +100,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LoopbackSequelizeComponentBindings](./sequelize.loopbacksequelizecomponentbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -126,12 +126,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DEFAULT\_LOOPBACK\_SEQUELIZE\_OPTIONS](./sequelize.default_loopback_sequelize_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Default options for the component
 
@@ -152,12 +152,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

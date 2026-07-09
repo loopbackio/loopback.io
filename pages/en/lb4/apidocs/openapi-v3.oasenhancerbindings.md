@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [OAS\_ENHANCER\_EXTENSION\_POINT\_NAME](./openapi-v3.oasenhancerbindings.oas_enhancer_extension_point_name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Name/id of the OAS enhancer extension point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [OAS\_ENHANCER\_SERVICE](./openapi-v3.oasenhancerbindings.oas_enhancer_service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Strongly-typed binding key for SpecService
 

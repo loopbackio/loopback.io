@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 path
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The URL path of this operation, e.g. `/product/{id}`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 OperationObject
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The OpenAPI specification describing parameters and responses of this operation.
 

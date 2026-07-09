@@ -28,54 +28,54 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Binding](./context.binding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding represents an entry in the `Context`<!-- -->. Each binding has a key and a corresponding value getter.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingKey](./context.bindingkey.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context provides an implementation of Inversion of Control (IoC) container
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextSubscriptionManager](./context.contextsubscriptionmanager.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Manager for context observer subscriptions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextView](./context.contextview.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `ContextView` provides a view for a given context chain to maintain a live list of matching bindings and their resolved values within the context hierarchy.
 
@@ -85,45 +85,45 @@ This class is the key utility to implement dynamic extensions for extension poin
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DefaultConfigurationResolver](./context.defaultconfigurationresolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolver for configurations of bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GenericInterceptorChain](./context.genericinterceptorchain.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A chain of generic interceptors to be invoked for the given context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InterceptedInvocationContext](./context.interceptedinvocationcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A specialized InvocationContext for interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InterceptionHandler](./context.interceptionhandler.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A proxy handler that applies interceptors
 
@@ -131,45 +131,45 @@ See https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InvocationContext](./context.invocationcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 InvocationContext represents the context to invoke interceptors for a method. The context can be used to access metadata about the invocation as well as other dependencies.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ProxySource](./context.proxysource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Invocation source for injected proxies. It wraps a snapshot of the `ResolutionSession` that tracks the binding/injection stack.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionError](./context.resolutionerror.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Error for context binding resolutions and dependency injections
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Object to keep states for a session to resolve bindings and their dependencies within a context
 
@@ -190,34 +190,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [BindingCreationPolicy](./context.bindingcreationpolicy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Policy to control if a binding should be created for the context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingScope](./context.bindingscope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Scope for binding values
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingType](./context.bindingtype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Type of the binding source
 
@@ -238,342 +238,342 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asBindingTemplate(scopeAndTags)](./context.asbindingtemplate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Convert binding scope and tags as a template function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asClassOrProvider(target)](./context.asclassorprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function to create a template function to bind the target class as a class or `Provider`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asGlobalInterceptor(group)](./context.asglobalinterceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The `BindingTemplate` function to configure a binding as a global interceptor by tagging it with `ContextTags.INTERCEPTOR`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asProvider(target)](./context.asprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function to create a template function to bind the target class as a `Provider`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asResolutionOptions(optionsOrSession)](./context.asresolutionoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Normalize ResolutionOptionsOrSession to ResolutionOptions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [assertTargetType(injection, expectedType, expectedTypeName)](./context.asserttargettype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Assert the target type inspected from TypeScript for injection to be the expected type. If the types don't match, an error is thrown.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [bind(specs)](./context.bind.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@bind` is now an alias to  for backward compatibility
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [bindingTemplateFor(cls, options)](./context.bindingtemplatefor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the binding template for a class with binding metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [compareBindingsByTag(phaseTagName, orderOfPhases)](./context.comparebindingsbytag.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Creates a binding compare function to sort bindings by tagged phase name.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [compareByOrder(a, b, order)](./context.comparebyorder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Compare two values by the predefined order
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [composeInterceptors(interceptors)](./context.composeinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Compose a list of interceptors as a single interceptor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [config(propertyPath, metadata)](./context.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject a property from `config` of the current binding. If no corresponding config value is present, `undefined` will be injected as the configuration binding is resolved with `optional: true` by default.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [configBindingKeyFor(key, propertyPath)](./context.configbindingkeyfor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create binding key for configuration of the binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createBindingFromClass(cls, options)](./context.createbindingfromclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a binding from a class with decorated metadata. The class is attached to the binding as follows: - `binding.toClass(cls)`<!-- -->: if `cls` is a plain class such as `MyController` - `binding.toProvider(cls)`<!-- -->: if `cls` is a value provider class with a prototype method `value()` - `binding.toDynamicValue(cls)`<!-- -->: if `cls` is a dynamic value provider class with a static method `value()`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createProxyWithInterceptors(target, context, session, source)](./context.createproxywithinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a proxy that applies interceptors for method invocations
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createViewGetter(ctx, bindingFilter, session)](./context.createviewgetter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a context view as a getter with the given filter
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createViewGetter(ctx, bindingFilter, bindingComparator, session)](./context.createviewgetter_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a context view as a getter with the given filter and sort matched bindings by the comparator.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [describeInjectedArguments(target, method)](./context.describeinjectedarguments.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Return an array of injection objects for parameters
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [describeInjectedProperties(target)](./context.describeinjectedproperties.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Return a map of injection objects for properties
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [filterByKey(keyPattern)](./context.filterbykey.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a binding filter from key pattern
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [filterByTag(tagPattern)](./context.filterbytag.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a binding filter for the tag pattern
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getBindingMetadata(target)](./context.getbindingmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Get binding metadata for a class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getDeepProperty(value, path)](./context.getdeepproperty.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Get nested properties of an object by path
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [globalInterceptor(group, specs)](./context.globalinterceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@globalInterceptor` decorator to mark the class as a global interceptor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [hasInjections(cls)](./context.hasinjections.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Check if the given class has `@inject` or other decorations that map to `@inject`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [includesTagValue(itemValues)](./context.includestagvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a tag value matcher function that returns `true` if the target tag value equals to the item value or is an array that includes the item value.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inject(bindingSelector, metadata, resolve)](./context.inject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A decorator to annotate method arguments for automatic injection by LoopBack IoC container.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [injectable(specs)](./context.injectable.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate a class with binding configuration
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inspectInjections(binding)](./context.inspectinjections.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inspect injections for a binding created with `toClass` or `toProvider`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inspectTargetType(injection)](./context.inspecttargettype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inspect the target type for the injection to find out the corresponding JavaScript type
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [instantiateClass(ctor, ctx, session, nonInjectedArgs)](./context.instantiateclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an instance of a class which constructor has arguments decorated with `@inject`<!-- -->.
 
@@ -581,111 +581,111 @@ The function returns a class when all dependencies were resolved synchronously, 
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [intercept(interceptorOrKeys)](./context.intercept.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorator function `@intercept` for classes/methods to apply interceptors. It can be applied on a class and its public methods. Multiple occurrences of `@intercept` are allowed on the same target class or method. The decorator takes a list of `interceptor` functions or binding keys.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeInterceptors(context, interceptors)](./context.invokeinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Invoke a chain of interceptors with the context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeMethod(target, method, ctx, nonInjectedArgs, options)](./context.invokemethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Invoke a method using dependency injection. Interceptors are invoked as part of the invocation.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeMethodWithInterceptors(context, target, methodName, args, options)](./context.invokemethodwithinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Invoke a method with the given context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isBindingAddress(bindingSelector)](./context.isbindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Type guard for binding address
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isBindingTagFilter(filter)](./context.isbindingtagfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Type guard for BindingTagFilter
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isDynamicValueProviderClass(factory)](./context.isdynamicvalueproviderclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Check if the factory is a value factory provider class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isPromiseLike(value)](./context.ispromiselike.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Check whether a value is a Promise-like instance. Recognizes both native promises and third-party promise libraries.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isProviderClass(cls)](./context.isproviderclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Check if a class implements `Provider` interface
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeInterceptors(interceptorsFromSpec, existingInterceptors)](./context.mergeinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Adding interceptors from the spec to the front of existing ones. Duplicate entries are eliminated from the spec side.
 
@@ -695,34 +695,34 @@ For example:
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerInterceptor(ctx, interceptor, options)](./context.registerinterceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Register an interceptor function or provider class to the given context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [removeNameAndKeyTags(binding)](./context.removenameandkeytags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A binding template function to delete `name` and `key` tags
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolveInjectedArguments(target, method, ctx, session, nonInjectedArgs)](./context.resolveinjectedarguments.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Given a function with arguments decorated with `@inject`<!-- -->, return the list of arguments resolved using the values bound in `ctx`<!-- -->.
 
@@ -730,12 +730,12 @@ The function returns an argument array when all dependencies were resolved synch
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolveInjectedProperties(constructor, ctx, session)](./context.resolveinjectedproperties.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Given a class with properties decorated with `@inject`<!-- -->, return the map of properties resolved using the values bound in `ctx`<!-- -->.
 
@@ -743,89 +743,89 @@ The function returns an argument array when all dependencies were resolved synch
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolveList(list, resolver)](./context.resolvelist.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolve entries of an array into a new array with the same indexes. If one or more entries of the source array are resolved to a promise by the `resolver` function, this method returns a promise which will be resolved to the new array with fully resolved entries.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolveMap(map, resolver)](./context.resolvemap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolve entries of an object into a new object with the same keys. If one or more entries of the source object are resolved to a promise by the `resolver` function, this method returns a promise which will be resolved to the new object with fully resolved entries.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolveUntil(source, resolver, evaluator)](./context.resolveuntil.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolve an iterator of source values into a result until the evaluator returns `true`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [sortBindingsByPhase(bindings, phaseTagName, orderOfPhases)](./context.sortbindingsbyphase.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sort bindings by phase names denoted by a tag and the predefined order
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [transformValueOrPromise(valueOrPromise, transformer)](./context.transformvalueorpromise.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Transform a value or promise with a function that produces a new value or promise
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tryCatchFinally(action, errorAction, finalAction)](./context.trycatchfinally.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Try to run an action that returns a promise or a value with error and final actions to mimic `try {} catch(err) {} finally {}` for a value or promise.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tryWithFinally(action, finalAction)](./context.trywithfinally.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Try to run an action that returns a promise or a value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [uuid()](./context.uuid.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A utility to generate uuid v4
 
@@ -846,78 +846,78 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [BindingComparator](./context.bindingcomparator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Compare function to sort an array of bindings. It is used by `Array.prototype.sort()`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingElement](./context.bindingelement.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Wrapper for bindings tracked by resolution sessions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function that filters bindings. It returns `true` to select a given binding.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingInspectOptions](./context.bindinginspectoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for binding.inspect()
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingTagFilter](./context.bindingtagfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding filter function that holds a binding tag pattern. `Context.find()` uses the `bindingTagPattern` to optimize the matching of bindings by tag to avoid expensive check for all bindings.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ConfigInjectionMetadata](./context.configinjectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Injection metadata for `@config.*`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ConfigurationResolver](./context.configurationresolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolver for configuration of bindings. It's responsible for finding corresponding configuration for a given binding key.
 
@@ -925,230 +925,230 @@ By default, `undefined` is expected if no configuration is provided. The behavio
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextInspectOptions](./context.contextinspectoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for context.inspect()
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextObserver](./context.contextobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Observers of context bind/unbind events
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextViewEvent](./context.contextviewevent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An event emitted by a `ContextView`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A class with a static `value` method as the factory function for `toDynamicValue`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InjectBindingMetadata](./context.injectbindingmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata for `@inject.binding`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Injection](./context.injection.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Descriptor for an injection point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InjectionDescriptor](./context.injectiondescriptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InjectionElement](./context.injectionelement.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Wrapper for injections tracked by resolution sessions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InjectionMetadata](./context.injectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An object to provide metadata for `@inject`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Interceptor](./context.interceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Interceptor function to intercept method invocations
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InterceptorBindingOptions](./context.interceptorbindingoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for an interceptor binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InvocationSource](./context.invocationsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An interface to represent the caller of the invocation
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JSONArray](./context.jsonarray.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON array
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JSONObject](./context.jsonobject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Notification](./context.notification.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Event data for observer notifications
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Provider](./context.provider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Providers allow developers to compute injected values dynamically, with any dependencies required by the value getter injected automatically from the Context.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionContext](./context.resolutioncontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Contextual metadata for resolution
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionOptions](./context.resolutionoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for binding/dependency resolution
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolverFunction](./context.resolverfunction.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to provide resolution of injected values.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Subscription](./context.subscription.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Subscription of context events. It's modeled after https://github.com/tc39/proposal-observable.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TagValueMatcher](./context.tagvaluematcher.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to check if a given tag value is matched for `filterByTag`
 
@@ -1169,12 +1169,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bind](./context.bind.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Alias namespace `bind` to `injectable` for backward compatibility
 
@@ -1182,61 +1182,61 @@ It should have the same members as `bind`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [config](./context.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextBindings](./context.contextbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for context bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextTags](./context.contexttags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for context tags
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Getter](./context.getter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inject](./context.inject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [injectable](./context.injectable.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A namespace to host shortcuts for `@injectable`
 
@@ -1257,87 +1257,87 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ANY\_TAG\_VALUE](./context.any_tag_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A symbol that can be used to match binding tags by name regardless of the value.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BINDING\_METADATA\_KEY](./context.binding_metadata_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key for binding metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DEFAULT\_TYPE\_NAMESPACES](./context.default_type_namespaces.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GLOBAL\_INTERCEPTOR\_NAMESPACE](./context.global_interceptor_namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Default namespace for global interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [INTERCEPT\_CLASS\_KEY](./context.intercept_class_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key for method-level interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [INTERCEPT\_METHOD\_KEY](./context.intercept_method_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key for method-level interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LOCAL\_INTERCEPTOR\_NAMESPACE](./context.local_interceptor_namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Default namespace for local interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UUID\_PATTERN](./context.uuid_pattern.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A regular expression for testing uuid v4 PATTERN
 
@@ -1358,499 +1358,499 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AliasBindingSource](./context.aliasbindingsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding source for `toAlias`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AsInterceptedFunction](./context.asinterceptedfunction.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The intercepted variant of a function to return `ValueOrPromise<T>`<!-- -->. If `T` is not a function, the type is `T`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AsValueOrPromise](./context.asvalueorpromise.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create the Promise type for `T`<!-- -->. If `T` extends `Promise`<!-- -->, the type is `T`<!-- -->, otherwise the type is `ValueOrPromise<T>`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AsyncProxy](./context.asyncproxy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The proxy type for `T`<!-- -->. The return type for any method of `T` with original return type `R` becomes `ValueOrPromise<R>` if `R` does not extend `Promise`<!-- -->. Property types stay untouched.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingEvent](./context.bindingevent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Information for a binding event
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingEventListener](./context.bindingeventlistener.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Event listeners for binding events
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to customize the binding created from a class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingMetadata](./context.bindingmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding metadata from `@injectable`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingScopeAndTags](./context.bindingscopeandtags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An object to configure binding scope and tags
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingSelector](./context.bindingselector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Select binding(s) by key or a filter function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingSource](./context.bindingsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Source for the binding, including the type and value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingSpec](./context.bindingspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Specification of parameters for `@injectable()`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingTag](./context.bindingtag.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag can be a simple name or name/value pairs
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BindingTemplate](./context.bindingtemplate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function as the template to configure bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BoundValue](./context.boundvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ClassBindingSource](./context.classbindingsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding source for `toClass`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ConstantBindingSource](./context.constantbindingsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding source for `to`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Constructor](./context.constructor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A class constructor accepting arbitrary arguments.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextEvent](./context.contextevent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Events emitted by a context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextEventListener](./context.contexteventlistener.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Synchronous listener for context events
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextEventObserver](./context.contexteventobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context event observer type - An instance of `ContextObserver` or a function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextEventType](./context.contexteventtype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context event types. We support `bind` and `unbind` for now but keep it open for new types
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextObserverFn](./context.contextobserverfn.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Listen on `bind`<!-- -->, `unbind`<!-- -->, or other events
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DynamicValueBindingSource](./context.dynamicvaluebindingsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding source for `toDynamicValue`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GenericInterceptor](./context.genericinterceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An interceptor function to be invoked in a chain for the given context. It serves as the base interface for various types of interceptors, such as method invocation interceptor or request/response processing interceptor.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GenericInterceptorOrKey](./context.genericinterceptororkey.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Interceptor function or a binding key that resolves a generic interceptor function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Getter](./context.getter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The function injected by `@inject.getter(bindingSelector)`<!-- -->. It can be used to fetch bound value(s) from the underlying binding(s). The return value will be an array if the `bindingSelector` is a `BindingFilter` function.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InterceptorOrKey](./context.interceptororkey.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Interceptor function or binding key that can be used as parameters for `@intercept()`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InvocationArgs](./context.invocationargs.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Array of arguments for a method invocation
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InvocationOptions](./context.invocationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to control invocations
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InvocationResult](./context.invocationresult.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Return value for a method invocation
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JSONPrimitive](./context.jsonprimitive.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON primitive types: - string - number - boolean - null
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JSONValue](./context.jsonvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON values - primitive - object - array
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MapObject](./context.mapobject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Next](./context.next.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The `next` function that can be used to invoke next generic interceptor in the chain
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [NonVoid](./context.nonvoid.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Any type except `void`<!-- -->. We use this type to enforce that interceptor functions always return a value (including undefined or null).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ProviderBindingSource](./context.providerbindingsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding source for `toProvider`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionAction](./context.resolutionaction.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to be executed with the resolution session
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionElement](./context.resolutionelement.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding or injection elements tracked by resolution sessions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResolutionOptionsOrSession](./context.resolutionoptionsorsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolution options or session
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Setter](./context.setter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The function injected by `@inject.setter(bindingKey)`<!-- -->. It sets the underlying binding to a constant value using `binding.to(value)`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TagMap](./context.tagmap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TypeNamespaceMapping](./context.typenamespacemapping.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Mapping artifact types to binding key namespaces (prefixes).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ValueFactory](./context.valuefactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function for `toDynamicValue`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ValueOrPromise](./context.valueorpromise.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Representing a value or promise. This type is used to represent results of synchronous/asynchronous resolution of values.
 

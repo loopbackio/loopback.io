@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 value
 
 
-</td><td>
+</td><td markdown="1">
 
 IN
 
 
-</td><td>
+</td><td markdown="1">
 
 Value of the source object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 path
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Path to the property
 

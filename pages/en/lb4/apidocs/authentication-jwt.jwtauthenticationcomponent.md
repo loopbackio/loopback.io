@@ -38,15 +38,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(app)](./authentication-jwt.jwtauthenticationcomponent._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `JWTAuthenticationComponent` class
 
@@ -77,20 +77,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindings](./authentication-jwt.jwtauthenticationcomponent.bindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Binding](./context.binding.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -66,58 +66,58 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [parameterTypes](./metadata.designtimemethodmetadata.parametertypes.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Function\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of parameter types.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [returnType](./metadata.designtimemethodmetadata.returntype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Function \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 Return type, may be `undefined` (e.g. for constructors).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [type](./metadata.designtimemethodmetadata.type.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Function \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 Type of the method itself. It is `Function` for methods, `undefined` for the constructor.
 

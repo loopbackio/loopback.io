@@ -28,23 +28,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LoggingComponent](./logging.loggingcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A component providing logging facilities
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [WinstonLoggerProvider](./logging.winstonloggerprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A provider class that creates WinstonLogger instances
 
@@ -65,12 +65,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [logInvocation()](./logging.loginvocation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@logInvocation` decorator for method invocations.
 
@@ -91,12 +91,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LoggingBindings](./logging.loggingbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -117,23 +117,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [WINSTON\_FORMAT](./logging.winston_format.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An extension point for winston formats
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [WINSTON\_TRANSPORT](./logging.winston_transport.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An extension point for winston transports
 
@@ -154,12 +154,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LoggingComponentConfig](./logging.loggingcomponentconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration for LoggingComponent
 

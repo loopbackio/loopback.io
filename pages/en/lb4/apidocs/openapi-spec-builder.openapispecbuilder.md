@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)()](./openapi-spec-builder.openapispecbuilder._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `OpenApiSpecBuilder` class
 
@@ -74,43 +74,43 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [withComponents(spec)](./openapi-spec-builder.openapispecbuilder.withcomponents.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a new ComponentsObject.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withOperation(verb, path, spec)](./openapi-spec-builder.openapispecbuilder.withoperation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a new OperationObject at the given path and verb (method).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withOperationReturningString(verb, path, operationName)](./openapi-spec-builder.openapispecbuilder.withoperationreturningstring.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a new operation that returns a string response.
 

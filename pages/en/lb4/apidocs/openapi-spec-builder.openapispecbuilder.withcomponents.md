@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 ComponentsObject \| [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Specification of the components.
 

@@ -39,65 +39,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 Target class or object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Resolution session
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 source
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvocationSource](./context.invocationsource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Invocation source
 

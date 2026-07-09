@@ -42,39 +42,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [exclude?](./repository-json-schema.filterschemaoptions.exclude.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\] \| string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ To exclude one or more property from `filter`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setTitle?](./repository-json-schema.filterschemaoptions.settitle.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Set this flag if you want the schema to set generated title property.
 

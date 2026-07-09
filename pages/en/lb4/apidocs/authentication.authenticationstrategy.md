@@ -46,20 +46,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [name](./authentication.authenticationstrategy.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The 'name' property is a unique identifier for the authentication strategy ( for example : 'basic', 'jwt', etc)
 
@@ -80,12 +80,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [authenticate(request)](./authentication.authenticationstrategy.authenticate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The 'authenticate' method takes in a given request and returns a user profile which is an instance of 'UserProfile'. (A user profile is a minimal subset of a user object) If the user credentials are valid, this method should return a 'UserProfile' instance. If the user credentials are invalid, this method should throw an error If the user credentials are missing, this method should throw an error, or return 'undefined' and let the authentication action deal with it.
 

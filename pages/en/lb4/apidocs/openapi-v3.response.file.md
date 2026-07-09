@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 mediaTypes
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A list of media types for the file response. It's default to `['application/octet-stream']`<!-- -->.
 

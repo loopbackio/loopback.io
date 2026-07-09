@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(getJobs)](./cron.croncomponent._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `CronComponent` class
 
@@ -79,22 +79,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getJobs](./cron.croncomponent.getjobs.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;[CronJob](./cron.cronjob.md)<!-- -->\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -118,27 +118,27 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [start()](./cron.croncomponent.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./cron.croncomponent.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

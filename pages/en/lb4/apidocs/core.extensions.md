@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [list(extensionPointName, metadata)](./core.extensions.list.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject an array of resolved extension instances for the extension point. The list is a snapshot of registered extensions when the injection is fulfilled. Extensions added or removed afterward won't impact the list.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [view(extensionPointName, metadata)](./core.extensions.view.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject a `ContextView` for extensions of the extension point. The view can then be listened on events such as `bind`<!-- -->, `unbind`<!-- -->, or `refresh` to react on changes of extensions.
 

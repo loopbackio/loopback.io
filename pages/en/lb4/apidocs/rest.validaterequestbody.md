@@ -39,65 +39,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 body
 
 
-</td><td>
+</td><td markdown="1">
 
 [RequestBody](./rest.requestbody.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The request body parsed from an HTTP request.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 requestBodySpec
 
 
-</td><td>
+</td><td markdown="1">
 
 RequestBodyObject
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The OpenAPI requestBody specification defined in `@requestBody()`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 globalSchemas
 
 
-</td><td>
+</td><td markdown="1">
 
 SchemasObject
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The referenced schemas generated from `OpenAPISpec.components.schemas`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [ValidationOptions](./rest.validationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Request body validation options for AJV
 

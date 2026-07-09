@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 interceptorOrKeys
 
 
-</td><td>
+</td><td markdown="1">
 
 [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 One or more interceptors or binding keys that are resolved to be interceptors
 

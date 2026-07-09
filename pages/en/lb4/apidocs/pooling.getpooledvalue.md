@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 poolingService
 
 
-</td><td>
+</td><td markdown="1">
 
 [PoolingService](./pooling.poolingservice.md)<!-- -->&lt;T&gt; \| Pool&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Pooling service or pool
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 requestCtx
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Request context
 

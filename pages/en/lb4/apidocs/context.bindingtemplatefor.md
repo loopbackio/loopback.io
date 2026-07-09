@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 cls
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A class with optional `@injectable`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

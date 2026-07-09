@@ -37,45 +37,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 dataSourceOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 [DataSourceOptions](./repository-tests.datasourceoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 repositoryClass
 
 
-</td><td>
+</td><td markdown="1">
 
 [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 partialFeatures
 
 
-</td><td>
+</td><td markdown="1">
 
 Partial&lt;[CrudFeatures](./repository-tests.crudfeatures.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

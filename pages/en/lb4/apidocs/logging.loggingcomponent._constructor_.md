@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 loggingConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 [LoggingComponentConfig](./logging.loggingcomponentconfig.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

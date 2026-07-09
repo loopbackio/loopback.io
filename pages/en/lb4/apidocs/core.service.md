@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 serviceInterface
 
 
-</td><td>
+</td><td markdown="1">
 
 [ServiceInterface](./core.serviceinterface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Interface for the service. It can be in one of the following forms:
 
@@ -59,17 +59,17 @@ If not provided, the value is inferred from the design:type of the parameter or 
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [InjectionMetadata](./context.injectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

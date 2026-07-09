@@ -44,22 +44,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [root](./rest.trie.root.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Node](./rest.node.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -83,43 +83,43 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [create(routeTemplate, value)](./rest.trie.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a node for a given path template
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [list()](./rest.trie.list.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 List all nodes with value of the trie
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [match(path)](./rest.trie.match.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Match a route path against the trie
 

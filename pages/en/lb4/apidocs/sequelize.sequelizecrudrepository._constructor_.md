@@ -41,31 +41,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 entityClass
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Entity &amp; { prototype: T; }
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 dataSource
 
 
-</td><td>
+</td><td markdown="1">
 
 [SequelizeDataSource](./sequelize.sequelizedatasource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

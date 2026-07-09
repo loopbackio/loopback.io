@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 source
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvocationSource](./context.invocationsource.md)<!-- -->&lt;unknown&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

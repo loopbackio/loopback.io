@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./metrics.metricsbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

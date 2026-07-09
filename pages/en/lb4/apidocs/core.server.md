@@ -45,22 +45,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [listening](./core.server.listening.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Tells whether the server is listening for connections or not
 

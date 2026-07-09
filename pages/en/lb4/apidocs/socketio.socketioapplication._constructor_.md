@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 config
 
 
-</td><td>
+</td><td markdown="1">
 
 [ApplicationConfig](./core.applicationconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

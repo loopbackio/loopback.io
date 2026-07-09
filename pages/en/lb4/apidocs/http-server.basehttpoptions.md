@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [gracePeriodForClose?](./http-server.basehttpoptions.graceperiodforclose.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The `gracePeriodForClose` property controls how to stop the server gracefully. Its value is the number of milliseconds to wait before in-flight requests finish when the server is being stopped. With this setting, we also reject new requests from existing keep-alive connections in addition to stopping accepting new connections.
 

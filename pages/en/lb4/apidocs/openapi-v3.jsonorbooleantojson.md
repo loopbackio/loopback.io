@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 jsonOrBool
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean \| JsonSchema
 
 
-</td><td>
+</td><td markdown="1">
 
 converts boolean values into their representative JSON Schemas
 

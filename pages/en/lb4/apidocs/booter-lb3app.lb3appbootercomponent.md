@@ -43,20 +43,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [booters](./booter-lb3app.lb3appbootercomponent.booters.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (typeof Lb3AppBooter)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -45,39 +45,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [name?](./rest.valuevalidationoptions.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Parameter name, as provided in `ParameterObject#name` property.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [source?](./rest.valuevalidationoptions.source.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Where the data comes from. It can be 'body', 'path', 'header', 'query', 'cookie', etc...
 

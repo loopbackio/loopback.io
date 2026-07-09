@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 handle
 
 
-</td><td>
+</td><td markdown="1">
 
 [BodyParserMiddleware](./rest.bodyparsermiddleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The express middleware handler
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 request
 
 
-</td><td>
+</td><td markdown="1">
 
 Request
 
 
-</td><td>
+</td><td markdown="1">
 
 Http request
 

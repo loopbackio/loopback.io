@@ -43,33 +43,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindingSelector
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingSelector](./context.bindingselector.md)<!-- -->&lt;unknown&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The binding key or filter we want to eventually get value(s) from.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [InjectionMetadata](./context.injectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional metadata to help the injection
 

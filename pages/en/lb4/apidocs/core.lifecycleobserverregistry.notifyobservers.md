@@ -39,45 +39,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 observers
 
 
-</td><td>
+</td><td markdown="1">
 
 [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 bindings
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 event
 
 
-</td><td>
+</td><td markdown="1">
 
 keyof [LifeCycleObserver](./core.lifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Event name
 

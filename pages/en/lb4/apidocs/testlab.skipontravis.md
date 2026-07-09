@@ -41,49 +41,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 verb
 
 
-</td><td>
+</td><td markdown="1">
 
 [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt; &amp; { skip: [TestDefinition](./testlab.testdefinition.md)<!-- -->&lt;ARGS, RETVAL&gt;; }
 
 
-</td><td>
+</td><td markdown="1">
 
 The function to invoke to define the test case or the test suite, e.g. `it` or `describe`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 name
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The test name (the first argument of `verb` function).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 args
 
 
-</td><td>
+</td><td markdown="1">
 
 ARGS
 
 
-</td><td>
+</td><td markdown="1">
 
 Additional arguments (framework specific), typically a function implementing the test.
 

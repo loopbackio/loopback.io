@@ -44,22 +44,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [key](./metadata.metadataaccessor.key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -83,31 +83,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [create(key)](./metadata.metadataaccessor.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a strongly-typed metadata accessor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toString()](./metadata.metadataaccessor.tostring.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

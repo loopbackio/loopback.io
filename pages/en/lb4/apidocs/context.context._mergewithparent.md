@@ -37,31 +37,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 childList
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 parentList
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;ValueType&gt;&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

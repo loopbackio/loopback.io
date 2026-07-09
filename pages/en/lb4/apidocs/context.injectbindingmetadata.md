@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindingCreation?](./context.injectbindingmetadata.bindingcreation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingCreationPolicy](./context.bindingcreationpolicy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Controls how the underlying binding is resolved/created
 

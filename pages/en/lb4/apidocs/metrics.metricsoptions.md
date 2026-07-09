@@ -44,96 +44,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [defaultLabels?](./metrics.metricsoptions.defaultlabels.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[labelName: string\]: string; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [defaultMetrics?](./metrics.metricsoptions.defaultmetrics.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { disabled?: boolean; } &amp; DefaultMetricsCollectorConfiguration
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [endpoint?](./metrics.metricsoptions.endpoint.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { disabled?: boolean; basePath?: string; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [openApiSpec?](./metrics.metricsoptions.openapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [pushGateway?](./metrics.metricsoptions.pushgateway.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { disabled?: boolean; url: string; interval?: number; jobName?: string; groupingKey?: { \[key: string\]: string; }; replaceAll?: boolean; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

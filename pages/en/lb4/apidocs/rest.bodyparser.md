@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [name](./rest.bodyparser.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| symbol
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the parser
 
@@ -78,23 +78,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [parse(request)](./rest.bodyparser.parse.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Parse the request body
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [supports(mediaType)](./rest.bodyparser.supports.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Indicate if the given media type is supported
 

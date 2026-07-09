@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 injection
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Injection information
 

@@ -34,101 +34,101 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AUTH\_ACTION](./authentication.authenticationbindings.auth_action.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Key used to inject the authentication function into the sequence.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_MIDDLEWARE](./authentication.authenticationbindings.authentication_middleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for AUTHENTICATION\_MIDDLEWARE
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_REDIRECT\_STATUS](./authentication.authenticationbindings.authentication_redirect_status.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_REDIRECT\_URL](./authentication.authenticationbindings.authentication_redirect_url.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME](./authentication.authenticationbindings.authentication_strategy_extension_point_name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [COMPONENT](./authentication.authenticationbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CURRENT\_USER](./authentication.authenticationbindings.current_user.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [METADATA](./authentication.authenticationbindings.metadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Key used to inject authentication metadata, which is used to determine whether a request requires authentication or not.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [STRATEGY](./authentication.authenticationbindings.strategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Key used to bind an authentication strategy or multiple strategies to the context for the authentication function to use.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [USER\_PROFILE\_FACTORY](./authentication.authenticationbindings.user_profile_factory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Key used to bind a user profile factory to the context for any consumer to use when they need to convert a user object into a slimmer user profile object
 

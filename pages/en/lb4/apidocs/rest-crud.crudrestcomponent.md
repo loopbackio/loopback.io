@@ -43,20 +43,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindings](./rest-crud.crudrestcomponent.bindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Binding](./context.binding.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

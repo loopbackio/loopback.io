@@ -41,33 +41,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ctor
 
 
-</td><td>
+</td><td markdown="1">
 
 Function &amp; { prototype: T; }
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructor of class to get JSON Schema from
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

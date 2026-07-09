@@ -39,15 +39,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(\_router, \_externalRoutes)](./rest.routingtable._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `RoutingTable` class
 
@@ -73,55 +73,55 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [describeApiPaths()](./rest.routingtable.describeapipaths.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [find(request)](./rest.routingtable.find.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Map a request to a route
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerController(spec, controllerCtor, controllerFactory)](./rest.routingtable.registercontroller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a controller as the route
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerRoute(route)](./rest.routingtable.registerroute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a route
 

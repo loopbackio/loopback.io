@@ -44,64 +44,64 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [path](./rest.routeentry.path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 http path
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [spec](./rest.routeentry.spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 OperationObject
 
 
-</td><td>
+</td><td markdown="1">
 
 OpenAPI operation spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [verb](./rest.routeentry.verb.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 http verb
 
@@ -122,32 +122,32 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [describe()](./rest.routeentry.describe.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeHandler(requestContext, args)](./rest.routeentry.invokehandler.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A handler to invoke the resolved controller method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [updateBindings(requestContext)](./rest.routeentry.updatebindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Update bindings for the request context
 

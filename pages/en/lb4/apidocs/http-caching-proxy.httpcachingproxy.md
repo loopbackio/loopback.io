@@ -39,15 +39,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(options)](./http-caching-proxy.httpcachingproxy._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `HttpCachingProxy` class
 
@@ -78,20 +78,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [url](./http-caching-proxy.httpcachingproxy.url.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 URL where the proxy is listening on. Provide this value to your HTTP client as the proxy configuration.
 
@@ -117,41 +117,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [logError(request, error)](./http-caching-proxy.httpcachingproxy.logerror.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start()](./http-caching-proxy.httpcachingproxy.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Start listening.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./http-caching-proxy.httpcachingproxy.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Stop listening.
 

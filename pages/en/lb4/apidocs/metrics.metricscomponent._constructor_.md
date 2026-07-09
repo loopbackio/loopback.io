@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 application
 
 
-</td><td>
+</td><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metricsConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 [MetricsConfig](./metrics.metricsconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

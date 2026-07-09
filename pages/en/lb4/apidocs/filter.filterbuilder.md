@@ -53,15 +53,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(f)](./filter.filterbuilder._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `FilterBuilder` class
 
@@ -92,20 +92,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [filter](./filter.filterbuilder.filter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Filter](./filter.filter.md)<!-- -->&lt;MT&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -129,127 +129,127 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [build()](./filter.filterbuilder.build.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Return the filter object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [fields(f)](./filter.filterbuilder.fields.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe what fields to be included/excluded
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [impose(constraint)](./filter.filterbuilder.impose.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a Filter or Where constraint object. If it is a filter object, create an `and` clause for conflicting keys with its where object. For any other properties, throw an error. If it's not a Filter, coerce it to a filter, and carry out the same logic.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [include(i)](./filter.filterbuilder.include.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Declare `include`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [limit(limit)](./filter.filterbuilder.limit.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set `limit`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [offset(offset)](./filter.filterbuilder.offset.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set `offset`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [order(o)](./filter.filterbuilder.order.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe the sorting order
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [skip(skip)](./filter.filterbuilder.skip.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Alias to `offset`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [where(w)](./filter.filterbuilder.where.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Declare a where clause
 

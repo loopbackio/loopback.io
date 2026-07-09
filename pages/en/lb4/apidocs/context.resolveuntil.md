@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 source
 
 
-</td><td>
+</td><td markdown="1">
 
 Iterator&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The iterator of source values
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolver
 
 
-</td><td>
+</td><td markdown="1">
 
 (sourceVal: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V \| undefined&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The resolve function that maps the source value to a result
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 evaluator
 
 
-</td><td>
+</td><td markdown="1">
 
 (sourceVal: T, targetVal: V \| undefined) =&gt; boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 The evaluate function that decides when to stop
 

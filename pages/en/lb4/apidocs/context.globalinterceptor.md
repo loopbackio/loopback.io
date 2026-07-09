@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 group
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Group for ordering the interceptor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 specs
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingSpec](./context.bindingspec.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Extra binding specs
 

@@ -42,29 +42,29 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(parent)](./core.application._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an application with the given parent context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [(constructor)(config, parent)](./core.application._constructor__1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an application with the given configuration and parent context
 
@@ -95,41 +95,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [options](./core.application.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [ApplicationConfig](./core.applicationconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [state](./core.application.state.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the state of the application. The initial state is `created` and it can transition as follows by `start` and `stop`<!-- -->:
 
@@ -161,103 +161,103 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [assertInStates(op, states)](./core.application.assertinstates.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Assert current state of the application to be one of the expected values
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [assertNotInProcess(op)](./core.application.assertnotinprocess.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Assert there is no other operation is in progress, i.e., the state is not `*ing`<!-- -->, such as `starting` or `stopping`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [awaitState(state)](./core.application.awaitstate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [component(componentCtor, nameOrOptions)](./core.application.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a component to this application and register extensions such as controllers, providers, and servers from the component.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [controller(controllerCtor, nameOrOptions)](./core.application.controller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a controller class with this application.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getServer(target)](./core.application.getserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Retrieve the singleton instance for a bound server.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [init()](./core.application.init.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Initialize the application, and all of its registered observers. The application state is checked to ensure the integrity of `initialize`<!-- -->.
 
@@ -267,43 +267,43 @@ This method is automatically invoked by `start()` if the application is not init
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [interceptor(interceptor, nameOrOptions)](./core.application.interceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register an interceptor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lifeCycleObserver(ctor, nameOrOptions)](./core.application.lifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a life cycle observer class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [onInit(fn)](./core.application.oninit.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a function to be called when the application initializes.
 
@@ -311,15 +311,15 @@ This is a shortcut for adding a binding for a LifeCycleObserver implementing a `
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [onStart(fn)](./core.application.onstart.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a function to be called when the application starts.
 
@@ -327,15 +327,15 @@ This is a shortcut for adding a binding for a LifeCycleObserver implementing a `
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [onStop(fn)](./core.application.onstop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a function to be called when the application starts.
 
@@ -343,103 +343,103 @@ This is a shortcut for adding a binding for a LifeCycleObserver implementing a `
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [server(ctor, nameOrOptions)](./core.application.server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind a Server constructor to the Application's master context. Each server constructor added in this way must provide a unique prefix to prevent binding overlap.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [servers(ctors)](./core.application.servers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind an array of Server constructors to the Application's master context. Each server added in this way will automatically be named based on the class constructor name with the "servers." prefix.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [service(cls, nameOrOptions)](./core.application.service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a service to this application.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setMetadata(metadata)](./core.application.setmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set application metadata. `@loopback/boot` calls this method to populate the metadata from `package.json`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setState(state)](./core.application.setstate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Transition the application to a new state and emit an event
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setupShutdown()](./core.application.setupshutdown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Set up signals that are captured to shutdown the application
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start()](./core.application.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Start the application, and all of its registered observers. The application state is checked to ensure the integrity of `start`<!-- -->.
 
@@ -449,15 +449,15 @@ If the application is already started, no operation is performed.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./core.application.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Stop the application instance and all of its registered observers. The application state is checked to ensure the integrity of `stop`<!-- -->.
 

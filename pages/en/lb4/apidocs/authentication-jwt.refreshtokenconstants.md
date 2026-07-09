@@ -34,34 +34,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [REFRESH\_EXPIRES\_IN\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_expires_in_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The default expiration time for refresh token.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_ISSUER\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_issuer_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The default issuer used when generating refresh token.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_SECRET\_VALUE](./authentication-jwt.refreshtokenconstants.refresh_secret_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The default secret used when generating refresh token.
 

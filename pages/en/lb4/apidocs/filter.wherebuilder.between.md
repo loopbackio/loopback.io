@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 K
 
 
-</td><td>
+</td><td markdown="1">
 
 Property name
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 val1
 
 
-</td><td>
+</td><td markdown="1">
 
 MT\[K\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Property value lower bound
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 val2
 
 
-</td><td>
+</td><td markdown="1">
 
 MT\[K\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Property value upper bound
 

@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [API\_CONNECT\_SPEC\_ENHANCER](./apiconnect.apiconnectbindings.api_connect_spec_enhancer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Strongly-typed binding key for ApiConnectSpecEnhancer
 

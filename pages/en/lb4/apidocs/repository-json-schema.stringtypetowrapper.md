@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 type
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| Function
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of type
 

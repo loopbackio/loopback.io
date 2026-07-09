@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 authenticationStrategies
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\] \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 map
 
 
-</td><td>
+</td><td markdown="1">
 
 [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The original object containing the source entries
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolver
 
 
-</td><td>
+</td><td markdown="1">
 
 (val: T, key: string, values: [MapObject](./context.mapobject.md)<!-- -->&lt;T&gt;) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A function resolves an entry to a value or promise. It will be invoked with the property value, the property name, and the source object.
 

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 voters
 
 
-</td><td>
+</td><td markdown="1">
 
 ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

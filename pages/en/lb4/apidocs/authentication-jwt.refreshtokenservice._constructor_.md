@@ -39,87 +39,87 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 refreshSecret
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 refreshExpiresIn
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 refreshIssure
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 refreshTokenRepository
 
 
-</td><td>
+</td><td markdown="1">
 
 [RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 userService
 
 
-</td><td>
+</td><td markdown="1">
 
 [MyUserService](./authentication-jwt.myuserservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 jwtService
 
 
-</td><td>
+</td><td markdown="1">
 
 [TokenService](./authentication.tokenservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

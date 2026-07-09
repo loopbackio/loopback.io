@@ -37,15 +37,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(namespace)](./metadata.namespacedreflect._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `NamespacedReflect` class
 
@@ -71,143 +71,143 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [decorate(decorators, target, targetKey, descriptor)](./metadata.namespacedreflect.decorate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [decorate(decorators, target)](./metadata.namespacedreflect.decorate_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [defineMetadata(metadataKey, metadataValue, target, propertyKey)](./metadata.namespacedreflect.definemetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 define metadata for a target class or it's property/method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [deleteMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.deletemetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.getmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 lookup metadata from a target object and its prototype chain
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getMetadataKeys(target, propertyKey)](./metadata.namespacedreflect.getmetadatakeys.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getOwnMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.getownmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 get own metadata for a target object or it's property/method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getOwnMetadataKeys(target, propertyKey)](./metadata.namespacedreflect.getownmetadatakeys.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [hasMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.hasmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Check if the target has corresponding metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [hasOwnMetadata(metadataKey, target, propertyKey)](./metadata.namespacedreflect.hasownmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [metadata(metadataKey, metadataValue)](./metadata.namespacedreflect.metadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

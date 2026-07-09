@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 eventName
 
 
-</td><td>
+</td><td markdown="1">
 
 'refresh'
 
 
-</td><td>
+</td><td markdown="1">
 
 The name of the event - always `refresh`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 listener
 
 
-</td><td>
+</td><td markdown="1">
 
 () =&gt; void
 
 
-</td><td>
+</td><td markdown="1">
 
 The listener function to call when the event is emitted.
 

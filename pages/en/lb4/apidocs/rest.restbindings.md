@@ -34,32 +34,32 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Http](./rest.restbindings.http.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Request-specific bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Operation](./rest.restbindings.operation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SequenceActions](./rest.restbindings.sequenceactions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Bindings for potential actions that could be used in a sequence
 
@@ -80,56 +80,56 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AJV\_FACTORY](./rest.restbindings.ajv_factory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for AJV
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [API\_SPEC](./rest.restbindings.api_spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting an OpenAPI spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [BASE\_PATH](./rest.restbindings.base_path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Internal binding key for basePath
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONFIG](./rest.restbindings.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting RestComponentConfig
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ERROR\_WRITER\_OPTIONS](./rest.restbindings.error_writer_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting Reject action's error handling options.
 
@@ -137,230 +137,230 @@ See https://github.com/loopbackio/strong-error-handler\#options for the list of 
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HANDLER](./rest.restbindings.handler.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Internal binding key for http-handler
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HOST](./rest.restbindings.host.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the host name of RestServer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HTTPS\_OPTIONS](./rest.restbindings.https_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for HTTPS options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [INVOKE\_MIDDLEWARE\_SERVICE](./rest.restbindings.invoke_middleware_service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a `invokeMiddleware` function for middleware based sequence
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [OPERATION\_SPEC\_CURRENT](./rest.restbindings.operation_spec_current.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting an OpenAPI operation spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PATH](./rest.restbindings.path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the socket path of the RestServer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PORT](./rest.restbindings.port.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the port number of RestServer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PROTOCOL](./rest.restbindings.protocol.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the protocol of RestServer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER\_JSON](./rest.restbindings.request_body_parser_json.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request json body parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER\_OPTIONS](./rest.restbindings.request_body_parser_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request body parser options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER\_RAW](./rest.restbindings.request_body_parser_raw.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request raw body parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER\_STREAM](./rest.restbindings.request_body_parser_stream.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request raw body parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER\_TEXT](./rest.restbindings.request_body_parser_text.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request text body parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER\_URLENCODED](./rest.restbindings.request_body_parser_urlencoded.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request urlencoded body parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_PARSER](./rest.restbindings.request_body_parser.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for request body parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ROUTER\_OPTIONS](./rest.restbindings.router_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ROUTER](./rest.restbindings.router.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Internal binding key for rest router
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ROUTES](./rest.restbindings.routes.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for REST routes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SEQUENCE](./rest.restbindings.sequence.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a Sequence
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SERVER](./rest.restbindings.server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the server itself
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [URL](./rest.restbindings.url.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the URL of RestServer
 

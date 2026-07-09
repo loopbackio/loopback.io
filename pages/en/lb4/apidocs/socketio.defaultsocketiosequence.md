@@ -38,15 +38,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(context, controller, invoke, send, reject)](./socketio.defaultsocketiosequence._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `DefaultSocketIoSequence` class
 
@@ -77,98 +77,98 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [context](./socketio.defaultsocketiosequence.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [controller](./socketio.defaultsocketiosequence.controller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerClass](./core.controllerclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invoke](./socketio.defaultsocketiosequence.invoke.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoInvokeMethod](./socketio.socketioinvokemethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [reject](./socketio.defaultsocketiosequence.reject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoRejectMethod](./socketio.socketiorejectmethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [send](./socketio.defaultsocketiosequence.send.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoSendMethod](./socketio.socketiosendmethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -192,15 +192,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [handle(methodName, args, done)](./socketio.defaultsocketiosequence.handle.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

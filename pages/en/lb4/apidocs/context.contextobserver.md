@@ -44,39 +44,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [filter?](./context.contextobserver.filter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An optional filter function to match bindings. If not present, the listener will be notified of all binding events.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [observe](./context.contextobserver.observe.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ContextObserverFn](./context.contextobserverfn.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Listen on `bind`<!-- -->, `unbind`<!-- -->, or other events
 

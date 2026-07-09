@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [session](./rest.requestwithsession.session.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Session](./rest.session.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

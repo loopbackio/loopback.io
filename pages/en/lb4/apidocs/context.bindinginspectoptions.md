@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [includeInjections?](./context.bindinginspectoptions.includeinjections.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The flag to control if injections should be inspected
 

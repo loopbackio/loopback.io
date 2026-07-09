@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 sequence
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;[SequenceHandler](./rest.sequencehandler.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

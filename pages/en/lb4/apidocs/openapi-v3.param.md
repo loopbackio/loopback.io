@@ -34,34 +34,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [array(name, source, itemSpec)](./openapi-v3.param.array.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a parameter of `array` type.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [filter(modelCtor, options)](./openapi-v3.param.filter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sugar decorator for `filter` query parameter
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [where(modelCtor, name)](./openapi-v3.param.where.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sugar decorator for `where` query parameter
 
@@ -82,34 +82,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [header](./openapi-v3.param.header.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Header parameter decorator
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [path](./openapi-v3.param.path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Path parameter decorator
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [query](./openapi-v3.param.query.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Query parameter decorator
 

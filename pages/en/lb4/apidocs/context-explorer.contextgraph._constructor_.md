@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ctx
 
 
-</td><td>
+</td><td markdown="1">
 
 [JSONObject](./context.jsonobject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [ContextGraphOptions](./context-explorer.contextgraphoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 status
 
 
-</td><td>
+</td><td markdown="1">
 
 number \| 'default'
 
 
-</td><td>
+</td><td markdown="1">
 
 HTTP status code or string "default"
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 responseSpec
 
 
-</td><td>
+</td><td markdown="1">
 
 ResponseObject
 
 
-</td><td>
+</td><td markdown="1">
 
 Specification of the response
 

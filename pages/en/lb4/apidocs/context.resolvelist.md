@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 list
 
 
-</td><td>
+</td><td markdown="1">
 
 T\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 The original array containing the source entries
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolver
 
 
-</td><td>
+</td><td markdown="1">
 
 (val: T, index: number, values: T\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A function resolves an entry to a value or promise. It will be invoked with the property value, the property index, and the source array.
 

@@ -44,22 +44,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [pattern](./model-api-builder.modelapibuilder.pattern.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -78,12 +78,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [build(application, modelClass, config)](./model-api-builder.modelapibuilder.build.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

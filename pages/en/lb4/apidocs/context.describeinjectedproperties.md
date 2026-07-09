@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 The target class for static properties or prototype for instance properties.
 

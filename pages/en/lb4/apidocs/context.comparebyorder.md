@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 a
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| symbol \| undefined \| null
 
 
-</td><td>
+</td><td markdown="1">
 
 First value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 b
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| symbol \| undefined \| null
 
 
-</td><td>
+</td><td markdown="1">
 
 Second value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 order
 
 
-</td><td>
+</td><td markdown="1">
 
 (string \| symbol)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of values as the predefined order
 

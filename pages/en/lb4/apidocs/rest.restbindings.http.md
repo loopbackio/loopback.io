@@ -34,34 +34,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CONTEXT](./rest.restbindings.http.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the http request context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST](./rest.restbindings.http.request.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the http request
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RESPONSE](./rest.restbindings.http.response.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the http response
 

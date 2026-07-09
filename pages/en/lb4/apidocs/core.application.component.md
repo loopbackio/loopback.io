@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 componentCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The component class to add.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 nameOrOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional component name or options, default to the class name
 

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 factory
 
 
-</td><td>
+</td><td markdown="1">
 
 unknown
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function or a dynamic value provider class
 

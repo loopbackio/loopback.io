@@ -46,15 +46,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(context, filter, comparator, resolutionOptions)](./context.contextview._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a context view
 
@@ -85,125 +85,125 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [\_cachedBindings](./context.contextview._cachedbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\] \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of cached bindings that matches the binding filter
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [\_cachedValues](./context.contextview._cachedvalues.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Map&lt;Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;, T&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 A map of cached values by binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [bindings](./context.contextview.bindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the list of matched bindings. If they are not cached, it tries to find them from the context.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [comparator?](./context.contextview.comparator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingComparator](./context.bindingcomparator.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [context](./context.contextview.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [filter](./context.contextview.filter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -227,293 +227,293 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asGetter(session)](./context.contextview.asgetter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 As a `Getter` function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [close()](./context.contextview.close.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Stop listening events from the context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [findBindings()](./context.contextview.findbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Find matching bindings and refresh the cache
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [observe(event, binding, context)](./context.contextview.observe.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Listen on `bind` or `unbind` and invalidate the cache
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(eventName, listener)](./context.contextview.on.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "bind" event is emitted when a new binding is added to the view.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(eventName, listener)](./context.contextview.on_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "unbind" event is emitted a new binding is removed from the view.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(eventName, listener)](./context.contextview.on_2.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "refresh" event is emitted when the view is refreshed as bindings are added/removed.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(eventName, listener)](./context.contextview.on_3.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "resolve" event is emitted when the cached values are resolved and updated.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(eventName, listener)](./context.contextview.on_4.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "close" event is emitted when the view is closed (stopped observing context events)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(event, listener)](./context.contextview.on_5.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(eventName, listener)](./context.contextview.once.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "bind" event is emitted when a new binding is added to the view.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(eventName, listener)](./context.contextview.once_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "unbind" event is emitted a new binding is removed from the view.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(eventName, listener)](./context.contextview.once_2.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "refresh" event is emitted when the view is refreshed as bindings are added/removed.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(eventName, listener)](./context.contextview.once_3.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "resolve" event is emitted when the cached values are resolved and updated.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(eventName, listener)](./context.contextview.once_4.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "close" event is emitted when the view is closed (stopped observing context events)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(event, listener)](./context.contextview.once_5.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [open()](./context.contextview.open.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Start listening events from the context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [refresh()](./context.contextview.refresh.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Refresh the view by invalidating its cache
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolve(session)](./context.contextview.resolve.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolve values for the matching bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [singleValue(session)](./context.contextview.singlevalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the single value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [values(session)](./context.contextview.values.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the list of resolved values. If they are not cached, it tries to find and resolve them.
 

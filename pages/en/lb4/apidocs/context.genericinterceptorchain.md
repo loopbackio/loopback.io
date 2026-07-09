@@ -39,29 +39,29 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(context, interceptors)](./context.genericinterceptorchain._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an invocation chain with a list of interceptor functions or binding keys
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [(constructor)(context, filter, comparator)](./context.genericinterceptorchain._constructor__1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an invocation interceptor chain with a binding filter and comparator. The interceptors are discovered from the context using the binding filter and sorted by the comparator (if provided).
 
@@ -92,22 +92,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getInterceptors](./context.genericinterceptorchain.getinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 () =&gt; [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A getter for an array of interceptor functions or binding keys
 
@@ -133,29 +133,29 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asInterceptor()](./context.genericinterceptorchain.asinterceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Use the interceptor chain as an interceptor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeInterceptors(finalHandler)](./context.genericinterceptorchain.invokeinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Invoke the interceptor chain
 

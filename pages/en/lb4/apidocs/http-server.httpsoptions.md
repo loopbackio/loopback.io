@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [protocol](./http-server.httpsoptions.protocol.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 'https'
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

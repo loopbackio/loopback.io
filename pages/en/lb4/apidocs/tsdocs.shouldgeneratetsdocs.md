@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 pkg
 
 
-</td><td>
+</td><td markdown="1">
 
 [LernaPackage](./tsdocs.lernapackage.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Lerna package
 

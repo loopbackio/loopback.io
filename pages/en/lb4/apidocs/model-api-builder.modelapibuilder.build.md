@@ -39,45 +39,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 application
 
 
-</td><td>
+</td><td markdown="1">
 
 ApplicationWithRepositories
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 modelClass
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Model &amp; { prototype: Model; }
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 config
 
 
-</td><td>
+</td><td markdown="1">
 
 [ModelApiConfig](./model-api-builder.modelapiconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -36,41 +36,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AuthenticateActionProvider](./authentication.authenticateactionprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Provides the authentication action for a sequence
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationComponent](./authentication.authenticationcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationMiddlewareProvider](./authentication.authenticationmiddlewareprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An authentication strategy provider responsible for resolving an authentication strategy by name.
 
@@ -78,12 +78,12 @@ It declares an extension point to which all authentication strategy implementati
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthMetadataProvider](./authentication.authmetadataprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Provides authentication metadata of a controller method
 
@@ -104,45 +104,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [authenticate(strategies)](./authentication.authenticate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Mark a controller method as requiring authenticated user.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAuthenticateMetadata(targetClass, methodName)](./authentication.getauthenticatemetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Fetch authentication metadata stored by `@authenticate` decorator.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAuthenticationMetadataForStrategy(metadata, strategyName)](./authentication.getauthenticationmetadataforstrategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the authentication metadata object for the specified strategy.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerAuthenticationStrategy(context, strategyClass)](./authentication.registerauthenticationstrategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Registers an authentication strategy as an extension of the AuthenticationBindings.AUTHENTICATION\_STRATEGY\_EXTENSION\_POINT\_NAME extension point.
 
@@ -163,45 +163,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AuthenticateFn](./authentication.authenticatefn.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 interface definition of a function which accepts a request and returns an authenticated user
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationMetadata](./authentication.authenticationmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Authentication metadata stored via Reflection API
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationOptions](./authentication.authenticationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for authentication component
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationStrategy](./authentication.authenticationstrategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An interface that describes the common authentication strategy.
 
@@ -209,45 +209,45 @@ An authentication strategy is a class with an 'authenticate' method that verifie
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TokenService](./authentication.tokenservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An interface for generating and verifying a token
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserIdentityService](./authentication.useridentityservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The User Identity service links a user to profiles from an external source (eg: ldap, oauth2 provider, saml) which can identify the user. The profile typically has the following information: name, email-id, uuid, roles, authorizations, scope of accessible resources, expiration time for given access
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserProfileFactory](./authentication.userprofilefactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 interface definition of a factory function which accepts a user definition and returns the user profile
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserService](./authentication.userservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A service for performing the login action in an authentication strategy.
 
@@ -292,21 +292,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [authenticate](./authentication.authenticate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthenticationBindings](./authentication.authenticationbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -327,65 +327,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asAuthStrategy](./authentication.asauthstrategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A binding template for auth strategy contributor extensions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_METADATA\_CLASS\_KEY](./authentication.authentication_metadata_class_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The key used to store class-level metadata for `@authenticate`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_METADATA\_KEY](./authentication.authentication_metadata_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Alias for AUTHENTICATION\_METADATA\_METHOD\_KEY to keep it backward compatible
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_METADATA\_METHOD\_KEY](./authentication.authentication_metadata_method_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The key used to store method-level metadata for `@authenticate`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATION\_STRATEGY\_NOT\_FOUND](./authentication.authentication_strategy_not_found.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [USER\_PROFILE\_NOT\_FOUND](./authentication.user_profile_not_found.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

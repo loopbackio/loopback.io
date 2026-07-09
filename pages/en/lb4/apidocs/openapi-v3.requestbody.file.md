@@ -44,17 +44,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 properties
 
 
-</td><td>
+</td><td markdown="1">
 
 { description?: string; required?: boolean; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional description and required flag
 

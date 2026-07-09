@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 templateFns
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingTemplate](./context.bindingtemplate.md)<!-- -->&lt;T&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 One or more functions to configure the binding
 

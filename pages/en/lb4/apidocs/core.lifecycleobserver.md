@@ -34,34 +34,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [init(injectedArgs)?](./core.lifecycleobserver.init.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The method to be invoked during `init`<!-- -->. It will only be called at most once for a given application instance.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start(injectedArgs)?](./core.lifecycleobserver.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The method to be invoked during `start`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop(injectedArgs)?](./core.lifecycleobserver.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The method to be invoked during `stop`
 

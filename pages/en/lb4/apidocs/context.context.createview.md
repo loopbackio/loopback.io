@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 filter
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to match bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 comparator
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingComparator](./context.bindingcomparator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A function to sort matched bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, 'session'&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Resolution options
 

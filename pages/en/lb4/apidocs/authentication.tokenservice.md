@@ -34,34 +34,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [generateToken(userProfile)](./authentication.tokenservice.generatetoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Generates a token string based on a user profile
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [revokeToken(token)?](./authentication.tokenservice.revoketoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Revokes a given token (if supported by token system)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [verifyToken(token)](./authentication.tokenservice.verifytoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Verifies the validity of a token string and returns a user profile
 

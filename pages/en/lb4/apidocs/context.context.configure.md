@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The key for the binding to be configured
 

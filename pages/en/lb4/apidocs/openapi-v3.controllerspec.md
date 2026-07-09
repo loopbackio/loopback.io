@@ -42,58 +42,58 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [basePath?](./openapi-v3.controllerspec.basepath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The base path on which the Controller API is served. If it is not included, the API is served directly under the host. The value MUST start with a leading slash (/).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [components?](./openapi-v3.controllerspec.components.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 ComponentsObject
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ OpenAPI components.schemas generated from model metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [paths](./openapi-v3.controllerspec.paths.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 PathObject
 
 
-</td><td>
+</td><td markdown="1">
 
 The available paths and operations for the API.
 

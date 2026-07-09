@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 name
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The name of the security scheme
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 securityScheme
 
 
-</td><td>
+</td><td markdown="1">
 
 SecuritySchemeObject \| ReferenceObject
 
 
-</td><td>
+</td><td markdown="1">
 
 Specification of the security scheme
 

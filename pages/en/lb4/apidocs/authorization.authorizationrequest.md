@@ -44,77 +44,77 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [action](./authorization.authorizationrequest.action.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The operation that the requestor performs on the resource.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [domain?](./authorization.authorizationrequest.domain.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The domain (realm/tenant)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [object](./authorization.authorizationrequest.object.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The resource that is going to be accessed.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [subject](./authorization.authorizationrequest.subject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The requestor that wants to access a resource.
 

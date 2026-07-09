@@ -28,12 +28,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [PoolingService](./pooling.poolingservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A singleton service to maintain a pool of resources. This pool service can be bound to different keys to represent multiple pools. Each binding is a singleton so that the state stays the same for injections into multiple instances for other artifacts.
 
@@ -54,23 +54,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [createPooledBindingFactory(bindingAddress)](./pooling.createpooledbindingfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a function to return a pooled binding factory
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getPooledValue(poolingService, requestCtx)](./pooling.getpooledvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Acquire a resource from the pooling service or pool
 
@@ -91,45 +91,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Poolable](./pooling.poolable.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Life cycle methods that a poolable resource can optionally implement so that they can be triggered by the pooling service
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PooledValue](./pooling.pooledvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Pooled resource instance
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PoolFactory](./pooling.poolfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for the pooling service
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PoolingServiceOptions](./pooling.poolingserviceoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to configure a resource pool
 

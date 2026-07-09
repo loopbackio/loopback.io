@@ -37,61 +37,61 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 decorators
 
 
-</td><td>
+</td><td markdown="1">
 
 (PropertyDecorator \| MethodDecorator)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 targetKey
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| symbol
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 descriptor
 
 
-</td><td>
+</td><td markdown="1">
 
 PropertyDescriptor
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

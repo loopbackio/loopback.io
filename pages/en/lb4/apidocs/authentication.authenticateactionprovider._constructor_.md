@@ -39,73 +39,73 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 getStrategies
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;[AuthenticationStrategy](./authentication.authenticationstrategy.md) \| [AuthenticationStrategy](./authentication.authenticationstrategy.md)<!-- -->\[\] \| undefined&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 setCurrentUser
 
 
-</td><td>
+</td><td markdown="1">
 
 [Setter](./context.setter.md)<!-- -->&lt;[UserProfile](./security.userprofile.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 setRedirectUrl
 
 
-</td><td>
+</td><td markdown="1">
 
 [Setter](./context.setter.md)<!-- -->&lt;string&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 setRedirectStatus
 
 
-</td><td>
+</td><td markdown="1">
 
 [Setter](./context.setter.md)<!-- -->&lt;number&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthenticationOptions](./authentication.authenticationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

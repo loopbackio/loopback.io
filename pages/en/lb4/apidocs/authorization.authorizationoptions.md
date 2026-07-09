@@ -42,77 +42,77 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [defaultDecision?](./authorization.authorizationoptions.defaultdecision.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthorizationDecision.DENY](./authorization.authorizationdecision.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Default decision if all authorizers vote for ABSTAIN If not set, default to `AuthorizationDecision.DENY`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [defaultMetadata?](./authorization.authorizationoptions.defaultmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthorizationMetadata](./authorization.authorizationmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Default authorization metadata if a method is not decorated with `@authorize`<!-- -->. If not set, no authorization will be enforced for those methods that are not associated with authorization metadata.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [defaultStatusCodeForDeny?](./authorization.authorizationoptions.defaultstatuscodefordeny.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Default HTTP status code when the final decision is `AuthorizationDecision.DENY`<!-- -->. If not set, default to 403
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [precedence?](./authorization.authorizationoptions.precedence.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthorizationDecision.DENY](./authorization.authorizationdecision.md) \| [AuthorizationDecision.ALLOW](./authorization.authorizationdecision.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Controls if Allow/Deny vote takes precedence and override other votes. If not set, default to `AuthorizationDecision.DENY`<!-- -->.
 

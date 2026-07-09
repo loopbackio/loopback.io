@@ -39,45 +39,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 \_rootContext
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 \_serverConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 \_routes
 
 
-</td><td>
+</td><td markdown="1">
 
 [RoutingTable](./rest.routingtable.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

@@ -43,20 +43,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [providers](./authentication.authenticationcomponent.providers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[x: string\]: typeof [AuthenticateActionProvider](./authentication.authenticateactionprovider.md) \| typeof [AuthenticationMiddlewareProvider](./authentication.authenticationmiddlewareprovider.md) \| typeof [AuthMetadataProvider](./authentication.authmetadataprovider.md) \| typeof [AuthenticationStrategyProvider](./authentication.authenticationstrategyprovider.md)<!-- -->; }
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 definition
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[name: string\]: PropertyDefinition; }
 
 
-</td><td>
+</td><td markdown="1">
 
 property definition received from loopback entityClass eg. `{ id: { type: "Number", id: true } }`
 

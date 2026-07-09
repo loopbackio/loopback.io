@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 pattern
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| RegExp \| [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A filter function, a regexp or a wildcard pattern with optional `*` and `?`<!-- -->. Find returns such bindings where the key matches the provided pattern.
 

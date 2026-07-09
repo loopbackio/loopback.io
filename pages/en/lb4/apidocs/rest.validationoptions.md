@@ -45,115 +45,115 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ajvErrors?](./rest.validationoptions.ajverrors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [AjvErrorOptions](./rest.ajverroroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Enable custom error messages in JSON-Schema for AJV validator from https://github.com/epoberezkin/ajv-errors - `true`<!-- -->: Enable `ajv-errors` - `AjvErrorOptions`<!-- -->: Enable `ajv-errors` with options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ajvErrorTransformer?](./rest.validationoptions.ajverrortransformer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (errors: ErrorObject\[\]) =&gt; ErrorObject\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A function that transform the `ErrorObject`<!-- -->s reported by AJV. This could be used for error messages customization, localization, etc.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ajvFactory?](./rest.validationoptions.ajvfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (options: AjvOptions) =&gt; Ajv
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A factory to create Ajv instance
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ajvKeywords?](./rest.validationoptions.ajvkeywords.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Enable additional AJV keywords from https://github.com/epoberezkin/ajv-keywords - `string[]`<!-- -->: Add an array of keywords from `ajv-keywords`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [compiledSchemaCache?](./rest.validationoptions.compiledschemacache.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [SchemaValidatorCache](./rest.schemavalidatorcache.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Custom cache for compiled schemas by AJV. This setting makes it possible to skip the default cache.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [prohibitedKeys?](./rest.validationoptions.prohibitedkeys.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of keys to be rejected, such as `__proto__`<!-- -->.
 

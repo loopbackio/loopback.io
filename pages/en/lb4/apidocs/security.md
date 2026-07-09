@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DefaultSubject](./security.defaultsubject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Default implementation of `Subject`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Permission](./security.permission.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `Permission` defines an action/access against a protected resource. It's the `what` for security.
 
@@ -58,12 +58,12 @@ There are three levels of permissions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TypedPrincipal](./security.typedprincipal.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -82,72 +82,72 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ClientApplication](./security.clientapplication.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Credential](./security.credential.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Security attributes used to authenticate the subject. Such credentials include passwords, Kerberos tickets, and public key certificates.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Organization](./security.organization.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Principal](./security.principal.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Represent a user, an application, or a device
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Role](./security.role.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Scope](./security.scope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 oAuth 2.0 scope
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Subject](./security.subject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `Subject` represents both security state and operations for a single request. It's the `who` for security.
 
@@ -155,21 +155,21 @@ Such operations include: - authentication (login) - authorization (access contro
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Team](./security.team.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserProfile](./security.userprofile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The minimum set of attributes that describe a user.
 
@@ -190,12 +190,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [SecurityBindings](./security.securitybindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys for security related metadata
 
@@ -216,12 +216,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [securityId](./security.securityid.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A symbol for stringified id of security related objects
 

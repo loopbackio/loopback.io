@@ -37,45 +37,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 requestBodyParser
 
 
-</td><td>
+</td><td markdown="1">
 
 [RequestBodyParser](./rest.requestbodyparser.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 validationOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 [ValidationOptions](./rest.validationoptions.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 ajvFactory
 
 
-</td><td>
+</td><td markdown="1">
 
 [AjvFactory](./rest.ajvfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

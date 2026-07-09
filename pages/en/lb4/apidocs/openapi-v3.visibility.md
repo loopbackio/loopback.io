@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 visibilityType
 
 
-</td><td>
+</td><td markdown="1">
 
 [OperationVisibility](./openapi-v3.operationvisibility.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

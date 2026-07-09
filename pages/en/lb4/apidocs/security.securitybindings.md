@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [SUBJECT](./security.securitybindings.subject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for subject
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [USER](./security.securitybindings.user.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for current user profile
 

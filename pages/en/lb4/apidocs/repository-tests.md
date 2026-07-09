@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [crudRepositoryTestSuite(dataSourceOptions, repositoryClass, partialFeatures)](./repository-tests.crudrepositorytestsuite.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -56,12 +56,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CrudFeatures](./repository-tests.crudfeatures.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 List of flags describing behavior specific to different connectors and repository implementations. These flags are used by the test suite to tweak assertions and skip tests for scenarios not supported by some implementations.
 
@@ -82,34 +82,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CrudRepositoryCtor](./repository-tests.crudrepositoryctor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A constructor of a class implementing CrudRepository interface, accepting the Entity class (constructor) and a dataSource instance.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DataSourceOptions](./repository-tests.datasourceoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 DataSource configuration (connector name, connection string, etc.).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TransactionalRepositoryCtor](./repository-tests.transactionalrepositoryctor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A constructor of a class implementing TransactionalRepository interface, accepting the Entity class (constructor) and a dataSource instance.
 

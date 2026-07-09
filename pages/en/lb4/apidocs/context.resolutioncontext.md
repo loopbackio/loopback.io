@@ -44,64 +44,64 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [binding](./context.resolutioncontext.binding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The binding to be resolved
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [context](./context.resolutioncontext.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The context for resolution
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [options](./context.resolutioncontext.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionOptions](./context.resolutionoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The options used for resolution
 

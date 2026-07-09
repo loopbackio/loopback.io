@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 interceptor
 
 
-</td><td>
+</td><td markdown="1">
 
 [Interceptor](./context.interceptor.md) \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;[Interceptor](./context.interceptor.md)<!-- -->&gt;&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 An interceptor function or provider class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 nameOrOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| [InterceptorBindingOptions](./context.interceptorbindingoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Binding name or options
 

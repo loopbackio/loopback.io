@@ -42,39 +42,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [httpServerOptions?](./socketio.socketioserveroptions.httpserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [socketIoOptions?](./socketio.socketioserveroptions.socketiooptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 ServerOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

@@ -32,61 +32,61 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [connect()](./socketio.socketio.connect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate a controller method for `connect`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [disconnect()](./socketio.socketio.disconnect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate a controller method for `disconnect`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [io()](./socketio.socketio.io.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [namespace(name)](./socketio.socketio.namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [socket()](./socketio.socketio.socket.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [subscribe(messageTypes)](./socketio.socketio.subscribe.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate a method to subscribe to socketio events. For example,
 

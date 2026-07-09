@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 propertyPath
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| [ConfigInjectionMetadata](./context.configinjectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional property path of the config object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [ConfigInjectionMetadata](./context.configinjectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Injection metadata
 

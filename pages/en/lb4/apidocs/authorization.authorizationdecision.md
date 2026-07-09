@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ABSTAIN
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Abstain"`
 
 
-</td><td>
+</td><td markdown="1">
 
 No decision
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 ALLOW
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Allow"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Access allowed
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 DENY
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Deny"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Access denied
 

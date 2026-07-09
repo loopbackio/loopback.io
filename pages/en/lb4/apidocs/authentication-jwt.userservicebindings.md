@@ -32,39 +32,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DATASOURCE\_NAME](./authentication-jwt.userservicebindings.datasource_name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [USER\_CREDENTIALS\_REPOSITORY](./authentication-jwt.userservicebindings.user_credentials_repository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [USER\_REPOSITORY](./authentication-jwt.userservicebindings.user_repository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [USER\_SERVICE](./authentication-jwt.userservicebindings.user_service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

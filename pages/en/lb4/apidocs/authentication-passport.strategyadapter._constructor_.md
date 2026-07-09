@@ -39,47 +39,47 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 strategy
 
 
-</td><td>
+</td><td markdown="1">
 
 Strategy
 
 
-</td><td>
+</td><td markdown="1">
 
 instance of a class which implements a [passport-strategy](http://passportjs.org/)<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 name
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 userProfileFactory
 
 
-</td><td>
+</td><td markdown="1">
 
 [UserProfileFactory](./authentication.userprofilefactory.md)<!-- -->&lt;U&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

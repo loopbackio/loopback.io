@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 relMeta
 
 
-</td><td>
+</td><td markdown="1">
 
 RelationMetadata
 
 
-</td><td>
+</td><td markdown="1">
 
 Relation metadata object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 targetRef
 
 
-</td><td>
+</td><td markdown="1">
 
 JsonSchema
 
 
-</td><td>
+</td><td markdown="1">
 
 Schema definition for the target model
 

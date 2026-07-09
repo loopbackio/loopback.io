@@ -37,31 +37,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 logError
 
 
-</td><td>
+</td><td markdown="1">
 
 [LogError](./rest.logerror.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 errorWriterOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 ErrorWriterOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

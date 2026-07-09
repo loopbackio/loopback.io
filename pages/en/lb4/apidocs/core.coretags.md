@@ -32,100 +32,100 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./core.coretags.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for components
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER](./core.coretags.controller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for controllers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [EXTENSION\_FOR](./core.coretags.extension_for.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for extensions to specify name of the extension point that an extension contributes to.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [EXTENSION\_POINT](./core.coretags.extension_point.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for an extension point to specify name of the extension point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LIFE\_CYCLE\_OBSERVER\_GROUP](./core.coretags.life_cycle_observer_group.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for group name of life cycle observers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LIFE\_CYCLE\_OBSERVER](./core.coretags.life_cycle_observer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for life cycle observers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SERVER](./core.coretags.server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for servers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SERVICE\_INTERFACE](./core.coretags.service_interface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for the service interface
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SERVICE](./core.coretags.service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for services
 

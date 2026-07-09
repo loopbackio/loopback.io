@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 tagNames
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A list of tags for API documentation control. Tags can be used for logical grouping of operations by resources or any other qualifier.
 

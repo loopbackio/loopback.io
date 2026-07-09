@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 propertyPath
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Property path for the option. For example, `x.y` requests for `<config>.x.y`<!-- -->. If not set, the `<config>` object will be returned.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolutionOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionOptions](./context.resolutionoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for the resolution. - optional: if not set or set to `true`<!-- -->, `undefined` will be returned if no corresponding value is found. Otherwise, an error will be thrown.
 

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 modelCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Model
 
 
-</td><td>
+</td><td markdown="1">
 
 Model class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 name
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Custom name for the parameter, default to `where`
 

@@ -44,96 +44,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [location](./tsdocs.lernapackage.location.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Location of the package
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [manifestLocation](./tsdocs.lernapackage.manifestlocation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Location of `package.json`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [name](./tsdocs.lernapackage.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Package name
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [private](./tsdocs.lernapackage.private.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Is it a private package?
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [rootPath](./tsdocs.lernapackage.rootpath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Root directory of the monorepo
 

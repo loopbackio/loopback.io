@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)()](./openapi-spec-builder.componentsspecbuilder._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `ComponentsSpecBuilder` class
 
@@ -74,127 +74,127 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [withCallback(name, callback)](./openapi-spec-builder.componentsspecbuilder.withcallback.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component callback.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withExample(name, example)](./openapi-spec-builder.componentsspecbuilder.withexample.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component example.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withHeader(name, header)](./openapi-spec-builder.componentsspecbuilder.withheader.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component header.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withLink(name, link)](./openapi-spec-builder.componentsspecbuilder.withlink.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component link.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withParameter(name, parameter)](./openapi-spec-builder.componentsspecbuilder.withparameter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component parameter.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withRequestBody(name, requestBody)](./openapi-spec-builder.componentsspecbuilder.withrequestbody.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component request body.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withResponse(name, response)](./openapi-spec-builder.componentsspecbuilder.withresponse.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component response.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withSchema(name, schema)](./openapi-spec-builder.componentsspecbuilder.withschema.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component schema.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withSecurityScheme(name, securityScheme)](./openapi-spec-builder.componentsspecbuilder.withsecurityscheme.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a component security scheme.
 

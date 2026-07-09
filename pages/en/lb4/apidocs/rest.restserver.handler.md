@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 handlerFn
 
 
-</td><td>
+</td><td markdown="1">
 
 [SequenceFunction](./rest.sequencefunction.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The handler to invoke for each incoming request.
 

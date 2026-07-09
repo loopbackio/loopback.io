@@ -34,61 +34,61 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DATASOURCE\_NAME](./authentication-jwt.refreshtokenservicebindings.datasource_name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The backend datasource for refresh token's persistency.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_EXPIRES\_IN](./authentication-jwt.refreshtokenservicebindings.refresh_expires_in.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_ISSUER](./authentication-jwt.refreshtokenservicebindings.refresh_issuer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_REPOSITORY](./authentication-jwt.refreshtokenservicebindings.refresh_repository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Key for the repository that stores the refresh token and its bound user information
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_SECRET](./authentication-jwt.refreshtokenservicebindings.refresh_secret.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REFRESH\_TOKEN\_SERVICE](./authentication-jwt.refreshtokenservicebindings.refresh_token_service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

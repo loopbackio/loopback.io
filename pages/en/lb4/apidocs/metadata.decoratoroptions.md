@@ -44,39 +44,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [allowInheritance?](./metadata.decoratoroptions.allowinheritance.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Controls if inherited metadata will be honored. Default to `true`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [cloneInputSpec?](./metadata.decoratoroptions.cloneinputspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Controls if the value of `spec` argument will be cloned. Sometimes we use shared spec for the decoration, but the decorator function might need to mutate the object. Cloning the input spec makes it safe to use the same spec (`template`<!-- -->) to decorate different members.
 
@@ -84,20 +84,20 @@ Default to `true`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [decoratorName?](./metadata.decoratoroptions.decoratorname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Name of the decorator for debugging purpose, such as `@inject`
 

@@ -45,115 +45,115 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [apollo?](./graphql.graphqlserveroptions.apollo.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Partial&lt;ApolloServerOptionsWithStaticSchema&lt;TContext&gt;&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ ApolloServerExpress related configuration
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asMiddlewareOnly?](./graphql.graphqlserveroptions.asmiddlewareonly.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Use as a middleware for RestServer instead of a standalone server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [expressSettings?](./graphql.graphqlserveroptions.expresssettings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Record&lt;string, unknown&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Express settings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [graphQLPath?](./graphql.graphqlserveroptions.graphqlpath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [middlewareOptions?](./graphql.graphqlserveroptions.middlewareoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Record&lt;string, unknown&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Middleware options for GraphQL
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [validate?](./graphql.graphqlserveroptions.validate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

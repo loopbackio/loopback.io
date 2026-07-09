@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 tagFilter
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingTag](./context.bindingtag.md) \| RegExp
 
 
-</td><td>
+</td><td markdown="1">
 
 A filter for tags. It can be in one of the following forms: - A regular expression, such as `/controller/` - A wildcard pattern string with optional `*` and `?`<!-- -->, such as `'con*'` For a wildcard: - `*` matches zero or more characters except `.` and `:` - `?` matches exactly one character except `.` and `:` - An object containing tag name/value pairs, such as `{name: 'my-controller'}`
 

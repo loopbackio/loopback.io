@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindingTag
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingTag](./context.bindingtag.md) \| RegExp
 
 
-</td><td>
+</td><td markdown="1">
 
 Tag name, regex or object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [InjectionMetadata](./context.injectionmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional metadata to help the injection
 

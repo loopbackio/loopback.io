@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ALWAYS\_CREATE
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Always"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Always create a binding with the key for the context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 CREATE\_IF\_NOT\_BOUND
 
 
-</td><td>
+</td><td markdown="1">
 
 `"IfNotBound"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a binding if the key is not bound in the context. Otherwise, return the existing binding.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 NEVER\_CREATE
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Never"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Never create a binding for the context. If the key is not bound in the context, throw an error.
 

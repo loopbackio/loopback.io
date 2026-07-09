@@ -37,45 +37,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 inheritedMetadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [MetadataMap](./metadata.metadatamap.md)<!-- -->&lt;T\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 methodName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

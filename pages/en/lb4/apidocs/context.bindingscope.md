@@ -39,79 +39,79 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 APPLICATION
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Application"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Application scope
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 CONTEXT
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Context"`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 REQUEST
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Request"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Request scope
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 SERVER
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Server"`
 
 
-</td><td>
+</td><td markdown="1">
 
 Server scope
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 SINGLETON
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Singleton"`
 
 
-</td><td>
+</td><td markdown="1">
 
 The binding provides a value as a singleton within the context hierarchy (the owning context and its descendants). The value is calculated only once for the owning context and cached for subsequential uses. Child contexts share the same value as their ancestors.
 
@@ -127,17 +127,17 @@ For example, with the following context hierarchy:
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 TRANSIENT
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Transient"`
 
 
-</td><td>
+</td><td markdown="1">
 
 The binding provides a value that is calculated each time. This will be the default scope if not set.
 

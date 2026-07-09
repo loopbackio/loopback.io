@@ -41,49 +41,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 command
 
 
-</td><td>
+</td><td markdown="1">
 
 Command
 
 
-</td><td>
+</td><td markdown="1">
 
 A parameterized SQL command or query.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 parameters
 
 
-</td><td>
+</td><td markdown="1">
 
 NamedParameters \| PositionalParameters
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ List of parameter values to use.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 Options
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Additional options, for example `transaction`<!-- -->.
 

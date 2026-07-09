@@ -32,30 +32,30 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [PARAMS](./rest.restbindings.operation.params.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RETURN\_VALUE](./rest.restbindings.operation.return_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ROUTE](./rest.restbindings.operation.route.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

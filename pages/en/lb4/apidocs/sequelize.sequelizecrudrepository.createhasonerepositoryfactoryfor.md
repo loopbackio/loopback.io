@@ -41,33 +41,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 relationName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the relation defined on the source model
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 targetRepositoryGetter
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt; \| { \[repoType: string\]: Getter&lt;EntityCrudRepository&lt;Target, TargetID&gt;&gt;; }
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

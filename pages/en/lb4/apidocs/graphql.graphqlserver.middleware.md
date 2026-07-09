@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 middleware
 
 
-</td><td>
+</td><td markdown="1">
 
 Middleware&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 GraphQL middleware
 

@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [HttpServer](./http-server.httpserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 HTTP / HTTPS server used by LoopBack's RestServer
 
@@ -58,34 +58,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [BaseHttpOptions](./http-server.basehttpoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Base options that are common to http and https servers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HttpOptions](./http-server.httpoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 HTTP server options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HttpsOptions](./http-server.httpsoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 HTTPS server options
 
@@ -106,45 +106,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [HttpProtocol](./http-server.httpprotocol.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Supported protocols
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HttpServerOptions](./http-server.httpserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Possible server options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HttpServerProperties](./http-server.httpserverproperties.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The following are for configuring properties which are directly set on https://nodejs.org/api/http.html\#http\_class\_http\_server and https://nodejs.org/api/net.html\#net\_class\_net\_server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RequestListener](./http-server.requestlistener.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Request listener function for http/https requests
 

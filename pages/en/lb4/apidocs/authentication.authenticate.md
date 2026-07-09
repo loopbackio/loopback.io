@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [skip()](./authentication.authenticate.skip.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@authenticate.skip()` - a sugar decorator to skip authentication
 

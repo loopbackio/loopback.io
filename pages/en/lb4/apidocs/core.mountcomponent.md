@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 app
 
 
-</td><td>
+</td><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Application
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 component
 
 
-</td><td>
+</td><td markdown="1">
 
 [Component](./core.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Component instance
 

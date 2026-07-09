@@ -41,65 +41,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ownMetadata
 
 
-</td><td>
+</td><td markdown="1">
 
 M
 
 
-</td><td>
+</td><td markdown="1">
 
 Own Metadata exists locally on the target
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 Decoration target
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 member
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| symbol
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional property or method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 descriptorOrIndex
 
 
-</td><td>
+</td><td markdown="1">
 
 TypedPropertyDescriptor&lt;any&gt; \| number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional parameter index or method descriptor
 

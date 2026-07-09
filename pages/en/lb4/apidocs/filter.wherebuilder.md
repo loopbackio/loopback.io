@@ -52,15 +52,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(w)](./filter.wherebuilder._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `WhereBuilder` class
 
@@ -91,20 +91,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [where](./filter.wherebuilder.where.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Where](./filter.where.md)<!-- -->&lt;MT&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -128,279 +128,279 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [and(w)](./filter.wherebuilder.and.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add an `and` clause.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [between(key, val1, val2)](./filter.wherebuilder.between.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `between` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [build()](./filter.wherebuilder.build.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the where object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [cast(clause)](./filter.wherebuilder.cast.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [eq(key, val)](./filter.wherebuilder.eq.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add an `=` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [exists(key, val)](./filter.wherebuilder.exists.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `exists` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [gt(key, val)](./filter.wherebuilder.gt.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `>` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [gte(key, val)](./filter.wherebuilder.gte.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `>=` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ilike(key, val)](./filter.wherebuilder.ilike.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `ilike` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [impose(where)](./filter.wherebuilder.impose.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a where object. For conflicting keys with the existing where object, create an `and` clause.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inq(key, val)](./filter.wherebuilder.inq.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `inq` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [like(key, val)](./filter.wherebuilder.like.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `like` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lt(key, val)](./filter.wherebuilder.lt.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `<` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lte(key, val)](./filter.wherebuilder.lte.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `<=` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [neq(key, val)](./filter.wherebuilder.neq.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `!=` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [nilike(key, val)](./filter.wherebuilder.nilike.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `nilike` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [nin(key, val)](./filter.wherebuilder.nin.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `nin` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [nlike(key, val)](./filter.wherebuilder.nlike.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `nlike` condition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [or(w)](./filter.wherebuilder.or.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add an `or` clause.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [regexp(key, val)](./filter.wherebuilder.regexp.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a `regexp` condition
 

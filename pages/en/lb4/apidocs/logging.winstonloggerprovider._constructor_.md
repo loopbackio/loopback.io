@@ -42,45 +42,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 transports
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;Transport\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 formats
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;Format\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 LoggerOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

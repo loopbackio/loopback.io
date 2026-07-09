@@ -42,83 +42,83 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CONFIG\_NAMESPACE](./context.bindingkey.config_namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name space for configuration binding keys
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [key](./context.bindingkey.key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PROPERTY\_SEPARATOR](./context.bindingkey.property_separator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 (not declared)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [propertyPath?](./context.bindingkey.propertypath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
@@ -144,63 +144,63 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [buildKeyForConfig(key)](./context.bindingkey.buildkeyforconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a binding key for the configuration of the given binding. The format is `<key>:$config`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [create(key, propertyPath)](./context.bindingkey.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a new key for a binding bound to a value of type `ValueType`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [deepProperty(propertyPath)](./context.bindingkey.deepproperty.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get a binding address for retrieving a deep property of the object bound to the current binding key.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [generate(namespace)](./context.bindingkey.generate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Generate a universally unique binding key.
 
@@ -208,45 +208,45 @@ Please note the format of they generated key is not specified, you must not rely
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [parseKeyWithPath(keyWithPath)](./context.bindingkey.parsekeywithpath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Parse a string containing both the binding key and the path to the deeply nested property to retrieve.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toString()](./context.bindingkey.tostring.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [validate(key)](./context.bindingkey.validate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Validate the binding key format. Please note that `#` is reserved. Returns a string representation of the binding key.
 

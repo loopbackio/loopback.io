@@ -40,59 +40,59 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [create()](./metadata.parameterdecoratorfactory.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createDecorator(key, spec, options)](./metadata.parameterdecoratorfactory.createdecorator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a parameter decorator function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithInherited(inheritedMetadata, target, methodName, parameterIndex)](./metadata.parameterdecoratorfactory.mergewithinherited.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithOwn(ownMetadata, target, methodName, parameterIndex)](./metadata.parameterdecoratorfactory.mergewithown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

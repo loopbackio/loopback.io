@@ -42,15 +42,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(request, response, parent, serverConfig, name)](./rest.requestcontext._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `RequestContext` class
 
@@ -81,62 +81,62 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [basePath](./rest.requestcontext.basepath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the effective base path of the incoming request. This base path combines `baseUrl` provided by Express when LB4 handler is mounted on a non-root path, with the `basePath` value configured at LB4 side.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [request](./rest.requestcontext.request.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Request
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [requestedBaseUrl](./rest.requestcontext.requestedbaseurl.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the base URL used by the client to make the request. This URL contains the protocol, hostname, port and base path. The path of the invoked route and query string is not included.
 
@@ -144,62 +144,62 @@ Please note these values may be different from what we are observing at HTTP/TCP
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [requestedProtocol](./rest.requestcontext.requestedprotocol.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the protocol used by the client to make the request. Please note this protocol may be different from what we are observing at HTTP/TCP level, because reverse proxies like nginx or sidecars like Envoy are switching between protocols.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [response](./rest.requestcontext.response.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Response
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [serverConfig](./rest.requestcontext.serverconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -223,17 +223,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [setupBindings()](./rest.requestcontext.setupbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

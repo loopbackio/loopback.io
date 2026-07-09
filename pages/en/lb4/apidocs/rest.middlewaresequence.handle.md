@@ -47,17 +47,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [RequestContext](./rest.requestcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The request context: HTTP request and response objects, per-request IoC container and more.
 

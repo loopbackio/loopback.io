@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 isDeprecated
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ whether or not the path should be marked as deprecated. This is useful for marking a class as deprecated, but a method as not deprecated.
 

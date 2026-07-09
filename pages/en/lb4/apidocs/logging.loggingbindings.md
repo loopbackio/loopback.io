@@ -34,63 +34,63 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./logging.loggingbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [FLUENT\_SENDER](./logging.loggingbindings.fluent_sender.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [WINSTON\_HTTP\_ACCESS\_LOGGER](./logging.loggingbindings.winston_http_access_logger.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for http access logger with winston
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [WINSTON\_INVOCATION\_LOGGER](./logging.loggingbindings.winston_invocation_logger.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for method invocation logger with winston
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [WINSTON\_LOGGER](./logging.loggingbindings.winston_logger.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for winston logger
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [WINSTON\_TRANSPORT\_FLUENT](./logging.loggingbindings.winston_transport_fluent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for winston transport backed by fluent
 

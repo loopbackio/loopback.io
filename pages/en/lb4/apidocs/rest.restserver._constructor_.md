@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 app
 
 
-</td><td>
+</td><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The application instance (injected via CoreBindings.APPLICATION\_INSTANCE).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 config
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestServerConfig](./rest.restserverconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The configuration options (injected via RestBindings.CONFIG).
 

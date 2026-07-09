@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 request
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthorizationRequest](./authorization.authorizationrequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

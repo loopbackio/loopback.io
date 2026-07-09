@@ -37,15 +37,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(parsers, ctx)](./rest.requestbodyparser._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `RequestBodyParser` class
 
@@ -76,22 +76,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [parsers](./rest.requestbodyparser.parsers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [BodyParser](./rest.bodyparser.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -115,15 +115,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [loadRequestBodyIfNeeded(operationSpec, request)](./rest.requestbodyparser.loadrequestbodyifneeded.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

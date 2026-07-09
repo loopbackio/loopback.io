@@ -39,81 +39,81 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ALIAS
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Alias"`
 
 
-</td><td>
+</td><td markdown="1">
 
 A alias to another binding key with optional path
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 CLASS
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Class"`
 
 
-</td><td>
+</td><td markdown="1">
 
 A class to be instantiated as the value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 CONSTANT
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Constant"`
 
 
-</td><td>
+</td><td markdown="1">
 
 A fixed value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 DYNAMIC\_VALUE
 
 
-</td><td>
+</td><td markdown="1">
 
 `"DynamicValue"`
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to get the value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 PROVIDER
 
 
-</td><td>
+</td><td markdown="1">
 
 `"Provider"`
 
 
-</td><td>
+</td><td markdown="1">
 
 A provider class with `value()` function to get the value
 

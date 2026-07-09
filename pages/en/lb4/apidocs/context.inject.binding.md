@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindingKey
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| [BindingKey](./context.bindingkey.md)<!-- -->&lt;unknown&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Binding key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [InjectBindingMetadata](./context.injectbindingmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Metadata for the injection
 

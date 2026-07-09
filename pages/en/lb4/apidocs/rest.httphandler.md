@@ -37,15 +37,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(\_rootContext, \_serverConfig, \_routes)](./rest.httphandler._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `HttpHandler` class
 
@@ -76,104 +76,104 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [\_openApiComponents](./rest.httphandler._openapicomponents.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 ComponentsObject
 
 
-</td><td>
+</td><td markdown="1">
 
 Shared OpenAPI spec objects as `components`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [\_rootContext](./rest.httphandler._rootcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [\_routes](./rest.httphandler._routes.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [RoutingTable](./rest.routingtable.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [\_serverConfig](./rest.httphandler._serverconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestServerResolvedConfig](./rest.restserverresolvedconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [handleRequest](./rest.httphandler.handlerequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (request: Request, response: Response) =&gt; Promise&lt;void&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -197,115 +197,115 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [\_handleRequest(request, response)](./rest.httphandler._handlerequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [describeApiPaths()](./rest.httphandler.describeapipaths.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [findRoute(request)](./rest.httphandler.findroute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getApiComponents()](./rest.httphandler.getapicomponents.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getApiDefinitions()](./rest.httphandler.getapidefinitions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerApiComponents(defs)](./rest.httphandler.registerapicomponents.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Merge components into the OpenApi spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerApiDefinitions(defs)](./rest.httphandler.registerapidefinitions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerController(spec, controllerCtor, controllerFactory)](./rest.httphandler.registercontroller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerRoute(route)](./rest.httphandler.registerroute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

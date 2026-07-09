@@ -41,33 +41,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 currentSpec
 
 
-</td><td>
+</td><td markdown="1">
 
 C
 
 
-</td><td>
+</td><td markdown="1">
 
 The original spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 patchSpec
 
 
-</td><td>
+</td><td markdown="1">
 
 P
 
 
-</td><td>
+</td><td markdown="1">
 
 The patch spec to be merged into the original spec
 

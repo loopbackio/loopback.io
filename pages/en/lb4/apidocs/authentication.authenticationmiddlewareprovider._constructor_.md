@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 authenticate
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthenticateFn](./authentication.authenticatefn.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

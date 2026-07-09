@@ -44,22 +44,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [repository](./rest-crud.crudrestcontroller.repository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 EntityCrudRepository&lt;T, IdType&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The backing repository used to access &amp; modify model data.
 
@@ -80,12 +80,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [find(filter)](./rest-crud.crudrestcontroller.find.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Implementation of the endpoint `GET /`<!-- -->.
 

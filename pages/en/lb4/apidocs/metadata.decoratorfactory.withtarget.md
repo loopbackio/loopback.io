@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 Target of the decoration. It is a class or the prototype of a class.
 

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 pkg
 
 
-</td><td>
+</td><td markdown="1">
 
 [ApplicationMetadata](./core.applicationmetadata.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

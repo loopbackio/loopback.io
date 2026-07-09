@@ -39,47 +39,47 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 invokeMiddleware
 
 
-</td><td>
+</td><td markdown="1">
 
 InvokeMiddleware
 
 
-</td><td>
+</td><td markdown="1">
 
 invoker for registered middleware in a chain. To be injected via RestBindings.INVOKE\_MIDDLEWARE\_SERVICE.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 InvokeMiddlewareOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

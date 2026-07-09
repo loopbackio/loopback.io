@@ -34,30 +34,30 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./health.healthbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONFIG](./health.healthbindings.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HEALTH\_CHECKER](./health.healthbindings.health_checker.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

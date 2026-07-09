@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(loggingConfig)](./logging.loggingcomponent._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `LoggingComponent` class
 
@@ -79,37 +79,37 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindings](./logging.loggingcomponent.bindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [providers](./logging.loggingcomponent.providers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ProviderMap](./core.providermap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -58,23 +58,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [convertToUserProfile(user)](./authentication.userservice.converttouserprofile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Convert the user returned by `verifyCredentials()` to a common user profile that describes a user in your application
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [verifyCredentials(credentials)](./authentication.userservice.verifycredentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Verify the identity of a user, construct a corresponding user profile using the user information and return the user profile.
 

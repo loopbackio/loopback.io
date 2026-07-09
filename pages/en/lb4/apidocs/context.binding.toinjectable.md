@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ctor
 
 
-</td><td>
+</td><td markdown="1">
 
 [DynamicValueProviderClass](./context.dynamicvalueproviderclass.md)<!-- -->&lt;T&gt; \| [Constructor](./context.constructor.md)<!-- -->&lt;T \| [Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A class decorated with `@injectable`<!-- -->.
 

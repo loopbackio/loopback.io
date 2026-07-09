@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 cls
 
 
-</td><td>
+</td><td markdown="1">
 
 [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->&lt;S&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The service or provider class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 nameOrOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| [ServiceOptions](./core.serviceoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

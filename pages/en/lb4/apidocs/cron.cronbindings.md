@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./cron.cronbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for `CronComponent`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CRON\_JOB\_NAMESPACE](./cron.cronbindings.cron_job_namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for cron jobs
 

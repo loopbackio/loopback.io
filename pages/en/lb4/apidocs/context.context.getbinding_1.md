@@ -41,33 +41,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 { optional?: boolean; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options to control if the binding is optional. If `options.optional` is set to true, the method will return `undefined` instead of throwing an error if the binding key is not found.
 

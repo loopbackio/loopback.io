@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 controllerClass
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;object&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 meta
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoMetadata](./socketio.socketiometadata.md) \| string \| RegExp
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

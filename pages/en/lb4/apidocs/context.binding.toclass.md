@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ctor
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;C&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The class constructor to call. Any constructor arguments must be annotated with `@inject` so that we can resolve them from the context.
 

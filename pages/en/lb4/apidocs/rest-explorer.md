@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [RestExplorerComponent](./rest-explorer.restexplorercomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A component providing a self-hosted API Explorer.
 
@@ -58,12 +58,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [RestExplorerBindings](./rest-explorer.restexplorerbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -84,12 +84,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [RestExplorerConfig](./rest-explorer.restexplorerconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to configure API Explorer UI
 

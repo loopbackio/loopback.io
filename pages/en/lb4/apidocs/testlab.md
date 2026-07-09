@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [TestSandbox](./testlab.testsandbox.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 TestSandbox class provides a convenient way to get a reference to a sandbox folder in which you can perform operations for testing purposes.
 
@@ -60,34 +60,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [createClientForHandler(handler)](./testlab.createclientforhandler.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a SuperTest client connected to an HTTP server listening on an ephemeral port and calling `handler` to handle incoming requests.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createRestAppClient(app)](./testlab.createrestappclient.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a SuperTest client for a running RestApplication instance. It is the responsibility of the caller to ensure that the app is running and to stop the application after all tests are done.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createStubInstance(constructor)](./testlab.createstubinstance.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Creates a new object with the given functions as the prototype and stubs all implemented functions.
 
@@ -97,260 +97,260 @@ This is a helper method replacing `sinon.createStubInstance` and working around 
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createUnexpectedHttpErrorLogger(expectedStatusCode)](./testlab.createunexpectedhttperrorlogger.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Creates a Logger that logs an Error if the HTTP status code is not expected
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [givenHttpServerConfig(customConfig)](./testlab.givenhttpserverconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an HTTP-server configuration that works well in test environments. - Ask the operating system to assign a free (ephemeral) port. - Use IPv4 localhost `127.0.0.1` to avoid known IPv6 issues in Docker-based environments like Travis-CI. - Provide default TLS key &amp; cert when `protocol` is set to `https`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [httpGetAsync(urlString, agent)](./testlab.httpgetasync.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Async wrapper for making HTTP GET requests
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [httpsGetAsync(urlString, agent)](./testlab.httpsgetasync.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Async wrapper for making HTTPS GET requests
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inject(dispatchFunc, options)](./testlab.inject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [skipIf(skip, verb, name, args)](./testlab.skipif.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Helper function for skipping tests when a certain condition is met.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [skipOnTravis(verb, name, args)](./testlab.skipontravis.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Helper function for skipping tests on Travis CI.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stubExpressContext(requestOptions)](./testlab.stubexpresscontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stubHandlerContext(requestOptions)](./testlab.stubhandlercontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stubServerRequest(options)](./testlab.stubserverrequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stubServerResponse(request, onEnd)](./testlab.stubserverresponse.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_9.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_10.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_11.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_12.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_13.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_14.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_2.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_3.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON encoding does not preserve properties that are undefined As a result, deepEqual checks fail because the expected model value contains these undefined property values, while the actual result returned by REST API does not. Use this function to convert a model instance into a data object as returned by REST API
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_4.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_5.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_6.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_7.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON(value)](./testlab.tojson_8.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [validateApiSpec(spec)](./testlab.validateapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -369,77 +369,77 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ExpressContextStub](./testlab.expresscontextstub.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HandlerContextStub](./testlab.handlercontextstub.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HostPort](./testlab.hostport.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An object that requires host and port properties
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HttpOptions](./testlab.httpoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HttpsOptions](./testlab.httpsoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RestApplicationLike](./testlab.restapplicationlike.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RestServerLike](./testlab.restserverlike.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TestSandboxOptions](./testlab.testsandboxoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for a test sandbox
 
@@ -460,12 +460,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [expect](./testlab.expect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -484,57 +484,57 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Client](./testlab.client.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ObservedResponse](./testlab.observedresponse.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ShotCallback](./testlab.shotcallback.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ShotResponseCtor](./testlab.shotresponsector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [StubbedInstanceWithSinonAccessor](./testlab.stubbedinstancewithsinonaccessor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TestDefinition](./testlab.testdefinition.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function defining a new test case or a test suite, e.g. `it` or `describe`<!-- -->.
 

@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(new)(repository)](./rest-crud.crudrestcontrollerctor._new_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

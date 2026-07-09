@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 event
 
 
-</td><td>
+</td><td markdown="1">
 
 [ContextEvent](./context.contextevent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context event
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 observers
 
 
-</td><td>
+</td><td markdown="1">
 
 Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Current set of context observers
 

@@ -45,39 +45,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [code?](./authorization.authorizationerror.code.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Machine readable code, can be understood by any clients
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [statusCode?](./authorization.authorizationerror.statuscode.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The status code for HTTP requests
 

@@ -44,39 +44,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [pool](./pooling.pooledvalue.pool.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Pool&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The resource pool
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [value](./pooling.pooledvalue.value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 Acquired value from the pool
 
@@ -97,12 +97,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [release()](./pooling.pooledvalue.release.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The function to release the acquired value back to the pool
 

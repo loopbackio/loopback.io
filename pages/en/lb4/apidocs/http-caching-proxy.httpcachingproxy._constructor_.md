@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [ProxyOptions](./http-caching-proxy.proxyoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

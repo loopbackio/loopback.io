@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 binding
 
 
-</td><td>
+</td><td markdown="1">
 
 [Binding](./context.binding.md)<!-- -->&lt;unknown&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The configured binding to be added
 

@@ -28,45 +28,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [GraphQLComponent](./graphql.graphqlcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Component for GraphQL
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GraphQLResolutionContext](./graphql.graphqlresolutioncontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context for graphql resolver resolution
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GraphQLServer](./graphql.graphqlserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 GraphQL Server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LoopBackContainer](./graphql.loopbackcontainer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Implementation of `ContainerType` to plug into `type-graphql` as the IoC container
 
@@ -87,12 +87,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [registerResolver(ctx, resolverClass, nameOrOptions)](./graphql.registerresolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a GraphQL resolver class
 
@@ -113,23 +113,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [GraphQLComponentOptions](./graphql.graphqlcomponentoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for GraphQL component
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GraphQLServerOptions](./graphql.graphqlserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for GraphQL server
 
@@ -150,23 +150,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [GraphQLBindings](./graphql.graphqlbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for GraphQL related bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GraphQLTags](./graphql.graphqltags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for GraphQL related tags
 
@@ -187,131 +187,131 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [arg](./graphql.arg.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Re-exporting type-graphql decorators as lower case versions for two purposes: - To be consistent with LoopBack's naming convention of decorators - Allow future possibility to add extra metadata in addition to type-graphql's behavior, for example, mapping to LoopBack model properties
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [args](./graphql.args.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [argsType](./graphql.argstype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [authorized](./graphql.authorized.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [field](./graphql.field.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [fieldResolver](./graphql.fieldresolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inputType](./graphql.inputtype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mutation](./graphql.mutation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [objectType](./graphql.objecttype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [pubSub](./graphql.pubsub.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [query](./graphql.query.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolver](./graphql.resolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [root](./graphql.root.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [subscription](./graphql.subscription.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -330,12 +330,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [GraphQLWsContextResolver](./graphql.graphqlwscontextresolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

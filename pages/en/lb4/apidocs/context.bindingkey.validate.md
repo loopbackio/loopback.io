@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key, such as `a`<!-- -->, `a.b`<!-- -->, `a:b`<!-- -->, or `a/b`
 

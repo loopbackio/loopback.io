@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 json
 
 
-</td><td>
+</td><td markdown="1">
 
 JsonSchema
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON Schema to convert from
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 visited
 
 
-</td><td>
+</td><td markdown="1">
 
 Map&lt;JsonSchema, SchemaObject \| [SchemaRef](./openapi-v3.schemaref.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A map to keep track of mapped json schemas to handle circular references
 

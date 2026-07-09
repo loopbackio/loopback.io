@@ -39,47 +39,47 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 schemeName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The name of the security scheme to be added
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 schemeSpec
 
 
-</td><td>
+</td><td markdown="1">
 
 SecuritySchemeObject
 
 
-</td><td>
+</td><td markdown="1">
 
 The security scheme spec body to be added,
 

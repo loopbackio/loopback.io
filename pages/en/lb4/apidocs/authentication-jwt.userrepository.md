@@ -38,15 +38,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(dataSource, userCredentialsRepositoryGetter)](./authentication-jwt.userrepository._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `UserRepository` class
 
@@ -77,41 +77,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [userCredentials](./authentication-jwt.userrepository.usercredentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 HasOneRepositoryFactory&lt;[UserCredentials](./authentication-jwt.usercredentials.md)<!-- -->, typeof [User.prototype.id](./authentication-jwt.user.id.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [userCredentialsRepositoryGetter](./authentication-jwt.userrepository.usercredentialsrepositorygetter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;[UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -135,15 +135,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [findCredentials(userId)](./authentication-jwt.userrepository.findcredentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

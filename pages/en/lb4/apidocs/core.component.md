@@ -44,153 +44,153 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindings?](./core.component.bindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Binding](./context.binding.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of bindings to be aded to the application context.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [classes?](./core.component.classes.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ClassMap](./core.classmap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A map of classes to be bound to the application context.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [components?](./core.component.components.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;[Component](./core.component.md)<!-- -->&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of component classes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [controllers?](./core.component.controllers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerClass](./core.controllerclass.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of controller classes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lifeCycleObservers?](./core.component.lifecycleobservers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;[LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [providers?](./core.component.providers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ProviderMap](./core.providermap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A map of providers to be bound to the application context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [servers?](./core.component.servers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[name: string\]: [Constructor](./context.constructor.md)<!-- -->&lt;[Server](./core.server.md)<!-- -->&gt;; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A map of name/class pairs for servers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [services?](./core.component.services.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ServiceOrProviderClass](./core.serviceorproviderclass.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of service or provider classes
 

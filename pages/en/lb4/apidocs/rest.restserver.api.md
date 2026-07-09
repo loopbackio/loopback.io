@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The OpenAPI specification, as an object.
 

@@ -43,33 +43,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindingKey
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The key of the value we want to set.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [InjectBindingMetadata](./context.injectbindingmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional metadata to help the injection
 

@@ -39,81 +39,81 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 object
 
 
-</td><td>
+</td><td markdown="1">
 
 Target of the method, it will be the class for a static method, and instance or class prototype for a prototype method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 method
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 ctx
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 nonInjectedArgs
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvocationArgs](./context.invocationargs.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional array of args for non-injected parameters
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvocationOptions](./context.invocationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for the invocation
 

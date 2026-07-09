@@ -44,58 +44,58 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asProxyWithInterceptors?](./context.resolutionoptions.asproxywithinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A boolean flag to control if a proxy should be created to apply interceptors for the resolved value. It's only honored for bindings backed by a class.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [optional?](./context.resolutionoptions.optional.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A boolean flag to indicate if the dependency is optional. If it's set to `true` and the binding is not bound in a context, the resolution will return `undefined` instead of throwing an error.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [session?](./context.resolutionoptions.session.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A session to track bindings and injections
 

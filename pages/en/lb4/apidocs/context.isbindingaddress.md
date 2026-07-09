@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindingSelector
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingSelector](./context.bindingselector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key or filter function
 

@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AUTHORIZER](./authorization.authorizationtags.authorizer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A tag for authorizers
 

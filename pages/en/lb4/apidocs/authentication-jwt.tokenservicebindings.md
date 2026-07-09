@@ -32,30 +32,30 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [TOKEN\_EXPIRES\_IN](./authentication-jwt.tokenservicebindings.token_expires_in.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TOKEN\_SECRET](./authentication-jwt.tokenservicebindings.token_secret.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TOKEN\_SERVICE](./authentication-jwt.tokenservicebindings.token_service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

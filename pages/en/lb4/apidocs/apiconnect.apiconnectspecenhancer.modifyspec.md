@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 OpenAPIObject
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

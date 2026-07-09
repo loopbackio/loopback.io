@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 fromPath
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 URL path of the redirect endpoint
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 toPathOrUrl
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Location (URL path or full URL) where to redirect to. If your server is configured with a custom `basePath`<!-- -->, then the base path is prepended to the target location.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 statusCode
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ HTTP status code to respond with, defaults to 303 (See Other).
 

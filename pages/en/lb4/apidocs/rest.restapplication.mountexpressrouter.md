@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 basePath
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Path where to mount the router at, e.g. `/` or `/api`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 router
 
 
-</td><td>
+</td><td markdown="1">
 
 ExpressRequestHandler
 
 
-</td><td>
+</td><td markdown="1">
 
 The Express router to handle the requests.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 [RouterSpec](./rest.routerspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A partial OpenAPI spec describing endpoints provided by the router. LoopBack will prepend `basePath` to all endpoints automatically. This argument is optional. You can leave it out if you don't want to document the routes.
 

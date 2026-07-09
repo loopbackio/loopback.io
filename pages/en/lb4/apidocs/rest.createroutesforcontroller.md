@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerSpec](./openapi-v3.controllerspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Controller spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 controllerCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Controller class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 controllerFactory
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerFactory](./rest.controllerfactory.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Controller factory
 

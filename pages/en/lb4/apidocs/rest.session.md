@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [profile](./rest.session.profile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [SessionUserProfile](./rest.sessionuserprofile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

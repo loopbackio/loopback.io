@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [subdir](./testlab.testsandboxoptions.subdir.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean \| string
 
 
-</td><td>
+</td><td markdown="1">
 
 The `subdir` controls if/how the sandbox creates a subdirectory under the root path. It has one of the following values:
 

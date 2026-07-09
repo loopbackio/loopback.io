@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(app, options)](./socketio.socketioserver._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `SocketIoServer` class
 
@@ -79,96 +79,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [app](./socketio.socketioserver.app.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [config](./socketio.socketioserver.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [HttpServerResolvedOptions](./socketio.httpserverresolvedoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [listening](./socketio.socketioserver.listening.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [options](./socketio.socketioserver.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoServerOptions](./socketio.socketioserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [url](./socketio.socketioserver.url.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -192,85 +192,85 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [controller(controllerClass)](./socketio.socketioserver.controller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a socket.io controller
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [discoverAndRegister()](./socketio.socketioserver.discoverandregister.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Discover all socket.io controllers and register routes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [route(controllerClass, meta)](./socketio.socketioserver.route.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a socketio controller
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start()](./socketio.socketioserver.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Start the socketio server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./socketio.socketioserver.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Stop the socketio server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [use(fn)](./socketio.socketioserver.use.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a sock.io middleware function
 

@@ -44,98 +44,98 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [children](./rest.node.children.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[key: string\]: [Node](./rest.node.md)<!-- -->&lt;T&gt;; }
 
 
-</td><td>
+</td><td markdown="1">
 
 Children of the node
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [key](./rest.node.key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Key of the node
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [names?](./rest.node.names.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Names of the node if it contains named parameters
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [regexp?](./rest.node.regexp.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 RegExp
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Regular expression for the template
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [value?](./rest.node.value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Value of the node
 

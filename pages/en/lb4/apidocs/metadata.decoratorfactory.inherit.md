@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 inheritedMetadata
 
 
-</td><td>
+</td><td markdown="1">
 
 T \| undefined \| null
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata from base classes for the member
 

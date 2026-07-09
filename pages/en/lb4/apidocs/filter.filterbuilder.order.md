@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 o
 
 
-</td><td>
+</td><td markdown="1">
 
 (string \| string\[\] \| [Order](./filter.order.md)<!-- -->&lt;MT&gt;)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A field name with optional direction, an array of field names, or an Order object for the field/direction pairs
 

@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 repository
 
 
-</td><td>
+</td><td markdown="1">
 
 EntityCrudRepository&lt;T, IdType, Relations&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

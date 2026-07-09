@@ -41,49 +41,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 parentEntities
 
 
-</td><td>
+</td><td markdown="1">
 
 Model&lt;T, T&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 source table data
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 parentEntityClass
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Entity
 
 
-</td><td>
+</td><td markdown="1">
 
 loopback entity class for the parent entity
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 inclusionFilters
 
 
-</td><td>
+</td><td markdown="1">
 
 [InclusionFilter](./filter.inclusionfilter.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

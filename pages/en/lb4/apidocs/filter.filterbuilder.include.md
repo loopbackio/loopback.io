@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 i
 
 
-</td><td>
+</td><td markdown="1">
 
 (string \| string\[\] \| [Inclusion](./filter.inclusion.md)<!-- -->)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A relation name, an array of relation names, or an `Inclusion` object for the relation/scope definitions
 

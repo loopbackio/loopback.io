@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getFieldsJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfieldsjsonschemafor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a JSON schema describing the format of the "fields" object used to include or exclude properties of model instances.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getfilterjsonschemafor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a JSON schema describing the format of the "filter" object used to query model instances.
 
@@ -56,45 +56,45 @@ Note we don't take the model properties into account yet and return a generic js
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getJsonSchema(ctor, options)](./repository-json-schema.getjsonschema.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Gets the JSON Schema of a TypeScript model/class by seeing if one exists in a cache. If not, one is generated and then cached.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getJsonSchemaRef(modelCtor, options)](./repository-json-schema.getjsonschemaref.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getNavigationalPropertyForRelation(relMeta, targetRef)](./repository-json-schema.getnavigationalpropertyforrelation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Checks and return navigational property definition for the relation
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getScopeFilterJsonSchemaFor(modelCtor, options)](./repository-json-schema.getscopefilterjsonschemafor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a JSON schema describing the format of the "scope" object used to query model instances.
 
@@ -102,12 +102,12 @@ Note we don't take the model properties into account yet and return a generic js
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getWhereJsonSchemaFor(modelCtor, options)](./repository-json-schema.getwherejsonschemafor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a JSON schema describing the format of the "where" object used to filter model instances to query, update or delete.
 
@@ -115,45 +115,45 @@ Note we don't take the model properties into account yet and return a generic js
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isArrayType(type)](./repository-json-schema.isarraytype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Determines whether a given string or constructor is array type or not
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [metaToJsonProperty(meta)](./repository-json-schema.metatojsonproperty.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Converts property metadata into a JSON property definition
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [modelToJsonSchema(ctor, jsonSchemaOptions)](./repository-json-schema.modeltojsonschema.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Converts a TypeScript class into a JSON Schema using TypeScript's reflection API
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stringTypeToWrapper(type)](./repository-json-schema.stringtypetowrapper.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Gets the wrapper function of primitives string, number, and boolean
 
@@ -174,21 +174,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JsonSchemaOptions](./repository-json-schema.jsonschemaoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -207,21 +207,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AnyScopeFilterSchema](./repository-json-schema.anyscopefilterschema.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JSON\_SCHEMA\_KEY](./repository-json-schema.json_schema_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key used to set or retrieve repository JSON Schema
 
@@ -242,12 +242,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Optional](./repository-json-schema.optional.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Optional: From `T` make a set of properties by key `K` become optional
 

@@ -32,41 +32,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AuthorizationComponent](./authorization.authorizationcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizationError](./authorization.authorizationerror.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The custom error class that describes the error thrown by the authorization module. Should be extracted to the common layer shared by authentication and authorization.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizationInterceptor](./authorization.authorizationinterceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizeMethodDecoratorFactory](./authorization.authorizemethoddecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -85,12 +85,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AuthorizationDecision](./authorization.authorizationdecision.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decisions for authorization
 
@@ -111,23 +111,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [authorize(spec)](./authorization.authorize.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorator `@authorize` to mark methods that require authorization
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAuthorizationMetadata(target, methodName)](./authorization.getauthorizationmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Fetch authorization metadata stored by `@authorize` decorator.
 
@@ -148,54 +148,54 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AuthorizationContext](./authorization.authorizationcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Request context for authorization
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizationMetadata](./authorization.authorizationmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Authorization metadata supplied via `@authorize` decorator
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizationOptions](./authorization.authorizationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizationRequest](./authorization.authorizationrequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inspired by https://github.com/casbin/node-casbin
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Enforcer](./authorization.enforcer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An enforcer of authorization policies
 
@@ -216,34 +216,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [AuthorizationBindings](./authorization.authorizationbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by authorization component.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AuthorizationTags](./authorization.authorizationtags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tags used by authorization component
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [authorize](./authorization.authorize.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -262,59 +262,59 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ANONYMOUS](./authorization.anonymous.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHENTICATED](./authorization.authenticated.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHORIZATION\_CLASS\_KEY](./authorization.authorization_class_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AUTHORIZATION\_METHOD\_KEY](./authorization.authorization_method_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [EVERYONE](./authorization.everyone.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Built-in roles
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UNAUTHENTICATED](./authorization.unauthenticated.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -333,12 +333,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Authorizer](./authorization.authorizer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to decide if access to the target should be allowed or denied
 

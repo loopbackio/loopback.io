@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [buildRequest(authorizationContext)](./authorization.enforcer.buildrequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Extract the request from authorization context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [enforce(request)](./authorization.enforcer.enforce.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decide if the request can be granted access
 

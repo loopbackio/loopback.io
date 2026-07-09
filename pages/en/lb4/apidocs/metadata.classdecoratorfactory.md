@@ -40,59 +40,59 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [create()](./metadata.classdecoratorfactory.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createDecorator(key, spec, options)](./metadata.classdecoratorfactory.createdecorator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a class decorator function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithinherited.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.classdecoratorfactory.mergewithown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

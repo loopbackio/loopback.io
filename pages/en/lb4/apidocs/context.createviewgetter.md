@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ctx
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 bindingFilter
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to match bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Resolution session
 

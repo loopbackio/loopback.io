@@ -32,126 +32,126 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CONFIG](./socketio.socketiobindings.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLERS\_NAMESPACE](./socketio.socketiobindings.controllers_namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HOST](./socketio.socketiobindings.host.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the host name of Http Server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [INVOKE\_METHOD](./socketio.socketiobindings.invoke_method.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [IO](./socketio.socketiobindings.io.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MESSAGE](./socketio.socketiobindings.message.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PORT](./socketio.socketiobindings.port.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting the port number of Http Server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REJECT\_METHOD](./socketio.socketiobindings.reject_method.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_LISTENER](./socketio.socketiobindings.request_listener.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SEND\_METHOD](./socketio.socketiobindings.send_method.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SEQUENCE](./socketio.socketiobindings.sequence.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SERVER](./socketio.socketiobindings.server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the server itself
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SOCKET](./socketio.socketiobindings.socket.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

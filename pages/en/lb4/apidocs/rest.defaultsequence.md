@@ -54,15 +54,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(findRoute, parseParams, invoke, send, reject)](./rest.defaultsequence._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructor: Injects findRoute, invokeMethod &amp; logError methods as promises.
 
@@ -93,115 +93,115 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [findRoute](./rest.defaultsequence.findroute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [FindRoute](./rest.findroute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invoke](./rest.defaultsequence.invoke.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvokeMethod](./rest.invokemethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeMiddleware](./rest.defaultsequence.invokemiddleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 InvokeMiddleware
 
 
-</td><td>
+</td><td markdown="1">
 
 Optional invoker for registered middleware in a chain. To be injected via SequenceActions.INVOKE\_MIDDLEWARE.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [parseParams](./rest.defaultsequence.parseparams.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [ParseParams](./rest.parseparams.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [reject](./rest.defaultsequence.reject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Reject](./rest.reject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [send](./rest.defaultsequence.send.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Send](./rest.send.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -225,15 +225,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [handle(context)](./rest.defaultsequence.handle.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.
 

@@ -28,12 +28,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Lb3AppBooterComponent](./booter-lb3app.lb3appbootercomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

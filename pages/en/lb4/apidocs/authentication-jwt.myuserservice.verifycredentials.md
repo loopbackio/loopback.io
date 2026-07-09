@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 credentials
 
 
-</td><td>
+</td><td markdown="1">
 
 [Credentials](./authentication-jwt.credentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

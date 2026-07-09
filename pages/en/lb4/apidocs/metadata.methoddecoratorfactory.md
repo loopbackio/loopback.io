@@ -40,59 +40,59 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [create()](./metadata.methoddecoratorfactory.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createDecorator(key, spec, options)](./metadata.methoddecoratorfactory.createdecorator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a method decorator function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithInherited(inheritedMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithinherited.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methoddecoratorfactory.mergewithown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 phaseTagName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Name of the binding tag for phase
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 orderOfPhases
 
 
-</td><td>
+</td><td markdown="1">
 
 (string \| symbol)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of phase names as the predefined order
 

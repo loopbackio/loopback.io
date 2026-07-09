@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 path
 
 
-</td><td>
+</td><td markdown="1">
 
 PathParams
 
 
-</td><td>
+</td><td markdown="1">
 
 The path(s) to serve the asset. See examples at https://expressjs.com/en/4x/api.html\#path-examples To avoid performance penalty, `/` is not allowed for now.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 rootDir
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The root directory from which to serve static assets
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 ServeStaticOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for serve-static
 

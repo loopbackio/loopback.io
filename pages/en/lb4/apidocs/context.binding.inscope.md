@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 scope
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingScope](./context.bindingscope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding scope
 

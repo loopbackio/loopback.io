@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 verb
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The HTTP verb.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 path
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The path relative to basePath.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 operationName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The name of the controller method implementing this operation (`x-operation-name` field).
 

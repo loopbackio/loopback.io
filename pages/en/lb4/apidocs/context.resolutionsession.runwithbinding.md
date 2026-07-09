@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 action
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionAction](./context.resolutionaction.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to do some work with the resolution session
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 binding
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The current binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The current resolution session
 

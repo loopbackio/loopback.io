@@ -52,96 +52,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [\[securityId\]](./security.permission._securityid_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [action](./security.permission.action.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Action or access of a protected resources, such as `read`<!-- -->, `create`<!-- -->, `update`<!-- -->, or `delete`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resourceId?](./security.permission.resourceid.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Identity of a protected resource instance, such as `order-0001` or `customer-101`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resourceProperty?](./security.permission.resourceproperty.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Property of a protected resource type/instance, such as `email`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resourceType](./security.permission.resourcetype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Type of protected resource, such as `Order` or `Customer`
 

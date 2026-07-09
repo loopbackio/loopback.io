@@ -52,12 +52,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [value()](./context.provider.value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

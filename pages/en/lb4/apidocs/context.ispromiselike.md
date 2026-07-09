@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 value
 
 
-</td><td>
+</td><td markdown="1">
 
 T \| PromiseLike&lt;T&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 The value to check.
 

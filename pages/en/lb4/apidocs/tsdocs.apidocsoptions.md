@@ -44,134 +44,134 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [apiDocsExtractionPath?](./tsdocs.apidocsoptions.apidocsextractionpath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Path to tsdocs reports/models
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [apiDocsGenerationPath?](./tsdocs.apidocsoptions.apidocsgenerationpath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Path to target directory to generate apidocs
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [dryRun?](./tsdocs.apidocsoptions.dryrun.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ To have a dry-run without generating api reports/doc models
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [generateDefaultPackageDoc?](./tsdocs.apidocsoptions.generatedefaultpackagedoc.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag to generate default package documentation
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lernaPackages?](./tsdocs.apidocsoptions.lernapackages.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Record&lt;string, [LernaPackage](./tsdocs.lernapackage.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Package metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [rootDir?](./tsdocs.apidocsoptions.rootdir.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Root directory for the lerna-managed monorepo, default to current dir
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [silent?](./tsdocs.apidocsoptions.silent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ If `true`<!-- -->, do not print messages to console
 

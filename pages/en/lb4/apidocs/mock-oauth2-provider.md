@@ -28,12 +28,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [UserRepository](./mock-oauth2-provider.userrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Repository to store and access user objects
 
@@ -54,12 +54,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MyUser](./mock-oauth2-provider.myuser.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A simple User model
 
@@ -80,12 +80,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MockTestOauth2SocialApp](./mock-oauth2-provider.mocktestoauth2socialapp.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -104,12 +104,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [userRepository](./mock-oauth2-provider.userrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sample data to mock existing registered users new users can be registered with the repository functions
 

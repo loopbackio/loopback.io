@@ -45,17 +45,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 messageTypes
 
 
-</td><td>
+</td><td markdown="1">
 
 (string \| RegExp)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

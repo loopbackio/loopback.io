@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 dataSource
 
 
-</td><td>
+</td><td markdown="1">
 
 juggler.DataSource
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

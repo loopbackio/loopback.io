@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 modelCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Model
 
 
-</td><td>
+</td><td markdown="1">
 
 The model constructor to build the filter schema for.
 

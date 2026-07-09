@@ -39,65 +39,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, [DecoratorType](./metadata.decoratortype.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 value
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 Target for the metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 member
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional property or method name
 

@@ -57,31 +57,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [mergeWithInherited(inheritedMetadata, target, methodName)](./metadata.methodmultidecoratorfactory.mergewithinherited.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithOwn(ownMetadata, target, methodName, methodDescriptor)](./metadata.methodmultidecoratorfactory.mergewithown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

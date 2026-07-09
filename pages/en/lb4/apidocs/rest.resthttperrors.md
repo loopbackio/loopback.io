@@ -32,48 +32,48 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [invalidData(data, name, extraProperties)](./rest.resthttperrors.invaliddata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invalidParamLocation(location)](./rest.resthttperrors.invalidparamlocation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invalidRequestBody(details)](./rest.resthttperrors.invalidrequestbody.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [missingRequired(name)](./rest.resthttperrors.missingrequired.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [unsupportedMediaType(contentType, allowedTypes)](./rest.resthttperrors.unsupportedmediatype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -92,12 +92,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ValidationErrorDetails](./rest.resthttperrors.validationerrordetails.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An invalid request body error contains a `details` property as the machine-readable error. Each entry in `error.details` contains 4 attributes: `path`<!-- -->, `code`<!-- -->, `info` and `message`<!-- -->. `ValidationErrorDetails` defines the type of each entry, which is an object. The type of `error.details` is `ValidationErrorDetails[]`<!-- -->.
 
@@ -118,12 +118,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [INVALID\_REQUEST\_BODY\_MESSAGE](./rest.resthttperrors.invalid_request_body_message.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

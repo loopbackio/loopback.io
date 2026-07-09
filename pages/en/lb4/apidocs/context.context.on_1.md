@@ -37,31 +37,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 event
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| symbol
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 listener
 
 
-</td><td>
+</td><td markdown="1">
 
 (...args: any\[\]) =&gt; void
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

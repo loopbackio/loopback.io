@@ -44,96 +44,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [invocationContext](./authorization.authorizationcontext.invocationcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvocationContext](./context.invocationcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context for the invocation
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [principals](./authorization.authorizationcontext.principals.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Principal](./security.principal.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of principals identified for the request - it should come from authentication
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resource](./authorization.authorizationcontext.resource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 An name for the target resource to be accessed, such as `OrderController.prototype.cancelOrder`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [roles](./authorization.authorizationcontext.roles.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Role](./security.role.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of roles for principals
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [scopes](./authorization.authorizationcontext.scopes.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of scopes representing granted permissions - usually come from access tokens
 

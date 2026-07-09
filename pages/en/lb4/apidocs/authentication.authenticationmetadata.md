@@ -44,58 +44,58 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [options?](./authentication.authenticationmetadata.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[name: string\]: any; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for the authentication strategy
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [skip?](./authentication.authenticationmetadata.skip.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag to skip authentication
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [strategy](./authentication.authenticationmetadata.strategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the authentication strategy
 

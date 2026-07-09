@@ -39,81 +39,81 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 findRoute
 
 
-</td><td>
+</td><td markdown="1">
 
 [FindRoute](./rest.findroute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Finds the appropriate controller method, spec and args for invocation (injected via SequenceActions.FIND\_ROUTE).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 parseParams
 
 
-</td><td>
+</td><td markdown="1">
 
 [ParseParams](./rest.parseparams.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The parameter parsing function (injected via SequenceActions.PARSE\_PARAMS).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 invoke
 
 
-</td><td>
+</td><td markdown="1">
 
 [InvokeMethod](./rest.invokemethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Invokes the method specified by the route (injected via SequenceActions.INVOKE\_METHOD).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 send
 
 
-</td><td>
+</td><td markdown="1">
 
 [Send](./rest.send.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The action to merge the invoke result with the response (injected via SequenceActions.SEND)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 reject
 
 
-</td><td>
+</td><td markdown="1">
 
 [Reject](./rest.reject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The action to take if the invoke returns a rejected promise result (injected via SequenceActions.REJECT).
 

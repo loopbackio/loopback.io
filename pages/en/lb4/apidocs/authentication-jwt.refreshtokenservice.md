@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [generateToken(userProfile, token)](./authentication-jwt.refreshtokenservice.generatetoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Generate a refresh token, bind it with the given user profile + access token, then store them in backend.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [refreshToken(refreshToken)](./authentication-jwt.refreshtokenservice.refreshtoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Refresh the access token bound with the given refresh token.
 

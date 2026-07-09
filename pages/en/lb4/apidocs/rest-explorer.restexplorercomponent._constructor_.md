@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 application
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestApplication](./rest.restapplication.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 restExplorerConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestExplorerConfig](./rest-explorer.restexplorerconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

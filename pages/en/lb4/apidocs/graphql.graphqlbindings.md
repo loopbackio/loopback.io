@@ -34,109 +34,109 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./graphql.graphqlbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the GraphQL component
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONFIG](./graphql.graphqlbindings.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting GraphQLServerConfig
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GRAPHQL\_AUTH\_CHECKER](./graphql.graphqlbindings.graphql_auth_checker.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the GraphQL auth checker
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GRAPHQL\_CONTEXT\_RESOLVER](./graphql.graphqlbindings.graphql_context_resolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the GraphQL context resolver
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GRAPHQL\_SERVER](./graphql.graphqlbindings.graphql_server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the GraphQL server
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GRAPHQL\_WS\_CONTEXT\_RESOLVER](./graphql.graphqlbindings.graphql_ws_context_resolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PUB\_SUB\_ENGINE](./graphql.graphqlbindings.pub_sub_engine.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the GraphQL pub/sub engine
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RESOLVER\_CLASS](./graphql.graphqlbindings.resolver_class.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the current resolver class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RESOLVER\_DATA](./graphql.graphqlbindings.resolver_data.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the GraphQL resolver data - which is bound per request
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RESOLVERS](./graphql.graphqlbindings.resolvers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key namespace for resolvers
 

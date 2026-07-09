@@ -39,15 +39,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(parentCtx, controllerClass, socket)](./socketio.socketiocontrollerfactory._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `SocketIoControllerFactory` class
 
@@ -78,22 +78,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [connCtx](./socketio.socketiocontrollerfactory.connctx.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoConnectionContext](./socketio.socketioconnectioncontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -117,117 +117,117 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [connect()](./socketio.socketiocontrollerfactory.connect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [create()](./socketio.socketiocontrollerfactory.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAllMethodMetadataForKey(metadataAccessor)](./socketio.socketiocontrollerfactory.getallmethodmetadataforkey.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getCallback(methodName)](./socketio.socketiocontrollerfactory.getcallback.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getDecoratedMethodsForConnect()](./socketio.socketiocontrollerfactory.getdecoratedmethodsforconnect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getDecorateSubscribeMethods()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethods.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getDecorateSubscribeMethodsByEventName()](./socketio.socketiocontrollerfactory.getdecoratesubscribemethodsbyeventname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [registerSubscribeMethods()](./socketio.socketiocontrollerfactory.registersubscribemethods.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setup()](./socketio.socketiocontrollerfactory.setup.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set up the controller for the given socket
 

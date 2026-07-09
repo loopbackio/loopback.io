@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 C
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 filter
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A binding filter function to select interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 comparator
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingComparator](./context.bindingcomparator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An optional comparator to sort matched interceptor bindings
 

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 valueOrPromise
 
 
-</td><td>
+</td><td markdown="1">
 
 [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The value or promise
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 transformer
 
 
-</td><td>
+</td><td markdown="1">
 
 (val: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;V&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A function that maps the source value to a value or promise
 

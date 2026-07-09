@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;T, PropertyDecorator&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 Object
 
 
-</td><td>
+</td><td markdown="1">
 
 Class for static methods or prototype for instance methods
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [InspectionOptions](./metadata.inspectionoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for inspection
 

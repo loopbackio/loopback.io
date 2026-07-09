@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 authorizationContext
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthorizationContext](./authorization.authorizationcontext.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

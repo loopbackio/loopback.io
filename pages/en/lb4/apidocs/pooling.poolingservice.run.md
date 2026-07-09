@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 task
 
 
-</td><td>
+</td><td markdown="1">
 
 (resource: T) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A function that accepts a resource and returns a Promise.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 requestCtx
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

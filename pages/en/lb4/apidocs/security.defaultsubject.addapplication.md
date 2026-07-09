@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 app
 
 
-</td><td>
+</td><td markdown="1">
 
 [ClientApplication](./security.clientapplication.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

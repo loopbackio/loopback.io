@@ -42,77 +42,77 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [exclude?](./repository-json-schema.jsonschemaoptions.exclude.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (keyof T)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ List of model properties to exclude from the schema.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [includeRelations?](./repository-json-schema.jsonschemaoptions.includerelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Set this flag if you want the schema to define navigational properties for model relations.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [optional?](./repository-json-schema.jsonschemaoptions.optional.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (keyof T)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ List of model properties to mark as optional. Overrides the "partial" option if it is not empty.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [partial?](./repository-json-schema.jsonschemaoptions.partial.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean \| 'deep'
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Set this flag to mark all model properties as optional. This is typically used to describe request body of PATCH endpoints. This option will be overridden by the "optional" option if it is set and non-empty.
 
@@ -120,20 +120,20 @@ The flag also applies to nested model instances if its value is set to 'deep', s
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [title?](./repository-json-schema.jsonschemaoptions.title.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The title to use in the generated schema.
 

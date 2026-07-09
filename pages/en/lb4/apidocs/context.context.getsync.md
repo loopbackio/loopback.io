@@ -41,33 +41,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 keyWithPath
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;ValueType&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The binding key, optionally suffixed with a path to the (deeply) nested property to retrieve.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Session for resolution (accepted for backward compatibility)
 

@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [closed](./context.subscription.closed.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Is the subscription closed?
 
@@ -78,12 +78,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [unsubscribe()](./context.subscription.unsubscribe.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 unsubscribe
 

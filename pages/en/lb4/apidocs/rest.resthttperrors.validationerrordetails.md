@@ -44,77 +44,77 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [code](./rest.resthttperrors.validationerrordetails.code.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 A single word code represents the error's type.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [info](./rest.resthttperrors.validationerrordetails.info.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 object
 
 
-</td><td>
+</td><td markdown="1">
 
 Some additional details that the 3 attributes above don't cover.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [message](./rest.resthttperrors.validationerrordetails.message.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 A human readable description of the error.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [path](./rest.resthttperrors.validationerrordetails.path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 A path to the invalid field.
 

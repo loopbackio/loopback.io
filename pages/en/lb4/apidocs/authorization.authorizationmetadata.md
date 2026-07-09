@@ -44,115 +44,115 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [allowedRoles?](./authorization.authorizationmetadata.allowedroles.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Roles that are allowed access
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [deniedRoles?](./authorization.authorizationmetadata.deniedroles.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Roles that are denied access
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resource?](./authorization.authorizationmetadata.resource.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Name of the resource, default to the method name
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [scopes?](./authorization.authorizationmetadata.scopes.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Define the access scopes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [skip?](./authorization.authorizationmetadata.skip.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag to skip authorization
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [voters?](./authorization.authorizationmetadata.voters.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 ([Authorizer](./authorization.authorizer.md) \| [BindingAddress](./context.bindingaddress.md)<!-- -->&lt;[Authorizer](./authorization.authorizer.md)<!-- -->&gt;)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Voters that help make the authorization decision
 

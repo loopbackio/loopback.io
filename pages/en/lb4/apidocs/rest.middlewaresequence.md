@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(context, invokeMiddleware, options)](./rest.middlewaresequence._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructor: Injects `InvokeMiddleware` and `InvokeMiddlewareOptions`
 
@@ -79,60 +79,60 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [defaultOptions](./rest.middlewaresequence.defaultoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 InvokeMiddlewareOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [invokeMiddleware](./rest.middlewaresequence.invokemiddleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 InvokeMiddleware
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [options](./rest.middlewaresequence.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 InvokeMiddlewareOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -156,15 +156,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [handle(context)](./rest.middlewaresequence.handle.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Runs the default sequence. Given a handler context (request and response), running the sequence will produce a response or an error.
 

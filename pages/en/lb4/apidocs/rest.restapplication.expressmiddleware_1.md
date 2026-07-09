@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 middlewareFactory
 
 
-</td><td>
+</td><td markdown="1">
 
 ExpressMiddlewareFactory&lt;CFG&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Middleware module name or factory function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 middlewareConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 CFG
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Middleware config
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 MiddlewareBindingOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for registration
 

@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ownMetadataOnly?](./metadata.inspectionoptions.ownmetadataonly.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Only inspect own metadata of a given target. The prototype chain will not be checked. The implementation uses `Reflect.getOwnMetadata()` if the flag is set to `true`<!-- -->. Otherwise, it uses `Reflect.getMetadata()`<!-- -->.
 

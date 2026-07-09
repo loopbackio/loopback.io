@@ -43,17 +43,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 constructor
 
 
-</td><td>
+</td><td markdown="1">
 
 sinon.StubbableType&lt;TType&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Object or class to stub.
 

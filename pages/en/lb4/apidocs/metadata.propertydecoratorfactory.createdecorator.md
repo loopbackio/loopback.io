@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [MetadataKey](./metadata.metadatakey.md)<!-- -->&lt;S, PropertyDecorator&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 S
 
 
-</td><td>
+</td><td markdown="1">
 
 Metadata object from the decorator function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [DecoratorOptions](./metadata.decoratoroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for the decorator
 

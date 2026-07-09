@@ -37,33 +37,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 outFile
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 log
 
 
-</td><td>
+</td><td markdown="1">
 
 (message?: any, ...optionalParams: any\[\]) =&gt; void
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

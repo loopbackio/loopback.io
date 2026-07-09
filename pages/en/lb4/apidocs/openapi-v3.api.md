@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 spec
 
 
-</td><td>
+</td><td markdown="1">
 
 Partial&lt;[ControllerSpec](./openapi-v3.controllerspec.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 OpenAPI specification describing the endpoints handled by this controller
 

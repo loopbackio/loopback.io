@@ -41,17 +41,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 fn
 
 
-</td><td>
+</td><td markdown="1">
 
 () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;void&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The function to invoke, it can be synchronous (returning `void`<!-- -->) or asynchronous (returning `Promise<void>`<!-- -->).
 

@@ -34,140 +34,140 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [APPLICATION\_CONFIG](./core.corebindings.application_config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for application configuration
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [APPLICATION\_INSTANCE](./core.corebindings.application_instance.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for application instance itself
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [APPLICATION\_METADATA](./core.corebindings.application_metadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the content of `package.json`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [COMPONENTS](./core.corebindings.components.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for components
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER\_CLASS](./core.corebindings.controller_class.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the controller class resolved in the current request context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER\_CURRENT](./core.corebindings.controller_current.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the controller instance resolved in the current request context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER\_METHOD\_META](./core.corebindings.controller_method_meta.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the controller method metadata resolved in the current request context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER\_METHOD\_NAME](./core.corebindings.controller_method_name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the controller method resolved in the current request context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLERS](./core.corebindings.controllers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LIFE\_CYCLE\_OBSERVER\_OPTIONS](./core.corebindings.life_cycle_observer_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for life cycle observer options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LIFE\_CYCLE\_OBSERVER\_REGISTRY](./core.corebindings.life_cycle_observer_registry.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for life cycle observer options
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LIFE\_CYCLE\_OBSERVERS](./core.corebindings.life_cycle_observers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SERVERS](./core.corebindings.servers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for servers
 

@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 tags
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingTag](./context.bindingtag.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A list of names or name/value objects. Each parameter can be in one of the following forms: - string: A tag name without value - string\[\]: An array of tag names - TagMap: A map of tag name/value pairs
 

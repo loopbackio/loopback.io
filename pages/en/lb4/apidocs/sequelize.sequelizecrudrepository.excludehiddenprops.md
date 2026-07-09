@@ -46,17 +46,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 entity
 
 
-</td><td>
+</td><td markdown="1">
 
 T &amp; Relations
 
 
-</td><td>
+</td><td markdown="1">
 
 normalized entity. You can use `entity.toJSON()`<!-- -->'s value
 

@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [bindingTagPattern](./context.bindingtagfilter.bindingtagpattern.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingTag](./context.bindingtag.md) \| RegExp
 
 
-</td><td>
+</td><td markdown="1">
 
 A special property on the filter function to provide access to the binding tag pattern which can be utilized to optimize the matching of bindings by tag in a context.
 

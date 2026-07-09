@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(key, isLocked)](./context.binding._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `Binding` class
 
@@ -79,184 +79,184 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [isLocked](./context.binding.islocked.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [key](./context.binding.key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Key of the binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [providerConstructor](./context.binding.providerconstructor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;T&gt;&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 For bindings bound via `toProvider()`<!-- -->, this property contains the constructor function of the provider class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [scope](./context.binding.scope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingScope](./context.bindingscope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Scope of the binding to control how the value is cached/shared
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [source](./context.binding.source.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingSource](./context.bindingsource.md)<!-- -->&lt;T&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tagMap](./context.binding.tagmap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [TagMap](./context.tagmap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Map for tag name/value pairs
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tagNames](./context.binding.tagnames.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Get an array of tag names
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [type](./context.binding.type.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingType](./context.bindingtype.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 Type of the binding value getter
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [valueConstructor](./context.binding.valueconstructor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;T&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 For bindings bound via `toClass()`<!-- -->, this property contains the constructor function of the class
 
@@ -282,75 +282,75 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [apply(templateFns)](./context.binding.apply.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Apply one or more template functions to set up the binding with scope, tags, and other attributes as a group.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [applyDefaultScope(scope)](./context.binding.applydefaultscope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Apply default scope to the binding. It only changes the scope if it's not set yet
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [bind(key)](./context.binding.bind.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 A static method to create a binding so that we can do `Binding.bind('foo').to('bar');` as `new Binding('foo').to('bar')` is not easy to read.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [configure(key)](./context.binding.configure.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a configuration binding for the given key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getValue(ctx, session)](./context.binding.getvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 This is an internal function optimized for performance. Users should use `@inject(key)` or `ctx.get(key)` instead.
 
@@ -360,207 +360,207 @@ Consumers wishing to consume sync values directly should use `isPromiseLike` to 
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getValue(ctx, options)](./context.binding.getvalue_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Returns a value or promise for this binding in the given context. The resolved value can be `undefined` if `optional` is set to `true` in `options`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inScope(scope)](./context.binding.inscope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set the binding scope
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inspect(options)](./context.binding.inspect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Inspect the binding to return a json representation of the binding information
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lock()](./context.binding.lock.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Lock the binding so that it cannot be rebound
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(eventName, listener)](./context.binding.on.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "changed" event is emitted by methods such as `tag`<!-- -->, `inScope`<!-- -->, `to`<!-- -->, and `toClass`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [on(event, listener)](./context.binding.on_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(eventName, listener)](./context.binding.once.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 The "changed" event is emitted by methods such as `tag`<!-- -->, `inScope`<!-- -->, `to`<!-- -->, and `toClass`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [once(event, listener)](./context.binding.once_1.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [refresh(ctx)](./context.binding.refresh.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Invalidate the binding cache so that its value will be reloaded next time. This is useful to force reloading a cached value when its configuration or dependencies are changed. \*\*WARNING\*\*: The state held in the cached value will be gone.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tag(tags)](./context.binding.tag.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Tag the binding with names or name/value objects. A tag has a name and an optional value. If not supplied, the tag name is used as the value.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [to(value)](./context.binding.to.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind the key to a constant value. The value must be already available at binding time, it is not allowed to pass a Promise instance.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toAlias(keyWithPath)](./context.binding.toalias.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind the key to an alias of another binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toClass(ctor)](./context.binding.toclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind the key to an instance of the given class.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toDynamicValue(factory)](./context.binding.todynamicvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind the key to a computed (dynamic) value.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toInjectable(ctor)](./context.binding.toinjectable.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind to a class optionally decorated with `@injectable`<!-- -->. Based on the introspection of the class, it calls `toClass/toProvider/toDynamicValue` internally. The current binding key will be preserved (not being overridden by the key inferred from the class or options).
 
@@ -568,29 +568,29 @@ This is similar to [createBindingFromClass()](./context.createbindingfromclass.m
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toJSON()](./context.binding.tojson.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Convert to a plain JSON object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [toProvider(providerClass)](./context.binding.toprovider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Bind the key to a value computed by a Provider.
 
@@ -598,15 +598,15 @@ Bind the key to a value computed by a Provider.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [unlock()](./context.binding.unlock.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Unlock the binding
 

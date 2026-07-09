@@ -39,65 +39,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object to watch
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 filter
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding filter to match bindings of interest
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 comparator
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingComparator](./context.bindingcomparator.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Comparator to sort the matched bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolutionOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 Omit&lt;[ResolutionOptions](./context.resolutionoptions.md)<!-- -->, "session"&gt; \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

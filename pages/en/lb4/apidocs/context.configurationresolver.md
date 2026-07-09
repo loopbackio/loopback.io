@@ -36,12 +36,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getConfigAsValueOrPromise(key, propertyPath, resolutionOptions)](./context.configurationresolver.getconfigasvalueorpromise.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolve config for the binding key
 

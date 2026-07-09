@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [COMPONENT](./rest-explorer.restexplorerbindings.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for RestExplorerComponent
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONFIG](./rest-explorer.restexplorerbindings.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for configuration of RestExplorerComponent.
 

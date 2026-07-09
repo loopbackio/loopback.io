@@ -47,96 +47,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [json?](./rest.requestbodyparseroptions.json.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 OptionsJson
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for json parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [raw?](./rest.requestbodyparseroptions.raw.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Options
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for raw parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [text?](./rest.requestbodyparseroptions.text.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 OptionsText
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for text parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [urlencoded?](./rest.requestbodyparseroptions.urlencoded.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 OptionsUrlencoded
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for urlencoded parser
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [validation?](./rest.requestbodyparseroptions.validation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ValidationOptions](./rest.validationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Validation options for AJV, see https://github.com/epoberezkin/ajv\#options This setting is global for all request body parsers and it cannot be overridden inside parser specific properties such as `json` or `text`<!-- -->.
 

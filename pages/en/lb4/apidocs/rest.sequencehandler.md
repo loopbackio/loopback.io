@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [handle(context)](./rest.sequencehandler.handle.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Handle the request by running the configured sequence of actions.
 

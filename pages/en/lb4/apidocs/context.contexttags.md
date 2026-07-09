@@ -34,116 +34,116 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CLASS](./context.contexttags.class.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONFIGURATION\_FOR](./context.contexttags.configuration_for.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag to associate a configuration binding with the target binding key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DYNAMIC\_VALUE\_PROVIDER](./context.contexttags.dynamic_value_provider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GLOBAL\_INTERCEPTOR\_GROUP](./context.contexttags.global_interceptor_group.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for group name of global interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GLOBAL\_INTERCEPTOR\_SOURCE](./context.contexttags.global_interceptor_source.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for global interceptors to specify sources of invocations that the interceptor should apply. The tag value can be a string or string\[\], such as `'route'` or `['route', 'proxy']`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GLOBAL\_INTERCEPTOR](./context.contexttags.global_interceptor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for global interceptors
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [KEY](./context.contexttags.key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the artifact
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [NAME](./context.contexttags.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the artifact
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [NAMESPACE](./context.contexttags.namespace.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace of the artifact
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PROVIDER](./context.contexttags.provider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TYPE](./context.contexttags.type.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Type of the artifact
 

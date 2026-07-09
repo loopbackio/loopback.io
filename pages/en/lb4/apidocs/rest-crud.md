@@ -32,21 +32,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CrudRestApiBuilder](./rest-crud.crudrestapibuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CrudRestComponent](./rest-crud.crudrestcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -65,12 +65,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [defineCrudRestController(modelCtor, options)](./rest-crud.definecrudrestcontroller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create (define) a CRUD Controller class for the given model.
 
@@ -91,45 +91,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CrudRestController](./rest-crud.crudrestcontroller.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 This interface describes prototype members of the controller class returned by `defineCrudRestController`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CrudRestControllerCtor](./rest-crud.crudrestcontrollerctor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructor of the controller class returned by `defineCrudRestController`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to configure different aspects of a CRUD REST Controller.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ModelCrudRestApiConfig](./rest-crud.modelcrudrestapiconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

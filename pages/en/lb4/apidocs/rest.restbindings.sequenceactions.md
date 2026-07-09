@@ -34,78 +34,78 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [FIND\_ROUTE](./rest.restbindings.sequenceactions.find_route.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a route finding function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [INVOKE\_METHOD](./rest.restbindings.sequenceactions.invoke_method.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a controller route invoking function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [INVOKE\_MIDDLEWARE](./rest.restbindings.sequenceactions.invoke_middleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting `invokeMiddleware` function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LOG\_ERROR](./rest.restbindings.sequenceactions.log_error.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting an error logging function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PARSE\_PARAMS](./rest.restbindings.sequenceactions.parse_params.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a parameter parsing function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REJECT](./rest.restbindings.sequenceactions.reject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a bad response writing function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SEND](./rest.restbindings.sequenceactions.send.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for setting and injecting a response writing function
 

@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [observers](./context.notification.observers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set&lt;[ContextEventObserver](./context.contexteventobserver.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A snapshot of observers when the original event is emitted
 

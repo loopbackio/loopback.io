@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 keyOrBinding
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md) \| Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;unknown&gt;&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding object or key
 

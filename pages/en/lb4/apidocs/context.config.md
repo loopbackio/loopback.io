@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getter(propertyPath, metadata)](./context.config.getter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@inject.getter` decorator to inject a config getter function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [view(propertyPath, metadata)](./context.config.view.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@inject.view` decorator to inject a config context view to allow dynamic changes in configuration
 

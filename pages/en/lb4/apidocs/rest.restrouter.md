@@ -32,34 +32,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [add(route)](./rest.restrouter.add.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a route to the router
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [find(request)](./rest.restrouter.find.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Find a matching route for the given http request
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [list()](./rest.restrouter.list.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 List all routes
 

@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 userId
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof [User.prototype.id](./authentication-jwt.user.id.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

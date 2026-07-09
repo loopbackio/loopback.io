@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 data
 
 
-</td><td>
+</td><td markdown="1">
 
 Partial&lt;[User](./authentication-jwt.user.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

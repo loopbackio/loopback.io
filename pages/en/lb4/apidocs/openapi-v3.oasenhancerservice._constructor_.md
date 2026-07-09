@@ -41,31 +41,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 getEnhancers
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter&lt;[OASEnhancer](./openapi-v3.oasenhancer.md)<!-- -->\[\]&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

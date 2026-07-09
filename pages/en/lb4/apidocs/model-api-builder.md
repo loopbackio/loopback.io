@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ModelApiBuilder](./model-api-builder.modelapibuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Interface for extensions contributing custom API flavors.
 
@@ -58,23 +58,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asModelApiBuilder](./model-api-builder.asmodelapibuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A binding template for model API extensions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MODEL\_API\_BUILDER\_PLUGINS](./model-api-builder.model_api_builder_plugins.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Extension Point name for Model API builders.
 
@@ -95,12 +95,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ModelApiConfig](./model-api-builder.modelapiconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration settings for individual model files. This type describes content of `public-models/{model-name}.config.json` files.
 

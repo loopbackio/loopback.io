@@ -32,12 +32,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [handle(methodName, args, done)](./socketio.socketiosequence.handle.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

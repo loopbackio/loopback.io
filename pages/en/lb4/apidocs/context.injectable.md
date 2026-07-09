@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [provider(specs)](./context.injectable.provider.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@injectable.provider` to denote a provider class
 

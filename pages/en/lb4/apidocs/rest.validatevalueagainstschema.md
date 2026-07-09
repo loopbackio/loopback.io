@@ -39,65 +39,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 value
 
 
-</td><td>
+</td><td markdown="1">
 
 any
 
 
-</td><td>
+</td><td markdown="1">
 
 The data value.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 schema
 
 
-</td><td>
+</td><td markdown="1">
 
 SchemaObject \| ReferenceObject
 
 
-</td><td>
+</td><td markdown="1">
 
 The JSON schema used to perform the validation.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 globalSchemas
 
 
-</td><td>
+</td><td markdown="1">
 
 SchemasObject
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Schema references.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [ValueValidationOptions](./rest.valuevalidationoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Value validation options.
 

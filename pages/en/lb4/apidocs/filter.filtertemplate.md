@@ -37,31 +37,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 strings
 
 
-</td><td>
+</td><td markdown="1">
 
 TemplateStringsArray
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 keys
 
 
-</td><td>
+</td><td markdown="1">
 
 any\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

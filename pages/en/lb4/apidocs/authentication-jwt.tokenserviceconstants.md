@@ -32,21 +32,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [TOKEN\_EXPIRES\_IN\_VALUE](./authentication-jwt.tokenserviceconstants.token_expires_in_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TOKEN\_SECRET\_VALUE](./authentication-jwt.tokenserviceconstants.token_secret_value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

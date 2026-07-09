@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 injection
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Injection](./context.injection.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Injection information
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 expectedType
 
 
-</td><td>
+</td><td markdown="1">
 
 Function
 
 
-</td><td>
+</td><td markdown="1">
 
 Expected type
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 expectedTypeName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Name of the expected type to be used in the error
 

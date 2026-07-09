@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 keyof typeof operatorTranslations
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the operator used in loopback eg. lt
 

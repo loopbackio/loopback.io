@@ -40,29 +40,29 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [getGlobalInterceptorBindingKeys()](./context.interceptedinvocationcontext.getglobalinterceptorbindingkeys.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Discover all binding keys for global interceptors (tagged by ContextTags.GLOBAL\_INTERCEPTOR)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [loadInterceptors()](./context.interceptedinvocationcontext.loadinterceptors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Load all interceptors for the given invocation context. It adds interceptors from possibly three sources: 1. method level `@intercept` 2. class level `@intercept` 3. global interceptors discovered in the context
 

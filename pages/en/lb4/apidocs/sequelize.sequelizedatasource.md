@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(config)](./sequelize.sequelizedatasource._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `SequelizeDataSource` class
 
@@ -79,109 +79,109 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [config](./sequelize.sequelizedatasource.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [SequelizeDataSourceConfig](./sequelize.sequelizedatasourceconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [name](./sequelize.sequelizedatasource.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [parseJsonColumns](./sequelize.sequelizedatasource.parsejsoncolumns.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Gets the flag indicating whether to parse JSON columns. If the `parseJsonColumns` property is set in the configuration, its value will be returned. Otherwise, it returns `true` if the dialect is MySQL, `false` otherwise.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [sequelize](./sequelize.sequelizedatasource.sequelize.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Sequelize
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [sequelizeConfig](./sequelize.sequelizedatasource.sequelizeconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 SequelizeOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [settings](./sequelize.sequelizedatasource.settings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 {}
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -205,53 +205,53 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [automigrate()](./sequelize.sequelizedatasource.automigrate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [autoupdate()](./sequelize.sequelizedatasource.autoupdate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [beginTransaction(options)](./sequelize.sequelizedatasource.begintransaction.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Begin a new transaction.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [execute(command, parameters, options)](./sequelize.sequelizedatasource.execute.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Execute a SQL command.
 
@@ -259,51 +259,51 @@ Execute a SQL command.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getPoolOptions()](./sequelize.sequelizedatasource.getpooloptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [init()](./sequelize.sequelizedatasource.init.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start(\_injectedArgs)](./sequelize.sequelizedatasource.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./sequelize.sequelizedatasource.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

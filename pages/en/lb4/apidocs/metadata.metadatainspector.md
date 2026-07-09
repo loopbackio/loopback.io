@@ -44,47 +44,47 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DesignTimeReflector](./metadata.metadatainspector.designtimereflector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [NamespacedReflect](./metadata.namespacedreflect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose the reflector for TypeScript design-time metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Reflector](./metadata.metadatainspector.reflector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [NamespacedReflect](./metadata.namespacedreflect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose Reflector, which is a wrapper of `Reflect` and it uses `loopback` as the namespace prefix for all metadata keys
 
@@ -110,161 +110,161 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [defineMetadata(key, value, target, member)](./metadata.metadatainspector.definemetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Define metadata for the given target
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAllMethodMetadata(key, target, options)](./metadata.metadatainspector.getallmethodmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for all methods of the target class or prototype
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAllParameterMetadata(key, target, methodName, options)](./metadata.metadatainspector.getallparametermetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for all parameters of a given method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getAllPropertyMetadata(key, target, options)](./metadata.metadatainspector.getallpropertymetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for all properties of the target class or prototype
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getClassMetadata(key, target, options)](./metadata.metadatainspector.getclassmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for a given class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getDesignTypeForMethod(target, methodName)](./metadata.metadatainspector.getdesigntypeformethod.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get TypeScript design time type for a method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getDesignTypeForProperty(target, propertyName)](./metadata.metadatainspector.getdesigntypeforproperty.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get TypeScript design time type for a property
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getMethodMetadata(key, target, methodName, options)](./metadata.metadatainspector.getmethodmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for a given method of the target class or prototype
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getParameterMetadata(key, target, methodName, index, options)](./metadata.metadatainspector.getparametermetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for a parameter of a given method by index
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getPropertyMetadata(key, target, propertyName, options)](./metadata.metadatainspector.getpropertymetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the metadata associated with the given key for a given property of the target class or prototype
 

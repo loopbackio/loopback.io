@@ -28,21 +28,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ApiConnectComponent](./apiconnect.apiconnectcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ApiConnectSpecEnhancer](./apiconnect.apiconnectspecenhancer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An OpenAPI spec enhancer to add `x-ibm-configuration` extension required by API Connect
 
@@ -63,12 +63,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ApiConnectBindings](./apiconnect.apiconnectbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -87,12 +87,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ApiConnectSpecOptions](./apiconnect.apiconnectspecoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration for IBM API Connect extensions to the OpenAPI spec
 

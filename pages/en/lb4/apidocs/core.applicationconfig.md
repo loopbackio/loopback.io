@@ -44,39 +44,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [name?](./core.applicationconfig.name.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Name of the application context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [shutdown?](./core.applicationconfig.shutdown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ShutdownOptions](./core.shutdownoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Configuration for signals that shut down the application
 

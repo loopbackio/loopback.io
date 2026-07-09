@@ -39,31 +39,31 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 application
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestApplication](./rest.restapplication.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 explorerConfig
 
 
-</td><td>
+</td><td markdown="1">
 
 [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

@@ -34,34 +34,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [GRAPHQL](./graphql.graphqltags.graphql.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 GraphQL
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MIDDLEWARE](./graphql.graphqltags.middleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Tag for GraphQL middleware bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RESOLVER](./graphql.graphqltags.resolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Tag for GraphQL resolver bindings
 

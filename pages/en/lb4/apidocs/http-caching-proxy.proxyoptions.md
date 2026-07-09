@@ -42,96 +42,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [cachePath](./http-caching-proxy.proxyoptions.cachepath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Directory where to keep the cached snapshots.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [logError?](./http-caching-proxy.proxyoptions.logerror.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag if the error should be logged
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [port?](./http-caching-proxy.proxyoptions.port.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ The port where the HTTP proxy should listen at. Default: 0 (let the system pick a free port)
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [timeout?](./http-caching-proxy.proxyoptions.timeout.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Timeout to connect to the target service
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ttl?](./http-caching-proxy.proxyoptions.ttl.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ How long to keep snapshots before making a new request to the backend. The value is in milliseconds.
 

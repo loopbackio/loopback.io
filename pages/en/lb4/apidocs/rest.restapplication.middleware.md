@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 middleware
 
 
-</td><td>
+</td><td markdown="1">
 
 Middleware \| [Constructor](./context.constructor.md)<!-- -->&lt;[Provider](./context.provider.md)<!-- -->&lt;Middleware&gt;&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Middleware function or provider class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 MiddlewareBindingOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Middleware binding options
 

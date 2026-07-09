@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 user
 
 
-</td><td>
+</td><td markdown="1">
 
 U
 
 
-</td><td>
+</td><td markdown="1">
 
 The user returned from `verifyCredentials()`
 

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 key
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for the target binding
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 propertyPath
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Property path for the configuration
 

@@ -39,15 +39,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(ctx, options)](./context-explorer.contextgraph._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `ContextGraph` class
 
@@ -73,61 +73,61 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [build()](./context-explorer.contextgraph.build.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a direct graph
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [render()](./context-explorer.contextgraph.render.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Render the context graph in graphviz dot format
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [renderBinding(parent, { binding, id })](./context-explorer.contextgraph.renderbinding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Render a binding object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [renderConfig(parent, { binding, level, id })](./context-explorer.contextgraph.renderconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an edge for a binding to its configuration
 

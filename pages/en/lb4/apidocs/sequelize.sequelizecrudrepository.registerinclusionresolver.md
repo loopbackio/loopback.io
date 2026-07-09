@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 relationName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the relation defined on the source model
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolver
 
 
-</td><td>
+</td><td markdown="1">
 
 InclusionResolver&lt;T, Entity&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolver function for getting related model entities
 

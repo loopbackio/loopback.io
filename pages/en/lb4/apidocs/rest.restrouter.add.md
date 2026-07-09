@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 route
 
 
-</td><td>
+</td><td markdown="1">
 
 [RouteEntry](./rest.routeentry.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A route entry
 

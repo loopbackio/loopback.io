@@ -42,58 +42,58 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [disabled?](./rest.apiexploreroptions.disabled.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 true
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Set this flag to disable the built-in redirect to externally hosted API Explorer UI.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [httpUrl?](./rest.apiexploreroptions.httpurl.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ URL for the API explorer served over `http` protocol to deal with mixed content security imposed by browsers as the spec is exposed over `http` by default. See https://github.com/loopbackio/loopback-next/issues/1603
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [url?](./rest.apiexploreroptions.url.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ URL for the hosted API explorer UI default to https://loopback.io/api-explorer
 

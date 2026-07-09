@@ -28,113 +28,113 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [JWTAuthenticationComponent](./authentication-jwt.jwtauthenticationcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JWTAuthenticationStrategy](./authentication-jwt.jwtauthenticationstrategy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [JWTService](./authentication-jwt.jwtservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MyUserService](./authentication-jwt.myuserservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RefreshToken](./authentication-jwt.refreshtoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RefreshTokenRepository](./authentication-jwt.refreshtokenrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RefreshtokenService](./authentication-jwt.refreshtokenservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SecuritySpecEnhancer](./authentication-jwt.securityspecenhancer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A spec enhancer to add bearer token OpenAPI security entry to `spec.component.securitySchemes`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [User](./authentication-jwt.user.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserCredentials](./authentication-jwt.usercredentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserCredentialsRepository](./authentication-jwt.usercredentialsrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserRepository](./authentication-jwt.userrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -153,41 +153,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [RefreshTokenRelations](./authentication-jwt.refreshtokenrelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RefreshTokenService](./authentication-jwt.refreshtokenservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The token refresh service. An access token expires in limited time. Therefore token refresh service is needed to keep replacing the old access token with a new one periodically.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserCredentialsRelations](./authentication-jwt.usercredentialsrelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserRelations](./authentication-jwt.userrelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -206,52 +206,52 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [RefreshTokenConstants](./authentication-jwt.refreshtokenconstants.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Constant values used when generating refresh token.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RefreshTokenServiceBindings](./authentication-jwt.refreshtokenservicebindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Bindings related to token refresh service. The omitted explanation can be found in namespace `RefreshTokenConstants`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TokenServiceBindings](./authentication-jwt.tokenservicebindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TokenServiceConstants](./authentication-jwt.tokenserviceconstants.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserServiceBindings](./authentication-jwt.userservicebindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -270,21 +270,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [OPERATION\_SECURITY\_SPEC](./authentication-jwt.operation_security_spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SECURITY\_SCHEME\_SPEC](./authentication-jwt.security_scheme_spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -303,61 +303,61 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Credentials](./authentication-jwt.credentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A pre-defined type for user credentials. It assumes a user logs in using the email and password. You can modify it if your app has different credential fields
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RefereshTokenWithRelations](./authentication-jwt.refereshtokenwithrelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SecuritySchemeObjects](./authentication-jwt.securityschemeobjects.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TokenObject](./authentication-jwt.tokenobject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Describes the token object that returned by the refresh token service functions.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserCredentialsWithRelations](./authentication-jwt.usercredentialswithrelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [UserWithRelations](./authentication-jwt.userwithrelations.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

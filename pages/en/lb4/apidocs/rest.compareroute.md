@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 route1
 
 
-</td><td>
+</td><td markdown="1">
 
 Pick&lt;[RouteEntry](./rest.routeentry.md)<!-- -->, 'verb' \| 'path'&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 First route entry
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 route2
 
 
-</td><td>
+</td><td markdown="1">
 
 Pick&lt;[RouteEntry](./rest.routeentry.md)<!-- -->, 'verb' \| 'path'&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Second route entry
 

@@ -42,71 +42,71 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [contentType](./openapi-v3.responsedecoratormetadataitem.contenttype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [description](./openapi-v3.responsedecoratormetadataitem.description.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [responseCode](./openapi-v3.responsedecoratormetadataitem.responsecode.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 number
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [responseModelOrSpec](./openapi-v3.responsedecoratormetadataitem.responsemodelorspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

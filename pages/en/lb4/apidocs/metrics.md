@@ -28,12 +28,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MetricsComponent](./metrics.metricscomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A component providing metrics for Prometheus
 
@@ -54,12 +54,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MetricsOptions](./metrics.metricsoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for metrics component
 
@@ -80,12 +80,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MetricsBindings](./metrics.metricsbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -106,12 +106,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DEFAULT\_METRICS\_OPTIONS](./metrics.default_metrics_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -130,12 +130,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MetricsConfig](./metrics.metricsconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration for metrics component with optional properties
 

@@ -44,39 +44,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [basePath](./rest-crud.crudrestcontrolleroptions.basepath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The base path where to "mount" the controller.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [readonly?](./rest-crud.crudrestcontrolleroptions.readonly.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Whether to generate readonly APIs
 

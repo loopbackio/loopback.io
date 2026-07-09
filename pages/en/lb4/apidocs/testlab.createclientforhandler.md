@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 handler
 
 
-</td><td>
+</td><td markdown="1">
 
 (req: http.IncomingMessage, res: http.ServerResponse) =&gt; void
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

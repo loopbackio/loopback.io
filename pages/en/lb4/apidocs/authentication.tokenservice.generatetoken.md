@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 userProfile
 
 
-</td><td>
+</td><td markdown="1">
 
 [UserProfile](./security.userprofile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A UserProfile for which a token should be generated.
 

@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 metadata
 
 
-</td><td>
+</td><td markdown="1">
 
 [AuthenticationMetadata](./authentication.authenticationmetadata.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Array of authentication metadata objects
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 strategyName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the authentication strategy
 

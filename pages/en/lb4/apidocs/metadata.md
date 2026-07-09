@@ -34,109 +34,109 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ClassDecoratorFactory](./metadata.classdecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for class decorators
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DecoratorFactory](./metadata.decoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Base factory class for decorator functions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MetadataAccessor](./metadata.metadataaccessor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A strongly-typed metadata accessor via reflection
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MetadataInspector](./metadata.metadatainspector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inspector for metadata applied by decorators
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MethodDecoratorFactory](./metadata.methoddecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for method decorators
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MethodMultiDecoratorFactory](./metadata.methodmultidecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for an append-array of method-level decorators The `@response` metadata for a method is an array. Each item in the array should be a single value, containing a response code and a single spec or Model. This should allow:
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MethodParameterDecoratorFactory](./metadata.methodparameterdecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for method level parameter decorator.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [NamespacedReflect](./metadata.namespacedreflect.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ParameterDecoratorFactory](./metadata.parameterdecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for parameter decorators
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PropertyDecoratorFactory](./metadata.propertydecoratorfactory.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Factory for property decorators
 
@@ -157,45 +157,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DecoratorOptions](./metadata.decoratoroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for a decorator
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DesignTimeMethodMetadata](./metadata.designtimemethodmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Design time metadata for a method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [InspectionOptions](./metadata.inspectionoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for inspection
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MetadataMap](./metadata.metadatamap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An object mapping keys to corresponding metadata
 
@@ -216,12 +216,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Reflector](./metadata.reflector.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -240,23 +240,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DecoratorType](./metadata.decoratortype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorator function types
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MetadataKey](./metadata.metadatakey.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Key for metadata access via reflection
 

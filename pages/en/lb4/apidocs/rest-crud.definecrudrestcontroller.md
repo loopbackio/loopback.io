@@ -43,33 +43,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 modelCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Entity &amp; { prototype: T &amp; { \[key in IdName\]: IdType; }; }
 
 
-</td><td>
+</td><td markdown="1">
 
 A model class, e.g. `Product`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [CrudRestControllerOptions](./rest-crud.crudrestcontrolleroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration options, e.g. `{basePath: '/products'}`<!-- -->.
 

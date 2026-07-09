@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 src
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Absolute path of file to be copied to the TestSandbox
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 dest
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional. Destination filename of the copy operation (relative to TestSandbox). Original filename used if not specified.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 transform
 
 
-</td><td>
+</td><td markdown="1">
 
 (content: string) =&gt; string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional. A function to transform the file content.
 

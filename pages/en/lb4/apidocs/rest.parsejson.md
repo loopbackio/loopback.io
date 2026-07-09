@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 text
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 JSON string
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 reviver
 
 
-</td><td>
+</td><td markdown="1">
 
 (key: any, value: any) =&gt; any
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional reviver function for `JSON.parse`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 prohibitedKeys
 
 
-</td><td>
+</td><td markdown="1">
 
 string\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of keys to be rejected
 

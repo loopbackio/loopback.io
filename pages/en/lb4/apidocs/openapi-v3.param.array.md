@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 name
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Parameter name
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 source
 
 
-</td><td>
+</td><td markdown="1">
 
 ParameterLocation
 
 
-</td><td>
+</td><td markdown="1">
 
 Source of the parameter value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 itemSpec
 
 
-</td><td>
+</td><td markdown="1">
 
 SchemaObject \| ReferenceObject
 
 
-</td><td>
+</td><td markdown="1">
 
 Item type for the array or the full item object
 

@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Application is the container for various types of artifacts, such as components, servers, controllers, repositories, datasources, connectors, and models.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LifeCycleObserverRegistry](./core.lifecycleobserverregistry.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A context-based registry for life cycle observers
 
@@ -69,155 +69,155 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [addExtension(context, extensionPointName, extensionClass, options)](./core.addextension.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Register an extension for the given extension point to the context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asLifeCycleObserver(binding)](./core.aslifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A `BindingTemplate` function to configure the binding as life cycle observer by tagging it with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [asService(serviceInterface)](./core.asservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a binding template for a service interface
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createServiceBinding(cls, options)](./core.createservicebinding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a service binding from a class or provider
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [extensionFilter(extensionPointNames)](./core.extensionfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function to create binding filter for extensions of a named extension point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [extensionFor(extensionPointNames)](./core.extensionfor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A factory function to create binding template for extensions of the given extension point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [extensionPoint(name, specs)](./core.extensionpoint.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate a class as a named extension point. If the decoration is not present, the name of the class will be used.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [extensions(extensionPointName, metadata)](./core.extensions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Shortcut to inject extensions for the given extension point.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [filterByServiceInterface(serviceInterface)](./core.filterbyserviceinterface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a binding filter by service class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isLifeCycleObserver(obj)](./core.islifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Test if an object implements LifeCycleObserver
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [isLifeCycleObserverClass(ctor)](./core.islifecycleobserverclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Test if a class implements LifeCycleObserver
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lifeCycleObserver(group, specs)](./core.lifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Sugar decorator to mark a class as life cycle observer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mountComponent(app, component)](./core.mountcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Mount a component to an Application.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [service(serviceInterface, metadata)](./core.service.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@service` injects a service instance that matches the class or interface.
 
@@ -238,89 +238,89 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ApplicationConfig](./core.applicationconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration for application
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ApplicationMetadata](./core.applicationmetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Type description for `package.json`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ClassMap](./core.classmap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A map of classes to be bound to a context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Component](./core.component.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A component declares a set of artifacts so that they can be contributed to an application as a group
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LifeCycleObserver](./core.lifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Observers to handle life cycle init/start/stop events
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ProviderMap](./core.providermap.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A map of provider classes to be bound to a context
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [Server](./core.server.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Defines the requirements to implement a Server for LoopBack applications: start() : Promise<void> stop() : Promise<void> It is recommended that each Server implementation creates its own child Context, which inherits from the parent Application context. This way, any Server-specific bindings will remain local to the Server instance, and will avoid polluting its parent module scope.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ServiceOptions](./core.serviceoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to register a service binding
 
@@ -341,32 +341,32 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CoreBindings](./core.corebindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for core binding keys
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CoreTags](./core.coretags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [extensions](./core.extensions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -385,21 +385,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DEFAULT\_ORDERED\_GROUPS](./core.default_ordered_groups.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [lifeCycleObserverFilter](./core.lifecycleobserverfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Find all life cycle observer bindings. By default, a binding tagged with `CoreTags.LIFE_CYCLE_OBSERVER`<!-- -->. It's used as `BindingFilter`<!-- -->.
 
@@ -420,72 +420,72 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ControllerClass](./core.controllerclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A group of life cycle observers
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LifeCycleObserverOptions](./core.lifecycleobserveroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MixinTarget](./core.mixintarget.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A replacement for `typeof Target` to be used in mixin class definitions. This is a workaround for TypeScript limitation described in - https://github.com/microsoft/TypeScript/issues/17293 - https://github.com/microsoft/TypeScript/issues/17744 - https://github.com/microsoft/TypeScript/issues/36060
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ServiceInterface](./core.serviceinterface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Representing an interface for services. In TypeScript, the `interface` does not have reflections at runtime. We use a string, a symbol or a Function as the type for the service interface.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ServiceOrProviderClass](./core.serviceorproviderclass.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ShutdownOptions](./core.shutdownoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to set up application shutdown
 

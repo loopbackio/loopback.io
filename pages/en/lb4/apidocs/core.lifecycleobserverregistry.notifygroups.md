@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 events
 
 
-</td><td>
+</td><td markdown="1">
 
 (keyof [LifeCycleObserver](./core.lifecycleobserver.md)<!-- -->)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Event names
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 groups
 
 
-</td><td>
+</td><td markdown="1">
 
 [LifeCycleObserverGroup](./core.lifecycleobservergroup.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Observer groups
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 reverse
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

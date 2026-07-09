@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 request
 
 
-</td><td>
+</td><td markdown="1">
 
 Request
 
 
-</td><td>
+</td><td markdown="1">
 
 The incoming request.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 AuthenticateOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options passed through to strategy.authenticate.
 

@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 path
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Path at which to host the copy of the OpenAPI
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 form
 
 
-</td><td>
+</td><td markdown="1">
 
 [OpenApiSpecForm](./rest.openapispecform.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Form that should be rendered from that path
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 router
 
 
-</td><td>
+</td><td markdown="1">
 
 express.Router
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

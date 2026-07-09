@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 outFile
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ File name for the spec. The extension of the file determines the format of the file. - `yaml` or `yml`<!-- -->: YAML - `json` or other: JSON If the outFile is not provided or its value is `''` or `'-'`<!-- -->, the spec is written to the console using the `log` function.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 log
 
 
-</td><td>
+</td><td markdown="1">
 
 (message?: any, ...optionalParams: any\[\]) =&gt; void
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Log function, default to `console.log`
 

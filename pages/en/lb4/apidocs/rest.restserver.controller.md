@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 controllerCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 [ControllerClass](./rest.controllerclass.md)<!-- -->&lt;[ControllerInstance](./rest.controllerinstance.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The controller class (constructor function).
 

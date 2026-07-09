@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [LIVE\_CHECK](./health.healthtags.live_check.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for liveness check functions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [READY\_CHECK](./health.healthtags.ready_check.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for readiness check functions
 

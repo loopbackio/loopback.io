@@ -64,15 +64,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(key, spec, options)](./metadata.decoratorfactory._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Construct a new class decorator factory
 
@@ -103,98 +103,98 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [decoratorName](./metadata.decoratorfactory.decoratorname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [key](./metadata.decoratorfactory.key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [options](./metadata.decoratorfactory.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [DecoratorOptions](./metadata.decoratoroptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [spec](./metadata.decoratorfactory.spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TARGET](./metadata.decoratorfactory.target.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 A constant to reference the target of a decoration
 
@@ -220,171 +220,171 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [\_createDecorator(key, spec, options)](./metadata.decoratorfactory._createdecorator.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a decorator function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [allowInheritance()](./metadata.decoratorfactory.allowinheritance.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [cloneDeep(val)](./metadata.decoratorfactory.clonedeep.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [create()](./metadata.decoratorfactory.create.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a decorator function of the given type. Each sub class MUST implement this method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [decorate(target, member, descriptorOrIndex)](./metadata.decoratorfactory.decorate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Base implementation of the decorator function
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [duplicateDecorationError(target, member, descriptorOrIndex)](./metadata.decoratorfactory.duplicatedecorationerror.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an error to report if the decorator is applied to the target more than once
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getNumberOfParameters(target, member)](./metadata.decoratorfactory.getnumberofparameters.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the number of parameters for a given constructor or method
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getTarget(spec)](./metadata.decoratorfactory.gettarget.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the optional decoration target of a given spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getTargetName(target, member, descriptorOrIndex)](./metadata.decoratorfactory.gettargetname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `static`
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the qualified name of a decoration target.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [inherit(inheritedMetadata)](./metadata.decoratorfactory.inherit.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 Inherit metadata from base classes. By default, this method merges base metadata into the spec if `allowInheritance` is set to `true`<!-- -->. To customize the behavior, this method can be overridden by sub classes.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithInherited(inheritedMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithinherited.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the inherited metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.
 
@@ -392,17 +392,17 @@ It MUST be overridden by subclasses to process inherited metadata.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeWithOwn(ownMetadata, target, member, descriptorOrIndex)](./metadata.decoratorfactory.mergewithown.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 This method is called by the default implementation of the decorator function to merge the spec argument from the decoration with the own metadata for a class, all properties, all methods, or all method parameters that are decorated by this decorator.
 
@@ -410,15 +410,15 @@ It MUST be overridden by subclasses to process own metadata.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withTarget(spec, target)](./metadata.decoratorfactory.withtarget.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set a reference to the target class or prototype for a given spec if it's an object
 

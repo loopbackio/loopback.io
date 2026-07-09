@@ -41,81 +41,81 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 target
 
 
-</td><td>
+</td><td markdown="1">
 
 object
 
 
-</td><td>
+</td><td markdown="1">
 
 The class for constructor injection or prototype for method injection
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 method
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 The method name. If set to '', the constructor will be used.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 ctx
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The context containing values for `@inject` resolution
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 session
 
 
-</td><td>
+</td><td markdown="1">
 
 [ResolutionSession](./context.resolutionsession.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional session for binding and dependency resolution
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 nonInjectedArgs
 
 
-</td><td>
+</td><td markdown="1">
 
 any\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Optional array of args for non-injected parameters
 

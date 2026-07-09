@@ -41,15 +41,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(getEnhancers, options)](./openapi-v3.oasenhancerservice._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `OASEnhancerService` class
 
@@ -80,41 +80,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [options?](./openapi-v3.oasenhancerservice.options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md) \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An extension point should be able to receive its options via dependency injection.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [spec](./openapi-v3.oasenhancerservice.spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Getter for `_spec`
 
@@ -140,43 +140,43 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [applyAllEnhancers(options)](./openapi-v3.oasenhancerservice.applyallenhancers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Generate OpenAPI spec by applying ALL registered enhancers TBD: load enhancers by group names
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [applyEnhancerByName(name)](./openapi-v3.oasenhancerservice.applyenhancerbyname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Apply a given enhancer's merge function. Return the latest \_spec.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getEnhancerByName(name)](./openapi-v3.oasenhancerservice.getenhancerbyname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Find an enhancer by its name
 

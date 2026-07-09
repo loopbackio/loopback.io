@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 serviceInterface
 
 
-</td><td>
+</td><td markdown="1">
 
 [ServiceInterface](./core.serviceinterface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Service class matching the one used by `binding.toClass()`
 

@@ -44,96 +44,96 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [consolidate?](./rest.openapispecoptions.consolidate.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Set this flag to `false` to disable OAS schema consolidation. If not set, the value defaults to `true`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [disabled?](./rest.openapispecoptions.disabled.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 true
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Set this flag to disable the endpoint for OpenAPI spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [endpointMapping?](./rest.openapispecoptions.endpointmapping.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 { \[key: string\]: [OpenApiSpecForm](./rest.openapispecform.md)<!-- -->; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Mapping of urls to spec forms, by default: <br> { <br> '/openapi.json': {<!-- -->version: '3.0.0', format: 'json'<!-- -->}<!-- -->, <br> '/openapi.yaml': {<!-- -->version: '3.0.0', format: 'yaml'<!-- -->}<!-- -->, <br> }
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [servers?](./rest.openapispecoptions.servers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 ServerObject\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Configure servers for OpenAPI spec
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setServersFromRequest?](./rest.openapispecoptions.setserversfromrequest.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag to force `servers` to be set from the http request for the OpenAPI spec
 

@@ -32,122 +32,122 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [allow(roles)](./authorization.authorize.allow.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Shortcut to configure allowed roles
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [allowAll()](./authorization.authorize.allowall.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Allows all
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [allowAllExcept(roles)](./authorization.authorize.allowallexcept.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Allow all but the given roles
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [allowAuthenticated()](./authorization.authorize.allowauthenticated.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Allow authenticated users
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [deny(roles)](./authorization.authorize.deny.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Shortcut to configure denied roles
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [denyAll()](./authorization.authorize.denyall.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Deny all
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [denyAllExcept(roles)](./authorization.authorize.denyallexcept.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Deny all but the given roles
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [denyUnauthenticated()](./authorization.authorize.denyunauthenticated.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Deny unauthenticated users
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [scope(scopes)](./authorization.authorize.scope.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Shortcut to specify access scopes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [skip()](./authorization.authorize.skip.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Skip authorization
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [vote(voters)](./authorization.authorize.vote.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Shortcut to configure voters
 

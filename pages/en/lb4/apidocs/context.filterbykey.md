@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 keyPattern
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| RegExp \| [BindingFilter](./context.bindingfilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Binding key/wildcard, regexp, or a filter function
 

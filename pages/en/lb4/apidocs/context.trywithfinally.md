@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 action
 
 
-</td><td>
+</td><td markdown="1">
 
 () =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 A function that returns a promise or a value
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 finalAction
 
 
-</td><td>
+</td><td markdown="1">
 
 () =&gt; void
 
 
-</td><td>
+</td><td markdown="1">
 
 A function to be called once the action is fulfilled or rejected (synchronously or asynchronously)
 

@@ -45,115 +45,115 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [apiReportEnabled?](./tsdocs.extractoroptions.apireportenabled.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag to control if `apiReport` should be enabled
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [config?](./tsdocs.extractoroptions.config.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 IConfigFile
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Configuration for api-extractor
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ignoreErrors?](./tsdocs.extractoroptions.ignoreerrors.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ A flag to control if errors should be ignored
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mainEntryPointFilePath?](./tsdocs.extractoroptions.mainentrypointfilepath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ mainEntryPointFilePath
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tsconfigFilePath?](./tsdocs.extractoroptions.tsconfigfilepath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Path for tsconfig
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [typescriptCompilerFolder?](./tsdocs.extractoroptions.typescriptcompilerfolder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Custom TypeScript compiler dir
 

@@ -37,15 +37,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(initialSpec)](./openapi-spec-builder.builderbase._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `BuilderBase` class
 
@@ -76,22 +76,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [\_spec](./openapi-spec-builder.builderbase._spec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 T
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -115,29 +115,29 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [build()](./openapi-spec-builder.builderbase.build.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Build the spec object.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withExtension(key, value)](./openapi-spec-builder.builderbase.withextension.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Add a custom (extension) property to the spec object.
 

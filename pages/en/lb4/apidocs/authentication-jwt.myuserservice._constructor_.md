@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 userRepository
 
 
-</td><td>
+</td><td markdown="1">
 
 [UserRepository](./authentication-jwt.userrepository.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 bindings
 
 
-</td><td>
+</td><td markdown="1">
 
 Readonly&lt;[Binding](./context.binding.md)<!-- -->&lt;T&gt;&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of bindings
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 phaseTagName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Tag name for phase, for example, we can use the value `'a'` of tag `order` as the phase name for `binding.tag({order: 'a'})`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 orderOfPhases
 
 
-</td><td>
+</td><td markdown="1">
 
 (string \| symbol)\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ An array of phase names as the predefined order
 

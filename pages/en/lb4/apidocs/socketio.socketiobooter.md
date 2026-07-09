@@ -46,15 +46,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(app, projectRoot, socketioControllerConfig, socketioServer)](./socketio.socketiobooter._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `SocketIoBooter` class
 
@@ -85,56 +85,56 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [app](./socketio.socketiobooter.app.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Application](./core.application.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [socketioControllerConfig](./socketio.socketiobooter.socketiocontrollerconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 ArtifactOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [socketioServer](./socketio.socketiobooter.socketioserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `protected`
 
 
-</td><td>
+</td><td markdown="1">
 
 [SocketIoServer](./socketio.socketioserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -158,15 +158,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [load()](./socketio.socketiobooter.load.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Uses super method to get a list of Artifact classes. Boot each class by binding it to the application using `app.controller(controller);`<!-- -->.
 

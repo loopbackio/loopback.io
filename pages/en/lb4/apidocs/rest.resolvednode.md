@@ -42,37 +42,37 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [node](./rest.resolvednode.node.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [Node](./rest.node.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [params?](./rest.resolvednode.params.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [PathParameterValues](./rest.pathparametervalues.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

@@ -28,34 +28,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ContextBinding](./context-explorer.contextbinding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A wrapper class for context, binding, and its level in the chain
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextExplorerComponent](./context-explorer.contextexplorercomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A component providing a self-hosted API Explorer.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextGraph](./context-explorer.contextgraph.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A graph for context hierarchy
 
@@ -76,12 +76,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [renderGraph(graph, options)](./context-explorer.rendergraph.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Render a graphviz dot string
 
@@ -102,12 +102,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ContextExplorerBindings](./context-explorer.contextexplorerbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -128,34 +128,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [BindingNodeFilter](./context-explorer.bindingnodefilter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A filter function to control if a binding is to be rendered
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextExplorerConfig](./context-explorer.contextexplorerconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options to configure Context Explorer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ContextGraphOptions](./context-explorer.contextgraphoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for ContextGraph
 

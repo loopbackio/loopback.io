@@ -44,20 +44,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [emptyValue](./repository-tests.crudfeatures.emptyvalue.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 undefined \| null
 
 
-</td><td>
+</td><td markdown="1">
 
 The value used by the database to store properties set to `undefined`<!-- -->. Typically, SQL databases store both `undefined` and `null` as `null`<!-- -->.
 
@@ -65,20 +65,20 @@ Default: `undefined`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [freeFormProperties](./repository-tests.crudfeatures.freeformproperties.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Does the database (or the connector) require a fixed schema, or can it support additional (free-form) properties? SQL databases typically don't support free-form properties.
 
@@ -86,20 +86,20 @@ Default: `true`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [hasRevisionToken](./repository-tests.crudfeatures.hasrevisiontoken.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Does the connector have the revision token for replacement operations? (Cloudant)
 
@@ -107,20 +107,20 @@ Default: `false`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [idType](./repository-tests.crudfeatures.idtype.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 'string' \| 'number'
 
 
-</td><td>
+</td><td markdown="1">
 
 What type is used for auto-generated primary keys? - SQL databases typically use auto-incremented numbers, - NoSQL databases tend to use GUID/UUID strings.
 
@@ -128,20 +128,20 @@ Default: `'string'`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [supportsInclusionResolvers](./repository-tests.crudfeatures.supportsinclusionresolvers.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Does the repository provide `inclusionResolvers` object where resolvers can be registered?
 
@@ -149,20 +149,20 @@ Default: `true`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [supportsTransactions](./repository-tests.crudfeatures.supportstransactions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Does the connector support using transactions for performing CRUD operations atomically and being able to commit or rollback the changes? SQL databases usually support transactions
 

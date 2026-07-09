@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [StrategyAdapter](./authentication-passport.strategyadapter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Adapter class to invoke passport-strategy 1. provides express dependencies to the passport strategies 2. provides shimming of requests for passport authentication 3. provides life-cycle similar to express to the passport-strategy 4. provides state methods to the strategy instance see: https://github.com/jaredhanson/passport
 

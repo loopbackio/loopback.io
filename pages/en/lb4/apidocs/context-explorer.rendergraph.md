@@ -42,33 +42,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 graph
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 A graph in dot format
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 { engine?: string; format?: string; }
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options for the rendering
 

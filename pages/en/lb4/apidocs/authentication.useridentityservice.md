@@ -38,23 +38,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [findOrCreateUser(userIdentity)](./authentication.useridentityservice.findorcreateuser.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 find or create a local user using a profile from an external source
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [linkExternalProfile(userId, userIdentity)](./authentication.useridentityservice.linkexternalprofile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 link an external profile with an existing local user id.
 

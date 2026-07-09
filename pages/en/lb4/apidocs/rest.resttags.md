@@ -34,94 +34,94 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ACTION\_MIDDLEWARE\_CHAIN](./rest.resttags.action_middleware_chain.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Legacy middleware chain for action-based REST sequence
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AJV\_FORMAT](./rest.resttags.ajv_format.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [AJV\_KEYWORD](./rest.resttags.ajv_keyword.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER\_BINDING](./rest.resttags.controller_binding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for controller route bindings to represent the controller binding key
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CONTROLLER\_ROUTE](./rest.resttags.controller_route.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag to identify controller based REST routes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REST\_MIDDLEWARE\_CHAIN](./rest.resttags.rest_middleware_chain.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REST\_ROUTE](./rest.resttags.rest_route.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag to identify REST routes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ROUTE\_PATH](./rest.resttags.route_path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for the REST route path
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ROUTE\_VERB](./rest.resttags.route_verb.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tag for the REST route verb
 

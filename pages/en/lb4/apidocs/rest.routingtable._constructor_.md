@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 \_router
 
 
-</td><td>
+</td><td markdown="1">
 
 [RestRouter](./rest.restrouter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 \_externalRoutes
 
 
-</td><td>
+</td><td markdown="1">
 
 ExternalExpressRoutes \| undefined
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

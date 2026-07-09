@@ -39,65 +39,65 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 context
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 extensionPointName
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the extension point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 extensionClass
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;unknown&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Class or a provider for an extension
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options Options for the creation of binding from class
 

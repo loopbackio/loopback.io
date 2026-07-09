@@ -42,12 +42,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [HttpCachingProxy](./http-caching-proxy.httpcachingproxy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The HTTP proxy implementation.
 
@@ -68,12 +68,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ProxyOptions](./http-caching-proxy.proxyoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

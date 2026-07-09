@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 list
 
 
-</td><td>
+</td><td markdown="1">
 
 Record&lt;string, [MyUser](./mock-oauth2-provider.myuser.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -42,15 +42,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(options, parent)](./graphql.graphqlserver._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `GraphQLServer` class
 
@@ -81,62 +81,62 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [expressApp](./graphql.graphqlserver.expressapp.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 express.Application
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [httpServer?](./graphql.graphqlserver.httpserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [HttpServer](./http-server.httpserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [listening](./graphql.graphqlserver.listening.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 boolean
 
 
-</td><td>
+</td><td markdown="1">
 
 Is the GraphQL listening
 
@@ -162,107 +162,107 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [exportGraphQLSchema(outFile, log)](./graphql.graphqlserver.exportgraphqlschema.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getMiddlewareList()](./graphql.graphqlserver.getmiddlewarelist.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get a list of middleware
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getResolverClasses()](./graphql.graphqlserver.getresolverclasses.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Get a list of resolver classes
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getSchema()](./graphql.graphqlserver.getschema.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [middleware(middleware)](./graphql.graphqlserver.middleware.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a GraphQL middleware
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [resolver(resolverClass, nameOrOptions)](./graphql.graphqlserver.resolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Register a GraphQL resolver class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start()](./graphql.graphqlserver.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./graphql.graphqlserver.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

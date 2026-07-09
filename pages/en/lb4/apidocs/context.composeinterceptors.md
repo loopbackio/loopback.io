@@ -39,17 +39,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 interceptors
 
 
-</td><td>
+</td><td markdown="1">
 
 [GenericInterceptorOrKey](./context.genericinterceptororkey.md)<!-- -->&lt;C&gt;\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 A list of interceptor functions or binding keys
 

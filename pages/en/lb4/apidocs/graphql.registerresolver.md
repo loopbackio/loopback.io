@@ -39,49 +39,49 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 ctx
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Context object
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 resolverClass
 
 
-</td><td>
+</td><td markdown="1">
 
 [Constructor](./context.constructor.md)<!-- -->&lt;object&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 Resolver class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 nameOrOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| [BindingFromClassOptions](./context.bindingfromclassoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Resolver name or binding options
 

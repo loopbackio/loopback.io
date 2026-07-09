@@ -41,33 +41,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 modelCtor
 
 
-</td><td>
+</td><td markdown="1">
 
 typeof Model
 
 
-</td><td>
+</td><td markdown="1">
 
 Model class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 string \| ([FilterSchemaOptions](./repository-json-schema.filterschemaoptions.md) &amp; { name?: string; })
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options to customize the parameter name or filter schema
 

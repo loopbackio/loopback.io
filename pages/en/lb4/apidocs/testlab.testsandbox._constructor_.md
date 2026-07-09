@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 rootPath
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 Root path of the TestSandbox. If relative it will be resolved against the current directory.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 options
 
 
-</td><td>
+</td><td markdown="1">
 
 [TestSandboxOptions](./testlab.testsandboxoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Options to control if/how the sandbox creates a subdirectory for the sandbox. If not provided, the sandbox will automatically creates a unique temporary subdirectory. This allows sandboxes with the same root path can be used in parallel during testing.
 

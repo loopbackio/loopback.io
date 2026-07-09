@@ -37,17 +37,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 requestOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 ShotRequestOptions
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

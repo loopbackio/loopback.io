@@ -28,21 +28,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MsgPackBodyParser](./rest-msgpack.msgpackbodyparser.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [MsgPackBodyParserComponent](./rest-msgpack.msgpackbodyparsercomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -61,12 +61,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [MsgPackBodyParserBindings](./rest-msgpack.msgpackbodyparserbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

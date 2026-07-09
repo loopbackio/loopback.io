@@ -32,23 +32,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [array(itemSpec, properties)](./openapi-v3.requestbody.array.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a requestBody of `array` type.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [file(properties)](./openapi-v3.requestbody.file.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Define a requestBody of `file` type. This is used to support multipart/form-data based file upload. Use `@requestBody` for other content types.
 

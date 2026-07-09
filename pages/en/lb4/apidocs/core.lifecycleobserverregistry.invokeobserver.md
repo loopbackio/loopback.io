@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 observer
 
 
-</td><td>
+</td><td markdown="1">
 
 [LifeCycleObserver](./core.lifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A life cycle observer
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 event
 
 
-</td><td>
+</td><td markdown="1">
 
 keyof [LifeCycleObserver](./core.lifecycleobserver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Event name
 

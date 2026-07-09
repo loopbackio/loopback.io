@@ -44,17 +44,17 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 clause
 
 
-</td><td>
+</td><td markdown="1">
 
 [AndClause](./filter.andclause.md)<!-- -->&lt;MT&gt; \| [OrClause](./filter.orclause.md)<!-- -->&lt;MT&gt; \| [Condition](./filter.condition.md)<!-- -->&lt;MT&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 And/Or/Condition clause
 

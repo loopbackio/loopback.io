@@ -32,34 +32,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [binding(bindingKey, metadata)](./context.inject.binding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject the binding object for the given key. This is useful if a binding needs to be set up beyond just a constant value allowed by `@inject.setter`<!-- -->. The injected binding is found or created based on the `metadata.bindingCreation` option. See `BindingCreationPolicy` for more details.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [context()](./context.inject.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject the context object.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getter(bindingSelector, metadata)](./context.inject.getter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject a function for getting the actual bound value.
 
@@ -69,12 +69,12 @@ See also `Getter<T>`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [setter(bindingKey, metadata)](./context.inject.setter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject a function for setting (binding) the given key to a given value. (Only static/constant values are supported, it's not possible to bind a key to a class or a provider.)
 
@@ -84,23 +84,23 @@ See also `Setter<T>`<!-- -->.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tag(bindingTag, metadata)](./context.inject.tag.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject an array of values by a tag pattern string or regexp
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [view(bindingFilter, metadata)](./context.inject.view.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Inject matching bound values by the filter function
 

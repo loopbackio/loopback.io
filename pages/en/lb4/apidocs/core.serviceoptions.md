@@ -45,20 +45,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [interface?](./core.serviceoptions.interface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [ServiceInterface](./core.serviceinterface.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_
 

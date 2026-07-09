@@ -45,39 +45,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [fromBinding?](./context.configinjectionmetadata.frombinding.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [BindingAddress](./context.bindingaddress.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Customize the target binding key from which the configuration is fetched. If not specified, the configuration of the current binding that contains the injection is used.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [propertyPath?](./context.configinjectionmetadata.propertypath.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 _(Optional)_ Property path to retrieve the configuration of the target binding, for example, `rest.host`<!-- -->.
 

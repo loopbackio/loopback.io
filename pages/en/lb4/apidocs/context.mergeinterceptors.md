@@ -43,33 +43,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 interceptorsFromSpec
 
 
-</td><td>
+</td><td markdown="1">
 
 [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Interceptors from `@intercept`
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 existingInterceptors
 
 
-</td><td>
+</td><td markdown="1">
 
 [InterceptorOrKey](./context.interceptororkey.md)<!-- -->\[\]
 
 
-</td><td>
+</td><td markdown="1">
 
 Interceptors already applied for the method
 

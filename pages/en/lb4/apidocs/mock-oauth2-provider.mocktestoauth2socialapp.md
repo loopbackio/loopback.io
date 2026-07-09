@@ -32,21 +32,21 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [startMock](./mock-oauth2-provider.mocktestoauth2socialapp.startmock.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stopMock](./mock-oauth2-provider.mocktestoauth2socialapp.stopmock.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

@@ -39,15 +39,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(rootPath, options)](./testlab.testsandbox._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Will create a directory if it doesn't already exist. If it exists, you still get an instance of the TestSandbox.
 
@@ -78,22 +78,22 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [path](./testlab.testsandbox.path.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 string
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -117,85 +117,85 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [copyFile(src, dest, transform)](./testlab.testsandbox.copyfile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Copies a file from src to the TestSandbox. If copying a `.js` file which has an accompanying `.js.map` file in the src file location, the dest file will have its sourceMappingURL updated to point to the original file as an absolute path so you don't need to copy the map file.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [delete()](./testlab.testsandbox.delete.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Deletes the TestSandbox.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mkdir(dir)](./testlab.testsandbox.mkdir.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Makes a directory in the TestSandbox
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [reset()](./testlab.testsandbox.reset.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Resets the TestSandbox. (Remove all files in it).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [writeJsonFile(dest, data)](./testlab.testsandbox.writejsonfile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Creates a new file and writes the given data serialized as JSON.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [writeTextFile(dest, data)](./testlab.testsandbox.writetextfile.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Creates a new file and writes the given data as a UTF-8-encoded text.
 

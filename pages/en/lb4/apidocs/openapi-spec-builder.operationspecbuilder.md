@@ -40,15 +40,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)()](./openapi-spec-builder.operationspecbuilder._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `OperationSpecBuilder` class
 
@@ -74,109 +74,109 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [withControllerName(name)](./openapi-spec-builder.operationspecbuilder.withcontrollername.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define the controller name (controller name).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withOperationId(operationId)](./openapi-spec-builder.operationspecbuilder.withoperationid.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define the operationId
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withOperationName(name)](./openapi-spec-builder.operationspecbuilder.withoperationname.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Define the operation name (controller method name).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withParameter(parameterSpecs)](./openapi-spec-builder.operationspecbuilder.withparameter.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe one more parameters accepted by the operation. Note that parameters are positional in OpenAPI Spec, therefore the first call of `withParameter` defines the first parameter, the second call defines the second parameter, etc.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withRequestBody(requestBodySpec)](./openapi-spec-builder.operationspecbuilder.withrequestbody.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withResponse(status, responseSpec)](./openapi-spec-builder.operationspecbuilder.withresponse.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe a response for a given HTTP status code.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withStringResponse(status)](./openapi-spec-builder.operationspecbuilder.withstringresponse.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [withTags(tags)](./openapi-spec-builder.operationspecbuilder.withtags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe tags associated with the operation
 

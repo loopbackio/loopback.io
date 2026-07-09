@@ -34,12 +34,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [OASEnhancerService](./openapi-v3.oasenhancerservice.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 An extension point for OpenAPI Spec enhancement This service is used for enhancing an OpenAPI spec by loading and applying one or more registered enhancers.
 
@@ -62,12 +62,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [OperationVisibility](./openapi-v3.operationvisibility.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -86,12 +86,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [api(spec)](./openapi-v3.api.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Decorate the given Controller constructor with metadata describing the HTTP/REST API the Controller implements/provides.
 
@@ -99,34 +99,34 @@ Decorate the given Controller constructor with metadata describing the HTTP/REST
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [createEmptyApiSpec()](./openapi-v3.createemptyapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create an empty OpenApiSpec object that's still a valid openapi document.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [del(path, spec)](./openapi-v3.del.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose a Controller method as a REST API operation mapped to `DELETE` request method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [deprecated(isDeprecated)](./openapi-v3.deprecated.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Marks an api path as deprecated. When applied to a class, this decorator marks all paths as deprecated.
 
@@ -134,34 +134,34 @@ You can optionally mark all controllers in a class as deprecated, but use `@depr
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [get(path, spec)](./openapi-v3.get.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose a Controller method as a REST API operation mapped to `GET` request method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getControllerSpec(constructor)](./openapi-v3.getcontrollerspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Get the controller spec for the given class
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getFilterSchemaFor(modelCtor, options)](./openapi-v3.getfilterschemafor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Build an OpenAPI schema describing the format of the "filter" object used to query model instances.
 
@@ -169,23 +169,23 @@ Note we don't take the model properties into account yet and return a generic js
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getModelSchemaRef(modelCtor, options)](./openapi-v3.getmodelschemaref.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe the provided Model as a reference to a definition shared by multiple endpoints. The definition is included in the returned schema.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [getWhereSchemaFor(modelCtor)](./openapi-v3.getwhereschemafor.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Build a OpenAPI schema describing the format of the "where" object used to filter model instances to query, update or delete.
 
@@ -193,34 +193,34 @@ Note we don't take the model properties into account yet and return a generic js
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [jsonOrBooleanToJSON(jsonOrBool)](./openapi-v3.jsonorbooleantojson.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Helper function used to interpret boolean values as JSON Schemas. See http://json-schema.org/draft-06/json-schema-release-notes.html
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [jsonToSchemaObject(json, visited)](./openapi-v3.jsontoschemaobject.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Converts JSON Schemas into a SchemaObject
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeOpenAPISpec(currentSpec, patchSpec)](./openapi-v3.mergeopenapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The default merge function to patch the current OpenAPI spec. It leverages module `json-merge-patch`<!-- -->'s merge API to merge two json objects. It returns a new merged object without modifying the original one.
 
@@ -228,34 +228,34 @@ A list of merging rules can be found in test file: https://github.com/pierreingl
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [mergeSecuritySchemeToSpec(spec, schemeName, schemeSpec)](./openapi-v3.mergesecurityschemetospec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Security scheme merge helper function to patch the current OpenAPI spec. It provides a direct route to add a security schema to the specs components. It returns a new merged object without modifying the original one.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [operation(verb, path, spec)](./openapi-v3.operation.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose a Controller method as a REST API operation.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [param(paramSpec)](./openapi-v3.param.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe an input parameter of a Controller method.
 
@@ -263,45 +263,45 @@ Describe an input parameter of a Controller method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [patch(path, spec)](./openapi-v3.patch.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose a Controller method as a REST API operation mapped to `PATCH` request method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [post(path, spec)](./openapi-v3.post.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose a Controller method as a REST API operation mapped to `POST` request method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [put(path, spec)](./openapi-v3.put.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Expose a Controller method as a REST API operation mapped to `PUT` request method.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [requestBody(requestBodySpec)](./openapi-v3.requestbody.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Describe the request body of a Controller method parameter.
 
@@ -309,34 +309,34 @@ A typical OpenAPI requestBody spec contains property: - `description` - `require
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [response(responseCode, responseModelOrSpec)](./openapi-v3.response.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Add response object to a path spec.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [tags(tagNames)](./openapi-v3.tags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Add tags for an endpoint. When applied to a class, this decorator adds the tags to all endpoints.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [visibility(visibilityType)](./openapi-v3.visibility.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Marks an api path with the specfied visibility. When applied to a class, this decorator marks all paths with the specified visibility.
 
@@ -359,63 +359,63 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [ControllerSpec](./openapi-v3.controllerspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [OASEnhancer](./openapi-v3.oasenhancer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Typically an extension point defines an interface as the contract for extensions to implement
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [OASEnhancerServiceOptions](./openapi-v3.oasenhancerserviceoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for the OpenAPI Spec enhancer extension point
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResponseDecoratorMetadataItem](./openapi-v3.responsedecoratormetadataitem.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [RestEndpoint](./openapi-v3.restendpoint.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Data structure for REST related metadata
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TagsDecoratorMetadata](./openapi-v3.tagsdecoratormetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -434,41 +434,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [OASEnhancerBindings](./openapi-v3.oasenhancerbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [param](./openapi-v3.param.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Namespace for `@param.*` decorators
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [requestBody](./openapi-v3.requestbody.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [response](./openapi-v3.response.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -487,59 +487,59 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asSpecEnhancer](./openapi-v3.asspecenhancer.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A binding template for spec contributor extensions
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [DEFAULT\_OPENAPI\_SPEC\_INFO](./openapi-v3.default_openapi_spec_info.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [oas](./openapi-v3.oas.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [PARAMETER\_INDEX](./openapi-v3.parameter_index.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [REQUEST\_BODY\_INDEX](./openapi-v3.request_body_index.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [TS\_TYPE\_KEY](./openapi-v3.ts_type_key.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -558,39 +558,39 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [OpenApiSpec](./openapi-v3.openapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResponseDecoratorMetadata](./openapi-v3.responsedecoratormetadata.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ResponseModelOrSpec](./openapi-v3.responsemodelorspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [SchemaRef](./openapi-v3.schemaref.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Custom LoopBack extension: a reference to Schema object that's bundled inside `definitions` property.
 

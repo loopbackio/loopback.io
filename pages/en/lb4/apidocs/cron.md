@@ -28,23 +28,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CronComponent](./cron.croncomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 The CronComponent manages cron jobs. It serves as an extension point for cron jobs.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CronJob](./cron.cronjob.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Cron job with an optional name
 
@@ -65,23 +65,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [asCronJob(binding)](./cron.ascronjob.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A `BindingTemplate` function to configure the binding as a cron job.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [cronJob(specs)](./cron.cronjob.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `@cronJob` decorates a cron job provider class
 
@@ -102,12 +102,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CronBindings](./cron.cronbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
@@ -128,12 +128,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CRON\_JOB\_SCHEDULER](./cron.cron_job_scheduler.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Name of the cron job extension point
 
@@ -154,23 +154,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CronJobConfig](./cron.cronjobconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration for a cron job.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [CronJobOptions](./cron.cronjoboptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for a cron job. It adds an optional `name` to cron parameters.
 

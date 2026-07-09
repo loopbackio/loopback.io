@@ -34,43 +34,43 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [BuilderBase](./openapi-spec-builder.builderbase.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ComponentsSpecBuilder](./openapi-spec-builder.componentsspecbuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A builder for creating ComponentsObject specifications.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [OpenApiSpecBuilder](./openapi-spec-builder.openapispecbuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A builder for creating OpenApiSpec documents.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [OperationSpecBuilder](./openapi-spec-builder.operationspecbuilder.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A builder for creating OperationObject specifications.
 
@@ -91,34 +91,34 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [aComponentsSpec()](./openapi-spec-builder.acomponentsspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a new instance of ComponentsSpecBuilder.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [anOpenApiSpec()](./openapi-spec-builder.anopenapispec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a new instance of OpenApiSpecBuilder.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [anOperationSpec()](./openapi-spec-builder.anoperationspec.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Create a new instance of OperationSpecBuilder.
 

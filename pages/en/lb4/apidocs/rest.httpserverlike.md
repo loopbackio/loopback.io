@@ -42,20 +42,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [requestHandler](./rest.httpserverlike.requesthandler.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 [HttpRequestListener](./rest.httprequestlistener.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

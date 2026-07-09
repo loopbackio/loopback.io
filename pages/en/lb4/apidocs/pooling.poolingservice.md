@@ -46,15 +46,15 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [(constructor)(context, options)](./pooling.poolingservice._constructor_.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Constructs a new instance of the `PoolingService` class
 
@@ -85,41 +85,41 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [context](./pooling.poolingservice.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 [Context](./context.context.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [pool](./pooling.poolingservice.pool.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 `readonly`
 
 
-</td><td>
+</td><td markdown="1">
 
 Pool&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 The resource pool
 
@@ -145,85 +145,85 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [acquire(requestCtx)](./pooling.poolingservice.acquire.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Acquire a new instance
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [destroy(resource)](./pooling.poolingservice.destroy.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Destroy a resource from the pool
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [release(resource)](./pooling.poolingservice.release.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Release the resource back to the pool.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [run(task, requestCtx)](./pooling.poolingservice.run.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Run the task with an acquired resource from the pool. If task is completed successfully, the resource is returned to the pool. Otherwise, the resource is destroyed.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [start()](./pooling.poolingservice.start.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Start the pool
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [stop()](./pooling.poolingservice.stop.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Stop the pool
 

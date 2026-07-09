@@ -58,20 +58,20 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [value](./context.dynamicvalueproviderclass.value.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 (...args: [BoundValue](./context.boundvalue.md)<!-- -->\[\]) =&gt; [ValueOrPromise](./context.valueorpromise.md)<!-- -->&lt;T&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>

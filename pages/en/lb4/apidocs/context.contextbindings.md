@@ -34,23 +34,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [CONFIGURATION\_RESOLVER](./context.contextbindings.configuration_resolver.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for ConfigurationResolver
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [GLOBAL\_INTERCEPTOR\_ORDERED\_GROUPS](./context.contextbindings.global_interceptor_ordered_groups.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding key for ordered groups of global interceptors
 

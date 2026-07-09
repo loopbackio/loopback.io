@@ -39,33 +39,33 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 response
 
 
-</td><td>
+</td><td markdown="1">
 
 Response
 
 
-</td><td>
+</td><td markdown="1">
 
 HTTP Response
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 result
 
 
-</td><td>
+</td><td markdown="1">
 
 [OperationRetval](./rest.operationretval.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Result from the API to write into HTTP Response
 

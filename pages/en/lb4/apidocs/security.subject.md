@@ -46,58 +46,58 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [authorities](./security.subject.authorities.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set&lt;[Permission](./security.permission.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of authorities granted by the user to the client application. One example is {@<!-- -->link https://tools.ietf.org/html/rfc6749\#section-3.3 \| oAuth2 scopes).
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [credentials](./security.subject.credentials.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set&lt;[Credential](./security.credential.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of credentials, such as password, access token, or private/public keys.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [principals](./security.subject.principals.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
-</td><td>
+</td><td markdown="1">
 
 Set&lt;[TypedPrincipal](./security.typedprincipal.md)<!-- -->&gt;
 
 
-</td><td>
+</td><td markdown="1">
 
 An array of principals. It can include information about the current user, the client application, and granted authorities.
 

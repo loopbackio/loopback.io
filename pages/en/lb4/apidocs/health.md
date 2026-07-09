@@ -28,12 +28,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [HealthComponent](./health.healthcomponent.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 A component providing health status
 
@@ -54,23 +54,23 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [HealthBindings](./health.healthbindings.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding keys used by this component.
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HealthTags](./health.healthtags.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Binding tags for health related services
 
@@ -91,12 +91,12 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [DEFAULT\_HEALTH\_OPTIONS](./health.default_health_options.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 
 </td></tr>
@@ -115,45 +115,45 @@ Description
 
 
 </th></tr></thead>
-<tbody><tr><td>
+<tbody><tr><td markdown="1">
 
 [HealthConfig](./health.healthconfig.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Configuration for health component with optional properties
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [HealthOptions](./health.healthoptions.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Options for health component
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [LiveCheck](./health.livecheck.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Functions for liveness check
 
 
 </td></tr>
-<tr><td>
+<tr><td markdown="1">
 
 [ReadyCheck](./health.readycheck.md)
 
 
-</td><td>
+</td><td markdown="1">
 
 Functions for readiness check
 
