@@ -8,7 +8,7 @@ gem "webrick", "~> 1.9", ">= 1.9.2"
 # Jekyll Ruby 4.0 compatibility
 gem "logger", "~> 1.7"
 gem "base64", "~> 0.3.0"
-gem "bigdecimal", "~> 4.1"
+gem "bigdecimal", "~> 4.1", ">= 4.1.2"
 
 # Jekyll plugins
 gem "jekyll-sitemap", "~> 1.4"
