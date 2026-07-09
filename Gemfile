@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.10"
+gem "jekyll", "~> 4.4", ">= 4.4.1"
 
 # Jekyll Ruby 3.0 compatibility
 gem "webrick", "~> 1.9", ">= 1.9.2"
