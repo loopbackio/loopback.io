@@ -13,5 +13,5 @@ gem "bigdecimal", "~> 4.1", ">= 4.1.2"
 # Jekyll plugins
 gem "jekyll-sitemap", "~> 1.4"
 gem "jekyll-redirect-from", "~> 0.16.0"
-gem "jekyll-relative-links", "~> 0.7.0"
+gem "jekyll-relative-links", "~> 0.8.0"
 gem "kramdown-parser-gfm", "~> 1.1"
