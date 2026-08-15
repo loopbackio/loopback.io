@@ -33,6 +33,7 @@ jobs:
             api.github.com:443
             github.com:443
             index.rubygems.org:443
+            nodejs.org:443
             raw.githubusercontent.com:443
             registry.npmjs.org:443
             release-assets.githubusercontent.com:443
