@@ -36,6 +36,6 @@
   "license": "MIT",
   "author": "IBM Corp. and LoopBack contributors",
   "dependencies": {
-    "js-yaml": "^5.4.0"
+    "js-yaml": "^5.4.1"
   }
 }
