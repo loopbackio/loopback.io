@@ -35,7 +35,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: 24.22.3
+          node-version: 26.13.1
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@145243922b4465b78e04dd66294782c7de45901f # v1.345.0
